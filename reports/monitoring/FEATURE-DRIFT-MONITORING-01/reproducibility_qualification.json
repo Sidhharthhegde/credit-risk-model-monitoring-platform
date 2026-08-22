@@ -1,0 +1,102 @@
+{
+  "all_equal": true,
+  "result": "PASS",
+  "runs": [
+    {
+      "artifact_id": "SIM-M01-SCENARIO-01",
+      "equal": true,
+      "first": {
+        "bin_results": "30e2826e6db0aeda84521e4b3c6efbd4f38dc760d6545aec5de935ff8ff06ebb",
+        "categorical_diagnostics": "20b43e72b051c93386ef86059e06c7d402effab8a5c6c6995e4918846fedaf38",
+        "feature_results": "3814e8aa0eb846c2cd26309d49bdef3b1c9926e3dea4003913538c7a0bfb342c",
+        "numeric_diagnostics": "fbb4bf173ff349f920591f890695f37257d47f5e7e1456ebf61d47572b66edf1"
+      },
+      "second": {
+        "bin_results": "30e2826e6db0aeda84521e4b3c6efbd4f38dc760d6545aec5de935ff8ff06ebb",
+        "categorical_diagnostics": "20b43e72b051c93386ef86059e06c7d402effab8a5c6c6995e4918846fedaf38",
+        "feature_results": "3814e8aa0eb846c2cd26309d49bdef3b1c9926e3dea4003913538c7a0bfb342c",
+        "numeric_diagnostics": "fbb4bf173ff349f920591f890695f37257d47f5e7e1456ebf61d47572b66edf1"
+      }
+    },
+    {
+      "artifact_id": "SIM-M02-SCENARIO-01",
+      "equal": true,
+      "first": {
+        "bin_results": "4808b1f7fd5e3e018d360a7d2e70c513ae2eee088dc0c617b001cd027797c95b",
+        "categorical_diagnostics": "fa2ba9d26b919b7a4a510e4ac72f3a834d99e345ae7c004919aa61bc8f79574d",
+        "feature_results": "2d4f1a62aa5d51335985e18498f7fff3e4da1608d60f39678eaa4685a706d3ab",
+        "numeric_diagnostics": "dc6774a3962b867a048d81f2144e3b2c9185bd652dc8482e2e8f28fe94d18896"
+      },
+      "second": {
+        "bin_results": "4808b1f7fd5e3e018d360a7d2e70c513ae2eee088dc0c617b001cd027797c95b",
+        "categorical_diagnostics": "fa2ba9d26b919b7a4a510e4ac72f3a834d99e345ae7c004919aa61bc8f79574d",
+        "feature_results": "2d4f1a62aa5d51335985e18498f7fff3e4da1608d60f39678eaa4685a706d3ab",
+        "numeric_diagnostics": "dc6774a3962b867a048d81f2144e3b2c9185bd652dc8482e2e8f28fe94d18896"
+      }
+    },
+    {
+      "artifact_id": "SIM-M03-SCENARIO-01",
+      "equal": true,
+      "first": {
+        "bin_results": "ea6cb356614decebf340a95a59c593025c6d38cba0c41c6799de2aa586e66e05",
+        "categorical_diagnostics": "f7c4e28aa7330f8f11c868217211ef649813a3bc42c8e41ea760a3d1810033c6",
+        "feature_results": "9cbf67fa3f3f1b2fd463000d369cb7c65fdc08f53c8243bce46a30126953604a",
+        "numeric_diagnostics": "bd303241dc9924c10f6da44f090069dcc67842576fbdd0823d828ceb725f7b36"
+      },
+      "second": {
+        "bin_results": "ea6cb356614decebf340a95a59c593025c6d38cba0c41c6799de2aa586e66e05",
+        "categorical_diagnostics": "f7c4e28aa7330f8f11c868217211ef649813a3bc42c8e41ea760a3d1810033c6",
+        "feature_results": "9cbf67fa3f3f1b2fd463000d369cb7c65fdc08f53c8243bce46a30126953604a",
+        "numeric_diagnostics": "bd303241dc9924c10f6da44f090069dcc67842576fbdd0823d828ceb725f7b36"
+      }
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "equal": true,
+      "first": {
+        "bin_results": "3c58b66a5e9f96a2af65f30ae23b297dcedba3a14a113839834a55495295501f",
+        "categorical_diagnostics": "8f4031400537a7a95999ada9c0b4f23561cc8a01dd01855698d563cce4f2eef8",
+        "feature_results": "24a59f1c7b3320cbba4f3b65c0b8961ac6e3a0646c1e986abd86af75e2cfa1db",
+        "numeric_diagnostics": "7bf194ce24b107e00ddcd770d6310e606e68abbd9901f77e3c296f18e4cdeaf3"
+      },
+      "second": {
+        "bin_results": "3c58b66a5e9f96a2af65f30ae23b297dcedba3a14a113839834a55495295501f",
+        "categorical_diagnostics": "8f4031400537a7a95999ada9c0b4f23561cc8a01dd01855698d563cce4f2eef8",
+        "feature_results": "24a59f1c7b3320cbba4f3b65c0b8961ac6e3a0646c1e986abd86af75e2cfa1db",
+        "numeric_diagnostics": "7bf194ce24b107e00ddcd770d6310e606e68abbd9901f77e3c296f18e4cdeaf3"
+      }
+    },
+    {
+      "artifact_id": "SIM-M05-VALID-DEGRADED-01",
+      "equal": true,
+      "first": {
+        "bin_results": "a9932312f65d31ca1705fbbbe9e44afc52942c9e5cbe8efea6b55bc312848df3",
+        "categorical_diagnostics": "eb989e74ca1bbd8e5cde48080ca72024d2d0df42172d16b58a255930e7fb6e19",
+        "feature_results": "90d3910bd295085b6ef5a5f9482f266ed47d136c515740d2aa60425cc71fc64f",
+        "numeric_diagnostics": "cfeaf4374762a2a1a54b476715fe383517af8b389004df3a378d7ac6cda94acc"
+      },
+      "second": {
+        "bin_results": "a9932312f65d31ca1705fbbbe9e44afc52942c9e5cbe8efea6b55bc312848df3",
+        "categorical_diagnostics": "eb989e74ca1bbd8e5cde48080ca72024d2d0df42172d16b58a255930e7fb6e19",
+        "feature_results": "90d3910bd295085b6ef5a5f9482f266ed47d136c515740d2aa60425cc71fc64f",
+        "numeric_diagnostics": "cfeaf4374762a2a1a54b476715fe383517af8b389004df3a378d7ac6cda94acc"
+      }
+    },
+    {
+      "artifact_id": "SIM-M06-SCENARIO-01",
+      "equal": true,
+      "first": {
+        "bin_results": "8ff868082a711e14c8ad5e6981de29d107019331546df0fff9aaad4312c5ddf7",
+        "categorical_diagnostics": "f8c508d66d06e2c0329db9abe625d7913d02760c36b4e7cfc7f75e99e1ddc3bd",
+        "feature_results": "7347c65eb94c9b6c5902a3a72a50ba6fdd1a162bdb04e663bb9c6a1f4edc72ae",
+        "numeric_diagnostics": "a5bd82bc261cdb02ad228378f95f742e79251addb65080739615666accda70f1"
+      },
+      "second": {
+        "bin_results": "8ff868082a711e14c8ad5e6981de29d107019331546df0fff9aaad4312c5ddf7",
+        "categorical_diagnostics": "f8c508d66d06e2c0329db9abe625d7913d02760c36b4e7cfc7f75e99e1ddc3bd",
+        "feature_results": "7347c65eb94c9b6c5902a3a72a50ba6fdd1a162bdb04e663bb9c6a1f4edc72ae",
+        "numeric_diagnostics": "a5bd82bc261cdb02ad228378f95f742e79251addb65080739615666accda70f1"
+      }
+    }
+  ]
+}

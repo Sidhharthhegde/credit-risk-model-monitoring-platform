@@ -1,0 +1,79 @@
+{
+  "monitoring_id": "FEATURE-DRIFT-MONITORING-01",
+  "outcomes_loaded": false,
+  "runs": [
+    {
+      "artifact_id": "SIM-M01-SCENARIO-01",
+      "created_utc": "2026-08-22T17:56:33.616405+00:00",
+      "feature_bin_definitions_sha256": "9e39ef730c75ed1b91e9a479bc9d3927636c87a2ff85cae6d11e66b1683d6755",
+      "phase6_downstream_monitoring_eligible": true,
+      "reference_id": "FEATURE-REF-01",
+      "reference_snapshot_content_sha256": "5e2250e3d60ae06b78130799d93caa53e3358ef9ded87938ddeacffc20f27a9c",
+      "run_id": "DRIFT-RUN-SIM-M01-SCENARIO-01-01",
+      "scenario_content_sha256": "087c57ba63b0a3accf6a07a661d6ce92f231a1e63fff420bff39f7e86d47f1d4",
+      "scenario_data_sha256": "2422431152f75e9eed1398a6a8a5bef3b8b6bff2d678d6b960c6284181352f3f",
+      "scenario_id": "SIM-M01"
+    },
+    {
+      "artifact_id": "SIM-M02-SCENARIO-01",
+      "created_utc": "2026-08-22T17:56:33.616405+00:00",
+      "feature_bin_definitions_sha256": "9e39ef730c75ed1b91e9a479bc9d3927636c87a2ff85cae6d11e66b1683d6755",
+      "phase6_downstream_monitoring_eligible": true,
+      "reference_id": "FEATURE-REF-01",
+      "reference_snapshot_content_sha256": "5e2250e3d60ae06b78130799d93caa53e3358ef9ded87938ddeacffc20f27a9c",
+      "run_id": "DRIFT-RUN-SIM-M02-SCENARIO-01-01",
+      "scenario_content_sha256": "6241e378e2dcb9642dd6868273ba515c2548d56287f3314dc6d0afd054f69120",
+      "scenario_data_sha256": "9ec74d5c2db90d1fa81121ca84d0baccb1de310e0435f62a05d81f3539fb720f",
+      "scenario_id": "SIM-M02"
+    },
+    {
+      "artifact_id": "SIM-M03-SCENARIO-01",
+      "created_utc": "2026-08-22T17:56:33.616405+00:00",
+      "feature_bin_definitions_sha256": "9e39ef730c75ed1b91e9a479bc9d3927636c87a2ff85cae6d11e66b1683d6755",
+      "phase6_downstream_monitoring_eligible": true,
+      "reference_id": "FEATURE-REF-01",
+      "reference_snapshot_content_sha256": "5e2250e3d60ae06b78130799d93caa53e3358ef9ded87938ddeacffc20f27a9c",
+      "run_id": "DRIFT-RUN-SIM-M03-SCENARIO-01-01",
+      "scenario_content_sha256": "2463991aa5a78fafc8a69fe80b847f23e182fa341051ff31e078fd9f1d358616",
+      "scenario_data_sha256": "bf2914a21f286ba18ebaf65e32bd75951ddd63ce31a1d8d5975ff181284b0a8f",
+      "scenario_id": "SIM-M03"
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "created_utc": "2026-08-22T17:56:33.616405+00:00",
+      "feature_bin_definitions_sha256": "9e39ef730c75ed1b91e9a479bc9d3927636c87a2ff85cae6d11e66b1683d6755",
+      "phase6_downstream_monitoring_eligible": true,
+      "reference_id": "FEATURE-REF-01",
+      "reference_snapshot_content_sha256": "5e2250e3d60ae06b78130799d93caa53e3358ef9ded87938ddeacffc20f27a9c",
+      "run_id": "DRIFT-RUN-SIM-M04-SCENARIO-01-01",
+      "scenario_content_sha256": "6017d15406037fbdfba48c1fc7e71fdf1cd0432bb27403648ddd010294041111",
+      "scenario_data_sha256": "cb3009cab646430c25f01e821ad278f77bb0ea4d9ea90aa2b7019aff7769c493",
+      "scenario_id": "SIM-M04"
+    },
+    {
+      "artifact_id": "SIM-M05-VALID-DEGRADED-01",
+      "created_utc": "2026-08-22T17:56:33.616405+00:00",
+      "feature_bin_definitions_sha256": "9e39ef730c75ed1b91e9a479bc9d3927636c87a2ff85cae6d11e66b1683d6755",
+      "phase6_downstream_monitoring_eligible": true,
+      "reference_id": "FEATURE-REF-01",
+      "reference_snapshot_content_sha256": "5e2250e3d60ae06b78130799d93caa53e3358ef9ded87938ddeacffc20f27a9c",
+      "run_id": "DRIFT-RUN-SIM-M05-VALID-DEGRADED-01-01",
+      "scenario_content_sha256": "b2828769c9ee990169b5ee635a8e46bd2d4577edc75c484392abbd568a843dff",
+      "scenario_data_sha256": "1c49090a38f70ef9914763263b00ac2e6995f386958500b8a5289c6a4256ecf1",
+      "scenario_id": "SIM-M05"
+    },
+    {
+      "artifact_id": "SIM-M06-SCENARIO-01",
+      "created_utc": "2026-08-22T17:56:33.616405+00:00",
+      "feature_bin_definitions_sha256": "9e39ef730c75ed1b91e9a479bc9d3927636c87a2ff85cae6d11e66b1683d6755",
+      "phase6_downstream_monitoring_eligible": true,
+      "reference_id": "FEATURE-REF-01",
+      "reference_snapshot_content_sha256": "5e2250e3d60ae06b78130799d93caa53e3358ef9ded87938ddeacffc20f27a9c",
+      "run_id": "DRIFT-RUN-SIM-M06-SCENARIO-01-01",
+      "scenario_content_sha256": "9492e798878271bf2751216fd714767af5f2519c9866c9ed78a739271f7260de",
+      "scenario_data_sha256": "a2712b5fab828373a70c1132859761468b5c09c5a955e0ba59dc327d64fccaec",
+      "scenario_id": "SIM-M06"
+    }
+  ],
+  "scores_calculated": false
+}

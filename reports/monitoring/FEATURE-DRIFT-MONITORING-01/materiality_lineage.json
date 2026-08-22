@@ -1,0 +1,22 @@
+{
+  "cnd_02_status": "OPEN",
+  "critical_source_designation": "PENDING_GOVERNED_DEFINITION",
+  "materiality_changed_any_severity": false,
+  "part_a_source": {
+    "classification": "PROJECT_DEFINED_GOVERNANCE_ASSUMPTION_NOT_REGULATORY_OR_CAUSAL",
+    "population": "TRAIN",
+    "relative_path": "reports/formal_validation/phase57_explainability_feature_behaviour_validation_v1_1/raw_feature_shap_importance.csv",
+    "sha256": "47e2b838782ee35409a8907cc430104e3da23a402d34237a87784313c0d4f605",
+    "tier_1_rule": "RANKS_THROUGH_FIRST_FEATURE_REACHING_80_PERCENT_CUMULATIVE_ABS_SHAP",
+    "tier_2_rule": "REMAINING_RANKS_THROUGH_FIRST_FEATURE_REACHING_95_PERCENT_CUMULATIVE_ABS_SHAP",
+    "tier_3_rule": "REMAINING_FEATURES",
+    "use": "PRIORITIZATION_ONLY_NOT_SEVERITY"
+  },
+  "status": "IMPLEMENTED_PENDING_REVIEW",
+  "tier_counts": {
+    "TIER_1": 41,
+    "TIER_2": 45,
+    "TIER_3": 90
+  },
+  "use": "PRIORITIZATION_ONLY_NOT_SEVERITY"
+}

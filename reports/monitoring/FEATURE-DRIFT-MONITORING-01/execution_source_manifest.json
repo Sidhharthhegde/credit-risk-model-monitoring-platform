@@ -1,0 +1,31 @@
+{
+  "creation_code_version": "PHASE7-FEATURE-DRIFT-MONITOR-0.1.0",
+  "frozen_dependencies": {
+    "configs/alert_thresholds.yaml": "987373af8b91f5cbfe5dbaaea829bd122d64ad41e9dc32e6084eb5ef5856d331",
+    "reports/monitoring/DATA-QUALITY-CONTROL-01/manifest.json": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+    "reports/reference/REFERENCE-MATERIALIZATION-01/feature_psi_bin_definitions.json": "9e39ef730c75ed1b91e9a479bc9d3927636c87a2ff85cae6d11e66b1683d6755",
+    "reports/reference/REFERENCE-MATERIALIZATION-01/manifest.json": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
+    "reports/simulation/SIMULATION-SCENARIO-SET-01/manifest.json": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5"
+  },
+  "implementation_sources": [
+    {
+      "path": "contracts/feature_drift_monitoring_contract.json",
+      "sha256": "70a907054942587aa4392020308355e0a8f59f3476742784e348fc448697953a"
+    },
+    {
+      "path": "src/credit_risk_monitoring/drift/engine.py",
+      "sha256": "8b1e2392826c4afdb37ec86a750558471a686a452dfa023b5b85b80d21351729"
+    },
+    {
+      "path": "src/credit_risk_monitoring/drift/__init__.py",
+      "sha256": "3a454655c79d891c2602eaf4cd27a00203573f8c1faace2db28a80b45aad8ba0"
+    },
+    {
+      "path": "scripts/run_phase7_monitoring.py",
+      "sha256": "dfd4cd34a685f85b533a1195c592570f2f2f2b40c2f7eb4bb71f79277c7838a8"
+    }
+  ],
+  "monitoring_id": "FEATURE-DRIFT-MONITORING-01",
+  "part_a_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+  "part_b_base_commit": "f90eae64a518f1e09fce8c5759c3c75ee5f3445d"
+}

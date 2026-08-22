@@ -1,0 +1,43 @@
+{
+  "contract_sha256": "70a907054942587aa4392020308355e0a8f59f3476742784e348fc448697953a",
+  "metrics": [
+    {
+      "alert_record_creation_enabled": false,
+      "control_id": "DR-FEATURE-PSI-01",
+      "metric_id": "DR-01",
+      "role": "DIRECT",
+      "severity_enabled": true
+    },
+    {
+      "alert_record_creation_enabled": false,
+      "control_id": "DR-NUMERIC-KS-01",
+      "metric_id": "DR-02",
+      "role": "SUPPORTING",
+      "severity_enabled": false
+    },
+    {
+      "alert_record_creation_enabled": false,
+      "control_id": "DR-NUMERIC-WASSERSTEIN-01",
+      "metric_id": "DR-03",
+      "role": "SUPPORTING",
+      "severity_enabled": false
+    },
+    {
+      "alert_record_creation_enabled": false,
+      "control_id": "DR-CATEGORICAL-CHI-SQUARE-01",
+      "metric_id": "DR-04",
+      "role": "SUPPORTING",
+      "severity_enabled": false
+    },
+    {
+      "alert_record_creation_enabled": false,
+      "control_id": "DR-CRAMERS-V-01",
+      "metric_id": "DR-05",
+      "role": "SUPPORTING",
+      "severity_enabled": false,
+      "status": "NOT_CALCULATED_PENDING_EXPLICIT_APPROVAL"
+    }
+  ],
+  "monitoring_id": "FEATURE-DRIFT-MONITORING-01",
+  "status": "QUALIFIED_PENDING_REVIEW"
+}

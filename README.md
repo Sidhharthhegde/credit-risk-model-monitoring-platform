@@ -6,9 +6,9 @@ Part B will demonstrate data-quality monitoring, population and feature drift, r
 
 ## Current status
 
-`PHASE_6_APPROVED_FROZEN`
+`PHASE_7_TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW`
 
-Phases 0–6 are approved and frozen. `DATA-QUALITY-CONTROL-01` passed technical qualification and owner review after separating DIRECT source-availability monitoring from the HARD_GATE source-authority control. Phase 7 feature and population drift monitoring is authorized but has not started; score, performance, calibration, subgroup, alert and model-health execution remain unauthorized.
+Phases 0–6 are approved and frozen. `FEATURE-DRIFT-MONITORING-01` has calculated frozen-bin PSI and supporting distribution diagnostics for the six Phase 6 downstream-eligible artifacts and passed technical qualification; owner review remains pending. The two ineligible M05 variants were excluded before drift calculation. Score, performance, calibration, subgroup, alert and model-health execution remain unauthorized.
 
 ## Important scope statement
 

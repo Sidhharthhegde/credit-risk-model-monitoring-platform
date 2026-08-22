@@ -1,0 +1,72 @@
+{
+  "monitoring_id": "FEATURE-DRIFT-MONITORING-01",
+  "version": "0.1.0",
+  "status": "IMPLEMENTED_PENDING_REVIEW",
+  "scope": "PHASE_7_FEATURE_AND_POPULATION_DRIFT_ONLY",
+  "reference_id": "FEATURE-REF-01",
+  "reference_materialization_manifest_sha256": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
+  "feature_bin_definitions_sha256": "9e39ef730c75ed1b91e9a479bc9d3927636c87a2ff85cae6d11e66b1683d6755",
+  "scenario_set_manifest_sha256": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5",
+  "phase_6_manifest_sha256": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+  "alert_thresholds_sha256": "987373af8b91f5cbfe5dbaaea829bd122d64ad41e9dc32e6084eb5ef5856d331",
+  "part_a_shap_materiality": {
+    "relative_path": "reports/formal_validation/phase57_explainability_feature_behaviour_validation_v1_1/raw_feature_shap_importance.csv",
+    "sha256": "47e2b838782ee35409a8907cc430104e3da23a402d34237a87784313c0d4f605",
+    "population": "TRAIN",
+    "use": "PRIORITIZATION_ONLY_NOT_SEVERITY",
+    "tier_1_rule": "RANKS_THROUGH_FIRST_FEATURE_REACHING_80_PERCENT_CUMULATIVE_ABS_SHAP",
+    "tier_2_rule": "REMAINING_RANKS_THROUGH_FIRST_FEATURE_REACHING_95_PERCENT_CUMULATIVE_ABS_SHAP",
+    "tier_3_rule": "REMAINING_FEATURES",
+    "classification": "PROJECT_DEFINED_GOVERNANCE_ASSUMPTION_NOT_REGULATORY_OR_CAUSAL"
+  },
+  "eligibility": {
+    "source": "reports/monitoring/DATA-QUALITY-CONTROL-01/scenario_control_summary.csv",
+    "required": "downstream_monitoring_eligible == true",
+    "ineligible_artifact_behavior": "EXCLUDE_WITH_EXPLICIT_REASON_NO_DRIFT_CALCULATION"
+  },
+  "metrics": [
+    {"control_id": "DR-FEATURE-PSI-01", "metric_id": "DR-01", "role": "DIRECT", "severity_enabled": true, "alert_record_creation_enabled": false},
+    {"control_id": "DR-NUMERIC-KS-01", "metric_id": "DR-02", "role": "SUPPORTING", "severity_enabled": false, "alert_record_creation_enabled": false},
+    {"control_id": "DR-NUMERIC-WASSERSTEIN-01", "metric_id": "DR-03", "role": "SUPPORTING", "severity_enabled": false, "alert_record_creation_enabled": false},
+    {"control_id": "DR-CATEGORICAL-CHI-SQUARE-01", "metric_id": "DR-04", "role": "SUPPORTING", "severity_enabled": false, "alert_record_creation_enabled": false},
+    {"control_id": "DR-CRAMERS-V-01", "metric_id": "DR-05", "role": "SUPPORTING", "status": "NOT_CALCULATED_PENDING_EXPLICIT_APPROVAL", "severity_enabled": false, "alert_record_creation_enabled": false}
+  ],
+  "psi_policy": {
+    "warning": 0.1,
+    "critical": 0.25,
+    "threshold_classification": "PROJECT_DEFINED_GOVERNANCE_ASSUMPTIONS_NOT_REGULATORY_REQUIREMENTS",
+    "epsilon": 0.000001,
+    "zero_frequency_application": "REPLACE_ZERO_PROPORTIONS_ONLY_THEN_RENORMALIZE",
+    "period_specific_rebinning_permitted": false,
+    "missing_unseen_and_tail_buckets": "USE_FROZEN_PHASE_4_DEFINITIONS"
+  },
+  "population_aggregation": {
+    "rule": "MAXIMUM_ELIGIBLE_FEATURE_PSI_SEVERITY",
+    "use": "PHASE_7_DOMAIN_SUMMARY_ONLY_NOT_OVERALL_MODEL_HEALTH",
+    "materiality_tier_changes_severity": false,
+    "p_values_change_severity": false
+  },
+  "scenario_interpretation": {
+    "expected_signals_are_assertions": false,
+    "stable_means": "NO_DELIBERATE_SCENARIO_MUTATION_NOT_IDENTITY_TO_TRAIN_REFERENCE",
+    "threshold_or_bin_tuning_after_observation_permitted": false
+  },
+  "source_dependency_policy": {
+    "family_lineage_recorded": true,
+    "critical_source_designation": "PENDING_GOVERNED_DEFINITION",
+    "cnd_02_status": "OPEN",
+    "source_family_changes_severity": false
+  },
+  "scope_protection": {
+    "score_monitoring": false,
+    "threshold_decision_monitoring": false,
+    "outcome_loading": false,
+    "performance": false,
+    "calibration": false,
+    "subpopulation_monitoring": false,
+    "alert_record_creation": false,
+    "overall_model_health": false,
+    "jensen_shannon_divergence": false,
+    "cramers_v": false
+  }
+}

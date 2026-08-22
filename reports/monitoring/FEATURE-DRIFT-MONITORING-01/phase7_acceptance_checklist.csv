@@ -1,0 +1,22 @@
+control_id,control,result
+P7-001,Phase 6 approval explicitly authorizes Phase 7,PASS
+P7-002,Only downstream-eligible artifacts were processed,PASS
+P7-003,Both non-authoritative M05 variants were excluded with reasons,PASS
+P7-004,Frozen FEATURE-REF-01 TRAIN snapshot was used,PASS
+P7-005,All 176 frozen Phase 4 feature bins were used,PASS
+P7-006,No period-specific rebucketing occurred,PASS
+P7-007,Zero proportions used frozen epsilon replacement and renormalization,PASS
+P7-008,Missing unseen and tail buckets reconcile,PASS
+P7-009,Exactly 176 PSI results exist for each eligible artifact,PASS
+P7-010,Bin-level PSI contributions reconcile to feature PSI,PASS
+P7-011,Numeric KS and Wasserstein diagnostics are supporting only,PASS
+P7-012,Categorical chi-square p-values are supporting only,PASS
+P7-013,P-values never changed severity or generated alerts,PASS
+P7-014,Cramer's V remained uncalculated pending approval,PASS
+P7-015,Part A SHAP materiality affects prioritization only,PASS
+P7-016,Critical-source designation remains pending and CND-02 remains open,PASS
+P7-017,Scenario expectations were not treated as tuning targets,PASS
+P7-018,Repeated execution is semantically reproducible,PASS
+P7-019,No score threshold outcome performance calibration subgroup alert or model-health result was generated,PASS
+P7-020,Phases 0 through 6 and Part A remain unchanged,PASS
+P7-021,Owner approval and Phase 8 authorization are deferred,PASS

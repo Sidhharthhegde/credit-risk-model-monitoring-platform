@@ -1,0 +1,23 @@
+{
+  "calibration_results_calculated": false,
+  "categorical_diagnostics_calculated": true,
+  "cnd_02_status": "OPEN",
+  "eligible_artifact_count": 6,
+  "excluded_artifact_count": 2,
+  "feature_drift_results_calculated": true,
+  "feature_psi_bin_results_calculated": true,
+  "feature_result_count": 1056,
+  "monitoring_alerts_generated": false,
+  "monitoring_id": "FEATURE-DRIFT-MONITORING-01",
+  "numeric_diagnostics_calculated": true,
+  "overall_model_health_calculated": false,
+  "performance_results_calculated": false,
+  "phase": "PHASE_7",
+  "phase_7_complete": false,
+  "phase_8_authorized": false,
+  "population_drift_results_calculated": true,
+  "review_decision": "PENDING_USER_PROTOCOL_OWNER_REVIEW",
+  "score_monitoring_results_calculated": false,
+  "subgroup_results_calculated": false,
+  "technical_qualification": "PASS"
+}

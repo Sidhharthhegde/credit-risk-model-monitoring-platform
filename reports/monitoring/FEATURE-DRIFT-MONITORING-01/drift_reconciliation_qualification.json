@@ -1,0 +1,18 @@
+{
+  "alert_generated_count": 0,
+  "all_current_bin_counts_reconcile": true,
+  "all_eligible_artifacts_have_176_unique_features": true,
+  "all_reference_bin_counts_reconcile": true,
+  "categorical_diagnostic_count": 270,
+  "eligible_artifact_count": 6,
+  "excluded_artifact_count": 2,
+  "expected_categorical_diagnostic_count": 270,
+  "expected_feature_result_count": 1056,
+  "expected_numeric_diagnostic_count": 786,
+  "feature_result_count": 1056,
+  "max_absolute_feature_psi_vs_bin_sum_difference": 2.220446049250313e-16,
+  "numeric_diagnostic_count": 786,
+  "p_value_driven_severity_count": 0,
+  "psi_bin_contributions_reconcile": true,
+  "result": "PASS"
+}

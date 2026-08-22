@@ -1,0 +1,17 @@
+{
+  "alert_record_creation": false,
+  "all_prohibited_calculations_remained_false": true,
+  "calibration": false,
+  "cramers_v": false,
+  "jensen_shannon_divergence": false,
+  "monitoring_alerts_generated": false,
+  "outcome_loading": false,
+  "overall_model_health": false,
+  "overall_model_health_calculated": false,
+  "performance": false,
+  "row_level_identifiers_persisted": false,
+  "score_monitoring": false,
+  "subpopulation_monitoring": false,
+  "synthetic_outcomes_loaded": false,
+  "threshold_decision_monitoring": false
+}

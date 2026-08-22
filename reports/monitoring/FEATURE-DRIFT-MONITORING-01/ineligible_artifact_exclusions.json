@@ -1,0 +1,24 @@
+{
+  "drift_results_generated_for_excluded_artifacts": false,
+  "excluded_count": 2,
+  "results": [
+    {
+      "artifact_id": "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+      "contract_status": "PASS",
+      "dq_control_decision": "NON_AUTHORITATIVE",
+      "drift_calculated": false,
+      "reason": "PHASE_6_DOWNSTREAM_MONITORING_INELIGIBLE",
+      "scenario_id": "SIM-M05",
+      "source_authority_status": "NON_AUTHORITATIVE"
+    },
+    {
+      "artifact_id": "SIM-M05-HARD-FAIL-01",
+      "contract_status": "FAIL",
+      "dq_control_decision": "HARD_FAIL",
+      "drift_calculated": false,
+      "reason": "PHASE_6_DOWNSTREAM_MONITORING_INELIGIBLE",
+      "scenario_id": "SIM-M05",
+      "source_authority_status": "NON_AUTHORITATIVE"
+    }
+  ]
+}

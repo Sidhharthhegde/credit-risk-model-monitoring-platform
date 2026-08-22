@@ -1,0 +1,126 @@
+{
+  "interpretation": "DESCRIPTIVE_ONLY_NOT_A_SCENARIO_ACCEPTANCE_TARGET",
+  "results": [
+    {
+      "artifact_id": "SIM-M03-SCENARIO-01",
+      "feature": "AMT_INCOME_TOTAL",
+      "psi": 0.02019282538681467,
+      "psi_rank_within_artifact": 59,
+      "scenario_id": "SIM-M03",
+      "severity": "NORMAL"
+    },
+    {
+      "artifact_id": "SIM-M03-SCENARIO-01",
+      "feature": "EXT_SOURCE_2",
+      "psi": 0.03917730363669174,
+      "psi_rank_within_artifact": 48,
+      "scenario_id": "SIM-M03",
+      "severity": "NORMAL"
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "feature": "AMT_CREDIT",
+      "psi": 0.04695137666164613,
+      "psi_rank_within_artifact": 40,
+      "scenario_id": "SIM-M04",
+      "severity": "NORMAL"
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "feature": "AMT_ANNUITY",
+      "psi": 0.09622531611241848,
+      "psi_rank_within_artifact": 10,
+      "scenario_id": "SIM-M04",
+      "severity": "NORMAL"
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "feature": "AMT_GOODS_PRICE",
+      "psi": 0.09332694829678742,
+      "psi_rank_within_artifact": 11,
+      "scenario_id": "SIM-M04",
+      "severity": "NORMAL"
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "feature": "EXT_SOURCE_2",
+      "psi": 0.46145175839108366,
+      "psi_rank_within_artifact": 5,
+      "scenario_id": "SIM-M04",
+      "severity": "CRITICAL"
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "feature": "EXT_SOURCE_3",
+      "psi": 0.25012754553854843,
+      "psi_rank_within_artifact": 6,
+      "scenario_id": "SIM-M04",
+      "severity": "CRITICAL"
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "feature": "BUREAU_DEBT_TOTAL",
+      "psi": 0.01990392994752552,
+      "psi_rank_within_artifact": 60,
+      "scenario_id": "SIM-M04",
+      "severity": "NORMAL"
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "feature": "BUREAU_DEBT_MEAN",
+      "psi": 0.012390560121354999,
+      "psi_rank_within_artifact": 66,
+      "scenario_id": "SIM-M04",
+      "severity": "NORMAL"
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "feature": "BUREAU_DEBT_MAX",
+      "psi": 0.015776477108228132,
+      "psi_rank_within_artifact": 62,
+      "scenario_id": "SIM-M04",
+      "severity": "NORMAL"
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "feature": "BUREAU_DEBT_TO_CREDIT_RATIO",
+      "psi": 0.01147333406133112,
+      "psi_rank_within_artifact": 67,
+      "scenario_id": "SIM-M04",
+      "severity": "NORMAL"
+    },
+    {
+      "artifact_id": "SIM-M05-VALID-DEGRADED-01",
+      "feature": "AMT_INCOME_TOTAL",
+      "psi": 0.026316586529113572,
+      "psi_rank_within_artifact": 55,
+      "scenario_id": "SIM-M05",
+      "severity": "NORMAL"
+    },
+    {
+      "artifact_id": "SIM-M05-VALID-DEGRADED-01",
+      "feature": "NAME_TYPE_SUITE",
+      "psi": 0.5688339285661279,
+      "psi_rank_within_artifact": 5,
+      "scenario_id": "SIM-M05",
+      "severity": "CRITICAL"
+    },
+    {
+      "artifact_id": "SIM-M05-VALID-DEGRADED-01",
+      "feature": "OCCUPATION_TYPE",
+      "psi": 0.05518363379173978,
+      "psi_rank_within_artifact": 19,
+      "scenario_id": "SIM-M05",
+      "severity": "NORMAL"
+    },
+    {
+      "artifact_id": "SIM-M05-VALID-DEGRADED-01",
+      "feature": "EXT_SOURCE_1",
+      "psi": 0.006471572359348333,
+      "psi_rank_within_artifact": 84,
+      "scenario_id": "SIM-M05",
+      "severity": "NORMAL"
+    }
+  ],
+  "thresholds_or_bins_tuned_to_driver_results": false
+}

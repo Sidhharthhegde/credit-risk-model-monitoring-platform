@@ -25,6 +25,9 @@
 | `contracts/data_quality_monitoring_contract.json` | 0.1.0 | Approved and frozen | Phase 6 control registry, threshold bindings, governed source-control roles, result vocabularies and scope barriers |
 | `src/credit_risk_monitoring/data_quality/` | 0.1.0 | Implemented and tested | Reusable read-only schema, grain, completeness, validity, novelty, range, source and reconciliation engine |
 | `reports/monitoring/DATA-QUALITY-CONTROL-01/` | 0.1.0 | Approved and frozen | Aggregate Phase 6 monitoring evidence with no row-level offenders, alerts or drift results |
+| `contracts/feature_drift_monitoring_contract.json` | 0.1.0 | Implemented; owner review pending | Phase 7 eligibility, frozen-bin, PSI, diagnostic, materiality-lineage and scope contract |
+| `src/credit_risk_monitoring/drift/` | 0.1.0 | Implemented and tested | Frozen-bin PSI, bin reconciliation and supporting numeric/categorical diagnostics |
+| `reports/monitoring/FEATURE-DRIFT-MONITORING-01/` | 0.1.0 | Technically qualified; owner review pending | Aggregate Phase 7 evidence for six eligible artifacts plus two explicit exclusions |
 | `configs/model_config.yaml` | 0.1.0 | Approved and frozen | Semantic model metadata referencing the binding |
 | `configs/monitoring_config.yaml` | 0.1.0 | Approved and frozen | Monitoring scope and execution policy |
 | `configs/alert_thresholds.yaml` | 0.1.0 | Approved and frozen | Project-defined alert assumptions |

@@ -1,0 +1,106 @@
+{
+  "aggregate_results_only": true,
+  "alerts_included": false,
+  "approval_record_included": false,
+  "artifacts": [
+    {
+      "path": "categorical_drift_diagnostics.parquet",
+      "sha256": "dd5762eeeee8f76cdefd4f4484a6d9cdad6983d9f5a762dfb12b015e804594f5",
+      "size_bytes": 16553
+    },
+    {
+      "path": "control_registry.json",
+      "sha256": "ae30d1e0bd3dee5f7ba75c61b80708fd8c790c596584a1dfd6102e183eb1ea25",
+      "size_bytes": 1212
+    },
+    {
+      "path": "drift_reconciliation_qualification.json",
+      "sha256": "938b9c294b6410e9623dd55fe963db9c78865a41d0012e96b50530263727de27",
+      "size_bytes": 661
+    },
+    {
+      "path": "execution_source_manifest.json",
+      "sha256": "63cda4ae5e3c05be2a1a50fdbd360b46081e429310d073fb5714e64c0bc2026a",
+      "size_bytes": 1599
+    },
+    {
+      "path": "feature_drift_results.parquet",
+      "sha256": "bc83f800599792eb9a51b0eb4ca29cc8bd9e6acac404775bba2336d7639dc071",
+      "size_bytes": 31969
+    },
+    {
+      "path": "feature_psi_bin_contributions.parquet",
+      "sha256": "5363167d28eeb420655b20af5189aeea3be9f170fccb07e1f5d5a4c71d91e60a",
+      "size_bytes": 173490
+    },
+    {
+      "path": "ineligible_artifact_exclusions.json",
+      "sha256": "514e2ff5caea306bd27a7ec2e5ce22439a4aef4a45e31275821946fe1e70b7c2",
+      "size_bytes": 747
+    },
+    {
+      "path": "lineage_immutability_attestation.json",
+      "sha256": "28cc58517d8ed93d7408833a1643d1348ff0fe4ff365721aa2c52a0eb392c6af",
+      "size_bytes": 242
+    },
+    {
+      "path": "materiality_lineage.json",
+      "sha256": "baa1b0db0864ecae57b22468a44a3e779b9adb335262477f61fe8de33b746a07",
+      "size_bytes": 942
+    },
+    {
+      "path": "monitoring_run_manifest.json",
+      "sha256": "c6eab441c072f00ea6c675849b55d553ae9dc6bc62d42bf29fc3e4e9bb6301a8",
+      "size_bytes": 4387
+    },
+    {
+      "path": "numeric_drift_diagnostics.parquet",
+      "sha256": "c9999dfd708f819a53f06a842eed4b4aedb0617ba1e23978186c53ce671c46d4",
+      "size_bytes": 31632
+    },
+    {
+      "path": "phase7_acceptance_checklist.csv",
+      "sha256": "f94b5c4f974abc448ce4a31be7bfe72975f9626fbb3ba13ff6cd22bdfcdaf5b9",
+      "size_bytes": 1433
+    },
+    {
+      "path": "phase7_completion_decision.json",
+      "sha256": "2a8c7a5b1381a20dd32f3f15998e76cb061e4f5f624f3046f8bc986a9a181034",
+      "size_bytes": 837
+    },
+    {
+      "path": "population_drift_summary.csv",
+      "sha256": "f9ef9937f2981cf27146784fed6e164ef3bef3832d9bc85faed20189b5354e73",
+      "size_bytes": 1352
+    },
+    {
+      "path": "prospective_driver_diagnostics.json",
+      "sha256": "383a15fd0c31dd45a01f992f7e7fc8b9a1182361443c21fbcbc740a74452ce48",
+      "size_bytes": 3536
+    },
+    {
+      "path": "reproducibility_qualification.json",
+      "sha256": "67518dd40a05d569b4db2eea3b1a05e4c9bbb2a1a3bf70a5c2f47d07f906cd06",
+      "size_bytes": 5490
+    },
+    {
+      "path": "scenario_interpretation.json",
+      "sha256": "a7e43109095ebcc1630bd0027b3801009bad2210e007abd319f8a6f040796b60",
+      "size_bytes": 4422
+    },
+    {
+      "path": "scope_protection_attestation.json",
+      "sha256": "0a37d2fb74b138eefbe4521b204746b91697bd3a4e82a83d91adce1f962b9325",
+      "size_bytes": 534
+    },
+    {
+      "path": "top_drift_contributors.csv",
+      "sha256": "459b2a1b4b8ee3eda6f08e104b0558af60a09cdcfe3fc426275dc5d78985f09d",
+      "size_bytes": 5826
+    }
+  ],
+  "created_utc": "2026-08-22T17:56:33.616405+00:00",
+  "monitoring_id": "FEATURE-DRIFT-MONITORING-01",
+  "row_level_identifiers_included": false,
+  "status": "QUALIFIED_PENDING_REVIEW"
+}

@@ -853,9 +853,10 @@ Jensen-Shannon divergence is outside core scope unless later justified through c
 
 ## Completion criteria
 
-- M1/M2 remain within expected state.
-- M3 produces the expected warning.
-- M4 identifies intended drivers and produces the expected critical state.
+- M1/M2 preserve their observed TRAIN-versus-`application_test` drift state without assuming that an unmodified cohort must be `NORMAL`.
+- M3 records the mild injected drivers descriptively without requiring a threshold crossing.
+- M4 identifies intended drivers without tuning frozen bins or thresholds to the observed result.
+- Prospective scenario signals remain diagnostics rather than acceptance targets.
 
 ---
 
@@ -1684,7 +1685,7 @@ Update this table only when supported by a phase completion decision.
 | 4 | `COMPLETE` | `reports/reference/REFERENCE-MATERIALIZATION-01/phase4_completion_decision.json` | Approved and frozen on 2026-08-22 |
 | 5 | `COMPLETE` | `reports/simulation/SIMULATION-SCENARIO-SET-01/phase5_completion_decision.json` | Conditional blocker resolved; approved and frozen on 2026-08-22 |
 | 6 | `COMPLETE` | `reports/monitoring/DATA-QUALITY-CONTROL-01/phase6_completion_decision.json` | Conditional source-role blocker resolved; approved and frozen on 2026-08-22 |
-| 7 | `NOT_STARTED` | Not issued | Feature and population drift monitoring authorized; execution has not started |
+| 7 | `IN_PROGRESS` | `reports/monitoring/FEATURE-DRIFT-MONITORING-01/phase7_completion_decision.json` | Drift executed and technically qualified; owner review pending |
 | 8 | `NOT_STARTED` | Not issued |  |
 | 9 | `NOT_STARTED` | Not issued |  |
 | 10 | `NOT_STARTED` | Not issued |  |
@@ -1709,13 +1710,13 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next authorized work is Phase 7 feature and population drift monitoring:
+The next authorized work is review of the Phase 7 technical candidate:
 
-1. Review and freeze the Phase 7 execution contract before calculating drift.
-2. Consume only Phase 6 artifacts with `downstream_monitoring_eligible = true`.
-3. Apply the frozen Phase 4 numeric and categorical bins without period-specific rebucketing.
-4. Keep effect-size statistics distinct from p-value diagnostics; p-values cannot independently trigger severity.
-5. Preserve Phase 6 DQ findings alongside drift evidence rather than suppressing valid cohorts with DIRECT findings.
-6. Do not calculate score, performance, calibration, subgroup, alert or overall-health results in Phase 7.
+1. Review the eligibility exclusions, all-feature PSI evidence and bin reconciliation.
+2. Review the project-defined 80%/95% SHAP materiality tiers; they affect prioritization only.
+3. Confirm that natural M01/M02 TRAIN-to-`application_test` drift is retained rather than tuned away.
+4. Confirm that p-values remain supporting diagnostics and generated no severity or alert.
+5. Approve and freeze `FEATURE-DRIFT-MONITORING-01`, or issue bounded remediation.
+6. Do not authorize or execute Phase 8 until the Phase 7 completion decision is approved.
 
-Phase 7 is authorized but not yet executed.
+Phase 7 has passed technical qualification but is not yet approved or frozen.

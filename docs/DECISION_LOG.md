@@ -1,0 +1,28 @@
+# Decision Log
+
+## Decision statuses
+
+- `PROPOSED`
+- `APPROVED`
+- `REJECTED`
+- `SUPERSEDED`
+
+## Decisions
+
+| Decision ID | Date | Status | Decision | Rationale |
+|---|---|---|---|---|
+| PB-DEC-001 | 2026-08-21 | APPROVED | Part B uses a separate Git repository. | Preserves the frozen Part A repository and separates lifecycle workstreams. |
+| PB-DEC-002 | 2026-08-21 | APPROVED | Part B is described as production-shaped simulation, not actual deployment. | Part A did not grant production approval. |
+| PB-DEC-003 | 2026-08-21 | APPROVED | DF-01 remains immutable. | Monitoring cannot silently change a frozen validated model. |
+| PB-DEC-004 | 2026-08-21 | APPROVED | Part B binds to the local Part A model by identity and hashes and does not copy the fitted binary. | Avoids artifact duplication and preserves Part A authority. |
+| PB-DEC-005 | 2026-08-21 | APPROVED | Input, scoring output, and outcome data use separate contracts. | Prevents target/prediction fields from being incorrectly required at scoring input. |
+| PB-DEC-006 | 2026-08-21 | APPROVED | TRAIN, development validation, TRAIN OOF, historical third split, and `application_test` have distinct reference roles. | No single available population supports every monitoring purpose. |
+| PB-DEC-007 | 2026-08-21 | APPROVED | Monthly cadence and a two-month outcome lag are simulation assumptions only. | Part A does not define an actual deployment cadence or contractual outcome horizon. |
+| PB-DEC-008 | 2026-08-21 | APPROVED | All 12 Part A subgroup families are retained through one generic configured engine. | Preserves governance continuity without duplicate implementations. |
+| PB-DEC-009 | 2026-08-21 | APPROVED | Full local evidence packages are authoritative; SQLite is a query and history layer. | Mutable database history alone is insufficient for reproducibility. |
+| PB-DEC-010 | 2026-08-21 | APPROVED | Protocol version `MONITORING-PROTOCOL-01` is authoritative and Phase 0 is complete. | Approved by `USER_PROTOCOL_OWNER`; the three controlled-deferred items remain inactive and Phase 1 is authorized. |
+| PB-DEC-011 | 2026-08-22 | APPROVED | Phase 1 scorer parity uses the exact equality rules inherited from Part A golden-fixture evidence. | Qualification must reproduce the frozen scorer; a newly introduced loose tolerance would weaken the established control. |
+| PB-DEC-012 | 2026-08-22 | APPROVED | Phase 1 source-outage work qualifies technical scoring and governance-authorization control states only. | Source-loss performance or drift analysis belongs to later monitoring phases and is not authorized during qualification. |
+| PB-DEC-013 | 2026-08-22 | APPROVED | The phase after approved runtime qualification is Phase 2 reference strategy and snapshot specification, not reference materialization. | Reference definitions require prospective approval before statistics, bins, or snapshots are created. |
+| PB-DEC-014 | 2026-08-22 | APPROVED | Accept and freeze `RUNTIME-QUALIFICATION-01`; Phase 1 is complete. | All technical acceptance checks passed and `USER_PROTOCOL_OWNER` approved the qualification evidence. |
+| PB-DEC-015 | 2026-08-22 | APPROVED | Authorize entry into Phase 2 reference strategy and snapshot specification only. | Reference definitions must be approved before statistics, bins, snapshots, scenarios, or monitoring outputs are materialized. |

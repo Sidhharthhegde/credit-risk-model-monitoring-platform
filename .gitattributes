@@ -1,0 +1,11 @@
+* text=auto eol=lf
+
+*.joblib binary
+*.npz binary
+*.parquet binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.sqlite binary
+*.db binary

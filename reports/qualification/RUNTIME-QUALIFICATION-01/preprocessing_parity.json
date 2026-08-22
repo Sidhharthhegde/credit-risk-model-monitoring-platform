@@ -1,0 +1,16 @@
+{
+  "actual_shape": [
+    64,
+    306
+  ],
+  "comparison_rule": "EXACT_CSR_SHAPE_INDPTR_INDICES_AND_DATA_EQUALITY",
+  "data_exact": true,
+  "expected_shape": [
+    64,
+    306
+  ],
+  "indices_exact": true,
+  "indptr_exact": true,
+  "result": "PASS",
+  "tolerance_used": false
+}

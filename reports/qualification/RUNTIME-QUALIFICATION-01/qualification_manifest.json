@@ -1,0 +1,90 @@
+{
+  "artifact_count": 15,
+  "artifacts": [
+    {
+      "path": "binding_resolution.json",
+      "sha256": "0216a3b4ecbf704b57a7847fdab7d0c61331c99562841ef926d90222f14415e3",
+      "size_bytes": 786
+    },
+    {
+      "path": "artifact_hash_verification.json",
+      "sha256": "da6f4f1a393f2a78db7d8638923bd72c0b6a2079919b9e37e0b9e341c9712359",
+      "size_bytes": 4082
+    },
+    {
+      "path": "runtime_snapshot.json",
+      "sha256": "dae1b2146eb0ebeab13e601c1062aeda013723f4a21a9942e80e996c7a6a45bc",
+      "size_bytes": 1707
+    },
+    {
+      "path": "scoring_contract_qualification.json",
+      "sha256": "6b0b9cd083058280f7726e2b24882a5467d1f8cdf06e29f53142071e470a9ad1",
+      "size_bytes": 2831
+    },
+    {
+      "path": "feature_interface_verification.json",
+      "sha256": "18465f42be7b94435efafd0cde99a75ce04dddfb96f8cc3940c524a664b7f66c",
+      "size_bytes": 298
+    },
+    {
+      "path": "preprocessing_parity.json",
+      "sha256": "a66980ae2540da98f1598d199ca5b43cffb1f2ea155e2c3afbc7ca86e5b7421d",
+      "size_bytes": 278
+    },
+    {
+      "path": "prediction_parity.json",
+      "sha256": "5743f9053968feda3a40ae390fbf5fb6f60cba90e32ff76790cb3e7542985553",
+      "size_bytes": 297
+    },
+    {
+      "path": "threshold_parity.json",
+      "sha256": "96b2a2dab16fb1242d2674a4629c0c160b8777eec08dd9076b458ceb5f28d477",
+      "size_bytes": 407
+    },
+    {
+      "path": "scoring_output_qualification.json",
+      "sha256": "6077a275821f0a0a189a9e2151da2f129df9b909114a76e3f713a976de680a89",
+      "size_bytes": 454
+    },
+    {
+      "path": "source_control_qualification.json",
+      "sha256": "191752cd0b789a73ff81df20b6cb8ef4b84befd8ba4647f50b2166665119d317",
+      "size_bytes": 1312
+    },
+    {
+      "path": "immutability_attestation.json",
+      "sha256": "7f2b493b0750ff2d130b09211bf5265ecc8098f55da0b26f204846f893374bdc",
+      "size_bytes": 402
+    },
+    {
+      "path": "qualification_source_manifest.json",
+      "sha256": "fedeab18c57df37d89127881b73ea1fca628d187c7918b094935e7b6b98b0e44",
+      "size_bytes": 789
+    },
+    {
+      "path": "phase1_acceptance_checklist.csv",
+      "sha256": "2435e7945bc4545f17d62d87366bc7cdf645463ecf33296d613199b6bbbc14be",
+      "size_bytes": 1295
+    },
+    {
+      "path": "phase1_completion_decision.json",
+      "sha256": "d6c062302aca63c87bedfb5286fa566db5ae87b4368c0f3c9571c88b2c4b8598",
+      "size_bytes": 904
+    },
+    {
+      "path": "phase1_approval_record.json",
+      "sha256": "76a7b75610dff01cf16c34df2b54e5c3adffb414c9bb443ecf226a38465f9f11",
+      "size_bytes": 690
+    }
+  ],
+  "approved_by": "USER_PROTOCOL_OWNER",
+  "approval_date": "2026-08-22",
+  "manifest_scope": "APPROVED_IMMUTABLE_PHASE_1_QUALIFICATION_ARTIFACTS",
+  "monitoring_results_included": false,
+  "phase": "PHASE_1",
+  "psi_bins_included": false,
+  "qualification_id": "RUNTIME-QUALIFICATION-01",
+  "reference_statistics_included": false,
+  "scenario_results_included": false,
+  "status": "APPROVED_FROZEN"
+}

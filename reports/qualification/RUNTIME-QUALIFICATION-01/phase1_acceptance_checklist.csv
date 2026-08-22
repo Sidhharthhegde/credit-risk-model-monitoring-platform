@@ -1,0 +1,18 @@
+Check_ID,Requirement,Status,Evidence
+P1-001,Binding parses and resolves,PASS,binding_resolution.json
+P1-002,Part A commit and clean state reconcile,PASS,binding_resolution.json
+P1-003,All governed hashes match,PASS,artifact_hash_verification.json
+P1-004,Frozen model loads and identity reconciles,PASS,runtime_snapshot.json
+P1-005,176 raw feature interface exact,PASS,feature_interface_verification.json
+P1-006,306 encoded feature interface exact,PASS,feature_interface_verification.json
+P1-007,Scoring contract cases pass,PASS,scoring_contract_qualification.json
+P1-008,Golden preprocessing exact,PASS,preprocessing_parity.json
+P1-009,Golden raw probabilities exact,PASS,prediction_parity.json
+P1-010,THRESHOLD-01 and boundary exact,PASS,threshold_parity.json
+P1-011,Full output reconciliation exact,PASS,scoring_output_qualification.json
+P1-012,Source control states pass,PASS,source_control_qualification.json
+P1-013,CND-02 remains open,PASS,source_control_qualification.json
+P1-014,DF-01 and Part A remain unchanged,PASS,immutability_attestation.json
+P1-015,No monitoring calculation executed,PASS,phase1_completion_decision.json
+P1-016,Qualification manifest reconciles,PASS,qualification_manifest.json
+P1-017,Phase 1 reviewed and approved,PASS,phase1_approval_record.json

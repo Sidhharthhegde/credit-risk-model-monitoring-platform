@@ -1,0 +1,23 @@
+{
+  "boundary_actual": [
+    "risk_negative",
+    "risk_positive",
+    "risk_positive"
+  ],
+  "boundary_exact": true,
+  "boundary_expected": [
+    "risk_negative",
+    "risk_positive",
+    "risk_positive"
+  ],
+  "boundary_values": [
+    0.079999,
+    0.08,
+    0.080001
+  ],
+  "golden_class_exact": true,
+  "operator": ">=",
+  "result": "PASS",
+  "threshold_id": "THRESHOLD-01",
+  "threshold_value": 0.08
+}

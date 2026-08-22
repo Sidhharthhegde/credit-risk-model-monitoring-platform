@@ -1,0 +1,11 @@
+{
+  "comparison_rule": "EXACT_FLOAT64_ARRAY_EQUALITY",
+  "expected_count": 64,
+  "explicit_probability_exact": true,
+  "finite_and_bounded": true,
+  "maximum_absolute_difference": 0.0,
+  "pipeline_public_path_exact": true,
+  "prediction_count": 64,
+  "result": "PASS",
+  "tolerance_used": false
+}

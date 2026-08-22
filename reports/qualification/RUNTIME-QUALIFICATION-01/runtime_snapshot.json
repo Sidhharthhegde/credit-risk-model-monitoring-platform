@@ -1,0 +1,62 @@
+{
+  "architecture": "AMD64",
+  "captured_utc": "2026-08-22T06:00:35.698898+00:00",
+  "frozen_part_a_runtime": {
+    "interpret": "NOT_INSTALLED",
+    "joblib": "1.5.3",
+    "lightgbm": "4.7.0",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "python": "3.12.13",
+    "scikit_learn": "1.9.0",
+    "scipy": "1.18.0",
+    "xgboost": "3.3.0"
+  },
+  "frozen_part_a_runtime_source": {
+    "binding_role": "SUPPLEMENTARY_RUNTIME_CONTEXT_NOT_PHASE_0_HASH_GATE",
+    "relative_path": "reports/experiments/step49_development_freeze_v1/model_identity.json",
+    "sha256": "3e5cc65f6be91b8499ac6772f9a106e4bc9d76496324a4e1d2c8c9e39d67ff41"
+  },
+  "implementation": "CPython",
+  "model_identity": {
+    "binary_predictor_count": 29,
+    "categorical_predictor_count": 16,
+    "classifier_classes": [
+      0,
+      1
+    ],
+    "classifier_type": "xgboost.sklearn.XGBClassifier",
+    "encoded_predictor_count": 306,
+    "numeric_predictor_count": 131,
+    "pipeline_steps": [
+      "preprocessor",
+      "model"
+    ],
+    "pipeline_type": "sklearn.pipeline.Pipeline",
+    "positive_class": 1,
+    "preprocessor_type": "sklearn.compose._column_transformer.ColumnTransformer",
+    "probability_representation": "RAW",
+    "raw_predictor_count": 176
+  },
+  "operating_system": "Windows",
+  "packages": {
+    "joblib": "1.5.3",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scikit_learn": "1.9.0",
+    "scipy": "1.18.0",
+    "xgboost": "3.3.0"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.13",
+  "python_version_match": true,
+  "result": "PASS",
+  "version_match": {
+    "joblib": true,
+    "numpy": true,
+    "pandas": true,
+    "scikit_learn": true,
+    "scipy": true,
+    "xgboost": true
+  }
+}

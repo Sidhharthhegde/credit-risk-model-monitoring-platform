@@ -1,0 +1,22 @@
+{
+  "binding_contract": "contracts/part_a_binding.json",
+  "binding_loaded": true,
+  "binding_status": "APPROVED_EXPECTED_BINDING_PENDING_PHASE_1_RUNTIME_VERIFICATION",
+  "development_freeze_id": "DF-01",
+  "git_state": {
+    "commit_match": true,
+    "detail": "CLEAN",
+    "expected_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+    "git_available": true,
+    "observed_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+    "working_tree_clean": true
+  },
+  "model_id": "XGBT-01",
+  "model_version": "xgbt01_raw_threshold01_df_v1",
+  "part_a_root_resolved": true,
+  "part_a_root_source": "PART_A_ROOT",
+  "part_a_workspace_required_mutability": "READ_ONLY",
+  "qualification_id": "RUNTIME-QUALIFICATION-01",
+  "result": "PASS",
+  "sensitive_absolute_path_recorded": false
+}

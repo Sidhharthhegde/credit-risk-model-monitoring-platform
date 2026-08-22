@@ -1,0 +1,103 @@
+{
+  "cases": [
+    {
+      "actual": "ACCEPT",
+      "case": "canonical governed fixture",
+      "detail": "accepted_shape=(64, 176)",
+      "expected": "ACCEPT",
+      "passed": true
+    },
+    {
+      "actual": "ACCEPT",
+      "case": "valid numeric missingness",
+      "detail": "accepted_shape=(1, 176)",
+      "expected": "ACCEPT",
+      "passed": true
+    },
+    {
+      "actual": "ACCEPT",
+      "case": "valid categorical missingness",
+      "detail": "accepted_shape=(1, 176)",
+      "expected": "ACCEPT",
+      "passed": true
+    },
+    {
+      "actual": "ACCEPT",
+      "case": "valid unseen categorical value",
+      "detail": "accepted_shape=(1, 176)",
+      "expected": "ACCEPT",
+      "passed": true
+    },
+    {
+      "actual": "ACCEPT",
+      "case": "reordered columns",
+      "detail": "accepted_shape=(64, 176)",
+      "expected": "ACCEPT",
+      "passed": true
+    },
+    {
+      "actual": "ACCEPT",
+      "case": "historical numeric range is not a hard gate",
+      "detail": "accepted_shape=(64, 176)",
+      "expected": "ACCEPT",
+      "passed": true
+    },
+    {
+      "actual": "REJECT",
+      "case": "missing predictor",
+      "detail": "ScoringContractError: Missing required input columns: ['NAME_CONTRACT_TYPE']",
+      "expected": "REJECT",
+      "passed": true
+    },
+    {
+      "actual": "REJECT",
+      "case": "unexpected predictor",
+      "detail": "ScoringContractError: Unexpected input columns: ['__EXTRA__']",
+      "expected": "REJECT",
+      "passed": true
+    },
+    {
+      "actual": "REJECT",
+      "case": "duplicate predictor",
+      "detail": "ScoringContractError: Scoring input contains duplicate columns",
+      "expected": "REJECT",
+      "passed": true
+    },
+    {
+      "actual": "REJECT",
+      "case": "numeric infinity",
+      "detail": "ScoringContractError: Numeric feature CNT_CHILDREN contains infinity",
+      "expected": "REJECT",
+      "passed": true
+    },
+    {
+      "actual": "REJECT",
+      "case": "binary value outside 0/1",
+      "detail": "ScoringContractError: Binary feature FLAG_EMP_PHONE contains values outside 0/1",
+      "expected": "REJECT",
+      "passed": true
+    },
+    {
+      "actual": "REJECT",
+      "case": "non-string categorical",
+      "detail": "ScoringContractError: Categorical feature NAME_CONTRACT_TYPE contains a non-string value",
+      "expected": "REJECT",
+      "passed": true
+    },
+    {
+      "actual": "REJECT",
+      "case": "duplicate applicant key",
+      "detail": "ScoringContractError: SK_ID_CURR must be complete and unique",
+      "expected": "REJECT",
+      "passed": true
+    },
+    {
+      "actual": "REJECT",
+      "case": "missing applicant key",
+      "detail": "ScoringContractError: SK_ID_CURR must be complete and unique",
+      "expected": "REJECT",
+      "passed": true
+    }
+  ],
+  "result": "PASS"
+}

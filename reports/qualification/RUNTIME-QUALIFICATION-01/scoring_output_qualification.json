@@ -1,0 +1,20 @@
+{
+  "applicant_ids_unique": true,
+  "applicant_order_and_identity_exact": true,
+  "one_output_per_input": true,
+  "part_a_full_golden_output_exact": true,
+  "part_b_contract_fields": [
+    "SK_ID_CURR",
+    "XGBT_RAW_PROBABILITY",
+    "THRESHOLD_ID",
+    "THRESHOLD_VALUE",
+    "RISK_CLASS",
+    "MODEL_ID",
+    "MODEL_VERSION",
+    "DEVELOPMENT_FREEZE_ID",
+    "RUN_ID",
+    "SCORING_TIMESTAMP"
+  ],
+  "probabilities_finite": true,
+  "result": "PASS"
+}

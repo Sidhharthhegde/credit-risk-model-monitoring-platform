@@ -1,0 +1,16 @@
+{
+  "phase": "PHASE_1",
+  "qualification_id": "RUNTIME-QUALIFICATION-01",
+  "review_decision": "APPROVED",
+  "approved_by": "USER_PROTOCOL_OWNER",
+  "approval_date": "2026-08-22",
+  "approval_scope": "PHASE_1_RUNTIME_QUALIFICATION_AND_PHASE_2_ENTRY_AUTHORIZATION_ONLY",
+  "technical_qualification_passed": true,
+  "phase_1_complete": true,
+  "cnd_02_status": "OPEN",
+  "cnd_02_blocks_phase_completion": false,
+  "monitoring_execution_authorized": false,
+  "reference_materialization_authorized": false,
+  "next_phase_authorized": "PHASE_2_REFERENCE_STRATEGY_AND_SNAPSHOT_SPECIFICATION",
+  "pre_approval_manifest_sha256": "34a749c99edf5c5766bc3b8526462d09e50889b7fc6f9275d93fe504b535987b"
+}

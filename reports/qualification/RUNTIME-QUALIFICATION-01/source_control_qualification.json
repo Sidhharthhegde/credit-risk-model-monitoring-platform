@@ -1,0 +1,40 @@
+{
+  "approved_fallback_exists": false,
+  "cnd_02_status": "OPEN",
+  "qualification_scope": "CONTROL_STATE_LOGIC_ONLY_NO_SOURCE_LOSS_PERFORMANCE_ANALYSIS",
+  "result": "PASS",
+  "scenarios": [
+    {
+      "authoritative_operational_completion": false,
+      "cnd_02_status": "OPEN",
+      "control_finding_required": true,
+      "scenario": "technically required source missing",
+      "state": "SOURCE_TECHNICALLY_REQUIRED",
+      "technical_scoring_possible": false
+    },
+    {
+      "authoritative_operational_completion": false,
+      "cnd_02_status": "OPEN",
+      "control_finding_required": true,
+      "scenario": "policy-required source unavailable without fallback",
+      "state": "SOURCE_UNAVAILABLE_NO_APPROVED_FALLBACK",
+      "technical_scoring_possible": true
+    },
+    {
+      "authoritative_operational_completion": true,
+      "cnd_02_status": "OPEN",
+      "control_finding_required": true,
+      "scenario": "partial source degradation",
+      "state": "SOURCE_DEGRADED",
+      "technical_scoring_possible": true
+    },
+    {
+      "authoritative_operational_completion": true,
+      "cnd_02_status": "OPEN",
+      "control_finding_required": false,
+      "scenario": "all governed sources available",
+      "state": "SOURCE_AVAILABLE",
+      "technical_scoring_possible": true
+    }
+  ]
+}

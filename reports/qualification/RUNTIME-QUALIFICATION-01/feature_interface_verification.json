@@ -1,0 +1,12 @@
+{
+  "binary_count": 29,
+  "categorical_count": 16,
+  "encoded_count_expected": 306,
+  "encoded_count_observed": 306,
+  "encoded_names_and_order_exact": true,
+  "numeric_count": 131,
+  "raw_count_expected": 176,
+  "raw_count_observed": 176,
+  "raw_names_and_order_exact": true,
+  "result": "PASS"
+}

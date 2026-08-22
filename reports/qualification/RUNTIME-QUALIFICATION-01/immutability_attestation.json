@@ -1,0 +1,11 @@
+{
+  "calibrator_fitted": false,
+  "fit_called": false,
+  "model_sha256_after": "ab0000a4ae092f0444760839e185384d44f9a9760be298189bdfcd80c67fa500",
+  "model_sha256_before": "ab0000a4ae092f0444760839e185384d44f9a9760be298189bdfcd80c67fa500",
+  "model_unchanged": true,
+  "part_a_working_tree_clean_after": true,
+  "partial_fit_called": false,
+  "set_params_called": false,
+  "threshold_changed": false
+}

@@ -1,0 +1,116 @@
+{
+  "aggregate_results_only": true,
+  "alerts_included": false,
+  "approval_record_included": true,
+  "approved_utc": "2026-08-22T22:40:53.116261+05:30",
+  "artifacts": [
+    {
+      "path": "applicant_grain_results.json",
+      "sha256": "52f994cb23eebacf963c36b9cdccf883d104cf94f8ca09c27e866de61eb25236",
+      "size_bytes": 3715
+    },
+    {
+      "path": "categorical_novelty_results.parquet",
+      "sha256": "fd483110b64f30eb00c2dfe0c4fc69fdc1f69cfa6d1a8a8901dd38ffb8f8547c",
+      "size_bytes": 10989
+    },
+    {
+      "path": "completeness_results.parquet",
+      "sha256": "3a9ef422cc1a9b7cdd8ce631196d95214cddc18bf52c57819de3e8caf1b3f107",
+      "size_bytes": 20106
+    },
+    {
+      "path": "conditional_remediation_hash_reconciliation.json",
+      "sha256": "24fe60e04f8529363d8ca2102d8d54f67f541fbf3325c573d8b115cb9cc63817",
+      "size_bytes": 5757
+    },
+    {
+      "path": "control_registry.json",
+      "sha256": "ec6752ebcd9a0f5c70f20442177d6b14001876ecc5c5ef78a46ebf991e96f97a",
+      "size_bytes": 3220
+    },
+    {
+      "path": "execution_source_manifest.json",
+      "sha256": "7d67a4cf1334705d797200bd2df58dfbfe30907e1394b540af8e19df5b33a464",
+      "size_bytes": 1290
+    },
+    {
+      "path": "hard_gate_qualification.json",
+      "sha256": "9d3fbfd2f794380bbc1dc6b22f520ed33099c686068b3edb25ba401334ec79d5",
+      "size_bytes": 931
+    },
+    {
+      "path": "lineage_immutability_attestation.json",
+      "sha256": "7a30d73be385a118a1978e539998f394ec35815135eb43821a0c4dc1accf802a",
+      "size_bytes": 200
+    },
+    {
+      "path": "monitoring_run_manifest.json",
+      "sha256": "07e562f5f1b132ac498ce1a65cda673e79f2cbef6c353351ea16a6ec3e13e66a",
+      "size_bytes": 7562
+    },
+    {
+      "path": "phase6_acceptance_checklist.csv",
+      "sha256": "eb3f57fd2c4dd256ec058168659249390cc3ba241fe48e615f50ead3ae653673",
+      "size_bytes": 1371
+    },
+    {
+      "path": "phase6_approval_record.json",
+      "sha256": "3b371502379eb3546957a99abd13acc4f22586b2d54efd53ad5fcdc643579dce",
+      "size_bytes": 691
+    },
+    {
+      "path": "phase6_completion_decision.json",
+      "sha256": "0c793a86a503d1ecc4f393f491b53381fe79e3e3f1066444ec86b1e509e575ce",
+      "size_bytes": 1079
+    },
+    {
+      "path": "reconciliation_results.json",
+      "sha256": "665fb717978d8cf7bdb0f48c355c158c85a6991633580e08b1c8b71f8a5912f2",
+      "size_bytes": 2729
+    },
+    {
+      "path": "reference_range_diagnostics.parquet",
+      "sha256": "78cceacfb16234232d8980e3f32c0b1973a00a3a3e6b34022c21c63137740dc5",
+      "size_bytes": 11949
+    },
+    {
+      "path": "reproducibility_qualification.json",
+      "sha256": "811fa9a885fcef8705fbf298aa88b93dd8d24e90f021be3f496c547a88baaa93",
+      "size_bytes": 6753
+    },
+    {
+      "path": "scenario_control_summary.csv",
+      "sha256": "dffc69c520cc4a49339c8953ac72ae6695203466e27f2361ccfea1efbe44b4b8",
+      "size_bytes": 1284
+    },
+    {
+      "path": "schema_control_results.json",
+      "sha256": "3713bc502ab104a8c20213b68e313fbb7e2513dd2d70b1e124c00159e70d43f8",
+      "size_bytes": 4752
+    },
+    {
+      "path": "scope_protection_attestation.json",
+      "sha256": "2efd55d0a583444cc329524f9a700df97895ed419c8fc07414ae26f07e3df193",
+      "size_bytes": 417
+    },
+    {
+      "path": "source_control_results.json",
+      "sha256": "564d7384900eeed36883a6f0785207a7cbe9b2a9b0b91ecad60f9da55b402a27",
+      "size_bytes": 11774
+    },
+    {
+      "path": "validity_results.parquet",
+      "sha256": "f0a0434eee803b44be00f0a5864a88ae6595fc4eb37e9751beae1cb9c163b420",
+      "size_bytes": 12075
+    }
+  ],
+  "control_id": "DATA-QUALITY-CONTROL-01",
+  "created_utc": "2026-08-22T22:39:29.877026+05:30",
+  "dq_metric_artifacts_unchanged_during_remediation": true,
+  "phase5_scenario_artifacts_unchanged": true,
+  "pre_approval_candidate_manifest_sha256": "7328eff39973b72f68c85e5803c12e91e44d96386f67e7073c9e8d159ad5308e",
+  "row_level_offenders_included": false,
+  "status": "APPROVED_FROZEN",
+  "conditional_review_candidate_manifest_sha256": "b573494f1ea4b5cf3d22de82972b0c3b71c5d165aa35795759362f974a5afe2f"
+}

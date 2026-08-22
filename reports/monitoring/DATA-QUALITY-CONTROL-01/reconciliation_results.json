@@ -1,0 +1,84 @@
+{
+  "results": [
+    {
+      "accepted_unique_applicant_count": 8124,
+      "artifact_id": "SIM-M01-SCENARIO-01",
+      "expected_row_count": 8124,
+      "observed_row_count": 8124,
+      "reason": "EXACT_EXPECTED_COHORT_RECONCILIATION",
+      "result": "PASS",
+      "run_id": "DQ-RUN-SIM-M01-SCENARIO-01-01",
+      "scenario_id": "SIM-M01"
+    },
+    {
+      "accepted_unique_applicant_count": 8124,
+      "artifact_id": "SIM-M02-SCENARIO-01",
+      "expected_row_count": 8124,
+      "observed_row_count": 8124,
+      "reason": "EXACT_EXPECTED_COHORT_RECONCILIATION",
+      "result": "PASS",
+      "run_id": "DQ-RUN-SIM-M02-SCENARIO-01-01",
+      "scenario_id": "SIM-M02"
+    },
+    {
+      "accepted_unique_applicant_count": 8124,
+      "artifact_id": "SIM-M03-SCENARIO-01",
+      "expected_row_count": 8124,
+      "observed_row_count": 8124,
+      "reason": "EXACT_EXPECTED_COHORT_RECONCILIATION",
+      "result": "PASS",
+      "run_id": "DQ-RUN-SIM-M03-SCENARIO-01-01",
+      "scenario_id": "SIM-M03"
+    },
+    {
+      "accepted_unique_applicant_count": 8124,
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "expected_row_count": 8124,
+      "observed_row_count": 8124,
+      "reason": "EXACT_EXPECTED_COHORT_RECONCILIATION",
+      "result": "PASS",
+      "run_id": "DQ-RUN-SIM-M04-SCENARIO-01-01",
+      "scenario_id": "SIM-M04"
+    },
+    {
+      "accepted_unique_applicant_count": 8124,
+      "artifact_id": "SIM-M05-VALID-DEGRADED-01",
+      "expected_row_count": 8124,
+      "observed_row_count": 8124,
+      "reason": "EXACT_EXPECTED_COHORT_RECONCILIATION",
+      "result": "PASS",
+      "run_id": "DQ-RUN-SIM-M05-VALID-DEGRADED-01-01",
+      "scenario_id": "SIM-M05"
+    },
+    {
+      "accepted_unique_applicant_count": 8124,
+      "artifact_id": "SIM-M06-SCENARIO-01",
+      "expected_row_count": 8124,
+      "observed_row_count": 8124,
+      "reason": "EXACT_EXPECTED_COHORT_RECONCILIATION",
+      "result": "PASS",
+      "run_id": "DQ-RUN-SIM-M06-SCENARIO-01-01",
+      "scenario_id": "SIM-M06"
+    },
+    {
+      "accepted_unique_applicant_count": 8124,
+      "artifact_id": "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+      "expected_row_count": 8124,
+      "observed_row_count": 8124,
+      "reason": "EXACT_EXPECTED_COHORT_RECONCILIATION",
+      "result": "PASS",
+      "run_id": "DQ-RUN-SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01-01",
+      "scenario_id": "SIM-M05"
+    },
+    {
+      "accepted_unique_applicant_count": 8124,
+      "artifact_id": "SIM-M05-HARD-FAIL-01",
+      "expected_row_count": 8124,
+      "observed_row_count": 8125,
+      "reason": "HARD_SCHEMA_OR_GRAIN_FAILURE_TAKES_PRECEDENCE",
+      "result": "FAIL",
+      "run_id": "DQ-RUN-SIM-M05-HARD-FAIL-01-01",
+      "scenario_id": "SIM-M05"
+    }
+  ]
+}

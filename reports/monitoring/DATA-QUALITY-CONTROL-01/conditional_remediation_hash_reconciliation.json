@@ -1,0 +1,114 @@
+{
+  "all_dq_metric_artifacts_unchanged": true,
+  "all_phase5_local_manifests_unchanged": true,
+  "conditional_review_candidate_manifest_sha256": "b573494f1ea4b5cf3d22de82972b0c3b71c5d165aa35795759362f974a5afe2f",
+  "dq_metric_artifacts": {
+    "categorical_novelty_results.parquet": {
+      "post_remediation_sha256": "fd483110b64f30eb00c2dfe0c4fc69fdc1f69cfa6d1a8a8901dd38ffb8f8547c",
+      "pre_remediation_sha256": "fd483110b64f30eb00c2dfe0c4fc69fdc1f69cfa6d1a8a8901dd38ffb8f8547c",
+      "unchanged": true
+    },
+    "completeness_results.parquet": {
+      "post_remediation_sha256": "3a9ef422cc1a9b7cdd8ce631196d95214cddc18bf52c57819de3e8caf1b3f107",
+      "pre_remediation_sha256": "3a9ef422cc1a9b7cdd8ce631196d95214cddc18bf52c57819de3e8caf1b3f107",
+      "unchanged": true
+    },
+    "reference_range_diagnostics.parquet": {
+      "post_remediation_sha256": "78cceacfb16234232d8980e3f32c0b1973a00a3a3e6b34022c21c63137740dc5",
+      "pre_remediation_sha256": "78cceacfb16234232d8980e3f32c0b1973a00a3a3e6b34022c21c63137740dc5",
+      "unchanged": true
+    },
+    "validity_results.parquet": {
+      "post_remediation_sha256": "f0a0434eee803b44be00f0a5864a88ae6595fc4eb37e9751beae1cb9c163b420",
+      "pre_remediation_sha256": "f0a0434eee803b44be00f0a5864a88ae6595fc4eb37e9751beae1cb9c163b420",
+      "unchanged": true
+    }
+  },
+  "phase5_local_manifests": {
+    "COHORT-ASSIGNMENT-01": {
+      "actual_sha256": "8d143efc9f68ac7439a94c908ab8a8f570ee835b80d7b0b5755b97da02f6f86e",
+      "expected_sha256": "8d143efc9f68ac7439a94c908ab8a8f570ee835b80d7b0b5755b97da02f6f86e",
+      "unchanged": true
+    },
+    "bases/SIM-M01-BASE-01": {
+      "actual_sha256": "fdc2f400c8787a9c8bf530d1ecdbba10ec4bf6afd4b4dac0c3d6fe746fd9dd39",
+      "expected_sha256": "fdc2f400c8787a9c8bf530d1ecdbba10ec4bf6afd4b4dac0c3d6fe746fd9dd39",
+      "unchanged": true
+    },
+    "bases/SIM-M02-BASE-01": {
+      "actual_sha256": "0904a2de80ad991cb12426ee202f143017e87122f6bc54070ce67186b5bd9cbb",
+      "expected_sha256": "0904a2de80ad991cb12426ee202f143017e87122f6bc54070ce67186b5bd9cbb",
+      "unchanged": true
+    },
+    "bases/SIM-M03-BASE-01": {
+      "actual_sha256": "537a0675cd31abeb4a027e06f3df2ead11151f4d939b4fd3af106b29e73c6e3a",
+      "expected_sha256": "537a0675cd31abeb4a027e06f3df2ead11151f4d939b4fd3af106b29e73c6e3a",
+      "unchanged": true
+    },
+    "bases/SIM-M04-BASE-01": {
+      "actual_sha256": "4abcf0354fec0be174506ef5157b61e641eb158d272c30d5d12cc022534e4de2",
+      "expected_sha256": "4abcf0354fec0be174506ef5157b61e641eb158d272c30d5d12cc022534e4de2",
+      "unchanged": true
+    },
+    "bases/SIM-M05-BASE-01": {
+      "actual_sha256": "9b32b631ed1afc78c0fc9bc439174e26b3dc61f5eea44329fb1380df03a26085",
+      "expected_sha256": "9b32b631ed1afc78c0fc9bc439174e26b3dc61f5eea44329fb1380df03a26085",
+      "unchanged": true
+    },
+    "bases/SIM-M06-BASE-01": {
+      "actual_sha256": "fc6d0bf14566a89775d3098f65bb300cabfc8e716ac67a0191af3d15f23d3762",
+      "expected_sha256": "fc6d0bf14566a89775d3098f65bb300cabfc8e716ac67a0191af3d15f23d3762",
+      "unchanged": true
+    },
+    "outcomes/SIM-M06-SYNTHETIC-OUTCOMES-01": {
+      "actual_sha256": "03855cf310b1308f38c72b08082f5d347f92fe556570d0e996f41025d44c2abc",
+      "expected_sha256": "03855cf310b1308f38c72b08082f5d347f92fe556570d0e996f41025d44c2abc",
+      "unchanged": true
+    },
+    "scenarios/SIM-M01-SCENARIO-01": {
+      "actual_sha256": "519693004f6b83c28298345414256105d62565c99872bb6501a6210777aed3d1",
+      "expected_sha256": "519693004f6b83c28298345414256105d62565c99872bb6501a6210777aed3d1",
+      "unchanged": true
+    },
+    "scenarios/SIM-M02-SCENARIO-01": {
+      "actual_sha256": "dc8d53619d7c7211b73756e599a4934b1303a9bec1f13ff648e1fef5771b37dc",
+      "expected_sha256": "dc8d53619d7c7211b73756e599a4934b1303a9bec1f13ff648e1fef5771b37dc",
+      "unchanged": true
+    },
+    "scenarios/SIM-M03-SCENARIO-01": {
+      "actual_sha256": "69ef41174d2553851bb84bdb76f8456ddb0e9d9fc956d31e47852331f705a13e",
+      "expected_sha256": "69ef41174d2553851bb84bdb76f8456ddb0e9d9fc956d31e47852331f705a13e",
+      "unchanged": true
+    },
+    "scenarios/SIM-M04-SCENARIO-01": {
+      "actual_sha256": "4426e505e873acd9d7412580424b60909d65feab8f2deba7ee9cda5ed42865d7",
+      "expected_sha256": "4426e505e873acd9d7412580424b60909d65feab8f2deba7ee9cda5ed42865d7",
+      "unchanged": true
+    },
+    "scenarios/SIM-M05-VALID-DEGRADED-01": {
+      "actual_sha256": "a3f143e6f56a0152974ff56153e455bec433448ece4e51c040b4ee1efe321192",
+      "expected_sha256": "a3f143e6f56a0152974ff56153e455bec433448ece4e51c040b4ee1efe321192",
+      "unchanged": true
+    },
+    "scenarios/SIM-M06-SCENARIO-01": {
+      "actual_sha256": "e3bab18dc72e0e63a0193aac04f273ceb3f507f96edbf22f544b2bab2f2ef801",
+      "expected_sha256": "e3bab18dc72e0e63a0193aac04f273ceb3f507f96edbf22f544b2bab2f2ef801",
+      "unchanged": true
+    },
+    "variants/SIM-M05-HARD-FAIL-01": {
+      "actual_sha256": "62f5222ac6aa8f6a65d06adeebbefe58a7e46ef78e32e756f4e500845f7c15b5",
+      "expected_sha256": "62f5222ac6aa8f6a65d06adeebbefe58a7e46ef78e32e756f4e500845f7c15b5",
+      "unchanged": true
+    },
+    "variants/SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01": {
+      "actual_sha256": "fc8c028a62578063aa33e170d36794108c85d05ce86d922df2c179c9c17dc84d",
+      "expected_sha256": "fc8c028a62578063aa33e170d36794108c85d05ce86d922df2c179c9c17dc84d",
+      "unchanged": true
+    }
+  },
+  "phase5_manifest_sha256": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5",
+  "pre_approval_candidate_manifest_sha256": "7328eff39973b72f68c85e5803c12e91e44d96386f67e7073c9e8d159ad5308e",
+  "remediation_scope": "CONTROL_CONTRACT_AND_EVIDENCE_TAXONOMY_ONLY",
+  "result": "PASS",
+  "scenario_data_or_semantic_content_modified": false
+}

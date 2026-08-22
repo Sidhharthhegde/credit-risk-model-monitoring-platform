@@ -1,0 +1,31 @@
+{
+  "approval_finalizer_included": true,
+  "control_id": "DATA-QUALITY-CONTROL-01",
+  "creation_code_version": "PHASE6-DATA-QUALITY-MONITOR-0.1.0",
+  "implementation_sources": [
+    {
+      "path": "contracts/data_quality_monitoring_contract.json",
+      "sha256": "127200176c99836d32934dcefaccc5437d4c39dd5922c39882e724c9648470a9"
+    },
+    {
+      "path": "src/credit_risk_monitoring/data_quality/engine.py",
+      "sha256": "a640f39f283ac01723e57b69e2e9ba228fcfd617da528c648fb0368b697f5745"
+    },
+    {
+      "path": "src/credit_risk_monitoring/data_quality/__init__.py",
+      "sha256": "63bafb109cdf08482b043f9bd93b2cdb15a5ee41032bf9c8d12b391dc38066f8"
+    },
+    {
+      "path": "scripts/run_phase6_monitoring.py",
+      "sha256": "e15c6099c2f8e660e621f74fcd73fdd73ed332b1cbc039fb663053847f2aa077"
+    },
+    {
+      "path": "scripts/finalize_phase6_approval.py",
+      "sha256": "b2f2b3e26c4ad3631db584e0b97c49c8e86f51ab038d935aec1ce567b959b21f"
+    }
+  ],
+  "part_a_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+  "part_b_base_commit": "7ec034a373ec6ccb337fdb3c23cf357c9289e158",
+  "phase4_manifest_sha256": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
+  "phase5_manifest_sha256": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5"
+}

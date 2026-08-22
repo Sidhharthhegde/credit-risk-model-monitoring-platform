@@ -1,0 +1,15 @@
+{
+  "alert_creation": false,
+  "all_prohibited_calculations_remained_false": true,
+  "calibration": false,
+  "categorical_chi_square": false,
+  "feature_psi": false,
+  "numeric_ks": false,
+  "overall_model_health": false,
+  "performance": false,
+  "row_level_offenders_persisted": false,
+  "score_monitoring": false,
+  "subpopulation_monitoring": false,
+  "synthetic_outcomes_loaded": false,
+  "wasserstein": false
+}

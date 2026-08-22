@@ -22,6 +22,9 @@
 | `src/credit_risk_monitoring/simulation/` | 0.1.0 | Implemented and tested | Deterministic assignment, scenario transformation, source degradation and synthetic-outcome generation |
 | `reports/simulation/SIMULATION-SCENARIO-SET-01/` | 0.1.0 | Approved and frozen | Sanitized Phase 5 construction and integrity evidence; no applicant-level data or monitoring results |
 | `artifacts/simulation_scenarios/SIMULATION-SCENARIO-SET-01/` | 0.1.0 | Local-only, approved and frozen | Restricted cohort, scenario, diagnostic and synthetic-outcome Parquet artifacts; ignored by Git |
+| `contracts/data_quality_monitoring_contract.json` | 0.1.0 | Approved and frozen | Phase 6 control registry, threshold bindings, governed source-control roles, result vocabularies and scope barriers |
+| `src/credit_risk_monitoring/data_quality/` | 0.1.0 | Implemented and tested | Reusable read-only schema, grain, completeness, validity, novelty, range, source and reconciliation engine |
+| `reports/monitoring/DATA-QUALITY-CONTROL-01/` | 0.1.0 | Approved and frozen | Aggregate Phase 6 monitoring evidence with no row-level offenders, alerts or drift results |
 | `configs/model_config.yaml` | 0.1.0 | Approved and frozen | Semantic model metadata referencing the binding |
 | `configs/monitoring_config.yaml` | 0.1.0 | Approved and frozen | Monitoring scope and execution policy |
 | `configs/alert_thresholds.yaml` | 0.1.0 | Approved and frozen | Project-defined alert assumptions |

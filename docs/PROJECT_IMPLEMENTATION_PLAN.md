@@ -1683,8 +1683,8 @@ Update this table only when supported by a phase completion decision.
 | 3 | `COMPLETE` | `reports/adapter/FEATURE-ADAPTER-QUALIFICATION-01/phase3_completion_decision.json` | Conditional review blocker resolved; approved and frozen on 2026-08-22 |
 | 4 | `COMPLETE` | `reports/reference/REFERENCE-MATERIALIZATION-01/phase4_completion_decision.json` | Approved and frozen on 2026-08-22 |
 | 5 | `COMPLETE` | `reports/simulation/SIMULATION-SCENARIO-SET-01/phase5_completion_decision.json` | Conditional blocker resolved; approved and frozen on 2026-08-22 |
-| 6 | `NOT_STARTED` | Not issued |  |
-| 7 | `NOT_STARTED` | Not issued |  |
+| 6 | `COMPLETE` | `reports/monitoring/DATA-QUALITY-CONTROL-01/phase6_completion_decision.json` | Conditional source-role blocker resolved; approved and frozen on 2026-08-22 |
+| 7 | `NOT_STARTED` | Not issued | Feature and population drift monitoring authorized; execution has not started |
 | 8 | `NOT_STARTED` | Not issued |  |
 | 9 | `NOT_STARTED` | Not issued |  |
 | 10 | `NOT_STARTED` | Not issued |  |
@@ -1709,21 +1709,13 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next authorized work is Phase 5 simulated cohort and scenario generation:
+The next authorized work is Phase 7 feature and population drift monitoring:
 
-1. Use frozen `APPLICATION-TEST-BASE-01` as the sole cohort parent.
-2. Create six deterministic, balanced, disjoint and exhaustive simulated cohorts.
-3. Resolve the remaining governance choices through a protocol amendment before their alert logic is activated:
-   - Exact AUC deterioration limits.
-   - Exact Brier deterioration limits.
-   - O/E warning and critical ranges.
-   - Boundary-density window around `0.080`.
-   - Critical-feature and critical-source definitions.
-   - Repeat-breach escalation timing.
-   - Overall-health aggregation.
-   - Whether optional monitoring score bands will be used.
-4. Materialize pristine bases before applying scenario transformations.
-5. Keep valid scenarios, hard-fail fixtures, source-loss diagnostics and synthetic outcomes separate.
-6. Do not calculate monitoring metrics, severities, alerts or model-health status in Phase 5.
+1. Review and freeze the Phase 7 execution contract before calculating drift.
+2. Consume only Phase 6 artifacts with `downstream_monitoring_eligible = true`.
+3. Apply the frozen Phase 4 numeric and categorical bins without period-specific rebucketing.
+4. Keep effect-size statistics distinct from p-value diagnostics; p-values cannot independently trigger severity.
+5. Preserve Phase 6 DQ findings alongside drift evidence rather than suppressing valid cohorts with DIRECT findings.
+6. Do not calculate score, performance, calibration, subgroup, alert or overall-health results in Phase 7.
 
-No current-versus-reference statistics, monitoring scenarios, drift calculations, monitoring alerts or model-health decisions may be executed before these actions are complete.
+Phase 7 is authorized but not yet executed.

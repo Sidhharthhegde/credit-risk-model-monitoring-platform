@@ -1,0 +1,17 @@
+{
+  "actual_dq_findings_changed": false,
+  "approved_utc": "2026-08-22T17:10:53.116261+00:00",
+  "cnd_02_status": "OPEN",
+  "conditional_review_candidate_manifest_sha256": "b573494f1ea4b5cf3d22de82972b0c3b71c5d165aa35795759362f974a5afe2f",
+  "conditional_blocker": "COMPOSITE_SOURCE_CONTROL_ROLE",
+  "control_id": "DATA-QUALITY-CONTROL-01",
+  "decision": "APPROVED",
+  "next_phase_authorized": "PHASE_7_FEATURE_AND_POPULATION_DRIFT_MONITORING",
+  "phase": "PHASE_6",
+  "remediation": {
+    "authority_control_id": "DQ-SOURCE-AUTHORITY-01",
+    "authority_control_role": "HARD_GATE",
+    "availability_control_id": "DQ-SOURCE-AVAILABILITY-01",
+    "availability_control_role": "DIRECT"
+  }
+}

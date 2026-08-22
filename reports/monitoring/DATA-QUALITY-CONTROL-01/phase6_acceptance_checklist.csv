@@ -1,0 +1,22 @@
+control_id,control,result
+P6-001,Governed DQ contract and reusable engine exist,PASS
+P6-002,Controls have stable IDs roles and references,PASS
+P6-003,Only approved missingness and unseen thresholds consumed,PASS
+P6-004,Alert generation disabled,PASS
+P6-005,Exact schema and applicant grain checked,PASS
+P6-006,M05 hard-fail rejected before feature controls,PASS
+P6-007,Missingness generated for all 176 features on eligible runs,PASS
+P6-008,Binary missingness is contract-invalid,PASS
+P6-009,Numeric categorical and binary validity checked,PASS
+P6-010,Finite reference-range excursions remain supporting diagnostics,PASS
+P6-011,Unseen categories measured rather than rejected,PASS
+P6-012,Source availability uses DIRECT control DQ-SOURCE-AVAILABILITY-01,PASS
+P6-013,Source authority uses HARD_GATE control DQ-SOURCE-AUTHORITY-01,PASS
+P6-014,M05 source diagnostic is technically valid but non-authoritative,PASS
+P6-015,M01 through M04 valid shifts are not contract failures,PASS
+P6-016,M06 outcomes were not loaded,PASS
+P6-017,All DQ results bind exact scenario hashes,PASS
+P6-018,Repeated execution is semantically reproducible,PASS
+P6-019,Phases 0 through 5 and Part A remain unchanged,PASS
+P6-020,No drift score performance calibration subgroup alert or health result generated,PASS
+P6-021,Protocol owner approved Phase 6 after source-control taxonomy remediation,PASS

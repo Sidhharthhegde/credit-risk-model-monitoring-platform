@@ -1,0 +1,70 @@
+{
+  "control_id": "DATA-QUALITY-CONTROL-01",
+  "version": "0.1.0",
+  "status": "APPROVED_FROZEN",
+  "scope": "DATA_QUALITY_AND_INPUT_CONTROL_ONLY",
+  "scenario_set_id": "SIMULATION-SCENARIO-SET-01",
+  "scenario_set_manifest_sha256": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5",
+  "feature_reference_id": "FEATURE-REF-01",
+  "reference_materialization_manifest_sha256": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
+  "feature_schema_sha256": "42b964e22ef753d6ff67ea5b9625ab035a74854d24c8b9cec2527b40df19cae9",
+  "threshold_binding": {
+    "source": "configs/alert_thresholds.yaml",
+    "source_sha256": "987373af8b91f5cbfe5dbaaea829bd122d64ad41e9dc32e6084eb5ef5856d331",
+    "classification": "PROJECT_DEFINED_GOVERNANCE_ASSUMPTIONS_NOT_REGULATORY_REQUIREMENTS",
+    "missing_rate_absolute_change": {"warning": 0.02, "critical": 0.05},
+    "unknown_category_share": {"warning": 0.01, "critical": 0.05},
+    "phase_6_alert_generation_enabled": false
+  },
+  "metric_registry_binding": {
+    "source": "configs/metric_registry.csv",
+    "source_sha256": "f0c232aae9da0bc78bd0354a7e81e9203255d415b80f760ae396aba6a45e782c"
+  },
+  "controls": [
+    {"control_id": "DQ-SCHEMA-01", "metric_id": "DQ-03", "control_family": "SCHEMA", "reference_id": "NOT_APPLICABLE_CONTRACT_ONLY", "control_role": "HARD_GATE", "severity_enabled": true, "alert_enabled": false},
+    {"control_id": "DQ-IDENTIFIER-01", "metric_id": "DQ-02", "control_family": "APPLICANT_GRAIN", "reference_id": "NOT_APPLICABLE_CONTRACT_ONLY", "control_role": "HARD_GATE", "severity_enabled": true, "alert_enabled": false},
+    {"control_id": "DQ-ROW-RECONCILIATION-01", "metric_id": "DQ-02", "control_family": "RECONCILIATION", "reference_id": "NOT_APPLICABLE_CONTRACT_ONLY", "control_role": "HARD_GATE", "severity_enabled": true, "alert_enabled": false},
+    {"control_id": "DQ-MISSINGNESS-01", "metric_id": "DQ-01", "control_family": "COMPLETENESS", "reference_id": "FEATURE-REF-01", "control_role": "DIRECT", "severity_enabled": true, "alert_enabled": false},
+    {"control_id": "DQ-NUMERIC-VALIDITY-01", "metric_id": "DQ-03", "control_family": "NUMERIC_VALIDITY", "reference_id": "NOT_APPLICABLE_CONTRACT_ONLY", "control_role": "HARD_GATE", "severity_enabled": true, "alert_enabled": false},
+    {"control_id": "DQ-REFERENCE-RANGE-01", "metric_id": "DQ-RANGE-01", "control_family": "REFERENCE_RANGE", "reference_id": "FEATURE-REF-01", "control_role": "SUPPORTING", "severity_enabled": false, "alert_enabled": false},
+    {"control_id": "DQ-CATEGORICAL-TYPE-01", "metric_id": "DQ-03", "control_family": "CATEGORICAL_VALIDITY", "reference_id": "NOT_APPLICABLE_CONTRACT_ONLY", "control_role": "HARD_GATE", "severity_enabled": true, "alert_enabled": false},
+    {"control_id": "DQ-CATEGORICAL-NOVELTY-01", "metric_id": "DQ-UNSEEN-01", "control_family": "CATEGORICAL_NOVELTY", "reference_id": "FEATURE-REF-01", "control_role": "DIRECT", "severity_enabled": true, "alert_enabled": false},
+    {"control_id": "DQ-BINARY-VALIDITY-01", "metric_id": "DQ-03", "control_family": "BINARY_VALIDITY", "reference_id": "NOT_APPLICABLE_CONTRACT_ONLY", "control_role": "HARD_GATE", "severity_enabled": true, "alert_enabled": false},
+    {"control_id": "DQ-SOURCE-AVAILABILITY-01", "metric_id": "DQ-04", "control_family": "SOURCE_AVAILABILITY", "reference_id": "NOT_APPLICABLE_SOURCE_CONTEXT", "control_role": "DIRECT", "severity_enabled": false, "alert_enabled": false},
+    {"control_id": "DQ-SOURCE-AUTHORITY-01", "metric_id": "DQ-04", "control_family": "SOURCE_AUTHORITY", "reference_id": "NOT_APPLICABLE_SOURCE_CONTEXT", "control_role": "HARD_GATE", "severity_enabled": true, "alert_enabled": false}
+  ],
+  "result_vocabulary": {
+    "contract_status": ["PASS", "FAIL"],
+    "source_availability_result": ["PASS", "FINDING"],
+    "source_authority_gate_result": ["PASS", "FAIL"],
+    "source_authority_status": ["AUTHORITATIVE", "NON_AUTHORITATIVE"],
+    "evidence_status": ["ELIGIBLE", "NOT_ASSESSABLE"],
+    "severity": ["NORMAL", "WARNING", "CRITICAL", "N/A"],
+    "dq_control_decision": ["PASS", "PASS_WITH_FINDINGS", "NON_AUTHORITATIVE", "HARD_FAIL"]
+  },
+  "processing_policy": {
+    "read_only": true,
+    "input_repair_permitted": false,
+    "imputation_permitted": false,
+    "row_dropping_permitted": false,
+    "deduplication_permitted": false,
+    "category_replacement_permitted": false,
+    "winsorization_permitted": false,
+    "hard_schema_or_grain_failure_blocks_feature_controls": true,
+    "hard_failure_blocks_downstream_monitoring": true,
+    "synthetic_outcome_loading_permitted": false,
+    "row_level_offender_persistence_permitted": false
+  },
+  "scope_protection": {
+    "feature_psi": false,
+    "numeric_ks": false,
+    "wasserstein": false,
+    "categorical_chi_square": false,
+    "score_monitoring": false,
+    "performance": false,
+    "calibration": false,
+    "subpopulation_monitoring": false,
+    "alert_creation": false,
+    "overall_model_health": false
+  }
+}

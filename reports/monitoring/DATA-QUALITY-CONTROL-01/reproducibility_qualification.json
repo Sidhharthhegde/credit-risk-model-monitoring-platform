@@ -1,0 +1,134 @@
+{
+  "all_equal": true,
+  "result": "PASS",
+  "runs": [
+    {
+      "artifact_id": "SIM-M01-SCENARIO-01",
+      "equal": true,
+      "first": {
+        "completeness": "b914a788fb26078017d02f69b1c34535d9ba77b395cfcf319753b8b4b0a5f788",
+        "novelty": "d4073896cf743721c84fdcf6d99a95d5024678d48d59bba0a4a8ecdf46d66762",
+        "ranges": "7b9c79725341a67b10af9af78701629ad41069120d76c0c00c54e239cc290af3",
+        "validity": "df4931f75c33888849795458f3271d04f5596b582f0cb2893d3c508343370fc3"
+      },
+      "second": {
+        "completeness": "b914a788fb26078017d02f69b1c34535d9ba77b395cfcf319753b8b4b0a5f788",
+        "novelty": "d4073896cf743721c84fdcf6d99a95d5024678d48d59bba0a4a8ecdf46d66762",
+        "ranges": "7b9c79725341a67b10af9af78701629ad41069120d76c0c00c54e239cc290af3",
+        "validity": "df4931f75c33888849795458f3271d04f5596b582f0cb2893d3c508343370fc3"
+      }
+    },
+    {
+      "artifact_id": "SIM-M02-SCENARIO-01",
+      "equal": true,
+      "first": {
+        "completeness": "7ee0d3d4409fe91a933843a22d42b61d60f35a74e177693239b35b675f3ef9da",
+        "novelty": "4e6e3cc90cde81a026d14290bc20a04c93229559d02e16ee5ed23fb8dc97ea4f",
+        "ranges": "4d2b0e0349b53d0bf8b94e1bff2732fc12214402d42d5bb0451b879bc9988724",
+        "validity": "1c716c93e95afd6fe83af23de634d61b32ccceea69f3f63ebfadc686e8c40338"
+      },
+      "second": {
+        "completeness": "7ee0d3d4409fe91a933843a22d42b61d60f35a74e177693239b35b675f3ef9da",
+        "novelty": "4e6e3cc90cde81a026d14290bc20a04c93229559d02e16ee5ed23fb8dc97ea4f",
+        "ranges": "4d2b0e0349b53d0bf8b94e1bff2732fc12214402d42d5bb0451b879bc9988724",
+        "validity": "1c716c93e95afd6fe83af23de634d61b32ccceea69f3f63ebfadc686e8c40338"
+      }
+    },
+    {
+      "artifact_id": "SIM-M03-SCENARIO-01",
+      "equal": true,
+      "first": {
+        "completeness": "f2842c4a0a95e82e144adc956537f14a5a59e64310d88ae48edd1ae5fbb50e30",
+        "novelty": "f1460fbb0d1d65cf0ef9da4255c48ec444a3273422bcb692271d5a859de055e7",
+        "ranges": "f7431a24a9a42d9f9e91d4b094818bc8d750f10de71b5c145ff04ff2f575939e",
+        "validity": "1fc11045349de83a114d3f720f7050e48defa58bc6262e9fd8ba8e76ff453c50"
+      },
+      "second": {
+        "completeness": "f2842c4a0a95e82e144adc956537f14a5a59e64310d88ae48edd1ae5fbb50e30",
+        "novelty": "f1460fbb0d1d65cf0ef9da4255c48ec444a3273422bcb692271d5a859de055e7",
+        "ranges": "f7431a24a9a42d9f9e91d4b094818bc8d750f10de71b5c145ff04ff2f575939e",
+        "validity": "1fc11045349de83a114d3f720f7050e48defa58bc6262e9fd8ba8e76ff453c50"
+      }
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "equal": true,
+      "first": {
+        "completeness": "38fa20e9ca4d682490b008703e0f0d0facd93b56ee578527b9f2ad56d8ca1d55",
+        "novelty": "a10011faf1643c34a06644093997d47779bf3216c7021e75ebb04709e7c60d44",
+        "ranges": "104f0dc323043fbfa4bdac71b36f2cfc7f50cc0d76ae3b07aaa04702c363421e",
+        "validity": "061be8285a1cf744ecf9980da5cdbb1354fa3e1acf63e94d5387ac2f4aa3210b"
+      },
+      "second": {
+        "completeness": "38fa20e9ca4d682490b008703e0f0d0facd93b56ee578527b9f2ad56d8ca1d55",
+        "novelty": "a10011faf1643c34a06644093997d47779bf3216c7021e75ebb04709e7c60d44",
+        "ranges": "104f0dc323043fbfa4bdac71b36f2cfc7f50cc0d76ae3b07aaa04702c363421e",
+        "validity": "061be8285a1cf744ecf9980da5cdbb1354fa3e1acf63e94d5387ac2f4aa3210b"
+      }
+    },
+    {
+      "artifact_id": "SIM-M05-VALID-DEGRADED-01",
+      "equal": true,
+      "first": {
+        "completeness": "5e8f24f4c05f5161f6de08ce9a748196fa1ed5ff543ba9c4bc708008d585b314",
+        "novelty": "16ddbdb0126bf35310da3f2998f6cee6dfbf38409e1447d51a200dc48510773c",
+        "ranges": "807995f1639965f707118482239e4f572b4920c7cf1e68617aa8fbc00a1c73f8",
+        "validity": "b1f474c52b00aeaf4d67a969baa91f4e624354d6fb32d92cdc7fdc60f1e941dd"
+      },
+      "second": {
+        "completeness": "5e8f24f4c05f5161f6de08ce9a748196fa1ed5ff543ba9c4bc708008d585b314",
+        "novelty": "16ddbdb0126bf35310da3f2998f6cee6dfbf38409e1447d51a200dc48510773c",
+        "ranges": "807995f1639965f707118482239e4f572b4920c7cf1e68617aa8fbc00a1c73f8",
+        "validity": "b1f474c52b00aeaf4d67a969baa91f4e624354d6fb32d92cdc7fdc60f1e941dd"
+      }
+    },
+    {
+      "artifact_id": "SIM-M06-SCENARIO-01",
+      "equal": true,
+      "first": {
+        "completeness": "f9da518b266cca3fb72861a267d1fe1df9efb1d81e54d025c0ad90c9764d9731",
+        "novelty": "124da1d8f49c5781c44d267934a153762d5eb25b7c823ab564fc79deaf901b70",
+        "ranges": "1d5c08c6c0b0086396f130eed3867488a3614fc559fc01e6872ab2ab46fdcc4e",
+        "validity": "22ae1de31dfccc10c353262fd719aad8bed5847d55b032eada1845dac663a3d1"
+      },
+      "second": {
+        "completeness": "f9da518b266cca3fb72861a267d1fe1df9efb1d81e54d025c0ad90c9764d9731",
+        "novelty": "124da1d8f49c5781c44d267934a153762d5eb25b7c823ab564fc79deaf901b70",
+        "ranges": "1d5c08c6c0b0086396f130eed3867488a3614fc559fc01e6872ab2ab46fdcc4e",
+        "validity": "22ae1de31dfccc10c353262fd719aad8bed5847d55b032eada1845dac663a3d1"
+      }
+    },
+    {
+      "artifact_id": "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+      "equal": true,
+      "first": {
+        "completeness": "5db4b144c5cc97c28a189dc7b6321fdad2d84c0b42f7819ccb2440ad2dc06194",
+        "novelty": "5f1b5a56cd94740ff42eaffbda0193a239389c417294c47082392ff553b8d412",
+        "ranges": "a2db73b2d25e87edf829fcdab9272dc7725af0d1fb67667506e295306985c092",
+        "validity": "7ec027a0d9348a460ce3fb661fb2659ad0785b790c773bba23a456f074113509"
+      },
+      "second": {
+        "completeness": "5db4b144c5cc97c28a189dc7b6321fdad2d84c0b42f7819ccb2440ad2dc06194",
+        "novelty": "5f1b5a56cd94740ff42eaffbda0193a239389c417294c47082392ff553b8d412",
+        "ranges": "a2db73b2d25e87edf829fcdab9272dc7725af0d1fb67667506e295306985c092",
+        "validity": "7ec027a0d9348a460ce3fb661fb2659ad0785b790c773bba23a456f074113509"
+      }
+    },
+    {
+      "artifact_id": "SIM-M05-HARD-FAIL-01",
+      "equal": true,
+      "first": {
+        "completeness": "cc1d2f838445db7aec431df9ee8a871f40e7aa5e064fc056633ef8c60fab7b06",
+        "novelty": "cc1d2f838445db7aec431df9ee8a871f40e7aa5e064fc056633ef8c60fab7b06",
+        "ranges": "cc1d2f838445db7aec431df9ee8a871f40e7aa5e064fc056633ef8c60fab7b06",
+        "validity": "cc1d2f838445db7aec431df9ee8a871f40e7aa5e064fc056633ef8c60fab7b06"
+      },
+      "second": {
+        "completeness": "cc1d2f838445db7aec431df9ee8a871f40e7aa5e064fc056633ef8c60fab7b06",
+        "novelty": "cc1d2f838445db7aec431df9ee8a871f40e7aa5e064fc056633ef8c60fab7b06",
+        "ranges": "cc1d2f838445db7aec431df9ee8a871f40e7aa5e064fc056633ef8c60fab7b06",
+        "validity": "cc1d2f838445db7aec431df9ee8a871f40e7aa5e064fc056633ef8c60fab7b06"
+      }
+    }
+  ]
+}

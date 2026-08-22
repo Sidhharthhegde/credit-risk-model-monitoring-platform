@@ -1,0 +1,106 @@
+{
+  "contract_sha256": "127200176c99836d32934dcefaccc5437d4c39dd5922c39882e724c9648470a9",
+  "control_id": "DATA-QUALITY-CONTROL-01",
+  "controls": [
+    {
+      "alert_enabled": false,
+      "control_family": "SCHEMA",
+      "control_id": "DQ-SCHEMA-01",
+      "control_role": "HARD_GATE",
+      "metric_id": "DQ-03",
+      "reference_id": "NOT_APPLICABLE_CONTRACT_ONLY",
+      "severity_enabled": true
+    },
+    {
+      "alert_enabled": false,
+      "control_family": "APPLICANT_GRAIN",
+      "control_id": "DQ-IDENTIFIER-01",
+      "control_role": "HARD_GATE",
+      "metric_id": "DQ-02",
+      "reference_id": "NOT_APPLICABLE_CONTRACT_ONLY",
+      "severity_enabled": true
+    },
+    {
+      "alert_enabled": false,
+      "control_family": "RECONCILIATION",
+      "control_id": "DQ-ROW-RECONCILIATION-01",
+      "control_role": "HARD_GATE",
+      "metric_id": "DQ-02",
+      "reference_id": "NOT_APPLICABLE_CONTRACT_ONLY",
+      "severity_enabled": true
+    },
+    {
+      "alert_enabled": false,
+      "control_family": "COMPLETENESS",
+      "control_id": "DQ-MISSINGNESS-01",
+      "control_role": "DIRECT",
+      "metric_id": "DQ-01",
+      "reference_id": "FEATURE-REF-01",
+      "severity_enabled": true
+    },
+    {
+      "alert_enabled": false,
+      "control_family": "NUMERIC_VALIDITY",
+      "control_id": "DQ-NUMERIC-VALIDITY-01",
+      "control_role": "HARD_GATE",
+      "metric_id": "DQ-03",
+      "reference_id": "NOT_APPLICABLE_CONTRACT_ONLY",
+      "severity_enabled": true
+    },
+    {
+      "alert_enabled": false,
+      "control_family": "REFERENCE_RANGE",
+      "control_id": "DQ-REFERENCE-RANGE-01",
+      "control_role": "SUPPORTING",
+      "metric_id": "DQ-RANGE-01",
+      "reference_id": "FEATURE-REF-01",
+      "severity_enabled": false
+    },
+    {
+      "alert_enabled": false,
+      "control_family": "CATEGORICAL_VALIDITY",
+      "control_id": "DQ-CATEGORICAL-TYPE-01",
+      "control_role": "HARD_GATE",
+      "metric_id": "DQ-03",
+      "reference_id": "NOT_APPLICABLE_CONTRACT_ONLY",
+      "severity_enabled": true
+    },
+    {
+      "alert_enabled": false,
+      "control_family": "CATEGORICAL_NOVELTY",
+      "control_id": "DQ-CATEGORICAL-NOVELTY-01",
+      "control_role": "DIRECT",
+      "metric_id": "DQ-UNSEEN-01",
+      "reference_id": "FEATURE-REF-01",
+      "severity_enabled": true
+    },
+    {
+      "alert_enabled": false,
+      "control_family": "BINARY_VALIDITY",
+      "control_id": "DQ-BINARY-VALIDITY-01",
+      "control_role": "HARD_GATE",
+      "metric_id": "DQ-03",
+      "reference_id": "NOT_APPLICABLE_CONTRACT_ONLY",
+      "severity_enabled": true
+    },
+    {
+      "alert_enabled": false,
+      "control_family": "SOURCE_AVAILABILITY",
+      "control_id": "DQ-SOURCE-AVAILABILITY-01",
+      "control_role": "DIRECT",
+      "metric_id": "DQ-04",
+      "reference_id": "NOT_APPLICABLE_SOURCE_CONTEXT",
+      "severity_enabled": false
+    },
+    {
+      "alert_enabled": false,
+      "control_family": "SOURCE_AUTHORITY",
+      "control_id": "DQ-SOURCE-AUTHORITY-01",
+      "control_role": "HARD_GATE",
+      "metric_id": "DQ-04",
+      "reference_id": "NOT_APPLICABLE_SOURCE_CONTEXT",
+      "severity_enabled": true
+    }
+  ],
+  "status": "APPROVED_FROZEN"
+}

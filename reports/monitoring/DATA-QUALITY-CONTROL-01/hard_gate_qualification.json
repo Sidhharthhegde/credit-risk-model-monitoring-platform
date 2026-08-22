@@ -1,0 +1,26 @@
+{
+  "hard_fail_artifact": {
+    "alerts_generated": false,
+    "artifact_id": "SIM-M05-HARD-FAIL-01",
+    "contract_status": "FAIL",
+    "critical_metric_count": 0,
+    "downstream_monitoring_eligible": false,
+    "dq_control_decision": "HARD_FAIL",
+    "row_count": 8125,
+    "run_id": "DQ-RUN-SIM-M05-HARD-FAIL-01-01",
+    "scenario_id": "SIM-M05",
+    "scoring_eligible": false,
+    "source_authority_status": "NON_AUTHORITATIVE",
+    "unique_id_count": 8124,
+    "warning_metric_count": 0
+  },
+  "rejected_before_feature_or_distribution_controls": true,
+  "result": "PASS",
+  "source_authority_control_id": "DQ-SOURCE-AUTHORITY-01",
+  "source_authority_gate_result": "FAIL",
+  "source_availability_control_id": "DQ-SOURCE-AVAILABILITY-01",
+  "source_availability_result": "FINDING",
+  "source_loss_authority_status": "NON_AUTHORITATIVE",
+  "source_loss_contract_status": "PASS",
+  "source_loss_decision": "NON_AUTHORITATIVE"
+}

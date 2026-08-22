@@ -1,0 +1,72 @@
+{
+  "all_pass": true,
+  "artifacts": [
+    {
+      "artifact_id": "SIM-M01-SCENARIO-01",
+      "first_semantic_sha256": "8a44ffe48fba72f74d5486a22529749b629e6c132c362ed4e2e53a531f4f6d0a",
+      "probability_vector_exact": true,
+      "result": "PASS",
+      "score_psi_exact": true,
+      "second_semantic_sha256": "8a44ffe48fba72f74d5486a22529749b629e6c132c362ed4e2e53a531f4f6d0a",
+      "summary_exact": true,
+      "threshold_class_exact": true,
+      "threshold_output_exact": true
+    },
+    {
+      "artifact_id": "SIM-M02-SCENARIO-01",
+      "first_semantic_sha256": "e61546c8bad68c6a3000006fe60e66d005a71298ab9c8cd8086a82714289472e",
+      "probability_vector_exact": true,
+      "result": "PASS",
+      "score_psi_exact": true,
+      "second_semantic_sha256": "e61546c8bad68c6a3000006fe60e66d005a71298ab9c8cd8086a82714289472e",
+      "summary_exact": true,
+      "threshold_class_exact": true,
+      "threshold_output_exact": true
+    },
+    {
+      "artifact_id": "SIM-M03-SCENARIO-01",
+      "first_semantic_sha256": "9db3daeb717567f2813af3fc25f2dd51c981c094898ee93c7e49d3a6c9c666e4",
+      "probability_vector_exact": true,
+      "result": "PASS",
+      "score_psi_exact": true,
+      "second_semantic_sha256": "9db3daeb717567f2813af3fc25f2dd51c981c094898ee93c7e49d3a6c9c666e4",
+      "summary_exact": true,
+      "threshold_class_exact": true,
+      "threshold_output_exact": true
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "first_semantic_sha256": "054cd281b0a57d2be823f3792f27056d20ed058edda65592c065cb7ef98733c7",
+      "probability_vector_exact": true,
+      "result": "PASS",
+      "score_psi_exact": true,
+      "second_semantic_sha256": "054cd281b0a57d2be823f3792f27056d20ed058edda65592c065cb7ef98733c7",
+      "summary_exact": true,
+      "threshold_class_exact": true,
+      "threshold_output_exact": true
+    },
+    {
+      "artifact_id": "SIM-M05-VALID-DEGRADED-01",
+      "first_semantic_sha256": "ad2fec887cb5caf3462f043e251ebda39f060eae3a351357af986bbfae698589",
+      "probability_vector_exact": true,
+      "result": "PASS",
+      "score_psi_exact": true,
+      "second_semantic_sha256": "ad2fec887cb5caf3462f043e251ebda39f060eae3a351357af986bbfae698589",
+      "summary_exact": true,
+      "threshold_class_exact": true,
+      "threshold_output_exact": true
+    },
+    {
+      "artifact_id": "SIM-M06-SCENARIO-01",
+      "first_semantic_sha256": "bde6717e0a218c41bd417eba14639ddca50cc3226d1d40771f7c9acfc0714e35",
+      "probability_vector_exact": true,
+      "result": "PASS",
+      "score_psi_exact": true,
+      "second_semantic_sha256": "bde6717e0a218c41bd417eba14639ddca50cc3226d1d40771f7c9acfc0714e35",
+      "summary_exact": true,
+      "threshold_class_exact": true,
+      "threshold_output_exact": true
+    }
+  ],
+  "result": "PASS"
+}

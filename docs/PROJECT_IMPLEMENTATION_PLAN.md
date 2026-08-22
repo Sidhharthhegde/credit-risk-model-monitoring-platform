@@ -1686,7 +1686,7 @@ Update this table only when supported by a phase completion decision.
 | 5 | `COMPLETE` | `reports/simulation/SIMULATION-SCENARIO-SET-01/phase5_completion_decision.json` | Conditional blocker resolved; approved and frozen on 2026-08-22 |
 | 6 | `COMPLETE` | `reports/monitoring/DATA-QUALITY-CONTROL-01/phase6_completion_decision.json` | Conditional source-role blocker resolved; approved and frozen on 2026-08-22 |
 | 7 | `COMPLETE` | `reports/monitoring/FEATURE-DRIFT-MONITORING-01/phase7_completion_decision.json` | Approved and frozen on 2026-08-22; Phase 8 authorized |
-| 8 | `NOT_STARTED` | Not issued |  |
+| 8 | `IN_PROGRESS` | `reports/monitoring/PREDICTION-MONITORING-01/phase8_completion_decision.json` | Prediction/threshold monitoring technically qualified; owner review pending |
 | 9 | `NOT_STARTED` | Not issued |  |
 | 10 | `NOT_STARTED` | Not issued |  |
 | 11 | `NOT_STARTED` | Not issued |  |
@@ -1710,13 +1710,13 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next authorized work is Phase 8 prediction and threshold-output monitoring:
+The next authorized work is review of the Phase 8 technical candidate:
 
-1. Freeze the Phase 8 execution contract before scoring.
-2. Score only the six Phase 6 downstream-eligible artifacts; Phase 7 severity is not an execution gate.
-3. Use the Phase 1-qualified DF-01 scorer and raw class-1 probabilities without transformation.
-4. Use the frozen development-validation score reference and Phase 4 score bins.
-5. Apply exactly `THRESHOLD-01`, `probability >= 0.080`.
-6. Keep synthetic outcomes, performance, calibration, alerts and overall model health outside Phase 8.
+1. Review all six local prediction manifests and aggregate integrity/reproducibility evidence.
+2. Confirm development validation—not TRAIN—is the score-distribution reference.
+3. Review frozen-bin Score PSI and `THRESHOLD-01` output reconciliation.
+4. Confirm Phase 7 severity did not gate scoring and the two Phase 6-ineligible variants were excluded.
+5. Confirm boundary density, synthetic outcomes, performance, calibration, alerts and overall health remained outside scope.
+6. Approve and freeze `PREDICTION-MONITORING-01`, or issue bounded remediation; Phase 9 remains unauthorized.
 
-Phase 8 is authorized but not yet technically qualified.
+Phase 8 has passed technical qualification but is not yet approved or frozen.

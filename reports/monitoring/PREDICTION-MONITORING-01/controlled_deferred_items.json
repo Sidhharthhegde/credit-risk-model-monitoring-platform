@@ -1,0 +1,9 @@
+{
+  "cnd_02_status": "OPEN",
+  "critical_predictor_tier_mapping": "PENDING_GOVERNED_DEFINITION",
+  "performance_alert_limits": "PENDING_PROTOCOL_AMENDMENT_AND_UNCERTAINTY_RULE",
+  "threshold_boundary_density": "NOT_ASSESSABLE_PENDING_APPROVED_WINDOW",
+  "threshold_boundary_density_calculated": false,
+  "threshold_boundary_density_value": null,
+  "threshold_boundary_window_selected": false
+}

@@ -1,0 +1,25 @@
+control_id,control,result
+P8-001,Phase 7 approved and Phase 8 authorized,PASS
+P8-002,Phase 6 gate selected exactly six authoritative artifacts,PASS
+P8-003,Phase 7 drift severity did not gate scoring,PASS
+P8-004,Two ineligible M05 artifacts were not scored,PASS
+P8-005,DF-01 XGBT-01 binding and model hash verified,PASS
+P8-006,Qualified embedded preprocessing used without refit,PASS
+P8-007,Raw class-1 probabilities used without transformation,PASS
+P8-008,Six local governed prediction artifacts materialized,PASS
+P8-009,Each artifact contains 8124 unique applicant predictions,PASS
+P8-010,"All probabilities finite complete and within [0,1]",PASS
+P8-011,Prediction semantic hashes and exact replay verified,PASS
+P8-012,Development-validation score reference reconciled to runtime,PASS
+P8-013,Only approved prediction summary quantiles calculated,PASS
+P8-014,Frozen Phase 4 score bins used without rebucketing,PASS
+P8-015,Score PSI counts and contributions reconcile,PASS
+P8-016,Score PSI severity uses approved project assumptions only,PASS
+P8-017,THRESHOLD-01 value 0.080 and >= operator used,PASS
+P8-018,Risk-positive and risk-negative counts and rates reconcile,PASS
+P8-019,Analytical proxy terminology used without approval/rejection claims,PASS
+P8-020,Threshold-boundary density remains unassessable,PASS
+P8-021,M06 synthetic outcomes were not loaded,PASS
+P8-022,No performance calibration threshold-performance subgroup alert or health result generated,PASS
+P8-023,Frozen upstream manifests and Part A remain unchanged,PASS
+P8-024,Owner approval and Phase 9 authorization deferred,PASS

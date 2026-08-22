@@ -1,0 +1,93 @@
+{
+  "monitoring_id": "PREDICTION-MONITORING-01",
+  "version": "0.1.0",
+  "status": "IMPLEMENTED_PENDING_REVIEW",
+  "scope": "PHASE_8_PREDICTION_AND_THRESHOLD_OUTPUT_MONITORING_ONLY",
+  "model_binding": {
+    "binding_id": "PART-A-BINDING-01",
+    "development_freeze_id": "DF-01",
+    "model_id": "XGBT-01",
+    "model_version": "xgbt01_raw_threshold01_df_v1",
+    "probability_representation": "RAW_P_TARGET_1",
+    "refit_permitted": false,
+    "calibration_or_probability_transformation_permitted": false
+  },
+  "threshold": {
+    "threshold_id": "THRESHOLD-01",
+    "value": 0.08,
+    "operator": ">=",
+    "positive_output": "risk_positive",
+    "negative_output": "risk_negative",
+    "actual_approve_reject_decision_claimed": false
+  },
+  "frozen_dependencies": {
+    "phase_6_manifest_sha256": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+    "phase_7_manifest_sha256": "64a706d84465e0398391f9d217702343b31aa4d446864a9eca70db89bc930f17",
+    "reference_materialization_manifest_sha256": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
+    "scenario_set_manifest_sha256": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5",
+    "score_reference_sha256": "8feda380426aca985c00add5e1dd048e616f548f7b85a9cdb8e964e66e7f00ec",
+    "score_bin_definitions_sha256": "b20910dfc898bfa12643a35fcce38cc1ac4c26a2c2b44865e8ec2ec04b372005",
+    "alert_thresholds_sha256": "987373af8b91f5cbfe5dbaaea829bd122d64ad41e9dc32e6084eb5ef5856d331"
+  },
+  "score_reference": {
+    "reference_id": "PERF-REF-01",
+    "physical_snapshot_id": "DEV-VAL-PHYSICAL-01",
+    "role": "PRIMARY_SCORE_DISTRIBUTION_REFERENCE",
+    "feature_reference_is_same_population": false,
+    "approved_quantiles": [0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99]
+  },
+  "upstream_gate": {
+    "execution_eligibility_source": "PHASE_6_DOWNSTREAM_MONITORING_ELIGIBLE",
+    "phase_7_severity_controls_scoring_eligibility": false,
+    "expected_eligible_artifact_count": 6,
+    "expected_excluded_artifact_count": 2
+  },
+  "score_psi": {
+    "control_id": "PR-SCORE-PSI-01",
+    "metric_id": "PR-02",
+    "control_role": "DIRECT",
+    "warning": 0.1,
+    "critical": 0.25,
+    "epsilon": 0.000001,
+    "zero_frequency_application": "REPLACE_ZERO_PROPORTIONS_ONLY_THEN_RENORMALIZE",
+    "period_specific_rebinning_permitted": false,
+    "threshold_classification": "PROJECT_DEFINED_GOVERNANCE_ASSUMPTIONS_NOT_REGULATORY_REQUIREMENTS",
+    "alert_record_creation_enabled": false
+  },
+  "threshold_output": {
+    "control_id": "PR-RISK-POSITIVE-RATE-01",
+    "metric_id": "PR-03",
+    "control_role": "DIRECT",
+    "absolute_rate_change_warning": 0.05,
+    "absolute_rate_change_critical": 0.1,
+    "threshold_classification": "PROJECT_DEFINED_GOVERNANCE_ASSUMPTIONS_NOT_REGULATORY_REQUIREMENTS",
+    "alert_record_creation_enabled": false,
+    "terminology": "ANALYTICAL_DECISION_PROXY_NOT_APPROVAL_OR_REJECTION"
+  },
+  "supporting_statistics": {
+    "severity": "N/A",
+    "thresholds_approved": false
+  },
+  "controlled_deferred": {
+    "threshold_boundary_density": "NOT_ASSESSABLE_PENDING_APPROVED_WINDOW",
+    "threshold_boundary_density_calculated": false,
+    "performance_alert_limits": "PENDING_PROTOCOL_AMENDMENT_AND_UNCERTAINTY_RULE",
+    "critical_predictor_tier_mapping": "PENDING_GOVERNED_DEFINITION"
+  },
+  "scope_protection": {
+    "outcome_loading": false,
+    "roc_auc": false,
+    "pr_auc": false,
+    "performance_ks": false,
+    "gini": false,
+    "observed_expected": false,
+    "brier": false,
+    "log_loss": false,
+    "calibration": false,
+    "confusion_matrix": false,
+    "threshold_performance": false,
+    "subgroup_monitoring": false,
+    "alert_creation": false,
+    "overall_model_health": false
+  }
+}

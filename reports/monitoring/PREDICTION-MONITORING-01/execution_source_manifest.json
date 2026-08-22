@@ -1,0 +1,34 @@
+{
+  "creation_code_version": "PHASE8-PREDICTION-MONITOR-0.1.0",
+  "frozen_dependencies": {
+    "alert_thresholds_sha256": "987373af8b91f5cbfe5dbaaea829bd122d64ad41e9dc32e6084eb5ef5856d331",
+    "phase_6_manifest_sha256": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+    "phase_7_manifest_sha256": "64a706d84465e0398391f9d217702343b31aa4d446864a9eca70db89bc930f17",
+    "reference_materialization_manifest_sha256": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
+    "scenario_set_manifest_sha256": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5",
+    "score_bin_definitions_sha256": "b20910dfc898bfa12643a35fcce38cc1ac4c26a2c2b44865e8ec2ec04b372005",
+    "score_reference_sha256": "8feda380426aca985c00add5e1dd048e616f548f7b85a9cdb8e964e66e7f00ec"
+  },
+  "implementation_sources": [
+    {
+      "path": "contracts/prediction_monitoring_contract.json",
+      "sha256": "efccc1ae8e424a4602dce736d9de55f482342f988a5d27dce47be1a0f93e25c5"
+    },
+    {
+      "path": "src/credit_risk_monitoring/prediction/engine.py",
+      "sha256": "a4b0a7c77ecb9a5ff8247b78ae5266c46a7c45c54d227f049c987f6126ca59ed"
+    },
+    {
+      "path": "src/credit_risk_monitoring/prediction/__init__.py",
+      "sha256": "1f4fa245d622506ff6e0dae90b5db946936aeeddb387c2156849a4a88564ae21"
+    },
+    {
+      "path": "scripts/run_phase8_monitoring.py",
+      "sha256": "414ac06c5c828ad08d169f26a4b0ddf60c6598d2e8b22165e9c9fb14f659135b"
+    }
+  ],
+  "model_sha256": "ab0000a4ae092f0444760839e185384d44f9a9760be298189bdfcd80c67fa500",
+  "monitoring_id": "PREDICTION-MONITORING-01",
+  "part_a_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+  "part_b_base_commit": "e50f9d70694003ef77a6f0275348665b9cb12ab4"
+}

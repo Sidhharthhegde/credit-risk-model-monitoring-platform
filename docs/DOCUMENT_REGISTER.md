@@ -28,6 +28,10 @@
 | `contracts/feature_drift_monitoring_contract.json` | 0.1.0 | Approved and frozen | Phase 7 eligibility, frozen-bin, PSI, diagnostic, materiality-lineage and scope contract |
 | `src/credit_risk_monitoring/drift/` | 0.1.0 | Implemented and tested | Frozen-bin PSI, bin reconciliation and supporting numeric/categorical diagnostics |
 | `reports/monitoring/FEATURE-DRIFT-MONITORING-01/` | 0.1.0 | Approved and frozen | Aggregate Phase 7 evidence for six eligible artifacts plus two explicit exclusions |
+| `contracts/prediction_monitoring_contract.json` | 0.1.0 | Implemented; owner review pending | Phase 8 model, score-reference, frozen-bin, threshold-output, gate and scope contract |
+| `src/credit_risk_monitoring/prediction/` | 0.1.0 | Implemented and tested | Qualified raw scoring, prediction integrity, score PSI and analytical threshold-output monitoring |
+| `artifacts/monitoring_predictions/PREDICTION-MONITORING-01/` | 0.1.0 | Local-only; technically qualified | Six governed row-level prediction artifacts with semantic and physical hashes; ignored by Git |
+| `reports/monitoring/PREDICTION-MONITORING-01/` | 0.1.0 | Technically qualified; owner review pending | Aggregate Phase 8 evidence with no row-level predictions, outcomes, alerts or overall-health results |
 | `configs/model_config.yaml` | 0.1.0 | Approved and frozen | Semantic model metadata referencing the binding |
 | `configs/monitoring_config.yaml` | 0.1.0 | Approved and frozen | Monitoring scope and execution policy |
 | `configs/alert_thresholds.yaml` | 0.1.0 | Approved and frozen | Project-defined alert assumptions |

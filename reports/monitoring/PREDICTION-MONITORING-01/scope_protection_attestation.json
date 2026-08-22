@@ -1,0 +1,22 @@
+{
+  "alert_creation": false,
+  "all_prohibited_calculations_remained_false": true,
+  "brier": false,
+  "calibration": false,
+  "confusion_matrix": false,
+  "gini": false,
+  "log_loss": false,
+  "m06_feature_frame_scored": true,
+  "monitoring_alerts_generated": false,
+  "observed_expected": false,
+  "outcome_loading": false,
+  "overall_model_health": false,
+  "overall_model_health_calculated": false,
+  "performance_ks": false,
+  "pr_auc": false,
+  "roc_auc": false,
+  "row_level_predictions_in_public_evidence": false,
+  "subgroup_monitoring": false,
+  "synthetic_outcomes_loaded": false,
+  "threshold_performance": false
+}

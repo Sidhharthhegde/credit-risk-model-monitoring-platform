@@ -1,0 +1,10 @@
+{
+  "development_validation_outcomes_used_in_phase8_metrics": false,
+  "max_absolute_runtime_vs_frozen_probability_difference": 1.1102230246251565e-16,
+  "reference_id": "PERF-REF-01",
+  "reference_row_count": 46127,
+  "result": "PASS",
+  "runtime_probability_count": 46127,
+  "score_reference_mean_difference": 0.0,
+  "stored_probability_count": 46127
+}

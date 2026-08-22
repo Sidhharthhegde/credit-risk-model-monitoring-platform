@@ -1,0 +1,12 @@
+{
+  "all_current_bin_counts_reconcile": true,
+  "all_reference_bin_counts_reconcile": true,
+  "all_threshold_counts_reconcile": true,
+  "all_threshold_rates_reconcile": true,
+  "max_score_psi_vs_bin_sum_difference": 1.3877787807814457e-17,
+  "result": "PASS",
+  "threshold_0_5_used": false,
+  "threshold_id": "THRESHOLD-01",
+  "threshold_operator": ">=",
+  "threshold_value": 0.08
+}

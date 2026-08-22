@@ -1,0 +1,22 @@
+{
+  "eligible_artifact_count": 6,
+  "excluded_artifact_count": 2,
+  "excluded_artifacts": [
+    {
+      "artifact_id": "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+      "dq_control_decision": "NON_AUTHORITATIVE",
+      "reason": "PHASE_6_DOWNSTREAM_MONITORING_INELIGIBLE",
+      "scoring_executed": false
+    },
+    {
+      "artifact_id": "SIM-M05-HARD-FAIL-01",
+      "dq_control_decision": "HARD_FAIL",
+      "reason": "PHASE_6_DOWNSTREAM_MONITORING_INELIGIBLE",
+      "scoring_executed": false
+    }
+  ],
+  "phase6_manifest_sha256": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+  "phase7_manifest_sha256": "64a706d84465e0398391f9d217702343b31aa4d446864a9eca70db89bc930f17",
+  "phase7_severity_used_as_execution_gate": false,
+  "result": "PASS"
+}

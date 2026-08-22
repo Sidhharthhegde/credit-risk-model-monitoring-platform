@@ -78,14 +78,14 @@ def test_p_values_are_supporting_and_do_not_drive_severity() -> None:
     assert not feature["alert_generated"]
 
 
-def test_phase7_candidate_preserves_review_and_scope_gates_when_present() -> None:
+def test_phase7_final_decision_preserves_scope_gates_when_present() -> None:
     root = Path(__file__).resolve().parents[2]
     decision = root / "reports/monitoring/FEATURE-DRIFT-MONITORING-01/phase7_completion_decision.json"
     if decision.exists():
         payload = json.loads(decision.read_text(encoding="utf-8"))
         assert payload["technical_qualification"] == "PASS"
-        assert payload["review_decision"] == "PENDING_USER_PROTOCOL_OWNER_REVIEW"
-        assert payload["phase_7_complete"] is False
-        assert payload["feature_result_count"] == 1056
+        assert payload["review_decision"] == "APPROVED"
+        assert payload["phase_7_complete"] is True
+        assert payload["feature_psi_result_count"] == 1056
         assert payload["monitoring_alerts_generated"] is False
-        assert payload["phase_8_authorized"] is False
+        assert payload["phase_8_authorized"] is True

@@ -1,0 +1,10 @@
+{
+  "approved_utc": "2026-08-22T18:13:07.961699+00:00",
+  "calculated_drift_results_changed": false,
+  "candidate_manifest_sha256": "15e0d9582113d79c923b36433a5d8733c059a77628c21712243a8338ee578ea6",
+  "cnd_02_status": "OPEN",
+  "decision": "APPROVED",
+  "monitoring_id": "FEATURE-DRIFT-MONITORING-01",
+  "next_phase_authorized": "PHASE_8_PREDICTION_AND_THRESHOLD_OUTPUT_MONITORING",
+  "phase": "PHASE_7"
+}

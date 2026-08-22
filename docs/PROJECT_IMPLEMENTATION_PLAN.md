@@ -1685,7 +1685,7 @@ Update this table only when supported by a phase completion decision.
 | 4 | `COMPLETE` | `reports/reference/REFERENCE-MATERIALIZATION-01/phase4_completion_decision.json` | Approved and frozen on 2026-08-22 |
 | 5 | `COMPLETE` | `reports/simulation/SIMULATION-SCENARIO-SET-01/phase5_completion_decision.json` | Conditional blocker resolved; approved and frozen on 2026-08-22 |
 | 6 | `COMPLETE` | `reports/monitoring/DATA-QUALITY-CONTROL-01/phase6_completion_decision.json` | Conditional source-role blocker resolved; approved and frozen on 2026-08-22 |
-| 7 | `IN_PROGRESS` | `reports/monitoring/FEATURE-DRIFT-MONITORING-01/phase7_completion_decision.json` | Drift executed and technically qualified; owner review pending |
+| 7 | `COMPLETE` | `reports/monitoring/FEATURE-DRIFT-MONITORING-01/phase7_completion_decision.json` | Approved and frozen on 2026-08-22; Phase 8 authorized |
 | 8 | `NOT_STARTED` | Not issued |  |
 | 9 | `NOT_STARTED` | Not issued |  |
 | 10 | `NOT_STARTED` | Not issued |  |
@@ -1710,13 +1710,13 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next authorized work is review of the Phase 7 technical candidate:
+The next authorized work is Phase 8 prediction and threshold-output monitoring:
 
-1. Review the eligibility exclusions, all-feature PSI evidence and bin reconciliation.
-2. Review the project-defined 80%/95% SHAP materiality tiers; they affect prioritization only.
-3. Confirm that natural M01/M02 TRAIN-to-`application_test` drift is retained rather than tuned away.
-4. Confirm that p-values remain supporting diagnostics and generated no severity or alert.
-5. Approve and freeze `FEATURE-DRIFT-MONITORING-01`, or issue bounded remediation.
-6. Do not authorize or execute Phase 8 until the Phase 7 completion decision is approved.
+1. Freeze the Phase 8 execution contract before scoring.
+2. Score only the six Phase 6 downstream-eligible artifacts; Phase 7 severity is not an execution gate.
+3. Use the Phase 1-qualified DF-01 scorer and raw class-1 probabilities without transformation.
+4. Use the frozen development-validation score reference and Phase 4 score bins.
+5. Apply exactly `THRESHOLD-01`, `probability >= 0.080`.
+6. Keep synthetic outcomes, performance, calibration, alerts and overall model health outside Phase 8.
 
-Phase 7 has passed technical qualification but is not yet approved or frozen.
+Phase 8 is authorized but not yet technically qualified.

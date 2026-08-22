@@ -1,8 +1,14 @@
 {
   "aggregate_results_only": true,
   "alerts_included": false,
-  "approval_record_included": false,
+  "approval_record_included": true,
+  "approved_utc": "2026-08-22T18:13:07.961699+00:00",
   "artifacts": [
+    {
+      "path": "approval_hash_reconciliation.json",
+      "sha256": "38516d03f4b13871071c8de32673f64aeeac34098b3c4e6159f86544ebe4ae02",
+      "size_bytes": 1796
+    },
     {
       "path": "categorical_drift_diagnostics.parquet",
       "sha256": "dd5762eeeee8f76cdefd4f4484a6d9cdad6983d9f5a762dfb12b015e804594f5",
@@ -10,8 +16,8 @@
     },
     {
       "path": "control_registry.json",
-      "sha256": "ae30d1e0bd3dee5f7ba75c61b80708fd8c790c596584a1dfd6102e183eb1ea25",
-      "size_bytes": 1212
+      "sha256": "2b391853a188e81266281cd170008b5b65e5bb515dc2c023893b90ed3bbbce7e",
+      "size_bytes": 1203
     },
     {
       "path": "drift_reconciliation_qualification.json",
@@ -20,8 +26,8 @@
     },
     {
       "path": "execution_source_manifest.json",
-      "sha256": "63cda4ae5e3c05be2a1a50fdbd360b46081e429310d073fb5714e64c0bc2026a",
-      "size_bytes": 1599
+      "sha256": "a9729ecba6c5bcf0a902bb1d8bb46b1767a8caa98f0625115eed8d4663dd7d07",
+      "size_bytes": 1787
     },
     {
       "path": "feature_drift_results.parquet",
@@ -60,13 +66,23 @@
     },
     {
       "path": "phase7_acceptance_checklist.csv",
-      "sha256": "f94b5c4f974abc448ce4a31be7bfe72975f9626fbb3ba13ff6cd22bdfcdaf5b9",
-      "size_bytes": 1433
+      "sha256": "b3df5581d4d3d3a282be9d6283ce4adb630c872fa073a34715024e1c7c7cafe0",
+      "size_bytes": 1425
+    },
+    {
+      "path": "phase7_approval_record.json",
+      "sha256": "3139a188606157b609b1f848f478c165b513a5b2160bb12b0f3872ce0e249b64",
+      "size_bytes": 407
     },
     {
       "path": "phase7_completion_decision.json",
-      "sha256": "2a8c7a5b1381a20dd32f3f15998e76cb061e4f5f624f3046f8bc986a9a181034",
-      "size_bytes": 837
+      "sha256": "e9eab0775a5579268c4ec293c775cfeb60fa25990907ed68a9f2f46bea20f417",
+      "size_bytes": 1281
+    },
+    {
+      "path": "population_drift_component_semantics.json",
+      "sha256": "70ede95b3a8ccc489b3beaa3c7f16bb49655accafd4fed93b9ef6d2ba145b751",
+      "size_bytes": 298
     },
     {
       "path": "population_drift_summary.csv",
@@ -99,8 +115,10 @@
       "size_bytes": 5826
     }
   ],
+  "calculated_results_unchanged_during_approval": true,
+  "candidate_manifest_sha256": "15e0d9582113d79c923b36433a5d8733c059a77628c21712243a8338ee578ea6",
   "created_utc": "2026-08-22T17:56:33.616405+00:00",
   "monitoring_id": "FEATURE-DRIFT-MONITORING-01",
   "row_level_identifiers_included": false,
-  "status": "QUALIFIED_PENDING_REVIEW"
+  "status": "APPROVED_FROZEN"
 }

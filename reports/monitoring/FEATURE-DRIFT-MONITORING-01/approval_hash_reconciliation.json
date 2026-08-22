@@ -1,0 +1,35 @@
+{
+  "all_calculated_results_unchanged": true,
+  "all_upstream_manifests_unchanged": true,
+  "calculated_results": {
+    "categorical_drift_diagnostics.parquet": {
+      "approved_sha256": "dd5762eeeee8f76cdefd4f4484a6d9cdad6983d9f5a762dfb12b015e804594f5",
+      "candidate_sha256": "dd5762eeeee8f76cdefd4f4484a6d9cdad6983d9f5a762dfb12b015e804594f5",
+      "unchanged": true
+    },
+    "feature_drift_results.parquet": {
+      "approved_sha256": "bc83f800599792eb9a51b0eb4ca29cc8bd9e6acac404775bba2336d7639dc071",
+      "candidate_sha256": "bc83f800599792eb9a51b0eb4ca29cc8bd9e6acac404775bba2336d7639dc071",
+      "unchanged": true
+    },
+    "feature_psi_bin_contributions.parquet": {
+      "approved_sha256": "5363167d28eeb420655b20af5189aeea3be9f170fccb07e1f5d5a4c71d91e60a",
+      "candidate_sha256": "5363167d28eeb420655b20af5189aeea3be9f170fccb07e1f5d5a4c71d91e60a",
+      "unchanged": true
+    },
+    "numeric_drift_diagnostics.parquet": {
+      "approved_sha256": "c9999dfd708f819a53f06a842eed4b4aedb0617ba1e23978186c53ce671c46d4",
+      "candidate_sha256": "c9999dfd708f819a53f06a842eed4b4aedb0617ba1e23978186c53ce671c46d4",
+      "unchanged": true
+    }
+  },
+  "candidate_manifest_sha256": "15e0d9582113d79c923b36433a5d8733c059a77628c21712243a8338ee578ea6",
+  "frozen_upstream_manifests": {
+    "reports/monitoring/DATA-QUALITY-CONTROL-01/manifest.json": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+    "reports/reference/REFERENCE-MATERIALIZATION-01/manifest.json": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
+    "reports/simulation/SIMULATION-SCENARIO-SET-01/manifest.json": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5"
+  },
+  "part_a_modified": false,
+  "result": "PASS",
+  "scenario_artifacts_modified": false
+}

@@ -6,9 +6,9 @@ Part B will demonstrate data-quality monitoring, population and feature drift, r
 
 ## Current status
 
-`PHASE_7_TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW`
+`PHASE_7_APPROVED_FROZEN`
 
-Phases 0–6 are approved and frozen. `FEATURE-DRIFT-MONITORING-01` has calculated frozen-bin PSI and supporting distribution diagnostics for the six Phase 6 downstream-eligible artifacts and passed technical qualification; owner review remains pending. The two ineligible M05 variants were excluded before drift calculation. Score, performance, calibration, subgroup, alert and model-health execution remain unauthorized.
+Phases 0–7 are approved and frozen. `FEATURE-DRIFT-MONITORING-01` retains frozen-bin PSI and supporting distribution diagnostics for the six Phase 6 downstream-eligible artifacts. Its component state is explicitly not overall model health or an alert lifecycle event. Phase 8 prediction and threshold-output monitoring is authorized; outcome-dependent monitoring remains unauthorized.
 
 ## Important scope statement
 

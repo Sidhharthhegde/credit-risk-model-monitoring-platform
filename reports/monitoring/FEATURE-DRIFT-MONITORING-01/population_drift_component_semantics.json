@@ -1,0 +1,9 @@
+{
+  "derivation": "MAXIMUM_ELIGIBLE_FEATURE_PSI_SEVERITY",
+  "field": "population_drift_state",
+  "independently_generates_alert": false,
+  "is_alert_lifecycle_event": false,
+  "is_overall_model_health": false,
+  "meaning": "POPULATION_DRIFT_COMPONENT_STATUS_ONLY",
+  "status": "APPROVED_FROZEN"
+}

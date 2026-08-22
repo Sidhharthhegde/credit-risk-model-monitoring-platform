@@ -1,4 +1,5 @@
 {
+  "approval_finalizer_included": true,
   "creation_code_version": "PHASE7-FEATURE-DRIFT-MONITOR-0.1.0",
   "frozen_dependencies": {
     "configs/alert_thresholds.yaml": "987373af8b91f5cbfe5dbaaea829bd122d64ad41e9dc32e6084eb5ef5856d331",
@@ -10,7 +11,7 @@
   "implementation_sources": [
     {
       "path": "contracts/feature_drift_monitoring_contract.json",
-      "sha256": "70a907054942587aa4392020308355e0a8f59f3476742784e348fc448697953a"
+      "sha256": "bc4ed2af3b03ef171a03f414eb57e83f9d28ec54de744f48330daa8d39d35881"
     },
     {
       "path": "src/credit_risk_monitoring/drift/engine.py",
@@ -23,6 +24,10 @@
     {
       "path": "scripts/run_phase7_monitoring.py",
       "sha256": "dfd4cd34a685f85b533a1195c592570f2f2f2b40c2f7eb4bb71f79277c7838a8"
+    },
+    {
+      "path": "scripts/finalize_phase7_approval.py",
+      "sha256": "f49f00aa524a7c252873bd93b42f508776d655a38ea7c4195bd42a4a12b314cc"
     }
   ],
   "monitoring_id": "FEATURE-DRIFT-MONITORING-01",

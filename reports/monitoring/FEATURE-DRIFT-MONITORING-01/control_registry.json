@@ -1,5 +1,5 @@
 {
-  "contract_sha256": "70a907054942587aa4392020308355e0a8f59f3476742784e348fc448697953a",
+  "contract_sha256": "bc4ed2af3b03ef171a03f414eb57e83f9d28ec54de744f48330daa8d39d35881",
   "metrics": [
     {
       "alert_record_creation_enabled": false,
@@ -39,5 +39,5 @@
     }
   ],
   "monitoring_id": "FEATURE-DRIFT-MONITORING-01",
-  "status": "QUALIFIED_PENDING_REVIEW"
+  "status": "APPROVED_FROZEN"
 }

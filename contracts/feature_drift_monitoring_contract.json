@@ -1,7 +1,7 @@
 {
   "monitoring_id": "FEATURE-DRIFT-MONITORING-01",
   "version": "0.1.0",
-  "status": "IMPLEMENTED_PENDING_REVIEW",
+  "status": "APPROVED_FROZEN",
   "scope": "PHASE_7_FEATURE_AND_POPULATION_DRIFT_ONLY",
   "reference_id": "FEATURE-REF-01",
   "reference_materialization_manifest_sha256": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
@@ -42,7 +42,7 @@
   },
   "population_aggregation": {
     "rule": "MAXIMUM_ELIGIBLE_FEATURE_PSI_SEVERITY",
-    "use": "PHASE_7_DOMAIN_SUMMARY_ONLY_NOT_OVERALL_MODEL_HEALTH",
+    "use": "POPULATION_DRIFT_COMPONENT_STATUS_ONLY_NOT_OVERALL_MODEL_HEALTH_OR_ALERT_LIFECYCLE_STATE",
     "materiality_tier_changes_severity": false,
     "p_values_change_severity": false
   },

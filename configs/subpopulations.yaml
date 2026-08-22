@@ -1,0 +1,71 @@
+config_id: SUBPOPULATIONS-01
+version: 0.1.0
+status: APPROVED_FROZEN
+source: PART_A_PHASE_5_6_FROZEN_SUBGROUP_REGISTRY
+fairness_certification_permitted: false
+post_result_consolidation_permitted: false
+
+minimum_evidence:
+  discrimination_calibration:
+    minimum_records: 1000
+    minimum_defaults: 50
+    minimum_nondefaults: 50
+  threshold_error_rates:
+    minimum_records: 500
+    minimum_defaults: 50
+    minimum_nondefaults: 50
+  classification: PROJECT_DEFINED_FEASIBILITY_RULE_NOT_UNIVERSAL_STANDARD
+  below_minimum_status: INSUFFICIENT_DATA
+
+families:
+  - id: SG-01
+    name: BUREAU_HISTORY
+    source_features: [HAS_BUREAU_HISTORY]
+    definition: values_0_and_1
+  - id: SG-02
+    name: PREVIOUS_APPLICATION_HISTORY
+    source_features: [HAS_PREV_APP_HISTORY]
+    definition: values_0_and_1
+  - id: SG-03
+    name: JOINT_HISTORY
+    source_features: [HAS_BUREAU_HISTORY, HAS_PREV_APP_HISTORY]
+    definition: four_exact_binary_combinations
+  - id: SG-04
+    name: HOUSING_INFORMATION
+    source_features: [HOUSING_AVG_NUMERIC_DATA_AVAILABLE_FLAG]
+    definition: values_0_and_1
+  - id: SG-05
+    name: CAR_AGE_AVAILABILITY
+    source_features: [OWN_CAR_AGE_IS_MISSING]
+    definition: values_0_and_1
+  - id: SG-06
+    name: EMPLOYMENT_SENTINEL
+    source_features: [FLAG_DAYS_EMPLOYED_SENTINEL]
+    definition: values_0_and_1
+  - id: SG-07
+    name: BUREAU_REQUEST_AVAILABILITY
+    source_features: [BUREAU_REQUEST_DATA_AVAILABLE_FLAG]
+    definition: values_0_and_1
+  - id: SG-08
+    name: EXTERNAL_SCORE_AVAILABILITY
+    source_features: [EXT_SOURCE_1, EXT_SOURCE_2, EXT_SOURCE_3]
+    definition: non_missing_score_count_0_1_2_3
+  - id: SG-09
+    name: GENDER
+    source_features: [CODE_GENDER]
+    definition: all_observed_frozen_categories
+    exploratory_demographic: true
+  - id: SG-10
+    name: AGE_BAND
+    source_features: [DAYS_BIRTH]
+    definition: age_years_negative_days_birth_divided_by_365_25_with_frozen_bands
+    bands: ["[0,30)", "[30,45)", "[45,60)", "[60,+inf)"]
+    exploratory_demographic: true
+  - id: SG-11
+    name: REGION_RATING
+    source_features: [REGION_RATING_CLIENT]
+    definition: each_observed_integer_rating_separately
+  - id: SG-12
+    name: CONTRACT_TYPE
+    source_features: [NAME_CONTRACT_TYPE]
+    definition: all_observed_frozen_categories

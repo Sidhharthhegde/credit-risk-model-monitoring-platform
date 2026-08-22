@@ -1,0 +1,24 @@
+Metric_ID,Metric_Name,Layer,Outcome_Required,Alert_Role,Primary_Purpose,Protocol_Status
+DQ-01,Missing rate,DATA_QUALITY,False,DIRECT,Completeness,APPROVED
+DQ-02,Duplicate keys,DATA_QUALITY,False,HARD_GATE,Applicant-grain integrity,APPROVED
+DQ-03,Schema match,DATA_QUALITY,False,HARD_GATE,Frozen interface control,APPROVED
+DQ-04,Source availability,DATA_QUALITY,False,HARD_GATE_OR_DIRECT,External-source control,APPROVED
+DR-01,Feature PSI,DRIFT,False,DIRECT,Population shift,APPROVED
+DR-02,Numeric KS statistic,DRIFT,False,SUPPORTING,Numeric distribution shift,APPROVED
+DR-03,Wasserstein distance,DRIFT,False,SUPPORTING,Numeric distribution distance,APPROVED
+DR-04,Categorical chi-square,DRIFT,False,SUPPORTING,Categorical distribution shift,APPROVED
+PR-01,Mean raw PD,PREDICTION,False,SUPPORTING,Predicted portfolio risk,APPROVED
+PR-02,Score PSI,PREDICTION,False,DIRECT,Prediction distribution drift,APPROVED
+PR-03,Risk-positive rate,PREDICTION,False,DIRECT,Frozen-threshold output behaviour,APPROVED
+PR-04,Risk-negative rate,PREDICTION,False,SUPPORTING,Frozen-threshold output behaviour,APPROVED
+PF-01,ROC-AUC,PERFORMANCE,True,DIRECT_PENDING_THRESHOLD,Primary discrimination,APPROVED_NON_ALERTING
+PF-02,Performance KS,PERFORMANCE,True,DIRECT_PENDING_THRESHOLD,Primary discrimination,APPROVED_NON_ALERTING
+PF-03,PR-AUC,PERFORMANCE,True,SUPPORTING,Imbalanced discrimination,APPROVED
+PF-04,Gini,PERFORMANCE,True,SUPPORTING,Credit-risk discrimination convention,APPROVED
+CL-01,Observed-to-expected ratio,CALIBRATION,True,DIRECT_PENDING_THRESHOLD,Calibration level,APPROVED_NON_ALERTING
+CL-02,Brier score,CALIBRATION,True,DIRECT_PENDING_THRESHOLD,Probability accuracy,APPROVED_NON_ALERTING
+CL-03,Calibration bands,CALIBRATION,True,SUPPORTING,Risk-range calibration,APPROVED
+TM-01,Recall/default capture,THRESHOLD,True,DIRECT_PENDING_UNCERTAINTY,Frozen-threshold default capture,APPROVED_NON_ALERTING
+TM-02,Specificity,THRESHOLD,True,SUPPORTING,Frozen-threshold negative classification,APPROVED
+TM-03,Precision,THRESHOLD,True,SUPPORTING,Frozen-threshold positive classification,APPROVED
+TM-04,Risk-negative default rate,THRESHOLD,True,DIRECT_PENDING_THRESHOLD,Frozen-threshold residual risk,APPROVED_NON_ALERTING

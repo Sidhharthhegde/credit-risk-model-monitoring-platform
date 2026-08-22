@@ -1,0 +1,42 @@
+{
+  "contract_id": "OUTCOME-01",
+  "version": "0.1.0",
+  "status": "APPROVED_FROZEN",
+  "grain": "ONE_GOVERNED_OUTCOME_RECORD_PER_SK_ID_CURR_AND_COHORT",
+  "required_fields": [
+    "SK_ID_CURR",
+    "COHORT_ID",
+    "OUTCOME",
+    "OBSERVATION_START",
+    "OBSERVATION_END",
+    "MATURITY_STATUS",
+    "OUTCOME_SOURCE",
+    "OUTCOME_RECEIVED_TIMESTAMP",
+    "RECONCILIATION_STATUS"
+  ],
+  "outcome": {
+    "positive_class": 1,
+    "negative_class": 0,
+    "semantics": "OBSERVED_DEFAULT",
+    "contractual_horizon": null,
+    "contractual_horizon_status": "TBD_BY_APPROVED_TARGET_DEFINITION"
+  },
+  "maturity_statuses": [
+    "UNMATURED",
+    "PARTIALLY_MATURED",
+    "MATURED",
+    "NOT_AVAILABLE"
+  ],
+  "evidence_eligibility_statuses": [
+    "ELIGIBLE",
+    "INSUFFICIENT_DATA",
+    "NOT_ASSESSABLE"
+  ],
+  "authoritative_performance_rule": "ONLY_MATURED_AND_ELIGIBLE_COHORTS_MAY_ENTER_AUTHORITATIVE_PERFORMANCE_CALCULATIONS",
+  "simulation": {
+    "lag_months": 2,
+    "simulation_only": true,
+    "empirical_performance": false,
+    "external_validation": false
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "binding_contract_version": "0.1.0",
+  "binding_id": "PART-A-BINDING-01",
+  "status": "APPROVED_EXPECTED_BINDING_PENDING_PHASE_1_RUNTIME_VERIFICATION",
+  "part_a": {
+    "repository": "https://github.com/Sidhharthhegde/credit-risk-model-validation-suite",
+    "published_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+    "runtime_root_environment_variable": "PART_A_ROOT",
+    "workspace_mutability": "READ_ONLY"
+  },
+  "model": {
+    "development_freeze_id": "DF-01",
+    "model_id": "XGBT-01",
+    "model_version": "xgbt01_raw_threshold01_df_v1",
+    "family": "XGBoost",
+    "artifact_type": "FITTED_SKLEARN_PIPELINE_WITH_EMBEDDED_PREPROCESSOR_AND_CLASSIFIER",
+    "artifact_relative_path": "models/tuning/step45_xgb_tuning_v1/finalists/XGBT-01.joblib",
+    "artifact_size_bytes": 532563,
+    "artifact_sha256": "ab0000a4ae092f0444760839e185384d44f9a9760be298189bdfcd80c67fa500",
+    "pipeline_steps": ["preprocessor", "model"],
+    "raw_predictor_count": 176,
+    "encoded_predictor_count": 306,
+    "positive_class": 1,
+    "probability_representation": "RAW",
+    "probability_semantics": "P(TARGET=1 default | governed model inputs)",
+    "production_approved": false
+  },
+  "threshold": {
+    "threshold_id": "THRESHOLD-01",
+    "value": 0.08,
+    "operator": ">=",
+    "positive_output": "risk_positive",
+    "negative_output": "risk_negative",
+    "actual_approve_reject_decision_claimed": false
+  },
+  "authoritative_artifacts": [
+    {
+      "role": "SCORING_INPUT_SCHEMA",
+      "relative_path": "reports/experiments/step49_development_freeze_v1/scoring_input_schema.csv",
+      "size_bytes": 11756,
+      "sha256": "42b964e22ef753d6ff67ea5b9625ab035a74854d24c8b9cec2527b40df19cae9"
+    },
+    {
+      "role": "ENCODED_FEATURE_MANIFEST",
+      "relative_path": "reports/experiments/step49_development_freeze_v1/encoded_feature_manifest.csv",
+      "size_bytes": 33028,
+      "sha256": "a5a81eeb9ab701f7a8c4e6a745d80abfae0a933d46b45786771d6b629b073d54"
+    },
+    {
+      "role": "FEATURE_LINEAGE_MANIFEST",
+      "relative_path": "reports/experiments/step49_development_freeze_v1/feature_lineage_manifest.csv",
+      "size_bytes": 65231,
+      "sha256": "b62e2ac80c199def40cc3b30a97585014cf949a00380c9cb72a8bfeacfad89fe"
+    },
+    {
+      "role": "FEATURE_GOVERNANCE_REGISTRY",
+      "relative_path": "reports/final_feature_governance_registry.csv",
+      "size_bytes": 127209,
+      "sha256": "a44cd7e847591d976f3def04bf321a7b356a539f735777d3f14ac2142a9c9ae6"
+    },
+    {
+      "role": "GOLDEN_FIXTURE_INPUTS",
+      "relative_path": "reports/experiments/step49_development_freeze_v1/golden_fixture_inputs.csv",
+      "size_bytes": 76493,
+      "sha256": "17873375ac51accbc95f57f37fa9f6f65facceacd0735daf536311ab670f61e0"
+    },
+    {
+      "role": "GOLDEN_FIXTURE_PREDICTIONS",
+      "relative_path": "reports/experiments/step49_development_freeze_v1/golden_fixture_predictions.csv",
+      "size_bytes": 9775,
+      "sha256": "02e5a5b939d4c7264c3f9d608f7ead6ca4847558991c11a136669a68ef79942c"
+    },
+    {
+      "role": "GOLDEN_FIXTURE_ENCODED_MATRIX",
+      "relative_path": "reports/experiments/step49_development_freeze_v1/golden_fixture_encoded_matrix.npz",
+      "size_bytes": 6456,
+      "sha256": "008d1bf282308926b6f905e27026645b6b6a364309ea630b6aa6beb77b071336"
+    }
+  ],
+  "preprocessing_rule": {
+    "canonical_path": "EMBEDDED_INSIDE_XGBT_01_PIPELINE",
+    "standalone_preprocessor_role": "LINEAGE_AND_RECONCILIATION_EVIDENCE_ONLY",
+    "refit_permitted": false
+  }
+}

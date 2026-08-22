@@ -1,0 +1,11 @@
+{
+  "protocol_id": "MONITORING-PROTOCOL-01",
+  "review_decision": "APPROVED",
+  "approved_by": "USER_PROTOCOL_OWNER",
+  "approval_date": "2026-08-21",
+  "phase_0_complete": true,
+  "controlled_deferred_items_accepted": true,
+  "monitoring_calculation_execution_authorized": false,
+  "next_phase_authorized": "PHASE_1_PART_A_BINDING_VERIFICATION_AND_RUNTIME_QUALIFICATION",
+  "approval_statement": "MONITORING-PROTOCOL-01 is approved as the Phase 0 authoritative protocol with the three controlled-deferred items remaining inactive exactly as documented."
+}

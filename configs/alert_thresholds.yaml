@@ -1,0 +1,71 @@
+config_id: ALERT-THRESHOLDS-01
+protocol_id: MONITORING-PROTOCOL-01
+version: 0.1.0
+status: APPROVED_FROZEN
+classification: PROJECT_DEFINED_GOVERNANCE_ASSUMPTIONS_NOT_REGULATORY_REQUIREMENTS
+
+direct_alert_metrics:
+  feature_psi:
+    warning: 0.10
+    critical: 0.25
+    alert_enabled: true
+  score_psi:
+    warning: 0.10
+    critical: 0.25
+    alert_enabled: true
+  missing_rate_absolute_change:
+    warning: 0.02
+    critical: 0.05
+    alert_enabled: true
+  unknown_category_share:
+    warning: 0.01
+    critical: 0.05
+    alert_enabled: true
+  risk_positive_rate_absolute_change:
+    warning: 0.05
+    critical: 0.10
+    alert_enabled: true
+  roc_auc_deterioration:
+    warning: null
+    critical: null
+    alert_enabled: false
+    status: PENDING_PROTOCOL_AMENDMENT_AND_UNCERTAINTY_RULE
+  performance_ks_deterioration:
+    warning: null
+    critical: null
+    alert_enabled: false
+    status: PENDING_PROTOCOL_AMENDMENT_AND_UNCERTAINTY_RULE
+  brier_score_deterioration:
+    warning: null
+    critical: null
+    alert_enabled: false
+    status: PENDING_PROTOCOL_AMENDMENT_AND_UNCERTAINTY_RULE
+  observed_expected_ratio:
+    warning_lower: null
+    warning_upper: null
+    critical_lower: null
+    critical_upper: null
+    alert_enabled: false
+    status: PENDING_PROTOCOL_AMENDMENT_AND_UNCERTAINTY_RULE
+
+supporting_diagnostics:
+  - numeric_ks_p_value
+  - categorical_chi_square_p_value
+  - wasserstein_distance
+  - pr_auc
+  - gini
+  - calibration_curve
+
+p_value_policy: NEVER_GENERATES_AN_ALERT_INDEPENDENTLY
+
+repeat_breach:
+  warning_consecutive_periods_for_escalation: 2
+  critical_immediate: true
+  recovery_requires_consecutive_normal_periods: 1
+
+overall_health:
+  hard_control_failure: NOT_ASSESSABLE
+  any_critical_domain: CRITICAL
+  no_critical_and_any_warning: WARNING
+  all_eligible_domains_normal: NORMAL
+  unmatured_performance_effect: DOES_NOT_FORCE_NORMAL_OR_CRITICAL

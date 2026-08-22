@@ -1,0 +1,15 @@
+{
+  "protocol_id": "MONITORING-PROTOCOL-01",
+  "version": "0.1.0",
+  "status": "APPROVED_FROZEN",
+  "project_type": "PORTFOLIO_MODEL_RISK_MONITORING_DEMONSTRATION",
+  "monitoring_mode": "PRODUCTION_SHAPED_SIMULATION",
+  "monitored_model": "DF-01 / XGBT-01",
+  "actually_deployed": false,
+  "production_approved": false,
+  "production_data_used": false,
+  "empirical_external_performance_evidence": false,
+  "application_test_role": "UNLABELLED_OBSERVATION_COHORT_SIMULATION_ONLY",
+  "model_modification_permitted": false,
+  "monitoring_calculations_authorized_by_draft": false
+}

@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.local.yaml
+*.local.yml
+*.local.json
+
+# Restricted or generated data
+data/external/*
+data/interim/*
+data/processed/*
+!data/**/README.md
+artifacts/reference_snapshots/*
+artifacts/reference_bins/*
+!artifacts/**/README.md
+
+# Model artifacts must remain outside Part B
+*.joblib
+*.pkl
+*.pickle
+*.model
+
+# Local monitoring state and full evidence
+*.db
+*.sqlite
+*.sqlite3
+evidence/*
+!evidence/README.md
+!evidence/sample_public_run/
+!evidence/sample_public_run/**
+
+# Row-level or generated monitoring outputs
+predictions/
+outcomes/
+monitoring_runs/
+scenario_cohorts/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+

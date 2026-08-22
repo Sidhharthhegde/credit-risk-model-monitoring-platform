@@ -1,0 +1,44 @@
+{
+  "phase": "PHASE_0",
+  "phase_name": "REPOSITORY_FOUNDATION_AND_MONITORING_PROTOCOL_FREEZE",
+  "protocol_id": "MONITORING-PROTOCOL-01",
+  "decision_status": "APPROVED",
+  "phase_complete": true,
+  "review_decision": "APPROVED",
+  "approved_by": "USER_PROTOCOL_OWNER",
+  "approval_date": "2026-08-21",
+  "monitoring_execution_authorized": false,
+  "next_phase_authorized": "PHASE_1_PART_A_BINDING_VERIFICATION_AND_RUNTIME_QUALIFICATION",
+  "controlled_deferred_items_accepted": true,
+  "controlled_deferred_items": [
+    "PERFORMANCE_ALERT_LIMITS_AND_UNCERTAINTY_RULES",
+    "EXACT_CRITICAL_PREDICTOR_TIER_MAPPING",
+    "THRESHOLD_BOUNDARY_DENSITY_WINDOW"
+  ],
+  "deferred_item_effect": "ASSOCIATED_ALERTS_OR_METRICS_REMAIN_DISABLED_UNTIL_APPROVED_BY_VERSIONED_PROTOCOL_AMENDMENT",
+  "monitoring_results_calculated": false,
+  "reference_statistics_materialized": false,
+  "psi_bins_created": false,
+  "scenario_results_generated": false,
+  "approval_scope": "PHASE_0_PROTOCOL_APPROVAL_AND_PHASE_1_ENTRY_AUTHORIZATION_ONLY",
+  "completed_work": [
+    "PART_B_REPOSITORY_INITIALIZED_AND_REMOTE_CONFIGURED",
+    "PART_A_EXPECTED_BINDING_VALUES_RECORDED",
+    "MONITORING_POLICY_APPROVED",
+    "CHANGE_CONTROL_POLICY_APPROVED",
+    "THREE_DATA_CONTRACTS_APPROVED",
+    "MONITORING_CONFIGURATIONS_APPROVED",
+    "METRIC_REGISTRY_APPROVED",
+    "SUBPOPULATION_RULES_APPROVED",
+    "PUBLIC_PRIVATE_EVIDENCE_RULES_APPROVED",
+    "APPROVED_PROTOCOL_MANIFEST_AND_SIDECAR_VERIFIED"
+  ],
+  "pending_gates": [],
+  "next_phase_restrictions": [
+    "NO_REFERENCE_STATISTICS",
+    "NO_PSI_OR_DRIFT_CALCULATIONS",
+    "NO_SCENARIO_RESULTS",
+    "NO_PERFORMANCE_OR_CALIBRATION_CALCULATIONS",
+    "NO_MONITORING_EXECUTION"
+  ]
+}

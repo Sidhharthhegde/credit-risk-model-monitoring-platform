@@ -1,0 +1,26 @@
+config_id: MODEL-CONFIG-01
+version: 0.1.0
+status: APPROVED_FROZEN
+
+model_binding:
+  contract: contracts/part_a_binding.json
+  authoritative_for_technical_identity: true
+
+display:
+  name: DF-01 Credit Default Risk Model
+  lifecycle_role: frozen_part_a_model_under_monitoring
+  project_mode: production_shaped_simulation
+
+target:
+  field: TARGET
+  positive_class: 1
+  semantics: observed_default
+  contractual_horizon: null
+  contractual_horizon_status: TBD_BY_APPROVED_TARGET_DEFINITION
+
+claims:
+  production_approved: false
+  actually_deployed: false
+  external_validation_completed: false
+  out_of_time_validation_completed: false
+  fairness_certification_completed: false

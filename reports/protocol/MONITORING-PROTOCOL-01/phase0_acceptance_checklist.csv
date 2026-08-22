@@ -1,0 +1,45 @@
+Check_ID,Requirement,Status,Evidence_or_Disposition
+P0-001,Production-shaped simulation scope explicit,PASS,MONITORING_POLICY.md sections 1-5
+P0-002,DF-01 and XGBT-01 identity recorded,PASS,contracts/part_a_binding.json
+P0-003,THRESHOLD-01 at 0.080 with >= comparator recorded,PASS,contracts/part_a_binding.json
+P0-004,RAW probability representation recorded,PASS,contracts/part_a_binding.json
+P0-005,Production approval explicitly false,PASS,contracts/part_a_binding.json
+P0-006,Part A commit recorded,PASS,contracts/part_a_binding.json
+P0-007,Model artifact hash recorded,PASS,contracts/part_a_binding.json
+P0-008,Schema and lineage hashes recorded,PASS,contracts/part_a_binding.json
+P0-009,Golden fixture artifacts individually hash-bound,PASS,contracts/part_a_binding.json
+P0-010,Input reference role defined,PASS,MONITORING_POLICY.md section 7.1
+P0-011,Performance reference role defined,PASS,MONITORING_POLICY.md section 7.2
+P0-012,Threshold selection and performance references separated,PASS,MONITORING_POLICY.md sections 7.3-7.4
+P0-013,Historical third split limitation defined,PASS,MONITORING_POLICY.md section 7.5
+P0-014,application_test label-free role defined,PASS,MONITORING_POLICY.md section 7.6
+P0-015,Separate input output and outcome contracts exist,PASS,contracts directory
+P0-016,Unseen categories permitted by frozen scorer,PASS,contracts/scoring_input_contract.json
+P0-017,Training ranges not invented as scorer hard gates,PASS,contracts/scoring_input_contract.json
+P0-018,Contractual outcome horizon unresolved rather than fabricated,PASS,contracts/outcome_contract.json
+P0-019,Two-month lag labelled simulation-only,PASS,contracts/outcome_contract.json
+P0-020,Maturity and evidence sufficiency separated,PASS,contracts/outcome_contract.json
+P0-021,Label-free and outcome-dependent metrics separated,PASS,configs/monitoring_config.yaml
+P0-022,PR-AUC retained as secondary evidence,PASS,configs/metric_registry.csv
+P0-023,Frozen threshold metrics retained,PASS,configs/metric_registry.csv
+P0-024,No 0.5 threshold introduced,PASS,MONITORING_POLICY.md section 13
+P0-025,All 12 subgroup families registered,PASS,configs/subpopulations.yaml
+P0-026,Part A minimum-evidence rules inherited,PASS,configs/subpopulations.yaml
+P0-027,Hard-gate conditions defined,PASS,MONITORING_POLICY.md section 26
+P0-028,Source technical and policy failures distinguished,PASS,MONITORING_POLICY.md section 16
+P0-029,Metric severity and evidence eligibility separated,PASS,configs/monitoring_config.yaml
+P0-030,Alert lifecycle defined,PASS,configs/monitoring_config.yaml
+P0-031,Run and control states defined,PASS,configs/monitoring_config.yaml
+P0-032,p-values prohibited from independent alerting,PASS,configs/alert_thresholds.yaml
+P0-033,Repeat-breach logic defined,PASS,configs/alert_thresholds.yaml
+P0-034,Overall-health aggregation defined,PASS,configs/alert_thresholds.yaml
+P0-035,Synthetic evidence policy explicit,PASS,MONITORING_POLICY.md section 29
+P0-036,DF-01 immutability explicit,PASS,MONITORING_POLICY.md section 6
+P0-037,Escalation taxonomy exists,PASS,MONITORING_POLICY.md section 28
+P0-038,Evidence package requirements defined,PASS,docs/PROJECT_IMPLEMENTATION_PLAN.md Phase 15
+P0-039,Public and local evidence separated,PASS,.gitignore and MONITORING_POLICY.md section 31
+P0-040,Performance alert thresholds handled explicitly,PASS,Disabled pending approved uncertainty amendment; no implicit limits
+P0-041,Exact critical-feature mapping handled explicitly,CONTROLLED_DEFERRED,Source criticality frozen; predictor tiers require Part A evidence mapping before drift implementation
+P0-042,Boundary-density window handled explicitly,CONTROLLED_DEFERRED,Metric remains inactive until versioned protocol amendment
+P0-043,Protocol artifacts reviewed and approved,PASS,Approved by USER_PROTOCOL_OWNER on 2026-08-21
+P0-044,Protocol manifest and sidecar hash finalized,PASS,Manifest artifact reconciliation and sidecar hash verified

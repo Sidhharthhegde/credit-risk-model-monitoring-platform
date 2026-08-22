@@ -1,0 +1,36 @@
+{
+  "protocol_id": "MONITORING-PROTOCOL-01",
+  "version": "0.1.0",
+  "status": "APPROVED_FROZEN",
+  "approved_by": "USER_PROTOCOL_OWNER",
+  "approval_date": "2026-08-21",
+  "manifest_scope": "APPROVED_IMMUTABLE_PHASE_0_PROTOCOL_ARTIFACTS",
+  "living_project_documents_excluded": [
+    "docs/PROJECT_IMPLEMENTATION_PLAN.md",
+    "docs/DECISION_LOG.md",
+    "docs/DOCUMENT_REGISTER.md"
+  ],
+  "living_document_exclusion_reason": "Living status and decision documents must remain updateable without invalidating the frozen Phase 0 methodology.",
+  "artifacts": [
+    {"path": "MONITORING_POLICY.md", "size_bytes": 19208, "sha256": "04bd924a0936aa75e71968a910733054ac412dadfa42702c1e97f0c2516b74d1"},
+    {"path": "CHANGE_CONTROL_POLICY.md", "size_bytes": 3316, "sha256": "be426096aa315ec8461c4c1ef5db63f7df6aa129282aacb26dca76be2d09af71"},
+    {"path": "contracts/part_a_binding.json", "size_bytes": 3509, "sha256": "366b1c6c325651b12dc5c784d2086d2e4785cf5d01b658baaa041e7d9d850d45"},
+    {"path": "contracts/scoring_input_contract.json", "size_bytes": 1457, "sha256": "b0887d209bf32dd875e2c642ca89e774524f5d75a55b9a424f0ca95c38dac0f4"},
+    {"path": "contracts/scoring_output_contract.json", "size_bytes": 935, "sha256": "7e2475af20905865d7d49f201667ac60fba23f19deeb9073bccb74cec6f45e7d"},
+    {"path": "contracts/outcome_contract.json", "size_bytes": 1073, "sha256": "c4192b863243e297b2dfa4029861b3a8a07746f5745d3089edf56e5cad780270"},
+    {"path": "configs/model_config.yaml", "size_bytes": 674, "sha256": "7bd34d02abca6adf7a0048b5dcfbe54c2a12535f5d867780e32619569462b6c5"},
+    {"path": "configs/monitoring_config.yaml", "size_bytes": 2415, "sha256": "9c3ffed4ee55021b2aec4ed949b4c1e62d63be52aa3662f31347ba9ce02179d3"},
+    {"path": "configs/alert_thresholds.yaml", "size_bytes": 1881, "sha256": "987373af8b91f5cbfe5dbaaea829bd122d64ad41e9dc32e6084eb5ef5856d331"},
+    {"path": "configs/subpopulations.yaml", "size_bytes": 2291, "sha256": "c1041f9e5bf695f48adc7505956812baa5888a5e6c48aff98eaeab46186d538d"},
+    {"path": "configs/metric_registry.csv", "size_bytes": 2208, "sha256": "f0c232aae9da0bc78bd0354a7e81e9203255d415b80f760ae396aba6a45e782c"},
+    {"path": "reports/protocol/MONITORING-PROTOCOL-01/README.md", "size_bytes": 465, "sha256": "9bac5fc7e76e59611390ade407c69216eb628c0450216c67472ef47d630dffc7"},
+    {"path": "reports/protocol/MONITORING-PROTOCOL-01/protocol_scope_statement.json", "size_bytes": 579, "sha256": "8fdd8aef636825f60014f7e434112bbe579c1ee01943c8133f4caeb69d832a45"},
+    {"path": "reports/protocol/MONITORING-PROTOCOL-01/phase0_acceptance_checklist.csv", "size_bytes": 3940, "sha256": "b31b0d5f55794e7a54fa460a81b21dd5e75dcb78ddbf15512cc39845de8f2ebd"},
+    {"path": "reports/protocol/MONITORING-PROTOCOL-01/phase0_completion_decision.json", "size_bytes": 1712, "sha256": "4fb5e7cc6ef74a8c283e648d59f31b64199e95b40d22e07488609d5ffe5b5ecd"},
+    {"path": "reports/protocol/MONITORING-PROTOCOL-01/protocol_approval_record.json", "size_bytes": 557, "sha256": "7c33a39e88ace8472f69cf0a760af06d33d283d79224c492fb1f1e75a07e9aa9"}
+  ],
+  "monitoring_results_included": false,
+  "reference_statistics_included": false,
+  "psi_bins_included": false,
+  "scenario_results_included": false
+}

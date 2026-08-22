@@ -1,0 +1,45 @@
+{
+  "contract_id": "SCORING-INPUT-01",
+  "version": "0.1.0",
+  "status": "APPROVED_FROZEN",
+  "grain": "ONE_ROW_PER_SK_ID_CURR",
+  "identifier": {
+    "name": "SK_ID_CURR",
+    "required": true,
+    "nullable": false,
+    "unique": true,
+    "predictor": false
+  },
+  "predictors": {
+    "required_count": 176,
+    "identity_source": "PART_A_ROOT/reports/experiments/step49_development_freeze_v1/scoring_input_schema.csv",
+    "identity_sha256": "42b964e22ef753d6ff67ea5b9625ab035a74854d24c8b9cec2527b40df19cae9",
+    "set_policy": "EXACT_SET_THEN_REORDER_TO_FROZEN_ORDER",
+    "unexpected_columns_allowed": false,
+    "duplicate_columns_allowed": false
+  },
+  "numeric": {
+    "compatible_numeric_dtype_required": true,
+    "missing_allowed_when_frozen_schema_allows": true,
+    "infinity_allowed": false,
+    "training_range_is_hard_contract": false
+  },
+  "categorical": {
+    "non_missing_values_must_be_strings": true,
+    "missing_allowed_when_frozen_schema_allows": true,
+    "unseen_categories_allowed": true,
+    "unseen_category_treatment": "FROZEN_ONE_HOT_ENCODER_HANDLE_UNKNOWN_IGNORE",
+    "closed_vocabulary_is_hard_contract": false
+  },
+  "binary": {
+    "numeric_required": true,
+    "missing_allowed": false,
+    "allowed_values": [0, 1]
+  },
+  "forbidden_fields": [
+    "TARGET",
+    "raw_probability",
+    "risk_class"
+  ],
+  "range_and_novelty_policy": "MAY_GENERATE_DATA_QUALITY_ALERTS_BUT_ARE_NOT_AUTOMATIC_SCORER_CONTRACT_FAILURES"
+}

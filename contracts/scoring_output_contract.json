@@ -1,0 +1,33 @@
+{
+  "contract_id": "SCORING-OUTPUT-01",
+  "version": "0.1.0",
+  "status": "APPROVED_FROZEN",
+  "grain": "ONE_ROW_PER_SCORED_SK_ID_CURR",
+  "required_fields": [
+    "SK_ID_CURR",
+    "XGBT_RAW_PROBABILITY",
+    "THRESHOLD_ID",
+    "THRESHOLD_VALUE",
+    "RISK_CLASS",
+    "MODEL_ID",
+    "MODEL_VERSION",
+    "DEVELOPMENT_FREEZE_ID",
+    "RUN_ID",
+    "SCORING_TIMESTAMP"
+  ],
+  "constraints": {
+    "SK_ID_CURR_complete": true,
+    "SK_ID_CURR_unique": true,
+    "probability_finite": true,
+    "probability_minimum": 0.0,
+    "probability_maximum": 1.0,
+    "threshold_id": "THRESHOLD-01",
+    "threshold_value": 0.08,
+    "threshold_operator": ">=",
+    "risk_classes": ["risk_negative", "risk_positive"],
+    "model_id": "XGBT-01",
+    "model_version": "xgbt01_raw_threshold01_df_v1",
+    "development_freeze_id": "DF-01"
+  },
+  "interpretation": "RISK_CLASS_IS_AN_ANALYTICAL_DECISION_PROXY_NOT_AN_APPROVAL_OR_REJECTION_DECISION"
+}

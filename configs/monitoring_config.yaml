@@ -1,0 +1,93 @@
+config_id: MONITORING-CONFIG-01
+protocol_id: MONITORING-PROTOCOL-01
+version: 0.1.0
+status: APPROVED_FROZEN
+
+mode: production_shaped_simulation
+frequency:
+  simulation: monthly
+  governance_classification: PROJECT_DEFINED_SIMULATION_ASSUMPTION
+
+references:
+  input_distribution:
+    reference_id: FEATURE-REF-01
+    source: train_deterministic_base
+  performance:
+    reference_id: PERF-REF-01
+    source: development_validation
+  threshold_selection_lineage:
+    reference_id: THRESHOLD-SELECTION-REF-01
+    source: train_oof
+  threshold_performance:
+    reference_id: THRESHOLD-PERF-REF-01
+    source: development_validation
+  historical_context:
+    reference_id: HISTORICAL-CONTEXT-01
+    source: historically_exposed_third_split
+    authoritative_external_evidence: false
+  unlabelled_simulation:
+    population_id: APPLICATION-TEST-SIM-01
+    source: application_test
+    represents_observed_calendar_months: false
+
+outcome_maturity:
+  contractual_horizon: null
+  contractual_horizon_status: TBD_BY_APPROVED_TARGET_DEFINITION
+  reporting_lag: null
+  reporting_lag_status: TBD
+  simulation_lag_months: 2
+  simulation_only: true
+  eligible_maturity_status: MATURED
+  required_evidence_eligibility: ELIGIBLE
+
+metrics:
+  label_free:
+    - data_quality
+    - source_availability
+    - missingness
+    - feature_psi
+    - numeric_ks
+    - wasserstein
+    - categorical_chi_square
+    - mean_pd
+    - score_psi
+    - risk_positive_rate
+    - risk_negative_rate
+  outcome_dependent:
+    - roc_auc
+    - performance_ks
+    - pr_auc
+    - gini
+    - observed_default_rate
+    - observed_expected_ratio
+    - brier_score
+    - calibration_bands
+    - recall_default_capture
+    - specificity
+    - precision
+    - confusion_matrix
+    - risk_negative_default_rate
+
+statuses:
+  metric_severity: [NORMAL, WARNING, CRITICAL]
+  ineligible_metric_severity: N/A
+  evidence_eligibility: [ELIGIBLE, INSUFFICIENT_DATA, NOT_ASSESSABLE]
+  maturity: [UNMATURED, PARTIALLY_MATURED, MATURED, NOT_AVAILABLE]
+  alert_lifecycle: [OPEN, ACKNOWLEDGED, RESOLVED]
+  run_control:
+    - SUCCESS
+    - FAILED
+    - DATA_INVALID
+    - MODEL_BINDING_FAILED
+    - SCORING_PARITY_FAILED
+    - SOURCE_UNAVAILABLE
+
+synthetic_evidence:
+  allowed: true
+  required_label: SYNTHETIC_SCENARIO_EVIDENCE
+  empirical_performance: false
+  external_validation: false
+
+immutability:
+  df01_modification_permitted: false
+  model_change_requires_new_version: true

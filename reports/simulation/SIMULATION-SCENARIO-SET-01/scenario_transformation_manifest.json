@@ -1,0 +1,136 @@
+{
+  "creation_code_version": "PHASE5-SCENARIO-GENERATOR-0.1.0",
+  "monitoring_metrics_used_in_design": false,
+  "records": [
+    {
+      "changed_features": [
+        "AMT_INCOME_TOTAL"
+      ],
+      "intended_features": [
+        "AMT_INCOME_TOTAL"
+      ],
+      "monitoring_metric_used_to_select_magnitude": false,
+      "operation": "MULTIPLICATIVE_SHIFT",
+      "scenario_id": "SIM-M03",
+      "selected_row_count": 3250,
+      "transformation_id": "M03-T01"
+    },
+    {
+      "changed_features": [
+        "EXT_SOURCE_2"
+      ],
+      "intended_features": [
+        "EXT_SOURCE_2"
+      ],
+      "monitoring_metric_used_to_select_magnitude": false,
+      "operation": "BOUNDED_MULTIPLICATIVE_SHIFT",
+      "scenario_id": "SIM-M03",
+      "selected_row_count": 2843,
+      "transformation_id": "M03-T02"
+    },
+    {
+      "changed_features": [
+        "EXT_SOURCE_2",
+        "EXT_SOURCE_3"
+      ],
+      "intended_features": [
+        "EXT_SOURCE_2",
+        "EXT_SOURCE_3"
+      ],
+      "monitoring_metric_used_to_select_magnitude": false,
+      "operation": "BOUNDED_MULTIPLICATIVE_SHIFT",
+      "scenario_id": "SIM-M04",
+      "selected_row_count": 5687,
+      "transformation_id": "M04-T01"
+    },
+    {
+      "changed_features": [
+        "AMT_CREDIT",
+        "AMT_ANNUITY",
+        "AMT_GOODS_PRICE"
+      ],
+      "intended_features": [
+        "AMT_CREDIT",
+        "AMT_ANNUITY",
+        "AMT_GOODS_PRICE"
+      ],
+      "monitoring_metric_used_to_select_magnitude": false,
+      "operation": "MULTIPLICATIVE_SHIFT",
+      "scenario_id": "SIM-M04",
+      "selected_row_count": 4874,
+      "transformation_id": "M04-T02"
+    },
+    {
+      "changed_features": [
+        "BUREAU_DEBT_TOTAL",
+        "BUREAU_DEBT_MEAN",
+        "BUREAU_DEBT_MAX",
+        "BUREAU_DEBT_TO_CREDIT_RATIO"
+      ],
+      "intended_features": [
+        "BUREAU_DEBT_TOTAL",
+        "BUREAU_DEBT_MEAN",
+        "BUREAU_DEBT_MAX",
+        "BUREAU_DEBT_TO_CREDIT_RATIO"
+      ],
+      "monitoring_metric_used_to_select_magnitude": false,
+      "operation": "MULTIPLICATIVE_SHIFT",
+      "scenario_id": "SIM-M04",
+      "selected_row_count": 4062,
+      "transformation_id": "M04-T03"
+    },
+    {
+      "changed_features": [
+        "EXT_SOURCE_1"
+      ],
+      "intended_features": [
+        "EXT_SOURCE_1"
+      ],
+      "monitoring_metric_used_to_select_magnitude": false,
+      "operation": "MISSINGNESS_INJECTION",
+      "scenario_id": "SIM-M05",
+      "selected_row_count": 1625,
+      "transformation_id": "M05-T01"
+    },
+    {
+      "changed_features": [
+        "OCCUPATION_TYPE"
+      ],
+      "intended_features": [
+        "OCCUPATION_TYPE"
+      ],
+      "monitoring_metric_used_to_select_magnitude": false,
+      "operation": "MISSINGNESS_INJECTION",
+      "scenario_id": "SIM-M05",
+      "selected_row_count": 1219,
+      "transformation_id": "M05-T02"
+    },
+    {
+      "changed_features": [
+        "NAME_TYPE_SUITE"
+      ],
+      "intended_features": [
+        "NAME_TYPE_SUITE"
+      ],
+      "monitoring_metric_used_to_select_magnitude": false,
+      "operation": "UNSEEN_CATEGORY_INJECTION",
+      "scenario_id": "SIM-M05",
+      "selected_row_count": 406,
+      "transformation_id": "M05-T03"
+    },
+    {
+      "changed_features": [
+        "AMT_INCOME_TOTAL"
+      ],
+      "intended_features": [
+        "AMT_INCOME_TOTAL"
+      ],
+      "monitoring_metric_used_to_select_magnitude": false,
+      "operation": "FINITE_TAIL_ENRICHMENT",
+      "scenario_id": "SIM-M05",
+      "selected_row_count": 81,
+      "transformation_id": "M05-T04"
+    }
+  ],
+  "status": "APPROVED_FROZEN"
+}

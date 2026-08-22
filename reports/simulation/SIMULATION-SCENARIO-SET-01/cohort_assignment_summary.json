@@ -1,0 +1,40 @@
+{
+  "algorithm": {
+    "algorithm": "SHA256_SORT_THEN_ROUND_ROBIN",
+    "algorithm_id": "SIM-COHORT-ASSIGNMENT-01",
+    "calendar_interpretation": false,
+    "cohort_count": 6,
+    "digest_order": "ASCENDING",
+    "expected_count_per_cohort": 8124,
+    "hash_input": "APPLICATION-TEST-SIM-01|CANONICAL_DECIMAL_SK_ID_CURR",
+    "labels": [
+      "SIM-M01",
+      "SIM-M02",
+      "SIM-M03",
+      "SIM-M04",
+      "SIM-M05",
+      "SIM-M06"
+    ],
+    "tie_break": "SK_ID_CURR_ASCENDING"
+  },
+  "assignment_id": "SIM-COHORT-ASSIGNMENT-01",
+  "cohort_counts": {
+    "SIM-M01": 8124,
+    "SIM-M02": 8124,
+    "SIM-M03": 8124,
+    "SIM-M04": 8124,
+    "SIM-M05": 8124,
+    "SIM-M06": 8124
+  },
+  "membership_content_hashes": {
+    "SIM-M01": "4c86eba39d531fbc317e39a5b7b5cfb23725c25c0621bf712f05a0e92c6d4df5",
+    "SIM-M02": "e03c1bf90b7157c1d4db92c4e28913e1067f4e93d840314aba211f749c41dcbf",
+    "SIM-M03": "2a3e66ea1fc61795411659623b8c460ee622f2a159cb8fd9f79d576b3fcd2389",
+    "SIM-M04": "83490744d50bd69cc08f2df88fe84388bf446f65f1c73ec295ffa96a0762ed5f",
+    "SIM-M05": "8323839f1fa343ae4062b63462bd5c57600690ff021ed4d5704de4bfef8112ff",
+    "SIM-M06": "5d3b58a2f0f52a52867235a124b6337caa07dcf1ea80d628a4846acd061c7d66"
+  },
+  "parent_content_sha256": "f1fe279b2fcf28cb14eed2aa9367ed9a7cc1c4b55217b5b7c19f1ebd3580ccff",
+  "parent_snapshot_id": "APPLICATION-TEST-BASE-01",
+  "row_level_membership_publicly_persisted": false
+}

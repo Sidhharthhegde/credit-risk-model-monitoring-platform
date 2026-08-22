@@ -18,6 +18,10 @@
 | `src/credit_risk_monitoring/reference/` | 0.1.0 | Implemented and tested | Phase 4 materialization, statistics, binning, reproducibility and qualification logic |
 | `reports/reference/REFERENCE-MATERIALIZATION-01/` | 0.1.0 | Approved and frozen | Sanitized aggregate Phase 4 evidence and manifest; no row-level snapshots |
 | `artifacts/reference_snapshots/REFERENCE-MATERIALIZATION-01/` | 0.1.0 | Local-only, approved and frozen | Restricted Parquet snapshots, metadata, lifecycle evidence and manifests; ignored by Git |
+| `contracts/simulation_scenario_contract.json` | 0.1.0 | Approved and frozen | Prospective six-cohort scenario design and transformation policy |
+| `src/credit_risk_monitoring/simulation/` | 0.1.0 | Implemented and tested | Deterministic assignment, scenario transformation, source degradation and synthetic-outcome generation |
+| `reports/simulation/SIMULATION-SCENARIO-SET-01/` | 0.1.0 | Approved and frozen | Sanitized Phase 5 construction and integrity evidence; no applicant-level data or monitoring results |
+| `artifacts/simulation_scenarios/SIMULATION-SCENARIO-SET-01/` | 0.1.0 | Local-only, approved and frozen | Restricted cohort, scenario, diagnostic and synthetic-outcome Parquet artifacts; ignored by Git |
 | `configs/model_config.yaml` | 0.1.0 | Approved and frozen | Semantic model metadata referencing the binding |
 | `configs/monitoring_config.yaml` | 0.1.0 | Approved and frozen | Monitoring scope and execution policy |
 | `configs/alert_thresholds.yaml` | 0.1.0 | Approved and frozen | Project-defined alert assumptions |

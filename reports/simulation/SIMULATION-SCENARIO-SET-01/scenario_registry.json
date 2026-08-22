@@ -1,0 +1,177 @@
+{
+  "contract_sha256": "2f182e3ee56daa8e2fecb4b34c15a25d28f79ee34fbb2ad9799eb907437ecf4a",
+  "scenario_set_id": "SIMULATION-SCENARIO-SET-01",
+  "scenarios": [
+    {
+      "expected_future_signal": "NO_DELIBERATE_MUTATION",
+      "expected_signal_is_assertion": false,
+      "scenario_id": "SIM-M01",
+      "scenario_type": "STABLE_CONTROL",
+      "transformations": []
+    },
+    {
+      "expected_future_signal": "NATURAL_COHORT_VARIATION_ONLY",
+      "expected_signal_is_assertion": false,
+      "scenario_id": "SIM-M02",
+      "scenario_type": "STABLE_LONGITUDINAL_CONTROL",
+      "transformations": []
+    },
+    {
+      "expected_future_signal": "WARNING_CANDIDATE",
+      "expected_signal_is_assertion": false,
+      "scenario_id": "SIM-M03",
+      "scenario_type": "MILD_VALID_POPULATION_DRIFT",
+      "transformations": [
+        {
+          "factor": 0.95,
+          "features": [
+            "AMT_INCOME_TOTAL"
+          ],
+          "operation": "MULTIPLICATIVE_SHIFT",
+          "selection_rate": 0.4,
+          "transformation_id": "M03-T01"
+        },
+        {
+          "factor": 0.95,
+          "features": [
+            "EXT_SOURCE_2"
+          ],
+          "lower": 0.0,
+          "operation": "BOUNDED_MULTIPLICATIVE_SHIFT",
+          "selection_rate": 0.35,
+          "transformation_id": "M03-T02",
+          "upper": 1.0
+        }
+      ]
+    },
+    {
+      "expected_future_signal": "STRONG_DRIFT_CANDIDATE",
+      "expected_signal_is_assertion": false,
+      "scenario_id": "SIM-M04",
+      "scenario_type": "MATERIAL_VALID_POPULATION_AND_SCORE_DRIVER_DRIFT",
+      "transformations": [
+        {
+          "factor": 0.8,
+          "features": [
+            "EXT_SOURCE_2",
+            "EXT_SOURCE_3"
+          ],
+          "lower": 0.0,
+          "operation": "BOUNDED_MULTIPLICATIVE_SHIFT",
+          "selection_rate": 0.7,
+          "transformation_id": "M04-T01",
+          "upper": 1.0
+        },
+        {
+          "factor": 1.15,
+          "features": [
+            "AMT_CREDIT",
+            "AMT_ANNUITY",
+            "AMT_GOODS_PRICE"
+          ],
+          "operation": "MULTIPLICATIVE_SHIFT",
+          "selection_rate": 0.6,
+          "transformation_id": "M04-T02"
+        },
+        {
+          "factor": 1.25,
+          "features": [
+            "BUREAU_DEBT_TOTAL",
+            "BUREAU_DEBT_MEAN",
+            "BUREAU_DEBT_MAX",
+            "BUREAU_DEBT_TO_CREDIT_RATIO"
+          ],
+          "operation": "MULTIPLICATIVE_SHIFT",
+          "selection_rate": 0.5,
+          "transformation_id": "M04-T03"
+        }
+      ]
+    },
+    {
+      "expected_future_signal": "DATA_QUALITY_CONTROL_CANDIDATE",
+      "expected_signal_is_assertion": false,
+      "scenario_id": "SIM-M05",
+      "scenario_type": "DATA_QUALITY_AND_SOURCE_DEGRADATION",
+      "separate_variants": [
+        "SIM-M05-VALID-DEGRADED-01",
+        "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+        "SIM-M05-HARD-FAIL-01"
+      ],
+      "transformations": [
+        {
+          "features": [
+            "EXT_SOURCE_1"
+          ],
+          "operation": "MISSINGNESS_INJECTION",
+          "selection_rate": 0.2,
+          "transformation_id": "M05-T01"
+        },
+        {
+          "features": [
+            "OCCUPATION_TYPE"
+          ],
+          "operation": "MISSINGNESS_INJECTION",
+          "selection_rate": 0.15,
+          "transformation_id": "M05-T02"
+        },
+        {
+          "features": [
+            "NAME_TYPE_SUITE"
+          ],
+          "operation": "UNSEEN_CATEGORY_INJECTION",
+          "selection_rate": 0.05,
+          "transformation_id": "M05-T03",
+          "value": "__SIM_UNSEEN_TYPE_SUITE__"
+        },
+        {
+          "factor": 10.0,
+          "features": [
+            "AMT_INCOME_TOTAL"
+          ],
+          "operation": "FINITE_TAIL_ENRICHMENT",
+          "selection_rate": 0.01,
+          "transformation_id": "M05-T04"
+        }
+      ],
+      "variant_specifications": {
+        "SIM-M05-HARD-FAIL-01": {
+          "duplicate_count": 1,
+          "expected_contract_result": "REJECT_DUPLICATE_SK_ID_CURR",
+          "operation": "DUPLICATE_APPLICANT_RECORD"
+        },
+        "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01": {
+          "authoritative_completion": false,
+          "availability_state": "SOURCE_DEGRADED",
+          "fallback_status": "NO_APPROVED_FALLBACK",
+          "governance_state": "SOURCE_POLICY_REQUIRED",
+          "operation": "PARTIAL_BUREAU_SOURCE_LOSS",
+          "reason": "CND_02_OPEN_NO_APPROVED_FALLBACK",
+          "selection_rate": 0.1,
+          "technical_scoring_checked": true
+        }
+      }
+    },
+    {
+      "expected_future_signal": "PERFORMANCE_DETERIORATION_CANDIDATE",
+      "expected_signal_is_assertion": false,
+      "scenario_id": "SIM-M06",
+      "scenario_type": "SYNTHETIC_CONCEPT_AND_PERFORMANCE_DETERIORATION",
+      "synthetic_outcomes": {
+        "artifact_id": "SIM-M06-SYNTHETIC-OUTCOMES-01",
+        "empirical_performance": false,
+        "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+        "external_validation": false,
+        "metric_targeting_permitted": false,
+        "outcome_draw": "DETERMINISTIC_UNIFORM_DRAW_LESS_THAN_SYNTHETIC_PROBABILITY",
+        "outcome_draw_salt": "DRAW",
+        "outcome_draw_stream": "OUTCOME_DRAW_STREAM-01",
+        "probability_mechanism": "CLIP_0_001_0_999_OF_0_03_PLUS_0_35_TIMES_DF01_PD_PLUS_0_15_TIMES_DETERMINISTIC_UNIFORM_NOISE",
+        "streams_independent": true,
+        "synthetic_probability_noise_salt": "NOISE",
+        "synthetic_probability_noise_stream": "SYNTHETIC_PROBABILITY_NOISE_STREAM-01"
+      },
+      "transformations": []
+    }
+  ],
+  "status": "APPROVED_FROZEN"
+}

@@ -6,9 +6,9 @@ Part B will demonstrate data-quality monitoring, population and feature drift, r
 
 ## Current status
 
-`PHASE_4_COMPLETE_PHASE_5_SCENARIO_GENERATION_IN_PROGRESS`
+`PHASE_5_COMPLETE_PHASE_6_AUTHORIZED_NOT_STARTED`
 
-Phases 0–4 are approved and frozen. `REFERENCE-MATERIALIZATION-01` is the authoritative frozen reference package, including the Project B PSI epsilon assumption of `1e-6`. Phase 5 cohort and scenario generation is authorized. Monitoring calculations, alerts and model-health decisions remain unauthorized.
+Phases 0–5 are approved and frozen. `REFERENCE-MATERIALIZATION-01` is the authoritative reference package, and `SIMULATION-SCENARIO-SET-01` is the authoritative simulated cohort/scenario package. Phase 6 data-quality and input-control monitoring is authorized but not started. Drift, performance, calibration, alert and model-health execution remain unauthorized.
 
 ## Important scope statement
 

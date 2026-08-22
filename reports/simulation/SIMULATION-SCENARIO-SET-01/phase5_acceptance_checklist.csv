@@ -1,0 +1,19 @@
+control_id,control,result
+P5-001,Frozen APPLICATION-TEST-BASE-01 is sole parent,PASS
+P5-002,Assignment algorithm matches Phase 2,PASS
+P5-003,Six cohorts contain exactly 8124 applicants each,PASS
+P5-004,Cohorts are disjoint exhaustive deterministic and order-independent,PASS
+P5-005,Six pristine bases materialized before mutation,PASS
+P5-006,One governed scenario engine used,PASS
+P5-007,SIM-M01 and SIM-M02 contain no deliberate mutation,PASS
+P5-008,SIM-M03 mild valid scenario generated,PASS
+P5-009,SIM-M04 material valid scenario generated,PASS
+P5-010,SIM-M05 valid degraded source diagnostic and hard-fail artifacts separated,PASS
+P5-011,SIM-M06 outcomes stored separately and marked synthetic,PASS
+P5-012,Valid artifacts pass scoring contract and technical scoring,PASS
+P5-013,Hard-fail fixture rejected for duplicate identifier,PASS
+P5-014,Scenario and outcome reproduction passed,PASS
+P5-015,No reference or DF-01 artifact changed,PASS
+P5-016,No monitoring metric severity alert or health status generated,PASS
+P5-017,CND-02 remains open,PASS
+P5-018,Conditional blocker resolved and owner approval and freeze recorded,PASS

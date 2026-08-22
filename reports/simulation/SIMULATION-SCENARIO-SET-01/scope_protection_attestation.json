@@ -1,0 +1,13 @@
+{
+  "alerts_generated": false,
+  "calibration_results_calculated": false,
+  "feature_psi_calculated": false,
+  "ks_wasserstein_or_chi_square_monitoring_calculated": false,
+  "model_health_status_generated": false,
+  "monitoring_execution_authorized": false,
+  "monitoring_pd_summary_calculated": false,
+  "monitoring_severity_assigned": false,
+  "performance_metrics_calculated": false,
+  "score_psi_calculated": false,
+  "threshold_performance_calculated": false
+}

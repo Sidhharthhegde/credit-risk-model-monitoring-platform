@@ -1,0 +1,77 @@
+{
+  "all_row_level_data_file_hashes_unchanged": true,
+  "all_semantic_content_hashes_unchanged": true,
+  "artifact_hashes": {
+    "COHORT-ASSIGNMENT-01": {
+      "content_sha256": "37c45ec76eeb145ae710b211923502a7c084af4eed7995ca3f8da3de730e4d56",
+      "data_sha256": "73316caf7684da1df64801e00730041b3838dccf7d4a84ac4c9a81c722a6b848"
+    },
+    "SIM-M01-BASE-01": {
+      "content_sha256": "087c57ba63b0a3accf6a07a661d6ce92f231a1e63fff420bff39f7e86d47f1d4",
+      "data_sha256": "2422431152f75e9eed1398a6a8a5bef3b8b6bff2d678d6b960c6284181352f3f"
+    },
+    "SIM-M01-SCENARIO-01": {
+      "content_sha256": "087c57ba63b0a3accf6a07a661d6ce92f231a1e63fff420bff39f7e86d47f1d4",
+      "data_sha256": "2422431152f75e9eed1398a6a8a5bef3b8b6bff2d678d6b960c6284181352f3f"
+    },
+    "SIM-M02-BASE-01": {
+      "content_sha256": "6241e378e2dcb9642dd6868273ba515c2548d56287f3314dc6d0afd054f69120",
+      "data_sha256": "9ec74d5c2db90d1fa81121ca84d0baccb1de310e0435f62a05d81f3539fb720f"
+    },
+    "SIM-M02-SCENARIO-01": {
+      "content_sha256": "6241e378e2dcb9642dd6868273ba515c2548d56287f3314dc6d0afd054f69120",
+      "data_sha256": "9ec74d5c2db90d1fa81121ca84d0baccb1de310e0435f62a05d81f3539fb720f"
+    },
+    "SIM-M03-BASE-01": {
+      "content_sha256": "bfa4c5397ad779aac7dedc6081fca0cdac52d3ea233fa45caaf78f5098fa409f",
+      "data_sha256": "65a64bec9d4b9826085b0c4957f42475048ee1d9cf50e26f6bf79ca920eff378"
+    },
+    "SIM-M03-SCENARIO-01": {
+      "content_sha256": "2463991aa5a78fafc8a69fe80b847f23e182fa341051ff31e078fd9f1d358616",
+      "data_sha256": "bf2914a21f286ba18ebaf65e32bd75951ddd63ce31a1d8d5975ff181284b0a8f"
+    },
+    "SIM-M04-BASE-01": {
+      "content_sha256": "6e883b3cd55ae443aeebd5dd7056d35690fa9fefe917d7e98597af0d38752916",
+      "data_sha256": "0801436df3a20210d57aa6d2bd2bc7255c8e475acd8c8619b37924ce041fbe02"
+    },
+    "SIM-M04-SCENARIO-01": {
+      "content_sha256": "6017d15406037fbdfba48c1fc7e71fdf1cd0432bb27403648ddd010294041111",
+      "data_sha256": "cb3009cab646430c25f01e821ad278f77bb0ea4d9ea90aa2b7019aff7769c493"
+    },
+    "SIM-M05-BASE-01": {
+      "content_sha256": "ccad3ba4e1935e577a08f6ad1f2fd9179c56adc2f6383a90d1b5aa1880b2bb21",
+      "data_sha256": "ea609fe6038f3cd34818d1493a787451b54a1feaa31d1746dbad863392331456"
+    },
+    "SIM-M05-HARD-FAIL-01": {
+      "content_sha256": "de7b31d094258c5358af88e2fb91eea249fd0b3fabb3b8f6f1ee20908d1e1dac",
+      "data_sha256": "1d8aa3274c5f3439e5372f1f9ca36aa72f0cad4b0324c615a997d6f6b81a8341"
+    },
+    "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01": {
+      "content_sha256": "a5060a54126ec86252641a0eb4e9165e88e182b54c8790a63806efe495042c67",
+      "data_sha256": "7ed5ceb128ef6f9d2e92bde045840b609e84d1aa8dc021d7ff7a42070abd2fb8"
+    },
+    "SIM-M05-VALID-DEGRADED-01": {
+      "content_sha256": "b2828769c9ee990169b5ee635a8e46bd2d4577edc75c484392abbd568a843dff",
+      "data_sha256": "1c49090a38f70ef9914763263b00ac2e6995f386958500b8a5289c6a4256ecf1"
+    },
+    "SIM-M06-BASE-01": {
+      "content_sha256": "9492e798878271bf2751216fd714767af5f2519c9866c9ed78a739271f7260de",
+      "data_sha256": "a2712b5fab828373a70c1132859761468b5c09c5a955e0ba59dc327d64fccaec"
+    },
+    "SIM-M06-SCENARIO-01": {
+      "content_sha256": "9492e798878271bf2751216fd714767af5f2519c9866c9ed78a739271f7260de",
+      "data_sha256": "a2712b5fab828373a70c1132859761468b5c09c5a955e0ba59dc327d64fccaec"
+    },
+    "SIM-M06-SYNTHETIC-OUTCOMES-01": {
+      "content_sha256": "8bb1573c38e38906e9c847fcc3b2f0b56cf49befe8558ee75816816fc6850e22",
+      "data_sha256": "24bdc41b9a14e11e779c9c2724ca4aae156c0a0f1b182d3f29e106d4048b9816"
+    }
+  },
+  "candidate_manifest_sha256": "31af9c926db47b1bc5c08fa29b37b582ac832781427cad00c7f1845261442e5e",
+  "cohort_assignment_unchanged": true,
+  "m05_variant_hashes_unchanged": true,
+  "m06_synthetic_outcome_hash_unchanged": true,
+  "result": "PASS",
+  "six_primary_scenario_hashes_unchanged": true,
+  "six_pristine_base_hashes_unchanged": true
+}

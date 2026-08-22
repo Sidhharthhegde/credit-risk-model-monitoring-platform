@@ -1,0 +1,14 @@
+{
+  "approved_candidate_manifest_sha256": "31af9c926db47b1bc5c08fa29b37b582ac832781427cad00c7f1845261442e5e",
+  "approved_utc": "2026-08-22T16:28:55.437233+00:00",
+  "approver_role": "USER_PROTOCOL_OWNER",
+  "blocking_issue": "COMPOSITE_M05_SOURCE_STATE",
+  "final_review_decision": "APPROVED",
+  "initial_review_decision": "CONDITIONAL_APPROVAL",
+  "monitoring_execution_authorized": false,
+  "next_phase_authorized": "PHASE_6_DATA_QUALITY_AND_INPUT_CONTROL_MONITORING",
+  "resolution": "PASS_PHASE0_DIMENSIONAL_SOURCE_STATE_RESTORED",
+  "row_level_content_hashes_unchanged": true,
+  "row_level_scenarios_rebuilt": false,
+  "scenario_set_id": "SIMULATION-SCENARIO-SET-01"
+}

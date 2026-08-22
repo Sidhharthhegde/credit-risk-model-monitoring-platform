@@ -1,0 +1,102 @@
+{
+  "scenario_set_id": "SIMULATION-SCENARIO-SET-01",
+  "version": "0.1.0",
+  "status": "APPROVED_FROZEN",
+  "parent_snapshot_id": "APPLICATION-TEST-BASE-01",
+  "parent_reference_id": "APPLICATION-TEST-SIM-01",
+  "cohort_assignment": {
+    "algorithm_id": "SIM-COHORT-ASSIGNMENT-01",
+    "algorithm": "SHA256_SORT_THEN_ROUND_ROBIN",
+    "hash_input": "APPLICATION-TEST-SIM-01|CANONICAL_DECIMAL_SK_ID_CURR",
+    "digest_order": "ASCENDING",
+    "tie_break": "SK_ID_CURR_ASCENDING",
+    "cohort_count": 6,
+    "labels": ["SIM-M01", "SIM-M02", "SIM-M03", "SIM-M04", "SIM-M05", "SIM-M06"],
+    "expected_count_per_cohort": 8124,
+    "calendar_interpretation": false
+  },
+  "selection_rule": "LOWEST_SHA256_OF_SCENARIO_ID_TRANSFORMATION_ID_AND_SK_ID_CURR_FOR_EXACT_ROUND_HALF_EVEN_COUNT",
+  "scenarios": [
+    {
+      "scenario_id": "SIM-M01",
+      "scenario_type": "STABLE_CONTROL",
+      "expected_future_signal": "NO_DELIBERATE_MUTATION",
+      "expected_signal_is_assertion": false,
+      "transformations": []
+    },
+    {
+      "scenario_id": "SIM-M02",
+      "scenario_type": "STABLE_LONGITUDINAL_CONTROL",
+      "expected_future_signal": "NATURAL_COHORT_VARIATION_ONLY",
+      "expected_signal_is_assertion": false,
+      "transformations": []
+    },
+    {
+      "scenario_id": "SIM-M03",
+      "scenario_type": "MILD_VALID_POPULATION_DRIFT",
+      "expected_future_signal": "WARNING_CANDIDATE",
+      "expected_signal_is_assertion": false,
+      "transformations": [
+        {"transformation_id": "M03-T01", "operation": "MULTIPLICATIVE_SHIFT", "features": ["AMT_INCOME_TOTAL"], "factor": 0.95, "selection_rate": 0.4},
+        {"transformation_id": "M03-T02", "operation": "BOUNDED_MULTIPLICATIVE_SHIFT", "features": ["EXT_SOURCE_2"], "factor": 0.95, "lower": 0.0, "upper": 1.0, "selection_rate": 0.35}
+      ]
+    },
+    {
+      "scenario_id": "SIM-M04",
+      "scenario_type": "MATERIAL_VALID_POPULATION_AND_SCORE_DRIVER_DRIFT",
+      "expected_future_signal": "STRONG_DRIFT_CANDIDATE",
+      "expected_signal_is_assertion": false,
+      "transformations": [
+        {"transformation_id": "M04-T01", "operation": "BOUNDED_MULTIPLICATIVE_SHIFT", "features": ["EXT_SOURCE_2", "EXT_SOURCE_3"], "factor": 0.8, "lower": 0.0, "upper": 1.0, "selection_rate": 0.7},
+        {"transformation_id": "M04-T02", "operation": "MULTIPLICATIVE_SHIFT", "features": ["AMT_CREDIT", "AMT_ANNUITY", "AMT_GOODS_PRICE"], "factor": 1.15, "selection_rate": 0.6},
+        {"transformation_id": "M04-T03", "operation": "MULTIPLICATIVE_SHIFT", "features": ["BUREAU_DEBT_TOTAL", "BUREAU_DEBT_MEAN", "BUREAU_DEBT_MAX", "BUREAU_DEBT_TO_CREDIT_RATIO"], "factor": 1.25, "selection_rate": 0.5}
+      ]
+    },
+    {
+      "scenario_id": "SIM-M05",
+      "scenario_type": "DATA_QUALITY_AND_SOURCE_DEGRADATION",
+      "expected_future_signal": "DATA_QUALITY_CONTROL_CANDIDATE",
+      "expected_signal_is_assertion": false,
+      "transformations": [
+        {"transformation_id": "M05-T01", "operation": "MISSINGNESS_INJECTION", "features": ["EXT_SOURCE_1"], "selection_rate": 0.2},
+        {"transformation_id": "M05-T02", "operation": "MISSINGNESS_INJECTION", "features": ["OCCUPATION_TYPE"], "selection_rate": 0.15},
+        {"transformation_id": "M05-T03", "operation": "UNSEEN_CATEGORY_INJECTION", "features": ["NAME_TYPE_SUITE"], "value": "__SIM_UNSEEN_TYPE_SUITE__", "selection_rate": 0.05},
+        {"transformation_id": "M05-T04", "operation": "FINITE_TAIL_ENRICHMENT", "features": ["AMT_INCOME_TOTAL"], "factor": 10.0, "selection_rate": 0.01}
+      ],
+      "separate_variants": ["SIM-M05-VALID-DEGRADED-01", "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01", "SIM-M05-HARD-FAIL-01"],
+      "variant_specifications": {
+        "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01": {"operation": "PARTIAL_BUREAU_SOURCE_LOSS", "selection_rate": 0.1, "availability_state": "SOURCE_DEGRADED", "governance_state": "SOURCE_POLICY_REQUIRED", "fallback_status": "NO_APPROVED_FALLBACK", "technical_scoring_checked": true, "authoritative_completion": false, "reason": "CND_02_OPEN_NO_APPROVED_FALLBACK"},
+        "SIM-M05-HARD-FAIL-01": {"operation": "DUPLICATE_APPLICANT_RECORD", "duplicate_count": 1, "expected_contract_result": "REJECT_DUPLICATE_SK_ID_CURR"}
+      }
+    },
+    {
+      "scenario_id": "SIM-M06",
+      "scenario_type": "SYNTHETIC_CONCEPT_AND_PERFORMANCE_DETERIORATION",
+      "expected_future_signal": "PERFORMANCE_DETERIORATION_CANDIDATE",
+      "expected_signal_is_assertion": false,
+      "transformations": [],
+      "synthetic_outcomes": {
+        "artifact_id": "SIM-M06-SYNTHETIC-OUTCOMES-01",
+        "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+        "empirical_performance": false,
+        "external_validation": false,
+        "probability_mechanism": "CLIP_0_001_0_999_OF_0_03_PLUS_0_35_TIMES_DF01_PD_PLUS_0_15_TIMES_DETERMINISTIC_UNIFORM_NOISE",
+        "outcome_draw": "DETERMINISTIC_UNIFORM_DRAW_LESS_THAN_SYNTHETIC_PROBABILITY",
+        "synthetic_probability_noise_stream": "SYNTHETIC_PROBABILITY_NOISE_STREAM-01",
+        "synthetic_probability_noise_salt": "NOISE",
+        "outcome_draw_stream": "OUTCOME_DRAW_STREAM-01",
+        "outcome_draw_salt": "DRAW",
+        "streams_independent": true,
+        "metric_targeting_permitted": false
+      }
+    }
+  ],
+  "governance": {
+    "mutation_magnitude_selected_using_monitoring_results": false,
+    "reference_artifact_mutation_permitted": false,
+    "df_01_mutation_permitted": false,
+    "phase_5_monitoring_metrics_permitted": false,
+    "row_level_artifacts_publicly_committable": false,
+    "cnd_02_status": "OPEN"
+  }
+}

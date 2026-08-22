@@ -1,0 +1,24 @@
+{
+  "artifact_id": "SIM-M06-SYNTHETIC-OUTCOMES-01",
+  "content_sha256": "8bb1573c38e38906e9c847fcc3b2f0b56cf49befe8558ee75816816fc6850e22",
+  "deterministic_streams_independent": true,
+  "mechanism": {
+    "artifact_id": "SIM-M06-SYNTHETIC-OUTCOMES-01",
+    "empirical_performance": false,
+    "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+    "external_validation": false,
+    "metric_targeting_permitted": false,
+    "outcome_draw": "DETERMINISTIC_UNIFORM_DRAW_LESS_THAN_SYNTHETIC_PROBABILITY",
+    "outcome_draw_salt": "DRAW",
+    "outcome_draw_stream": "OUTCOME_DRAW_STREAM-01",
+    "probability_mechanism": "CLIP_0_001_0_999_OF_0_03_PLUS_0_35_TIMES_DF01_PD_PLUS_0_15_TIMES_DETERMINISTIC_UNIFORM_NOISE",
+    "streams_independent": true,
+    "synthetic_probability_noise_salt": "NOISE",
+    "synthetic_probability_noise_stream": "SYNTHETIC_PROBABILITY_NOISE_STREAM-01"
+  },
+  "outcome_contract": "OUTCOME-01",
+  "outcome_contract_pass": true,
+  "outcomes_reproducible": true,
+  "performance_metrics_calculated": false,
+  "row_count": 8124
+}

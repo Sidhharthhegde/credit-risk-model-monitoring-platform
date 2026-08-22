@@ -1,0 +1,20 @@
+{
+  "cnd_02_status": "OPEN",
+  "cohort_assignment_frozen": true,
+  "monitoring_alerts_generated": false,
+  "monitoring_execution_authorized": false,
+  "monitoring_results_calculated": false,
+  "next_phase_authorized": "PHASE_6_DATA_QUALITY_AND_INPUT_CONTROL_MONITORING",
+  "phase": "PHASE_5",
+  "phase_5_complete": true,
+  "phase_name": "SIMULATED_MONITORING_COHORTS_AND_SCENARIO_GENERATION",
+  "pristine_bases_frozen": true,
+  "review_decision": "APPROVED",
+  "scenario_artifacts_frozen": true,
+  "scenario_reproducibility_verified": true,
+  "scenario_set_id": "SIMULATION-SCENARIO-SET-01",
+  "simulation_cohorts_created": true,
+  "synthetic_evidence_empirical": false,
+  "synthetic_outcome_scenario_created": true,
+  "technical_qualification": "PASS"
+}

@@ -1,0 +1,28 @@
+{
+  "conditional_taxonomy_remediation": "SOURCE_DEGRADED_PLUS_SEPARATE_GOVERNANCE_AND_FALLBACK_FIELDS",
+  "created_utc": "2026-08-22T16:01:12.810872+00:00",
+  "implementation_sources": [
+    {
+      "path": "src/credit_risk_monitoring/simulation/generation.py",
+      "sha256": "37acdb1bb160aea327ddf0d010d74ad0c4bcc888b70ae0ed5bdce2a697ed2719"
+    },
+    {
+      "path": "src/credit_risk_monitoring/simulation/__init__.py",
+      "sha256": "174632df79a6802967ed511abb2e5286075bf5b29e4fa58116f3e5d5e2867061"
+    },
+    {
+      "path": "scripts/run_phase5_generation.py",
+      "sha256": "1eb4506ecc837c6cb510ff187d8df77219b281e2d0084bb633238df2be9aa34f"
+    },
+    {
+      "path": "contracts/simulation_scenario_contract.json",
+      "sha256": "2f182e3ee56daa8e2fecb4b34c15a25d28f79ee34fbb2ad9799eb907437ecf4a"
+    }
+  ],
+  "parent_snapshot_content_sha256": "f1fe279b2fcf28cb14eed2aa9367ed9a7cc1c4b55217b5b7c19f1ebd3580ccff",
+  "parent_snapshot_file_sha256": "6c661ba67b49fc1b7302751fce36532c773ccad9078827270c32a377aeee526a",
+  "part_a_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+  "part_b_base_commit": "6fdb90e6708f27cfd38b3257d874d6db4bcff2b7",
+  "phase4_manifest_sha256": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
+  "scenario_set_id": "SIMULATION-SCENARIO-SET-01"
+}

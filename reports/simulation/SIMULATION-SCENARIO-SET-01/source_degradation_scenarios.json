@@ -1,0 +1,16 @@
+{
+  "affected_source": "bureau.csv",
+  "authoritative_completion": false,
+  "availability_state": "SOURCE_DEGRADED",
+  "cnd_02_status": "OPEN",
+  "diagnostic_artifact_id": "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+  "fallback_status": "NO_APPROVED_FALLBACK",
+  "governance_state": "SOURCE_POLICY_REQUIRED",
+  "hard_fail_artifact_id": "SIM-M05-HARD-FAIL-01",
+  "hard_fail_result": {
+    "reason": "SK_ID_CURR must be complete and unique",
+    "result": "PASS_EXPECTED_REJECTION"
+  },
+  "selected_row_count": 812,
+  "technical_scoring": "PASS"
+}

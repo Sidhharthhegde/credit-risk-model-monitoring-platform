@@ -1,0 +1,104 @@
+{
+  "approval_record_included": true,
+  "approved_utc": "2026-08-22T16:28:55.437233+00:00",
+  "artifacts": [
+    {
+      "path": "cohort_assignment_summary.json",
+      "sha256": "34ccbc5b6cdc4119618ae2b54a06bfcffc54e7409e678fdd155df1c53dbfd9cc",
+      "size_bytes": 1425
+    },
+    {
+      "path": "cohort_integrity_qualification.json",
+      "sha256": "c64f11cc2363812e20dc60e51d4044459e699471aa0ac73710599bfb6eb1ac14",
+      "size_bytes": 259
+    },
+    {
+      "path": "conditional_remediation_hash_reconciliation.json",
+      "sha256": "bdd466db885da5c451685d2ab57e067c61d62affadf18779ed289e40304ae473",
+      "size_bytes": 3936
+    },
+    {
+      "path": "generation_source_manifest.json",
+      "sha256": "9f5d473231c95a28410130ce286328c845e99556c8c4502c048b3910f32ffbe2",
+      "size_bytes": 1306
+    },
+    {
+      "path": "immutability_attestation.json",
+      "sha256": "2957a0d7917ad1b3cf7abd69ccbc1d2cddc1219e1f03cbe6bc9a8ca4a89e51cf",
+      "size_bytes": 224
+    },
+    {
+      "path": "phase5_acceptance_checklist.csv",
+      "sha256": "f4ff585fed1b6530ed18ab9f2392b9107ec993cad7b5a12780f82341f71d59e1",
+      "size_bytes": 1130
+    },
+    {
+      "path": "phase5_approval_record.json",
+      "sha256": "fa48dd3b6826c2bdefd7ea5d2d43791135e47574076ad611551208283f040a10",
+      "size_bytes": 675
+    },
+    {
+      "path": "phase5_completion_decision.json",
+      "sha256": "abb8e60fcb1c0ee50cef9c1e87514bcedb96ca30d8356e81c9a9b44363b608fd",
+      "size_bytes": 755
+    },
+    {
+      "path": "reproducibility_qualification.json",
+      "sha256": "4f519ea35993e9e5c2d99e7ec15d3e38eb0080b3837fcc6fd9f6ce12bc3af741",
+      "size_bytes": 1991
+    },
+    {
+      "path": "scenario_integrity_qualification.json",
+      "sha256": "5cb912f7bbeeb9878578b4a5067780a92e3f3f00fdcf2b06c8fd466aef33b310",
+      "size_bytes": 14634
+    },
+    {
+      "path": "scenario_registry.json",
+      "sha256": "2aa6c5a04fe873c2840bbfbc72672aedadd1842669b7b547b247166cec04d15a",
+      "size_bytes": 5642
+    },
+    {
+      "path": "scenario_transformation_manifest.json",
+      "sha256": "54205833e87abb7145012e4dbef96c568e9a1a3b096e3eecb94d4a0b16f3eb07",
+      "size_bytes": 3604
+    },
+    {
+      "path": "scope_protection_attestation.json",
+      "sha256": "93d8824a9041bf6ef7613353fd82014d19ce98356beb2f13f8fcb28822334e01",
+      "size_bytes": 466
+    },
+    {
+      "path": "source_degradation_scenarios.json",
+      "sha256": "d69569ba56c63eca87e225586295a88e27d0aa8b156d220271798f742f7095f4",
+      "size_bytes": 539
+    },
+    {
+      "path": "synthetic_outcome_specification.json",
+      "sha256": "77aaa48581076fdc2187f5b08465366b5d834df2ca3f1927c49c5857eccfb148",
+      "size_bytes": 1046
+    }
+  ],
+  "local_artifact_root": "artifacts/simulation_scenarios/SIMULATION-SCENARIO-SET-01",
+  "local_manifests": {
+    "COHORT-ASSIGNMENT-01": "8d143efc9f68ac7439a94c908ab8a8f570ee835b80d7b0b5755b97da02f6f86e",
+    "bases/SIM-M01-BASE-01": "fdc2f400c8787a9c8bf530d1ecdbba10ec4bf6afd4b4dac0c3d6fe746fd9dd39",
+    "bases/SIM-M02-BASE-01": "0904a2de80ad991cb12426ee202f143017e87122f6bc54070ce67186b5bd9cbb",
+    "bases/SIM-M03-BASE-01": "537a0675cd31abeb4a027e06f3df2ead11151f4d939b4fd3af106b29e73c6e3a",
+    "bases/SIM-M04-BASE-01": "4abcf0354fec0be174506ef5157b61e641eb158d272c30d5d12cc022534e4de2",
+    "bases/SIM-M05-BASE-01": "9b32b631ed1afc78c0fc9bc439174e26b3dc61f5eea44329fb1380df03a26085",
+    "bases/SIM-M06-BASE-01": "fc6d0bf14566a89775d3098f65bb300cabfc8e716ac67a0191af3d15f23d3762",
+    "outcomes/SIM-M06-SYNTHETIC-OUTCOMES-01": "03855cf310b1308f38c72b08082f5d347f92fe556570d0e996f41025d44c2abc",
+    "scenarios/SIM-M01-SCENARIO-01": "519693004f6b83c28298345414256105d62565c99872bb6501a6210777aed3d1",
+    "scenarios/SIM-M02-SCENARIO-01": "dc8d53619d7c7211b73756e599a4934b1303a9bec1f13ff648e1fef5771b37dc",
+    "scenarios/SIM-M03-SCENARIO-01": "69ef41174d2553851bb84bdb76f8456ddb0e9d9fc956d31e47852331f705a13e",
+    "scenarios/SIM-M04-SCENARIO-01": "4426e505e873acd9d7412580424b60909d65feab8f2deba7ee9cda5ed42865d7",
+    "scenarios/SIM-M05-VALID-DEGRADED-01": "a3f143e6f56a0152974ff56153e455bec433448ece4e51c040b4ee1efe321192",
+    "scenarios/SIM-M06-SCENARIO-01": "e3bab18dc72e0e63a0193aac04f273ceb3f507f96edbf22f544b2bab2f2ef801",
+    "variants/SIM-M05-HARD-FAIL-01": "62f5222ac6aa8f6a65d06adeebbefe58a7e46ef78e32e756f4e500845f7c15b5",
+    "variants/SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01": "fc8c028a62578063aa33e170d36794108c85d05ce86d922df2c179c9c17dc84d"
+  },
+  "monitoring_results_included": false,
+  "pre_remediation_manifest_sha256": "31af9c926db47b1bc5c08fa29b37b582ac832781427cad00c7f1845261442e5e",
+  "scenario_set_id": "SIMULATION-SCENARIO-SET-01",
+  "status": "APPROVED_FROZEN"
+}

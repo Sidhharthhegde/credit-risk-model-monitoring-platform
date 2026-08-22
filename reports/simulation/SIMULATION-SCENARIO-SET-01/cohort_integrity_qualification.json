@@ -1,0 +1,10 @@
+{
+  "assignment_content_sha256": "37c45ec76eeb145ae710b211923502a7c084af4eed7995ca3f8da3de730e4d56",
+  "balanced": true,
+  "cohort_count": 6,
+  "deterministic": true,
+  "disjoint": true,
+  "exhaustive": true,
+  "order_independent": true,
+  "result": "PASS"
+}

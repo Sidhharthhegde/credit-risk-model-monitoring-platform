@@ -1682,7 +1682,7 @@ Update this table only when supported by a phase completion decision.
 | 2 | `COMPLETE` | `reports/reference/REFERENCE-STRATEGY-01/phase2_completion_decision.json` | Approved and frozen on 2026-08-22 |
 | 3 | `COMPLETE` | `reports/adapter/FEATURE-ADAPTER-QUALIFICATION-01/phase3_completion_decision.json` | Conditional review blocker resolved; approved and frozen on 2026-08-22 |
 | 4 | `COMPLETE` | `reports/reference/REFERENCE-MATERIALIZATION-01/phase4_completion_decision.json` | Approved and frozen on 2026-08-22 |
-| 5 | `NOT_STARTED` | Not issued |  |
+| 5 | `COMPLETE` | `reports/simulation/SIMULATION-SCENARIO-SET-01/phase5_completion_decision.json` | Conditional blocker resolved; approved and frozen on 2026-08-22 |
 | 6 | `NOT_STARTED` | Not issued |  |
 | 7 | `NOT_STARTED` | Not issued |  |
 | 8 | `NOT_STARTED` | Not issued |  |

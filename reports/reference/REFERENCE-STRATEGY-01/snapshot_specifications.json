@@ -1,0 +1,82 @@
+{
+  "strategy_id": "REFERENCE-STRATEGY-01",
+  "status": "SPECIFICATION_ONLY_NOT_MATERIALIZED",
+  "common_rules": {
+    "row_grain": "ONE_ROW_PER_SK_ID_CURR",
+    "identifier": "SK_ID_CURR",
+    "identifier_complete_and_unique": true,
+    "predictor_interface": "EXACT_176_GOVERNED_RAW_PREDICTORS_CANONICALLY_ORDERED",
+    "feature_schema_artifact": "reports/experiments/step49_development_freeze_v1/scoring_input_schema.csv",
+    "feature_schema_sha256": "42b964e22ef753d6ff67ea5b9625ab035a74854d24c8b9cec2527b40df19cae9",
+    "permitted_missingness_preserved": true,
+    "unusual_categories_preserved": true,
+    "contract_valid_extreme_values_preserved": true,
+    "restricted_row_level_storage": "LOCAL_ONLY",
+    "public_artifacts": "AGGREGATE_METADATA_ONLY_UNLESS_SEPARATELY_APPROVED"
+  },
+  "snapshots": [
+    {
+      "snapshot_id": "TRAIN-PHYSICAL-01",
+      "reference_ids": ["FEATURE-REF-01"],
+      "source_population": "FROZEN_DETERMINISTIC_TRAIN_SPLIT",
+      "source_key_artifact": "data/processed/SK_ID_CURR_train.csv",
+      "source_key_sha256": "3b1209829b6980d14acc3fabb4be139988cf60c576a1bfe30c12359befc3c17a",
+      "columns": "SK_ID_CURR_PLUS_176_GOVERNED_RAW_PREDICTORS",
+      "target_present": false,
+      "inclusion": ["KEY_IN_FROZEN_TRAIN_SPLIT", "FEATURE_LINEAGE_REPRODUCED", "SCORING_INPUT_CONTRACT_ACCEPTED"],
+      "exclusion": ["KEY_NOT_IN_FROZEN_TRAIN_SPLIT", "DUPLICATE_OR_MISSING_KEY", "MISSING_GOVERNED_PREDICTOR", "INVALID_BINARY_DOMAIN", "NONFINITE_NUMERIC_VALUE"],
+      "non_exclusion": ["PERMITTED_NUMERIC_MISSINGNESS", "PERMITTED_CATEGORICAL_MISSINGNESS", "UNUSUAL_CATEGORY", "CONTRACT_VALID_EXTREME_VALUE"]
+    },
+    {
+      "snapshot_id": "DEV-VAL-PHYSICAL-01",
+      "reference_ids": ["PERF-REF-01", "THRESHOLD-PERF-REF-01"],
+      "source_population": "FROZEN_DEVELOPMENT_VALIDATION_SPLIT",
+      "source_key_artifact": "data/processed/SK_ID_CURR_validation.csv",
+      "source_key_sha256": "e0aedd5f553125ea1934f71c7c2f386be2f13c5b1d5e76425f0282eb461160bc",
+      "columns": "SK_ID_CURR_TARGET_176_GOVERNED_RAW_PREDICTORS_GOVERNED_SUBGROUP_FIELDS_AND_QUALIFIED_SCORING_OUTPUT",
+      "target_present": true,
+      "required_scoring_fields": ["raw_probability", "risk_class", "threshold_id", "threshold_value", "model_id", "model_version", "development_freeze_id"],
+      "inclusion": ["KEY_IN_FROZEN_VALIDATION_SPLIT", "TARGET_BINARY_AND_COMPLETE", "FEATURE_LINEAGE_REPRODUCED", "QUALIFIED_DF01_SCORING_RECONCILED"],
+      "metrics_calculated_in_phase_2": false
+    },
+    {
+      "snapshot_id": "TRAIN-OOF-EVIDENCE-01",
+      "reference_ids": ["THRESHOLD-SELECTION-REF-01"],
+      "source_population": "FROZEN_TRAIN_OOF_EVIDENCE",
+      "source_artifacts": ["reports/experiments/step47_calibration_v1/train_oof_predictions.csv", "reports/experiments/step48_threshold_v1/threshold_selection_manifest.json", "reports/experiments/step48_threshold_v1/threshold_decision.csv"],
+      "materialization": "REFERENCE_EXISTING_LINEAGE_EVIDENCE_WITHOUT_DUPLICATING_ROW_LEVEL_DATA",
+      "threshold_identity": {"threshold_id": "THRESHOLD-01", "value": 0.08, "operator": ">="},
+      "performance_baseline": false
+    },
+    {
+      "snapshot_id": "HISTORICAL-THIRD-PHYSICAL-01",
+      "reference_ids": ["HISTORICAL-CONTEXT-01"],
+      "source_population": "HISTORICALLY_EXPOSED_INTERNAL_THIRD_SPLIT",
+      "source_key_artifact": "data/processed/SK_ID_CURR_test.csv",
+      "source_key_sha256": "8fa87898e9a7c1158592ead850ed86c072772e9950825419596f821d47698630",
+      "target_present": true,
+      "primary_reference": false,
+      "untouched_holdout": false,
+      "external_or_oot": false
+    },
+    {
+      "snapshot_id": "APPLICATION-TEST-BASE-01",
+      "reference_ids": ["APPLICATION-TEST-SIM-01"],
+      "source_population": "HOME_CREDIT_APPLICATION_TEST",
+      "columns": "SK_ID_CURR_PLUS_176_GOVERNED_RAW_PREDICTORS_AFTER_QUALIFIED_ADAPTATION",
+      "target_present": false,
+      "label_status": "UNLABELLED",
+      "simulation_status": "PRODUCTION_SHAPED_SIMULATION",
+      "calendar_interpretation": false,
+      "base_mutation_permitted": false,
+      "scenario_modifications_applied": false
+    }
+  ],
+  "future_storage_layout": {
+    "root": "artifacts/reference_snapshots/<snapshot_id>/",
+    "data": "snapshot.parquet",
+    "metadata": "snapshot_metadata.json",
+    "manifest": "snapshot_manifest.json",
+    "sidecar": "snapshot_manifest.sha256"
+  }
+}

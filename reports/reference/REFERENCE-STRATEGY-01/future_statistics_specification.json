@@ -1,0 +1,43 @@
+{
+  "strategy_id": "REFERENCE-STRATEGY-01",
+  "status": "METHOD_SPECIFIED_VALUES_NOT_MATERIALIZED",
+  "numeric_predictors": {
+    "reference_id": "FEATURE-REF-01",
+    "future_fields": ["count", "missing_count", "missing_rate", "finite_count", "min", "max", "mean", "sample_standard_deviation", "quantiles"],
+    "quantile_probabilities": [0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99],
+    "nonfinite_values": "QUALIFICATION_FAILURE_NOT_A_REFERENCE_BUCKET",
+    "values_calculated_in_phase_2": false
+  },
+  "categorical_predictors": {
+    "reference_id": "FEATURE-REF-01",
+    "future_fields": ["count", "missing_count", "missing_rate", "reference_category", "category_count", "category_proportion"],
+    "missing_bucket": "__MISSING__",
+    "monitoring_only_unseen_bucket": "__UNSEEN__",
+    "unseen_bucket_reference_mass": "ZERO_BY_STRUCTURAL_DEFINITION_NOT_AN_OBSERVED_PHASE_2_RESULT",
+    "scorer_behavior": "UNSEEN_ACCEPTED_BY_FROZEN_ENCODER",
+    "monitoring_behavior": "UNSEEN_RATE_TRACKED_SEPARATELY",
+    "values_calculated_in_phase_2": false
+  },
+  "binary_predictors": {
+    "reference_id": "FEATURE-REF-01",
+    "future_fields": ["count_0", "count_1", "proportion_0", "proportion_1"],
+    "allowed_values": [0, 1],
+    "missing_bucket": "NOT_PERMITTED_BY_SCORING_CONTRACT",
+    "values_calculated_in_phase_2": false
+  },
+  "score_reference": {
+    "primary_reference_id": "PERF-REF-01",
+    "supporting_reference_id": "FEATURE-REF-01",
+    "probability_representation": "RAW_P_TARGET_1",
+    "future_fields": ["count", "finite_count", "min", "max", "mean", "quantiles", "risk_positive_count", "risk_negative_count", "risk_positive_rate", "risk_negative_rate"],
+    "threshold": {"threshold_id": "THRESHOLD-01", "value": 0.08, "operator": ">="},
+    "reason_for_primary": "Development validation provides honest frozen-model inference and is the governed internal analytical comparator; TRAIN scoring is supporting in-sample context only.",
+    "values_calculated_in_phase_2": false
+  },
+  "performance_reference": {
+    "reference_id": "PERF-REF-01",
+    "future_metric_families": ["ROC_AUC", "PR_AUC", "KS", "GINI", "BRIER", "CALIBRATION", "OBSERVED_EXPECTED", "THRESHOLD_PERFORMANCE"],
+    "phase_2_action": "DEFINE_REQUIRED_INPUTS_ONLY",
+    "values_calculated_in_phase_2": false
+  }
+}

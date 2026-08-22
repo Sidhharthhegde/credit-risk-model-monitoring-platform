@@ -9,6 +9,10 @@
 | `reports/protocol/MONITORING-PROTOCOL-01/` | 0.1.0 | Approved and frozen | Phase 0 approval, checklist, manifest and decision package |
 | `contracts/part_a_binding.json` | 0.1.0 | Approved expected binding; technically verified in Phase 1 | Frozen Part A identity and hash contract |
 | `reports/qualification/RUNTIME-QUALIFICATION-01/` | 0.1.0 | Approved and frozen | Phase 1 binding, runtime, exact parity, control-state and immutability evidence |
+| `contracts/reference_strategy.json` | 0.1.0 | Approved and frozen | Authoritative reference roles and physical snapshot mapping |
+| `contracts/reference_snapshot_contract.json` | 0.1.0 | Approved and frozen | Future snapshot metadata contract |
+| `docs/REFERENCE_STRATEGY.md` | 0.1.0 | Approved explanatory document | Reader-oriented Phase 2 scope and sequencing |
+| `reports/reference/REFERENCE-STRATEGY-01/` | 0.1.0 | Approved and frozen | Phase 2 specification evidence and manifest |
 | `configs/model_config.yaml` | 0.1.0 | Approved and frozen | Semantic model metadata referencing the binding |
 | `configs/monitoring_config.yaml` | 0.1.0 | Approved and frozen | Monitoring scope and execution policy |
 | `configs/alert_thresholds.yaml` | 0.1.0 | Approved and frozen | Project-defined alert assumptions |

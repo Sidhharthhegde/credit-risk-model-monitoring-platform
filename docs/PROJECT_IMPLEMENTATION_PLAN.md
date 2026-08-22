@@ -6,7 +6,7 @@
 **Repository:** `credit-risk-model-monitoring-platform`  
 **Repository URL:** `https://github.com/Sidhharthhegde/credit-risk-model-monitoring-platform`  
 **Document status:** `APPROVED_IMPLEMENTATION_PLAN`  
-**Plan version:** `0.2.1`  
+**Plan version:** `0.2.2`  
 **Document owner:** Sidharth Ravindra Hegde  
 **Last updated:** 2026-08-22  
 **Part A dependency:** Frozen development model `DF-01 / XGBT-01`
@@ -1679,8 +1679,8 @@ Update this table only when supported by a phase completion decision.
 |---:|---|---|---|
 | 0 | `COMPLETE` | `reports/protocol/MONITORING-PROTOCOL-01/phase0_completion_decision.json` | Protocol approved and frozen on 2026-08-21 |
 | 1 | `COMPLETE` | `reports/qualification/RUNTIME-QUALIFICATION-01/phase1_completion_decision.json` | Approved and frozen on 2026-08-22 |
-| 2 | `IN_PROGRESS` | Not issued | Entry authorized; reference strategy and snapshot specification only |
-| 3 | `NOT_STARTED` | Not issued |  |
+| 2 | `COMPLETE` | `reports/reference/REFERENCE-STRATEGY-01/phase2_completion_decision.json` | Approved and frozen on 2026-08-22 |
+| 3 | `IN_PROGRESS` | Not issued | Entry authorized for contracts and label-free feature-adapter implementation only |
 | 4 | `NOT_STARTED` | Not issued |  |
 | 5 | `NOT_STARTED` | Not issued |  |
 | 6 | `NOT_STARTED` | Not issued |  |
@@ -1709,9 +1709,9 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next authorized work is Phase 2 reference strategy and snapshot specification:
+The next authorized work is Phase 3 contracts and label-free feature-adapter qualification:
 
-1. Define and review the purpose-specific reference populations before materializing any reference values.
+1. Implement the label-free application integration wrapper using the frozen Part A transformations.
 2. Preserve the three controlled-deferred items as inactive.
 3. Resolve the remaining governance choices through a protocol amendment before their alert logic is activated:
    - Exact AUC deterioration limits.
@@ -1724,6 +1724,7 @@ The next authorized work is Phase 2 reference strategy and snapshot specificatio
    - Whether optional monitoring score bands will be used.
 4. Do not begin reference materialization, PSI, drift, scenario, or performance calculations during Phase 1.
 5. Specify snapshot contents, grain, exclusions, identifiers, provenance, versioning, and freeze evidence prospectively.
-6. Do not materialize reference statistics, snapshots, or bins until the Phase 2 specification has been reviewed and approved.
+6. Prove exact adapter parity on governed labelled fixtures before adapting `application_test`.
+7. Do not materialize reference statistics, snapshots, or bins during Phase 3.
 
 No reference statistics, monitoring scenarios, drift calculations or performance analyses should be executed before these actions are complete.

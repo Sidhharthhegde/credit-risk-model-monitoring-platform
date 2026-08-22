@@ -1,0 +1,22 @@
+{
+  "phase": "PHASE_2",
+  "reference_strategy_id": "REFERENCE-STRATEGY-01",
+  "review_decision": "APPROVED",
+  "approved_by": "USER_PROTOCOL_OWNER",
+  "approval_date": "2026-08-22",
+  "approval_scope": "PHASE_2_REFERENCE_SPECIFICATION_AND_PHASE_3_ADAPTER_ENTRY_AUTHORIZATION_ONLY",
+  "specification_checks_passed": true,
+  "phase_2_complete": true,
+  "reference_roles_frozen": true,
+  "snapshot_specifications_frozen": true,
+  "application_test_adapter_specified": true,
+  "psi_bin_method_specified": true,
+  "snapshot_qualification_rules_specified": true,
+  "cnd_02_status": "OPEN",
+  "monitoring_execution_authorized": false,
+  "feature_adapter_implementation_authorized": true,
+  "reference_materialization_authorized": false,
+  "next_phase_authorized": "PHASE_3_CONTRACTS_AND_LABEL_FREE_FEATURE_ADAPTER",
+  "materialization_phase": "PHASE_4_REFERENCE_MATERIALIZATION_AND_FROZEN_BINS",
+  "pre_approval_manifest_sha256": "c2a835507f2ae8757b49a5cf0e559742ec8d32d82a7e605953ccc23c6bf28c78"
+}

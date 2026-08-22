@@ -1,0 +1,66 @@
+{
+  "adapter_id": "MONITORING-FEATURE-ADAPTER-01",
+  "status": "SPECIFIED_NOT_IMPLEMENTED",
+  "input_population_id": "APPLICATION-TEST-SIM-01",
+  "output_snapshot_id": "APPLICATION-TEST-BASE-01",
+  "input_sources": [
+    {"table": "application_test.csv", "grain": "ONE_ROW_PER_SK_ID_CURR", "role": "ANCHOR", "target_available": false},
+    {"table": "bureau.csv", "grain": "MANY_ROWS_PER_SK_ID_CURR_UNIQUE_SK_ID_BUREAU", "role": "CUSTOMER_LEVEL_AGGREGATION"},
+    {"table": "previous_application.csv", "grain": "MANY_ROWS_PER_SK_ID_CURR_UNIQUE_SK_ID_PREV", "role": "CUSTOMER_LEVEL_AGGREGATION"}
+  ],
+  "excluded_raw_sources": {
+    "rule": "A source is excluded when no governed DF-01 raw predictor lineage depends on it.",
+    "tables": ["bureau_balance.csv", "credit_card_balance.csv", "installments_payments.csv", "POS_CASH_balance.csv"]
+  },
+  "lineage_counts": {
+    "application_direct": 82,
+    "application_deterministic": 5,
+    "bureau_aggregate": 51,
+    "bureau_deterministic": 1,
+    "previous_application_aggregate": 36,
+    "previous_application_deterministic": 1,
+    "total_governed_predictors": 176
+  },
+  "transformation_sources": [
+    "src/features/bureau_features.py",
+    "src/features/previous_application_features.py",
+    "src/features/deterministic.py"
+  ],
+  "integration_rule": {
+    "join_type": "LEFT_FROM_APPLICATION_TEST_ANCHOR",
+    "join_key": "SK_ID_CURR",
+    "join_validation": "ONE_TO_ONE_AFTER_CUSTOMER_LEVEL_AGGREGATION",
+    "anchor_row_count_preserved": true,
+    "target_dependency_permitted": false,
+    "training_only_integrator_direct_reuse_permitted": false,
+    "reason": "Part A integrate_master_dataset asserts a complete TARGET and is therefore not a label-free application_test interface.",
+    "phase_3_requirement": "Implement a thin label-free integration wrapper and prove exact 176-feature parity against Part A on governed labelled fixtures before adapting application_test."
+  },
+  "source_availability_rules": {
+    "missing_anchor": "SOURCE_TECHNICALLY_REQUIRED",
+    "missing_required_aggregation_source": "CLASSIFY_USING_MONITORING_PROTOCOL_SOURCE_CONTROL_AND_CND_02",
+    "unapproved_fallback": "AUTHORITATIVE_COMPLETION_FALSE",
+    "structural_no_history": "PRESERVE_NATURAL_MISSINGNESS_AND_GOVERNED_HISTORY_FLAGS",
+    "invented_imputation_or_feature": "PROHIBITED"
+  },
+  "base_preservation": {
+    "natural_distributions": "PRESERVE",
+    "natural_missingness": "PRESERVE_IF_CONTRACT_VALID",
+    "natural_unseen_categories": "PRESERVE_AND_TRACK_LATER",
+    "natural_extreme_values": "PRESERVE_IF_FINITE_AND_CONTRACT_VALID",
+    "scenario_mutation": "PROHIBITED_ON_BASE_SNAPSHOT"
+  },
+  "simulation_cohort_assignment": {
+    "status": "SPECIFIED_NOT_EXECUTED",
+    "cohort_count": 6,
+    "labels": ["SIM-M01", "SIM-M02", "SIM-M03", "SIM-M04", "SIM-M05", "SIM-M06"],
+    "calendar_interpretation": false,
+    "algorithm": "SHA256_SORT_THEN_ROUND_ROBIN",
+    "algorithm_version": "SIM-COHORT-ASSIGNMENT-01",
+    "hash_input": "APPLICATION-TEST-SIM-01|CANONICAL_DECIMAL_SK_ID_CURR",
+    "assignment": "Sort ascending by SHA-256 digest, break impossible digest ties by ascending SK_ID_CURR, then assign cohort index position modulo 6.",
+    "expected_properties": ["DETERMINISTIC", "DISJOINT", "EXHAUSTIVE", "BALANCED_COUNTS_DIFFER_BY_AT_MOST_ONE"],
+    "actual_calendar_dates": null
+  },
+  "phase_2_data_access": "NO_ROW_DATA_READ_OR_ADAPTED"
+}

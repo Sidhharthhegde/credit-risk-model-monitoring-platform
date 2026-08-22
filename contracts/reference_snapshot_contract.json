@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "REFERENCE-SNAPSHOT-METADATA-CONTRACT-01",
+  "title": "Governed reference snapshot metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "snapshot_id", "reference_ids", "snapshot_state", "source_population",
+    "source_repository", "source_commit", "source_artifacts", "model_binding_id",
+    "feature_schema_hash", "row_grain", "identifier", "row_count", "column_count",
+    "predictor_count", "target_present", "label_status", "simulation_status",
+    "created_utc", "creation_code_version", "data_sha256", "statistics_manifest",
+    "bin_manifest"
+  ],
+  "properties": {
+    "snapshot_id": {"type": "string", "minLength": 1},
+    "reference_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "snapshot_state": {"enum": ["DRAFT", "QUALIFIED", "APPROVED", "FROZEN", "SUPERSEDED", "REJECTED"]},
+    "source_population": {"type": "string"},
+    "source_repository": {"type": "string"},
+    "source_commit": {"type": "string"},
+    "source_artifacts": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["relative_path", "sha256"],
+        "properties": {
+          "relative_path": {"type": "string"},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+        }
+      }
+    },
+    "source_split_definition": {"type": ["string", "null"]},
+    "model_binding_id": {"const": "PART-A-BINDING-01"},
+    "feature_schema_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "row_grain": {"const": "ONE_ROW_PER_SK_ID_CURR"},
+    "identifier": {"const": "SK_ID_CURR"},
+    "row_count": {"type": "integer", "minimum": 1},
+    "column_count": {"type": "integer", "minimum": 1},
+    "predictor_count": {"const": 176},
+    "target_present": {"type": "boolean"},
+    "label_status": {"enum": ["LABELLED", "UNLABELLED", "LINEAGE_EVIDENCE"]},
+    "simulation_status": {"enum": ["NOT_SIMULATED", "PRODUCTION_SHAPED_SIMULATION"]},
+    "created_utc": {"type": "string", "format": "date-time"},
+    "creation_code_version": {"type": "string"},
+    "data_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "statistics_manifest": {"oneOf": [{"const": "NOT_MATERIALIZED"}, {"type": "object"}]},
+    "bin_manifest": {"oneOf": [{"const": "NOT_MATERIALIZED"}, {"type": "object"}]},
+    "calendar_interpretation": {"type": "boolean"},
+    "parent_snapshot_id": {"type": ["string", "null"]}
+  }
+}

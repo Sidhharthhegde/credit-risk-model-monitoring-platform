@@ -1,0 +1,31 @@
+{
+  "strategy_id": "REFERENCE-STRATEGY-01",
+  "immutability": {
+    "authoritative_use_requires_state": "FROZEN",
+    "silent_row_or_column_change_permitted": false,
+    "material_definition_change": "NEW_REFERENCE_ID_AND_APPROVED_CHANGE_RECORD",
+    "prior_snapshot_retention_required": true,
+    "finalized_evidence_overwrite_permitted": false
+  },
+  "contamination_controls": [
+    {"control_id": "REF-CONTROL-01", "rule": "Monitoring cohorts must never fit or redefine reference bins."},
+    {"control_id": "REF-CONTROL-02", "rule": "Synthetic outcomes and scenarios must never update empirical performance references."},
+    {"control_id": "REF-CONTROL-03", "rule": "Observed drift must never trigger an automatic baseline refresh."},
+    {"control_id": "REF-CONTROL-04", "rule": "Threshold selection lineage must never be used to retune THRESHOLD-01 in Part B."},
+    {"control_id": "REF-CONTROL-05", "rule": "TARGET must not enter FEATURE-REF-01 or APPLICATION-TEST-BASE-01."},
+    {"control_id": "REF-CONTROL-06", "rule": "Physical snapshot reuse must retain distinct semantic reference IDs."}
+  ],
+  "overlap_policy": {
+    "FEATURE_REF_VS_APPLICATION_TEST_SIM": {"expected_overlap": 0, "future_check": "EXACT_SK_ID_CURR_SET_INTERSECTION", "nonzero_result": "HARD_QUALIFICATION_FAILURE"},
+    "DEV_VAL_VS_APPLICATION_TEST_SIM": {"expected_overlap": 0, "future_check": "EXACT_SK_ID_CURR_SET_INTERSECTION", "nonzero_result": "HARD_QUALIFICATION_FAILURE"},
+    "HISTORICAL_THIRD_VS_APPLICATION_TEST_SIM": {"expected_overlap": 0, "future_check": "EXACT_SK_ID_CURR_SET_INTERSECTION", "nonzero_result": "HARD_QUALIFICATION_FAILURE"},
+    "PERF_REF_VS_THRESHOLD_PERF_REF": {"expected_overlap": "COMPLETE", "reason": "Both semantic roles intentionally share DEV-VAL-PHYSICAL-01."}
+  },
+  "source_identity": {
+    "source_paths_and_hashes_required_at_materialization": true,
+    "part_a_commit_required": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+    "model_binding_required": "PART-A-BINDING-01",
+    "feature_schema_sha256_required": "42b964e22ef753d6ff67ea5b9625ab035a74854d24c8b9cec2527b40df19cae9"
+  },
+  "correction_policy": "CREATE_SUPERSEDING_SNAPSHOT_AND_EVIDENCE_PACKAGE_NEVER_REWRITE_FROZEN_HISTORY"
+}

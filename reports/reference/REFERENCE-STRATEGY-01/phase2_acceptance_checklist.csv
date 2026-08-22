@@ -1,0 +1,21 @@
+Check_ID,Requirement,Status,Evidence
+P2-001,FEATURE-REF-01 source and allowed uses fully specified,PASS,reference_role_matrix.csv;contracts/reference_strategy.json
+P2-002,PERF-REF-01 source and allowed uses fully specified,PASS,reference_role_matrix.csv;contracts/reference_strategy.json
+P2-003,TRAIN OOF threshold-selection role is lineage only,PASS,reference_role_matrix.csv;snapshot_specifications.json
+P2-004,Development validation supplies threshold-performance reference,PASS,reference_role_matrix.csv;snapshot_specifications.json
+P2-005,Historical third split remains supplementary internal context,PASS,reference_role_matrix.csv;snapshot_specifications.json
+P2-006,application_test remains explicitly unlabelled and simulated,PASS,application_test_adapter_spec.json
+P2-007,Row grain identifiers columns target status and inclusion rules specified,PASS,snapshot_specifications.json
+P2-008,Physical snapshot reuse and semantic roles resolved,PASS,contracts/reference_strategy.json
+P2-009,application_test adapter inputs joins and lineage specified,PASS,application_test_adapter_spec.json
+P2-010,Natural monitoring base characteristics preserved,PASS,application_test_adapter_spec.json
+P2-011,Simulation cohort labels cannot imply calendar history,PASS,application_test_adapter_spec.json
+P2-012,Reference immutability overlap and contamination controls specified,PASS,reference_integrity_rules.json
+P2-013,Future numeric categorical binary and score statistics specified,PASS,future_statistics_specification.json
+P2-014,Future numeric categorical binary and score bin methods specified,PASS,future_psi_bin_specification.json
+P2-015,Duplicate boundaries tails out-of-range missing and unseen policies specified,PASS,future_psi_bin_specification.json
+P2-016,Snapshot states and future qualification requirements specified,PASS,snapshot_qualification_specification.json
+P2-017,No snapshot statistic bin scenario drift performance or alert result created,PASS,phase2_completion_decision.json
+P2-018,Phase 3 adapter qualification precedes Phase 4 materialization,PASS,phase2_completion_decision.json
+P2-019,REFERENCE-STRATEGY-01 manifest reconciles,PASS,reference_strategy_manifest.json
+P2-020,Phase 2 reviewed and approved,PASS,phase2_approval_record.json

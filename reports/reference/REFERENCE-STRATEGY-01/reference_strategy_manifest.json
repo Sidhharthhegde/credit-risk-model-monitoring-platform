@@ -1,0 +1,30 @@
+{
+  "reference_strategy_id": "REFERENCE-STRATEGY-01",
+  "version": "0.1.0",
+  "status": "APPROVED_FROZEN",
+  "approved_by": "USER_PROTOCOL_OWNER",
+  "approval_date": "2026-08-22",
+  "manifest_scope": "APPROVED_IMMUTABLE_PHASE_2_SPECIFICATION_EVIDENCE_NO_REFERENCE_RESULTS",
+  "artifact_count": 12,
+  "artifacts": [
+    {"path": "README.md", "size_bytes": 629, "sha256": "21ed42914dab09c3a748b8f74453fff73d1da58e17fb02a2dd38e41af7fe2788"},
+    {"path": "reference_role_matrix.csv", "size_bytes": 1197, "sha256": "db56be1d20af0cc73deb45aebd0670129e1b7ab8a3150add98d078fed927c75f"},
+    {"path": "snapshot_specifications.json", "size_bytes": 4410, "sha256": "57c71e51620e243807301d4d7c1bb017a4f71346ec77821702c38a57fbc478b1"},
+    {"path": "application_test_adapter_spec.json", "size_bytes": 3410, "sha256": "2fd131029adc19781c9639196c354b11a3831bec9f72d2eab89629ea7829dedb"},
+    {"path": "reference_integrity_rules.json", "size_bytes": 2215, "sha256": "fffc30041b69d1f8dae73e829dca2764257c0b68ff0a843c0fa09d677df8065f"},
+    {"path": "future_statistics_specification.json", "size_bytes": 2307, "sha256": "30e4f9190317c3f0341ac2e4f2947c05af2679398e59a62820b0e2d10e0a2a75"},
+    {"path": "future_psi_bin_specification.json", "size_bytes": 2551, "sha256": "ed0991a133a9ea95bf6eff9edfb7552f7c7a11ba8063fca08d7f1eb57e819d1c"},
+    {"path": "snapshot_qualification_specification.json", "size_bytes": 1731, "sha256": "4aa64cb7956e44c7e79071c548feb26375bfda5bdde35f1d622d2756f5f30888"},
+    {"path": "reference_strategy_source_manifest.json", "size_bytes": 3603, "sha256": "3bc632e9f0e2c626ad11340af57645bfdc98193fd0ca88989ac522de68db8a96"},
+    {"path": "phase2_acceptance_checklist.csv", "size_bytes": 2257, "sha256": "af857876a8272200e810d86cad5bec41b1b981666b43503f2ce8ded1f0ad50da"},
+    {"path": "phase2_completion_decision.json", "size_bytes": 1265, "sha256": "242bfc165e7b8f7a0d66597cc8983bbba3843a3cc9356c1d185ea0da2f3e3ba5"},
+    {"path": "phase2_approval_record.json", "size_bytes": 992, "sha256": "0b271102f28d0fb65564e8496632d4c319a560629479c42d847b7d4381f77948"}
+  ],
+  "snapshots_materialized": false,
+  "reference_statistics_included": false,
+  "psi_bin_edges_included": false,
+  "scenario_results_included": false,
+  "drift_results_included": false,
+  "performance_results_included": false,
+  "monitoring_alerts_included": false
+}

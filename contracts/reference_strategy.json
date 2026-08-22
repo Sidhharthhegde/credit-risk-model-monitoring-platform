@@ -1,0 +1,115 @@
+{
+  "strategy_id": "REFERENCE-STRATEGY-01",
+  "version": "0.1.0",
+  "status": "APPROVED_FROZEN",
+  "protocol_id": "MONITORING-PROTOCOL-01",
+  "model_binding_id": "PART-A-BINDING-01",
+  "governance_classification": "PROJECT_DEFINED_REFERENCE_STRATEGY",
+  "metric_reference_rule": {
+    "requirement": "Every future metric record must carry a governed reference context.",
+    "comparison_metrics": "MUST_DECLARE_REFERENCE_ID",
+    "absolute_contract_metrics": "MUST_DECLARE_REFERENCE_ID_OR_NOT_APPLICABLE_CONTRACT_ONLY",
+    "silent_dataframe_reference_permitted": false
+  },
+  "physical_snapshots": {
+    "TRAIN-PHYSICAL-01": {
+      "state": "SPECIFIED_NOT_MATERIALIZED",
+      "source_population": "FROZEN_DETERMINISTIC_TRAIN_SPLIT",
+      "semantic_roles": ["FEATURE-REF-01"],
+      "row_grain": "ONE_ROW_PER_SK_ID_CURR",
+      "identifier": "SK_ID_CURR",
+      "required_columns": "SK_ID_CURR_PLUS_176_GOVERNED_RAW_PREDICTORS",
+      "target_present": false,
+      "split_key_artifact": "data/processed/SK_ID_CURR_train.csv",
+      "split_key_sha256": "3b1209829b6980d14acc3fabb4be139988cf60c576a1bfe30c12359befc3c17a"
+    },
+    "DEV-VAL-PHYSICAL-01": {
+      "state": "SPECIFIED_NOT_MATERIALIZED",
+      "source_population": "FROZEN_DEVELOPMENT_VALIDATION_SPLIT",
+      "semantic_roles": ["PERF-REF-01", "THRESHOLD-PERF-REF-01"],
+      "row_grain": "ONE_ROW_PER_SK_ID_CURR",
+      "identifier": "SK_ID_CURR",
+      "required_columns": "SK_ID_CURR_TARGET_176_GOVERNED_RAW_PREDICTORS_GOVERNED_SUBGROUP_FIELDS_AND_QUALIFIED_SCORING_OUTPUT",
+      "target_present": true,
+      "split_key_artifact": "data/processed/SK_ID_CURR_validation.csv",
+      "split_key_sha256": "e0aedd5f553125ea1934f71c7c2f386be2f13c5b1d5e76425f0282eb461160bc"
+    },
+    "TRAIN-OOF-EVIDENCE-01": {
+      "state": "SPECIFIED_NOT_MATERIALIZED",
+      "source_population": "FROZEN_TRAIN_OOF_EVIDENCE",
+      "semantic_roles": ["THRESHOLD-SELECTION-REF-01"],
+      "materialization_mode": "LINEAGE_EVIDENCE_REFERENCE_NOT_MONITORING_BASELINE",
+      "target_present": true
+    },
+    "HISTORICAL-THIRD-PHYSICAL-01": {
+      "state": "SPECIFIED_NOT_MATERIALIZED",
+      "source_population": "HISTORICALLY_EXPOSED_INTERNAL_THIRD_SPLIT",
+      "semantic_roles": ["HISTORICAL-CONTEXT-01"],
+      "row_grain": "ONE_ROW_PER_SK_ID_CURR",
+      "identifier": "SK_ID_CURR",
+      "target_present": true,
+      "split_key_artifact": "data/processed/SK_ID_CURR_test.csv",
+      "split_key_sha256": "8fa87898e9a7c1158592ead850ed86c072772e9950825419596f821d47698630",
+      "untouched_holdout": false,
+      "external_or_oot": false
+    },
+    "APPLICATION-TEST-BASE-01": {
+      "state": "SPECIFIED_NOT_MATERIALIZED",
+      "source_population": "HOME_CREDIT_APPLICATION_TEST",
+      "semantic_roles": ["APPLICATION-TEST-SIM-01"],
+      "row_grain": "ONE_ROW_PER_SK_ID_CURR",
+      "identifier": "SK_ID_CURR",
+      "required_columns": "SK_ID_CURR_PLUS_176_GOVERNED_RAW_PREDICTORS_AFTER_QUALIFIED_ADAPTATION",
+      "target_present": false,
+      "label_status": "UNLABELLED",
+      "simulation_status": "PRODUCTION_SHAPED_SIMULATION",
+      "calendar_interpretation": false
+    }
+  },
+  "reference_roles": {
+    "FEATURE-REF-01": {
+      "physical_snapshot_id": "TRAIN-PHYSICAL-01",
+      "role": "INPUT_DISTRIBUTION_REFERENCE",
+      "primary_uses": ["DATA_QUALITY_COMPARISON", "MISSINGNESS_REFERENCE", "FEATURE_DRIFT", "NUMERIC_PSI_BIN_SOURCE", "CATEGORICAL_REFERENCE_FREQUENCIES"],
+      "supporting_uses": ["REFERENCE_SCORE_DISTRIBUTION_DIAGNOSTIC"],
+      "prohibited_uses": ["EMPIRICAL_PERFORMANCE_BASELINE", "CALIBRATION_BASELINE", "THRESHOLD_SELECTION"]
+    },
+    "PERF-REF-01": {
+      "physical_snapshot_id": "DEV-VAL-PHYSICAL-01",
+      "role": "PRIMARY_INTERNAL_ANALYTICAL_PERFORMANCE_REFERENCE",
+      "primary_uses": ["REFERENCE_SCORE_DISTRIBUTION", "SCORE_PSI_BIN_SOURCE", "DISCRIMINATION", "CALIBRATION", "PORTFOLIO_OUTCOMES"],
+      "supporting_uses": ["THRESHOLD_PERFORMANCE"],
+      "prohibited_uses": ["FEATURE_PSI_BIN_SOURCE", "EXTERNAL_VALIDATION_CLAIM", "OOT_CLAIM"]
+    },
+    "THRESHOLD-SELECTION-REF-01": {
+      "physical_snapshot_id": "TRAIN-OOF-EVIDENCE-01",
+      "role": "THRESHOLD_SELECTION_LINEAGE_ONLY",
+      "primary_uses": ["THRESHOLD_01_SELECTION_LINEAGE"],
+      "prohibited_uses": ["PRIMARY_PERFORMANCE_BASELINE", "THRESHOLD_RETUNING", "MONITORING_BASELINE"]
+    },
+    "THRESHOLD-PERF-REF-01": {
+      "physical_snapshot_id": "DEV-VAL-PHYSICAL-01",
+      "role": "PRIMARY_INTERNAL_THRESHOLD_PERFORMANCE_REFERENCE",
+      "primary_uses": ["THRESHOLD_PERFORMANCE", "RISK_CLASS_RATE_REFERENCE"],
+      "supporting_uses": ["DISCRIMINATION", "CALIBRATION"],
+      "prohibited_uses": ["THRESHOLD_SELECTION", "THRESHOLD_RETUNING"]
+    },
+    "HISTORICAL-CONTEXT-01": {
+      "physical_snapshot_id": "HISTORICAL-THIRD-PHYSICAL-01",
+      "role": "SUPPLEMENTARY_INTERNAL_CONTEXT",
+      "supporting_uses": ["DATA_QUALITY", "FEATURE_DRIFT", "SCORE_DISTRIBUTION", "PERFORMANCE", "CALIBRATION", "THRESHOLD_PERFORMANCE"],
+      "prohibited_uses": ["PRIMARY_REFERENCE", "EXTERNAL_VALIDATION_CLAIM", "OOT_CLAIM", "UNTOUCHED_HOLDOUT_CLAIM"]
+    },
+    "APPLICATION-TEST-SIM-01": {
+      "physical_snapshot_id": "APPLICATION-TEST-BASE-01",
+      "role": "UNLABELLED_MONITORING_SIMULATION_POPULATION",
+      "primary_uses": ["DATA_QUALITY", "SOURCE_AVAILABILITY", "FEATURE_DRIFT_CURRENT_POPULATION", "SCORE_DRIFT_CURRENT_POPULATION", "MEAN_PD", "RISK_POSITIVE_RATE", "RISK_NEGATIVE_RATE"],
+      "prohibited_uses": ["REALIZED_DISCRIMINATION", "CALIBRATION", "OBSERVED_EXPECTED_RATIO", "BRIER_AGAINST_OUTCOMES", "RECALL", "SPECIFICITY", "PRECISION", "CONFUSION_MATRIX", "RISK_NEGATIVE_DEFAULT_RATE", "EXTERNAL_PERFORMANCE_CLAIM", "TRANSPORTABILITY_CLAIM"]
+    }
+  },
+  "snapshot_state_vocabulary": ["DRAFT", "QUALIFIED", "APPROVED", "FROZEN", "SUPERSEDED", "REJECTED"],
+  "authoritative_use_requires_state": "FROZEN",
+  "reference_statistics_materialized": false,
+  "psi_bin_edges_created": false,
+  "snapshots_materialized": false
+}

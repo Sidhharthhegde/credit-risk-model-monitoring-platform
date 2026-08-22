@@ -1,0 +1,55 @@
+{
+  "strategy_id": "REFERENCE-STRATEGY-01",
+  "status": "METHOD_SPECIFIED_EDGES_NOT_MATERIALIZED",
+  "numeric_feature_bins": {
+    "source_reference_id": "FEATURE-REF-01",
+    "method": "EMPIRICAL_QUANTILE",
+    "requested_nonmissing_bins": 10,
+    "minimum_supported_nonmissing_bins": 1,
+    "boundary_rule": "SORTED_UNIQUE_EMPIRICAL_QUANTILE_BOUNDARIES",
+    "duplicate_boundary_rule": "COLLAPSE_DUPLICATE_BOUNDARIES_AND_RECORD_ACTUAL_BIN_COUNT",
+    "constant_feature_rule": "ONE_NONMISSING_BIN_PLUS_SEPARATE_MISSING_BUCKET",
+    "near_constant_feature_rule": "USE_FEWER_UNIQUE_BINS_WITHOUT_ARTIFICIAL_SPLITS",
+    "lower_tail": "FIRST_BIN_EXTENDS_TO_NEGATIVE_INFINITY",
+    "upper_tail": "LAST_BIN_EXTENDS_TO_POSITIVE_INFINITY",
+    "outside_reference_range": "ASSIGN_TO_EXISTING_TAIL_BIN_AND_RECORD_OUT_OF_RANGE_DIAGNOSTIC",
+    "missing_bucket": "__MISSING__",
+    "missing_bucket_always_defined": true,
+    "zero_monitoring_count": "PERMITTED_WITH_GOVERNED_PSI_SMOOTHING_IN_LATER_IMPLEMENTATION",
+    "zero_reference_count": "ONLY_STRUCTURAL_RESERVED_BUCKETS_MAY_START_AT_ZERO; NUMERIC_EMPTY_BINS_ARE_NOT_CREATED",
+    "edges_created_in_phase_2": false
+  },
+  "categorical_feature_bins": {
+    "source_reference_id": "FEATURE-REF-01",
+    "reference_levels": "ALL_CANONIC_STRING_LEVELS_OBSERVED_IN_FROZEN_REFERENCE",
+    "missing_bucket": "__MISSING__",
+    "unseen_bucket": "__UNSEEN__",
+    "unseen_definition": "NONMISSING_CANONICAL_STRING_NOT_PRESENT_IN_FROZEN_REFERENCE_LEVEL_SET",
+    "rare_category_pooling": "NOT_AUTHORIZED_UNLESS_DEFINED_BY_A_LATER_APPROVED_AMENDMENT",
+    "levels_created_in_phase_2": false
+  },
+  "binary_feature_bins": {
+    "source_reference_id": "FEATURE-REF-01",
+    "bins": ["0", "1"],
+    "missing_bucket": "NOT_DEFINED_BECAUSE_MISSING_BINARY_IS_A_CONTRACT_FAILURE",
+    "generic_numeric_quantiles_used": false
+  },
+  "score_bins": {
+    "source_reference_id": "PERF-REF-01",
+    "probability_representation": "RAW_P_TARGET_1",
+    "method": "EMPIRICAL_QUANTILE",
+    "requested_bins": 10,
+    "range": [0.0, 1.0],
+    "duplicate_boundary_rule": "COLLAPSE_DUPLICATE_BOUNDARIES_AND_RECORD_ACTUAL_BIN_COUNT",
+    "threshold_01_is_bin_definition": false,
+    "optional_risk_bands_created": false,
+    "edges_created_in_phase_2": false
+  },
+  "governance": {
+    "bin_edges_are_project_defined": true,
+    "regulatory_or_universal_standard_claimed": false,
+    "monitoring_cohort_refit_permitted": false,
+    "ordinary_run_edge_change_permitted": false,
+    "material_change_requires_new_reference_id": true
+  }
+}

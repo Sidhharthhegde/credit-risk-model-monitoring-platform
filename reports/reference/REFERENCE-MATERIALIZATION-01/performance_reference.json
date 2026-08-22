@@ -1,0 +1,10 @@
+{
+  "automated_performance_alert_limits_enabled": false,
+  "gini": 0.5433553558379896,
+  "gini_derivation": "2_ROC_AUC_MINUS_1",
+  "ks": 0.4092991806686964,
+  "pr_auc_average_precision": 0.2644070305288051,
+  "reference_id": "PERF-REF-01",
+  "roc_auc": 0.7716776779189948,
+  "scope": "INTERNAL_ANALYTICAL_REFERENCE_NOT_EXTERNAL_OR_OOT"
+}

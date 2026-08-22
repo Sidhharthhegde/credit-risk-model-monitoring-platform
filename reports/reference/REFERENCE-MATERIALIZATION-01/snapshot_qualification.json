@@ -1,0 +1,15 @@
+{
+  "application_test_row_count": 48744,
+  "approval_performed": false,
+  "freeze_performed": false,
+  "governed_predictor_count": 176,
+  "result": "PASS",
+  "runtime_maximum_absolute_difference": 1.1102230246251565e-16,
+  "runtime_threshold_class_exact": true,
+  "snapshot_states": {
+    "APPLICATION-TEST-BASE-01": "QUALIFIED",
+    "DEV-VAL-PHYSICAL-01": "QUALIFIED",
+    "TRAIN-PHYSICAL-01": "QUALIFIED"
+  },
+  "validation_probability_source_hash_bound": true
+}

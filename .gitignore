@@ -8,6 +8,8 @@ __pycache__/
 htmlcov/
 .venv/
 venv/
+.phase4_runtime/
+.phase4_runtime_user/
 
 # Local configuration and secrets
 .env
@@ -53,4 +55,3 @@ scenario_cohorts/
 .DS_Store
 Thumbs.db
 desktop.ini
-

@@ -1,0 +1,14 @@
+{
+  "automated_performance_alert_limits_enabled": false,
+  "brier_score": 0.06686035958631036,
+  "calibrator_fitted": false,
+  "expected_default_count": 3721.288726493016,
+  "fixed_band_definition_lineage": "PART_A_PHASE54_FROZEN_TRAIN_OOF_BOUNDARIES_APPLIED_TO_DEVELOPMENT_VALIDATION",
+  "fixed_band_results_artifact": "calibration_band_reference.csv",
+  "log_loss": 0.2418020743788684,
+  "mean_raw_probability": 0.08067484827743004,
+  "observed_default_count": 3724,
+  "observed_default_rate": 0.08073362672621241,
+  "observed_expected_ratio": 1.000728584559344,
+  "reference_id": "PERF-REF-01"
+}

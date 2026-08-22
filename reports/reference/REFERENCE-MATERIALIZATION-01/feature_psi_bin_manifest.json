@@ -1,0 +1,13 @@
+{
+  "artifacts": [
+    {
+      "path": "feature_psi_bin_definitions.json",
+      "sha256": "9e39ef730c75ed1b91e9a479bc9d3927636c87a2ff85cae6d11e66b1683d6755",
+      "size_bytes": 86268
+    }
+  ],
+  "calculation_specification": "REFERENCE-STRATEGY-01",
+  "creation_code_version": "PHASE4-REFERENCE-MATERIALIZER-0.1.0",
+  "source_snapshot_content_sha256": "5e2250e3d60ae06b78130799d93caa53e3358ef9ded87938ddeacffc20f27a9c",
+  "status": "APPROVED_FROZEN"
+}

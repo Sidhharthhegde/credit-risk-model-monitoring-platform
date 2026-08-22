@@ -1,0 +1,8 @@
+{
+  "lifecycle_and_governance_metadata_changed": true,
+  "part_a_unchanged": true,
+  "phase_0_through_3_frozen_manifests_unchanged": true,
+  "reference_values_changed_during_approval": false,
+  "result": "PASS",
+  "row_level_parquet_data_changed_during_approval": false
+}

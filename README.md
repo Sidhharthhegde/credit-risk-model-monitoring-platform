@@ -6,9 +6,9 @@ Part B will demonstrate data-quality monitoring, population and feature drift, r
 
 ## Current status
 
-`PHASE_3_COMPLETE_PHASE_4_MATERIALIZATION_IN_PROGRESS`
+`PHASE_4_COMPLETE_PHASE_5_SCENARIO_GENERATION_IN_PROGRESS`
 
-`MONITORING-PROTOCOL-01`, `RUNTIME-QUALIFICATION-01`, `REFERENCE-STRATEGY-01`, and `FEATURE-ADAPTER-QUALIFICATION-01` are approved and frozen. Phase 4 reference materialization and frozen-bin construction is authorized. Monitoring execution, scenarios, drift calculations, and performance analysis remain unauthorized until later gates are approved.
+Phases 0–4 are approved and frozen. `REFERENCE-MATERIALIZATION-01` is the authoritative frozen reference package, including the Project B PSI epsilon assumption of `1e-6`. Phase 5 cohort and scenario generation is authorized. Monitoring calculations, alerts and model-health decisions remain unauthorized.
 
 ## Important scope statement
 

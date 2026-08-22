@@ -1,0 +1,159 @@
+{
+  "row_level_snapshots_publicly_committed": false,
+  "snapshots": [
+    {
+      "bin_manifest": {
+        "path": "reports/reference/REFERENCE-MATERIALIZATION-01/feature_psi_bin_manifest.json",
+        "sha256": "09635b9cff8cd7929cbe05919d99638274b17cd4c7166bc54148119cd2cb4748"
+      },
+      "calendar_interpretation": false,
+      "column_count": 177,
+      "content_sha256": "5e2250e3d60ae06b78130799d93caa53e3358ef9ded87938ddeacffc20f27a9c",
+      "created_utc": "2026-08-22T12:21:59.964484+00:00",
+      "creation_code_version": "PHASE4-REFERENCE-MATERIALIZER-0.1.0",
+      "data_sha256": "9a4794dd975fe7284152408f31e9de9964caee48a14f8bb201c4714604d7699c",
+      "feature_interface_compatibility_qualification_id": "FEATURE-ADAPTER-QUALIFICATION-01",
+      "feature_schema_hash": "42b964e22ef753d6ff67ea5b9625ab035a74854d24c8b9cec2527b40df19cae9",
+      "identifier": "SK_ID_CURR",
+      "label_status": "UNLABELLED",
+      "model_binding_id": "PART-A-BINDING-01",
+      "parent_snapshot_id": null,
+      "predictor_count": 176,
+      "reference_ids": [
+        "FEATURE-REF-01"
+      ],
+      "row_count": 215257,
+      "row_grain": "ONE_ROW_PER_SK_ID_CURR",
+      "simulation_status": "NOT_SIMULATED",
+      "snapshot_id": "TRAIN-PHYSICAL-01",
+      "snapshot_state": "FROZEN",
+      "source_artifacts": [
+        {
+          "relative_path": "data/interim/train_deterministic_base.csv",
+          "sha256": "7960cdf4d4f8ca6f01654324f4495eb1b90cd1f41c8861517330f48e60001388"
+        },
+        {
+          "relative_path": "data/processed/SK_ID_CURR_train.csv",
+          "sha256": "3b1209829b6980d14acc3fabb4be139988cf60c576a1bfe30c12359befc3c17a"
+        }
+      ],
+      "source_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+      "source_population": "FROZEN_DETERMINISTIC_TRAIN_SPLIT",
+      "source_repository": "PART_A_LOCAL_FROZEN_WORKSPACE",
+      "source_split_definition": "FEATURE-REF-01",
+      "statistics_manifest": {
+        "path": "reports/reference/REFERENCE-MATERIALIZATION-01/reference_statistics_manifest.json",
+        "sha256": "54629b9b38e2f5418d063ce3f6daaa1521586bb24316c2b70798e621b56f9ab0"
+      },
+      "target_present": false
+    },
+    {
+      "bin_manifest": {
+        "path": "reports/reference/REFERENCE-MATERIALIZATION-01/score_psi_bin_manifest.json",
+        "sha256": "feca2af501fb0af5582a2c6df52dfbd21bf05b8851542e920e1f1707e5d93809"
+      },
+      "calendar_interpretation": false,
+      "column_count": 185,
+      "content_sha256": "15a080fe8fe66d06691d4f1556376e5fbfd215f6005113e46dedae9a1589f94f",
+      "created_utc": "2026-08-22T12:21:59.964484+00:00",
+      "creation_code_version": "PHASE4-REFERENCE-MATERIALIZER-0.1.0",
+      "data_sha256": "b51c2bbbf491b0efe63650ed4dfc620ef25bc656ee81683d6579ebae7686d92f",
+      "feature_interface_compatibility_qualification_id": "FEATURE-ADAPTER-QUALIFICATION-01",
+      "feature_schema_hash": "42b964e22ef753d6ff67ea5b9625ab035a74854d24c8b9cec2527b40df19cae9",
+      "identifier": "SK_ID_CURR",
+      "label_status": "LABELLED",
+      "model_binding_id": "PART-A-BINDING-01",
+      "parent_snapshot_id": null,
+      "predictor_count": 176,
+      "reference_ids": [
+        "PERF-REF-01",
+        "THRESHOLD-PERF-REF-01"
+      ],
+      "row_count": 46127,
+      "row_grain": "ONE_ROW_PER_SK_ID_CURR",
+      "simulation_status": "NOT_SIMULATED",
+      "snapshot_id": "DEV-VAL-PHYSICAL-01",
+      "snapshot_state": "FROZEN",
+      "source_artifacts": [
+        {
+          "relative_path": "data/interim/validation_deterministic_base.csv",
+          "sha256": "81a1898d2d274eecdb7b1579eadb25e642ee22d53b08d1c1bc10d4dbf2cc1e16"
+        },
+        {
+          "relative_path": "data/processed/SK_ID_CURR_validation.csv",
+          "sha256": "e0aedd5f553125ea1934f71c7c2f386be2f13c5b1d5e76425f0282eb461160bc"
+        },
+        {
+          "relative_path": "data/processed/predictions/step45_xgb_tuning_v1/XGBT-01_validation_predictions.csv",
+          "sha256": "afc2b0aa851433bed0c0357b1c94e1cccea3576b0814e70f9812a799c3ee1f33"
+        },
+        {
+          "relative_path": "models/tuning/step45_xgb_tuning_v1/finalists/XGBT-01.joblib",
+          "sha256": "ab0000a4ae092f0444760839e185384d44f9a9760be298189bdfcd80c67fa500"
+        }
+      ],
+      "source_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+      "source_population": "FROZEN_DEVELOPMENT_VALIDATION_SPLIT",
+      "source_repository": "PART_A_LOCAL_FROZEN_WORKSPACE",
+      "source_split_definition": "PERF-REF-01",
+      "statistics_manifest": {
+        "manifests": [
+          {
+            "path": "reports/reference/REFERENCE-MATERIALIZATION-01/score_reference_manifest.json",
+            "sha256": "4bec1e25f5d4374b3a21129772adfe61dae14febbf6e0b419165af38ff496ec9"
+          }
+        ]
+      },
+      "target_present": true
+    },
+    {
+      "adapter_id": "MONITORING-FEATURE-ADAPTER-01",
+      "bin_manifest": "NOT_MATERIALIZED",
+      "calendar_interpretation": false,
+      "column_count": 177,
+      "content_sha256": "f1fe279b2fcf28cb14eed2aa9367ed9a7cc1c4b55217b5b7c19f1ebd3580ccff",
+      "created_utc": "2026-08-22T12:21:59.964484+00:00",
+      "creation_code_version": "PHASE4-REFERENCE-MATERIALIZER-0.1.0",
+      "data_sha256": "6c661ba67b49fc1b7302751fce36532c773ccad9078827270c32a377aeee526a",
+      "feature_schema_hash": "42b964e22ef753d6ff67ea5b9625ab035a74854d24c8b9cec2527b40df19cae9",
+      "identifier": "SK_ID_CURR",
+      "label_status": "UNLABELLED",
+      "model_binding_id": "PART-A-BINDING-01",
+      "parent_snapshot_id": null,
+      "predictor_count": 176,
+      "reference_ids": [
+        "APPLICATION-TEST-SIM-01"
+      ],
+      "row_count": 48744,
+      "row_grain": "ONE_ROW_PER_SK_ID_CURR",
+      "simulation_status": "PRODUCTION_SHAPED_SIMULATION",
+      "snapshot_id": "APPLICATION-TEST-BASE-01",
+      "snapshot_state": "FROZEN",
+      "source_artifacts": [
+        {
+          "relative_path": "data/raw/application_test.csv",
+          "sha256": "a36161331d839150a67b6216d4de066f543a3b01a34061507d40e76612e0dec8"
+        },
+        {
+          "relative_path": "data/raw/bureau.csv",
+          "sha256": "9d799143423f280720cf51c1bfbbab2a0422da8ff2763335bb30bf43155494f7"
+        },
+        {
+          "relative_path": "data/raw/previous_application.csv",
+          "sha256": "5046cd657ee04df2eaa6dc8308ae86be6b3b1763674a3f63574886a2f2896505"
+        },
+        {
+          "relative_path": "models/tuning/step45_xgb_tuning_v1/finalists/XGBT-01.joblib",
+          "sha256": "ab0000a4ae092f0444760839e185384d44f9a9760be298189bdfcd80c67fa500"
+        }
+      ],
+      "source_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+      "source_population": "HOME_CREDIT_APPLICATION_TEST",
+      "source_repository": "PART_A_LOCAL_FROZEN_WORKSPACE",
+      "source_split_definition": "APPLICATION-TEST-SIM-01",
+      "statistics_manifest": "NOT_MATERIALIZED",
+      "target_present": false
+    }
+  ],
+  "status": "APPROVED_FROZEN"
+}

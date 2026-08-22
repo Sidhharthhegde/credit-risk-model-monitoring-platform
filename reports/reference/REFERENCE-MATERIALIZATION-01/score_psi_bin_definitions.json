@@ -1,0 +1,25 @@
+{
+  "actual_bins": 10,
+  "finite_inner_edges": [
+    0.01632400378584856,
+    0.02352401241660116,
+    0.030935860797762782,
+    0.03978547230362888,
+    0.0507227219641208,
+    0.06524199992418286,
+    0.0861212283372879,
+    0.11900093853473663,
+    0.18416249752044678
+  ],
+  "method": "EMPIRICAL_QUANTILE",
+  "optional_risk_bands_created": false,
+  "probability_representation": "RAW_P_TARGET_1",
+  "range_guard": [
+    0.0,
+    1.0
+  ],
+  "reference_id": "PERF-REF-01",
+  "requested_bins": 10,
+  "status": "APPROVED_FROZEN",
+  "threshold_01_is_bin_definition": false
+}

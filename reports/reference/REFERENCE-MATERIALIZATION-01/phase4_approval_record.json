@@ -1,0 +1,13 @@
+{
+  "adapter_metadata_semantics_resolved": true,
+  "approved_preapproval_manifest_sha256": "3df7788fc64c066aaca9e20899e4b2e3b15afc863f8f1b5c7c8b7ac53c2fd958",
+  "approved_utc": "2026-08-22T15:53:57.356349+00:00",
+  "approver_role": "USER_PROTOCOL_OWNER",
+  "materialization_id": "REFERENCE-MATERIALIZATION-01",
+  "monitoring_execution_authorized": false,
+  "phase_5_authorized": true,
+  "psi_epsilon": 1e-06,
+  "psi_epsilon_status": "APPROVED_PROJECT_ASSUMPTION",
+  "review_decision": "APPROVED",
+  "smoothing_formula": "REPLACE_ZERO_PROPORTIONS_ONLY_THEN_RENORMALIZE"
+}

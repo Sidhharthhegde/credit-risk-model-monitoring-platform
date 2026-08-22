@@ -1681,7 +1681,7 @@ Update this table only when supported by a phase completion decision.
 | 1 | `COMPLETE` | `reports/qualification/RUNTIME-QUALIFICATION-01/phase1_completion_decision.json` | Approved and frozen on 2026-08-22 |
 | 2 | `COMPLETE` | `reports/reference/REFERENCE-STRATEGY-01/phase2_completion_decision.json` | Approved and frozen on 2026-08-22 |
 | 3 | `COMPLETE` | `reports/adapter/FEATURE-ADAPTER-QUALIFICATION-01/phase3_completion_decision.json` | Conditional review blocker resolved; approved and frozen on 2026-08-22 |
-| 4 | `IN_PROGRESS` | Not issued | Entry authorized for reference materialization and frozen-bin construction only |
+| 4 | `COMPLETE` | `reports/reference/REFERENCE-MATERIALIZATION-01/phase4_completion_decision.json` | Approved and frozen on 2026-08-22 |
 | 5 | `NOT_STARTED` | Not issued |  |
 | 6 | `NOT_STARTED` | Not issued |  |
 | 7 | `NOT_STARTED` | Not issued |  |
@@ -1709,10 +1709,10 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next authorized work is Phase 4 reference materialization and frozen-bin construction:
+The next authorized work is Phase 5 simulated cohort and scenario generation:
 
-1. Materialize the approved physical reference snapshots under the frozen Phase 2 specifications.
-2. Preserve the three controlled-deferred items as inactive.
+1. Use frozen `APPLICATION-TEST-BASE-01` as the sole cohort parent.
+2. Create six deterministic, balanced, disjoint and exhaustive simulated cohorts.
 3. Resolve the remaining governance choices through a protocol amendment before their alert logic is activated:
    - Exact AUC deterioration limits.
    - Exact Brier deterioration limits.
@@ -1722,9 +1722,8 @@ The next authorized work is Phase 4 reference materialization and frozen-bin con
    - Repeat-breach escalation timing.
    - Overall-health aggregation.
    - Whether optional monitoring score bands will be used.
-4. Do not begin reference materialization, PSI, drift, scenario, or performance calculations during Phase 1.
-5. Specify snapshot contents, grain, exclusions, identifiers, provenance, versioning, and freeze evidence prospectively.
-6. Prove exact adapter parity on governed labelled fixtures before adapting `application_test`.
-7. Qualify, hash, approve and freeze snapshots and bins before any monitoring calculation uses them.
+4. Materialize pristine bases before applying scenario transformations.
+5. Keep valid scenarios, hard-fail fixtures, source-loss diagnostics and synthetic outcomes separate.
+6. Do not calculate monitoring metrics, severities, alerts or model-health status in Phase 5.
 
-No reference statistics, monitoring scenarios, drift calculations or performance analyses should be executed before these actions are complete.
+No current-versus-reference statistics, monitoring scenarios, drift calculations, monitoring alerts or model-health decisions may be executed before these actions are complete.

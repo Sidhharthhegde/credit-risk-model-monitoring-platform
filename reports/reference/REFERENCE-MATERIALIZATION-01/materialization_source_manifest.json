@@ -1,0 +1,86 @@
+{
+  "calibration_band_definition_source": "FROZEN_PART_A_PHASE54_OOF_DERIVED_FIXED_BOUNDARIES",
+  "creation_code_version": "PHASE4-REFERENCE-MATERIALIZER-0.1.0",
+  "development_validation_probability_source": "HASH_BOUND_FROZEN_PART_A_PREDICTION_ARTIFACT",
+  "implementation_sources": [
+    {
+      "relative_path": "src/credit_risk_monitoring/reference/materialization.py",
+      "sha256": "31809ef85a434ed500e5f6bc40ab14cf85ee0999b9a66c7cbac7be5991c5aa97"
+    },
+    {
+      "relative_path": "src/credit_risk_monitoring/reference/__init__.py",
+      "sha256": "7d591edf6543647878ff618c5b607d79e1e789ca14268dde3fc8a53da3b86ee1"
+    },
+    {
+      "relative_path": "scripts/run_phase4_materialization.py",
+      "sha256": "f4fad86c62f6e8fe2b57a47f01da4750405916c47da671970d612b3b9196f1f1"
+    }
+  ],
+  "materialization_id": "REFERENCE-MATERIALIZATION-01",
+  "model_binding_passed": true,
+  "part_a_clean_before_and_after": true,
+  "part_a_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+  "part_b_base_commit": "09482a712555909db20aa134c09a7a9aa563db89",
+  "phase3_adapter_reexecuted_for_application_test": true,
+  "qualified_runtime_reconciliation": {
+    "csv_round_trip_prevents_bitwise_claim": true,
+    "maximum_absolute_difference": 1.1102230246251565e-16,
+    "threshold_class_exact": true,
+    "tolerance": 1e-06
+  },
+  "sources": [
+    {
+      "relative_path": "data/interim/train_deterministic_base.csv",
+      "sha256": "7960cdf4d4f8ca6f01654324f4495eb1b90cd1f41c8861517330f48e60001388"
+    },
+    {
+      "relative_path": "data/interim/validation_deterministic_base.csv",
+      "sha256": "81a1898d2d274eecdb7b1579eadb25e642ee22d53b08d1c1bc10d4dbf2cc1e16"
+    },
+    {
+      "relative_path": "data/processed/SK_ID_CURR_train.csv",
+      "sha256": "3b1209829b6980d14acc3fabb4be139988cf60c576a1bfe30c12359befc3c17a"
+    },
+    {
+      "relative_path": "data/processed/SK_ID_CURR_validation.csv",
+      "sha256": "e0aedd5f553125ea1934f71c7c2f386be2f13c5b1d5e76425f0282eb461160bc"
+    },
+    {
+      "relative_path": "data/processed/predictions/step45_xgb_tuning_v1/XGBT-01_validation_predictions.csv",
+      "sha256": "afc2b0aa851433bed0c0357b1c94e1cccea3576b0814e70f9812a799c3ee1f33"
+    },
+    {
+      "relative_path": "data/raw/application_test.csv",
+      "sha256": "a36161331d839150a67b6216d4de066f543a3b01a34061507d40e76612e0dec8"
+    },
+    {
+      "relative_path": "data/raw/bureau.csv",
+      "sha256": "9d799143423f280720cf51c1bfbbab2a0422da8ff2763335bb30bf43155494f7"
+    },
+    {
+      "relative_path": "data/raw/previous_application.csv",
+      "sha256": "5046cd657ee04df2eaa6dc8308ae86be6b3b1763674a3f63574886a2f2896505"
+    },
+    {
+      "relative_path": "models/tuning/step45_xgb_tuning_v1/finalists/XGBT-01.joblib",
+      "sha256": "ab0000a4ae092f0444760839e185384d44f9a9760be298189bdfcd80c67fa500"
+    },
+    {
+      "relative_path": "reports/experiments/step47_calibration_v1/train_oof_predictions.csv",
+      "sha256": "8f80d2ad089d6ad84ecc68ea9c16ae0d54a4f2a9db20ef5fd5620d2968eca27b"
+    },
+    {
+      "relative_path": "reports/experiments/step48_threshold_v1/threshold_selection_manifest.json",
+      "sha256": "1c821cac34c89b725a9ca2901c0ed8f925aeefde94f78d6e3640fc2707d239be"
+    },
+    {
+      "relative_path": "reports/experiments/step48_threshold_v1/threshold_decision.csv",
+      "sha256": "fa763ef44eece66c10ca607ff177cc54d8dead9ac63f5e70c03fe7e5fff391c9"
+    },
+    {
+      "relative_path": "reports/formal_validation/phase54_calibration_probability_validation_v1_4/fixed_boundary_calibration_bins.csv",
+      "sha256": "3e90f990ada35510e14194018445396ff1edc01917b0dc266dd8fb1eff264bef"
+    }
+  ],
+  "train_oof_materialization": "HASH_BOUND_EXISTING_LINEAGE_NO_ROW_COPY"
+}

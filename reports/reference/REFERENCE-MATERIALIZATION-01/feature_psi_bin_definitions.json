@@ -1,0 +1,3145 @@
+{
+  "definitions": [
+    {
+      "feature": "NAME_CONTRACT_TYPE",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "Cash loans",
+        "Revolving loans"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "feature": "CODE_GENDER",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "F",
+        "M",
+        "XNA"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "feature": "FLAG_OWN_CAR",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "N",
+        "Y"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "feature": "FLAG_OWN_REALTY",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "N",
+        "Y"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "actual_nonmissing_bins": 3,
+      "feature": "CNT_CHILDREN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "AMT_INCOME_TOTAL",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        81000.0,
+        99000.0,
+        112500.0,
+        135000.0,
+        148500.0,
+        162000.0,
+        180000.0,
+        225000.0,
+        270000.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "AMT_CREDIT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        180000.0,
+        254700.0,
+        307557.0,
+        432661.5,
+        516397.5,
+        604413.0,
+        755190.0,
+        900000.0,
+        1133748.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "AMT_ANNUITY",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        11070.0,
+        14697.0,
+        18171.0,
+        21865.5,
+        24903.0,
+        28057.5,
+        32013.0,
+        37494.0,
+        45990.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "AMT_GOODS_PRICE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        180000.0,
+        225000.0,
+        270000.0,
+        378000.0,
+        450000.0,
+        526500.0,
+        675000.0,
+        823500.0,
+        1098000.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "feature": "NAME_TYPE_SUITE",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "Children",
+        "Family",
+        "Group of people",
+        "Other_A",
+        "Other_B",
+        "Spouse, partner",
+        "Unaccompanied"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "feature": "NAME_INCOME_TYPE",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "Businessman",
+        "Commercial associate",
+        "Maternity leave",
+        "Pensioner",
+        "State servant",
+        "Student",
+        "Unemployed",
+        "Working"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "feature": "NAME_EDUCATION_TYPE",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "Academic degree",
+        "Higher education",
+        "Incomplete higher",
+        "Lower secondary",
+        "Secondary / secondary special"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "feature": "NAME_FAMILY_STATUS",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "Civil marriage",
+        "Married",
+        "Separated",
+        "Single / not married",
+        "Unknown",
+        "Widow"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "feature": "NAME_HOUSING_TYPE",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "Co-op apartment",
+        "House / apartment",
+        "Municipal apartment",
+        "Office apartment",
+        "Rented apartment",
+        "With parents"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "REGION_POPULATION_RELATIVE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.006629,
+        0.0088659999999999,
+        0.010556,
+        0.016612,
+        0.01885,
+        0.020713,
+        0.025164,
+        0.030755,
+        0.035792
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "DAYS_BIRTH",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -22176.0,
+        -20468.799999999996,
+        -18886.0,
+        -17217.0,
+        -15745.0,
+        -14415.0,
+        -13140.0,
+        -11692.0,
+        -10283.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "DAYS_REGISTRATION",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -9946.0,
+        -8241.0,
+        -6776.0,
+        -5463.0,
+        -4512.0,
+        -3543.0,
+        -2548.0,
+        -1500.0,
+        -693.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "DAYS_ID_PUBLISH",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -4723.0,
+        -4430.0,
+        -4172.0,
+        -3882.0,
+        -3260.0,
+        -2659.0,
+        -2046.0,
+        -1382.0,
+        -733.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "OWN_CAR_AGE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        2.0,
+        4.0,
+        6.0,
+        7.0,
+        9.0,
+        12.0,
+        14.0,
+        17.0,
+        22.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_EMP_PHONE",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_WORK_PHONE",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_CONT_MOBILE",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_PHONE",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_EMAIL",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "feature": "OCCUPATION_TYPE",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "Accountants",
+        "Cleaning staff",
+        "Cooking staff",
+        "Core staff",
+        "Drivers",
+        "HR staff",
+        "High skill tech staff",
+        "IT staff",
+        "Laborers",
+        "Low-skill Laborers",
+        "Managers",
+        "Medicine staff",
+        "Private service staff",
+        "Realty agents",
+        "Sales staff",
+        "Secretaries",
+        "Security staff",
+        "Waiters/barmen staff"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "actual_nonmissing_bins": 3,
+      "feature": "CNT_FAM_MEMBERS",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        2.0,
+        3.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 2,
+      "feature": "REGION_RATING_CLIENT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        2.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 2,
+      "feature": "REGION_RATING_CLIENT_W_CITY",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        2.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "feature": "WEEKDAY_APPR_PROCESS_START",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "FRIDAY",
+        "MONDAY",
+        "SATURDAY",
+        "SUNDAY",
+        "THURSDAY",
+        "TUESDAY",
+        "WEDNESDAY"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "HOUR_APPR_PROCESS_START",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "REG_REGION_NOT_LIVE_REGION",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "REG_REGION_NOT_WORK_REGION",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "LIVE_REGION_NOT_WORK_REGION",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "REG_CITY_NOT_LIVE_CITY",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "REG_CITY_NOT_WORK_CITY",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "LIVE_CITY_NOT_WORK_CITY",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "feature": "ORGANIZATION_TYPE",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "Advertising",
+        "Agriculture",
+        "Bank",
+        "Business Entity Type 1",
+        "Business Entity Type 2",
+        "Business Entity Type 3",
+        "Cleaning",
+        "Construction",
+        "Culture",
+        "Electricity",
+        "Emergency",
+        "Government",
+        "Hotel",
+        "Housing",
+        "Industry: type 1",
+        "Industry: type 10",
+        "Industry: type 11",
+        "Industry: type 12",
+        "Industry: type 13",
+        "Industry: type 2",
+        "Industry: type 3",
+        "Industry: type 4",
+        "Industry: type 5",
+        "Industry: type 6",
+        "Industry: type 7",
+        "Industry: type 8",
+        "Industry: type 9",
+        "Insurance",
+        "Kindergarten",
+        "Legal Services",
+        "Medicine",
+        "Military",
+        "Mobile",
+        "Other",
+        "Police",
+        "Postal",
+        "Realtor",
+        "Religion",
+        "Restaurant",
+        "School",
+        "Security",
+        "Security Ministries",
+        "Self-employed",
+        "Services",
+        "Telecom",
+        "Trade: type 1",
+        "Trade: type 2",
+        "Trade: type 3",
+        "Trade: type 4",
+        "Trade: type 5",
+        "Trade: type 6",
+        "Trade: type 7",
+        "Transport: type 1",
+        "Transport: type 2",
+        "Transport: type 3",
+        "Transport: type 4",
+        "University",
+        "XNA"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "EXT_SOURCE_1",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.21181018583217992,
+        0.29566979550407885,
+        0.3680835887851244,
+        0.4375549948618457,
+        0.5052886501830977,
+        0.5722208197368807,
+        0.6396014137543118,
+        0.7100616803534452,
+        0.786745555706061
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "EXT_SOURCE_2",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.21541924645032157,
+        0.34021619693165706,
+        0.4401445983234432,
+        0.5120311045875456,
+        0.5659130796679341,
+        0.6083436265234861,
+        0.6457436988327211,
+        0.6820687938446653,
+        0.7220985117164815
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "EXT_SOURCE_3",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.228883416700673,
+        0.3312508645909018,
+        0.4083588531230431,
+        0.475849908720221,
+        0.5352762504724826,
+        0.5902333386185574,
+        0.6430255641096323,
+        0.6940926425266661,
+        0.7490217048463391
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "APARTMENTS_AVG",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0165,
+        0.0412,
+        0.0619,
+        0.0742,
+        0.0876,
+        0.1041,
+        0.1294,
+        0.166,
+        0.2412
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 9,
+      "feature": "BASEMENTAREA_AVG",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.034260000000000214,
+        0.0518,
+        0.0637,
+        0.07635,
+        0.0861,
+        0.103,
+        0.1246,
+        0.1689
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "YEARS_BEGINEXPLUATATION_AVG",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.9722,
+        0.9752,
+        0.9776,
+        0.9801,
+        0.9816,
+        0.9841,
+        0.9861,
+        0.9876,
+        0.9911
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "YEARS_BUILD_AVG",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.6328,
+        0.6736,
+        0.7008,
+        0.728,
+        0.7552,
+        0.7824,
+        0.8096,
+        0.83,
+        0.8776
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "COMMONAREA_AVG",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0009,
+        0.0057,
+        0.0095,
+        0.0142,
+        0.0212,
+        0.0309,
+        0.0434,
+        0.0627,
+        0.1057
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 5,
+      "feature": "ELEVATORS_AVG",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.02,
+        0.08,
+        0.16,
+        0.24
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 8,
+      "feature": "ENTRANCES_AVG",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0345,
+        0.069,
+        0.1034,
+        0.1379,
+        0.1724,
+        0.2069,
+        0.2759
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 6,
+      "feature": "FLOORSMAX_AVG",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0417,
+        0.125,
+        0.1667,
+        0.3333,
+        0.375
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 7,
+      "feature": "FLOORSMIN_AVG",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0417,
+        0.1667,
+        0.2083,
+        0.3192,
+        0.375,
+        0.4167
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 9,
+      "feature": "LANDAREA_AVG",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0139,
+        0.0241,
+        0.0358,
+        0.0483,
+        0.0608,
+        0.0761,
+        0.0982,
+        0.1407800000000003
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "LIVINGAPARTMENTS_AVG",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0202,
+        0.042,
+        0.0538,
+        0.0639,
+        0.0756,
+        0.0899,
+        0.1091,
+        0.1437,
+        0.2051
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "LIVINGAREA_AVG",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0144,
+        0.0356,
+        0.0515,
+        0.0631,
+        0.0743,
+        0.0891,
+        0.1134,
+        0.1536,
+        0.23274000000000086
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 5,
+      "feature": "NONLIVINGAPARTMENTS_AVG",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0019,
+        0.0039,
+        0.0077,
+        0.0154
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 6,
+      "feature": "NONLIVINGAREA_AVG",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0036,
+        0.0089,
+        0.0196,
+        0.0396,
+        0.0806
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "feature": "FONDKAPREMONT_MODE",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "not specified",
+        "org spec account",
+        "reg oper account",
+        "reg oper spec account"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "feature": "HOUSETYPE_MODE",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "block of flats",
+        "specific housing",
+        "terraced house"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "TOTALAREA_MODE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0123,
+        0.0322,
+        0.0479,
+        0.057,
+        0.0688,
+        0.0829,
+        0.1084,
+        0.1581,
+        0.2273
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "feature": "WALLSMATERIAL_MODE",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "Block",
+        "Mixed",
+        "Monolithic",
+        "Others",
+        "Panel",
+        "Stone, brick",
+        "Wooden"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "feature": "EMERGENCYSTATE_MODE",
+      "feature_type": "CATEGORICAL",
+      "missing_bucket": "__MISSING__",
+      "reference_id": "FEATURE-REF-01",
+      "reference_levels": [
+        "No",
+        "Yes"
+      ],
+      "unseen_bucket": "__UNSEEN__",
+      "unseen_reference_count": 0
+    },
+    {
+      "actual_nonmissing_bins": 5,
+      "feature": "OBS_30_CNT_SOCIAL_CIRCLE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 2,
+      "feature": "DEF_30_CNT_SOCIAL_CIRCLE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 5,
+      "feature": "OBS_60_CNT_SOCIAL_CIRCLE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "DEF_60_CNT_SOCIAL_CIRCLE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 9,
+      "feature": "DAYS_LAST_PHONE_CHANGE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -2160.0,
+        -1720.0,
+        -1428.0,
+        -1061.0,
+        -759.0,
+        -549.0,
+        -364.0,
+        -162.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_DOCUMENT_3",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_DOCUMENT_5",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_DOCUMENT_6",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_DOCUMENT_8",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_DOCUMENT_9",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_DOCUMENT_11",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_DOCUMENT_13",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_DOCUMENT_14",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_DOCUMENT_16",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_DOCUMENT_18",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_DOCUMENT_20",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_DOCUMENT_21",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "AMT_REQ_CREDIT_BUREAU_HOUR",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "AMT_REQ_CREDIT_BUREAU_DAY",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "AMT_REQ_CREDIT_BUREAU_WEEK",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 2,
+      "feature": "AMT_REQ_CREDIT_BUREAU_MON",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 2,
+      "feature": "AMT_REQ_CREDIT_BUREAU_QRT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 5,
+      "feature": "AMT_REQ_CREDIT_BUREAU_YEAR",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 8,
+      "feature": "BUREAU_ACCOUNT_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        7.0,
+        8.0,
+        11.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 5,
+      "feature": "BUREAU_ACTIVE_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 7,
+      "feature": "BUREAU_CLOSED_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "BUREAU_SOLD_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "BUREAU_BAD_DEBT_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "BUREAU_CREDIT_SUM_TOTAL",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        125082.0,
+        261837.0,
+        444919.5000000002,
+        672624.0,
+        964161.0,
+        1354716.0,
+        1913680.9800000004,
+        2809264.5,
+        4679455.5
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "BUREAU_CREDIT_SUM_MEAN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        59001.0975,
+        89355.0,
+        118921.725,
+        153055.44,
+        196291.5,
+        253125.0,
+        336765.2142857144,
+        471066.975,
+        780735.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "BUREAU_CREDIT_SUM_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        86526.0,
+        142839.0,
+        225000.0,
+        312430.5,
+        450000.0,
+        619659.0000000007,
+        900000.0,
+        1350000.0,
+        2250000.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 9,
+      "feature": "BUREAU_DEBT_TOTAL",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0,
+        2007.0000000000655,
+        74038.5,
+        169746.66,
+        306270.0,
+        512942.9850000001,
+        858788.37,
+        1602639.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 9,
+      "feature": "BUREAU_DEBT_MEAN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0,
+        4303.207125000007,
+        22520.25,
+        44370.0,
+        72608.56476923078,
+        113420.98800000004,
+        183019.18950000004,
+        349630.7708181818
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 9,
+      "feature": "BUREAU_DEBT_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0,
+        15871.950000000026,
+        77669.1,
+        149998.5,
+        244964.52000000002,
+        394983.0,
+        642410.1000000002,
+        1241699.85
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 9,
+      "feature": "BUREAU_DEBT_REPORTED_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        10.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 8,
+      "feature": "BUREAU_POSITIVE_DEBT_TOTAL",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        2245.0500000000034,
+        74178.0,
+        169812.0,
+        306337.5000000001,
+        513027.00000000006,
+        858967.245,
+        1603003.5
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 8,
+      "feature": "BUREAU_POSITIVE_DEBT_MEAN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        4332.064500000004,
+        22541.248800000005,
+        44378.83796875,
+        72628.06800000003,
+        113428.1410714286,
+        183025.89300000004,
+        349630.7708181818
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 8,
+      "feature": "BUREAU_POSITIVE_DEBT_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        15871.950000000026,
+        77669.1,
+        149998.5,
+        244964.52000000002,
+        394983.0,
+        642410.1000000002,
+        1241699.85
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "BUREAU_NEGATIVE_DEBT_ACCOUNT_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "BUREAU_OVERDUE_ACCOUNT_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "BUREAU_OVERDUE_DAYS_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "BUREAU_OVERDUE_AMOUNT_TOTAL",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "BUREAU_OVERDUE_AMOUNT_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "BUREAU_OLDEST_CREDIT_DAYS",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -2809.0,
+        -2663.0,
+        -2497.0,
+        -2265.0,
+        -1829.0,
+        -1497.0,
+        -1189.0,
+        -859.0,
+        -501.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "BUREAU_MOST_RECENT_CREDIT_DAYS",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -1170.0,
+        -742.0,
+        -521.0,
+        -388.0,
+        -300.0,
+        -229.0,
+        -171.0,
+        -117.0,
+        -67.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "BUREAU_AVG_CREDIT_DAYS",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -1809.5,
+        -1529.8823529411766,
+        -1349.0,
+        -1195.0,
+        -1050.75,
+        -902.538461538461,
+        -747.4444444444443,
+        -573.0,
+        -370.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "BUREAU_PROLONGATION_ACCOUNT_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "BUREAU_PROLONGATION_TOTAL",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "BUREAU_PROLONGATION_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 3,
+      "feature": "BUREAU_CREDIT_LIMIT_TOTAL",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0,
+        45000.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 3,
+      "feature": "BUREAU_CREDIT_LIMIT_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        3.7980000000023577,
+        49376.06549999995
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 8,
+      "feature": "BUREAU_CREDIT_LIMIT_REPORTED_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 4,
+      "feature": "BUREAU_MAX_OVERDUE_AMOUNT_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        3709.6200000000013,
+        8325.0,
+        15970.652999999998
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 4,
+      "feature": "BUREAU_MAX_OVERDUE_AMOUNT_MEAN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1172.2821428571435,
+        3238.167000000002,
+        7291.98
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 5,
+      "feature": "BUREAU_MAX_OVERDUE_REPORTED_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0,
+        5.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 4,
+      "feature": "BUREAU_ANNUITY_AVAILABLE_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        5.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 8,
+      "feature": "BUREAU_ANNUITY_MEAN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1924.9740000000018,
+        4204.464,
+        6516.0,
+        9252.0,
+        12852.200000000004,
+        18364.248000000003,
+        29566.197000000004
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 8,
+      "feature": "BUREAU_ANNUITY_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        4387.104000000006,
+        8325.0,
+        12500.01,
+        17318.700000000026,
+        23098.5,
+        32647.5,
+        49500.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 5,
+      "feature": "BUREAU_ENDDATE_AFTER_APPLICATION_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "BUREAU_ENDDATE_MEAN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -1199.3333333333333,
+        -836.5,
+        -579.4525252525252,
+        -354.6,
+        -134.5,
+        89.0,
+        384.69642857143015,
+        925.0,
+        3055.3515151515153
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "BUREAU_ENDDATE_MIN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -2461.0,
+        -2249.0,
+        -1996.0,
+        -1621.0,
+        -1267.0,
+        -939.0,
+        -618.0,
+        -262.0,
+        185.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "BUREAU_ENDDATE_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -540.5999999999985,
+        -23.0,
+        270.0,
+        616.0,
+        911.0,
+        1191.0,
+        1543.0,
+        3188.0,
+        27414.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 7,
+      "feature": "BUREAU_FACT_ENDDATE_REPORTED_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 8,
+      "feature": "BUREAU_CONSUMER_CREDIT_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        9.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 4,
+      "feature": "BUREAU_CREDIT_CARD_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "BUREAU_CAR_LOAN_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "BUREAU_MORTGAGE_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "BUREAU_OTHER_CREDIT_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 2,
+      "feature": "BUREAU_UNIQUE_CREDIT_TYPE_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        2.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 7,
+      "feature": "BUREAU_ACTIVE_RATIO",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.125,
+        0.25,
+        0.3333333333333333,
+        0.375,
+        0.5,
+        0.6666666666666666
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "BUREAU_OVERDUE_RATIO",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 3,
+      "feature": "BUREAU_ANNUITY_MISSING_RATE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.375,
+        0.875
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 5,
+      "feature": "BUREAU_DEBT_MISSING_RATE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.0833333333333333,
+        0.1818181818181817,
+        0.2857142857142857,
+        0.5
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 8,
+      "feature": "BUREAU_DEBT_TO_CREDIT_RATIO",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.03666547344069447,
+        0.16283937294307876,
+        0.2774584874817173,
+        0.38386680428069875,
+        0.49334310344067556,
+        0.6163118789706167,
+        0.7808250956937799
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "HAS_BUREAU_HISTORY",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "actual_nonmissing_bins": 8,
+      "feature": "PREV_APPLICATION_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        10.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 6,
+      "feature": "PREV_APPROVED_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        6.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 3,
+      "feature": "PREV_REFUSED_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        3.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 4,
+      "feature": "PREV_CANCELED_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "PREV_UNUSED_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_APPLICATION_TOTAL",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        68949.0,
+        120330.0,
+        180000.0,
+        265131.0,
+        382099.5,
+        552046.5000000002,
+        819900.0,
+        1268343.0,
+        2128500.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_APPLICATION_MEAN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        37710.0,
+        54000.0,
+        69637.5,
+        86371.5,
+        105990.0,
+        131104.50000000006,
+        166695.0,
+        225000.0,
+        329500.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_APPLICATION_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        53487.0,
+        85225.5,
+        113638.50000000006,
+        145696.5,
+        202500.0,
+        270000.0,
+        450000.0,
+        666000.0,
+        990000.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_CREDIT_TOTAL",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        71730.0,
+        126589.5,
+        194364.0,
+        290623.5,
+        428103.0,
+        631485.0,
+        948289.5,
+        1443870.0,
+        2400178.5
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_CREDIT_MEAN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        40277.25,
+        58234.5,
+        75600.0,
+        94581.0,
+        117450.0,
+        146656.1911764707,
+        188185.5,
+        251924.625,
+        365321.25
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_CREDIT_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        54958.5,
+        89334.0,
+        122746.5,
+        161563.5,
+        225000.0,
+        315000.0,
+        470790.0,
+        715500.0,
+        1096020.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_APPROVED_APPLICATION_TOTAL",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        58437.0,
+        99625.5,
+        144450.0,
+        204219.0,
+        284391.0,
+        399861.0000000001,
+        569322.0,
+        858312.0,
+        1404315.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_APPROVED_CREDIT_TOTAL",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        60601.5,
+        104733.0,
+        154975.5,
+        222565.5,
+        316440.0,
+        452277.00000000035,
+        657405.0,
+        988825.5,
+        1584454.5
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 8,
+      "feature": "PREV_DOWN_PAYMENT_MEAN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        562.5,
+        2137.5,
+        3375.0,
+        4765.5,
+        6771.5212500000025,
+        9931.859999999995,
+        16497.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 8,
+      "feature": "PREV_DOWN_PAYMENT_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1656.0,
+        4036.5,
+        5853.24,
+        8842.5,
+        11727.0,
+        16510.5,
+        26368.650000000052
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_ANNUITY_MEAN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        5351.886,
+        7051.446000000001,
+        8614.134000000002,
+        10226.979,
+        12001.995,
+        14113.491750000005,
+        16727.193000000003,
+        20406.519000000004,
+        26666.864571428574
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_ANNUITY_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        6419.52,
+        9051.966,
+        11643.228000000001,
+        14509.161000000002,
+        17954.865,
+        22500.0,
+        27959.715,
+        36348.642,
+        48482.64
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_CNT_PAYMENT_MEAN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        6.0,
+        8.0,
+        10.0,
+        11.0,
+        12.0,
+        14.0,
+        17.0,
+        20.5,
+        25.666666666666668
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 8,
+      "feature": "PREV_CNT_PAYMENT_MAX",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        8.0,
+        12.0,
+        18.0,
+        24.0,
+        30.0,
+        36.0,
+        48.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 7,
+      "feature": "PREV_REPEATER_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        6.0,
+        9.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 2,
+      "feature": "PREV_NEW_CLIENT_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 2,
+      "feature": "PREV_REFRESHED_CLIENT_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        1.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 1,
+      "feature": "PREV_XNA_CLIENT_TYPE_COUNT",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "CONSTANT_REFERENCE_FEATURE",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 3,
+      "feature": "PREV_CONTRACT_TYPE_NUNIQUE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        2.0,
+        3.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 6,
+      "feature": "PREV_PRODUCT_COMBINATION_NUNIQUE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_MOST_RECENT_DECISION_DAYS",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -1095.0,
+        -699.0,
+        -511.0,
+        -384.0,
+        -299.0,
+        -233.0,
+        -175.0,
+        -118.0,
+        -50.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_OLDEST_DECISION_DAYS",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -2712.0,
+        -2508.0,
+        -2242.0,
+        -1867.0,
+        -1502.0,
+        -1137.0,
+        -844.0,
+        -618.0,
+        -416.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_AVG_DECISION_DAYS",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -1739.0,
+        -1377.2,
+        -1132.8,
+        -945.6666666666666,
+        -788.7142857142857,
+        -651.0,
+        -525.0,
+        -409.3636363636364,
+        -298.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_FIRST_DUE_DAYS_MEAN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -1839.6583333333333,
+        -1511.65,
+        -1298.1666666666667,
+        -1109.0,
+        -938.6,
+        -775.3333333333334,
+        -618.3333333333334,
+        -470.0,
+        -324.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_LAST_DUE_DAYS_MEAN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -1755.125,
+        -1414.5,
+        -1199.75,
+        -1011.6666666666666,
+        -839.3666666666667,
+        -676.0,
+        -515.5,
+        -361.5,
+        -207.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_TERMINATION_DAYS_MEAN",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        -1738.5,
+        -1394.6290909090906,
+        -1180.8,
+        -992.2388888888886,
+        -821.0,
+        -661.0,
+        -505.0,
+        -353.0,
+        -202.0
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 6,
+      "feature": "PREV_APPROVAL_RATE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.3571428571428571,
+        0.5,
+        0.6,
+        0.6666666666666666,
+        0.8
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 4,
+      "feature": "PREV_REFUSAL_RATE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.1428571428571428,
+        0.25,
+        0.4
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 4,
+      "feature": "PREV_CANCELED_RATE",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.2,
+        0.3,
+        0.4285714285714285
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": "DUPLICATE_QUANTILE_BOUNDARIES",
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_CREDIT_TO_APPLICATION_RATIO",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.9130679428820851,
+        0.9792106725958866,
+        1.0,
+        1.0236042461289228,
+        1.0528094268509292,
+        1.0813984541212156,
+        1.1087501156916433,
+        1.153141378115343,
+        1.281520077512177
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "PREV_APPROVED_CREDIT_TO_APPLICATION_RATIO",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.9,
+        0.9733328647160472,
+        1.0,
+        1.0163881009318152,
+        1.0488608363450183,
+        1.0758223535804912,
+        1.1055916064322107,
+        1.1473872447935514,
+        1.2828522791892742
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "HAS_PREV_APP_HISTORY",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "FLAG_DAYS_EMPLOYED_SENTINEL",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "actual_nonmissing_bins": 10,
+      "feature": "EMPLOYMENT_YEARS",
+      "feature_type": "NUMERIC",
+      "finite_inner_edges": [
+        0.914442162902122,
+        1.6837782340862424,
+        2.513347022587269,
+        3.4223134839151266,
+        4.514715947980835,
+        5.9137577002053385,
+        7.646817248459959,
+        10.078028747433263,
+        14.628336755646815
+      ],
+      "lower_tail": "NEGATIVE_INFINITY",
+      "method": "EMPIRICAL_QUANTILE",
+      "missing_bucket": "__MISSING__",
+      "reason_for_reduction": null,
+      "reference_id": "FEATURE-REF-01",
+      "requested_nonmissing_bins": 10,
+      "upper_tail": "POSITIVE_INFINITY"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "OWN_CAR_AGE_IS_MISSING",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "HOUSING_AVG_NUMERIC_DATA_AVAILABLE_FLAG",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    },
+    {
+      "bins": [
+        "0",
+        "1"
+      ],
+      "feature": "BUREAU_REQUEST_DATA_AVAILABLE_FLAG",
+      "feature_type": "BINARY",
+      "missing_bucket": null,
+      "reference_id": "FEATURE-REF-01"
+    }
+  ],
+  "smoothing_policy": {
+    "application": "REPLACE_ZERO_PROPORTIONS_ONLY_THEN_RENORMALIZE",
+    "epsilon": 1e-06,
+    "period_specific_tuning_permitted": false,
+    "regulatory_or_universal_convention_claimed": false,
+    "status": "APPROVED_PROJECT_ASSUMPTION"
+  },
+  "status": "APPROVED_FROZEN"
+}

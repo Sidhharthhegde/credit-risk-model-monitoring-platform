@@ -1,0 +1,136 @@
+{
+  "approval_record_included": true,
+  "approved_utc": "2026-08-22T15:53:57.356349+00:00",
+  "artifacts": [
+    {
+      "path": "binary_reference_statistics.csv",
+      "sha256": "6480660c0ce94940a94ed7b667d437aaf68ab0fbb42eef442f893fd9ef97dca7",
+      "size_bytes": 2131
+    },
+    {
+      "path": "calibration_band_reference.csv",
+      "sha256": "3c191c66ec7af1dab177b8d13ba706e28276fb4fe6b7d89d8482b492f0061a1c",
+      "size_bytes": 2434
+    },
+    {
+      "path": "calibration_reference.json",
+      "sha256": "7fd221d0088bd7cd4d0af0f239bdc585c6bfbc0db17d1f5e12354f3a760fccd8",
+      "size_bytes": 599
+    },
+    {
+      "path": "categorical_reference_frequencies.csv",
+      "sha256": "62f2924476c31eef88a1d3e9fa13d4729b4a7abd1971597e0cfb8a00a0729936",
+      "size_bytes": 9572
+    },
+    {
+      "path": "feature_psi_bin_definitions.json",
+      "sha256": "9e39ef730c75ed1b91e9a479bc9d3927636c87a2ff85cae6d11e66b1683d6755",
+      "size_bytes": 86268
+    },
+    {
+      "path": "feature_psi_bin_manifest.json",
+      "sha256": "09635b9cff8cd7929cbe05919d99638274b17cd4c7166bc54148119cd2cb4748",
+      "size_bytes": 454
+    },
+    {
+      "path": "feature_reference_statistics.csv",
+      "sha256": "8a6ae6446f35273b6c171130135681e211010ee246ff167f99a4ab4f19ce69fd",
+      "size_bytes": 36376
+    },
+    {
+      "path": "immutability_attestation.json",
+      "sha256": "bfbcbade3b5f2580725861d4d8f3bba8488386568540cdf234d10dc7a2904bd5",
+      "size_bytes": 272
+    },
+    {
+      "path": "materialization_source_manifest.json",
+      "sha256": "c877a43b6eb12252f0ba7669d3a6c09789931737341aac13dc4e478b4a9a5f81",
+      "size_bytes": 3719
+    },
+    {
+      "path": "missingness_reference.csv",
+      "sha256": "9d9a60392e2a379c775c0c9134ae8fb08be5fbefe6b68b6f7cd705e19e80c5cb",
+      "size_bytes": 19620
+    },
+    {
+      "path": "performance_reference.json",
+      "sha256": "d92b764fd75e71e88a2823a542780b755ef70f201d8cba2586325aaa5dd54626",
+      "size_bytes": 338
+    },
+    {
+      "path": "phase4_acceptance_checklist.csv",
+      "sha256": "e469d90a171ec5f1de1fe441a264be6f7ab93ca453765642a7b375f07ecf7a9d",
+      "size_bytes": 1041
+    },
+    {
+      "path": "phase4_approval_record.json",
+      "sha256": "99467b45087c2aaf3a33d37f12100c5437a4c99fed1dce586f4a8d95b9e45468",
+      "size_bytes": 571
+    },
+    {
+      "path": "phase4_completion_decision.json",
+      "sha256": "a6c8b0fcc74124255dc2e19c3c856a8769edc9ecd175c3775f8ac05fc88237ee",
+      "size_bytes": 1043
+    },
+    {
+      "path": "reference_statistics_manifest.json",
+      "sha256": "54629b9b38e2f5418d063ce3f6daaa1521586bb24316c2b70798e621b56f9ab0",
+      "size_bytes": 968
+    },
+    {
+      "path": "reproducibility_qualification.json",
+      "sha256": "7660bae2ad6485c41bc54ea05abac4cde4968ba0c3b6e0e7e4431cc46df8e534",
+      "size_bytes": 1117
+    },
+    {
+      "path": "scope_protection_attestation.json",
+      "sha256": "b27a7b2441ef5b93570db772563a42a3ba1568d853b996d167c3ddf64d42163e",
+      "size_bytes": 351
+    },
+    {
+      "path": "score_psi_bin_definitions.json",
+      "sha256": "b20910dfc898bfa12643a35fcce38cc1ac4c26a2c2b44865e8ec2ec04b372005",
+      "size_bytes": 574
+    },
+    {
+      "path": "score_psi_bin_manifest.json",
+      "sha256": "feca2af501fb0af5582a2c6df52dfbd21bf05b8851542e920e1f1707e5d93809",
+      "size_bytes": 450
+    },
+    {
+      "path": "score_reference.json",
+      "sha256": "8feda380426aca985c00add5e1dd048e616f548f7b85a9cdb8e964e66e7f00ec",
+      "size_bytes": 633
+    },
+    {
+      "path": "score_reference_manifest.json",
+      "sha256": "4bec1e25f5d4374b3a21129772adfe61dae14febbf6e0b419165af38ff496ec9",
+      "size_bytes": 440
+    },
+    {
+      "path": "snapshot_inventory.json",
+      "sha256": "280eb731c1256df61614aef6cc8adc90fe3e41918e382b1f5a20e3b946e312a0",
+      "size_bytes": 6944
+    },
+    {
+      "path": "snapshot_qualification.json",
+      "sha256": "100c79665893ac05bd7e444c36b3b646888ce095d47eb39f834fb70358b902ab",
+      "size_bytes": 465
+    },
+    {
+      "path": "threshold_performance_reference.json",
+      "sha256": "df4ed028eb97fefb0577b0f1ccc6c888e1eb6fc5bbfcfc37ed99374e7ba413ec",
+      "size_bytes": 539
+    }
+  ],
+  "local_snapshot_manifests": {
+    "APPLICATION-TEST-BASE-01": "203ba0d86b6cb3b60bcf5c41a9cd0a79b307700368d13766519264981feedc84",
+    "DEV-VAL-PHYSICAL-01": "2b9d5a0fe42989e50c0063b366b98e7a8102171f5aa460b766444d83e03a7c4f",
+    "TRAIN-PHYSICAL-01": "5aa6c631d3abc0c475dd86ac114066491c3eb862a6f2b1d9b7c526708d7d58cc"
+  },
+  "local_snapshot_root": "artifacts/reference_snapshots/REFERENCE-MATERIALIZATION-01",
+  "materialization_id": "REFERENCE-MATERIALIZATION-01",
+  "monitoring_results_included": false,
+  "preapproval_manifest_sha256": "3df7788fc64c066aaca9e20899e4b2e3b15afc863f8f1b5c7c8b7ac53c2fd958",
+  "status": "APPROVED_FROZEN"
+}

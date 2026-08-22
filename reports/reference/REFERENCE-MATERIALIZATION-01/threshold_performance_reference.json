@@ -1,0 +1,17 @@
+{
+  "automated_performance_alert_limits_enabled": false,
+  "default_capture_recall": 0.700859291084855,
+  "false_negative": 1114,
+  "false_positive": 12425,
+  "operator": ">=",
+  "precision": 0.17359494512803458,
+  "reference_id": "THRESHOLD-PERF-REF-01",
+  "risk_negative_default_rate": 0.03582915219349029,
+  "specificity": 0.7069782798386907,
+  "threshold_id": "THRESHOLD-01",
+  "threshold_retuned": false,
+  "threshold_selection_reference": "TRAIN-OOF-EVIDENCE-01",
+  "true_negative": 29978,
+  "true_positive": 2610,
+  "value": 0.08
+}

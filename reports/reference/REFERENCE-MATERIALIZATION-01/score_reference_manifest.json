@@ -1,0 +1,13 @@
+{
+  "artifacts": [
+    {
+      "path": "score_reference.json",
+      "sha256": "8feda380426aca985c00add5e1dd048e616f548f7b85a9cdb8e964e66e7f00ec",
+      "size_bytes": 633
+    }
+  ],
+  "calculation_specification": "REFERENCE-STRATEGY-01",
+  "creation_code_version": "PHASE4-REFERENCE-MATERIALIZER-0.1.0",
+  "source_snapshot_content_sha256": "15a080fe8fe66d06691d4f1556376e5fbfd215f6005113e46dedae9a1589f94f",
+  "status": "APPROVED_FROZEN"
+}

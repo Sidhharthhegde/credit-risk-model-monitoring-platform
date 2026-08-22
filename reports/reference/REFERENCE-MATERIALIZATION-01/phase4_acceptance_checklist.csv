@@ -1,0 +1,21 @@
+control_id,control,result
+P4-001,Predecessor frozen manifests unchanged,PASS
+P4-002,Part A binding and clean state reconcile,PASS
+P4-003,TRAIN-PHYSICAL-01 qualified,PASS
+P4-004,DEV-VAL-PHYSICAL-01 qualified,PASS
+P4-005,TRAIN OOF retained as lineage only,PASS
+P4-006,APPLICATION-TEST-BASE-01 qualified at 48744 rows,PASS
+P4-007,Exactly 176 canonical predictors,PASS
+P4-008,TARGET absent from label-free snapshots,PASS
+P4-009,Reference statistics materialized,PASS
+P4-010,Feature PSI candidates materialized,PASS
+P4-011,Score PSI candidate materialized,PASS
+P4-012,Raw score and threshold composition materialized,PASS
+P4-013,Performance calibration and threshold references materialized,PASS
+P4-014,Performance alert limits remain disabled,PASS
+P4-015,Semantic reproducibility verified,PASS
+P4-016,No row-level data included in public evidence,PASS
+P4-017,No monitoring comparison or alert calculated,PASS
+P4-018,Owner approval and snapshot freeze transitions recorded,PASS
+P4-019,CND-02 remains open,PASS
+P4-020,DF-01 remains immutable,PASS

@@ -1,0 +1,11 @@
+{
+  "cnd_02_status": "OPEN",
+  "current_vs_reference_psi_calculated": false,
+  "df_01_modified": false,
+  "model_health_status_calculated": false,
+  "monitoring_alerts_generated": false,
+  "monitoring_execution_authorized": false,
+  "monitoring_results_calculated": false,
+  "scenario_mutations_created": false,
+  "simulated_cohorts_created": false
+}

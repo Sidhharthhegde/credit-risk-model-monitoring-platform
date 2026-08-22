@@ -6,9 +6,9 @@ Part B will demonstrate data-quality monitoring, population and feature drift, r
 
 ## Current status
 
-`PHASE_2_COMPLETE_PHASE_3_ADAPTER_IN_PROGRESS`
+`PHASE_3_COMPLETE_PHASE_4_MATERIALIZATION_IN_PROGRESS`
 
-`MONITORING-PROTOCOL-01`, `RUNTIME-QUALIFICATION-01`, and `REFERENCE-STRATEGY-01` are approved and frozen. Phase 3 contracts and label-free feature-adapter work is authorized. Monitoring calculations, reference materialization, PSI bins, scenarios, and performance analysis remain unauthorized until the applicable later gates are approved.
+`MONITORING-PROTOCOL-01`, `RUNTIME-QUALIFICATION-01`, `REFERENCE-STRATEGY-01`, and `FEATURE-ADAPTER-QUALIFICATION-01` are approved and frozen. Phase 4 reference materialization and frozen-bin construction is authorized. Monitoring execution, scenarios, drift calculations, and performance analysis remain unauthorized until later gates are approved.
 
 ## Important scope statement
 

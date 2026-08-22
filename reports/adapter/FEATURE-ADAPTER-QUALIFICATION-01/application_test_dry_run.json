@@ -1,0 +1,23 @@
+{
+  "anchor_row_count": 48744,
+  "anchor_row_count_preserved": true,
+  "applicant_key_complete_and_unique": true,
+  "applicants_with_bureau_history": 42320,
+  "applicants_with_previous_application_history": 47800,
+  "applicants_without_bureau_history": 6424,
+  "applicants_without_previous_application_history": 944,
+  "candidate_status": "APPLICATION-TEST-BASE-CANDIDATE_NOT_FROZEN",
+  "canonical_order_exact": true,
+  "one_finite_bounded_probability_per_applicant": true,
+  "output_row_count": 48744,
+  "predictor_count": 176,
+  "result": "PASS",
+  "row_level_candidate_persisted": false,
+  "row_level_predictions_persisted": false,
+  "scenario_mutation_applied": false,
+  "score_summary_persisted": false,
+  "scoring_contract_passed": true,
+  "simulation_cohort_assignment_executed": false,
+  "target_present": false,
+  "technical_df01_scoring_passed": true
+}

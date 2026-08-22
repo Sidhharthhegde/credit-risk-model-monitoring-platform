@@ -1,0 +1,90 @@
+{
+  "adapter_id": "MONITORING-FEATURE-ADAPTER-01",
+  "artifact_count": 14,
+  "artifacts": [
+    {
+      "path": "adapter_contract.json",
+      "sha256": "2669fd817606bbd43fc9fe931050886d1dfb43330a31282398458473c3a72d8c",
+      "size_bytes": 5024
+    },
+    {
+      "path": "implementation_source_manifest.json",
+      "sha256": "15d892aafe2b9b02cc3f8d7d7d77b595fe72ccc3e9aa0c3b28849b18603dabf7",
+      "size_bytes": 2422
+    },
+    {
+      "path": "source_interface_qualification.json",
+      "sha256": "f166dfe0b6834f8118dc9a6f04b15d32c97e617e91e63ec73b1062df0a300794",
+      "size_bytes": 1074
+    },
+    {
+      "path": "labelled_fixture_parity.json",
+      "sha256": "20e4403faefd41d56fad74fd7d57e0b1c984b1161ea41414b552caf54b85dbf1",
+      "size_bytes": 405
+    },
+    {
+      "path": "labelled_fixture_coverage.json",
+      "sha256": "a71ce09bd2a5c3c219aae180d854a153ed99a71a3b00ad60ad291c85e6977dca",
+      "size_bytes": 1344
+    },
+    {
+      "path": "feature_parity_summary.csv",
+      "sha256": "f14826db4d1fc7fe430fb460360ff307bd82e4f524681bf46cee3a3f3547e1cb",
+      "size_bytes": 15270
+    },
+    {
+      "path": "aggregation_parity.json",
+      "sha256": "5089711ab9c32fa02a066f6234847b621925c546958cb9cdeccdc4f44b582ef8",
+      "size_bytes": 231
+    },
+    {
+      "path": "scoring_parity.json",
+      "sha256": "69f23af9e061ae5b2a8efc066423380b86813dac9c7ffaf2bf56e1e36bce436c",
+      "size_bytes": 240
+    },
+    {
+      "path": "source_control_tests.json",
+      "sha256": "c99a419a93a4ead96c2f2b808e19cfb0183bb2d111697e3a559908c0a9248f40",
+      "size_bytes": 3120
+    },
+    {
+      "path": "application_test_dry_run.json",
+      "sha256": "aada7345740f896a258472e64f37b55ee97305ae03cb1af8e25d4c3456174dea",
+      "size_bytes": 863
+    },
+    {
+      "path": "immutability_attestation.json",
+      "sha256": "5fb0cc20d918b4f4e197584795d723bf98d334898f44f67af2cd92201e766d0c",
+      "size_bytes": 4412
+    },
+    {
+      "path": "phase3_acceptance_checklist.csv",
+      "sha256": "74b70b44386abcdf0f716ef9712a76512c97e03a3f6a524c29182e0bb21d3ffa",
+      "size_bytes": 1680
+    },
+    {
+      "path": "phase3_completion_decision.json",
+      "sha256": "1941f6ca123faaa8e47504fac262675009b8b508505fb400548ee804d6ed0c3b",
+      "size_bytes": 1101
+    },
+    {
+      "path": "phase3_approval_record.json",
+      "sha256": "5c6a144ee240d3b583931aa495984c5c1daf4f9b0e80d7f2f1e0f60a833f68e9",
+      "size_bytes": 1400
+    }
+  ],
+  "approved_by": "USER_PROTOCOL_OWNER",
+  "approval_date": "2026-08-22",
+  "manifest_scope": "APPROVED_IMMUTABLE_PHASE_3_ADAPTER_QUALIFICATION_NO_MONITORING_RESULTS",
+  "drift_results_included": false,
+  "monitoring_alerts_included": false,
+  "performance_results_included": false,
+  "psi_bin_edges_included": false,
+  "qualification_id": "FEATURE-ADAPTER-QUALIFICATION-01",
+  "reference_statistics_included": false,
+  "row_level_candidate_included": false,
+  "row_level_predictions_included": false,
+  "simulation_cohorts_included": false,
+  "status": "APPROVED_FROZEN",
+  "version": "0.1.0"
+}

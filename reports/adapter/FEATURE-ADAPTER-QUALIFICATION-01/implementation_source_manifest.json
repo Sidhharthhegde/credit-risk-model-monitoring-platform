@@ -1,0 +1,68 @@
+{
+  "adapter_id": "MONITORING-FEATURE-ADAPTER-01",
+  "frozen_part_a_sources": [
+    {
+      "function": "build_bureau_features",
+      "relative_path": "src/features/bureau_features.py",
+      "sha256": "bf10084a9b5a2438820017fea8e36347eb729a968f812e69a963194d8a09da30",
+      "verified": true
+    },
+    {
+      "function": "build_previous_application_features",
+      "relative_path": "src/features/previous_application_features.py",
+      "sha256": "f31e3c323b33ff89c7e2f48120dce92a7923c4a5f271881bed40cf7b64535c21",
+      "verified": true
+    },
+    {
+      "function": "apply_deterministic_transformations",
+      "relative_path": "src/features/deterministic.py",
+      "sha256": "fc4113038ba99f57755489ed275119f819f3e4ec48360c3e2e181737cfa8a2a8",
+      "verified": true
+    },
+    {
+      "function": "integrate_master_dataset",
+      "relative_path": "src/features/integrate_all_features.py",
+      "sha256": "bf3e296e29d5f3b16f7c5a51dc6a593ff09c38a761a03ab856855b0762c32925",
+      "verified": true
+    }
+  ],
+  "part_a_code_copied_into_part_b": false,
+  "part_a_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+  "part_b_sources": [
+    {
+      "path": "src/credit_risk_monitoring/adapter/part_a.py",
+      "sha256": "3e743bb3262085f426436b883df565aee3cacacef7b72fdad9e6499478f3be7e",
+      "size_bytes": 3968
+    },
+    {
+      "path": "src/credit_risk_monitoring/adapter/adapter.py",
+      "sha256": "698938b7de60d6826eacab8e84caa5ec06a0db281cb3c2cbddd66076574af46a",
+      "size_bytes": 9553
+    },
+    {
+      "path": "src/credit_risk_monitoring/adapter/qualification.py",
+      "sha256": "f73cfa1c0bf9fdc9742483c5e3ee0e0d652c0665ebb5e45f1eb8569876031d27",
+      "size_bytes": 39836
+    },
+    {
+      "path": "scripts/run_phase3_qualification.py",
+      "sha256": "d6694dad9d89453bf34276b005b2e680706a914029dad675cc2b6849e66b327b",
+      "size_bytes": 102
+    },
+    {
+      "path": "contracts/monitoring_feature_adapter_contract.json",
+      "sha256": "891db3d9012230d59b4c52736857b6d9f02ea4647a13e313759dbdd91621b9eb",
+      "size_bytes": 4792
+    },
+    {
+      "path": "tests/adapter/test_adapter.py",
+      "sha256": "5d7340ee4387583b83bbf97a895e3c5421087f15ca7898577a53132fe2f2d88b",
+      "size_bytes": 3674
+    },
+    {
+      "path": "tests/adapter/test_phase3_evidence.py",
+      "sha256": "a92b9040d440d2403801d629a3c9cf5f4e9b86644fedd704be9fe2c39aa43472",
+      "size_bytes": 4105
+    }
+  ]
+}

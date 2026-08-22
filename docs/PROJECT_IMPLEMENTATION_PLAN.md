@@ -6,7 +6,7 @@
 **Repository:** `credit-risk-model-monitoring-platform`  
 **Repository URL:** `https://github.com/Sidhharthhegde/credit-risk-model-monitoring-platform`  
 **Document status:** `APPROVED_IMPLEMENTATION_PLAN`  
-**Plan version:** `0.2.2`  
+**Plan version:** `0.2.3`  
 **Document owner:** Sidharth Ravindra Hegde  
 **Last updated:** 2026-08-22  
 **Part A dependency:** Frozen development model `DF-01 / XGBT-01`
@@ -1680,8 +1680,8 @@ Update this table only when supported by a phase completion decision.
 | 0 | `COMPLETE` | `reports/protocol/MONITORING-PROTOCOL-01/phase0_completion_decision.json` | Protocol approved and frozen on 2026-08-21 |
 | 1 | `COMPLETE` | `reports/qualification/RUNTIME-QUALIFICATION-01/phase1_completion_decision.json` | Approved and frozen on 2026-08-22 |
 | 2 | `COMPLETE` | `reports/reference/REFERENCE-STRATEGY-01/phase2_completion_decision.json` | Approved and frozen on 2026-08-22 |
-| 3 | `IN_PROGRESS` | Not issued | Entry authorized for contracts and label-free feature-adapter implementation only |
-| 4 | `NOT_STARTED` | Not issued |  |
+| 3 | `COMPLETE` | `reports/adapter/FEATURE-ADAPTER-QUALIFICATION-01/phase3_completion_decision.json` | Conditional review blocker resolved; approved and frozen on 2026-08-22 |
+| 4 | `IN_PROGRESS` | Not issued | Entry authorized for reference materialization and frozen-bin construction only |
 | 5 | `NOT_STARTED` | Not issued |  |
 | 6 | `NOT_STARTED` | Not issued |  |
 | 7 | `NOT_STARTED` | Not issued |  |
@@ -1709,9 +1709,9 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next authorized work is Phase 3 contracts and label-free feature-adapter qualification:
+The next authorized work is Phase 4 reference materialization and frozen-bin construction:
 
-1. Implement the label-free application integration wrapper using the frozen Part A transformations.
+1. Materialize the approved physical reference snapshots under the frozen Phase 2 specifications.
 2. Preserve the three controlled-deferred items as inactive.
 3. Resolve the remaining governance choices through a protocol amendment before their alert logic is activated:
    - Exact AUC deterioration limits.
@@ -1725,6 +1725,6 @@ The next authorized work is Phase 3 contracts and label-free feature-adapter qua
 4. Do not begin reference materialization, PSI, drift, scenario, or performance calculations during Phase 1.
 5. Specify snapshot contents, grain, exclusions, identifiers, provenance, versioning, and freeze evidence prospectively.
 6. Prove exact adapter parity on governed labelled fixtures before adapting `application_test`.
-7. Do not materialize reference statistics, snapshots, or bins during Phase 3.
+7. Qualify, hash, approve and freeze snapshots and bins before any monitoring calculation uses them.
 
 No reference statistics, monitoring scenarios, drift calculations or performance analyses should be executed before these actions are complete.

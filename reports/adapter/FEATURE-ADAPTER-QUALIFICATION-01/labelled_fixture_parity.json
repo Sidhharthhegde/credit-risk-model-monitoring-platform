@@ -1,0 +1,10 @@
+{
+  "applicant_identity_and_order_exact": true,
+  "comparison_rule": "PANDAS_EXACT_EQUALS_PER_FEATURE_AND_FULL_FRAME_NO_TOLERANCE",
+  "dataframe_exact_including_dtypes_and_missingness": true,
+  "feature_names_and_order_exact": true,
+  "features_exact": 176,
+  "fixture_count": 256,
+  "fixture_rule": "LOWEST_256_FROZEN_TRAIN_SK_ID_CURR_PLUS_MINIMAL_DETERMINISTIC_BRANCH_SUPPLEMENTS",
+  "result": "PASS"
+}

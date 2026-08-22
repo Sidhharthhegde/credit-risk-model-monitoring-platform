@@ -1,0 +1,33 @@
+{
+  "application_required_field_count_excluding_target": 84,
+  "approved_sources_only": true,
+  "bureau_required_field_count": 15,
+  "previous_application_required_field_count": 15,
+  "result": "PASS",
+  "source_files": [
+    {
+      "frozen_hash_match": true,
+      "sha256": "52e96b895b1112e1c853f670e58372719c8441c5ed1c57ac2f7fad559d784f5f",
+      "size_bytes": 166133370,
+      "source": "application_train.csv"
+    },
+    {
+      "frozen_hash_match": "NOT_APPLICABLE_UNLABELLED_SOURCE_OBSERVED_HASH_CAPTURED",
+      "sha256": "a36161331d839150a67b6216d4de066f543a3b01a34061507d40e76612e0dec8",
+      "size_bytes": 26567651,
+      "source": "application_test.csv"
+    },
+    {
+      "frozen_hash_match": true,
+      "sha256": "9d799143423f280720cf51c1bfbbab2a0422da8ff2763335bb30bf43155494f7",
+      "size_bytes": 170016717,
+      "source": "bureau.csv"
+    },
+    {
+      "frozen_hash_match": true,
+      "sha256": "5046cd657ee04df2eaa6dc8308ae86be6b3b1763674a3f63574886a2f2896505",
+      "size_bytes": 404973293,
+      "source": "previous_application.csv"
+    }
+  ]
+}

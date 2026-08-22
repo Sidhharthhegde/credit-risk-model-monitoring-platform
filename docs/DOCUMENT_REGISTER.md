@@ -13,6 +13,8 @@
 | `contracts/reference_snapshot_contract.json` | 0.1.0 | Approved and frozen | Future snapshot metadata contract |
 | `docs/REFERENCE_STRATEGY.md` | 0.1.0 | Approved explanatory document | Reader-oriented Phase 2 scope and sequencing |
 | `reports/reference/REFERENCE-STRATEGY-01/` | 0.1.0 | Approved and frozen | Phase 2 specification evidence and manifest |
+| `contracts/monitoring_feature_adapter_contract.json` | 0.1.0 | Approved and frozen | Executable scope and invariants for the label-free adapter |
+| `reports/adapter/FEATURE-ADAPTER-QUALIFICATION-01/` | 0.1.0 | Approved and frozen | Phase 3 exact feature/scoring parity, branch coverage, failure controls, dry-run and immutability evidence |
 | `configs/model_config.yaml` | 0.1.0 | Approved and frozen | Semantic model metadata referencing the binding |
 | `configs/monitoring_config.yaml` | 0.1.0 | Approved and frozen | Monitoring scope and execution policy |
 | `configs/alert_thresholds.yaml` | 0.1.0 | Approved and frozen | Project-defined alert assumptions |

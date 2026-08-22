@@ -1,0 +1,92 @@
+{
+  "approved_fallback_exists": false,
+  "cases": [
+    {
+      "actual": "SOURCE_TECHNICALLY_REQUIRED",
+      "case": "missing application anchor",
+      "detail": "Application anchor is unavailable",
+      "expected": "SOURCE_TECHNICALLY_REQUIRED",
+      "passed": true
+    },
+    {
+      "actual": "ADAPTER_INPUT_CONTRACT_FAILED",
+      "case": "missing required direct application field",
+      "detail": "application is missing required columns: ['NAME_CONTRACT_TYPE']",
+      "expected": "ADAPTER_INPUT_CONTRACT_FAILED",
+      "passed": true
+    },
+    {
+      "actual": "SOURCE_UNAVAILABLE_NO_APPROVED_FALLBACK",
+      "case": "bureau unavailable without approved fallback",
+      "detail": "Bureau source is unavailable",
+      "expected": "SOURCE_UNAVAILABLE_NO_APPROVED_FALLBACK",
+      "passed": true
+    },
+    {
+      "actual": "SOURCE_UNAVAILABLE_NO_APPROVED_FALLBACK",
+      "case": "previous application unavailable without approved fallback",
+      "detail": "Previous-application source is unavailable",
+      "expected": "SOURCE_UNAVAILABLE_NO_APPROVED_FALLBACK",
+      "passed": true
+    },
+    {
+      "actual": "ADAPTER_GRAIN_VIOLATION",
+      "case": "duplicate application applicant",
+      "detail": "Application SK_ID_CURR must be complete and unique",
+      "expected": "ADAPTER_GRAIN_VIOLATION",
+      "passed": true
+    },
+    {
+      "actual": "ADAPTER_INPUT_CONTRACT_FAILED",
+      "case": "duplicate raw bureau record key",
+      "detail": "bureau SK_ID_BUREAU must be unique",
+      "expected": "ADAPTER_INPUT_CONTRACT_FAILED",
+      "passed": true
+    },
+    {
+      "actual": "ADAPTER_GRAIN_VIOLATION",
+      "case": "duplicate aggregate applicant would multiply rows",
+      "detail": "bureau aggregate is not one row per SK_ID_CURR",
+      "expected": "ADAPTER_GRAIN_VIOLATION",
+      "passed": true
+    },
+    {
+      "actual": "PASS_NON_AUTHORITATIVE",
+      "case": "bureau loss diagnostic interface",
+      "detail": "SOURCE_UNAVAILABLE_NO_APPROVED_FALLBACK",
+      "expected": "PASS_NON_AUTHORITATIVE",
+      "passed": true
+    },
+    {
+      "actual": "PASS_NON_AUTHORITATIVE",
+      "case": "previous-application loss diagnostic interface",
+      "detail": "SOURCE_UNAVAILABLE_NO_APPROVED_FALLBACK",
+      "expected": "PASS_NON_AUTHORITATIVE",
+      "passed": true
+    },
+    {
+      "actual": "PASS",
+      "case": "TARGET absent",
+      "detail": "caller and output are label-free",
+      "expected": "PASS",
+      "passed": true
+    },
+    {
+      "actual": "SCORING_CONTRACT_REJECTED",
+      "case": "non-finite numeric adapter output",
+      "detail": "Numeric feature CNT_CHILDREN contains infinity",
+      "expected": "SCORING_CONTRACT_REJECTED",
+      "passed": true
+    },
+    {
+      "actual": "SCORING_CONTRACT_REJECTED",
+      "case": "invalid binary adapter output",
+      "detail": "Binary feature FLAG_EMP_PHONE contains values outside 0/1",
+      "expected": "SCORING_CONTRACT_REJECTED",
+      "passed": true
+    }
+  ],
+  "cnd_02_status": "OPEN",
+  "result": "PASS",
+  "scope": "CONTROL_AND_ADAPTER_FAILURE_BEHAVIOR_ONLY_NO_SOURCE_LOSS_PERFORMANCE_ANALYSIS"
+}

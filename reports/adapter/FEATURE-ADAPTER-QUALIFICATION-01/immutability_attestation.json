@@ -1,0 +1,101 @@
+{
+  "fit_called": false,
+  "model_sha256_after": "ab0000a4ae092f0444760839e185384d44f9a9760be298189bdfcd80c67fa500",
+  "model_sha256_before": "ab0000a4ae092f0444760839e185384d44f9a9760be298189bdfcd80c67fa500",
+  "model_unchanged": true,
+  "part_a_artifacts_verified": [
+    {
+      "artifact_identity": "MODEL_ARTIFACT",
+      "expected_sha256": "ab0000a4ae092f0444760839e185384d44f9a9760be298189bdfcd80c67fa500",
+      "expected_size_bytes": 532563,
+      "hash_match": true,
+      "observed_sha256": "ab0000a4ae092f0444760839e185384d44f9a9760be298189bdfcd80c67fa500",
+      "observed_size_bytes": 532563,
+      "relative_path": "models/tuning/step45_xgb_tuning_v1/finalists/XGBT-01.joblib",
+      "result": "PASS",
+      "size_match": true
+    },
+    {
+      "artifact_identity": "SCORING_INPUT_SCHEMA",
+      "expected_sha256": "42b964e22ef753d6ff67ea5b9625ab035a74854d24c8b9cec2527b40df19cae9",
+      "expected_size_bytes": 11756,
+      "hash_match": true,
+      "observed_sha256": "42b964e22ef753d6ff67ea5b9625ab035a74854d24c8b9cec2527b40df19cae9",
+      "observed_size_bytes": 11756,
+      "relative_path": "reports/experiments/step49_development_freeze_v1/scoring_input_schema.csv",
+      "result": "PASS",
+      "size_match": true
+    },
+    {
+      "artifact_identity": "ENCODED_FEATURE_MANIFEST",
+      "expected_sha256": "a5a81eeb9ab701f7a8c4e6a745d80abfae0a933d46b45786771d6b629b073d54",
+      "expected_size_bytes": 33028,
+      "hash_match": true,
+      "observed_sha256": "a5a81eeb9ab701f7a8c4e6a745d80abfae0a933d46b45786771d6b629b073d54",
+      "observed_size_bytes": 33028,
+      "relative_path": "reports/experiments/step49_development_freeze_v1/encoded_feature_manifest.csv",
+      "result": "PASS",
+      "size_match": true
+    },
+    {
+      "artifact_identity": "FEATURE_LINEAGE_MANIFEST",
+      "expected_sha256": "b62e2ac80c199def40cc3b30a97585014cf949a00380c9cb72a8bfeacfad89fe",
+      "expected_size_bytes": 65231,
+      "hash_match": true,
+      "observed_sha256": "b62e2ac80c199def40cc3b30a97585014cf949a00380c9cb72a8bfeacfad89fe",
+      "observed_size_bytes": 65231,
+      "relative_path": "reports/experiments/step49_development_freeze_v1/feature_lineage_manifest.csv",
+      "result": "PASS",
+      "size_match": true
+    },
+    {
+      "artifact_identity": "FEATURE_GOVERNANCE_REGISTRY",
+      "expected_sha256": "a44cd7e847591d976f3def04bf321a7b356a539f735777d3f14ac2142a9c9ae6",
+      "expected_size_bytes": 127209,
+      "hash_match": true,
+      "observed_sha256": "a44cd7e847591d976f3def04bf321a7b356a539f735777d3f14ac2142a9c9ae6",
+      "observed_size_bytes": 127209,
+      "relative_path": "reports/final_feature_governance_registry.csv",
+      "result": "PASS",
+      "size_match": true
+    },
+    {
+      "artifact_identity": "GOLDEN_FIXTURE_INPUTS",
+      "expected_sha256": "17873375ac51accbc95f57f37fa9f6f65facceacd0735daf536311ab670f61e0",
+      "expected_size_bytes": 76493,
+      "hash_match": true,
+      "observed_sha256": "17873375ac51accbc95f57f37fa9f6f65facceacd0735daf536311ab670f61e0",
+      "observed_size_bytes": 76493,
+      "relative_path": "reports/experiments/step49_development_freeze_v1/golden_fixture_inputs.csv",
+      "result": "PASS",
+      "size_match": true
+    },
+    {
+      "artifact_identity": "GOLDEN_FIXTURE_PREDICTIONS",
+      "expected_sha256": "02e5a5b939d4c7264c3f9d608f7ead6ca4847558991c11a136669a68ef79942c",
+      "expected_size_bytes": 9775,
+      "hash_match": true,
+      "observed_sha256": "02e5a5b939d4c7264c3f9d608f7ead6ca4847558991c11a136669a68ef79942c",
+      "observed_size_bytes": 9775,
+      "relative_path": "reports/experiments/step49_development_freeze_v1/golden_fixture_predictions.csv",
+      "result": "PASS",
+      "size_match": true
+    },
+    {
+      "artifact_identity": "GOLDEN_FIXTURE_ENCODED_MATRIX",
+      "expected_sha256": "008d1bf282308926b6f905e27026645b6b6a364309ea630b6aa6beb77b071336",
+      "expected_size_bytes": 6456,
+      "hash_match": true,
+      "observed_sha256": "008d1bf282308926b6f905e27026645b6b6a364309ea630b6aa6beb77b071336",
+      "observed_size_bytes": 6456,
+      "relative_path": "reports/experiments/step49_development_freeze_v1/golden_fixture_encoded_matrix.npz",
+      "result": "PASS",
+      "size_match": true
+    }
+  ],
+  "part_a_working_tree_clean_after": true,
+  "partial_fit_called": false,
+  "result": "PASS",
+  "set_params_called": false,
+  "threshold_changed": false
+}

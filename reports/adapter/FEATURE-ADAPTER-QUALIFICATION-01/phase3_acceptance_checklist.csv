@@ -1,0 +1,19 @@
+Check_ID,Requirement,Status,Evidence
+P3-001,Adapter contract parses and approved sources are exclusive,PASS,adapter_contract.json
+P3-002,Frozen Part A source hashes and commit reconcile,PASS,implementation_source_manifest.json
+P3-003,Adapter is label-free and does not return TARGET,PASS,labelled_fixture_parity.json
+P3-004,Only frozen Part A feature functions define predictors,PASS,implementation_source_manifest.json
+P3-005,Output grain row count feature identity and order pass,PASS,labelled_fixture_parity.json
+P3-006,All 176 feature values dtypes and missing masks are exact,PASS,feature_parity_summary.csv
+P3-007,Bureau 52-feature group parity passes,PASS,aggregation_parity.json
+P3-008,Previous-application 37-feature group parity passes,PASS,aggregation_parity.json
+P3-009,DF-01 raw probability and THRESHOLD-01 class parity pass,PASS,scoring_parity.json
+P3-010,Failure and source-control behavior passes,PASS,source_control_tests.json
+P3-011,CND-02 remains open and source diagnostics are non-authoritative,PASS,source_control_tests.json
+P3-012,application_test label-free dry run passes,PASS,application_test_dry_run.json
+P3-013,Candidate is not frozen and no row-level output is persisted,PASS,application_test_dry_run.json
+P3-014,DF-01 and Part A remain unchanged,PASS,immutability_attestation.json
+P3-015,No reference monitoring scenario drift performance or alert result created,PASS,phase3_completion_decision.json
+P3-016,Qualification manifest reconciles,PASS,qualification_manifest.json
+P3-017,Governed labelled fixture exercises material adapter branches,PASS,labelled_fixture_coverage.json
+P3-018,Phase 3 reviewed and approved,PASS,phase3_approval_record.json

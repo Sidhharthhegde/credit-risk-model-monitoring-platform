@@ -1,0 +1,130 @@
+{
+  "adapter_id": "MONITORING-FEATURE-ADAPTER-01",
+  "excluded_sources": [
+    "bureau_balance.csv",
+    "credit_card_balance.csv",
+    "installments_payments.csv",
+    "POS_CASH_balance.csv"
+  ],
+  "frozen_part_a_implementations": [
+    {
+      "function": "build_bureau_features",
+      "relative_path": "src/features/bureau_features.py",
+      "sha256": "bf10084a9b5a2438820017fea8e36347eb729a968f812e69a963194d8a09da30"
+    },
+    {
+      "function": "build_previous_application_features",
+      "relative_path": "src/features/previous_application_features.py",
+      "sha256": "f31e3c323b33ff89c7e2f48120dce92a7923c4a5f271881bed40cf7b64535c21"
+    },
+    {
+      "function": "apply_deterministic_transformations",
+      "relative_path": "src/features/deterministic.py",
+      "sha256": "fc4113038ba99f57755489ed275119f819f3e4ec48360c3e2e181737cfa8a2a8"
+    },
+    {
+      "function": "integrate_master_dataset",
+      "relative_path": "src/features/integrate_all_features.py",
+      "role": "LABELLED_PARITY_ORACLE_ONLY",
+      "sha256": "bf3e296e29d5f3b16f7c5a51dc6a593ff09c38a761a03ab856855b0762c32925"
+    }
+  ],
+  "inputs": {
+    "application": {
+      "grain": "ONE_ROW_PER_SK_ID_CURR",
+      "role": "ANCHOR",
+      "source_file": "application_test.csv",
+      "target_required": false
+    },
+    "bureau": {
+      "raw_grain": "MANY_ROWS_PER_SK_ID_CURR_UNIQUE_SK_ID_BUREAU",
+      "role": "CUSTOMER_LEVEL_AGGREGATION",
+      "source_file": "bureau.csv"
+    },
+    "previous_application": {
+      "raw_grain": "MANY_ROWS_PER_SK_ID_CURR_UNIQUE_SK_ID_PREV",
+      "role": "CUSTOMER_LEVEL_AGGREGATION",
+      "source_file": "previous_application.csv"
+    }
+  },
+  "label_free_bridge": {
+    "caller_target_required": false,
+    "invariance_requirement": "OUTPUT_EXCLUDING_TARGET_MUST_BE_EXACTLY_IDENTICAL_FOR_PLACEHOLDER_0_AND_PLACEHOLDER_1",
+    "placeholder_persisted_or_returned": false,
+    "reason": "The frozen Part A deterministic function checks TARGET presence but never uses its value in predictor construction. The bridge preserves direct reuse without modifying Part A or copying feature logic.",
+    "temporary_internal_target_placeholder": 0
+  },
+  "labelled_parity_fixture": {
+    "applicant_ids_persisted_in_public_evidence": false,
+    "base_selection": "LOWEST_256_TRAIN_SK_ID_CURR",
+    "key_artifact": "data/processed/SK_ID_CURR_train.csv",
+    "key_artifact_sha256": "3b1209829b6980d14acc3fabb4be139988cf60c576a1bfe30c12359befc3c17a",
+    "population": "FROZEN_PART_A_TRAIN_SPLIT",
+    "required_branch_coverage": [
+      "BUREAU_YES_PREVIOUS_YES",
+      "BUREAU_YES_PREVIOUS_NO",
+      "BUREAU_NO_PREVIOUS_YES",
+      "BUREAU_NO_PREVIOUS_NO",
+      "NUMERIC_MISSINGNESS_PRESENT",
+      "CATEGORICAL_MISSINGNESS_PRESENT",
+      "EMPLOYMENT_SENTINEL_PRESENT_AND_ABSENT",
+      "EXTERNAL_SCORE_MISSINGNESS_PRESENT_AND_ABSENT",
+      "CAR_AGE_MISSINGNESS_FLAG_PRESENT_AND_ABSENT",
+      "HOUSING_AVAILABILITY_FLAG_PRESENT_AND_ABSENT",
+      "BUREAU_REQUEST_AVAILABILITY_FLAG_PRESENT_AND_ABSENT"
+    ],
+    "supplement_rule": "ADD_LOWEST_TRAIN_SK_ID_CURR_ONLY_FOR_MATERIAL_BRANCH_STATES_ABSENT_FROM_BASE"
+  },
+  "lineage_contract": {
+    "expected_decomposition": {
+      "application_deterministic": 5,
+      "application_direct": 82,
+      "bureau_aggregate": 51,
+      "bureau_deterministic": 1,
+      "previous_application_aggregate": 36,
+      "previous_application_deterministic": 1,
+      "total": 176
+    },
+    "relative_path": "reports/experiments/step49_development_freeze_v1/feature_lineage_manifest.csv",
+    "sha256": "b62e2ac80c199def40cc3b30a97585014cf949a00380c9cb72a8bfeacfad89fe"
+  },
+  "model_binding_id": "PART-A-BINDING-01",
+  "output": {
+    "canonical_order_required": true,
+    "identifier": "SK_ID_CURR",
+    "predictor_count": 176,
+    "predictor_identity_source": "PART_A_EMBEDDED_DF01_PREPROCESSOR_AND_FROZEN_SCORING_SCHEMA",
+    "row_grain": "ONE_ROW_PER_SK_ID_CURR",
+    "target_present": false
+  },
+  "prohibitions": [
+    "REQUIRE_CALLER_TARGET",
+    "CREATE_NEW_PREDICTOR",
+    "RENAME_GOVERNED_PREDICTOR",
+    "DROP_GOVERNED_PREDICTOR",
+    "ALTER_FEATURE_DEFINITION",
+    "ADD_MONITORING_IMPUTATION",
+    "CHANGE_CATEGORICAL_HANDLING",
+    "CHANGE_BINARY_HANDLING",
+    "MODIFY_PART_A",
+    "FIT_OR_PARTIAL_FIT_DF01",
+    "CHANGE_PREPROCESSOR",
+    "CHANGE_THRESHOLD_01",
+    "PERSIST_ROW_LEVEL_CANDIDATE_OR_PREDICTIONS_IN_PHASE_3"
+  ],
+  "protocol_id": "MONITORING-PROTOCOL-01",
+  "qualification_id": "FEATURE-ADAPTER-QUALIFICATION-01",
+  "raw_dependency_contract": {
+    "relative_path": "reports/experiments/step49_development_freeze_v1/raw_data_dependencies.csv",
+    "sha256": "861da6ebfddfde2951cfb664a83491d18350055e11b13a8f803f548c1a285454"
+  },
+  "reference_strategy_id": "REFERENCE-STRATEGY-01",
+  "source_loss": {
+    "approved_fallback_exists": false,
+    "cnd_02_status": "OPEN",
+    "diagnostic_all_missing_aggregate_interface_permitted": true,
+    "diagnostic_output_authoritative": false
+  },
+  "status": "APPROVED_FROZEN",
+  "version": "0.1.0"
+}

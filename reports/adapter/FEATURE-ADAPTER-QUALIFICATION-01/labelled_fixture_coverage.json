@@ -1,0 +1,48 @@
+{
+  "applicant_ids_persisted": false,
+  "base_fixture_count": 256,
+  "base_fixture_rule": "LOWEST_256_FROZEN_TRAIN_SK_ID_CURR",
+  "deterministic_branch_states": {
+    "BUREAU_REQUEST_DATA_AVAILABLE_FLAG": {
+      "one_present": true,
+      "zero_present": true
+    },
+    "FLAG_DAYS_EMPLOYED_SENTINEL": {
+      "one_present": true,
+      "zero_present": true
+    },
+    "HAS_BUREAU_HISTORY": {
+      "one_present": true,
+      "zero_present": true
+    },
+    "HAS_PREV_APP_HISTORY": {
+      "one_present": true,
+      "zero_present": true
+    },
+    "HOUSING_AVG_NUMERIC_DATA_AVAILABLE_FLAG": {
+      "one_present": true,
+      "zero_present": true
+    },
+    "OWN_CAR_AGE_IS_MISSING": {
+      "one_present": true,
+      "zero_present": true
+    }
+  },
+  "final_fixture_count": 256,
+  "history_states": {
+    "bureau_no_previous_no": 3,
+    "bureau_no_previous_yes": 34,
+    "bureau_yes_previous_no": 13,
+    "bureau_yes_previous_yes": 206
+  },
+  "missingness_cases": {
+    "categorical_missingness_present": true,
+    "external_score_complete_case_present": true,
+    "external_score_missingness_present": true,
+    "numeric_missingness_present": true
+  },
+  "result": "PASS",
+  "supplement_rule": "LOWEST_FROZEN_TRAIN_SK_ID_CURR_FOR_EACH_BRANCH_STATE_ABSENT_FROM_BASE",
+  "supplemental_applicant_count": 0,
+  "supplemental_reason_count": 0
+}

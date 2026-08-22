@@ -1,0 +1,8 @@
+{
+  "bureau_aggregate_values_exact": true,
+  "bureau_feature_count": 52,
+  "history_flags_included_in_group_counts": true,
+  "previous_aggregate_values_exact": true,
+  "previous_application_feature_count": 37,
+  "result": "PASS"
+}

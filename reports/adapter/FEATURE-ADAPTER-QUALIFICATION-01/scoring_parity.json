@@ -1,0 +1,10 @@
+{
+  "maximum_absolute_difference": 0.0,
+  "raw_probability_exact": true,
+  "result": "PASS",
+  "risk_class_exact": true,
+  "threshold_id": "THRESHOLD-01",
+  "threshold_operator": ">=",
+  "threshold_value": 0.08,
+  "tolerance_used": false
+}

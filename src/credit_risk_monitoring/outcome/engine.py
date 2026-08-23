@@ -270,11 +270,12 @@ def run_phase9_monitoring(project_root: Path, explicit_part_a_root: Path | None 
             "maturity_basis": "COMPLETE_SYNTHETIC_OUTCOME_SET_AVAILABLE" if available else "OUTCOME_NOT_AVAILABLE",
             "calendar_maturity_interpretation": False,
         })
-        evidence_status = "ELIGIBLE_SYNTHETIC" if available else "NOT_ASSESSABLE"
+        evidence_status = "ELIGIBLE" if available else "NOT_ASSESSABLE"
         eligibility.append({
             "scenario_id": scenario, "evidence_status": evidence_status,
             "performance_calculation_eligible": available,
-            "reason": "SYNTHETIC_OUTCOME_AVAILABLE_MATURED_AND_RECONCILED" if available else "NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE",
+            "eligibility_basis": "OUTCOME_AVAILABLE_MATURED_AND_RECONCILED" if available else None,
+            "non_assessability_reason": None if available else "OUTCOME_NOT_AVAILABLE",
             "performance_severity": "N/A",
         })
         summary_rows.append({

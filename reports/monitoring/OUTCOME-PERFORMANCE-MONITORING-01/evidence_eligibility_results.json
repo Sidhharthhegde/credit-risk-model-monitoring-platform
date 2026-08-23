@@ -1,45 +1,51 @@
 {
   "results": [
     {
+      "eligibility_basis": null,
       "evidence_status": "NOT_ASSESSABLE",
+      "non_assessability_reason": "OUTCOME_NOT_AVAILABLE",
       "performance_calculation_eligible": false,
       "performance_severity": "N/A",
-      "reason": "NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE",
       "scenario_id": "SIM-M01"
     },
     {
+      "eligibility_basis": null,
       "evidence_status": "NOT_ASSESSABLE",
+      "non_assessability_reason": "OUTCOME_NOT_AVAILABLE",
       "performance_calculation_eligible": false,
       "performance_severity": "N/A",
-      "reason": "NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE",
       "scenario_id": "SIM-M02"
     },
     {
+      "eligibility_basis": null,
       "evidence_status": "NOT_ASSESSABLE",
+      "non_assessability_reason": "OUTCOME_NOT_AVAILABLE",
       "performance_calculation_eligible": false,
       "performance_severity": "N/A",
-      "reason": "NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE",
       "scenario_id": "SIM-M03"
     },
     {
+      "eligibility_basis": null,
       "evidence_status": "NOT_ASSESSABLE",
+      "non_assessability_reason": "OUTCOME_NOT_AVAILABLE",
       "performance_calculation_eligible": false,
       "performance_severity": "N/A",
-      "reason": "NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE",
       "scenario_id": "SIM-M04"
     },
     {
+      "eligibility_basis": null,
       "evidence_status": "NOT_ASSESSABLE",
+      "non_assessability_reason": "OUTCOME_NOT_AVAILABLE",
       "performance_calculation_eligible": false,
       "performance_severity": "N/A",
-      "reason": "NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE",
       "scenario_id": "SIM-M05"
     },
     {
-      "evidence_status": "ELIGIBLE_SYNTHETIC",
+      "eligibility_basis": "OUTCOME_AVAILABLE_MATURED_AND_RECONCILED",
+      "evidence_status": "ELIGIBLE",
+      "non_assessability_reason": null,
       "performance_calculation_eligible": true,
       "performance_severity": "N/A",
-      "reason": "SYNTHETIC_OUTCOME_AVAILABLE_MATURED_AND_RECONCILED",
       "scenario_id": "SIM-M06"
     }
   ]

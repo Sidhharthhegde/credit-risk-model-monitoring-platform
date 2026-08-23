@@ -1,7 +1,7 @@
 {
   "monitoring_id": "OUTCOME-PERFORMANCE-MONITORING-01",
   "version": "0.1.0",
-  "status": "IMPLEMENTED_PENDING_REVIEW",
+  "status": "APPROVED_FROZEN",
   "scope": "PHASE_9_OUTCOME_MATURITY_PERFORMANCE_AND_CALIBRATION_ONLY",
   "model": {
     "development_freeze_id": "DF-01",
@@ -38,12 +38,15 @@
     "required_outcome_domain": [0, 1],
     "exact_identity_set_equality_required": true,
     "silent_inner_join_permitted": false,
-    "m01_through_m05_outcome_status": "NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE"
+    "m01_through_m05_outcome_availability": "NOT_AVAILABLE",
+    "m01_through_m05_maturity_status": "NOT_APPLICABLE",
+    "m01_through_m05_evidence_status": "NOT_ASSESSABLE",
+    "m01_through_m05_non_assessability_reason": "OUTCOME_NOT_AVAILABLE"
   },
   "gate_vocabulary": {
     "outcome_availability": ["AVAILABLE", "NOT_AVAILABLE"],
     "maturity_status": ["MATURED", "NOT_MATURED", "NOT_APPLICABLE"],
-    "evidence_status": ["ELIGIBLE_SYNTHETIC", "NOT_ASSESSABLE"]
+    "evidence_status": ["ELIGIBLE", "NOT_ASSESSABLE"]
   },
   "m06_maturity": {
     "basis": "COMPLETE_SYNTHETIC_OUTCOME_SET_AVAILABLE",

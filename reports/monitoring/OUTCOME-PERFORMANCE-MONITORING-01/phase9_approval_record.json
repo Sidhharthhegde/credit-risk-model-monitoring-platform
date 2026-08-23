@@ -1,0 +1,12 @@
+{
+  "approved_utc": "2026-08-23T06:13:38.524874+00:00",
+  "calculated_results_changed": false,
+  "candidate_manifest_sha256": "b9de6fd4e8107ee74525f621d4c3d6148d634dda59fa4782168ac1c99fa93643",
+  "cnd_02_status": "OPEN",
+  "conditional_taxonomy_issue_resolved": true,
+  "decision": "APPROVED",
+  "frozen_prediction_or_outcome_content_changed": false,
+  "monitoring_id": "OUTCOME-PERFORMANCE-MONITORING-01",
+  "next_phase_authorized": "PHASE_10_SEGMENT_AND_SUBPOPULATION_MONITORING",
+  "phase": "PHASE_9"
+}

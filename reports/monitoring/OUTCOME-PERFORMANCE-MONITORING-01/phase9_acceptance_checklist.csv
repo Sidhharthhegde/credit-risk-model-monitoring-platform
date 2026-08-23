@@ -21,4 +21,5 @@ P9-019,Synthetic non-empirical non-external labels applied,PASS
 P9-020,No subgroup alerts overall health or public row-level join generated,PASS
 P9-021,Repeated calculations are semantically reproducible,PASS
 P9-022,Frozen Phase 4 through 8 evidence and Part A remain unchanged,PASS
-P9-023,Owner approval and Phase 10 authorization are deferred,PASS
+P9-023,Owner approved Phase 9 and authorized Phase 10 segment and subpopulation monitoring,PASS
+P9-024,Evidence eligibility is generic and synthetic evidence type remains independent,PASS

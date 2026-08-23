@@ -1,8 +1,14 @@
 {
   "aggregate_public_evidence_only": true,
   "alerts_included": false,
-  "approval_record_included": false,
+  "approval_record_included": true,
+  "approved_utc": "2026-08-23T06:13:38.524874+00:00",
   "artifacts": [
+    {
+      "path": "approval_hash_reconciliation.json",
+      "sha256": "239c8c8c2883caf22cbcad9669a78fb54c88bba5d8899622fbc66cb6c2b5d4b4",
+      "size_bytes": 2481
+    },
     {
       "path": "calibration_band_results.parquet",
       "sha256": "559edc0cb075e61169f70a228a23558ce005fdfc87011f20c733b6971e909897",
@@ -15,13 +21,13 @@
     },
     {
       "path": "evidence_eligibility_results.json",
-      "sha256": "c41a55e7ee4fd1e4f1ad638d878798474a27e02c9557ef4356f17723341a85a6",
-      "size_bytes": 1413
+      "sha256": "ab4dc90c88681bfd57ac093b273566ec47f64c9d060a3738dc7d62e5dd957f4c",
+      "size_bytes": 1624
     },
     {
       "path": "execution_source_manifest.json",
-      "sha256": "d3d1f49689790d3ff2fc5caf8f2e00bbdbf6507e55606243eb6d6031548c687e",
-      "size_bytes": 2012
+      "sha256": "30ac6b06d19fd3ad0e4c3e5011956b675d2efae18c073db55831c3a93a6b5850",
+      "size_bytes": 2200
     },
     {
       "path": "outcome_availability_results.json",
@@ -35,8 +41,8 @@
     },
     {
       "path": "outcome_monitoring_contract_snapshot.json",
-      "sha256": "b3adca207970ced08cf55aa88ae6269571f664f6e56a9345b21641e1440f962e",
-      "size_bytes": 4163
+      "sha256": "ffa4fcf3830aeccc0dd2b7ed7430034aac4da88ea0d67fbcdf2e5a83cc879802",
+      "size_bytes": 4312
     },
     {
       "path": "outcome_reconciliation.json",
@@ -50,13 +56,18 @@
     },
     {
       "path": "phase9_acceptance_checklist.csv",
-      "sha256": "3552e1bee49a015f47498117cba79b5ed5f689104e04960a1676fc03663b2e25",
-      "size_bytes": 1659
+      "sha256": "0d91260ead748c592ff1224eab94bccb830609076696f65ce29073f3f4be61e6",
+      "size_bytes": 1780
+    },
+    {
+      "path": "phase9_approval_record.json",
+      "sha256": "501896908ff7880001076ab8389c30b35bc8b0eca63015b7e2c8d20b04976e5e",
+      "size_bytes": 506
     },
     {
       "path": "phase9_completion_decision.json",
-      "sha256": "8c00371125d50469a989a673b5f91c85eb7d91c0c0a1c1371765c376886899f9",
-      "size_bytes": 1602
+      "sha256": "5a5f2deafc1dde06f27ff8b8f2e4bea26a7604546bfea1e7862291be0690e613",
+      "size_bytes": 1841
     },
     {
       "path": "reference_reconciliation.json",
@@ -70,8 +81,8 @@
     },
     {
       "path": "scenario_outcome_summary.csv",
-      "sha256": "5e9102c749c284ab3263209a35cd7d460f5aed296af2b6569d96781e429236bc",
-      "size_bytes": 711
+      "sha256": "a00e760763ac7e8004010e3092045b79674c96572da39a2632a3b24104483c87",
+      "size_bytes": 701
     },
     {
       "path": "scope_protection_attestation.json",
@@ -89,9 +100,13 @@
       "size_bytes": 19892
     }
   ],
+  "calculated_results_unchanged_during_approval": true,
+  "candidate_manifest_sha256": "b9de6fd4e8107ee74525f621d4c3d6148d634dda59fa4782168ac1c99fa93643",
   "created_utc": "2026-08-23T05:55:31.825162+00:00",
   "monitoring_id": "OUTCOME-PERFORMANCE-MONITORING-01",
+  "prediction_and_outcome_content_unchanged_during_approval": true,
   "row_level_joined_evidence_included": false,
-  "status": "QUALIFIED_PENDING_REVIEW",
-  "synthetic_evidence_only": true
+  "status": "APPROVED_FROZEN",
+  "synthetic_evidence_only": true,
+  "taxonomy_remediation_only": true
 }

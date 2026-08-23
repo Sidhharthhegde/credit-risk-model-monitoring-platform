@@ -22,7 +22,7 @@
   },
   "gate_vocabulary": {
     "evidence_status": [
-      "ELIGIBLE_SYNTHETIC",
+      "ELIGIBLE",
       "NOT_ASSESSABLE"
     ],
     "maturity_status": [
@@ -53,7 +53,10 @@
     "eligible_artifact_id": "SIM-M06-SYNTHETIC-OUTCOMES-01",
     "eligible_prediction_artifact_id": "SIM-M06-PREDICTIONS-01",
     "exact_identity_set_equality_required": true,
-    "m01_through_m05_outcome_status": "NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE",
+    "m01_through_m05_evidence_status": "NOT_ASSESSABLE",
+    "m01_through_m05_maturity_status": "NOT_APPLICABLE",
+    "m01_through_m05_non_assessability_reason": "OUTCOME_NOT_AVAILABLE",
+    "m01_through_m05_outcome_availability": "NOT_AVAILABLE",
     "outcome_contract_id": "OUTCOME-01",
     "required_outcome_domain": [
       0,
@@ -85,7 +88,7 @@
     "threshold_performance_severity": "N/A",
     "uncertainty_alert_logic_status": "CONTROLLED_DEFERRED"
   },
-  "status": "IMPLEMENTED_PENDING_REVIEW",
+  "status": "APPROVED_FROZEN",
   "synthetic_evidence": {
     "empirical_performance": false,
     "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",

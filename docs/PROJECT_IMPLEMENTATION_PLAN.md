@@ -1689,7 +1689,7 @@ Update this table only when supported by a phase completion decision.
 | 6 | `COMPLETE` | `reports/monitoring/DATA-QUALITY-CONTROL-01/phase6_completion_decision.json` | Conditional source-role blocker resolved; approved and frozen on 2026-08-22 |
 | 7 | `COMPLETE` | `reports/monitoring/FEATURE-DRIFT-MONITORING-01/phase7_completion_decision.json` | Approved and frozen on 2026-08-22; Phase 8 authorized |
 | 8 | `COMPLETE` | `reports/monitoring/PREDICTION-MONITORING-01/phase8_completion_decision.json` | Approved and frozen on 2026-08-23; Phase 9 authorized |
-| 9 | `IN_PROGRESS` | `reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01/phase9_completion_decision.json` | Technical qualification passed on 2026-08-23; owner review pending; Phase 10 unauthorized |
+| 9 | `COMPLETE` | `reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01/phase9_completion_decision.json` | Conditional taxonomy issue resolved; approved and frozen on 2026-08-23; Phase 10 authorized |
 | 10 | `NOT_STARTED` | Not issued |  |
 | 11 | `NOT_STARTED` | Not issued |  |
 | 12 | `NOT_STARTED` | Not issued |  |
@@ -1712,12 +1712,12 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next controlled action is owner review of the technically qualified Phase 9 candidate:
+The next authorized work is Phase 10 segment and subpopulation monitoring:
 
-1. Review `OUTCOME-PERFORMANCE-MONITORING-01`, its manifest and acceptance checklist.
-2. Confirm M01–M05 remain `NOT_ASSESSABLE` and only M06 uses synthetic outcome evidence.
-3. Confirm performance, calibration and threshold results are descriptive metrics with severity `N/A` and no alerts.
-4. Approve and freeze Phase 9 separately if the evidence is accepted.
-5. Keep Phase 10 closed until that explicit owner decision is recorded.
+1. Retain the generic, configuration-driven definitions for all 12 frozen subgroup families.
+2. Calculate label-free segment composition, score distribution and risk-positive composition for eligible cohorts.
+3. Admit outcome-dependent segment evidence only where mature eligible outcomes exist.
+4. Enforce approved minimum-evidence rules and use `INSUFFICIENT_DATA` rather than `NORMAL` when evidence is inadequate.
+5. Preserve the separation between synthetic evidence type, eligibility, metric severity, alerts and overall model health.
 
-Phase 9 is technically qualified but not complete or frozen. Phase 10 is not authorized.
+Phase 9 is approved and frozen. Phase 10 segment and subpopulation monitoring is authorized.

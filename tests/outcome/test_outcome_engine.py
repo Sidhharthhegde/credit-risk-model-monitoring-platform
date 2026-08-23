@@ -134,13 +134,23 @@ def test_invalid_probabilities_and_single_class_outcomes_are_rejected() -> None:
         _monitor().evaluate(_joined().assign(OUTCOME=0))
 
 
-def test_phase9_candidate_keeps_owner_and_phase10_gates_closed_when_present() -> None:
+def test_phase9_final_decision_records_independent_taxonomy_when_present() -> None:
     root = Path(__file__).resolve().parents[2]
     report = root / "reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01"
     if report.exists():
         decision = json.loads((report / "phase9_completion_decision.json").read_text(encoding="utf-8"))
-        assert decision["review_decision"] == "PENDING_USER_PROTOCOL_OWNER_REVIEW"
-        assert decision["phase_9_complete"] is False
-        assert decision["phase_10_authorized"] is False
+        assert decision["review_decision"] == "APPROVED"
+        assert decision["phase_9_complete"] is True
+        assert decision["phase_10_authorized"] is True
         assert decision["m01_performance_status"] == "NOT_ASSESSABLE"
+        assert decision["m06_outcome_availability"] == "AVAILABLE"
+        assert decision["m06_maturity_status"] == "MATURED"
+        assert decision["m06_evidence_status"] == "ELIGIBLE"
         assert decision["m06_outcome_evidence_type"] == "SYNTHETIC_SCENARIO_EVIDENCE"
+        eligibility = json.loads((report / "evidence_eligibility_results.json").read_text(encoding="utf-8"))["results"]
+        m01 = next(row for row in eligibility if row["scenario_id"] == "SIM-M01")
+        m06 = next(row for row in eligibility if row["scenario_id"] == "SIM-M06")
+        assert m01["evidence_status"] == "NOT_ASSESSABLE"
+        assert m01["non_assessability_reason"] == "OUTCOME_NOT_AVAILABLE"
+        assert m06["evidence_status"] == "ELIGIBLE"
+        assert m06["non_assessability_reason"] is None

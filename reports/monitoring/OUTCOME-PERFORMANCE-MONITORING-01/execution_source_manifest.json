@@ -1,4 +1,5 @@
 {
+  "approval_finalizer_included": true,
   "creation_code_version": "PHASE9-OUTCOME-PERFORMANCE-MONITOR-0.1.0",
   "frozen_dependencies": {
     "calibration_band_reference_sha256": "3c191c66ec7af1dab177b8d13ba706e28276fb4fe6b7d89d8482b492f0061a1c",
@@ -15,11 +16,11 @@
   "implementation_sources": [
     {
       "path": "contracts/outcome_performance_monitoring_contract.json",
-      "sha256": "84c669d6b4475d3682f04050678270773c3cf597f5671d4a957537caa2f3e159"
+      "sha256": "021fec0fa1e2bf07e3df8aa83f408cbc29afa233a98672991161c8a8d4c345a3"
     },
     {
       "path": "src/credit_risk_monitoring/outcome/engine.py",
-      "sha256": "10347c830950dc4c24c40d7023db0eeb0e7082686676fe855e66d0f8f756858b"
+      "sha256": "f8e9cfb0c2a076ff089926614051893b0d72d9855dca251b1debd28079c304f4"
     },
     {
       "path": "src/credit_risk_monitoring/outcome/__init__.py",
@@ -28,6 +29,10 @@
     {
       "path": "scripts/run_phase9_monitoring.py",
       "sha256": "11e8f9ddcb2cb5ba2ae8a8964a9753ab56bd027c3f3e2d2739ce34a29772bbc7"
+    },
+    {
+      "path": "scripts/finalize_phase9_approval.py",
+      "sha256": "b6825036e8a3b0c96db2a90676e2beaeecd331b3a34bb2865436cbb3be70ae45"
     }
   ],
   "monitoring_id": "OUTCOME-PERFORMANCE-MONITORING-01",

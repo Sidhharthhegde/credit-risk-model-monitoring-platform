@@ -129,6 +129,10 @@ def test_phase13_candidate_gate_when_present(project_root: Path) -> None:
     if decision.exists():
         payload = json.loads(decision.read_text(encoding="utf-8"))
         assert payload["technical_qualification"] == "PASS"
-        assert payload["review_decision"] == "PENDING_OWNER_REVIEW"
-        assert payload["phase_13_complete"] is False
-        assert payload["phase_14_authorized"] is False
+        if payload["review_decision"] == "APPROVED":
+            assert payload["phase_13_complete"] is True
+            assert payload["phase_14_authorized"] is True
+        else:
+            assert payload["review_decision"] == "PENDING_OWNER_REVIEW"
+            assert payload["phase_13_complete"] is False
+            assert payload["phase_14_authorized"] is False

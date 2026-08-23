@@ -1601,7 +1601,7 @@ Update this table only when supported by a phase completion decision.
 | 10 | `COMPLETE` | `reports/monitoring/SEGMENT-MONITORING-01/phase10_completion_decision.json` | Approved and frozen on 2026-08-23; prospective contract unchanged; Phase 11 authorized |
 | 11 | `COMPLETE` | `reports/monitoring/ALERT-ENGINE-01/phase11_completion_decision.json` | Directionality condition resolved; approved and frozen on 2026-08-23; Phase 12 authorized |
 | 12 | `COMPLETE` | `reports/persistence/MONITORING-HISTORY-01/phase12_completion_decision.json` | Run-count semantics condition resolved; approved and frozen on 2026-08-23; Phase 13 authorized |
-| 13 | `IN_PROGRESS` | `reports/dashboard/MONITORING-DASHBOARD-01/phase13_completion_decision.json` | Technical qualification passed; pending owner review; Phase 14 not authorized |
+| 13 | `COMPLETE` | `reports/dashboard/MONITORING-DASHBOARD-01/phase13_completion_decision.json` | Approved and frozen on 2026-08-23; Phase 14 authorized |
 | 14 | `NOT_STARTED` | Not issued |  |
 | 15 | `NOT_STARTED` | Not issued |  |
 | 16 | `NOT_STARTED` | Not issued |  |
@@ -1620,4 +1620,4 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next controlled action is owner review of the technically qualified `MONITORING-DASHBOARD-01` candidate and its manifest. Phase 13 remains incomplete until that review is recorded. Phase 14 is not authorized.
+The next controlled action is Phase 14 monitoring report, orchestration and final lifecycle qualification under the approved Phase 13 freeze boundary.

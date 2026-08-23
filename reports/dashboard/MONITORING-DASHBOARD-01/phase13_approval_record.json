@@ -1,0 +1,20 @@
+{
+  "approval_gate_test_updated_for_frozen_state": true,
+  "approved_utc": "2026-08-23T17:17:42.365371+00:00",
+  "base_operational_state_modified_by_qualification": false,
+  "cnd_02_status": "OPEN",
+  "dashboard_id": "MONITORING-DASHBOARD-01",
+  "dashboard_runtime_source_hashes_unchanged": true,
+  "dashboard_source_hashes_unchanged": false,
+  "decision": "APPROVED",
+  "detailed_score_bin_view": "UNAVAILABLE_BY_GOVERNED_QUERY_CONTRACT",
+  "detailed_segment_result_view": "UNAVAILABLE_BY_GOVERNED_QUERY_CONTRACT",
+  "next_phase_authorized": "PHASE_14_MONITORING_REPORT_ORCHESTRATION_AND_FINAL_LIFECYCLE_QUALIFICATION",
+  "part_a_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+  "part_a_unchanged": true,
+  "phase": "PHASE_13",
+  "phase12_immutable_evidence_unchanged": true,
+  "phase12_manifest_unchanged": true,
+  "pre_approval_candidate_manifest_sha256": "0d395e610111f3308841b9ddbbffc61a66c7ea3ce2f58d4fe4f29d929ab1c2cf",
+  "raw_file_fallback_for_unavailable_views": false
+}

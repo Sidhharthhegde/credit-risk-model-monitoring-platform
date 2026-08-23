@@ -1,0 +1,11 @@
+{
+  "approved_test_sha256": "6275e773f74e26b9873aca5475f83e239a36c81581bc120a37a59501a8ad426b",
+  "candidate_test_sha256": "081cb2fc4ba7881d6ebcfbf1cf0e1dd16ced4af95b9414d3db215bb289da66b1",
+  "dashboard_behavior_changed": false,
+  "dashboard_runtime_sources_unchanged": true,
+  "frozen_evidence_changed": false,
+  "monitoring_result_changed": false,
+  "qualification_test_path": "tests/dashboard/test_dashboard.py",
+  "result": "PASS",
+  "test_change_role": "APPROVAL_GATE_ONLY"
+}

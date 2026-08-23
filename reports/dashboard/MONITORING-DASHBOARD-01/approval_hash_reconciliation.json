@@ -1,0 +1,30 @@
+{
+  "all_candidate_artifacts_unchanged": true,
+  "all_dashboard_runtime_sources_unchanged": true,
+  "all_dashboard_sources_unchanged": false,
+  "approval_gate_test_updated_for_frozen_state": true,
+  "candidate_artifacts": {
+    "current_alert_state_reconciliation.json": "02c278689b4749d526c424e1bfc9717fc24f222b8eb80c08df9c8b118c546354",
+    "dashboard_data_reconciliation.json": "c13336d90a1c9d3d5680e9df1258836fd8d5739f7af36086e7d18c6fa7bde305",
+    "dashboard_display_policy_snapshot.json": "2f59efb970acacaa92afc6baa6fc9302e854d8ea5daf2ab58ba1d63694887dc3",
+    "dashboard_smoke_qualification.json": "b7a6448b43acfc0fc5db204952e901a2c707709ab5763c17d5068a18e7ee74fe",
+    "dashboard_source_binding.json": "12017a571f67795694b108e77ec1d103c6549c2251d4bd23c5ce5996b3580848",
+    "lifecycle_action_qualification.json": "9e55919a6b777922de304143fdad43ac7d8f6a99017e759d69d2f0c326f2e59c",
+    "lineage_ui_qualification.json": "fd1596e917d1c032f0ceeff66b792338be141ca3a6f35e301ba0e1e1314250d1",
+    "monitoring_dashboard_contract_snapshot.json": "313db98e49cdab246b6153c634872be278f0f83abd0ab578d7e0f36d74e9bbce",
+    "no_recalculation_attestation.json": "0cd374bf3e4094e0de25e1ca14d456c6a01816a88a232899b89499a69914922e",
+    "page_registry.json": "68b985f64e42aef5493b664ecb3836851aee4b8dc7fe58e245749434e5911619",
+    "phase13_acceptance_checklist.csv": "df9388da8adda02cd91010206cf467c312cbb3ebc9423195c7cca00b791d01c3",
+    "phase13_completion_decision.json": "123b6c7f0d85d19502401027be5e46cffa720ebf3e5900ca30a4b56044a556a1",
+    "scope_protection_attestation.json": "f80e598a315929ef5b18b697c572aeb55102e790b46fdd15bfa09761d6acd801",
+    "segment_ui_attestation.json": "edae5bc4dc17b013d562f5ad973b455f455a11a3937f48ba8297ba3540095074",
+    "synthetic_evidence_ui_attestation.json": "5b6f9ff148b76a83051f487e4cfa5b98480f12a43bc6df1800cd95d3a0b34d21",
+    "temporal_visualization_qualification.json": "f2e769d2f2b0e74063b553f55cafe6beedc95cafb51f60fe956385bfa8d11531"
+  },
+  "part_a_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+  "part_a_working_tree_clean": true,
+  "phase12_manifest_sha256": "967a0646b403344944a5389447873bb6d1e432afece1167d26810670774ac165",
+  "phase12_manifest_unchanged": true,
+  "pre_approval_candidate_manifest_sha256": "0d395e610111f3308841b9ddbbffc61a66c7ea3ce2f58d4fe4f29d929ab1c2cf",
+  "result": "PASS"
+}

@@ -6,9 +6,9 @@ Part B will demonstrate data-quality monitoring, population and feature drift, r
 
 ## Current status
 
-`PHASE_13_TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW`
+`PHASE_13_APPROVED_FROZEN`
 
-Phases 0–12 are approved and frozen. The six-page local Streamlit/Plotly `MONITORING-DASHBOARD-01` now consumes the governed Phase 12 repository, preserves dynamic lifecycle-ledger state separately from frozen Phase 11 source counts, and has passed technical qualification. Phase 13 remains incomplete pending owner review; Phase 14 is not authorized.
+Phases 0–13 are approved and frozen. The six-page local Streamlit/Plotly `MONITORING-DASHBOARD-01` consumes the governed Phase 12 repository and preserves dynamic lifecycle-ledger state separately from frozen Phase 11 source counts. Phase 14 report, orchestration and final lifecycle qualification is authorized.
 
 ## Important scope statement
 

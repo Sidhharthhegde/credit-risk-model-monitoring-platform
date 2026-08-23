@@ -23,3 +23,6 @@ P13-021,No scoring recalculation alert generation or health calculation exists i
 P13-022,CND-02 remains open,PASS
 P13-023,Threshold boundary density remains controlled deferred,PASS
 P13-024,Owner approval and Phase 14 authorization remain separate,PASS
+P13-025,Owner approved Phase 13 and authorized Phase 14,PASS
+P13-026,Qualified dashboard sources and Phase 12 frozen evidence remained unchanged,PASS
+P13-027,Unavailable detailed views are explicitly governed and have no raw-file fallback,PASS

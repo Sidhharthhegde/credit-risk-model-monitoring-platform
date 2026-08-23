@@ -6,9 +6,9 @@ Part B will demonstrate data-quality monitoring, population and feature drift, r
 
 ## Current status
 
-`PHASE_8_TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW`
+`PHASE_8_APPROVED_FROZEN`
 
-Phases 0–7 are approved and frozen. `PREDICTION-MONITORING-01` has materialized six governed local prediction artifacts and calculated aggregate raw-probability, frozen-bin score PSI and `THRESHOLD-01` output evidence; technical qualification passed and owner review remains pending. Synthetic outcomes, performance, calibration, alerts and overall model health remain outside scope.
+Phases 0–8 are approved and frozen. `PREDICTION-MONITORING-01` includes six frozen governed local prediction artifacts plus aggregate raw-probability, frozen-bin score PSI and `THRESHOLD-01` output evidence. Phase 9 outcome maturity, synthetic performance and calibration monitoring is authorized; alerts and overall model health remain outside scope.
 
 ## Important scope statement
 

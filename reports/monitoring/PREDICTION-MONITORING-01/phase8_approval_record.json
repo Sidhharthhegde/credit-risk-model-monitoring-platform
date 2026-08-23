@@ -1,0 +1,11 @@
+{
+  "approved_utc": "2026-08-23T05:45:21.368609+00:00",
+  "calculated_results_changed": false,
+  "candidate_manifest_sha256": "91ec1173f8dfa6a41c70dc0806a34430433559f6ccddd53d5019bdfb329894c2",
+  "cnd_02_status": "OPEN",
+  "decision": "APPROVED",
+  "monitoring_id": "PREDICTION-MONITORING-01",
+  "next_phase_authorized": "PHASE_9_OUTCOME_MATURITY_PERFORMANCE_AND_CALIBRATION_MONITORING",
+  "phase": "PHASE_8",
+  "prediction_content_changed": false
+}

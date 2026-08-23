@@ -1,7 +1,7 @@
 {
   "monitoring_id": "PREDICTION-MONITORING-01",
   "version": "0.1.0",
-  "status": "IMPLEMENTED_PENDING_REVIEW",
+  "status": "APPROVED_FROZEN",
   "scope": "PHASE_8_PREDICTION_AND_THRESHOLD_OUTPUT_MONITORING_ONLY",
   "model_binding": {
     "binding_id": "PART-A-BINDING-01",

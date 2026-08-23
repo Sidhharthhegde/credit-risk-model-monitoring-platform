@@ -1686,7 +1686,7 @@ Update this table only when supported by a phase completion decision.
 | 5 | `COMPLETE` | `reports/simulation/SIMULATION-SCENARIO-SET-01/phase5_completion_decision.json` | Conditional blocker resolved; approved and frozen on 2026-08-22 |
 | 6 | `COMPLETE` | `reports/monitoring/DATA-QUALITY-CONTROL-01/phase6_completion_decision.json` | Conditional source-role blocker resolved; approved and frozen on 2026-08-22 |
 | 7 | `COMPLETE` | `reports/monitoring/FEATURE-DRIFT-MONITORING-01/phase7_completion_decision.json` | Approved and frozen on 2026-08-22; Phase 8 authorized |
-| 8 | `IN_PROGRESS` | `reports/monitoring/PREDICTION-MONITORING-01/phase8_completion_decision.json` | Prediction/threshold monitoring technically qualified; owner review pending |
+| 8 | `COMPLETE` | `reports/monitoring/PREDICTION-MONITORING-01/phase8_completion_decision.json` | Approved and frozen on 2026-08-23; Phase 9 authorized |
 | 9 | `NOT_STARTED` | Not issued |  |
 | 10 | `NOT_STARTED` | Not issued |  |
 | 11 | `NOT_STARTED` | Not issued |  |
@@ -1710,13 +1710,13 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next authorized work is review of the Phase 8 technical candidate:
+The next authorized work is Phase 9 outcome maturity, performance and calibration monitoring:
 
-1. Review all six local prediction manifests and aggregate integrity/reproducibility evidence.
-2. Confirm development validation—not TRAIN—is the score-distribution reference.
-3. Review frozen-bin Score PSI and `THRESHOLD-01` output reconciliation.
-4. Confirm Phase 7 severity did not gate scoring and the two Phase 6-ineligible variants were excluded.
-5. Confirm boundary density, synthetic outcomes, performance, calibration, alerts and overall health remained outside scope.
-6. Approve and freeze `PREDICTION-MONITORING-01`, or issue bounded remediation; Phase 9 remains unauthorized.
+1. Consume frozen Phase 8 predictions without rescoring.
+2. Keep M01–M05 outcome evidence `NOT_ASSESSABLE`; do not invent labels or `NORMAL` performance.
+3. Reconcile only frozen M06 synthetic outcomes and use simulation maturity rather than calendar aging.
+4. Calculate performance, calibration bands and threshold performance only after availability, maturity and eligibility pass independently.
+5. Keep all performance/calibration/threshold-performance severities `N/A` while alert limits and uncertainty rules remain deferred.
+6. Preserve explicit synthetic, non-empirical and non-external-validation labels on every M06 result.
 
-Phase 8 has passed technical qualification but is not yet approved or frozen.
+Phase 9 is authorized but not yet technically qualified.

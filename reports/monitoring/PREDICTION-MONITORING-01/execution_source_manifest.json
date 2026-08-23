@@ -1,4 +1,5 @@
 {
+  "approval_finalizer_included": true,
   "creation_code_version": "PHASE8-PREDICTION-MONITOR-0.1.0",
   "frozen_dependencies": {
     "alert_thresholds_sha256": "987373af8b91f5cbfe5dbaaea829bd122d64ad41e9dc32e6084eb5ef5856d331",
@@ -12,7 +13,7 @@
   "implementation_sources": [
     {
       "path": "contracts/prediction_monitoring_contract.json",
-      "sha256": "efccc1ae8e424a4602dce736d9de55f482342f988a5d27dce47be1a0f93e25c5"
+      "sha256": "cb06fddad55f5cbd458a183464907a55aa9de23e9cf0dd83fc9aa7551770a80d"
     },
     {
       "path": "src/credit_risk_monitoring/prediction/engine.py",
@@ -25,6 +26,10 @@
     {
       "path": "scripts/run_phase8_monitoring.py",
       "sha256": "414ac06c5c828ad08d169f26a4b0ddf60c6598d2e8b22165e9c9fb14f659135b"
+    },
+    {
+      "path": "scripts/finalize_phase8_approval.py",
+      "sha256": "0153bb3a48fb862d7a729b51ff8282bc2da3f8c19e9047ad09183dc1ac8d0ac5"
     }
   ],
   "model_sha256": "ab0000a4ae092f0444760839e185384d44f9a9760be298189bdfcd80c67fa500",

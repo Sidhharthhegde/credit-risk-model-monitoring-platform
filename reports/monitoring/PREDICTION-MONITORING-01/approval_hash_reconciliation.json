@@ -1,0 +1,80 @@
+{
+  "all_calculated_results_unchanged": true,
+  "all_prediction_content_unchanged": true,
+  "all_upstream_manifests_unchanged": true,
+  "calculated_results": {
+    "prediction_summary_results.parquet": {
+      "approved_sha256": "042a17e5eb2a0c17fb0efe0b1a1fe0b5323a668f9f18903c008741dd0b9bac25",
+      "candidate_sha256": "042a17e5eb2a0c17fb0efe0b1a1fe0b5323a668f9f18903c008741dd0b9bac25",
+      "unchanged": true
+    },
+    "score_psi_bin_contributions.parquet": {
+      "approved_sha256": "eaafe0b175fabaa65a453d3fca1ff76a25d4dee3170abd74fbc8622d68b30989",
+      "candidate_sha256": "eaafe0b175fabaa65a453d3fca1ff76a25d4dee3170abd74fbc8622d68b30989",
+      "unchanged": true
+    },
+    "score_psi_results.parquet": {
+      "approved_sha256": "86fc2f6b40b465efcf566a433662704ef87e3d7d0c1896d1bb7607d915e12328",
+      "candidate_sha256": "86fc2f6b40b465efcf566a433662704ef87e3d7d0c1896d1bb7607d915e12328",
+      "unchanged": true
+    },
+    "threshold_output_results.parquet": {
+      "approved_sha256": "bcba64cc5384ac2c5ad996a947fc85d8a6d9c72e798fe154bad886521d4c05c9",
+      "candidate_sha256": "bcba64cc5384ac2c5ad996a947fc85d8a6d9c72e798fe154bad886521d4c05c9",
+      "unchanged": true
+    }
+  },
+  "candidate_manifest_sha256": "91ec1173f8dfa6a41c70dc0806a34430433559f6ccddd53d5019bdfb329894c2",
+  "frozen_upstream_manifests": {
+    "reports/monitoring/DATA-QUALITY-CONTROL-01/manifest.json": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+    "reports/monitoring/FEATURE-DRIFT-MONITORING-01/manifest.json": "64a706d84465e0398391f9d217702343b31aa4d446864a9eca70db89bc930f17",
+    "reports/reference/REFERENCE-MATERIALIZATION-01/manifest.json": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
+    "reports/simulation/SIMULATION-SCENARIO-SET-01/manifest.json": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5"
+  },
+  "local_prediction_artifacts": {
+    "SIM-M01-PREDICTIONS-01": {
+      "approved_manifest_sha256": "677ab537d6f841fd291054728902f6ceb5ab8b70f71bc6380f7cdfcf928aa497",
+      "candidate_manifest_sha256": "904102c470c101e93e2331410bea4c6f2b87aa378e4942d306e761cd587e0ed6",
+      "prediction_content_changed": false,
+      "prediction_file_sha256": "482eca51b338ae838ed59469d0aa0cfbbf240288259fe5fe210eaba5f50009b3",
+      "semantic_prediction_sha256": "8a44ffe48fba72f74d5486a22529749b629e6c132c362ed4e2e53a531f4f6d0a"
+    },
+    "SIM-M02-PREDICTIONS-01": {
+      "approved_manifest_sha256": "72f89ae6109d4c5cee431e804437051e938ac2a63bed7e2e4e47d11bf2c95af5",
+      "candidate_manifest_sha256": "c242135fd2b6ff0c312b120821b32e4c819588e987ffdced3cd517b4b7c740fb",
+      "prediction_content_changed": false,
+      "prediction_file_sha256": "89aaf741266c73f0af216a3a597d3636bbf6a2aa14d60a21dbf11cd9abeb6dd7",
+      "semantic_prediction_sha256": "e61546c8bad68c6a3000006fe60e66d005a71298ab9c8cd8086a82714289472e"
+    },
+    "SIM-M03-PREDICTIONS-01": {
+      "approved_manifest_sha256": "4147c4cdbaf2a0f625000a6575cc9f936b0efc1b0b5790bd22dd8ce99fd206ea",
+      "candidate_manifest_sha256": "c06e6ee24b6f7a85d76dff1900f422d509be9d87cf4efe22171ba3e9c249c036",
+      "prediction_content_changed": false,
+      "prediction_file_sha256": "cb6c128728670c7b98dcf2dc99890eead226eebcc5902148fa62ab167777dd38",
+      "semantic_prediction_sha256": "9db3daeb717567f2813af3fc25f2dd51c981c094898ee93c7e49d3a6c9c666e4"
+    },
+    "SIM-M04-PREDICTIONS-01": {
+      "approved_manifest_sha256": "6a566cba82ecb8bc5748d90f9e82deac0d68f1a0e87d4c9d4d6183957682e3e7",
+      "candidate_manifest_sha256": "c0d8d130fb6ca2c504e612d53b17874e62efc10e186897e847c42d3da0933923",
+      "prediction_content_changed": false,
+      "prediction_file_sha256": "5ca10456fbe31e6ba7a2ac00ba2d912a125ce88b31a7589275bc0a6546579454",
+      "semantic_prediction_sha256": "054cd281b0a57d2be823f3792f27056d20ed058edda65592c065cb7ef98733c7"
+    },
+    "SIM-M05-PREDICTIONS-01": {
+      "approved_manifest_sha256": "97e82c2432f454208b7e8e5676e0a9acbc1c9b9650fd55b32b57036f1470d34e",
+      "candidate_manifest_sha256": "7ca0a92b933ccbe8d1ec32058d82bf6e7b27373a1702a8ec1cee1dfb497fcca7",
+      "prediction_content_changed": false,
+      "prediction_file_sha256": "c216b6f166458238a98ded498222f8283425efb2da79f828b20a62e39da11abc",
+      "semantic_prediction_sha256": "ad2fec887cb5caf3462f043e251ebda39f060eae3a351357af986bbfae698589"
+    },
+    "SIM-M06-PREDICTIONS-01": {
+      "approved_manifest_sha256": "1d01327698856838404610abcbfacccbeb705bd883d7f56786773056dd526fcb",
+      "candidate_manifest_sha256": "5599cd88d6977673a8f5c44a6c33a67bc99a147cf5d83e4b1db1a573448cb8f9",
+      "prediction_content_changed": false,
+      "prediction_file_sha256": "b73ce6d333d562dfe9bc4c5ccc8f08705f0aa11c83acc6786dd6f226b71b3f3e",
+      "semantic_prediction_sha256": "bde6717e0a218c41bd417eba14639ddca50cc3226d1d40771f7c9acfc0714e35"
+    }
+  },
+  "part_a_modified": false,
+  "result": "PASS"
+}

@@ -94,16 +94,16 @@ def test_phase8_runner_has_no_synthetic_outcome_artifact_dependency() -> None:
         assert payload["calibration"] is False
 
 
-def test_phase8_candidate_preserves_scope_and_review_gate_when_present() -> None:
+def test_phase8_final_decision_preserves_scope_gate_when_present() -> None:
     root = Path(__file__).resolve().parents[2]
     decision = root / "reports/monitoring/PREDICTION-MONITORING-01/phase8_completion_decision.json"
     if decision.exists():
         payload = json.loads(decision.read_text(encoding="utf-8"))
         assert payload["technical_qualification"] == "PASS"
-        assert payload["review_decision"] == "PENDING_USER_PROTOCOL_OWNER_REVIEW"
-        assert payload["phase_8_complete"] is False
+        assert payload["review_decision"] == "APPROVED"
+        assert payload["phase_8_complete"] is True
         assert payload["threshold_value"] == 0.08
         assert payload["threshold_operator"] == ">="
         assert payload["performance_results_calculated"] is False
         assert payload["threshold_boundary_density_calculated"] is False
-        assert payload["phase_9_authorized"] is False
+        assert payload["phase_9_authorized"] is True

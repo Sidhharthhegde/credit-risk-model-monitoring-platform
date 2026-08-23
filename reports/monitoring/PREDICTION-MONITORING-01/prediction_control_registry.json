@@ -1,5 +1,5 @@
 {
-  "contract_sha256": "efccc1ae8e424a4602dce736d9de55f482342f988a5d27dce47be1a0f93e25c5",
+  "contract_sha256": "cb06fddad55f5cbd458a183464907a55aa9de23e9cf0dd83fc9aa7551770a80d",
   "monitoring_id": "PREDICTION-MONITORING-01",
   "score_psi": {
     "alert_record_creation_enabled": false,
@@ -13,7 +13,7 @@
     "warning": 0.1,
     "zero_frequency_application": "REPLACE_ZERO_PROPORTIONS_ONLY_THEN_RENORMALIZE"
   },
-  "status": "QUALIFIED_PENDING_REVIEW",
+  "status": "APPROVED_FROZEN",
   "threshold_output": {
     "absolute_rate_change_critical": 0.1,
     "absolute_rate_change_warning": 0.05,

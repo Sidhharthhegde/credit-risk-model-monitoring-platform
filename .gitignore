@@ -6,6 +6,7 @@ __pycache__/
 .ruff_cache/
 .coverage
 htmlcov/
+tmp/
 .venv/
 venv/
 .phase4_runtime/

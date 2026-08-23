@@ -1,0 +1,113 @@
+{
+  "aggregate_public_evidence_only": true,
+  "artifacts": [
+    {
+      "path": "dashboard_readiness_reconciliation.json",
+      "sha256": "bf801cbf966c378eef5b0b6237353f1abbf1788dcbee5abfd32814ac9ed1d0e6",
+      "size_bytes": 103
+    },
+    {
+      "path": "dependency_qualification.json",
+      "sha256": "d9b15bffd8bfa8b0e4b85c08e0c87a3e1ed6bc1a2d2c667df0d9021aa2a9b363",
+      "size_bytes": 175
+    },
+    {
+      "path": "documentation_reconciliation.json",
+      "sha256": "494391a4eaa557d19ea5f9306b8877880b9bcf0dd65865f0e0386179561807c0",
+      "size_bytes": 130
+    },
+    {
+      "path": "execution_source_manifest.json",
+      "sha256": "f55b780e47ab21cb37dde2b5f444ceedc886be697597f248296e2a743eaf55e8",
+      "size_bytes": 1988
+    },
+    {
+      "path": "final_lifecycle_contract_snapshot.json",
+      "sha256": "6ccc4a3747d207fe8a73db1969b423e5dacfb5cc0ad219e53816fda98ad06315",
+      "size_bytes": 5618
+    },
+    {
+      "path": "final_reproducibility_qualification.json",
+      "sha256": "83de3a721eec8abbf55474eedda97b7fc6ad28e50a9d7f52ec6483b10f248825",
+      "size_bytes": 415
+    },
+    {
+      "path": "frozen_write_protection_qualification.json",
+      "sha256": "2f5cc44f007c9b6691342442e51f386ba7bd0976face3e5aac90120624b3e9a0",
+      "size_bytes": 143
+    },
+    {
+      "path": "lifecycle_replay_reconciliation.json",
+      "sha256": "6815f07e3349906d960c67bd9dbad2a51c8dd69eabcfdc14803898ead318fadd",
+      "size_bytes": 4586
+    },
+    {
+      "path": "local_path_scan.json",
+      "sha256": "191d53a29e3d373b7ca5f8c65a9b819a777980c8c2f8ae980bed4aea2a73bd7a",
+      "size_bytes": 93
+    },
+    {
+      "path": "orchestration_gate_qualification.json",
+      "sha256": "6ba064b6df7b0fecbe510987d08d6660f0466abe1815fcf2771e376d03879f69",
+      "size_bytes": 600
+    },
+    {
+      "path": "orchestration_stage_registry.json",
+      "sha256": "887f343fc4ca09bb4d2dfbdcff91da5a6f734e37e2c7f3e73b07d19b06e045b9",
+      "size_bytes": 1056
+    },
+    {
+      "path": "pdf_report_qualification.json",
+      "sha256": "6905a9e1549ef2e25db39c1f405ef383c1499a00d074b51aac6edfe144d21cfa",
+      "size_bytes": 229
+    },
+    {
+      "path": "phase14_acceptance_checklist.csv",
+      "sha256": "e7da1a2a7a88979d5b6c8b15b7c6adfe5c5bd4ccdb12fb642bd59172dd693857",
+      "size_bytes": 1499
+    },
+    {
+      "path": "phase14_completion_decision.json",
+      "sha256": "891d59837df8d6ce817fb085c9b6e1d37d35dafae7959cbc4a91d99e79849732",
+      "size_bytes": 1235
+    },
+    {
+      "path": "phase_manifest_chain_reconciliation.json",
+      "sha256": "84b3f56d85dfa2f802a0ecc0704713d11b2b37c85a5f069d0503a5c1cfe8c04f",
+      "size_bytes": 5012
+    },
+    {
+      "path": "project_completion_decision.json",
+      "sha256": "2b607632ecb59060b66b8fbcffff9f8e0b8497f8d1fb31af4e3745fab1c0c6fc",
+      "size_bytes": 357
+    },
+    {
+      "path": "report_reconciliation.json",
+      "sha256": "1a30125dc405cc9f6fe186f406d9e52e263044f653de862f728eb5c3a0130e3c",
+      "size_bytes": 295
+    },
+    {
+      "path": "report_snapshot_qualification.json",
+      "sha256": "e0a191c2463cc7f09bf6da85781de109dceed516765f41a4f33535b4241b9948",
+      "size_bytes": 154
+    },
+    {
+      "path": "repository_hygiene_qualification.json",
+      "sha256": "f4632eb814d5edcfdb0a99dd6b689b9c7640ca02f08bcaa3d6edafcd4b672b89",
+      "size_bytes": 183
+    },
+    {
+      "path": "scope_protection_attestation.json",
+      "sha256": "3a50b02a04eeac6382fbd6bc8d16f11b6730aeb5555dec3e78e345c0a979c27d",
+      "size_bytes": 572
+    },
+    {
+      "path": "synthetic_evidence_attestation.json",
+      "sha256": "30e926e1fbb13a3ff737949aed243d9ffe8dba48052f6d3248881534de640a46",
+      "size_bytes": 227
+    }
+  ],
+  "created_utc": "2026-08-23T17:36:05.132987+00:00",
+  "final_lifecycle_id": "FINAL-LIFECYCLE-QUALIFICATION-01",
+  "status": "TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW"
+}

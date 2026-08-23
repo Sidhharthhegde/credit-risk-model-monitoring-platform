@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "alerts": 329,
+    "blocked_runs": 2,
+    "comparable_history_rows": 0,
+    "current_open": 329,
+    "current_open_critical": 26,
+    "metrics": 2259,
+    "phase11_source_alerts": 329,
+    "synthetic_runs": 1
+  },
+  "report_reconciles_to_phase12": true,
+  "result": "PASS"
+}

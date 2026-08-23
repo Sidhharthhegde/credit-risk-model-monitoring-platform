@@ -1110,7 +1110,11 @@ Generate the governed monitoring report, qualify the end-to-end runner and perfo
 
 ---
 
-# Phase 15 - Evidence, Persistence and Audit Trail
+# Superseded legacy roadmap (former Phases 15-18)
+
+The former Phase 15-18 roadmap below is retained only as historical planning context. Its persistence, runner, testing, dashboard and release responsibilities were completed or consolidated into authoritative Phases 12-14. It does not authorize work after Phase 14.
+
+## Legacy Phase 15 - Evidence, Persistence and Audit Trail
 
 ## Objective
 
@@ -1183,7 +1187,7 @@ Suggested tables:
 
 ---
 
-# Phase 16 - End-to-End Monitoring Runner
+## Legacy Phase 16 - End-to-End Monitoring Runner
 
 ## Objective
 
@@ -1251,7 +1255,7 @@ Write completion decision
 
 ---
 
-# Phase 17 - Test Suite and Independent Reconciliation
+## Legacy Phase 17 - Test Suite and Independent Reconciliation
 
 ## Objective
 
@@ -1321,7 +1325,7 @@ Establish credible evidence that calculations, controls and governance behaviour
 
 ---
 
-# Phase 18 - Dashboard, Monitoring Report and Public Release
+## Legacy Phase 18 - Dashboard, Monitoring Report and Public Release
 
 ## Objective
 
@@ -1602,11 +1606,11 @@ Update this table only when supported by a phase completion decision.
 | 11 | `COMPLETE` | `reports/monitoring/ALERT-ENGINE-01/phase11_completion_decision.json` | Directionality condition resolved; approved and frozen on 2026-08-23; Phase 12 authorized |
 | 12 | `COMPLETE` | `reports/persistence/MONITORING-HISTORY-01/phase12_completion_decision.json` | Run-count semantics condition resolved; approved and frozen on 2026-08-23; Phase 13 authorized |
 | 13 | `COMPLETE` | `reports/dashboard/MONITORING-DASHBOARD-01/phase13_completion_decision.json` | Approved and frozen on 2026-08-23; Phase 14 authorized |
-| 14 | `NOT_STARTED` | Not issued |  |
-| 15 | `NOT_STARTED` | Not issued |  |
-| 16 | `NOT_STARTED` | Not issued |  |
-| 17 | `NOT_STARTED` | Not issued |  |
-| 18 | `NOT_STARTED` | Not issued |  |
+| 14 | `IN_PROGRESS` | `reports/lifecycle/FINAL-LIFECYCLE-QUALIFICATION-01/phase14_completion_decision.json` | Technical qualification passed; pending owner review and final project completion decision |
+| 15 | `SUPERSEDED` | Not applicable | Consolidated into Phases 12-14 |
+| 16 | `SUPERSEDED` | Not applicable | Consolidated into Phase 14 orchestration |
+| 17 | `SUPERSEDED` | Not applicable | Consolidated into phase-specific and Phase 14 qualification |
+| 18 | `SUPERSEDED` | Not applicable | Consolidated into Phases 13-14 |
 
 Allowed status values:
 
@@ -1620,4 +1624,4 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next controlled action is Phase 14 monitoring report, orchestration and final lifecycle qualification under the approved Phase 13 freeze boundary.
+The next controlled action is owner review of the technically qualified Phase 14 candidate. Project completion remains false until the Phase 14 approval record and final frozen manifest are created.

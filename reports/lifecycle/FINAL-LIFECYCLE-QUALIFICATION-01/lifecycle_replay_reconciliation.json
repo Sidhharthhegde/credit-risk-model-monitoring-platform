@@ -1,0 +1,112 @@
+{
+  "all_phase_manifests_match": true,
+  "database_semantic_match": true,
+  "database_semantic_sha256": "48eb52d1596199abd010c42d7348a73eda80b5969805a73729897a72fbdf7900",
+  "full_upstream_calculation_replay_performed": false,
+  "history_ingestion_status": "MATERIALIZED",
+  "immutable_evidence_semantic_match": true,
+  "mode": "ISOLATED_SEMANTIC_REPLAY",
+  "phase_manifest_chain": [
+    {
+      "actual_sha256": "bd0f2a853217c3b4bae3b02f8556eadcfd4e2241a02b76f10064c585157cec70",
+      "control_id": "MONITORING-PROTOCOL-01",
+      "expected_sha256": "bd0f2a853217c3b4bae3b02f8556eadcfd4e2241a02b76f10064c585157cec70",
+      "match": true,
+      "phase": 0
+    },
+    {
+      "actual_sha256": "5bd8b767b67dc176c930a68187047fae449118189a6598fe78a58cbd35d43ba8",
+      "control_id": "RUNTIME-QUALIFICATION-01",
+      "expected_sha256": "5bd8b767b67dc176c930a68187047fae449118189a6598fe78a58cbd35d43ba8",
+      "match": true,
+      "phase": 1
+    },
+    {
+      "actual_sha256": "e58c2587d8043a2f93522452452e90966f4135bb60ff5bb80b0d6d592c2a6882",
+      "control_id": "REFERENCE-STRATEGY-01",
+      "expected_sha256": "e58c2587d8043a2f93522452452e90966f4135bb60ff5bb80b0d6d592c2a6882",
+      "match": true,
+      "phase": 2
+    },
+    {
+      "actual_sha256": "21e7279d4b746abcce1b9e6d8930a623eb35140d2b4f9ccfbe977c4914028c5a",
+      "control_id": "FEATURE-ADAPTER-QUALIFICATION-01",
+      "expected_sha256": "21e7279d4b746abcce1b9e6d8930a623eb35140d2b4f9ccfbe977c4914028c5a",
+      "match": true,
+      "phase": 3
+    },
+    {
+      "actual_sha256": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
+      "control_id": "REFERENCE-MATERIALIZATION-01",
+      "expected_sha256": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
+      "match": true,
+      "phase": 4
+    },
+    {
+      "actual_sha256": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5",
+      "control_id": "SIMULATION-SCENARIO-SET-01",
+      "expected_sha256": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5",
+      "match": true,
+      "phase": 5
+    },
+    {
+      "actual_sha256": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+      "control_id": "DATA-QUALITY-CONTROL-01",
+      "expected_sha256": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+      "match": true,
+      "phase": 6
+    },
+    {
+      "actual_sha256": "64a706d84465e0398391f9d217702343b31aa4d446864a9eca70db89bc930f17",
+      "control_id": "FEATURE-DRIFT-MONITORING-01",
+      "expected_sha256": "64a706d84465e0398391f9d217702343b31aa4d446864a9eca70db89bc930f17",
+      "match": true,
+      "phase": 7
+    },
+    {
+      "actual_sha256": "7bb910835b9b7f2df9ac612a72323d37d6395eadd907249d8a8ebd7372bb21d8",
+      "control_id": "PREDICTION-MONITORING-01",
+      "expected_sha256": "7bb910835b9b7f2df9ac612a72323d37d6395eadd907249d8a8ebd7372bb21d8",
+      "match": true,
+      "phase": 8
+    },
+    {
+      "actual_sha256": "17209d875644bfa495889fad0133a9585c5d312aa1164f4a145d4a353139bb5e",
+      "control_id": "OUTCOME-PERFORMANCE-MONITORING-01",
+      "expected_sha256": "17209d875644bfa495889fad0133a9585c5d312aa1164f4a145d4a353139bb5e",
+      "match": true,
+      "phase": 9
+    },
+    {
+      "actual_sha256": "3412307e589dd1130fb7764f5e553dbba7fa4391074c5f2644e294d85e13de59",
+      "control_id": "SEGMENT-MONITORING-01",
+      "expected_sha256": "3412307e589dd1130fb7764f5e553dbba7fa4391074c5f2644e294d85e13de59",
+      "match": true,
+      "phase": 10
+    },
+    {
+      "actual_sha256": "f95ae67527c4be02ef0db5cf2b7d98bf2bb031727b8ac280ab9b8ca3ac3b229b",
+      "control_id": "ALERT-ENGINE-01",
+      "expected_sha256": "f95ae67527c4be02ef0db5cf2b7d98bf2bb031727b8ac280ab9b8ca3ac3b229b",
+      "match": true,
+      "phase": 11
+    },
+    {
+      "actual_sha256": "967a0646b403344944a5389447873bb6d1e432afece1167d26810670774ac165",
+      "control_id": "MONITORING-HISTORY-01",
+      "expected_sha256": "967a0646b403344944a5389447873bb6d1e432afece1167d26810670774ac165",
+      "match": true,
+      "phase": 12
+    },
+    {
+      "actual_sha256": "be1e9a02751e0c948c75aba2e9664cc4e7f5361563b0702c96a7e447bf65f893",
+      "control_id": "MONITORING-DASHBOARD-01",
+      "expected_sha256": "be1e9a02751e0c948c75aba2e9664cc4e7f5361563b0702c96a7e447bf65f893",
+      "match": true,
+      "phase": 13
+    }
+  ],
+  "public_repository_full_local_replay_claimed": false,
+  "reason": "Frozen Phase 6-11 evidence is hash-verified; Phase 12 is rebuilt semantically in isolation without overwriting authoritative artifacts.",
+  "result": "PASS"
+}

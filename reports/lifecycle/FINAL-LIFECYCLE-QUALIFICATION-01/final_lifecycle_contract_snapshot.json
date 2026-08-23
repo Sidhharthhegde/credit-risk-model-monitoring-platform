@@ -1,0 +1,147 @@
+{
+  "authority_model": {
+    "frozen_source_evidence_authoritative": true,
+    "report_authoritative_evidence": false,
+    "report_reads_via_phase12_query_layer": true,
+    "report_role": "DERIVED_GOVERNANCE_PRESENTATION_ARTIFACT"
+  },
+  "contract_id": "FINAL-LIFECYCLE-CONTRACT-01",
+  "controls": {
+    "final_lifecycle_id": "FINAL-LIFECYCLE-QUALIFICATION-01",
+    "orchestrator_id": "MONITORING-ORCHESTRATOR-01",
+    "report_id": "MONITORING-REPORT-01"
+  },
+  "database_binding": {
+    "immutable_evidence_semantic_sha256": "013ecaf72438d585d54a8ed75bb79ed912ea76f3ee3f49a6f15334ef8bee95fe",
+    "initial_complete_semantic_sha256": "48eb52d1596199abd010c42d7348a73eda80b5969805a73729897a72fbdf7900",
+    "operational_state_may_advance_append_only": true,
+    "path": "artifacts/monitoring_history/MONITORING-HISTORY-01/monitoring_history.db"
+  },
+  "frozen_write_roots": [
+    "reports/protocol",
+    "reports/qualification",
+    "reports/reference",
+    "reports/adapter",
+    "reports/simulation",
+    "reports/monitoring",
+    "reports/persistence",
+    "reports/dashboard"
+  ],
+  "orchestration_modes": {
+    "default": "VERIFY_FROZEN",
+    "public_repository_full_local_replay_claimed": false,
+    "qualification_replay": "ISOLATED_SEMANTIC_REPLAY",
+    "qualification_replay_overwrites_frozen_evidence": false,
+    "verify_frozen_writes_upstream": false
+  },
+  "part_a_binding": {
+    "commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+    "working_tree_must_be_clean": true
+  },
+  "permitted_phase14_write_roots": [
+    "reports/monitoring_report",
+    "reports/lifecycle",
+    "artifacts/qualification_replay"
+  ],
+  "phase": "PHASE_14_MONITORING_REPORT_ORCHESTRATION_AND_FINAL_LIFECYCLE_QUALIFICATION",
+  "phase_manifest_chain": [
+    {
+      "control_id": "MONITORING-PROTOCOL-01",
+      "path": "reports/protocol/MONITORING-PROTOCOL-01/protocol_manifest.json",
+      "phase": 0,
+      "sha256": "bd0f2a853217c3b4bae3b02f8556eadcfd4e2241a02b76f10064c585157cec70"
+    },
+    {
+      "control_id": "RUNTIME-QUALIFICATION-01",
+      "path": "reports/qualification/RUNTIME-QUALIFICATION-01/qualification_manifest.json",
+      "phase": 1,
+      "sha256": "5bd8b767b67dc176c930a68187047fae449118189a6598fe78a58cbd35d43ba8"
+    },
+    {
+      "control_id": "REFERENCE-STRATEGY-01",
+      "path": "reports/reference/REFERENCE-STRATEGY-01/reference_strategy_manifest.json",
+      "phase": 2,
+      "sha256": "e58c2587d8043a2f93522452452e90966f4135bb60ff5bb80b0d6d592c2a6882"
+    },
+    {
+      "control_id": "FEATURE-ADAPTER-QUALIFICATION-01",
+      "path": "reports/adapter/FEATURE-ADAPTER-QUALIFICATION-01/qualification_manifest.json",
+      "phase": 3,
+      "sha256": "21e7279d4b746abcce1b9e6d8930a623eb35140d2b4f9ccfbe977c4914028c5a"
+    },
+    {
+      "control_id": "REFERENCE-MATERIALIZATION-01",
+      "path": "reports/reference/REFERENCE-MATERIALIZATION-01/manifest.json",
+      "phase": 4,
+      "sha256": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc"
+    },
+    {
+      "control_id": "SIMULATION-SCENARIO-SET-01",
+      "path": "reports/simulation/SIMULATION-SCENARIO-SET-01/manifest.json",
+      "phase": 5,
+      "sha256": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5"
+    },
+    {
+      "control_id": "DATA-QUALITY-CONTROL-01",
+      "path": "reports/monitoring/DATA-QUALITY-CONTROL-01/manifest.json",
+      "phase": 6,
+      "sha256": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b"
+    },
+    {
+      "control_id": "FEATURE-DRIFT-MONITORING-01",
+      "path": "reports/monitoring/FEATURE-DRIFT-MONITORING-01/manifest.json",
+      "phase": 7,
+      "sha256": "64a706d84465e0398391f9d217702343b31aa4d446864a9eca70db89bc930f17"
+    },
+    {
+      "control_id": "PREDICTION-MONITORING-01",
+      "path": "reports/monitoring/PREDICTION-MONITORING-01/manifest.json",
+      "phase": 8,
+      "sha256": "7bb910835b9b7f2df9ac612a72323d37d6395eadd907249d8a8ebd7372bb21d8"
+    },
+    {
+      "control_id": "OUTCOME-PERFORMANCE-MONITORING-01",
+      "path": "reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01/manifest.json",
+      "phase": 9,
+      "sha256": "17209d875644bfa495889fad0133a9585c5d312aa1164f4a145d4a353139bb5e"
+    },
+    {
+      "control_id": "SEGMENT-MONITORING-01",
+      "path": "reports/monitoring/SEGMENT-MONITORING-01/manifest.json",
+      "phase": 10,
+      "sha256": "3412307e589dd1130fb7764f5e553dbba7fa4391074c5f2644e294d85e13de59"
+    },
+    {
+      "control_id": "ALERT-ENGINE-01",
+      "path": "reports/monitoring/ALERT-ENGINE-01/manifest.json",
+      "phase": 11,
+      "sha256": "f95ae67527c4be02ef0db5cf2b7d98bf2bb031727b8ac280ab9b8ca3ac3b229b"
+    },
+    {
+      "control_id": "MONITORING-HISTORY-01",
+      "path": "reports/persistence/MONITORING-HISTORY-01/manifest.json",
+      "phase": 12,
+      "sha256": "967a0646b403344944a5389447873bb6d1e432afece1167d26810670774ac165"
+    },
+    {
+      "control_id": "MONITORING-DASHBOARD-01",
+      "path": "reports/dashboard/MONITORING-DASHBOARD-01/manifest.json",
+      "phase": 13,
+      "sha256": "be1e9a02751e0c948c75aba2e9664cc4e7f5361563b0702c96a7e447bf65f893"
+    }
+  ],
+  "scope_controls": {
+    "cnd_02_status": "OPEN",
+    "model_fitting": false,
+    "model_recalibration": false,
+    "new_alert_rules": false,
+    "new_feature_engineering": false,
+    "new_monitoring_thresholds": false,
+    "threshold_boundary_density_status": "CONTROLLED_DEFERRED",
+    "threshold_retuning": false,
+    "upstream_evidence_rewriting": false,
+    "upstream_severity_rewriting": false
+  },
+  "status": "FROZEN_PROSPECTIVE_EXECUTION_SPECIFICATION",
+  "version": "0.1.0"
+}

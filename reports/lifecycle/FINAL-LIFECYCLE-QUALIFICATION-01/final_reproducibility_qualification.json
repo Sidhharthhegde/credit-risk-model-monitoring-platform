@@ -1,0 +1,10 @@
+{
+  "database_rebuild_semantic_reproducibility": "PASS",
+  "full_local_replay_requirement": "GOVERNED_LOCAL_DATA_MODEL_AND_ROW_LEVEL_ARTIFACTS_REQUIRED",
+  "full_upstream_calculation_replay_qualified": false,
+  "isolated_semantic_replay_qualified": true,
+  "part_a_commit_verified": true,
+  "phase_0_through_13_manifests_verified": true,
+  "public_repository_full_local_replay_claimed": false,
+  "result": "PASS"
+}

@@ -1,0 +1,25 @@
+control_id,control,result
+P14-001,Part A frozen commit and Phase 0-13 manifests verified,PASS
+P14-002,Phase 12 immutable evidence digest bound,PASS
+P14-003,Default orchestration mode is frozen-evidence verification,PASS
+P14-004,Frozen upstream output writes fail closed,PASS
+P14-005,Hard-fail source-governance and outcome-maturity gates preserve dimensional semantics,PASS
+P14-006,M01-M05 outcomes remain not assessable,PASS
+P14-007,M06 remains synthetic scenario evidence,PASS
+P14-008,Report reads Phase 12 query projections and recalculates no monitoring result,PASS
+P14-009,HTML report generated and reconciled,PASS
+P14-010,PDF report generated rendered and visually inspected,PASS
+P14-011,Report is non-authoritative and point-in-time,PASS
+P14-012,Dashboard readiness reconciles,PASS
+P14-013,Phase 12 database rebuild semantic digest reconciles,PASS
+P14-014,Isolated semantic replay uses only approved output root,PASS
+P14-015,Full upstream calculation replay is not overclaimed,PASS
+P14-016,Tracked-source local-path scan passes,PASS
+P14-017,Secret scan passes,PASS
+P14-018,No raw data model binary or database is tracked,PASS
+P14-019,Dependency declarations and lock agree,PASS
+P14-020,Phase documentation numbering reconciles,PASS
+P14-021,No model refit recalibration threshold retuning or new monitoring rules,PASS
+P14-022,CND-02 remains open,PASS
+P14-023,Threshold-boundary density remains controlled deferred,PASS
+P14-024,Owner approval remains separate from technical qualification,PASS

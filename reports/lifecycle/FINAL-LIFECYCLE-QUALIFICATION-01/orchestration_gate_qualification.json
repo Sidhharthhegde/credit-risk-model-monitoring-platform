@@ -1,0 +1,23 @@
+{
+  "all_gates_pass": true,
+  "cases": {
+    "authorized": {
+      "authoritative_use": true,
+      "state": "AUTHORIZED",
+      "technical_scoring": true
+    },
+    "hard_fail": {
+      "authoritative_use": false,
+      "state": "BLOCKED_HARD_GATE",
+      "technical_scoring": false
+    },
+    "outcome_unavailable": "SKIPPED_NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE",
+    "source_governance": {
+      "authoritative_use": false,
+      "state": "BLOCKED_SOURCE_GOVERNANCE",
+      "technical_scoring": true
+    },
+    "synthetic_outcome": "EXECUTED_SYNTHETIC_SCENARIO_EVIDENCE"
+  },
+  "result": "PASS"
+}

@@ -1,0 +1,234 @@
+{
+  "context": {
+    "calendar_interpretation": false,
+    "production_shaped_simulation": true,
+    "real_production_deployment": false
+  },
+  "counts": {
+    "alerts": 329,
+    "blocked_runs": 2,
+    "comparable_history_rows": 0,
+    "current_open": 329,
+    "current_open_critical": 26,
+    "metrics": 2259,
+    "phase11_source_alerts": 329,
+    "synthetic_runs": 1
+  },
+  "limitations": [
+    "CND-02 remains OPEN",
+    "Threshold-boundary-density remains CONTROLLED_DEFERRED",
+    "Synthetic outcomes only",
+    "No production deployment",
+    "No empirical production performance",
+    "No external validation",
+    "No fairness or regulatory certification",
+    "No real lending decisions"
+  ],
+  "m04_prediction_example": {
+    "score_psi": {
+      "severity": "NORMAL",
+      "value": 0.0768875432191162
+    }
+  },
+  "m06_performance": {
+    "brier_score": {
+      "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+      "role": "SUPPORTING_CORROBORATION",
+      "severity": "N/A",
+      "value": 0.1236676807831321
+    },
+    "false_negative_rate": {
+      "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+      "role": "DERIVED_ONLY",
+      "severity": "N/A",
+      "value": 0.6046720575022462
+    },
+    "gini": {
+      "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+      "role": "DERIVED_ONLY",
+      "severity": "N/A",
+      "value": 0.11603598657635028
+    },
+    "log_loss": {
+      "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+      "role": "SUPPORTING_CORROBORATION",
+      "severity": "N/A",
+      "value": 0.45686767023224345
+    },
+    "observed_expected_ratio": {
+      "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+      "role": "DIRECT_ALERT_DRIVER",
+      "severity": "CRITICAL",
+      "value": 1.79656491496535
+    },
+    "performance_ks": {
+      "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+      "role": "DIRECT_ALERT_DRIVER",
+      "severity": "CRITICAL",
+      "value": 0.10589981626869754
+    },
+    "pr_auc_average_precision": {
+      "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+      "role": "SUPPORTING_CORROBORATION",
+      "severity": "N/A",
+      "value": 0.17351895060444444
+    },
+    "precision": {
+      "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+      "role": "SUPPORTING_CORROBORATION",
+      "severity": "N/A",
+      "value": 0.17474185861795075
+    },
+    "recall_default_capture": {
+      "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+      "role": "DIRECT_ALERT_DRIVER",
+      "severity": "CRITICAL",
+      "value": 0.3953279424977538
+    },
+    "roc_auc": {
+      "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+      "role": "DIRECT_ALERT_DRIVER",
+      "severity": "CRITICAL",
+      "value": 0.5580179932881751
+    },
+    "specificity": {
+      "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+      "role": "SUPPORTING_CORROBORATION",
+      "severity": "N/A",
+      "value": 0.7036086150335188
+    }
+  },
+  "model": {
+    "freeze": "DF-01",
+    "model_id": "XGBT-01",
+    "threshold": "PD >= 0.080",
+    "threshold_id": "THRESHOLD-01"
+  },
+  "report_authoritative_evidence": false,
+  "report_id": "MONITORING-REPORT-01",
+  "report_role": "DERIVED_GOVERNANCE_PRESENTATION_ARTIFACT",
+  "scenarios": [
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "authorization": "AUTHORIZED",
+      "current_acknowledged": 0,
+      "current_critical": 5,
+      "current_open": 63,
+      "current_resolved": 0,
+      "current_warning": 58,
+      "evidence_scope": "LABEL_FREE_ONLY",
+      "evidence_type": "MONITORING_EVIDENCE",
+      "label": "SIM-M04 \u2014 Material Valid Population / Score-Driver Drift",
+      "overall_health": "CRITICAL",
+      "scenario_id": "SIM-M04"
+    },
+    {
+      "artifact_id": "SIM-M01-SCENARIO-01",
+      "authorization": "AUTHORIZED",
+      "current_acknowledged": 0,
+      "current_critical": 3,
+      "current_open": 46,
+      "current_resolved": 0,
+      "current_warning": 43,
+      "evidence_scope": "LABEL_FREE_ONLY",
+      "evidence_type": "MONITORING_EVIDENCE",
+      "label": "SIM-M01 \u2014 Stable Control",
+      "overall_health": "CRITICAL",
+      "scenario_id": "SIM-M01"
+    },
+    {
+      "artifact_id": "SIM-M02-SCENARIO-01",
+      "authorization": "AUTHORIZED",
+      "current_acknowledged": 0,
+      "current_critical": 3,
+      "current_open": 46,
+      "current_resolved": 0,
+      "current_warning": 43,
+      "evidence_scope": "LABEL_FREE_ONLY",
+      "evidence_type": "MONITORING_EVIDENCE",
+      "label": "SIM-M02 \u2014 Stable Longitudinal Control",
+      "overall_health": "CRITICAL",
+      "scenario_id": "SIM-M02"
+    },
+    {
+      "artifact_id": "SIM-M05-HARD-FAIL-01",
+      "authorization": "BLOCKED_HARD_GATE",
+      "current_acknowledged": 0,
+      "current_critical": 1,
+      "current_open": 1,
+      "current_resolved": 0,
+      "current_warning": 0,
+      "evidence_scope": "NOT_ASSESSABLE",
+      "evidence_type": "CONTROL_QUALIFICATION_EVIDENCE",
+      "label": "SIM-M05 \u2014 Hard Contract / Grain Failure",
+      "overall_health": "NOT_ASSESSABLE",
+      "scenario_id": "SIM-M05"
+    },
+    {
+      "artifact_id": "SIM-M06-SCENARIO-01",
+      "authorization": "AUTHORIZED",
+      "current_acknowledged": 0,
+      "current_critical": 7,
+      "current_open": 56,
+      "current_resolved": 0,
+      "current_warning": 49,
+      "evidence_scope": "FULL_OUTCOME_ELIGIBLE",
+      "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+      "label": "SIM-M06 \u2014 Synthetic Concept / Performance Deterioration",
+      "overall_health": "CRITICAL",
+      "scenario_id": "SIM-M06"
+    },
+    {
+      "artifact_id": "SIM-M03-SCENARIO-01",
+      "authorization": "AUTHORIZED",
+      "current_acknowledged": 0,
+      "current_critical": 3,
+      "current_open": 66,
+      "current_resolved": 0,
+      "current_warning": 63,
+      "evidence_scope": "LABEL_FREE_ONLY",
+      "evidence_type": "MONITORING_EVIDENCE",
+      "label": "SIM-M03 \u2014 Mild Valid Population Drift",
+      "overall_health": "CRITICAL",
+      "scenario_id": "SIM-M03"
+    },
+    {
+      "artifact_id": "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+      "authorization": "BLOCKED_SOURCE_GOVERNANCE",
+      "current_acknowledged": 0,
+      "current_critical": 1,
+      "current_open": 1,
+      "current_resolved": 0,
+      "current_warning": 0,
+      "evidence_scope": "NOT_ASSESSABLE",
+      "evidence_type": "CONTROL_QUALIFICATION_EVIDENCE",
+      "label": "SIM-M05 \u2014 Source-Loss Governance Block",
+      "overall_health": "NOT_ASSESSABLE",
+      "scenario_id": "SIM-M05"
+    },
+    {
+      "artifact_id": "SIM-M05-VALID-DEGRADED-01",
+      "authorization": "AUTHORIZED",
+      "current_acknowledged": 0,
+      "current_critical": 3,
+      "current_open": 50,
+      "current_resolved": 0,
+      "current_warning": 47,
+      "evidence_scope": "LABEL_FREE_ONLY",
+      "evidence_type": "MONITORING_EVIDENCE",
+      "label": "SIM-M05 \u2014 Valid Data Quality / Source Degradation",
+      "overall_health": "CRITICAL",
+      "scenario_id": "SIM-M05"
+    }
+  ],
+  "segments": {
+    "evidence_role": "CONTEXT_ONLY_V1",
+    "families": 12,
+    "levels": 32,
+    "m06_discrimination_eligible": 21,
+    "m06_discrimination_insufficient": 11,
+    "m06_threshold_eligible": 26,
+    "m06_threshold_insufficient": 6
+  },
+  "snapshot_utc": "2026-08-23T17:36:02.838527+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "cnd_02_status": "OPEN",
+  "empirical_production_performance": false,
+  "external_validation": false,
+  "fairness_certification": false,
+  "model_fitting": false,
+  "model_production_approved": false,
+  "model_recalibration": false,
+  "new_alert_rules": false,
+  "new_feature_engineering": false,
+  "new_monitoring_thresholds": false,
+  "real_production_deployment": false,
+  "result": "PASS",
+  "threshold_boundary_density_status": "CONTROLLED_DEFERRED",
+  "threshold_retuning": false,
+  "upstream_evidence_rewriting": false,
+  "upstream_severity_rewriting": false
+}

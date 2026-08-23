@@ -1,0 +1,61 @@
+{
+  "result": "PASS",
+  "stages": [
+    {
+      "order": 0,
+      "stage_id": "VERIFY_FROZEN_BINDINGS"
+    },
+    {
+      "order": 1,
+      "stage_id": "RUNTIME_MODEL_BINDING"
+    },
+    {
+      "order": 2,
+      "stage_id": "INPUT_SCENARIO_QUALIFICATION"
+    },
+    {
+      "order": 3,
+      "stage_id": "DATA_QUALITY_SOURCE_AUTHORITY"
+    },
+    {
+      "order": 4,
+      "stage_id": "FEATURE_DRIFT"
+    },
+    {
+      "order": 5,
+      "stage_id": "PREDICTION"
+    },
+    {
+      "order": 6,
+      "stage_id": "OUTCOME_MATURITY_GATE"
+    },
+    {
+      "order": 7,
+      "stage_id": "PERFORMANCE_CALIBRATION"
+    },
+    {
+      "order": 8,
+      "stage_id": "SEGMENT_MONITORING"
+    },
+    {
+      "order": 9,
+      "stage_id": "ALERT_HEALTH_AGGREGATION"
+    },
+    {
+      "order": 10,
+      "stage_id": "HISTORY_PERSISTENCE"
+    },
+    {
+      "order": 11,
+      "stage_id": "MONITORING_REPORT"
+    },
+    {
+      "order": 12,
+      "stage_id": "DASHBOARD_READINESS"
+    },
+    {
+      "order": 13,
+      "stage_id": "COMPLETION_EVIDENCE"
+    }
+  ]
+}

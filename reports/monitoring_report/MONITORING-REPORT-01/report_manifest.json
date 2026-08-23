@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "path": "monitoring_report.html",
+      "sha256": "c6f1a729f5b73c7d03ae719a18fbe7b67b48cd20f555a9ecbdfd8a1557412be8",
+      "size_bytes": 6640
+    },
+    {
+      "path": "monitoring_report.pdf",
+      "sha256": "13a25ae7ad662ba50bbf8cf2a54dd3ea1480054f25aa7bfc2c19e923176817da",
+      "size_bytes": 5195
+    },
+    {
+      "path": "monitoring_report_snapshot.json",
+      "sha256": "9dde8f1640e373130da2dfdaa568728a1f958be439284c86df67ae08011456e0",
+      "size_bytes": 7258
+    }
+  ],
+  "report_authoritative_evidence": false,
+  "report_id": "MONITORING-REPORT-01",
+  "status": "TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW"
+}

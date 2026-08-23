@@ -6,9 +6,9 @@ Part B will demonstrate data-quality monitoring, population and feature drift, r
 
 ## Current status
 
-`PHASE_13_APPROVED_FROZEN`
+`PHASE_14_TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW`
 
-Phases 0–13 are approved and frozen. The six-page local Streamlit/Plotly `MONITORING-DASHBOARD-01` consumes the governed Phase 12 repository and preserves dynamic lifecycle-ledger state separately from frozen Phase 11 source counts. Phase 14 report, orchestration and final lifecycle qualification is authorized.
+Phases 0–13 are approved and frozen. Phase 14 has produced a governed HTML/PDF monitoring report, a verification-first lifecycle orchestrator and a final technical qualification package. Phase 14 and project completion remain pending owner review.
 
 ## Important scope statement
 
@@ -37,6 +37,53 @@ The fitted model remains in the governed local Part A workspace. It is not copie
 ## Run the dashboard
 
 From this repository, use `scripts/run_phase13_dashboard.py` with the isolated dependencies in `requirements-lock.txt`. The interface is a local, non-authoritative presentation and investigation layer; lifecycle actions are written only through the Phase 12 append-only service.
+
+## Architecture
+
+```text
+Frozen Part A model and governed Part B evidence
+  -> Phase 12 SQLite query/lifecycle layer
+  -> Phase 13 dashboard and Phase 14 monitoring report
+  -> Phase 14 verification and reproducibility evidence
+```
+
+The dashboard and report are presentation artifacts. Frozen source artifacts remain authoritative.
+
+## Local commands
+
+Run tests:
+
+```powershell
+python -m pytest
+```
+
+Rebuild the local Phase 12 history store:
+
+```powershell
+python scripts/run_phase12_qualification.py
+```
+
+Generate or verify the current monitoring report:
+
+```powershell
+python scripts/run_monitoring_lifecycle.py --mode verify-frozen
+```
+
+Run isolated semantic replay qualification:
+
+```powershell
+python scripts/run_monitoring_lifecycle.py --mode qualification-replay
+```
+
+Full local replay requires the governed local model, raw data and ignored row-level artifacts. The public repository supports architecture review, aggregate evidence, tests and semantic verification; it does not claim to recreate excluded governed inputs immediately after cloning.
+
+## Final limitations
+
+- `CND-02` remains open.
+- Threshold-boundary-density monitoring remains `CONTROLLED_DEFERRED`.
+- M06 performance is synthetic scenario evidence, not empirical production performance.
+- The model is not represented as deployed or approved for production.
+- No external validation, fairness certification or regulatory certification is claimed.
 
 ## Licence
 

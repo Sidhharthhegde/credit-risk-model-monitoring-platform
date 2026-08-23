@@ -9,3 +9,5 @@ xgboost==3.3.0
 streamlit==1.61.1
 plotly==6.9.0
 PyYAML==6.0.3
+reportlab==4.4.9
+pypdf==6.10.0

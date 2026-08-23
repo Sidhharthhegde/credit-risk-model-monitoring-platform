@@ -1,0 +1,10 @@
+{
+  "decision": "PENDING_PHASE_14_OWNER_REVIEW",
+  "empirical_production_performance_evidence": false,
+  "external_validation": false,
+  "fairness_certification": false,
+  "model_production_approved": false,
+  "production_shaped_monitoring_lifecycle_demo_complete": false,
+  "project_implementation_complete": false,
+  "real_production_deployment": false
+}

@@ -1,8 +1,14 @@
 {
   "aggregate_public_evidence_only": true,
   "alerts_included": false,
-  "approval_record_included": false,
+  "approval_record_included": true,
+  "approved_utc": "2026-08-23T07:02:19.191397+00:00",
   "artifacts": [
+    {
+      "path": "approval_hash_reconciliation.json",
+      "sha256": "9fe848654a77c6ba34c84b594043f7f885f1012767c50efeb8fd2d361489b34e",
+      "size_bytes": 6435
+    },
     {
       "path": "cross_phase_reconciliation.json",
       "sha256": "6aa3cf78628ef17b5c99abdc8bf171386a421514a0155f824b67a0f09141e046",
@@ -10,8 +16,8 @@
     },
     {
       "path": "execution_source_manifest.json",
-      "sha256": "89a352b4349a4f09969def9a99908f214f6c4543c1be0b9fee9649749481d394",
-      "size_bytes": 2163
+      "sha256": "b08bc40272e2a4139dc1730e31c5cad8dad8968c14e160e539fc0d6c0cbf29d0",
+      "size_bytes": 2352
     },
     {
       "path": "insufficient_evidence_summary.csv",
@@ -20,13 +26,18 @@
     },
     {
       "path": "phase10_acceptance_checklist.csv",
-      "sha256": "e8e2f2b2f91f6bf370e67fc822bc3c30c8d291edb5f8b4abc091e4aabdfb1d22",
-      "size_bytes": 1922
+      "sha256": "1784ea4caf96606b060a8a5c5a5f2a0d906953490091debd3de57fce5f3000e7",
+      "size_bytes": 2046
+    },
+    {
+      "path": "phase10_approval_record.json",
+      "sha256": "b983de843a3dfdb84149a52608a103d1a157db8eb5b910d19ce58f4722d15257",
+      "size_bytes": 617
     },
     {
       "path": "phase10_completion_decision.json",
-      "sha256": "89a67232e1e5a22d267c0cff02d8bce50b04df5f9f6e9b6b65e1d102e8a24e5f",
-      "size_bytes": 1759
+      "sha256": "d65f02f371acf20e18bb1dced3896614110d09eee0f6632e2fedb2b00c9a6990",
+      "size_bytes": 1878
     },
     {
       "path": "reproducibility_qualification.json",
@@ -104,9 +115,13 @@
       "size_bytes": 249
     }
   ],
+  "calculated_evidence_unchanged_during_approval": true,
+  "candidate_manifest_sha256": "db5e400932538e82aaaa1013f4209d49abbaf74633515417bf19e68926cfb963",
   "created_utc": "2026-08-23T06:53:43.269841+00:00",
   "monitoring_id": "SEGMENT-MONITORING-01",
   "overall_model_health_included": false,
+  "prospective_contract_sha256": "b524d351f4e01e7a67f356dc782a9e297f51a14c44703366e63edf9d43d305a4",
+  "prospective_contract_unchanged_during_approval": true,
   "row_level_segment_membership_included": false,
-  "status": "QUALIFIED_PENDING_REVIEW"
+  "status": "APPROVED_FROZEN"
 }

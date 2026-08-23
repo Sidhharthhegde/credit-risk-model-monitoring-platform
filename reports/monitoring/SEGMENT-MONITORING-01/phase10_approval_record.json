@@ -1,0 +1,13 @@
+{
+  "approved_utc": "2026-08-23T07:02:19.191397+00:00",
+  "calculated_evidence_changed": false,
+  "candidate_manifest_sha256": "db5e400932538e82aaaa1013f4209d49abbaf74633515417bf19e68926cfb963",
+  "cnd_02_status": "OPEN",
+  "decision": "APPROVED",
+  "frozen_phase_0_through_9_manifests_changed": false,
+  "monitoring_id": "SEGMENT-MONITORING-01",
+  "next_phase_authorized": "PHASE_11_ALERT_ENGINE_BREACH_AGGREGATION_AND_MODEL_HEALTH",
+  "phase": "PHASE_10",
+  "prospective_contract_changed_during_approval": false,
+  "prospective_contract_sha256": "b524d351f4e01e7a67f356dc782a9e297f51a14c44703366e63edf9d43d305a4"
+}

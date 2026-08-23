@@ -6,9 +6,9 @@ Part B will demonstrate data-quality monitoring, population and feature drift, r
 
 ## Current status
 
-`PHASE_10_TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW`
+`PHASE_10_APPROVED_FROZEN`
 
-Phases 0–9 are approved and frozen. `SEGMENT-MONITORING-01` has passed technical qualification across all 12 frozen Part A subgroup families and 32 exact levels. All six scenarios received label-free segment monitoring; only M06 received sufficiency-gated synthetic outcome monitoring. Owner review is pending, Phase 10 is not frozen, and Phase 11 is not authorized.
+Phases 0–10 are approved and frozen. `SEGMENT-MONITORING-01` covers all 12 frozen Part A subgroup families and 32 exact levels through one generic engine. All six scenarios receive label-free segment monitoring; only M06 receives sufficiency-gated synthetic outcome monitoring. Phase 11 alert-engine, breach-aggregation and model-health design is authorized but has not been executed.
 
 ## Important scope statement
 

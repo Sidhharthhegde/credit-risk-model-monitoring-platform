@@ -1,0 +1,111 @@
+{
+  "all_calculated_evidence_unchanged": true,
+  "all_frozen_phase_manifests_unchanged": true,
+  "calculated_evidence": {
+    "cross_phase_reconciliation.json": {
+      "approved_sha256": "6aa3cf78628ef17b5c99abdc8bf171386a421514a0155f824b67a0f09141e046",
+      "candidate_sha256": "6aa3cf78628ef17b5c99abdc8bf171386a421514a0155f824b67a0f09141e046",
+      "unchanged": true
+    },
+    "insufficient_evidence_summary.csv": {
+      "approved_sha256": "f5eaf812a22f8592013e64b8ba336b5a675969fe6a3a426e3715ef28fb5860ae",
+      "candidate_sha256": "f5eaf812a22f8592013e64b8ba336b5a675969fe6a3a426e3715ef28fb5860ae",
+      "unchanged": true
+    },
+    "reproducibility_qualification.json": {
+      "approved_sha256": "cff0a0dca606a70f61cc9fc453635081046c275d0f214739994312fca6c7d017",
+      "candidate_sha256": "cff0a0dca606a70f61cc9fc453635081046c275d0f214739994312fca6c7d017",
+      "unchanged": true
+    },
+    "scope_protection_attestation.json": {
+      "approved_sha256": "c2a111ec5355612519ecf6c5ba35ced1f0e7b1baed60d09363354e5910d029ec",
+      "candidate_sha256": "c2a111ec5355612519ecf6c5ba35ced1f0e7b1baed60d09363354e5910d029ec",
+      "unchanged": true
+    },
+    "segment_assignment_reconciliation.json": {
+      "approved_sha256": "ad2100dd5f64d2d48b6ecec1a0bf8ac04a307ef615888219c990eca617ff08b1",
+      "candidate_sha256": "ad2100dd5f64d2d48b6ecec1a0bf8ac04a307ef615888219c990eca617ff08b1",
+      "unchanged": true
+    },
+    "segment_calibration_results.parquet": {
+      "approved_sha256": "cd2e76d038b12e70f9224ee16ff117a40335b06feda05c1ffe7bb6c9bca3059d",
+      "candidate_sha256": "cd2e76d038b12e70f9224ee16ff117a40335b06feda05c1ffe7bb6c9bca3059d",
+      "unchanged": true
+    },
+    "segment_definition_registry.json": {
+      "approved_sha256": "90651ed1a7466acfbc63c5350567d04a0f8df0cf88c72dc50c2f0b684f80a883",
+      "candidate_sha256": "90651ed1a7466acfbc63c5350567d04a0f8df0cf88c72dc50c2f0b684f80a883",
+      "unchanged": true
+    },
+    "segment_monitoring_contract_snapshot.json": {
+      "approved_sha256": "910308c730f7feac637d757e077269e8422d7f95eb453b9220a4607bb5e8efce",
+      "candidate_sha256": "910308c730f7feac637d757e077269e8422d7f95eb453b9220a4607bb5e8efce",
+      "unchanged": true
+    },
+    "segment_monitoring_summary.csv": {
+      "approved_sha256": "b32b9f641fde08a7857b8103f8297b3883fe7ac5a1c30988577513c2e29bde21",
+      "candidate_sha256": "b32b9f641fde08a7857b8103f8297b3883fe7ac5a1c30988577513c2e29bde21",
+      "unchanged": true
+    },
+    "segment_outcome_eligibility.parquet": {
+      "approved_sha256": "2a6331753f6f60921423f69c4a108fdfde2b1ba09f919906bef40ab17eee9373",
+      "candidate_sha256": "2a6331753f6f60921423f69c4a108fdfde2b1ba09f919906bef40ab17eee9373",
+      "unchanged": true
+    },
+    "segment_performance_results.parquet": {
+      "approved_sha256": "3e7aad312f5c69a2d2b5e84d28ddd1df32efef23c1be873a614be678bda7638a",
+      "candidate_sha256": "3e7aad312f5c69a2d2b5e84d28ddd1df32efef23c1be873a614be678bda7638a",
+      "unchanged": true
+    },
+    "segment_population_results.parquet": {
+      "approved_sha256": "3a503df25178d7224c46929f7cc6322cebcfa017ef2f44ea84d40255a6e456c3",
+      "candidate_sha256": "3a503df25178d7224c46929f7cc6322cebcfa017ef2f44ea84d40255a6e456c3",
+      "unchanged": true
+    },
+    "segment_prediction_results.parquet": {
+      "approved_sha256": "60073f3a7e8786bbbcfd4b38bcd890846edf3efa45ce188ff13f269c5335a290",
+      "candidate_sha256": "60073f3a7e8786bbbcfd4b38bcd890846edf3efa45ce188ff13f269c5335a290",
+      "unchanged": true
+    },
+    "segment_reference_materialization.json": {
+      "approved_sha256": "c6875c3f1511febbe47f01aaa3dcadc4a70e5d7202a717c8d5eea35bdbea475a",
+      "candidate_sha256": "c6875c3f1511febbe47f01aaa3dcadc4a70e5d7202a717c8d5eea35bdbea475a",
+      "unchanged": true
+    },
+    "segment_score_psi_results.parquet": {
+      "approved_sha256": "af5c2e666c3cdb60bd1d02f81f624548c895790daa47103e0640bf94c2d6b6e7",
+      "candidate_sha256": "af5c2e666c3cdb60bd1d02f81f624548c895790daa47103e0640bf94c2d6b6e7",
+      "unchanged": true
+    },
+    "segment_threshold_results.parquet": {
+      "approved_sha256": "191931d7cd53d1cfcbca1a68f06c638dc83d1baeb16e223c42988284a525fb9a",
+      "candidate_sha256": "191931d7cd53d1cfcbca1a68f06c638dc83d1baeb16e223c42988284a525fb9a",
+      "unchanged": true
+    },
+    "synthetic_evidence_attestation.json": {
+      "approved_sha256": "977c358ba21cc18904011c212bd0d2561a2fb918a200d709a8d3e0378ae01ff0",
+      "candidate_sha256": "977c358ba21cc18904011c212bd0d2561a2fb918a200d709a8d3e0378ae01ff0",
+      "unchanged": true
+    }
+  },
+  "candidate_manifest_sha256": "db5e400932538e82aaaa1013f4209d49abbaf74633515417bf19e68926cfb963",
+  "frozen_phase_manifests": {
+    "reports/adapter/FEATURE-ADAPTER-QUALIFICATION-01/qualification_manifest.json": "21e7279d4b746abcce1b9e6d8930a623eb35140d2b4f9ccfbe977c4914028c5a",
+    "reports/monitoring/DATA-QUALITY-CONTROL-01/manifest.json": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+    "reports/monitoring/FEATURE-DRIFT-MONITORING-01/manifest.json": "64a706d84465e0398391f9d217702343b31aa4d446864a9eca70db89bc930f17",
+    "reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01/manifest.json": "17209d875644bfa495889fad0133a9585c5d312aa1164f4a145d4a353139bb5e",
+    "reports/monitoring/PREDICTION-MONITORING-01/manifest.json": "7bb910835b9b7f2df9ac612a72323d37d6395eadd907249d8a8ebd7372bb21d8",
+    "reports/protocol/MONITORING-PROTOCOL-01/protocol_manifest.json": "bd0f2a853217c3b4bae3b02f8556eadcfd4e2241a02b76f10064c585157cec70",
+    "reports/qualification/RUNTIME-QUALIFICATION-01/qualification_manifest.json": "5bd8b767b67dc176c930a68187047fae449118189a6598fe78a58cbd35d43ba8",
+    "reports/reference/REFERENCE-MATERIALIZATION-01/manifest.json": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
+    "reports/reference/REFERENCE-STRATEGY-01/reference_strategy_manifest.json": "e58c2587d8043a2f93522452452e90966f4135bb60ff5bb80b0d6d592c2a6882",
+    "reports/simulation/SIMULATION-SCENARIO-SET-01/manifest.json": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5"
+  },
+  "label_free_result_row_count": 192,
+  "m06_outcome_result_row_count": 32,
+  "part_a_modified": false,
+  "phase8_reconciliation_failures": 0,
+  "phase9_threshold_reconciliation_failures": 0,
+  "prospective_contract_sha256": "b524d351f4e01e7a67f356dc782a9e297f51a14c44703366e63edf9d43d305a4",
+  "result": "PASS"
+}

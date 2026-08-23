@@ -1,4 +1,5 @@
 {
+  "approval_finalizer_included": true,
   "creation_code_version": "PHASE10-SEGMENT-MONITOR-0.1.0",
   "frozen_dependencies": {
     "dev_val_snapshot_manifest_sha256": "2b9d5a0fe42989e50c0063b366b98e7a8102171f5aa460b766444d83e03a7c4f",
@@ -30,6 +31,10 @@
     {
       "path": "scripts/run_phase10_monitoring.py",
       "sha256": "b6682c01d23ae194abd11b984a6d9e59de3f757fcdd00695bced870361f257d7"
+    },
+    {
+      "path": "scripts/finalize_phase10_approval.py",
+      "sha256": "cb5d7829d9b2faa467f612a95085dea5fb1b0eaccec79aa1cd30cf0511fd6388"
     }
   ],
   "monitoring_id": "SEGMENT-MONITORING-01",

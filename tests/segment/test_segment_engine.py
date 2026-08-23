@@ -61,15 +61,21 @@ def test_frozen_threshold_boundary_remains_greater_than_or_equal() -> None:
     ]
 
 
-def test_phase10_candidate_scope_and_outcome_isolation_when_present() -> None:
+def test_phase10_final_scope_and_outcome_isolation_when_present() -> None:
     root = Path(__file__).resolve().parents[2]
     report = root / "reports/monitoring/SEGMENT-MONITORING-01"
     if report.exists():
         decision = json.loads((report / "phase10_completion_decision.json").read_text(encoding="utf-8"))
         assert decision["technical_qualification"] == "PASS"
-        assert decision["review_decision"] == "PENDING_USER_PROTOCOL_OWNER_REVIEW"
-        assert decision["phase_10_complete"] is False
-        assert decision["phase_11_authorized"] is False
+        assert decision["review_decision"] == "APPROVED"
+        assert decision["phase_10_complete"] is True
+        assert decision["phase_11_authorized"] is True
+        assert decision["new_segments_created"] is False
+        assert decision["post_result_segment_consolidation"] is False
+        assert decision["m06_discrimination_eligible_segments"] == 21
+        assert decision["m06_discrimination_insufficient_segments"] == 11
+        assert decision["m06_threshold_eligible_segments"] == 26
+        assert decision["m06_threshold_insufficient_segments"] == 6
         for scenario in range(1, 6):
             assert decision[f"m0{scenario}_outcome_segment_results"] == "NOT_ASSESSABLE"
         scope = json.loads((report / "scope_protection_attestation.json").read_text(encoding="utf-8"))

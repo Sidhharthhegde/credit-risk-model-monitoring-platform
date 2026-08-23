@@ -35,9 +35,9 @@
 | `contracts/outcome_performance_monitoring_contract.json` | 0.1.0 | Approved and frozen | Phase 9 outcome availability, simulation maturity, evidence eligibility, metric, severity and scope contract |
 | `src/credit_risk_monitoring/outcome/` | 0.1.0 | Implemented and tested | Exact prediction/outcome reconciliation plus synthetic performance, calibration-band and threshold-performance calculations |
 | `reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01/` | 0.1.0 | Approved and frozen | Aggregate Phase 9 synthetic evidence; no joined row-level evidence, alerts, subgroup results or overall health |
-| `contracts/segment_monitoring_contract.json` | 0.1.0 | Frozen prospective specification; pending result review | Phase 10 definition, reference, sufficiency, severity and scope contract |
+| `contracts/segment_monitoring_contract.json` | 0.1.0 | Frozen prospective specification; evidence approved | Phase 10 definition, reference, sufficiency, severity and scope contract; unchanged during result approval |
 | `src/credit_risk_monitoring/segment/` | 0.1.0 | Implemented and tested | Generic frozen-definition assignment, segment reference, label-free and sufficiency-gated outcome engine |
-| `reports/monitoring/SEGMENT-MONITORING-01/` | 0.1.0 | Technically qualified; pending owner review | Aggregate Phase 10 evidence across 12 families and 32 frozen levels; no row-level membership, alerts, fairness certification or overall health |
+| `reports/monitoring/SEGMENT-MONITORING-01/` | 0.1.0 | Approved and frozen | Aggregate Phase 10 evidence across 12 families and 32 frozen levels; no row-level membership, alerts, fairness certification or overall health |
 | `configs/model_config.yaml` | 0.1.0 | Approved and frozen | Semantic model metadata referencing the binding |
 | `configs/monitoring_config.yaml` | 0.1.0 | Approved and frozen | Monitoring scope and execution policy |
 | `configs/alert_thresholds.yaml` | 0.1.0 | Approved and frozen | Project-defined alert assumptions |

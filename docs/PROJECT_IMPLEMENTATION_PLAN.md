@@ -1680,7 +1680,7 @@ Update this table only when supported by a phase completion decision.
 | 7 | `COMPLETE` | `reports/monitoring/FEATURE-DRIFT-MONITORING-01/phase7_completion_decision.json` | Approved and frozen on 2026-08-22; Phase 8 authorized |
 | 8 | `COMPLETE` | `reports/monitoring/PREDICTION-MONITORING-01/phase8_completion_decision.json` | Approved and frozen on 2026-08-23; Phase 9 authorized |
 | 9 | `COMPLETE` | `reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01/phase9_completion_decision.json` | Conditional taxonomy issue resolved; approved and frozen on 2026-08-23; Phase 10 authorized |
-| 10 | `IN_PROGRESS` | `reports/monitoring/SEGMENT-MONITORING-01/phase10_completion_decision.json` | Technical qualification passed on 2026-08-23; owner review pending; Phase 11 unauthorized |
+| 10 | `COMPLETE` | `reports/monitoring/SEGMENT-MONITORING-01/phase10_completion_decision.json` | Approved and frozen on 2026-08-23; prospective contract unchanged; Phase 11 authorized |
 | 11 | `NOT_STARTED` | Not issued |  |
 | 12 | `NOT_STARTED` | Not issued |  |
 | 13 | `NOT_STARTED` | Not issued |  |
@@ -1702,12 +1702,12 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next controlled action is owner review of the technically qualified Phase 10 candidate:
+The next authorized work is Phase 11 alert-engine, breach-aggregation and model-health design:
 
-1. Review `SEGMENT-MONITORING-01`, its manifest and acceptance checklist.
-2. Confirm the 12-family/32-level definition binding and reference lineage.
-3. Confirm the independent M06 sufficiency gates and null metrics for insufficient segments.
-4. Confirm segment-share and Score PSI severities remain `N/A` and no alert or fairness claim exists.
-5. Approve and freeze Phase 10 separately before authorizing Phase 11.
+1. Define the component-to-alert mapping prospectively before generating alerts.
+2. Resolve repeat-breach, hard-gate override, lifecycle and aggregation rules explicitly.
+3. Keep metric severity, alert state and overall model health as separate dimensions.
+4. Address controlled-deferred performance limits and uncertainty rules through explicit governance.
+5. Preserve frozen Phase 6–10 evidence as immutable alert-engine inputs.
 
-Phase 10 is technically qualified but not complete or frozen. Phase 11 is not authorized.
+Phase 10 is approved and frozen. Phase 11 design is authorized but not executed.

@@ -1,0 +1,31 @@
+{
+  "applicant_identifier_columns": [],
+  "expected_tables_present": true,
+  "expected_views_present": true,
+  "foreign_keys_enabled": true,
+  "result": "PASS",
+  "schema_version": 1,
+  "tables": [
+    "alert_events",
+    "alerts",
+    "artifact_lineage",
+    "component_health",
+    "metric_evidence",
+    "monitoring_runs",
+    "phase_manifests",
+    "run_health",
+    "schema_metadata"
+  ],
+  "views": [
+    "v_alerts_with_lineage",
+    "v_blocked_runs",
+    "v_comparable_metric_history",
+    "v_current_alert_state",
+    "v_metric_evidence_with_lineage",
+    "v_open_alerts",
+    "v_open_critical_alerts",
+    "v_run_component_health",
+    "v_run_summary",
+    "v_synthetic_evidence"
+  ]
+}

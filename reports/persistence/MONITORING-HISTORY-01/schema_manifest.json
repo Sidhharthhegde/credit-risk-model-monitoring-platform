@@ -1,0 +1,8 @@
+{
+  "migration_path": "migrations/001_initial_monitoring_history.sql",
+  "migration_sha256": "06fe752bcf610911b0ecbc930decfefdcf625064d885cf0714607f660eb9a7cb",
+  "pragma_user_version": 1,
+  "schema_path": "schemas/monitoring_history_schema.sql",
+  "schema_sha256": "06fe752bcf610911b0ecbc930decfefdcf625064d885cf0714607f660eb9a7cb",
+  "schema_version": 1
+}

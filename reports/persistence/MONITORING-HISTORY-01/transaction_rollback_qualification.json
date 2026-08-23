@@ -1,0 +1,5 @@
+{
+  "forced_failure_after_staged_records": 100,
+  "partial_evidence_rows_after_rollback": 0,
+  "result": "PASS"
+}

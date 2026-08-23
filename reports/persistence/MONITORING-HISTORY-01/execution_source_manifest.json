@@ -1,0 +1,50 @@
+{
+  "creation_code_version": "PHASE12-MONITORING-HISTORY-0.1.0",
+  "history_store_id": "MONITORING-HISTORY-01",
+  "sources": [
+    {
+      "path": "contracts/monitoring_history_contract.json",
+      "sha256": "774577dae31352c045e112d28c49bdf787a4a3ece34af164c2d9a500d7469b91"
+    },
+    {
+      "path": "schemas/monitoring_history_schema.sql",
+      "sha256": "06fe752bcf610911b0ecbc930decfefdcf625064d885cf0714607f660eb9a7cb"
+    },
+    {
+      "path": "migrations/001_initial_monitoring_history.sql",
+      "sha256": "06fe752bcf610911b0ecbc930decfefdcf625064d885cf0714607f660eb9a7cb"
+    },
+    {
+      "path": "src/credit_risk_monitoring/history/store.py",
+      "sha256": "3456b30e028a93041916ecb49141d06813b130931852fb9ad56f0d29eb8d4b63"
+    },
+    {
+      "path": "src/credit_risk_monitoring/history/schema.py",
+      "sha256": "7d68109832da0c96bb094ddb3e9937de6814f4695a1e44c46156468cdb7d6ce4"
+    },
+    {
+      "path": "src/credit_risk_monitoring/history/ingest.py",
+      "sha256": "95ed6b91795e5dafda3f53d0ac375cd9555d0e375704d0e7f831287fd0881689"
+    },
+    {
+      "path": "src/credit_risk_monitoring/history/digest.py",
+      "sha256": "7560aecfa2667b34b6c995448441b881aad58a7ad9c3c6f398c36ee3fcf2e9ce"
+    },
+    {
+      "path": "src/credit_risk_monitoring/history/lifecycle.py",
+      "sha256": "6054614d9b122db1370fb924df8bdd9430c5bfb0d73ea5fbbc789dfdb0155346"
+    },
+    {
+      "path": "src/credit_risk_monitoring/history/queries.py",
+      "sha256": "ab474d1102c31f7696d2374d0b2652c352127d538910e51bd10ee1db0bc96fec"
+    },
+    {
+      "path": "src/credit_risk_monitoring/history/qualification.py",
+      "sha256": "545b8da78ecd10e388486a5d2acebe83affb13d8e23c1f9e8c6f69480af03880"
+    },
+    {
+      "path": "scripts/run_phase12_qualification.py",
+      "sha256": "29d5b03c53e161d0ab74839b0378a06bab322289344d7a4d3ec57e79599bad19"
+    }
+  ]
+}

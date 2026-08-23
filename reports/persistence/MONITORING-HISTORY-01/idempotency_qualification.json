@@ -1,0 +1,9 @@
+{
+  "first_status": "MATERIALIZED",
+  "result": "PASS",
+  "same_identity_different_content_policy": "HARD_FAIL_SOURCE_CONFLICT",
+  "second_existing_rows": 3233,
+  "second_inserted_rows": 0,
+  "second_status": "IDEMPOTENT_NO_OP",
+  "semantic_digest_unchanged": true
+}

@@ -1,0 +1,18 @@
+{
+  "aggregate_public_qualification_evidence_only": true,
+  "all_scope_controls_pass": true,
+  "applicant_level_evidence_persisted": false,
+  "dashboard_created": false,
+  "database_committed": false,
+  "database_path": "artifacts/monitoring_history/MONITORING-HISTORY-01/monitoring_history.db",
+  "model_refit": false,
+  "monitoring_report_created": false,
+  "new_alert_generation": false,
+  "overall_health_recalculation": false,
+  "recalibration": false,
+  "threshold_boundary_density_status": "CONTROLLED_DEFERRED",
+  "threshold_retuning": false,
+  "upstream_evidence_read_only": true,
+  "upstream_metric_recalculation": false,
+  "upstream_severity_recalculation": false
+}

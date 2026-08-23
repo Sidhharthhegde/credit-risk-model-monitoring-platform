@@ -1,0 +1,9 @@
+{
+  "database_authoritative_evidence": false,
+  "database_role": "DERIVED_QUERY_AND_OPERATIONAL_PERSISTENCE_LAYER",
+  "first_ingestion_status": "MATERIALIZED",
+  "frozen_source_evidence_authoritative": true,
+  "inserted_rows": 3233,
+  "result": "PASS",
+  "single_transaction": true
+}

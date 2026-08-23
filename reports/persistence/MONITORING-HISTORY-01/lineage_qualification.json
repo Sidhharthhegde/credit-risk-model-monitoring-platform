@@ -1,0 +1,9 @@
+{
+  "alert_records_with_resolved_lineage": 329,
+  "all_alert_lineage_resolved": true,
+  "all_metric_lineage_resolved": true,
+  "artifact_lineage_rows": 231,
+  "metric_records_with_resolved_lineage": 2259,
+  "phase_manifest_rows": 12,
+  "result": "PASS"
+}

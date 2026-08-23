@@ -1,0 +1,10 @@
+{
+  "all_current_calendar_interpretation_false": true,
+  "all_current_comparable_longitudinal_run_false": true,
+  "all_current_periods_null": true,
+  "comparable_feature_history_rows": 0,
+  "current_persistence_status": "NOT_ASSESSABLE_NO_COMPARABLE_LONGITUDINAL_HISTORY",
+  "current_scenario_persistence_claimed": false,
+  "result": "PASS",
+  "run_count": 8
+}

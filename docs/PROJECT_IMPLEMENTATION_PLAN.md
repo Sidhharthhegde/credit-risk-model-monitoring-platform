@@ -1011,40 +1011,45 @@ Convert frozen Phase 6–10 monitoring evidence into governed alerts, authorizat
 
 ---
 
-# Phase 12 - Matured Threshold-Policy Monitoring
+# Phase 12 - Monitoring History, Evidence Persistence and Query Layer
 
 ## Objective
 
-Evaluate realised behaviour of the frozen `0.080` analytical risk-classification policy on eligible mature cohorts.
+Persist the frozen Phase 11 monitoring record in a durable, rebuildable SQLite query and operational-lifecycle layer without changing any upstream metric, severity, alert or health result.
 
-## Metrics
+## Authority model
 
-- Recall/default capture.
-- Specificity.
-- Precision.
-- Confusion matrix.
-- Risk-positive rate.
-- Risk-negative rate.
-- Risk-negative default rate.
-- Optional F1 as secondary evidence only.
+- Frozen Phase 0–11 manifests and artifacts remain authoritative.
+- SQLite is a derived query and operational-persistence representation.
+- The generated `.db` is local, Git-ignored and rebuildable.
+- Semantic table digests, rather than physical SQLite layout, govern reproducibility.
 
 ## Tasks
 
-1. Apply exactly `>= 0.080`.
-2. Reconcile classifications with Phase 8 outputs.
-3. Enforce mature outcomes.
-4. Enforce threshold/error-rate minimum evidence rules.
-5. Compare default capture with the project-defined 70% assumption.
-6. Use uncertainty-aware breach logic.
-7. Avoid automatic threshold adjustment.
-8. Preserve analytical `risk_positive`/`risk_negative` language.
-9. Record that the threshold is not an economic lending policy or regulatory standard.
+1. Bind and verify the complete Phase 0–11 manifest chain and Phase 11 canonical artifacts.
+2. Install schema version 1 from an executable governed migration with foreign keys and check constraints.
+3. Persist eight scenario-artifact runs, 2,259 normalized metric candidates, 329 alerts, 56 component-health rows and eight run-health records exactly.
+4. Preserve upstream component-specific source run IDs while using a deterministic history-run identity at the scenario-artifact grain.
+5. Import one deterministic `CREATED -> OPEN` event for each frozen alert.
+6. Keep imported evidence immutable and future operational lifecycle events append-only.
+7. Implement all-or-nothing ingestion, idempotent exact replay and fail-closed source conflicts.
+8. Persist Phase 0–11 manifest and artifact lineage.
+9. Generate primary-key-ordered table digests plus aggregate immutable and complete database semantic digests.
+10. Qualify a clean rebuild, forced rollback and lifecycle transitions using temporary databases.
+11. Expose parameterized repository queries and governed views for runs, alerts, health, metrics, lineage, blocked runs and synthetic evidence.
+12. Preserve `calendar_interpretation = false`, null periods and non-comparable history for all current scenarios.
+13. Commit aggregate qualification evidence only; create no dashboard, monitoring report or applicant-level store.
 
 ## Completion criteria
 
-- Boundary and confusion-matrix tests pass.
-- Immature or insufficient cohorts do not produce misleading metrics.
-- Any recommendation for threshold revision explicitly requires a new governed model version.
+- Exact source and database row counts reconcile.
+- All current alert states are 329 `OPEN`, zero `ACKNOWLEDGED` and zero `RESOLVED`.
+- Identical ingestion is a no-op; conflicting content fails closed.
+- Forced failure leaves no partial imported evidence.
+- Clean rebuilds produce the same semantic database digest.
+- Current simulations produce zero comparable longitudinal-history rows.
+- Every metric and alert resolves to authoritative lineage.
+- Phase 12 remains pending owner approval until separately frozen.
 
 ---
 
@@ -1670,7 +1675,7 @@ Update this table only when supported by a phase completion decision.
 | 9 | `COMPLETE` | `reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01/phase9_completion_decision.json` | Conditional taxonomy issue resolved; approved and frozen on 2026-08-23; Phase 10 authorized |
 | 10 | `COMPLETE` | `reports/monitoring/SEGMENT-MONITORING-01/phase10_completion_decision.json` | Approved and frozen on 2026-08-23; prospective contract unchanged; Phase 11 authorized |
 | 11 | `COMPLETE` | `reports/monitoring/ALERT-ENGINE-01/phase11_completion_decision.json` | Directionality condition resolved; approved and frozen on 2026-08-23; Phase 12 authorized |
-| 12 | `NOT_STARTED` | Not issued |  |
+| 12 | `IN_PROGRESS` | `reports/persistence/MONITORING-HISTORY-01/phase12_completion_decision.json` | Technical qualification passed on 2026-08-23; owner review pending; Phase 13 unauthorized |
 | 13 | `NOT_STARTED` | Not issued |  |
 | 14 | `NOT_STARTED` | Not issued |  |
 | 15 | `NOT_STARTED` | Not issued |  |
@@ -1690,4 +1695,4 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next controlled action is Phase 12 protocol review and implementation planning for monitoring history, evidence persistence and the query layer. Phase 12 is authorized but remains unexecuted. It must preserve the Phase 11 rule that simulated M01–M06 scenarios are not a calendar history and must not manufacture persistence claims.
+The next controlled action is owner review of the technically qualified `MONITORING-HISTORY-01` package. Review must confirm database non-authority, exact row reconciliation, semantic rebuild reproducibility, lifecycle-event separation, complete lineage, and the absence of calendar or persistence claims. Phase 12 is not complete or frozen, and Phase 13 is not authorized.

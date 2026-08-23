@@ -6,9 +6,9 @@ Part B will demonstrate data-quality monitoring, population and feature drift, r
 
 ## Current status
 
-`PHASE_11_APPROVED_FROZEN`
+`PHASE_12_TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW`
 
-Phases 0–11 are approved and frozen. `ALERT-ENGINE-01` uses read-only Phase 6–10 evidence, deterministic alert IDs, explicitly directed reference-derived performance limits, separate authorization/evidence/health dimensions, and governed lifecycle and persistence controls. Phase 12 history, evidence-persistence and query-layer design is authorized but not started.
+Phases 0–11 are approved and frozen. `MONITORING-HISTORY-01` has passed technical qualification as a local, rebuildable SQLite query and operational-persistence layer over frozen Phase 11 evidence. The database is non-authoritative and ignored by Git; owner review is pending, Phase 12 is not frozen, and Phase 13 is not authorized.
 
 ## Important scope statement
 

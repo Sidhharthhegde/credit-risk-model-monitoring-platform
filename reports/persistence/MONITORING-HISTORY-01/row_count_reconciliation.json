@@ -1,0 +1,28 @@
+{
+  "acknowledged_alerts": 0,
+  "alerts_reconcile": true,
+  "database_counts": {
+    "alert_events": 329,
+    "alerts": 329,
+    "artifact_lineage": 231,
+    "component_health": 56,
+    "metric_evidence": 2259,
+    "monitoring_runs": 8,
+    "phase_manifests": 12,
+    "run_health": 8,
+    "schema_metadata": 1
+  },
+  "initial_open_alerts": 329,
+  "normalized_candidates_reconcile": true,
+  "resolved_alerts": 0,
+  "result": "PASS",
+  "source_counts": {
+    "alerts": 329,
+    "authorization": 8,
+    "component_health": 56,
+    "evidence_scope": 8,
+    "normalized_candidates": 2259,
+    "overall_health": 8
+  },
+  "unique_alert_ids": 329
+}

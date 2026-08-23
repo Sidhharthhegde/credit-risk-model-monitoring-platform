@@ -1,0 +1,191 @@
+{
+  "authority_model": {
+    "database_engine": "SQLITE",
+    "database_is_authoritative_evidence": false,
+    "database_rebuildable_from_frozen_sources": true,
+    "database_role": "DERIVED_QUERY_AND_OPERATIONAL_PERSISTENCE_LAYER",
+    "frozen_source_artifacts_remain_authoritative": true,
+    "physical_database_committed": false
+  },
+  "contract_id": "MONITORING-HISTORY-CONTRACT-01",
+  "history_store_id": "MONITORING-HISTORY-01",
+  "identity": {
+    "created_event_id": "EVT-PLUS-FIRST_24_UPPER_HEX_OF_SHA256_ALERT_ID_PIPE_CREATED",
+    "history_run_id": "HRUN-PLUS-FIRST_24_UPPER_HEX_OF_SHA256_SCENARIO_ARTIFACT_ID",
+    "metric_record_id": "MET-PLUS-FIRST_24_UPPER_HEX_OF_SHA256_CANONICAL_SOURCE_ROW",
+    "run_fingerprint_canonical_fields": [
+      "model_version",
+      "scenario_id",
+      "scenario_artifact_id",
+      "phase11_manifest_sha256",
+      "authorization_state",
+      "evidence_scope"
+    ],
+    "source_row_key": "SHA256_CANONICAL_SOURCE_ROW"
+  },
+  "lifecycle": {
+    "allowed_transitions": {
+      "ACKNOWLEDGED": [
+        "RESOLVED"
+      ],
+      "OPEN": [
+        "ACKNOWLEDGED"
+      ],
+      "RESOLVED": []
+    },
+    "enterprise_authentication_claimed": false,
+    "initial_actor_type": "SYSTEM_IMPORT",
+    "initial_import_event": "CREATED",
+    "initial_status": "OPEN",
+    "operational_actor_type": "LOCAL_DEMO_USER"
+  },
+  "model": {
+    "cnd_02_status": "OPEN",
+    "development_freeze_id": "DF-01",
+    "model_id": "XGBT-01",
+    "model_version": "xgbt01_raw_threshold01_df_v1",
+    "threshold_id": "THRESHOLD-01",
+    "threshold_operator": ">=",
+    "threshold_value": 0.08
+  },
+  "phase": "PHASE_12_MONITORING_HISTORY_EVIDENCE_PERSISTENCE_AND_QUERY_LAYER",
+  "phase11_sources": {
+    "alerts": {
+      "expected_rows": 329,
+      "path": "reports/monitoring/ALERT-ENGINE-01/alert_results.parquet",
+      "sha256": "f089ac48a1389a3ca67b2d19c9b7631e11f41350595cfaf03daf374f1198e6c0"
+    },
+    "authorization": {
+      "expected_rows": 8,
+      "path": "reports/monitoring/ALERT-ENGINE-01/authorization_results.json",
+      "sha256": "e12040a5cbf145a46feca01d9e59899784c2050ba0d04274c9d9a2cae462d571"
+    },
+    "component_health": {
+      "expected_rows": 56,
+      "path": "reports/monitoring/ALERT-ENGINE-01/component_health_results.parquet",
+      "sha256": "f18327edfc7de35a77a90f707ab4edeb29556fe1558e09e1c5cbc794ac408055"
+    },
+    "evidence_scope": {
+      "expected_rows": 8,
+      "path": "reports/monitoring/ALERT-ENGINE-01/evidence_scope_results.json",
+      "sha256": "9047b18479a0adc3081f363ab69bab0076ffedf2e849d8d576bf224db0336a74"
+    },
+    "normalized_candidates": {
+      "expected_rows": 2259,
+      "path": "reports/monitoring/ALERT-ENGINE-01/normalized_breach_candidates.parquet",
+      "sha256": "e50ae8e8254ea22a422080d921b011aaa56a519d742e59c638c5d421086a77a5"
+    },
+    "overall_health": {
+      "expected_rows": 8,
+      "path": "reports/monitoring/ALERT-ENGINE-01/overall_health_results.parquet",
+      "sha256": "36f3de3d1cb017a9895177b7e84cf0bf429a90b01895198d8583aa2175f4c5ab"
+    }
+  },
+  "phase_manifests": [
+    {
+      "control_id": "MONITORING-PROTOCOL-01",
+      "path": "reports/protocol/MONITORING-PROTOCOL-01/protocol_manifest.json",
+      "phase": 0,
+      "sha256": "bd0f2a853217c3b4bae3b02f8556eadcfd4e2241a02b76f10064c585157cec70"
+    },
+    {
+      "control_id": "RUNTIME-QUALIFICATION-01",
+      "path": "reports/qualification/RUNTIME-QUALIFICATION-01/qualification_manifest.json",
+      "phase": 1,
+      "sha256": "5bd8b767b67dc176c930a68187047fae449118189a6598fe78a58cbd35d43ba8"
+    },
+    {
+      "control_id": "REFERENCE-STRATEGY-01",
+      "path": "reports/reference/REFERENCE-STRATEGY-01/reference_strategy_manifest.json",
+      "phase": 2,
+      "sha256": "e58c2587d8043a2f93522452452e90966f4135bb60ff5bb80b0d6d592c2a6882"
+    },
+    {
+      "control_id": "FEATURE-ADAPTER-QUALIFICATION-01",
+      "path": "reports/adapter/FEATURE-ADAPTER-QUALIFICATION-01/qualification_manifest.json",
+      "phase": 3,
+      "sha256": "21e7279d4b746abcce1b9e6d8930a623eb35140d2b4f9ccfbe977c4914028c5a"
+    },
+    {
+      "control_id": "REFERENCE-MATERIALIZATION-01",
+      "path": "reports/reference/REFERENCE-MATERIALIZATION-01/manifest.json",
+      "phase": 4,
+      "sha256": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc"
+    },
+    {
+      "control_id": "SIMULATION-SCENARIO-SET-01",
+      "path": "reports/simulation/SIMULATION-SCENARIO-SET-01/manifest.json",
+      "phase": 5,
+      "sha256": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5"
+    },
+    {
+      "control_id": "DATA-QUALITY-CONTROL-01",
+      "path": "reports/monitoring/DATA-QUALITY-CONTROL-01/manifest.json",
+      "phase": 6,
+      "sha256": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b"
+    },
+    {
+      "control_id": "FEATURE-DRIFT-MONITORING-01",
+      "path": "reports/monitoring/FEATURE-DRIFT-MONITORING-01/manifest.json",
+      "phase": 7,
+      "sha256": "64a706d84465e0398391f9d217702343b31aa4d446864a9eca70db89bc930f17"
+    },
+    {
+      "control_id": "PREDICTION-MONITORING-01",
+      "path": "reports/monitoring/PREDICTION-MONITORING-01/manifest.json",
+      "phase": 8,
+      "sha256": "7bb910835b9b7f2df9ac612a72323d37d6395eadd907249d8a8ebd7372bb21d8"
+    },
+    {
+      "control_id": "OUTCOME-PERFORMANCE-MONITORING-01",
+      "path": "reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01/manifest.json",
+      "phase": 9,
+      "sha256": "17209d875644bfa495889fad0133a9585c5d312aa1164f4a145d4a353139bb5e"
+    },
+    {
+      "control_id": "SEGMENT-MONITORING-01",
+      "path": "reports/monitoring/SEGMENT-MONITORING-01/manifest.json",
+      "phase": 10,
+      "sha256": "3412307e589dd1130fb7764f5e553dbba7fa4391074c5f2644e294d85e13de59"
+    },
+    {
+      "control_id": "ALERT-ENGINE-01",
+      "path": "reports/monitoring/ALERT-ENGINE-01/manifest.json",
+      "phase": 11,
+      "sha256": "f95ae67527c4be02ef0db5cf2b7d98bf2bb031727b8ac280ab9b8ca3ac3b229b"
+    }
+  ],
+  "schema": {
+    "append_only_operational_events": true,
+    "foreign_keys_required": true,
+    "immutable_imported_evidence": true,
+    "migration_path": "migrations/001_initial_monitoring_history.sql",
+    "migration_sha256": "06fe752bcf610911b0ecbc930decfefdcf625064d885cf0714607f660eb9a7cb",
+    "schema_path": "schemas/monitoring_history_schema.sql",
+    "schema_sha256": "06fe752bcf610911b0ecbc930decfefdcf625064d885cf0714607f660eb9a7cb",
+    "version": 1
+  },
+  "scope_controls": {
+    "applicant_level_evidence_persisted": false,
+    "dashboard_created": false,
+    "model_refit": false,
+    "monitoring_report_created": false,
+    "new_alert_generation": false,
+    "overall_health_recalculation": false,
+    "recalibration": false,
+    "threshold_boundary_density_status": "CONTROLLED_DEFERRED",
+    "threshold_retuning": false,
+    "upstream_evidence_read_only": true,
+    "upstream_metric_recalculation": false,
+    "upstream_severity_recalculation": false
+  },
+  "status": "FROZEN_PROSPECTIVE_EXECUTION_SPECIFICATION",
+  "temporal_semantics": {
+    "current_period_start_end": null,
+    "current_scenario_persistence_status": "NOT_ASSESSABLE_NO_COMPARABLE_LONGITUDINAL_HISTORY",
+    "current_scenarios_calendar_interpretation": false,
+    "current_scenarios_comparable_longitudinal_runs": false,
+    "trend_queries_default_to_comparable_runs_only": true
+  },
+  "version": "0.1.0"
+}

@@ -42,6 +42,12 @@
 | `contracts/alert_engine_contract.json` | 0.1.1 | Approved and frozen | Phase 11 read-only dependency, fail-closed directionality, policy, scope and aggregation contract |
 | `src/credit_risk_monitoring/alert/` | 0.1.1 | Implemented and tested | Generic breach qualification, deterministic alerts, lifecycle, persistence, component and overall-health engine |
 | `reports/monitoring/ALERT-ENGINE-01/` | 0.1.1 | Approved and frozen | Aggregate Phase 11 policies, alerts, authorization, evidence-scope, health and approval evidence |
+| `contracts/monitoring_history_contract.json` | 0.1.0 | Frozen prospective specification; pending result review | Phase 12 authority model, frozen source bindings, deterministic identities, temporal semantics and lifecycle rules |
+| `schemas/monitoring_history_schema.sql` | 1 | Frozen prospective specification; pending result review | Versioned SQLite tables, views, constraints, indexes and immutability controls |
+| `migrations/001_initial_monitoring_history.sql` | 1 | Frozen prospective specification; pending result review | Executable initial SQLite migration identical to the governed schema |
+| `src/credit_risk_monitoring/history/` | 0.1.0 | Implemented and tested | Fail-closed ingestion, semantic digests, append-only lifecycle persistence and parameterized query repository |
+| `artifacts/monitoring_history/MONITORING-HISTORY-01/` | 0.1.0 | Local-only; technically qualified | Rebuildable generated SQLite database; ignored by Git and not authoritative evidence |
+| `reports/persistence/MONITORING-HISTORY-01/` | 0.1.0 | Technically qualified; pending owner review | Aggregate Phase 12 schema, ingestion, reconciliation, lifecycle, temporal, query, lineage and rebuild evidence |
 | `configs/model_config.yaml` | 0.1.0 | Approved and frozen | Semantic model metadata referencing the binding |
 | `configs/monitoring_config.yaml` | 0.1.0 | Approved and frozen | Monitoring scope and execution policy |
 | `configs/alert_thresholds.yaml` | 0.1.0 | Approved and frozen | Project-defined alert assumptions |

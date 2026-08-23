@@ -1,0 +1,30 @@
+control_id,control,result
+P12-001,Phase 11 approved frozen manifest and Phase 0 through 11 chain verified,PASS
+P12-002,Persistence contract and versioned schema frozen before materialization,PASS
+P12-003,SQLite is derived query and operational persistence rather than authoritative evidence,PASS
+P12-004,Frozen source artifacts remain authoritative and database is rebuildable,PASS
+P12-005,Foreign keys and check constraints are enabled,PASS
+P12-006,Imported evidence is immutable and lifecycle events are append-only,PASS
+P12-007,Schema contains no applicant-level identifier columns,PASS
+P12-008,Frozen hashes are verified before database writes,PASS
+P12-009,Ingestion is transactional and forced failure leaves zero partial evidence rows,PASS
+P12-010,Identical ingestion is an idempotent no-op,PASS
+P12-011,Same identity with different governed content fails closed,PASS
+P12-012,All 2259 normalized candidates reconcile,PASS
+P12-013,All 329 exact alert identifiers reconcile,PASS
+P12-014,All 56 component-health rows and 8 overall-health rows reconcile,PASS
+P12-015,Authorization evidence scope and synthetic evidence type reconcile,PASS
+P12-016,All 329 initial alert states are OPEN from CREATED import events,PASS
+P12-017,Lifecycle qualification uses a fixture copy and leaves base alerts unchanged,PASS
+P12-018,Valid forward and invalid backward lifecycle transitions are enforced,PASS
+P12-019,Current scenarios retain calendar interpretation false and null periods,PASS
+P12-020,Current scenarios are excluded from comparable longitudinal history,PASS
+P12-021,Parameterized repository queries and governed views are qualified,PASS
+P12-022,All metric and alert evidence resolves to authoritative lineage,PASS
+P12-023,Phase 0 through 11 manifest lineage is persisted,PASS
+P12-024,Clean rebuild reproduces the database semantic digest,PASS
+P12-025,Physical database hash is recorded but is not the primary reproducibility control,PASS
+P12-026,No model monitoring metrics alerts severities or health states are recalculated,PASS
+P12-027,No dashboard monitoring report or applicant-level evidence is created,PASS
+P12-028,CND-02 remains open and threshold boundary density remains controlled deferred,PASS
+P12-029,Owner approval and Phase 13 authorization remain separate,PASS

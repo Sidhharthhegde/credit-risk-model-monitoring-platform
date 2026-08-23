@@ -1,0 +1,46 @@
+{
+  "database_physical_sha256": "eac49ab23e12f86f3ea1ea0f4f57f2002f07d3a492a35478b5bf0ef5062c8fde",
+  "database_physical_size_bytes": 2236416,
+  "database_semantic_sha256": "2e688ab1ba26ae19efdcc04c90f7bf85b537b8443735841ffa216b311a8073f7",
+  "digest_method": "CANONICAL_JSON_SORTED_BY_PRIMARY_KEY_SHA256",
+  "immutable_evidence_semantic_sha256": "fd6abd3b9e1935b497e12a981afd1a67c8be44a075de2ee8e9048173a7d4530a",
+  "physical_database_hash_is_authoritative": false,
+  "tables": {
+    "alert_events": {
+      "row_count": 329,
+      "semantic_sha256": "6e5c8bda305d5111e94ea4f8cb511aff7cf6c3823361ba1097d83c3fa05ea734"
+    },
+    "alerts": {
+      "row_count": 329,
+      "semantic_sha256": "1bb83aadee68010e9031f0cc8b5a7fe98420d7b17f89e7543fbbc74414c0ba4b"
+    },
+    "artifact_lineage": {
+      "row_count": 231,
+      "semantic_sha256": "c1997422174867daf48906794152bd9be541f96ee85706038809fb682b7a12d6"
+    },
+    "component_health": {
+      "row_count": 56,
+      "semantic_sha256": "a81000bedf163c5a195cd5e2a524916e6718e5b47b4c1acd9f7ab5d6e315d86d"
+    },
+    "metric_evidence": {
+      "row_count": 2259,
+      "semantic_sha256": "043fb4466ce86b47b8529eee247de8234ac2429694711c2cbcb8326b32e4855a"
+    },
+    "monitoring_runs": {
+      "row_count": 8,
+      "semantic_sha256": "0d02a5afb15e3f1a6ac481e59c329e50088ed8300acf06905230d0f312738c8b"
+    },
+    "phase_manifests": {
+      "row_count": 12,
+      "semantic_sha256": "0b883e415a9d8258903f3c3238b4de4b2e4b9b7b134cee2fba279ea4f473f7ff"
+    },
+    "run_health": {
+      "row_count": 8,
+      "semantic_sha256": "66aecd741eff043408bf55c6303ff97661d034d7f6b3dd824c7d3ccd355a0604"
+    },
+    "schema_metadata": {
+      "row_count": 1,
+      "semantic_sha256": "ca6dec4e90e93bf1069342a3e729da1a42c5129a445d6804c7006e931ad33dc5"
+    }
+  }
+}

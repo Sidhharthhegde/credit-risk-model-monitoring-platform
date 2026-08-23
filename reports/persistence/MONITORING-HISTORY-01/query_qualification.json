@@ -1,0 +1,20 @@
+{
+  "alert_count": 329,
+  "blocked_run_count": 2,
+  "blocked_states": [
+    "BLOCKED_HARD_GATE",
+    "BLOCKED_SOURCE_GOVERNANCE"
+  ],
+  "comparable_history_default_excludes_current_scenarios": true,
+  "feature_drift_alert_count": 45,
+  "open_alert_count": 329,
+  "open_critical_alert_count": 26,
+  "parameterized_values_only": true,
+  "repository_interface": "HistoryRepository",
+  "result": "PASS",
+  "run_count": 8,
+  "synthetic_run_count": 1,
+  "synthetic_scenarios": [
+    "SIM-M06"
+  ]
+}

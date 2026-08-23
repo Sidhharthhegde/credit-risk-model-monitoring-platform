@@ -28,6 +28,7 @@ artifacts/reference_snapshots/*
 artifacts/reference_bins/*
 artifacts/simulation_scenarios/*
 artifacts/monitoring_predictions/*
+artifacts/monitoring_history/*
 !artifacts/**/README.md
 
 # Model artifacts must remain outside Part B

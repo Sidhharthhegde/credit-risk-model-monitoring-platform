@@ -1,0 +1,16 @@
+{
+  "acknowledged_event_id": "EVT-5042BD4D92EB6B1C2822B430",
+  "actor_type": "LOCAL_DEMO_USER",
+  "base_database_alerts_modified": false,
+  "enterprise_authentication_claimed": false,
+  "fixture_alert_id": "ALT-00AE6214B2E0E3E9A000",
+  "fixture_status_sequence": [
+    "OPEN",
+    "ACKNOWLEDGED",
+    "RESOLVED"
+  ],
+  "invalid_backward_transition_rejected": true,
+  "qualification_fixture_only": true,
+  "resolved_event_id": "EVT-874DD7AE878BA90F1FD184DB",
+  "result": "PASS"
+}

@@ -52,11 +52,11 @@
 | `configs/dashboard_display_policy.yaml` | 0.1.0 | Approved and frozen | Governed display labels, disclosures and context-only segment registry; contains no monitoring thresholds |
 | `src/credit_risk_monitoring/dashboard/` | 0.1.0 | Approved implementation | Thin Phase 12 data service, immutable view models, six Streamlit pages and fixture-only qualification |
 | `reports/dashboard/MONITORING-DASHBOARD-01/` | 0.1.0 | Approved and frozen | Aggregate Phase 13 reconciliation, lifecycle, scope, temporal, lineage, smoke and approval evidence |
-| `contracts/final_lifecycle_qualification_contract.json` | 0.1.0 | Frozen prospective specification; technically qualified | Phase 14 manifest chain, authority, orchestration modes, scope and frozen-write controls |
-| `src/credit_risk_monitoring/orchestration/` | 0.1.0 | Implemented and tested | Verification-first runner, gates, frozen-write protection and isolated semantic replay |
-| `src/credit_risk_monitoring/reporting/` | 0.1.0 | Implemented and tested | Phase 12 query-driven HTML/PDF monitoring report generator |
-| `reports/monitoring_report/MONITORING-REPORT-01/` | 0.1.0 | Technically qualified; pending owner review | Aggregate report snapshot and non-authoritative HTML/PDF presentation artifacts |
-| `reports/lifecycle/FINAL-LIFECYCLE-QUALIFICATION-01/` | 0.1.0 | Technically qualified; pending owner review | Final manifest-chain, gates, replay, report, hygiene, dependency, documentation and scope evidence |
+| `contracts/final_lifecycle_qualification_contract.json` | 0.1.0 | Approved and frozen | Phase 14 manifest chain, authority, orchestration modes, scope and frozen-write controls |
+| `src/credit_risk_monitoring/orchestration/` | 0.1.0 | Approved implementation | Verification-first runner, gates, frozen-write protection and isolated semantic replay |
+| `src/credit_risk_monitoring/reporting/` | 0.1.0 | Approved implementation | Phase 12 query-driven HTML/PDF monitoring report generator |
+| `reports/monitoring_report/MONITORING-REPORT-01/` | 0.1.0 | Approved and frozen | Aggregate report snapshot and non-authoritative HTML/PDF presentation artifacts |
+| `reports/lifecycle/FINAL-LIFECYCLE-QUALIFICATION-01/` | 0.1.0 | Approved and frozen | Phase 14 manifest-chain, gates, replay, report, hygiene, dependency, documentation, scope and approval evidence; project completion deferred to Phase 15 |
 | `configs/model_config.yaml` | 0.1.0 | Approved and frozen | Semantic model metadata referencing the binding |
 | `configs/monitoring_config.yaml` | 0.1.0 | Approved and frozen | Monitoring scope and execution policy |
 | `configs/alert_thresholds.yaml` | 0.1.0 | Approved and frozen | Project-defined alert assumptions |

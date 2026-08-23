@@ -1,4 +1,5 @@
 {
+  "approved_utc": "2026-08-23T17:44:52.659632+00:00",
   "files": [
     {
       "path": "monitoring_report.html",
@@ -16,7 +17,9 @@
       "size_bytes": 7258
     }
   ],
+  "phase14_pre_approval_candidate_manifest_sha256": "1396fd7882c16681aee1a324e661795bb0c136079aa5d9441bf47278639ae6bc",
   "report_authoritative_evidence": false,
+  "report_files_unchanged_during_approval": true,
   "report_id": "MONITORING-REPORT-01",
-  "status": "TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW"
+  "status": "APPROVED_FROZEN"
 }

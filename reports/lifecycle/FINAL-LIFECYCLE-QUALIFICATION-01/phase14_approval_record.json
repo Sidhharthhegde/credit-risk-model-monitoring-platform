@@ -1,0 +1,18 @@
+{
+  "approval_condition": "PROJECT_COMPLETION_DEFERRED_TO_PHASE_15",
+  "approved_utc": "2026-08-23T17:44:52.659632+00:00",
+  "condition_remediated": true,
+  "decision": "APPROVED",
+  "final_lifecycle_id": "FINAL-LIFECYCLE-QUALIFICATION-01",
+  "monitoring_report_changed": false,
+  "next_phase_authorized": "PHASE_15_SCHEDULED_EXECUTION_AND_FINAL_PROJECT_RELEASE",
+  "orchestrator_changed": false,
+  "phase": "PHASE_14",
+  "phase_15_authorized": true,
+  "pre_approval_candidate_manifest_sha256": "1396fd7882c16681aee1a324e661795bb0c136079aa5d9441bf47278639ae6bc",
+  "project_b_complete": false,
+  "project_completion_reason": "PHASE_15_SCHEDULED_EXECUTION_AND_FINAL_PROJECT_RELEASE_PENDING",
+  "project_implementation_complete": false,
+  "replay_evidence_changed": false,
+  "technical_evidence_changed": false
+}

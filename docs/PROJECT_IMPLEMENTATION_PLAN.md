@@ -1106,13 +1106,35 @@ Generate the governed monitoring report, qualify the end-to-end runner and perfo
 - Report values reconcile exactly to governed evidence.
 - End-to-end execution is deterministic, fail-closed and leaves frozen inputs immutable.
 - Final lifecycle claims distinguish simulation evidence from external/OOT labelled confirmation.
-- Repository release evidence and owner approval are complete.
+- Phase 14 technical evidence and owner approval are complete without declaring Project B complete.
 
 ---
 
-# Superseded legacy roadmap (former Phases 15-18)
+# Phase 15 - Scheduled Execution and Final Project Release
 
-The former Phase 15-18 roadmap below is retained only as historical planning context. Its persistence, runner, testing, dashboard and release responsibilities were completed or consolidated into authoritative Phases 12-14. It does not authorize work after Phase 14.
+## Objective
+
+Complete the remaining scheduled/unattended execution controls and final public-project release work without reopening frozen Phase 0-14 monitoring evidence.
+
+## Authorized scope
+
+1. Define and qualify scheduled or unattended local execution.
+2. Preserve verification-first behavior, frozen-write protection and failure visibility.
+3. Add the remaining release, handoff and operational-run documentation.
+4. Reconcile the final repository state, public artifacts and release instructions.
+5. Record the final Project B completion decision only after Phase 15 owner approval.
+
+## Governance boundary
+
+- Phase 15 may not refit or recalibrate DF-01, retune `THRESHOLD-01`, add monitoring thresholds or rewrite Phase 0-14 evidence.
+- `CND-02` remains open unless supported by genuinely unseen labelled external/OOT evidence and separate governance action.
+- Scheduled execution is a local portfolio control and must not imply enterprise production deployment, IAM, service-level guarantees or regulatory certification.
+
+---
+
+# Reorganized legacy roadmap context
+
+The earlier roadmap structure has been reorganized. Phases 12-14 supersede the earlier persistence, dashboard, testing, reporting and orchestration layout. Remaining scheduled/unattended execution and final project-release responsibilities are governed by the authoritative Phase 15 above. The former Phase 15-18 material below is retained only as historical planning context.
 
 ## Legacy Phase 15 - Evidence, Persistence and Audit Trail
 
@@ -1606,8 +1628,8 @@ Update this table only when supported by a phase completion decision.
 | 11 | `COMPLETE` | `reports/monitoring/ALERT-ENGINE-01/phase11_completion_decision.json` | Directionality condition resolved; approved and frozen on 2026-08-23; Phase 12 authorized |
 | 12 | `COMPLETE` | `reports/persistence/MONITORING-HISTORY-01/phase12_completion_decision.json` | Run-count semantics condition resolved; approved and frozen on 2026-08-23; Phase 13 authorized |
 | 13 | `COMPLETE` | `reports/dashboard/MONITORING-DASHBOARD-01/phase13_completion_decision.json` | Approved and frozen on 2026-08-23; Phase 14 authorized |
-| 14 | `IN_PROGRESS` | `reports/lifecycle/FINAL-LIFECYCLE-QUALIFICATION-01/phase14_completion_decision.json` | Technical qualification passed; pending owner review and final project completion decision |
-| 15 | `SUPERSEDED` | Not applicable | Consolidated into Phases 12-14 |
+| 14 | `COMPLETE` | `reports/lifecycle/FINAL-LIFECYCLE-QUALIFICATION-01/phase14_completion_decision.json` | Conditional roadmap blocker remediated; approved and frozen on 2026-08-23; Phase 15 authorized |
+| 15 | `NOT_STARTED` | Not issued | Scheduled/unattended execution and final project release authorized; Project B remains incomplete |
 | 16 | `SUPERSEDED` | Not applicable | Consolidated into Phase 14 orchestration |
 | 17 | `SUPERSEDED` | Not applicable | Consolidated into phase-specific and Phase 14 qualification |
 | 18 | `SUPERSEDED` | Not applicable | Consolidated into Phases 13-14 |
@@ -1624,4 +1646,4 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next controlled action is owner review of the technically qualified Phase 14 candidate. Project completion remains false until the Phase 14 approval record and final frozen manifest are created.
+The next controlled action is Phase 15 protocol design for scheduled/unattended execution and final project release. Project completion remains false until Phase 15 is implemented, qualified and approved.

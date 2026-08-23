@@ -6,9 +6,9 @@ Part B will demonstrate data-quality monitoring, population and feature drift, r
 
 ## Current status
 
-`PHASE_14_TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW`
+`PHASE_14_APPROVED_FROZEN`
 
-Phases 0–13 are approved and frozen. Phase 14 has produced a governed HTML/PDF monitoring report, a verification-first lifecycle orchestrator and a final technical qualification package. Phase 14 and project completion remain pending owner review.
+Phases 0–14 are approved and frozen. Phase 14 produced the governed HTML/PDF monitoring report, verification-first lifecycle orchestrator and final-lifecycle technical qualification. Project B is not complete: Phase 15 scheduled/unattended execution and final project release remains authorized and pending.
 
 ## Important scope statement
 

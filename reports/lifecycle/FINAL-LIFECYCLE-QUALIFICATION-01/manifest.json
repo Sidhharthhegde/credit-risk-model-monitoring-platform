@@ -1,6 +1,14 @@
 {
   "aggregate_public_evidence_only": true,
+  "approval_finalizer_sha256": "e365bf3b8239cdd7503875f52f69776d784c0658190302aba5a5c358de47f732",
+  "approval_record_included": true,
+  "approved_utc": "2026-08-23T17:44:52.659632+00:00",
   "artifacts": [
+    {
+      "path": "approval_hash_reconciliation.json",
+      "sha256": "a4363da3632ed79b356c34e9e98839d5aa331f2ef43c42e264328d9b349d7ae0",
+      "size_bytes": 3642
+    },
     {
       "path": "dashboard_readiness_reconciliation.json",
       "sha256": "bf801cbf966c378eef5b0b6237353f1abbf1788dcbee5abfd32814ac9ed1d0e6",
@@ -13,8 +21,8 @@
     },
     {
       "path": "documentation_reconciliation.json",
-      "sha256": "494391a4eaa557d19ea5f9306b8877880b9bcf0dd65865f0e0386179561807c0",
-      "size_bytes": 130
+      "sha256": "7485581bdf155456054b4bb33415484725298c4d430c600d390a72516027bde8",
+      "size_bytes": 387
     },
     {
       "path": "execution_source_manifest.json",
@@ -63,13 +71,18 @@
     },
     {
       "path": "phase14_acceptance_checklist.csv",
-      "sha256": "e7da1a2a7a88979d5b6c8b15b7c6adfe5c5bd4ccdb12fb642bd59172dd693857",
-      "size_bytes": 1499
+      "sha256": "61f19d11d950f10d8b320f5009930b24b374f2ccf09caac546dfd10e0be9349e",
+      "size_bytes": 1792
+    },
+    {
+      "path": "phase14_approval_record.json",
+      "sha256": "fd7f1525544de258cee545d56fbd71185f95c2a601a211277060fa853ac6298e",
+      "size_bytes": 811
     },
     {
       "path": "phase14_completion_decision.json",
-      "sha256": "891d59837df8d6ce817fb085c9b6e1d37d35dafae7959cbc4a91d99e79849732",
-      "size_bytes": 1235
+      "sha256": "c519d0326b106b059444e0b076e3d4fc080860810e4beb0033ec2398d36be61c",
+      "size_bytes": 1894
     },
     {
       "path": "phase_manifest_chain_reconciliation.json",
@@ -78,8 +91,8 @@
     },
     {
       "path": "project_completion_decision.json",
-      "sha256": "2b607632ecb59060b66b8fbcffff9f8e0b8497f8d1fb31af4e3745fab1c0c6fc",
-      "size_bytes": 357
+      "sha256": "a8c4803d6367601dde6bcd09dc7ec1884d293150ec0c18fd582a5caeb2432792",
+      "size_bytes": 582
     },
     {
       "path": "report_reconciliation.json",
@@ -109,5 +122,11 @@
   ],
   "created_utc": "2026-08-23T17:36:05.132987+00:00",
   "final_lifecycle_id": "FINAL-LIFECYCLE-QUALIFICATION-01",
-  "status": "TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW"
+  "monitoring_report_unchanged_during_approval": true,
+  "phase_15_authorized": true,
+  "pre_approval_candidate_manifest_sha256": "1396fd7882c16681aee1a324e661795bb0c136079aa5d9441bf47278639ae6bc",
+  "project_b_complete": false,
+  "project_implementation_complete": false,
+  "status": "APPROVED_FROZEN",
+  "technical_evidence_unchanged_during_approval": true
 }

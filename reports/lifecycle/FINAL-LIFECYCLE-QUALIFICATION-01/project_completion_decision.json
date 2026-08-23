@@ -1,10 +1,14 @@
 {
-  "decision": "PENDING_PHASE_14_OWNER_REVIEW",
+  "decision": "NOT_COMPLETE_PHASE_15_PENDING",
   "empirical_production_performance_evidence": false,
   "external_validation": false,
   "fairness_certification": false,
   "model_production_approved": false,
+  "phase_15_authorized": true,
   "production_shaped_monitoring_lifecycle_demo_complete": false,
+  "project_b_complete": false,
+  "project_completion_decision": "NOT_COMPLETE_PHASE_15_PENDING",
+  "project_completion_reason": "PHASE_15_SCHEDULED_EXECUTION_AND_FINAL_PROJECT_RELEASE_PENDING",
   "project_implementation_complete": false,
   "real_production_deployment": false
 }

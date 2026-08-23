@@ -21,6 +21,7 @@
     "v_blocked_runs",
     "v_comparable_metric_history",
     "v_current_alert_state",
+    "v_current_run_alert_counts",
     "v_metric_evidence_with_lineage",
     "v_open_alerts",
     "v_open_critical_alerts",

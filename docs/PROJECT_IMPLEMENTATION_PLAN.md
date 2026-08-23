@@ -1039,6 +1039,9 @@ Persist the frozen Phase 11 monitoring record in a durable, rebuildable SQLite q
 11. Expose parameterized repository queries and governed views for runs, alerts, health, metrics, lineage, blocked runs and synthetic evidence.
 12. Preserve `calendar_interpretation = false`, null periods and non-comparable history for all current scenarios.
 13. Commit aggregate qualification evidence only; create no dashboard, monitoring report or applicant-level store.
+14. Label imported Phase 11 alert counts with a `phase11_source_` prefix in run summaries.
+15. Derive current open, acknowledged, resolved, warning and critical run counts dynamically from the alert-event ledger.
+16. Enforce event sequence and prior-state continuity through database triggers as well as the lifecycle service.
 
 ## Completion criteria
 
@@ -1675,7 +1678,7 @@ Update this table only when supported by a phase completion decision.
 | 9 | `COMPLETE` | `reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01/phase9_completion_decision.json` | Conditional taxonomy issue resolved; approved and frozen on 2026-08-23; Phase 10 authorized |
 | 10 | `COMPLETE` | `reports/monitoring/SEGMENT-MONITORING-01/phase10_completion_decision.json` | Approved and frozen on 2026-08-23; prospective contract unchanged; Phase 11 authorized |
 | 11 | `COMPLETE` | `reports/monitoring/ALERT-ENGINE-01/phase11_completion_decision.json` | Directionality condition resolved; approved and frozen on 2026-08-23; Phase 12 authorized |
-| 12 | `IN_PROGRESS` | `reports/persistence/MONITORING-HISTORY-01/phase12_completion_decision.json` | Technical qualification passed on 2026-08-23; owner review pending; Phase 13 unauthorized |
+| 12 | `COMPLETE` | `reports/persistence/MONITORING-HISTORY-01/phase12_completion_decision.json` | Run-count semantics condition resolved; approved and frozen on 2026-08-23; Phase 13 authorized |
 | 13 | `NOT_STARTED` | Not issued |  |
 | 14 | `NOT_STARTED` | Not issued |  |
 | 15 | `NOT_STARTED` | Not issued |  |
@@ -1695,4 +1698,4 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next controlled action is owner review of the technically qualified `MONITORING-HISTORY-01` package. Review must confirm database non-authority, exact row reconciliation, semantic rebuild reproducibility, lifecycle-event separation, complete lineage, and the absence of calendar or persistence claims. Phase 12 is not complete or frozen, and Phase 13 is not authorized.
+The next controlled action is Phase 13 protocol review and implementation planning for the monitoring dashboard and investigation interface. Phase 13 is authorized but remains unexecuted. It must consume `HistoryRepository`, distinguish `phase11_source_*` counts from dynamic `current_*` counts, and must not introduce monitoring calculations into presentation code.

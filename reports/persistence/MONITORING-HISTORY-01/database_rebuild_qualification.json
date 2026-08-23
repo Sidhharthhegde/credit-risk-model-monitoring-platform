@@ -1,7 +1,7 @@
 {
-  "first_database_semantic_sha256": "2e688ab1ba26ae19efdcc04c90f7bf85b537b8443735841ffa216b311a8073f7",
+  "first_database_semantic_sha256": "48eb52d1596199abd010c42d7348a73eda80b5969805a73729897a72fbdf7900",
   "physical_database_hash_used_as_primary_reproducibility_control": false,
-  "rebuilt_database_semantic_sha256": "2e688ab1ba26ae19efdcc04c90f7bf85b537b8443735841ffa216b311a8073f7",
+  "rebuilt_database_semantic_sha256": "48eb52d1596199abd010c42d7348a73eda80b5969805a73729897a72fbdf7900",
   "result": "PASS",
   "semantic_digests_equal": true
 }

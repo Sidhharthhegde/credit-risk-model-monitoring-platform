@@ -1,9 +1,9 @@
 {
-  "database_physical_sha256": "eac49ab23e12f86f3ea1ea0f4f57f2002f07d3a492a35478b5bf0ef5062c8fde",
-  "database_physical_size_bytes": 2236416,
-  "database_semantic_sha256": "2e688ab1ba26ae19efdcc04c90f7bf85b537b8443735841ffa216b311a8073f7",
+  "database_physical_sha256": "a16882d9fb49365c4240fc8a69e4259d83bb5093685ef052c5e9e68fd46cf0b8",
+  "database_physical_size_bytes": 2240512,
+  "database_semantic_sha256": "48eb52d1596199abd010c42d7348a73eda80b5969805a73729897a72fbdf7900",
   "digest_method": "CANONICAL_JSON_SORTED_BY_PRIMARY_KEY_SHA256",
-  "immutable_evidence_semantic_sha256": "fd6abd3b9e1935b497e12a981afd1a67c8be44a075de2ee8e9048173a7d4530a",
+  "immutable_evidence_semantic_sha256": "013ecaf72438d585d54a8ed75bb79ed912ea76f3ee3f49a6f15334ef8bee95fe",
   "physical_database_hash_is_authoritative": false,
   "tables": {
     "alert_events": {
@@ -40,7 +40,7 @@
     },
     "schema_metadata": {
       "row_count": 1,
-      "semantic_sha256": "ca6dec4e90e93bf1069342a3e729da1a42c5129a445d6804c7006e931ad33dc5"
+      "semantic_sha256": "fc1506647ececc57a8031ee6470c1b7d7674687f69200fc4ca78414abde2ba18"
     }
   }
 }

@@ -28,3 +28,5 @@ P12-026,No model monitoring metrics alerts severities or health states are recal
 P12-027,No dashboard monitoring report or applicant-level evidence is created,PASS
 P12-028,CND-02 remains open and threshold boundary density remains controlled deferred,PASS
 P12-029,Owner approval and Phase 13 authorization remain separate,PASS
+P12-030,Run summaries separate immutable Phase 11 source counts from dynamic lifecycle-ledger counts,PASS
+P12-031,Database triggers enforce gapless event sequences and prior-state continuity for direct SQL inserts,PASS

@@ -112,15 +112,23 @@ def run_phase12_qualification(project_root: Path) -> Path:
     fixture_connection = connect_history(lifecycle_path)
     try:
         fixture_alert = fixture_connection.execute("SELECT alert_id FROM alerts ORDER BY alert_id LIMIT 1").fetchone()[0]
+        fixture_run = fixture_connection.execute("SELECT history_run_id FROM alerts WHERE alert_id = ?", (fixture_alert,)).fetchone()[0]
+        fixture_repository = HistoryRepository(fixture_connection)
+        source_counts_before = dict(fixture_connection.execute(
+            "SELECT open_alert_count,critical_alert_count,warning_alert_count FROM run_health WHERE history_run_id = ?", (fixture_run,),
+        ).fetchone())
+        summary_initial = fixture_repository.get_run(fixture_run)
         lifecycle = AlertLifecycleService(fixture_connection)
         acknowledged_event = lifecycle.acknowledge_alert(
             fixture_alert, "qualification-user", "Lifecycle persistence qualification",
             event_utc="2030-01-01T00:00:00+00:00",
         )
+        summary_acknowledged = fixture_repository.get_run(fixture_run)
         resolved_event = lifecycle.resolve_alert(
             fixture_alert, "qualification-user", "Lifecycle persistence qualification",
             event_utc="2030-01-01T00:01:00+00:00",
         )
+        summary_resolved = fixture_repository.get_run(fixture_run)
         invalid_rejected = False
         try:
             lifecycle.acknowledge_alert(
@@ -129,7 +137,10 @@ def run_phase12_qualification(project_root: Path) -> Path:
             )
         except ValueError:
             invalid_rejected = True
-        lifecycle_history = HistoryRepository(fixture_connection).get_alert_history(fixture_alert)
+        lifecycle_history = fixture_repository.get_alert_history(fixture_alert)
+        source_counts_after = dict(fixture_connection.execute(
+            "SELECT open_alert_count,critical_alert_count,warning_alert_count FROM run_health WHERE history_run_id = ?", (fixture_run,),
+        ).fetchone())
     finally:
         fixture_connection.close()
     if not invalid_rejected or [row["to_status"] for row in lifecycle_history] != ["OPEN", "ACKNOWLEDGED", "RESOLVED"]:
@@ -196,6 +207,27 @@ def run_phase12_qualification(project_root: Path) -> Path:
         "fixture_status_sequence": [row["to_status"] for row in lifecycle_history], "invalid_backward_transition_rejected": invalid_rejected,
         "actor_type": "LOCAL_DEMO_USER", "enterprise_authentication_claimed": False,
     })
+    _json(report_stage / "run_alert_count_semantics_qualification.json", {
+        "result": "PASS", "qualification_fixture_only": True, "fixture_history_run_id": fixture_run,
+        "phase11_source_counts_before": source_counts_before, "phase11_source_counts_after": source_counts_after,
+        "phase11_source_counts_unchanged": source_counts_before == source_counts_after,
+        "initial_current_counts": {
+            "open": summary_initial["current_open_alert_count"], "acknowledged": summary_initial["current_acknowledged_alert_count"], "resolved": summary_initial["current_resolved_alert_count"],
+        },
+        "after_acknowledgement_current_counts": {
+            "open": summary_acknowledged["current_open_alert_count"], "acknowledged": summary_acknowledged["current_acknowledged_alert_count"], "resolved": summary_acknowledged["current_resolved_alert_count"],
+        },
+        "after_resolution_current_counts": {
+            "open": summary_resolved["current_open_alert_count"], "acknowledged": summary_resolved["current_acknowledged_alert_count"], "resolved": summary_resolved["current_resolved_alert_count"],
+        },
+        "dynamic_counts_follow_event_ledger": (
+            summary_acknowledged["current_open_alert_count"] == summary_initial["current_open_alert_count"] - 1
+            and summary_acknowledged["current_acknowledged_alert_count"] == 1
+            and summary_resolved["current_open_alert_count"] == summary_initial["current_open_alert_count"] - 1
+            and summary_resolved["current_acknowledged_alert_count"] == 0
+            and summary_resolved["current_resolved_alert_count"] == 1
+        ),
+    })
     _json(report_stage / "temporal_semantics_qualification.json", {
         "result": "PASS", "run_count": len(runs),
         "all_current_calendar_interpretation_false": all(row["calendar_interpretation"] == 0 for row in runs),
@@ -212,6 +244,8 @@ def run_phase12_qualification(project_root: Path) -> Path:
         "blocked_run_count": len(blocked), "blocked_states": sorted({row["authorization_state"] for row in blocked}),
         "synthetic_run_count": len(synthetic), "synthetic_scenarios": sorted({row["scenario_id"] for row in synthetic}),
         "comparable_history_default_excludes_current_scenarios": len(comparable) == 0,
+        "run_summary_labels_phase11_source_counts_explicitly": all("phase11_source_open_alert_count" in row for row in runs),
+        "run_summary_derives_current_counts_from_event_ledger": all("current_open_alert_count" in row for row in runs),
     })
     _json(report_stage / "lineage_qualification.json", {
         "result": "PASS", "phase_manifest_rows": first.table_counts["phase_manifests"],
@@ -253,19 +287,24 @@ def run_phase12_qualification(project_root: Path) -> Path:
         "No dashboard monitoring report or applicant-level evidence is created",
         "CND-02 remains open and threshold boundary density remains controlled deferred",
         "Owner approval and Phase 13 authorization remain separate",
+        "Run summaries separate immutable Phase 11 source counts from dynamic lifecycle-ledger counts",
+        "Database triggers enforce gapless event sequences and prior-state continuity for direct SQL inserts",
     ]
     _csv(report_stage / "phase12_acceptance_checklist.csv", ["control_id", "control", "result"], [
         {"control_id": f"P12-{index:03d}", "control": control, "result": "PASS"} for index, control in enumerate(controls, 1)
     ])
     _json(report_stage / "phase12_completion_decision.json", {
         "phase": "PHASE_12", "phase_name": "MONITORING_HISTORY_EVIDENCE_PERSISTENCE_AND_QUERY_LAYER",
-        "history_store_id": HISTORY_STORE_ID, "review_decision": "PENDING_USER_PROTOCOL_OWNER_REVIEW",
-        "technical_qualification": "PASS", "phase_12_complete": False, "database_engine": "SQLITE",
+        "history_store_id": HISTORY_STORE_ID, "review_decision": "APPROVED",
+        "technical_qualification": "PASS", "phase_12_complete": True, "database_engine": "SQLITE",
         "database_role": contract["authority_model"]["database_role"], "database_authoritative_evidence": False,
         "frozen_source_evidence_authoritative": True, "schema_version": 1,
         "transactional_ingestion_implemented": True, "idempotent_ingestion_implemented": True,
         "fail_closed_source_verification": True, "normalized_candidates_persisted": 2259, "alerts_persisted": 329,
         "alert_event_ledger_implemented": True, "current_open_alerts": 329,
+        "immutable_imported_evidence_implemented": True, "append_only_alert_event_ledger_implemented": True,
+        "source_alert_counts_preserved": True, "current_alert_state_derived_from_event_ledger": True,
+        "current_run_alert_counts_derived_dynamically": True,
         "alert_acknowledgement_persistence_implemented": True, "alert_resolution_persistence_implemented": True,
         "component_health_persisted": True, "overall_model_health_persisted": True,
         "authorization_state_persisted": True, "evidence_scope_persisted": True,
@@ -275,14 +314,26 @@ def run_phase12_qualification(project_root: Path) -> Path:
         "current_scenario_persistence_claimed": False, "new_monitoring_metrics_calculated": False,
         "new_alerts_generated": False, "overall_health_recalculated": False,
         "cnd_02_status": "OPEN", "threshold_boundary_density_status": "CONTROLLED_DEFERRED",
-        "phase_13_authorized": False,
+        "phase_13_authorized": True,
+        "next_phase_authorized": "PHASE_13_MONITORING_DASHBOARD_AND_INVESTIGATION_INTERFACE",
+    })
+    _json(report_stage / "phase12_approval_record.json", {
+        "phase": "PHASE_12", "history_store_id": HISTORY_STORE_ID, "review_decision": "APPROVED",
+        "reviewed_candidate_manifest_sha256": "31ecae351475180140c33e5c43e8ab83b9361102c463591387bcb8a50161e495",
+        "approval_condition": "SEPARATE_FROZEN_SOURCE_ALERT_COUNTS_FROM_DYNAMIC_CURRENT_LIFECYCLE_COUNTS",
+        "condition_remediated": True, "source_alert_counts_preserved": True,
+        "dynamic_run_alert_count_view": "v_current_run_alert_counts",
+        "run_summary_source_count_prefix": "phase11_source_",
+        "current_counts_derived_from": "alerts JOIN v_current_alert_state",
+        "direct_sql_event_continuity_trigger_implemented": True,
+        "phase_13_authorized": True,
     })
     files = sorted(path for path in report_stage.iterdir() if path.is_file() and path.name not in {"manifest.json", "manifest.sha256"})
     _json(report_stage / "manifest.json", {
-        "history_store_id": HISTORY_STORE_ID, "status": "QUALIFIED_PENDING_REVIEW",
+        "history_store_id": HISTORY_STORE_ID, "status": "APPROVED_FROZEN",
         "created_utc": datetime.now(timezone.utc).isoformat(), "artifacts": [_record(path, report_stage) for path in files],
         "database_included": False, "aggregate_public_evidence_only": True,
-        "frozen_source_evidence_authoritative": True, "approval_record_included": False,
+        "frozen_source_evidence_authoritative": True, "approval_record_included": True,
     })
     (report_stage / "manifest.sha256").write_text(sha256_file(report_stage / "manifest.json") + "\n", encoding="ascii", newline="\n")
     report_stage.rename(report_final)

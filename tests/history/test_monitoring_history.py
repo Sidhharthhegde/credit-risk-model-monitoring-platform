@@ -168,13 +168,54 @@ def test_lifecycle_ledger_uses_fixture_copy_and_rejects_backward_transition(mate
     connection = connect_history(fixture)
     try:
         alert_id = connection.execute("SELECT alert_id FROM alerts ORDER BY alert_id LIMIT 1").fetchone()[0]
+        history_run_id = connection.execute("SELECT history_run_id FROM alerts WHERE alert_id = ?", (alert_id,)).fetchone()[0]
+        repository = HistoryRepository(connection)
+        source_counts_before = dict(connection.execute("SELECT open_alert_count,critical_alert_count,warning_alert_count FROM run_health WHERE history_run_id = ?", (history_run_id,)).fetchone())
+        initial = repository.get_run(history_run_id)
         service = AlertLifecycleService(connection)
         service.acknowledge_alert(alert_id, "fixture-user", "qualification", event_utc="2030-01-01T00:00:00+00:00")
+        acknowledged = repository.get_run(history_run_id)
         service.resolve_alert(alert_id, "fixture-user", "qualification", event_utc="2030-01-01T00:01:00+00:00")
+        resolved = repository.get_run(history_run_id)
         assert service.current_status(alert_id) == "RESOLVED"
         with pytest.raises(ValueError, match="not permitted"):
             service.acknowledge_alert(alert_id, "fixture-user", "backward", event_utc="2030-01-01T00:02:00+00:00")
         assert [row["to_status"] for row in HistoryRepository(connection).get_alert_history(alert_id)] == ["OPEN", "ACKNOWLEDGED", "RESOLVED"]
+        source_counts_after = dict(connection.execute("SELECT open_alert_count,critical_alert_count,warning_alert_count FROM run_health WHERE history_run_id = ?", (history_run_id,)).fetchone())
+        assert source_counts_after == source_counts_before
+        assert acknowledged["current_open_alert_count"] == initial["current_open_alert_count"] - 1
+        assert acknowledged["current_acknowledged_alert_count"] == 1
+        assert resolved["current_open_alert_count"] == initial["current_open_alert_count"] - 1
+        assert resolved["current_acknowledged_alert_count"] == 0
+        assert resolved["current_resolved_alert_count"] == 1
+        assert resolved["phase11_source_open_alert_count"] == initial["phase11_source_open_alert_count"]
+    finally:
+        connection.close()
+
+
+def test_database_trigger_rejects_gapped_or_discontinuous_direct_events(materialized_db: Path, tmp_path: Path) -> None:
+    fixture = tmp_path / "direct-event.db"
+    shutil.copy2(materialized_db, fixture)
+    connection = connect_history(fixture)
+    try:
+        alert_id = connection.execute("SELECT alert_id FROM alerts ORDER BY alert_id LIMIT 1").fetchone()[0]
+        with pytest.raises(sqlite3.IntegrityError, match="gapless"):
+            connection.execute(
+                "INSERT INTO alert_events VALUES(?,?,?,?,?,?,?,?,?,?,?)",
+                ("EVT-GAP", alert_id, 3, "ACKNOWLEDGED", "OPEN", "ACKNOWLEDGED", "2030-01-01", "LOCAL_DEMO_USER", "fixture", "gap", "fixture"),
+            )
+        connection.rollback()
+        connection.execute(
+            "INSERT INTO alert_events VALUES(?,?,?,?,?,?,?,?,?,?,?)",
+            ("EVT-ACK", alert_id, 2, "ACKNOWLEDGED", "OPEN", "ACKNOWLEDGED", "2030-01-01", "LOCAL_DEMO_USER", "fixture", "valid", "fixture"),
+        )
+        connection.commit()
+        with pytest.raises(sqlite3.IntegrityError, match="prior to_status"):
+            connection.execute(
+                "INSERT INTO alert_events VALUES(?,?,?,?,?,?,?,?,?,?,?)",
+                ("EVT-BAD-FROM", alert_id, 3, "RESOLVED", "OPEN", "RESOLVED", "2030-01-02", "LOCAL_DEMO_USER", "fixture", "bad from", "fixture"),
+            )
+        connection.rollback()
     finally:
         connection.close()
 
@@ -185,11 +226,13 @@ def test_history_layer_contains_no_monitoring_recalculation_calls(project_root: 
         assert forbidden not in source
 
 
-def test_phase12_candidate_gate_when_present(project_root: Path) -> None:
+def test_phase12_approval_gate_when_present(project_root: Path) -> None:
     report = project_root / "reports/persistence/MONITORING-HISTORY-01"
     if report.exists():
         decision = json.loads((report / "phase12_completion_decision.json").read_text(encoding="utf-8"))
         assert decision["technical_qualification"] == "PASS"
-        assert decision["review_decision"] == "PENDING_USER_PROTOCOL_OWNER_REVIEW"
-        assert decision["phase_12_complete"] is False
-        assert decision["phase_13_authorized"] is False
+        assert decision["review_decision"] == "APPROVED"
+        assert decision["phase_12_complete"] is True
+        assert decision["source_alert_counts_preserved"] is True
+        assert decision["current_run_alert_counts_derived_dynamically"] is True
+        assert decision["phase_13_authorized"] is True

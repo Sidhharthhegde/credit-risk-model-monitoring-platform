@@ -174,9 +174,31 @@ WHERE s.current_status = 'OPEN';
 CREATE VIEW v_open_critical_alerts AS
 SELECT * FROM v_open_alerts WHERE alert_severity = 'CRITICAL';
 
+CREATE VIEW v_current_run_alert_counts AS
+SELECT r.history_run_id,
+       SUM(CASE WHEN s.current_status = 'OPEN' THEN 1 ELSE 0 END) AS current_open_alert_count,
+       SUM(CASE WHEN s.current_status = 'ACKNOWLEDGED' THEN 1 ELSE 0 END) AS current_acknowledged_alert_count,
+       SUM(CASE WHEN s.current_status = 'RESOLVED' THEN 1 ELSE 0 END) AS current_resolved_alert_count,
+       SUM(CASE WHEN s.current_status = 'OPEN' AND a.alert_severity = 'WARNING' THEN 1 ELSE 0 END) AS current_open_warning_count,
+       SUM(CASE WHEN s.current_status = 'OPEN' AND a.alert_severity = 'CRITICAL' THEN 1 ELSE 0 END) AS current_open_critical_count
+FROM monitoring_runs r
+LEFT JOIN alerts a USING(history_run_id)
+LEFT JOIN v_current_alert_state s USING(alert_id)
+GROUP BY r.history_run_id;
+
 CREATE VIEW v_run_summary AS
-SELECT r.*, h.open_alert_count, h.critical_alert_count, h.warning_alert_count
-FROM monitoring_runs r JOIN run_health h USING(history_run_id);
+SELECT r.*,
+       h.open_alert_count AS phase11_source_open_alert_count,
+       h.critical_alert_count AS phase11_source_critical_alert_count,
+       h.warning_alert_count AS phase11_source_warning_alert_count,
+       c.current_open_alert_count,
+       c.current_acknowledged_alert_count,
+       c.current_resolved_alert_count,
+       c.current_open_warning_count,
+       c.current_open_critical_count
+FROM monitoring_runs r
+JOIN run_health h USING(history_run_id)
+JOIN v_current_run_alert_counts c USING(history_run_id);
 
 CREATE VIEW v_run_component_health AS
 SELECT r.scenario_id, r.scenario_artifact_id, c.*
@@ -215,6 +237,14 @@ CREATE TRIGGER immutable_alert_update BEFORE UPDATE ON alerts BEGIN SELECT RAISE
 CREATE TRIGGER immutable_alert_delete BEFORE DELETE ON alerts BEGIN SELECT RAISE(ABORT, 'immutable imported evidence'); END;
 CREATE TRIGGER append_only_events_update BEFORE UPDATE ON alert_events BEGIN SELECT RAISE(ABORT, 'append-only operational ledger'); END;
 CREATE TRIGGER append_only_events_delete BEFORE DELETE ON alert_events BEGIN SELECT RAISE(ABORT, 'append-only operational ledger'); END;
+CREATE TRIGGER enforce_alert_event_continuity BEFORE INSERT ON alert_events
+BEGIN
+    SELECT CASE WHEN NEW.event_sequence != COALESCE((SELECT MAX(event_sequence) FROM alert_events WHERE alert_id = NEW.alert_id), 0) + 1
+        THEN RAISE(ABORT, 'alert event sequence must be gapless') END;
+    SELECT CASE WHEN NEW.event_sequence > 1 AND NEW.from_status IS NOT
+        (SELECT to_status FROM alert_events WHERE alert_id = NEW.alert_id ORDER BY event_sequence DESC LIMIT 1)
+        THEN RAISE(ABORT, 'alert event from_status must equal prior to_status') END;
+END;
 CREATE TRIGGER immutable_component_health_update BEFORE UPDATE ON component_health BEGIN SELECT RAISE(ABORT, 'immutable imported evidence'); END;
 CREATE TRIGGER immutable_component_health_delete BEFORE DELETE ON component_health BEGIN SELECT RAISE(ABORT, 'immutable imported evidence'); END;
 CREATE TRIGGER immutable_run_health_update BEFORE UPDATE ON run_health BEGIN SELECT RAISE(ABORT, 'immutable imported evidence'); END;

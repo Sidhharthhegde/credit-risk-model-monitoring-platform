@@ -11,7 +11,7 @@ EXPECTED_TABLES = {
     "alert_events", "component_health", "run_health", "artifact_lineage",
 }
 EXPECTED_VIEWS = {
-    "v_current_alert_state", "v_open_alerts", "v_open_critical_alerts", "v_run_summary",
+    "v_current_alert_state", "v_open_alerts", "v_open_critical_alerts", "v_current_run_alert_counts", "v_run_summary",
     "v_run_component_health", "v_alerts_with_lineage", "v_metric_evidence_with_lineage",
     "v_blocked_runs", "v_synthetic_evidence", "v_comparable_metric_history",
 }

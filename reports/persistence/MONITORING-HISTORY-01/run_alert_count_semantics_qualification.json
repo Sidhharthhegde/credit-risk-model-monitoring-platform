@@ -1,0 +1,32 @@
+{
+  "after_acknowledgement_current_counts": {
+    "acknowledged": 1,
+    "open": 45,
+    "resolved": 0
+  },
+  "after_resolution_current_counts": {
+    "acknowledged": 0,
+    "open": 45,
+    "resolved": 1
+  },
+  "dynamic_counts_follow_event_ledger": true,
+  "fixture_history_run_id": "HRUN-55AEFB1ECB82D0B11C04C48B",
+  "initial_current_counts": {
+    "acknowledged": 0,
+    "open": 46,
+    "resolved": 0
+  },
+  "phase11_source_counts_after": {
+    "critical_alert_count": 3,
+    "open_alert_count": 46,
+    "warning_alert_count": 43
+  },
+  "phase11_source_counts_before": {
+    "critical_alert_count": 3,
+    "open_alert_count": 46,
+    "warning_alert_count": 43
+  },
+  "phase11_source_counts_unchanged": true,
+  "qualification_fixture_only": true,
+  "result": "PASS"
+}

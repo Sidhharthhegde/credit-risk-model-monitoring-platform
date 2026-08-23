@@ -1,8 +1,8 @@
 {
   "contract_id": "MONITORING-HISTORY-CONTRACT-01",
   "history_store_id": "MONITORING-HISTORY-01",
-  "version": "0.1.0",
-  "status": "FROZEN_PROSPECTIVE_EXECUTION_SPECIFICATION",
+  "version": "0.1.1",
+  "status": "APPROVED_FROZEN_AFTER_RUN_COUNT_SEMANTICS_REMEDIATION",
   "phase": "PHASE_12_MONITORING_HISTORY_EVIDENCE_PERSISTENCE_AND_QUERY_LAYER",
   "model": {
     "development_freeze_id": "DF-01",
@@ -38,9 +38,9 @@
   "schema": {
     "version": 1,
     "schema_path": "schemas/monitoring_history_schema.sql",
-    "schema_sha256": "06fe752bcf610911b0ecbc930decfefdcf625064d885cf0714607f660eb9a7cb",
+    "schema_sha256": "c171e100678f96a565a8961ed806ba850c1d36d63efafd614bd9d40d362a39d3",
     "migration_path": "migrations/001_initial_monitoring_history.sql",
-    "migration_sha256": "06fe752bcf610911b0ecbc930decfefdcf625064d885cf0714607f660eb9a7cb",
+    "migration_sha256": "c171e100678f96a565a8961ed806ba850c1d36d63efafd614bd9d40d362a39d3",
     "foreign_keys_required": true,
     "immutable_imported_evidence": true,
     "append_only_operational_events": true
@@ -87,6 +87,23 @@
     "allowed_transitions": {"OPEN": ["ACKNOWLEDGED"], "ACKNOWLEDGED": ["RESOLVED"], "RESOLVED": []},
     "initial_actor_type": "SYSTEM_IMPORT",
     "operational_actor_type": "LOCAL_DEMO_USER",
-    "enterprise_authentication_claimed": false
+    "enterprise_authentication_claimed": false,
+    "database_event_sequence_continuity_enforced": true,
+    "database_prior_state_continuity_enforced": true
+  },
+  "run_alert_count_semantics": {
+    "immutable_source_table": "run_health",
+    "source_count_prefix_in_run_summary": "phase11_source_",
+    "dynamic_current_view": "v_current_run_alert_counts",
+    "current_state_source": "alert_events_via_v_current_alert_state",
+    "current_counts": [
+      "current_open_alert_count",
+      "current_acknowledged_alert_count",
+      "current_resolved_alert_count",
+      "current_open_warning_count",
+      "current_open_critical_count"
+    ],
+    "source_counts_updated_by_lifecycle_events": false,
+    "current_counts_derived_dynamically": true
   }
 }

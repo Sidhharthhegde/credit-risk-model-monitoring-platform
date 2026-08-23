@@ -1,0 +1,14 @@
+{
+  "approval_condition": "SEPARATE_FROZEN_SOURCE_ALERT_COUNTS_FROM_DYNAMIC_CURRENT_LIFECYCLE_COUNTS",
+  "condition_remediated": true,
+  "current_counts_derived_from": "alerts JOIN v_current_alert_state",
+  "direct_sql_event_continuity_trigger_implemented": true,
+  "dynamic_run_alert_count_view": "v_current_run_alert_counts",
+  "history_store_id": "MONITORING-HISTORY-01",
+  "phase": "PHASE_12",
+  "phase_13_authorized": true,
+  "review_decision": "APPROVED",
+  "reviewed_candidate_manifest_sha256": "31ecae351475180140c33e5c43e8ab83b9361102c463591387bcb8a50161e495",
+  "run_summary_source_count_prefix": "phase11_source_",
+  "source_alert_counts_preserved": true
+}

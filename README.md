@@ -6,9 +6,9 @@ Part B will demonstrate data-quality monitoring, population and feature drift, r
 
 ## Current status
 
-`PHASE_12_TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW`
+`PHASE_12_APPROVED_FROZEN`
 
-Phases 0–11 are approved and frozen. `MONITORING-HISTORY-01` has passed technical qualification as a local, rebuildable SQLite query and operational-persistence layer over frozen Phase 11 evidence. The database is non-authoritative and ignored by Git; owner review is pending, Phase 12 is not frozen, and Phase 13 is not authorized.
+Phases 0–12 are approved and frozen. `MONITORING-HISTORY-01` is a local, rebuildable SQLite query and operational-persistence layer over frozen Phase 11 evidence. Immutable Phase 11 source counts remain distinct from dynamically derived lifecycle counts; the database is non-authoritative and ignored by Git. Phase 13 dashboard and investigation-interface design is authorized but not started.
 
 ## Important scope statement
 

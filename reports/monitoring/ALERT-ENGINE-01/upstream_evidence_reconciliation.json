@@ -1,0 +1,18 @@
+{
+  "all_upstream_hashes_verified": true,
+  "frozen_dependencies": {
+    "legacy_alert_thresholds_sha256": "987373af8b91f5cbfe5dbaaea829bd122d64ad41e9dc32e6084eb5ef5856d331",
+    "phase_10_manifest_sha256": "3412307e589dd1130fb7764f5e553dbba7fa4391074c5f2644e294d85e13de59",
+    "phase_6_manifest_sha256": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+    "phase_6_scenario_summary_sha256": "dffc69c520cc4a49339c8953ac72ae6695203466e27f2361ccfea1efbe44b4b8",
+    "phase_7_feature_results_sha256": "bc83f800599792eb9a51b0eb4ca29cc8bd9e6acac404775bba2336d7639dc071",
+    "phase_7_manifest_sha256": "64a706d84465e0398391f9d217702343b31aa4d446864a9eca70db89bc930f17",
+    "phase_7_materiality_lineage_sha256": "baa1b0db0864ecae57b22468a44a3e779b9adb335262477f61fe8de33b746a07",
+    "phase_8_manifest_sha256": "7bb910835b9b7f2df9ac612a72323d37d6395eadd907249d8a8ebd7372bb21d8",
+    "phase_9_manifest_sha256": "17209d875644bfa495889fad0133a9585c5d312aa1164f4a145d4a353139bb5e"
+  },
+  "part_a_modified": false,
+  "result": "PASS",
+  "upstream_metric_recalculation_performed": false,
+  "upstream_severity_modification_performed": false
+}

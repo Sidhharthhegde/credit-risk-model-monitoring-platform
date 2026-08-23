@@ -1,0 +1,21 @@
+{
+  "acknowledged_to_resolved_fixture": "RESOLVED",
+  "allowed_transitions": {
+    "ACKNOWLEDGED": [
+      "RESOLVED"
+    ],
+    "OPEN": [
+      "ACKNOWLEDGED"
+    ],
+    "RESOLVED": []
+  },
+  "current_acknowledgements_or_resolutions_fabricated": false,
+  "current_alerts_initial_status": "OPEN",
+  "open_to_acknowledged_fixture": "ACKNOWLEDGED",
+  "result": "PASS",
+  "statuses": [
+    "OPEN",
+    "ACKNOWLEDGED",
+    "RESOLVED"
+  ]
+}

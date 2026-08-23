@@ -1,0 +1,116 @@
+{
+  "aggregate_public_evidence_only": true,
+  "alert_engine_id": "ALERT-ENGINE-01",
+  "approval_record_included": false,
+  "artifacts": [
+    {
+      "path": "alert_driver_reconciliation.json",
+      "sha256": "356477c9dd2f51d457fecb492a2a2b368f00f0378888259f5ce75e336255881c",
+      "size_bytes": 370
+    },
+    {
+      "path": "alert_engine_contract_snapshot.json",
+      "sha256": "58b7940cd956b42f6287d6f811454623c1709b1a29f40da4d0d64df932375c68",
+      "size_bytes": 5143
+    },
+    {
+      "path": "alert_lifecycle_qualification.json",
+      "sha256": "852f474fcb4dd6f8302d50b5ceb1db8dfe27a28252d667cb04aa3fc72c71ed4f",
+      "size_bytes": 436
+    },
+    {
+      "path": "alert_policy_snapshot.json",
+      "sha256": "0015fecc277b1732be99c73eedb27e4024c896d4503b19e5876a6fbc0845bce2",
+      "size_bytes": 3386
+    },
+    {
+      "path": "alert_results.parquet",
+      "sha256": "f089ac48a1389a3ca67b2d19c9b7631e11f41350595cfaf03daf374f1198e6c0",
+      "size_bytes": 28729
+    },
+    {
+      "path": "authorization_results.json",
+      "sha256": "e12040a5cbf145a46feca01d9e59899784c2050ba0d04274c9d9a2cae462d571",
+      "size_bytes": 1595
+    },
+    {
+      "path": "component_health_results.parquet",
+      "sha256": "f18327edfc7de35a77a90f707ab4edeb29556fe1558e09e1c5cbc794ac408055",
+      "size_bytes": 5299
+    },
+    {
+      "path": "critical_predictor_mapping.json",
+      "sha256": "57ebee04bca7162a6b2df951c15d32a7500afe9697451fb565be510ce3e0cbbc",
+      "size_bytes": 72907
+    },
+    {
+      "path": "evidence_scope_results.json",
+      "sha256": "9047b18479a0adc3081f363ab69bab0076ffedf2e849d8d576bf224db0336a74",
+      "size_bytes": 1493
+    },
+    {
+      "path": "execution_source_manifest.json",
+      "sha256": "190a8c4c502c3052b36ce135956ebb511039b47e7c4792e56418dd14248a975c",
+      "size_bytes": 1985
+    },
+    {
+      "path": "normalized_breach_candidates.parquet",
+      "sha256": "e50ae8e8254ea22a422080d921b011aaa56a519d742e59c638c5d421086a77a5",
+      "size_bytes": 26718
+    },
+    {
+      "path": "overall_health_results.parquet",
+      "sha256": "36f3de3d1cb017a9895177b7e84cf0bf429a90b01895198d8583aa2175f4c5ab",
+      "size_bytes": 6657
+    },
+    {
+      "path": "performance_alert_policy.json",
+      "sha256": "21a341a2851381c845e968953659c36f4ecb1ea71bd7e0f1090c4e6d372d9c13",
+      "size_bytes": 2301
+    },
+    {
+      "path": "persistence_qualification.json",
+      "sha256": "49a8edb7aa54882b95e8a61cfdbd99c527b8da9cb2826ffa0eb546a0ce155160",
+      "size_bytes": 887
+    },
+    {
+      "path": "phase11_acceptance_checklist.csv",
+      "sha256": "c5da37e32163d13325210d1879fbdd0ac9885db916e348addc98d0cb3353972d",
+      "size_bytes": 1830
+    },
+    {
+      "path": "phase11_completion_decision.json",
+      "sha256": "902d38f4666cac0ae0e1434020a1a56820ec673920ab7141c7fa50b3b8b45a5f",
+      "size_bytes": 1325
+    },
+    {
+      "path": "reproducibility_qualification.json",
+      "sha256": "d35ec89dcbf1c6ddf54a2570b687f8423e360d795a8e1669ddef031512661d10",
+      "size_bytes": 820
+    },
+    {
+      "path": "scenario_alert_summary.csv",
+      "sha256": "a9c94ab83a258c7a3d4deb1e14e9969512ffe2c0c9208755765dba2c9a78aa96",
+      "size_bytes": 974
+    },
+    {
+      "path": "scope_protection_attestation.json",
+      "sha256": "ba04a2c5f63d0cec8f438a46cca43a8d618f02fd37971d5e4ff7bbbfe43e0ff8",
+      "size_bytes": 673
+    },
+    {
+      "path": "synthetic_evidence_attestation.json",
+      "sha256": "468f1be312d922bcffa406e57b421dd47c808ac21f2ed300a6e644585c72a085",
+      "size_bytes": 259
+    },
+    {
+      "path": "upstream_evidence_reconciliation.json",
+      "sha256": "ee53e9f3d06f51e58a70f2c4689360aa949ffdbb0c3553fdb3f6a3ce271de39f",
+      "size_bytes": 1152
+    }
+  ],
+  "created_utc": "2026-08-23T10:18:20.056961+00:00",
+  "row_level_applicant_evidence_included": false,
+  "status": "QUALIFIED_PENDING_REVIEW",
+  "upstream_evidence_read_only": true
+}

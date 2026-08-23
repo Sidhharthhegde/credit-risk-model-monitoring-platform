@@ -1,0 +1,17 @@
+{
+  "all_equal": true,
+  "deterministic_alert_ids": true,
+  "first_semantic_hashes": {
+    "alerts": "f22bd931792b33e75e23d140122da59f92756bab5cbbf234aa0a5399db0f2842",
+    "candidates": "73241d40a00643d764291582cde54b5e940fd824ed2309fcec19fb2fda573e02",
+    "components": "cbaa57b50193f4cac4f24a088cffa4c9a9f3226d1a013950d2d4599f8bfd50d1",
+    "overall": "f5b83f590cbdfaa137d8c4db9558ec05ce4f996ad15d28c17c49653cabb6cf85"
+  },
+  "result": "PASS",
+  "second_semantic_hashes": {
+    "alerts": "f22bd931792b33e75e23d140122da59f92756bab5cbbf234aa0a5399db0f2842",
+    "candidates": "73241d40a00643d764291582cde54b5e940fd824ed2309fcec19fb2fda573e02",
+    "components": "cbaa57b50193f4cac4f24a088cffa4c9a9f3226d1a013950d2d4599f8bfd50d1",
+    "overall": "f5b83f590cbdfaa137d8c4db9558ec05ce4f996ad15d28c17c49653cabb6cf85"
+  }
+}

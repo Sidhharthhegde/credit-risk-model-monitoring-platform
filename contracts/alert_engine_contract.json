@@ -1,0 +1,101 @@
+{
+  "alert_engine_id": "ALERT-ENGINE-01",
+  "policy_id": "ALERT-ENGINE-POLICY-01",
+  "version": "0.1.0",
+  "status": "FROZEN_PROSPECTIVE_EXECUTION_SPECIFICATION",
+  "scope": "PHASE_11_ALERT_ENGINE_BREACH_AGGREGATION_AND_MODEL_HEALTH_ONLY",
+  "model": {
+    "development_freeze_id": "DF-01",
+    "model_id": "XGBT-01",
+    "model_version": "xgbt01_raw_threshold01_df_v1",
+    "threshold_id": "THRESHOLD-01",
+    "threshold_value": 0.08,
+    "threshold_operator": ">=",
+    "cnd_02_status": "OPEN"
+  },
+  "execution_barriers": {
+    "new_monitoring_metrics_calculated": false,
+    "upstream_metric_recalculation_permitted": false,
+    "upstream_severity_modification_permitted": false,
+    "upstream_evidence_read_only": true,
+    "model_refitting_permitted": false,
+    "recalibration_permitted": false,
+    "threshold_retuning_permitted": false
+  },
+  "policy_binding": {
+    "path": "configs/alert_aggregation_policy.yaml",
+    "sha256": "0ff9baa772cf602bfee3e0bb6a0a122b4be5fc424da09d0fee9cbafa4573d4b6",
+    "classification": "PROJECT_DEFINED_GOVERNANCE_ASSUMPTIONS_NOT_REGULATORY_REQUIREMENTS"
+  },
+  "critical_predictor_mapping": {
+    "mapping_id": "CRITICAL-PREDICTOR-MAPPING-01",
+    "source_sha256": "47e2b838782ee35409a8907cc430104e3da23a402d34237a87784313c0d4f605",
+    "source_population": "TRAIN",
+    "critical_rule": "TIER_1_THROUGH_FIRST_FEATURE_REACHING_80_PERCENT_CUMULATIVE_ABS_SHAP",
+    "current_drift_may_change_mapping": false,
+    "classification": "PROJECT_DEFINED_NONCAUSAL_MODEL_MATERIALITY_MAPPING"
+  },
+  "performance_alert_policy": {
+    "policy_id": "PERFORMANCE-ALERT-POLICY-01",
+    "reference_snapshot_id": "DEV-VAL-PHYSICAL-01",
+    "reference_snapshot_manifest_sha256": "2b9d5a0fe42989e50c0063b366b98e7a8102171f5aa460b766444d83e03a7c4f",
+    "iterations": 1000,
+    "seed": 42,
+    "resampling": "STRATIFIED_WITH_REPLACEMENT_PRESERVE_CLASS_COUNTS",
+    "warning_quantiles": [0.025, 0.975],
+    "critical_quantiles": [0.005, 0.995],
+    "warning_material_standard_deviations": 1.0,
+    "critical_material_standard_deviations": 2.0,
+    "both_material_and_control_breach_required": true,
+    "p_value_only_alert_permitted": false,
+    "direct_metrics": ["roc_auc", "performance_ks", "observed_expected_ratio", "recall_default_capture"],
+    "supporting_metrics": ["pr_auc_average_precision", "brier_score", "log_loss", "specificity", "precision"],
+    "derived_only_metrics": ["gini", "false_negative_rate"]
+  },
+  "component_policy": {
+    "components": ["DATA_QUALITY", "FEATURE_DRIFT", "PREDICTION", "PERFORMANCE", "CALIBRATION", "THRESHOLD_PERFORMANCE", "SEGMENT"],
+    "health_states": ["NORMAL", "WARNING", "CRITICAL", "NOT_ASSESSABLE", "NOT_ASSESSABLE_FOR_ALERT_AGGREGATION"],
+    "segment_v1_role": "CONTEXT_ONLY_NOT_ALERT_DRIVER"
+  },
+  "authorization_policy": {
+    "states": ["AUTHORIZED", "BLOCKED_HARD_GATE", "BLOCKED_SOURCE_GOVERNANCE"],
+    "authorization_is_model_health": false
+  },
+  "evidence_scope_policy": {
+    "states": ["LABEL_FREE_ONLY", "FULL_OUTCOME_ELIGIBLE", "PARTIAL_OUTCOME_EVIDENCE", "NOT_ASSESSABLE"],
+    "synthetic_evidence_type_is_separate": true
+  },
+  "alert_lifecycle": {
+    "statuses": ["OPEN", "ACKNOWLEDGED", "RESOLVED"],
+    "new_alert_status": "OPEN",
+    "suppression_enabled": false,
+    "deterministic_alert_ids_required": true
+  },
+  "persistence": {
+    "engine_implemented": true,
+    "qualification_fixtures_only": true,
+    "current_scenarios_have_calendar_interpretation": false,
+    "current_repeat_breach_status": "NOT_ASSESSABLE_NO_COMPARABLE_LONGITUDINAL_HISTORY"
+  },
+  "controlled_deferred": {
+    "threshold_boundary_density_status": "CONTROLLED_DEFERRED"
+  },
+  "scope_protection": {
+    "segment_alert_policy_enabled": false,
+    "fairness_certification": false,
+    "real_production_authorization": false,
+    "sqlite_or_dashboard": false,
+    "row_level_applicant_evidence_publicly_persisted": false
+  },
+  "frozen_dependencies": {
+    "phase_6_manifest_sha256": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+    "phase_7_manifest_sha256": "64a706d84465e0398391f9d217702343b31aa4d446864a9eca70db89bc930f17",
+    "phase_8_manifest_sha256": "7bb910835b9b7f2df9ac612a72323d37d6395eadd907249d8a8ebd7372bb21d8",
+    "phase_9_manifest_sha256": "17209d875644bfa495889fad0133a9585c5d312aa1164f4a145d4a353139bb5e",
+    "phase_10_manifest_sha256": "3412307e589dd1130fb7764f5e553dbba7fa4391074c5f2644e294d85e13de59",
+    "legacy_alert_thresholds_sha256": "987373af8b91f5cbfe5dbaaea829bd122d64ad41e9dc32e6084eb5ef5856d331",
+    "phase_7_materiality_lineage_sha256": "baa1b0db0864ecae57b22468a44a3e779b9adb335262477f61fe8de33b746a07",
+    "phase_7_feature_results_sha256": "bc83f800599792eb9a51b0eb4ca29cc8bd9e6acac404775bba2336d7639dc071",
+    "phase_6_scenario_summary_sha256": "dffc69c520cc4a49339c8953ac72ae6695203466e27f2361ccfea1efbe44b4b8"
+  }
+}

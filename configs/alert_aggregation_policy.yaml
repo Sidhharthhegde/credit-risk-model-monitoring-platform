@@ -1,0 +1,85 @@
+policy_id: ALERT-ENGINE-POLICY-01
+version: 0.1.0
+status: FROZEN_PROSPECTIVE_EXECUTION_SPECIFICATION
+classification: PROJECT_DEFINED_GOVERNANCE_ASSUMPTIONS_NOT_REGULATORY_REQUIREMENTS
+
+critical_predictor_mapping:
+  mapping_id: CRITICAL-PREDICTOR-MAPPING-01
+  source: FROZEN_PART_A_TRAIN_RAW_FEATURE_SHAP_IMPORTANCE
+  rule: PHASE7_TIER_1_FIRST_80_PERCENT_CUMULATIVE_ABS_SHAP
+  critical_tiers: [TIER_1]
+  current_monitoring_results_may_change_mapping: false
+
+metric_roles:
+  dq_missing_rate_absolute_change: DIRECT_ALERT_DRIVER
+  dq_unseen_category_rate: DIRECT_ALERT_DRIVER
+  feature_psi: DIRECT_ALERT_DRIVER
+  score_psi: DIRECT_ALERT_DRIVER
+  risk_positive_rate_absolute_change: DIRECT_ALERT_DRIVER
+  roc_auc: DIRECT_ALERT_DRIVER
+  performance_ks: DIRECT_ALERT_DRIVER
+  observed_expected_ratio: DIRECT_ALERT_DRIVER
+  recall_default_capture: DIRECT_ALERT_DRIVER
+  pr_auc_average_precision: SUPPORTING_CORROBORATION
+  brier_score: SUPPORTING_CORROBORATION
+  log_loss: SUPPORTING_CORROBORATION
+  specificity: SUPPORTING_CORROBORATION
+  precision: SUPPORTING_CORROBORATION
+  gini: DERIVED_ONLY
+  false_negative_rate: DERIVED_ONLY
+  p_values: NON_ALERTING
+  segment_metrics: CONTEXT_ONLY_V1
+
+feature_alert_mapping:
+  WARNING:
+    any_materiality: WARNING
+  CRITICAL:
+    critical_predictor: CRITICAL
+    noncritical_predictor: WARNING
+  upstream_metric_severity_rewrite_permitted: false
+
+performance_reference_control_policy:
+  policy_id: PERFORMANCE-ALERT-POLICY-01
+  source_population: DEV-VAL-PHYSICAL-01
+  iterations: 1000
+  seed: 42
+  resampling: STRATIFIED_WITH_REPLACEMENT_PRESERVE_CLASS_COUNTS
+  warning_control_quantiles: [0.025, 0.975]
+  critical_control_quantiles: [0.005, 0.995]
+  warning_material_standard_deviations: 1.0
+  critical_material_standard_deviations: 2.0
+  both_material_and_control_breach_required: true
+  p_value_only_alert_permitted: false
+  metrics: [roc_auc, performance_ks, observed_expected_ratio, recall_default_capture]
+
+authorization:
+  hard_contract_or_grain_failure: BLOCKED_HARD_GATE
+  source_non_authoritative_with_valid_contract: BLOCKED_SOURCE_GOVERNANCE
+  otherwise: AUTHORIZED
+
+evidence_scope:
+  outcomes_unavailable: LABEL_FREE_ONLY
+  mature_eligible_synthetic_outcomes: FULL_OUTCOME_ELIGIBLE
+  blocked_input: NOT_ASSESSABLE
+
+overall_health:
+  authorization_block: NOT_ASSESSABLE
+  any_primary_component_critical: CRITICAL
+  no_critical_any_primary_component_warning: WARNING
+  all_required_components_normal_and_complete: NORMAL
+  all_available_normal_but_required_evidence_missing: NOT_ASSESSABLE
+  segment_component_role: CONTEXT_ONLY_NOT_REQUIRED_V1
+
+alert_lifecycle:
+  statuses: [OPEN, ACKNOWLEDGED, RESOLVED]
+  initial_status: OPEN
+
+persistence:
+  warning_consecutive_comparable_runs_for_escalation: 2
+  critical_immediate: true
+  recovery_consecutive_comparable_normal_runs: 1
+  current_scenario_calendar_persistence_claimed: false
+  current_scenario_status: NOT_ASSESSABLE_NO_COMPARABLE_LONGITUDINAL_HISTORY
+
+controlled_deferred:
+  threshold_boundary_density_window: CONTROLLED_DEFERRED

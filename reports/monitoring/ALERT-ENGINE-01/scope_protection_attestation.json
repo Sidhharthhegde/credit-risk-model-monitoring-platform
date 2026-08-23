@@ -1,0 +1,17 @@
+{
+  "all_scope_controls_pass": true,
+  "current_scenario_calendar_persistence_claimed": false,
+  "fairness_certification": false,
+  "model_refitting_permitted": false,
+  "new_monitoring_metrics_calculated": false,
+  "real_production_authorization": false,
+  "recalibration_permitted": false,
+  "row_level_applicant_evidence_publicly_persisted": false,
+  "segment_alert_policy_enabled": false,
+  "sqlite_or_dashboard": false,
+  "threshold_boundary_density_status": "CONTROLLED_DEFERRED",
+  "threshold_retuning_permitted": false,
+  "upstream_evidence_read_only": true,
+  "upstream_metric_recalculation_permitted": false,
+  "upstream_severity_modification_permitted": false
+}

@@ -1,0 +1,15 @@
+{
+  "alert_count": 329,
+  "candidate_role_counts": {
+    "CONTEXT_ONLY": 6,
+    "DERIVED_ONLY": 2,
+    "DIRECT_ALERT_DRIVER": 2246,
+    "SUPPORTING_CORROBORATION": 5
+  },
+  "duplicate_alert_ids": 0,
+  "p_value_generated_alert_count": 0,
+  "result": "PASS",
+  "segment_generated_alert_count": 0,
+  "supporting_or_derived_alert_count": 0,
+  "unique_alert_id_count": 329
+}

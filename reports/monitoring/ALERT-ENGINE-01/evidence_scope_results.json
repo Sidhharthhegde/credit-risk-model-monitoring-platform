@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "artifact_id": "SIM-M01-SCENARIO-01",
+      "evidence_scope": "LABEL_FREE_ONLY",
+      "evidence_type": "MONITORING_EVIDENCE",
+      "scenario_id": "SIM-M01"
+    },
+    {
+      "artifact_id": "SIM-M02-SCENARIO-01",
+      "evidence_scope": "LABEL_FREE_ONLY",
+      "evidence_type": "MONITORING_EVIDENCE",
+      "scenario_id": "SIM-M02"
+    },
+    {
+      "artifact_id": "SIM-M03-SCENARIO-01",
+      "evidence_scope": "LABEL_FREE_ONLY",
+      "evidence_type": "MONITORING_EVIDENCE",
+      "scenario_id": "SIM-M03"
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "evidence_scope": "LABEL_FREE_ONLY",
+      "evidence_type": "MONITORING_EVIDENCE",
+      "scenario_id": "SIM-M04"
+    },
+    {
+      "artifact_id": "SIM-M05-VALID-DEGRADED-01",
+      "evidence_scope": "LABEL_FREE_ONLY",
+      "evidence_type": "MONITORING_EVIDENCE",
+      "scenario_id": "SIM-M05"
+    },
+    {
+      "artifact_id": "SIM-M06-SCENARIO-01",
+      "evidence_scope": "FULL_OUTCOME_ELIGIBLE",
+      "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+      "scenario_id": "SIM-M06"
+    },
+    {
+      "artifact_id": "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+      "evidence_scope": "NOT_ASSESSABLE",
+      "evidence_type": "CONTROL_QUALIFICATION_EVIDENCE",
+      "scenario_id": "SIM-M05"
+    },
+    {
+      "artifact_id": "SIM-M05-HARD-FAIL-01",
+      "evidence_scope": "NOT_ASSESSABLE",
+      "evidence_type": "CONTROL_QUALIFICATION_EVIDENCE",
+      "scenario_id": "SIM-M05"
+    }
+  ]
+}

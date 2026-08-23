@@ -1,0 +1,34 @@
+{
+  "current_repeat_breach_status": "NOT_ASSESSABLE_NO_COMPARABLE_LONGITUDINAL_HISTORY",
+  "current_scenario_calendar_persistence_claimed": false,
+  "engine_implemented": true,
+  "fixture_results": [
+    {
+      "consecutive_breach_count": 1,
+      "index": 0,
+      "persistence_status": "ASSESSED",
+      "repeat_breach_escalated": false
+    },
+    {
+      "consecutive_breach_count": 2,
+      "index": 1,
+      "persistence_status": "ASSESSED",
+      "repeat_breach_escalated": true
+    },
+    {
+      "consecutive_breach_count": 0,
+      "index": 2,
+      "persistence_status": "ASSESSED",
+      "repeat_breach_escalated": false
+    },
+    {
+      "consecutive_breach_count": 1,
+      "index": 3,
+      "persistence_status": "ASSESSED",
+      "repeat_breach_escalated": false
+    }
+  ],
+  "normal_resets_count": true,
+  "result": "PASS",
+  "two_comparable_warnings_escalate": true
+}

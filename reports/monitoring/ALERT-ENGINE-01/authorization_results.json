@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "artifact_id": "SIM-M01-SCENARIO-01",
+      "authorization_status": "AUTHORIZED",
+      "reason_code": "ALL_INPUT_GOVERNANCE_GATES_PASS",
+      "scenario_id": "SIM-M01"
+    },
+    {
+      "artifact_id": "SIM-M02-SCENARIO-01",
+      "authorization_status": "AUTHORIZED",
+      "reason_code": "ALL_INPUT_GOVERNANCE_GATES_PASS",
+      "scenario_id": "SIM-M02"
+    },
+    {
+      "artifact_id": "SIM-M03-SCENARIO-01",
+      "authorization_status": "AUTHORIZED",
+      "reason_code": "ALL_INPUT_GOVERNANCE_GATES_PASS",
+      "scenario_id": "SIM-M03"
+    },
+    {
+      "artifact_id": "SIM-M04-SCENARIO-01",
+      "authorization_status": "AUTHORIZED",
+      "reason_code": "ALL_INPUT_GOVERNANCE_GATES_PASS",
+      "scenario_id": "SIM-M04"
+    },
+    {
+      "artifact_id": "SIM-M05-VALID-DEGRADED-01",
+      "authorization_status": "AUTHORIZED",
+      "reason_code": "ALL_INPUT_GOVERNANCE_GATES_PASS",
+      "scenario_id": "SIM-M05"
+    },
+    {
+      "artifact_id": "SIM-M06-SCENARIO-01",
+      "authorization_status": "AUTHORIZED",
+      "reason_code": "ALL_INPUT_GOVERNANCE_GATES_PASS",
+      "scenario_id": "SIM-M06"
+    },
+    {
+      "artifact_id": "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+      "authorization_status": "BLOCKED_SOURCE_GOVERNANCE",
+      "reason_code": "SOURCE_NON_AUTHORITATIVE_NO_APPROVED_FALLBACK_CND_02_OPEN",
+      "scenario_id": "SIM-M05"
+    },
+    {
+      "artifact_id": "SIM-M05-HARD-FAIL-01",
+      "authorization_status": "BLOCKED_HARD_GATE",
+      "reason_code": "CONTRACT_AND_GRAIN_HARD_FAILURE",
+      "scenario_id": "SIM-M05"
+    }
+  ]
+}

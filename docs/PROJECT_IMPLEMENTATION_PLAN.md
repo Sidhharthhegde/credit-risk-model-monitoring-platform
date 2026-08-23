@@ -981,45 +981,33 @@ Determine whether governed subpopulations change differently from the portfolio 
 
 ---
 
-# Phase 11 - Calibration and Portfolio Outcomes
+# Phase 11 - Alert Engine, Breach Aggregation and Overall Model Health
 
 ## Objective
 
-Assess whether raw DF-01 probabilities remain aligned with observed default outcomes on eligible mature cohorts.
-
-## Metrics
-
-- Mean predicted PD.
-- Observed default rate.
-- Expected default count.
-- Observed default count.
-- O/E ratio.
-- Brier score.
-- Log loss.
-- Probability bias.
-- Fixed calibration bands.
-- Calibration curve.
-- Calibration intercept and slope when numerically assessable.
+Convert frozen Phase 6–10 monitoring evidence into governed alerts, authorization states, evidence-scope states, component health and overall model health without recalculating upstream metrics.
 
 ## Tasks
 
-1. Enforce maturity and sample sufficiency.
-2. Use raw probabilities without fitting a calibrator.
-3. Apply fixed reference calibration bands.
-4. Show mean predicted PD versus observed rate per band.
-5. Handle zero expected or observed events safely.
-6. Define O/E warning and critical ranges before scenario evaluation.
-7. Calculate uncertainty for observed rates and O/E where approved.
-8. Treat failed calibration regressions as undefined, not zero or failed performance.
-9. Record probability-quality results separately from discrimination.
-10. Preserve DF-01 immutability even when recalibration is recommended.
+1. Freeze the alert and aggregation policy before execution.
+2. Map critical predictors only from frozen TRAIN SHAP evidence.
+3. Derive performance limits only from deterministic development-validation resampling.
+4. Normalize Phase 6–10 evidence without recalculating it.
+5. Enforce direct, supporting, derived and contextual metric roles.
+6. Generate deterministic machine-readable alerts with governed lifecycle states.
+7. Keep hard-gate and source-governance authorization blocks distinct from model health.
+8. Calculate independent authorization, evidence-scope and component-health states.
+9. Require complete required evidence before assigning `NORMAL` overall health.
+10. Qualify persistence with controlled fixtures without inventing scenario chronology.
 
 ## Completion criteria
 
-- Calibration fixtures reconcile.
-- Fixed bands remain unchanged across periods.
-- Unstable regression diagnostics do not corrupt the run.
-- Recommendations do not alter DF-01.
+- All Phase 6–10 manifest and artifact hashes reconcile.
+- Supporting and derived metrics generate no duplicate alerts.
+- Blocked artifacts receive `NOT_ASSESSABLE` health.
+- M01–M05 missing outcomes remain non-normal performance evidence.
+- M06 performance alerts remain explicitly synthetic.
+- Alert IDs, component states and overall health reproduce exactly.
 
 ---
 
@@ -1681,7 +1669,7 @@ Update this table only when supported by a phase completion decision.
 | 8 | `COMPLETE` | `reports/monitoring/PREDICTION-MONITORING-01/phase8_completion_decision.json` | Approved and frozen on 2026-08-23; Phase 9 authorized |
 | 9 | `COMPLETE` | `reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01/phase9_completion_decision.json` | Conditional taxonomy issue resolved; approved and frozen on 2026-08-23; Phase 10 authorized |
 | 10 | `COMPLETE` | `reports/monitoring/SEGMENT-MONITORING-01/phase10_completion_decision.json` | Approved and frozen on 2026-08-23; prospective contract unchanged; Phase 11 authorized |
-| 11 | `NOT_STARTED` | Not issued |  |
+| 11 | `IN_PROGRESS` | `reports/monitoring/ALERT-ENGINE-01/phase11_completion_decision.json` | Technical qualification passed on 2026-08-23; owner review pending; Phase 12 unauthorized |
 | 12 | `NOT_STARTED` | Not issued |  |
 | 13 | `NOT_STARTED` | Not issued |  |
 | 14 | `NOT_STARTED` | Not issued |  |
@@ -1702,12 +1690,12 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next authorized work is Phase 11 alert-engine, breach-aggregation and model-health design:
+The next controlled action is owner review of the technically qualified Phase 11 candidate:
 
-1. Define the component-to-alert mapping prospectively before generating alerts.
-2. Resolve repeat-breach, hard-gate override, lifecycle and aggregation rules explicitly.
-3. Keep metric severity, alert state and overall model health as separate dimensions.
-4. Address controlled-deferred performance limits and uncertainty rules through explicit governance.
-5. Preserve frozen Phase 6–10 evidence as immutable alert-engine inputs.
+1. Review the prospective alert, critical-predictor and performance-control policies.
+2. Confirm all 329 alerts trace only to direct governed drivers and two governance gates.
+3. Confirm authorization, evidence scope and health remain independent.
+4. Confirm current scenarios make no persistence claim and threshold-boundary density remains deferred.
+5. Approve and freeze Phase 11 separately before authorizing Phase 12 history and persistence work.
 
-Phase 10 is approved and frozen. Phase 11 design is authorized but not executed.
+Phase 11 is technically qualified but not complete or frozen. Phase 12 is not authorized.

@@ -38,6 +38,10 @@
 | `contracts/segment_monitoring_contract.json` | 0.1.0 | Frozen prospective specification; evidence approved | Phase 10 definition, reference, sufficiency, severity and scope contract; unchanged during result approval |
 | `src/credit_risk_monitoring/segment/` | 0.1.0 | Implemented and tested | Generic frozen-definition assignment, segment reference, label-free and sufficiency-gated outcome engine |
 | `reports/monitoring/SEGMENT-MONITORING-01/` | 0.1.0 | Approved and frozen | Aggregate Phase 10 evidence across 12 families and 32 frozen levels; no row-level membership, alerts, fairness certification or overall health |
+| `configs/alert_aggregation_policy.yaml` | 0.1.0 | Frozen prospective specification; pending result review | Phase 11 metric roles, criticality, performance controls, authorization, health, lifecycle and persistence rules |
+| `contracts/alert_engine_contract.json` | 0.1.0 | Frozen prospective specification; pending result review | Phase 11 read-only dependency, policy, scope and aggregation contract |
+| `src/credit_risk_monitoring/alert/` | 0.1.0 | Implemented and tested | Generic breach qualification, deterministic alerts, lifecycle, persistence, component and overall-health engine |
+| `reports/monitoring/ALERT-ENGINE-01/` | 0.1.0 | Technically qualified; pending owner review | Aggregate Phase 11 policies, alerts, authorization, evidence-scope and health evidence |
 | `configs/model_config.yaml` | 0.1.0 | Approved and frozen | Semantic model metadata referencing the binding |
 | `configs/monitoring_config.yaml` | 0.1.0 | Approved and frozen | Monitoring scope and execution policy |
 | `configs/alert_thresholds.yaml` | 0.1.0 | Approved and frozen | Project-defined alert assumptions |

@@ -1,0 +1,26 @@
+control_id,control,result
+P11-001,Phase 10 approved frozen manifest authorizes Phase 11,PASS
+P11-002,Alert policy was frozen before execution,PASS
+P11-003,Critical-predictor mapping was derived only from frozen TRAIN SHAP evidence,PASS
+P11-004,Performance limits were derived only from frozen development-validation evidence,PASS
+P11-005,Performance alerts require both material and control-limit breach,PASS
+P11-006,P-values cannot independently generate alerts,PASS
+P11-007,Threshold-boundary density remains controlled deferred,PASS
+P11-008,Phase 6 through 10 evidence was consumed read-only,PASS
+P11-009,No upstream metric or severity was recalculated or modified,PASS
+P11-010,Generic deterministic alert IDs are unique,PASS
+P11-011,Direct supporting derived and contextual roles are enforced,PASS
+P11-012,Supporting and derived performance metrics generated no duplicate alerts,PASS
+P11-013,Hard contract and source governance blocks remain distinct,PASS
+P11-014,Authorization evidence scope and health are independent,PASS
+P11-015,M01 through M05 performance health remains not assessable,PASS
+P11-016,M06 performance alerts remain synthetic non-empirical evidence,PASS
+P11-017,Component health states are deterministic,PASS
+P11-018,Overall normal requires complete required evidence,PASS
+P11-019,Blocked artifacts receive not-assessable health,PASS
+P11-020,Persistence logic passed dedicated comparable-run fixtures,PASS
+P11-021,Current scenarios are not represented as longitudinal persistence,PASS
+P11-022,Segment evidence remains contextual in alert-engine v1,PASS
+P11-023,No model fit recalibration threshold tuning fairness certification database or dashboard was created,PASS
+P11-024,Repeated Phase 11 execution is semantically reproducible,PASS
+P11-025,Owner approval and Phase 12 authorization remain separate,PASS

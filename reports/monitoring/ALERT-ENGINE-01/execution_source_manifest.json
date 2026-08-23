@@ -1,0 +1,39 @@
+{
+  "alert_engine_id": "ALERT-ENGINE-01",
+  "creation_code_version": "PHASE11-ALERT-ENGINE-0.1.0",
+  "frozen_dependencies": {
+    "legacy_alert_thresholds_sha256": "987373af8b91f5cbfe5dbaaea829bd122d64ad41e9dc32e6084eb5ef5856d331",
+    "phase_10_manifest_sha256": "3412307e589dd1130fb7764f5e553dbba7fa4391074c5f2644e294d85e13de59",
+    "phase_6_manifest_sha256": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+    "phase_6_scenario_summary_sha256": "dffc69c520cc4a49339c8953ac72ae6695203466e27f2361ccfea1efbe44b4b8",
+    "phase_7_feature_results_sha256": "bc83f800599792eb9a51b0eb4ca29cc8bd9e6acac404775bba2336d7639dc071",
+    "phase_7_manifest_sha256": "64a706d84465e0398391f9d217702343b31aa4d446864a9eca70db89bc930f17",
+    "phase_7_materiality_lineage_sha256": "baa1b0db0864ecae57b22468a44a3e779b9adb335262477f61fe8de33b746a07",
+    "phase_8_manifest_sha256": "7bb910835b9b7f2df9ac612a72323d37d6395eadd907249d8a8ebd7372bb21d8",
+    "phase_9_manifest_sha256": "17209d875644bfa495889fad0133a9585c5d312aa1164f4a145d4a353139bb5e"
+  },
+  "implementation_sources": [
+    {
+      "path": "contracts/alert_engine_contract.json",
+      "sha256": "0faa272b1947e4205ab6d8341f80a05f55de2babf4553027db8e2acce5e43613"
+    },
+    {
+      "path": "configs/alert_aggregation_policy.yaml",
+      "sha256": "0ff9baa772cf602bfee3e0bb6a0a122b4be5fc424da09d0fee9cbafa4573d4b6"
+    },
+    {
+      "path": "src/credit_risk_monitoring/alert/engine.py",
+      "sha256": "ddf063d148b9e9b656b2591ea88b4c465bcb0dd194d2a0a5646340e995251598"
+    },
+    {
+      "path": "src/credit_risk_monitoring/alert/__init__.py",
+      "sha256": "b8499028b10e3224cd8d612c9038622cd49cb97d2ebcda0b3b72defd2f15ce58"
+    },
+    {
+      "path": "scripts/run_phase11_alert_engine.py",
+      "sha256": "ac528686e30414f968c21d810773fa9bb1a1071b167d42659777b63778ab1baa"
+    }
+  ],
+  "part_a_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+  "part_b_base_commit": "33bacb76672101a485f6496cd183d42ba341a1b2"
+}

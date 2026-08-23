@@ -1,0 +1,66 @@
+{
+  "both_material_and_control_breach_required": true,
+  "critical_material_standard_deviations": 2.0,
+  "critical_quantiles": [
+    0.005,
+    0.995
+  ],
+  "iterations": 1000,
+  "metrics": {
+    "observed_expected_ratio": {
+      "adverse_direction": "TWO_SIDED",
+      "bootstrap_mean": 1.000626123429978,
+      "bootstrap_standard_deviation": 0.004521365042542391,
+      "critical_lower": 0.9896218404051297,
+      "critical_upper": 1.0116309017191711,
+      "reference_value": 1.000728584559344,
+      "role": "DIRECT_ALERT_DRIVER",
+      "warning_lower": 0.9918966463902852,
+      "warning_upper": 1.0093732919273497
+    },
+    "performance_ks": {
+      "adverse_direction": "LOWER_IS_ADVERSE",
+      "bootstrap_mean": 0.41041049982327776,
+      "bootstrap_standard_deviation": 0.008082392905084324,
+      "critical_lower": 0.389563134561011,
+      "critical_upper": 0.42967889136646564,
+      "reference_value": 0.4092991806686964,
+      "role": "DIRECT_ALERT_DRIVER",
+      "warning_lower": 0.39415455668922567,
+      "warning_upper": 0.4257160023383629
+    },
+    "recall_default_capture": {
+      "adverse_direction": "LOWER_IS_ADVERSE",
+      "bootstrap_mean": 0.700859022556391,
+      "bootstrap_standard_deviation": 0.007819726899416901,
+      "critical_lower": 0.68125,
+      "critical_upper": 0.719656283566058,
+      "reference_value": 0.700859291084855,
+      "role": "DIRECT_ALERT_DRIVER",
+      "warning_lower": 0.6852846401718582,
+      "warning_upper": 0.7161654135338346
+    },
+    "roc_auc": {
+      "adverse_direction": "LOWER_IS_ADVERSE",
+      "bootstrap_mean": 0.7716713898864339,
+      "bootstrap_standard_deviation": 0.004127233774216696,
+      "critical_lower": 0.7613829882104334,
+      "critical_upper": 0.7812638081942654,
+      "reference_value": 0.7716776779189948,
+      "role": "DIRECT_ALERT_DRIVER",
+      "warning_lower": 0.7639466592615893,
+      "warning_upper": 0.7793302682228445
+    }
+  },
+  "p_value_only_alert_permitted": false,
+  "policy_id": "PERFORMANCE-ALERT-POLICY-01",
+  "reference_snapshot_id": "DEV-VAL-PHYSICAL-01",
+  "resampling": "STRATIFIED_WITH_REPLACEMENT_PRESERVE_CLASS_COUNTS",
+  "seed": 42,
+  "status": "FROZEN_PROSPECTIVE_CONTROL_LIMITS",
+  "warning_material_standard_deviations": 1.0,
+  "warning_quantiles": [
+    0.025,
+    0.975
+  ]
+}

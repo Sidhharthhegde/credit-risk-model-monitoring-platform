@@ -1,0 +1,8 @@
+{
+  "empirical_performance": false,
+  "external_validation": false,
+  "m01_through_m05_performance_alerts_generated": false,
+  "m06_performance_alert_evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+  "production_performance_claim": false,
+  "result": "PASS"
+}

@@ -1669,7 +1669,7 @@ Update this table only when supported by a phase completion decision.
 | 8 | `COMPLETE` | `reports/monitoring/PREDICTION-MONITORING-01/phase8_completion_decision.json` | Approved and frozen on 2026-08-23; Phase 9 authorized |
 | 9 | `COMPLETE` | `reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01/phase9_completion_decision.json` | Conditional taxonomy issue resolved; approved and frozen on 2026-08-23; Phase 10 authorized |
 | 10 | `COMPLETE` | `reports/monitoring/SEGMENT-MONITORING-01/phase10_completion_decision.json` | Approved and frozen on 2026-08-23; prospective contract unchanged; Phase 11 authorized |
-| 11 | `IN_PROGRESS` | `reports/monitoring/ALERT-ENGINE-01/phase11_completion_decision.json` | Technical qualification passed on 2026-08-23; owner review pending; Phase 12 unauthorized |
+| 11 | `COMPLETE` | `reports/monitoring/ALERT-ENGINE-01/phase11_completion_decision.json` | Directionality condition resolved; approved and frozen on 2026-08-23; Phase 12 authorized |
 | 12 | `NOT_STARTED` | Not issued |  |
 | 13 | `NOT_STARTED` | Not issued |  |
 | 14 | `NOT_STARTED` | Not issued |  |
@@ -1690,12 +1690,4 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next controlled action is owner review of the technically qualified Phase 11 candidate:
-
-1. Review the prospective alert, critical-predictor and performance-control policies.
-2. Confirm all 329 alerts trace only to direct governed drivers and two governance gates.
-3. Confirm authorization, evidence scope and health remain independent.
-4. Confirm current scenarios make no persistence claim and threshold-boundary density remains deferred.
-5. Approve and freeze Phase 11 separately before authorizing Phase 12 history and persistence work.
-
-Phase 11 is technically qualified but not complete or frozen. Phase 12 is not authorized.
+The next controlled action is Phase 12 protocol review and implementation planning for monitoring history, evidence persistence and the query layer. Phase 12 is authorized but remains unexecuted. It must preserve the Phase 11 rule that simulated M01–M06 scenarios are not a calendar history and must not manufacture persistence claims.

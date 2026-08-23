@@ -12,6 +12,7 @@ from credit_risk_monitoring.alert.engine import (
     deterministic_alert_id,
     persistence_sequence,
     transition_alert_status,
+    build_performance_policy,
 )
 
 
@@ -20,7 +21,7 @@ def _performance_policy() -> PerformanceControlPolicy:
         "reference_value": 0.8, "bootstrap_standard_deviation": 0.01,
         "warning_lower": 0.78, "warning_upper": 0.82,
         "critical_lower": 0.76, "critical_upper": 0.84,
-        "adverse_direction": "LOWER_IS_ADVERSE",
+        "adverse_direction": "LOWER_ONLY",
     }
     return PerformanceControlPolicy({"metrics": {"roc_auc": rule}})
 
@@ -72,6 +73,47 @@ def test_performance_policy_requires_control_and_material_breach() -> None:
     assert policy.severity("roc_auc", 0.75)[0] == "CRITICAL"
 
 
+def test_lower_only_performance_metrics_ignore_upper_tail_improvement() -> None:
+    base = _performance_policy().policy["metrics"]["roc_auc"]
+    policy = PerformanceControlPolicy({"metrics": {
+        metric: {**base, "adverse_direction": "LOWER_ONLY"}
+        for metric in ["roc_auc", "performance_ks", "recall_default_capture"]
+    }})
+    for metric in ["roc_auc", "performance_ks", "recall_default_capture"]:
+        assert policy.severity(metric, 0.85)[0] == "NORMAL"
+        assert policy.severity(metric, 0.77)[0] == "WARNING"
+
+
+def test_observed_expected_ratio_is_two_sided_about_reference_distribution() -> None:
+    rule = {
+        "reference_value": 1.0, "bootstrap_standard_deviation": 0.01,
+        "warning_lower": 0.98, "warning_upper": 1.02,
+        "critical_lower": 0.96, "critical_upper": 1.04,
+        "adverse_direction": "TWO_SIDED", "comparison_center": "REFERENCE_DISTRIBUTION",
+    }
+    policy = PerformanceControlPolicy({"metrics": {"observed_expected_ratio": rule}})
+    assert policy.severity("observed_expected_ratio", 0.97)[0] == "WARNING"
+    assert policy.severity("observed_expected_ratio", 1.03)[0] == "WARNING"
+
+
+def test_performance_contract_rejects_missing_adverse_direction() -> None:
+    frame = pd.DataFrame({"TARGET": [0, 0, 1, 1], "raw_probability": [0.1, 0.2, 0.7, 0.8]})
+    contract = {"performance_alert_policy": {
+        "policy_id": "X", "reference_snapshot_id": "X", "iterations": 2, "seed": 42,
+        "resampling": "STRATIFIED_WITH_REPLACEMENT_PRESERVE_CLASS_COUNTS",
+        "warning_quantiles": [0.1, 0.9], "critical_quantiles": [0.05, 0.95],
+        "warning_material_standard_deviations": 1.0, "critical_material_standard_deviations": 2.0,
+        "direct_metrics": ["roc_auc", "performance_ks", "observed_expected_ratio", "recall_default_capture"],
+        "adverse_directions": {"roc_auc": "LOWER_ONLY"}, "two_sided_centers": {},
+    }}
+    try:
+        build_performance_policy(frame, contract)
+    except ValueError as error:
+        assert "exactly one adverse direction" in str(error)
+    else:
+        raise AssertionError("Incomplete adverse-direction policy passed contract validation")
+
+
 def test_overall_health_keeps_authorization_and_completeness_independent() -> None:
     assert aggregate_health(["CRITICAL", "NORMAL"], authorization_status="AUTHORIZED", evidence_complete=False) == "CRITICAL"
     assert aggregate_health(["WARNING", "NORMAL"], authorization_status="AUTHORIZED", evidence_complete=False) == "WARNING"
@@ -101,15 +143,16 @@ def test_alert_lifecycle_allows_only_governed_forward_transitions() -> None:
             raise AssertionError(f"Invalid lifecycle transition passed: {current} -> {target}")
 
 
-def test_phase11_candidate_review_gate_when_present() -> None:
+def test_phase11_approval_gate_when_present() -> None:
     root = Path(__file__).resolve().parents[2]
     report = root / "reports/monitoring/ALERT-ENGINE-01"
     if report.exists():
         decision = json.loads((report / "phase11_completion_decision.json").read_text(encoding="utf-8"))
         assert decision["technical_qualification"] == "PASS"
-        assert decision["review_decision"] == "PENDING_USER_PROTOCOL_OWNER_REVIEW"
-        assert decision["phase_11_complete"] is False
-        assert decision["phase_12_authorized"] is False
+        assert decision["review_decision"] == "APPROVED"
+        assert decision["phase_11_complete"] is True
+        assert decision["performance_adverse_direction_policy_approved"] is True
+        assert decision["phase_12_authorized"] is True
         assert decision["overall_model_health_calculated"] is True
         scope = json.loads((report / "scope_protection_attestation.json").read_text(encoding="utf-8"))
         assert scope["new_monitoring_metrics_calculated"] is False

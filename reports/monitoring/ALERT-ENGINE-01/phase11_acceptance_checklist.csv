@@ -24,3 +24,4 @@ P11-022,Segment evidence remains contextual in alert-engine v1,PASS
 P11-023,No model fit recalibration threshold tuning fairness certification database or dashboard was created,PASS
 P11-024,Repeated Phase 11 execution is semantically reproducible,PASS
 P11-025,Owner approval and Phase 12 authorization remain separate,PASS
+P11-026,Every direct performance metric has an explicitly frozen adverse-direction rule,PASS

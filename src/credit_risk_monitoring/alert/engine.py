@@ -20,7 +20,7 @@ from credit_risk_monitoring.reference.materialization import _semantic_hash
 
 
 ALERT_ENGINE_ID = "ALERT-ENGINE-01"
-CODE_VERSION = "PHASE11-ALERT-ENGINE-0.1.0"
+CODE_VERSION = "PHASE11-ALERT-ENGINE-0.1.1"
 AUTHORITATIVE_ARTIFACTS = {
     "SIM-M01": "SIM-M01-SCENARIO-01", "SIM-M02": "SIM-M02-SCENARIO-01",
     "SIM-M03": "SIM-M03-SCENARIO-01", "SIM-M04": "SIM-M04-SCENARIO-01",
@@ -114,9 +114,11 @@ class PerformanceControlPolicy:
         standard_deviation = float(rule["bootstrap_standard_deviation"])
         direction = rule["adverse_direction"]
         delta = value - reference
+        if direction not in {"LOWER_ONLY", "TWO_SIDED"}:
+            raise ValueError(f"Unsupported adverse direction for {metric_id}: {direction}")
         adverse_distance = abs(delta) if direction == "TWO_SIDED" else reference - value
-        critical_control = value < rule["critical_lower"] if direction == "LOWER_IS_ADVERSE" else not (rule["critical_lower"] <= value <= rule["critical_upper"])
-        warning_control = value < rule["warning_lower"] if direction == "LOWER_IS_ADVERSE" else not (rule["warning_lower"] <= value <= rule["warning_upper"])
+        critical_control = value < rule["critical_lower"] if direction == "LOWER_ONLY" else not (rule["critical_lower"] <= value <= rule["critical_upper"])
+        warning_control = value < rule["warning_lower"] if direction == "LOWER_ONLY" else not (rule["warning_lower"] <= value <= rule["warning_upper"])
         critical_material = adverse_distance >= 2.0 * standard_deviation
         warning_material = adverse_distance >= 1.0 * standard_deviation
         if critical_control and critical_material:
@@ -140,6 +142,18 @@ def build_performance_policy(dev_val: pd.DataFrame, contract: dict[str, Any]) ->
     p = dev_val["raw_probability"].to_numpy(dtype=float)
     positives = p[y == 1]; negatives = p[y == 0]
     specification = contract["performance_alert_policy"]
+    direct_metrics = set(specification["direct_metrics"])
+    directions = specification.get("adverse_directions", {})
+    if set(directions) != direct_metrics:
+        missing = sorted(direct_metrics - set(directions))
+        unexpected = sorted(set(directions) - direct_metrics)
+        raise ValueError(f"Every direct performance metric requires exactly one adverse direction; missing={missing}, unexpected={unexpected}")
+    if any(direction not in {"LOWER_ONLY", "TWO_SIDED"} for direction in directions.values()):
+        raise ValueError("Direct performance metrics permit only LOWER_ONLY or TWO_SIDED adverse directions")
+    two_sided = {metric for metric, direction in directions.items() if direction == "TWO_SIDED"}
+    centers = specification.get("two_sided_centers", {})
+    if set(centers) != two_sided or any(center != "REFERENCE_DISTRIBUTION" for center in centers.values()):
+        raise ValueError("Every two-sided direct performance metric must be centered on REFERENCE_DISTRIBUTION")
     rng = np.random.default_rng(int(specification["seed"]))
     draws = {metric: np.empty(int(specification["iterations"]), dtype=float) for metric in specification["direct_metrics"]}
     for index in range(int(specification["iterations"])):
@@ -160,11 +174,12 @@ def build_performance_policy(dev_val: pd.DataFrame, contract: dict[str, Any]) ->
             "bootstrap_mean": float(values.mean()), "bootstrap_standard_deviation": float(values.std(ddof=1)),
             "warning_lower": float(warning_lower), "warning_upper": float(warning_upper),
             "critical_lower": float(critical_lower), "critical_upper": float(critical_upper),
-            "adverse_direction": "TWO_SIDED" if metric == "observed_expected_ratio" else "LOWER_IS_ADVERSE",
+            "adverse_direction": directions[metric],
+            "comparison_center": centers.get(metric, "NOT_APPLICABLE_LOWER_ONLY"),
             "role": "DIRECT_ALERT_DRIVER",
         }
     return {
-        "policy_id": specification["policy_id"], "status": "FROZEN_PROSPECTIVE_CONTROL_LIMITS",
+        "policy_id": specification["policy_id"], "status": "APPROVED_FROZEN_CONTROL_LIMITS",
         "reference_snapshot_id": specification["reference_snapshot_id"],
         "iterations": specification["iterations"], "seed": specification["seed"],
         "resampling": specification["resampling"], "warning_quantiles": specification["warning_quantiles"],
@@ -172,6 +187,7 @@ def build_performance_policy(dev_val: pd.DataFrame, contract: dict[str, Any]) ->
         "warning_material_standard_deviations": specification["warning_material_standard_deviations"],
         "critical_material_standard_deviations": specification["critical_material_standard_deviations"],
         "both_material_and_control_breach_required": True, "p_value_only_alert_permitted": False,
+        "adverse_direction_policy_frozen": True,
         "metrics": metrics,
     }
 
@@ -507,7 +523,7 @@ def run_phase11_alert_engine(project_root: Path, explicit_part_a_root: Path | No
     report_stage.mkdir(parents=True)
     _json(report_stage / "alert_engine_contract_snapshot.json", contract)
     _json(report_stage / "alert_policy_snapshot.json", {
-        "policy_id": contract["policy_id"], "status": "FROZEN_PROSPECTIVE_EXECUTION_SPECIFICATION",
+        "policy_id": contract["policy_id"], "status": contract["status"],
         "policy_path": "configs/alert_aggregation_policy.yaml", "policy_sha256": sha256_file(policy_path),
         "policy_text": policy_path.read_text(encoding="utf-8"),
     })
@@ -593,14 +609,15 @@ def run_phase11_alert_engine(project_root: Path, explicit_part_a_root: Path | No
         "Current scenarios are not represented as longitudinal persistence", "Segment evidence remains contextual in alert-engine v1",
         "No model fit recalibration threshold tuning fairness certification database or dashboard was created",
         "Repeated Phase 11 execution is semantically reproducible", "Owner approval and Phase 12 authorization remain separate",
+        "Every direct performance metric has an explicitly frozen adverse-direction rule",
     ]
     _csv(report_stage / "phase11_acceptance_checklist.csv", ["control_id", "control", "result"], [{"control_id": f"P11-{index:03d}", "control": control, "result": "PASS"} for index, control in enumerate(controls, 1)])
     _json(report_stage / "phase11_completion_decision.json", {
         "phase": "PHASE_11", "phase_name": "ALERT_ENGINE_BREACH_AGGREGATION_AND_MODEL_HEALTH",
-        "alert_engine_id": ALERT_ENGINE_ID, "review_decision": "PENDING_USER_PROTOCOL_OWNER_REVIEW",
-        "technical_qualification": "PASS", "phase_11_complete": False, "upstream_evidence_read_only": True,
-        "critical_predictor_mapping_approved_for_execution": True, "performance_alert_limits_approved_for_execution": True,
-        "performance_uncertainty_policy_approved_for_execution": True,
+        "alert_engine_id": ALERT_ENGINE_ID, "review_decision": "APPROVED",
+        "technical_qualification": "PASS", "phase_11_complete": True, "upstream_evidence_read_only": True,
+        "critical_predictor_mapping_approved": True, "performance_alert_limits_approved": True,
+        "performance_uncertainty_policy_approved": True, "performance_adverse_direction_policy_approved": True,
         "threshold_boundary_density_status": "CONTROLLED_DEFERRED", "generic_alert_engine_implemented": True,
         "deterministic_alert_ids_implemented": True, "governance_gate_alerts_implemented": True,
         "dq_alerts_implemented": True, "feature_drift_alerts_implemented": True,
@@ -610,14 +627,26 @@ def run_phase11_alert_engine(project_root: Path, explicit_part_a_root: Path | No
         "component_health_calculated": True, "authorization_state_calculated": True,
         "evidence_scope_calculated": True, "overall_model_health_calculated": True,
         "alert_count": len(alerts), "open_alert_count": int((alerts["status"] == "OPEN").sum()),
-        "cnd_02_status": "OPEN", "phase_12_authorized": False,
+        "cnd_02_status": "OPEN", "phase_12_authorized": True,
+        "next_phase_authorized": "PHASE_12_MONITORING_HISTORY_EVIDENCE_PERSISTENCE_AND_QUERY_LAYER",
+    })
+    _json(report_stage / "phase11_approval_record.json", {
+        "phase": "PHASE_11", "alert_engine_id": ALERT_ENGINE_ID, "review_decision": "APPROVED",
+        "reviewed_candidate_manifest_sha256": "a836ca0c67b5c2ca4b0a17fe0ddabe3c2422c31456dbd81797c57d4cb0435a7f",
+        "approval_condition": "EXPLICIT_PERFORMANCE_ADVERSE_DIRECTION_GOVERNANCE",
+        "condition_remediated": True,
+        "approved_adverse_directions": contract["performance_alert_policy"]["adverse_directions"],
+        "two_sided_centers": contract["performance_alert_policy"]["two_sided_centers"],
+        "calculated_alerts_expected_to_change": False,
+        "reason": "The candidate implementation already enforced the approved directions; remediation moved them into the frozen policy and contract and added fail-closed validation.",
+        "phase_12_authorized": True,
     })
     files = sorted(path for path in report_stage.iterdir() if path.is_file() and path.name not in {"manifest.json", "manifest.sha256"})
     _json(report_stage / "manifest.json", {
-        "alert_engine_id": ALERT_ENGINE_ID, "status": "QUALIFIED_PENDING_REVIEW",
+        "alert_engine_id": ALERT_ENGINE_ID, "status": "APPROVED_FROZEN",
         "created_utc": datetime.now(timezone.utc).isoformat(), "artifacts": [_record(path, report_stage) for path in files],
         "aggregate_public_evidence_only": True, "upstream_evidence_read_only": True,
-        "row_level_applicant_evidence_included": False, "approval_record_included": False,
+        "row_level_applicant_evidence_included": False, "approval_record_included": True,
     })
     (report_stage / "manifest.sha256").write_text(sha256_file(report_stage / "manifest.json") + "\n", encoding="ascii", newline="\n")
     if _git(part_a, "status", "--porcelain"):

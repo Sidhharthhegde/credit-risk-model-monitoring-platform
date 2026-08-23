@@ -1,0 +1,20 @@
+{
+  "alert_engine_id": "ALERT-ENGINE-01",
+  "approval_condition": "EXPLICIT_PERFORMANCE_ADVERSE_DIRECTION_GOVERNANCE",
+  "approved_adverse_directions": {
+    "observed_expected_ratio": "TWO_SIDED",
+    "performance_ks": "LOWER_ONLY",
+    "recall_default_capture": "LOWER_ONLY",
+    "roc_auc": "LOWER_ONLY"
+  },
+  "calculated_alerts_expected_to_change": false,
+  "condition_remediated": true,
+  "phase": "PHASE_11",
+  "phase_12_authorized": true,
+  "reason": "The candidate implementation already enforced the approved directions; remediation moved them into the frozen policy and contract and added fail-closed validation.",
+  "review_decision": "APPROVED",
+  "reviewed_candidate_manifest_sha256": "a836ca0c67b5c2ca4b0a17fe0ddabe3c2422c31456dbd81797c57d4cb0435a7f",
+  "two_sided_centers": {
+    "observed_expected_ratio": "REFERENCE_DISTRIBUTION"
+  }
+}

@@ -87,6 +87,12 @@
     "threshold_value": 0.08
   },
   "performance_alert_policy": {
+    "adverse_directions": {
+      "observed_expected_ratio": "TWO_SIDED",
+      "performance_ks": "LOWER_ONLY",
+      "recall_default_capture": "LOWER_ONLY",
+      "roc_auc": "LOWER_ONLY"
+    },
     "both_material_and_control_breach_required": true,
     "critical_material_standard_deviations": 2.0,
     "critical_quantiles": [
@@ -117,6 +123,9 @@
       "specificity",
       "precision"
     ],
+    "two_sided_centers": {
+      "observed_expected_ratio": "REFERENCE_DISTRIBUTION"
+    },
     "warning_material_standard_deviations": 1.0,
     "warning_quantiles": [
       0.025,
@@ -132,7 +141,7 @@
   "policy_binding": {
     "classification": "PROJECT_DEFINED_GOVERNANCE_ASSUMPTIONS_NOT_REGULATORY_REQUIREMENTS",
     "path": "configs/alert_aggregation_policy.yaml",
-    "sha256": "0ff9baa772cf602bfee3e0bb6a0a122b4be5fc424da09d0fee9cbafa4573d4b6"
+    "sha256": "fa80e2b12fa377d63a6df6c9c34dc379ec5df007102050d9db1e4c4439eba938"
   },
   "policy_id": "ALERT-ENGINE-POLICY-01",
   "scope": "PHASE_11_ALERT_ENGINE_BREACH_AGGREGATION_AND_MODEL_HEALTH_ONLY",
@@ -143,6 +152,6 @@
     "segment_alert_policy_enabled": false,
     "sqlite_or_dashboard": false
   },
-  "status": "FROZEN_PROSPECTIVE_EXECUTION_SPECIFICATION",
-  "version": "0.1.0"
+  "status": "APPROVED_FROZEN_AFTER_DIRECTIONALITY_REMEDIATION",
+  "version": "0.1.1"
 }

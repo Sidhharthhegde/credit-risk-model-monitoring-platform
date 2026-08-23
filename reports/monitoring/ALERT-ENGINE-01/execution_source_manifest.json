@@ -1,6 +1,6 @@
 {
   "alert_engine_id": "ALERT-ENGINE-01",
-  "creation_code_version": "PHASE11-ALERT-ENGINE-0.1.0",
+  "creation_code_version": "PHASE11-ALERT-ENGINE-0.1.1",
   "frozen_dependencies": {
     "legacy_alert_thresholds_sha256": "987373af8b91f5cbfe5dbaaea829bd122d64ad41e9dc32e6084eb5ef5856d331",
     "phase_10_manifest_sha256": "3412307e589dd1130fb7764f5e553dbba7fa4391074c5f2644e294d85e13de59",
@@ -15,15 +15,15 @@
   "implementation_sources": [
     {
       "path": "contracts/alert_engine_contract.json",
-      "sha256": "0faa272b1947e4205ab6d8341f80a05f55de2babf4553027db8e2acce5e43613"
+      "sha256": "e29b3f33e8dbd027d9a781d3c4f7380729695c411ae54a59691f8628693ec5c6"
     },
     {
       "path": "configs/alert_aggregation_policy.yaml",
-      "sha256": "0ff9baa772cf602bfee3e0bb6a0a122b4be5fc424da09d0fee9cbafa4573d4b6"
+      "sha256": "fa80e2b12fa377d63a6df6c9c34dc379ec5df007102050d9db1e4c4439eba938"
     },
     {
       "path": "src/credit_risk_monitoring/alert/engine.py",
-      "sha256": "ddf063d148b9e9b656b2591ea88b4c465bcb0dd194d2a0a5646340e995251598"
+      "sha256": "5cc072429675e623a24f7c31d448f7e008931b90886e60dbdc8baede79efc824"
     },
     {
       "path": "src/credit_risk_monitoring/alert/__init__.py",
@@ -35,5 +35,5 @@
     }
   ],
   "part_a_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
-  "part_b_base_commit": "33bacb76672101a485f6496cd183d42ba341a1b2"
+  "part_b_base_commit": "8aaa103c899b88fe73ff6ae47cb10ba5e88f2e40"
 }

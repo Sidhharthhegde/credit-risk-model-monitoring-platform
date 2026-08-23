@@ -1,7 +1,7 @@
 {
   "aggregate_public_evidence_only": true,
   "alert_engine_id": "ALERT-ENGINE-01",
-  "approval_record_included": false,
+  "approval_record_included": true,
   "artifacts": [
     {
       "path": "alert_driver_reconciliation.json",
@@ -10,8 +10,8 @@
     },
     {
       "path": "alert_engine_contract_snapshot.json",
-      "sha256": "58b7940cd956b42f6287d6f811454623c1709b1a29f40da4d0d64df932375c68",
-      "size_bytes": 5143
+      "sha256": "618338a81dd1f748014d866503793aa23b2b45ce954c3e276c8d9a1cc4ede2c0",
+      "size_bytes": 5436
     },
     {
       "path": "alert_lifecycle_qualification.json",
@@ -20,8 +20,8 @@
     },
     {
       "path": "alert_policy_snapshot.json",
-      "sha256": "0015fecc277b1732be99c73eedb27e4024c896d4503b19e5876a6fbc0845bce2",
-      "size_bytes": 3386
+      "sha256": "9e095403318690abc6cdacad68d20148a85b3a510c880d9af1c44b31a6194fb8",
+      "size_bytes": 3631
     },
     {
       "path": "alert_results.parquet",
@@ -50,7 +50,7 @@
     },
     {
       "path": "execution_source_manifest.json",
-      "sha256": "190a8c4c502c3052b36ce135956ebb511039b47e7c4792e56418dd14248a975c",
+      "sha256": "9cab14b3b42a69bf3f4d2d9ec60f316cb76091c642c1939872156f1793699191",
       "size_bytes": 1985
     },
     {
@@ -65,8 +65,8 @@
     },
     {
       "path": "performance_alert_policy.json",
-      "sha256": "21a341a2851381c845e968953659c36f4ecb1ea71bd7e0f1090c4e6d372d9c13",
-      "size_bytes": 2301
+      "sha256": "03af09a8cfb0d865bcdbb63ddbb93578176f2ba93aecedb1e9b445b8dacecb48",
+      "size_bytes": 2544
     },
     {
       "path": "persistence_qualification.json",
@@ -75,13 +75,18 @@
     },
     {
       "path": "phase11_acceptance_checklist.csv",
-      "sha256": "c5da37e32163d13325210d1879fbdd0ac9885db916e348addc98d0cb3353972d",
-      "size_bytes": 1830
+      "sha256": "538c4d6b71c96aa6306bc3eefd71ab5452fa44cca5676a4ab0eb3c1c2eff19aa",
+      "size_bytes": 1923
+    },
+    {
+      "path": "phase11_approval_record.json",
+      "sha256": "20362b0864421b6b292b8efc9f6af616288eed62dcc6865c5c0a9283168a680c",
+      "size_bytes": 853
     },
     {
       "path": "phase11_completion_decision.json",
-      "sha256": "902d38f4666cac0ae0e1434020a1a56820ec673920ab7141c7fa50b3b8b45a5f",
-      "size_bytes": 1325
+      "sha256": "042e1e2a9864fd442c957ee08d21a61ef9cfa46bc681869d38481aff6ce281ca",
+      "size_bytes": 1407
     },
     {
       "path": "reproducibility_qualification.json",
@@ -109,8 +114,8 @@
       "size_bytes": 1152
     }
   ],
-  "created_utc": "2026-08-23T10:18:20.056961+00:00",
+  "created_utc": "2026-08-23T10:56:36.820080+00:00",
   "row_level_applicant_evidence_included": false,
-  "status": "QUALIFIED_PENDING_REVIEW",
+  "status": "APPROVED_FROZEN",
   "upstream_evidence_read_only": true
 }

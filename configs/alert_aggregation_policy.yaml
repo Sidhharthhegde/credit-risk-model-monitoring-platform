@@ -1,6 +1,6 @@
 policy_id: ALERT-ENGINE-POLICY-01
-version: 0.1.0
-status: FROZEN_PROSPECTIVE_EXECUTION_SPECIFICATION
+version: 0.1.1
+status: APPROVED_FROZEN_AFTER_DIRECTIONALITY_REMEDIATION
 classification: PROJECT_DEFINED_GOVERNANCE_ASSUMPTIONS_NOT_REGULATORY_REQUIREMENTS
 
 critical_predictor_mapping:
@@ -51,6 +51,13 @@ performance_reference_control_policy:
   both_material_and_control_breach_required: true
   p_value_only_alert_permitted: false
   metrics: [roc_auc, performance_ks, observed_expected_ratio, recall_default_capture]
+  adverse_direction:
+    roc_auc: LOWER_ONLY
+    performance_ks: LOWER_ONLY
+    recall_default_capture: LOWER_ONLY
+    observed_expected_ratio: TWO_SIDED
+  two_sided_center:
+    observed_expected_ratio: REFERENCE_DISTRIBUTION
 
 authorization:
   hard_contract_or_grain_failure: BLOCKED_HARD_GATE

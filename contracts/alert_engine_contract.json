@@ -1,8 +1,8 @@
 {
   "alert_engine_id": "ALERT-ENGINE-01",
   "policy_id": "ALERT-ENGINE-POLICY-01",
-  "version": "0.1.0",
-  "status": "FROZEN_PROSPECTIVE_EXECUTION_SPECIFICATION",
+  "version": "0.1.1",
+  "status": "APPROVED_FROZEN_AFTER_DIRECTIONALITY_REMEDIATION",
   "scope": "PHASE_11_ALERT_ENGINE_BREACH_AGGREGATION_AND_MODEL_HEALTH_ONLY",
   "model": {
     "development_freeze_id": "DF-01",
@@ -24,7 +24,7 @@
   },
   "policy_binding": {
     "path": "configs/alert_aggregation_policy.yaml",
-    "sha256": "0ff9baa772cf602bfee3e0bb6a0a122b4be5fc424da09d0fee9cbafa4573d4b6",
+    "sha256": "fa80e2b12fa377d63a6df6c9c34dc379ec5df007102050d9db1e4c4439eba938",
     "classification": "PROJECT_DEFINED_GOVERNANCE_ASSUMPTIONS_NOT_REGULATORY_REQUIREMENTS"
   },
   "critical_predictor_mapping": {
@@ -49,6 +49,15 @@
     "both_material_and_control_breach_required": true,
     "p_value_only_alert_permitted": false,
     "direct_metrics": ["roc_auc", "performance_ks", "observed_expected_ratio", "recall_default_capture"],
+    "adverse_directions": {
+      "roc_auc": "LOWER_ONLY",
+      "performance_ks": "LOWER_ONLY",
+      "observed_expected_ratio": "TWO_SIDED",
+      "recall_default_capture": "LOWER_ONLY"
+    },
+    "two_sided_centers": {
+      "observed_expected_ratio": "REFERENCE_DISTRIBUTION"
+    },
     "supporting_metrics": ["pr_auc_average_precision", "brier_score", "log_loss", "specificity", "precision"],
     "derived_only_metrics": ["gini", "false_negative_rate"]
   },

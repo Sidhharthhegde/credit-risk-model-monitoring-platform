@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "calendar_maturity_interpretation": false,
+      "maturity_basis": "OUTCOME_NOT_AVAILABLE",
+      "maturity_status": "NOT_APPLICABLE",
+      "scenario_id": "SIM-M01"
+    },
+    {
+      "calendar_maturity_interpretation": false,
+      "maturity_basis": "OUTCOME_NOT_AVAILABLE",
+      "maturity_status": "NOT_APPLICABLE",
+      "scenario_id": "SIM-M02"
+    },
+    {
+      "calendar_maturity_interpretation": false,
+      "maturity_basis": "OUTCOME_NOT_AVAILABLE",
+      "maturity_status": "NOT_APPLICABLE",
+      "scenario_id": "SIM-M03"
+    },
+    {
+      "calendar_maturity_interpretation": false,
+      "maturity_basis": "OUTCOME_NOT_AVAILABLE",
+      "maturity_status": "NOT_APPLICABLE",
+      "scenario_id": "SIM-M04"
+    },
+    {
+      "calendar_maturity_interpretation": false,
+      "maturity_basis": "OUTCOME_NOT_AVAILABLE",
+      "maturity_status": "NOT_APPLICABLE",
+      "scenario_id": "SIM-M05"
+    },
+    {
+      "calendar_maturity_interpretation": false,
+      "maturity_basis": "COMPLETE_SYNTHETIC_OUTCOME_SET_AVAILABLE",
+      "maturity_status": "MATURED",
+      "scenario_id": "SIM-M06"
+    }
+  ]
+}

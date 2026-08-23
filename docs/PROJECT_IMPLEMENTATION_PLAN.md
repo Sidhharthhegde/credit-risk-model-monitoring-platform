@@ -905,7 +905,9 @@ Monitor DF-01 output behaviour immediately, without requiring outcomes.
 
 ---
 
-# Phase 9 - Outcome Ingestion and Maturity
+# Phase 9 - Outcome Maturity, Performance and Calibration Monitoring
+
+> Execution-plan amendment (2026-08-23): the later Phase 9 plan authorized after Phase 8 consolidates outcome availability, maturity, discrimination, calibration, frozen-band and `THRESHOLD-01` realised-performance monitoring in this phase. It supersedes the narrower legacy descriptions in the original Phase 9–12 roadmap for this execution. Future phase numbering remains subject to the Phase 9 owner decision.
 
 ## Objective
 
@@ -1687,7 +1689,7 @@ Update this table only when supported by a phase completion decision.
 | 6 | `COMPLETE` | `reports/monitoring/DATA-QUALITY-CONTROL-01/phase6_completion_decision.json` | Conditional source-role blocker resolved; approved and frozen on 2026-08-22 |
 | 7 | `COMPLETE` | `reports/monitoring/FEATURE-DRIFT-MONITORING-01/phase7_completion_decision.json` | Approved and frozen on 2026-08-22; Phase 8 authorized |
 | 8 | `COMPLETE` | `reports/monitoring/PREDICTION-MONITORING-01/phase8_completion_decision.json` | Approved and frozen on 2026-08-23; Phase 9 authorized |
-| 9 | `NOT_STARTED` | Not issued |  |
+| 9 | `IN_PROGRESS` | `reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01/phase9_completion_decision.json` | Technical qualification passed on 2026-08-23; owner review pending; Phase 10 unauthorized |
 | 10 | `NOT_STARTED` | Not issued |  |
 | 11 | `NOT_STARTED` | Not issued |  |
 | 12 | `NOT_STARTED` | Not issued |  |
@@ -1710,13 +1712,12 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next authorized work is Phase 9 outcome maturity, performance and calibration monitoring:
+The next controlled action is owner review of the technically qualified Phase 9 candidate:
 
-1. Consume frozen Phase 8 predictions without rescoring.
-2. Keep M01–M05 outcome evidence `NOT_ASSESSABLE`; do not invent labels or `NORMAL` performance.
-3. Reconcile only frozen M06 synthetic outcomes and use simulation maturity rather than calendar aging.
-4. Calculate performance, calibration bands and threshold performance only after availability, maturity and eligibility pass independently.
-5. Keep all performance/calibration/threshold-performance severities `N/A` while alert limits and uncertainty rules remain deferred.
-6. Preserve explicit synthetic, non-empirical and non-external-validation labels on every M06 result.
+1. Review `OUTCOME-PERFORMANCE-MONITORING-01`, its manifest and acceptance checklist.
+2. Confirm M01–M05 remain `NOT_ASSESSABLE` and only M06 uses synthetic outcome evidence.
+3. Confirm performance, calibration and threshold results are descriptive metrics with severity `N/A` and no alerts.
+4. Approve and freeze Phase 9 separately if the evidence is accepted.
+5. Keep Phase 10 closed until that explicit owner decision is recorded.
 
-Phase 9 is authorized but not yet technically qualified.
+Phase 9 is technically qualified but not complete or frozen. Phase 10 is not authorized.

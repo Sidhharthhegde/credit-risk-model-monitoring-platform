@@ -1,0 +1,24 @@
+control_id,control,result
+P9-001,Phase 8 is approved frozen and authorizes Phase 9,PASS
+P9-002,Frozen M06 prediction artifact consumed without rescoring,PASS
+P9-003,M01 through M05 outcomes remain unavailable and not assessable,PASS
+P9-004,Availability maturity and evidence eligibility are independent,PASS
+P9-005,M06 maturity uses complete synthetic outcome metadata without calendar interpretation,PASS
+P9-006,Prediction and outcome ID sets reconcile exactly,PASS
+P9-007,OUTCOME-01 binary complete unique contract passes,PASS
+P9-008,ROC-AUC performance KS average precision and derived Gini calculated,PASS
+P9-009,Observed synthetic default rate average PD O/E Brier and log loss calculated,PASS
+P9-010,Log-loss clipping is numerical stability only,PASS
+P9-011,Frozen calibration bands used without M06 rebucketing,PASS
+P9-012,Calibration band rows defaults and weighted PD reconcile,PASS
+P9-013,THRESHOLD-01 remains 0.080 with >= operator,PASS
+P9-014,Confusion counts and threshold metrics reconcile,PASS
+P9-015,Phase 9 average PD and threshold counts reconcile to frozen Phase 8,PASS
+P9-016,Frozen Phase 5 outcome content hash verified,PASS
+P9-017,All performance calibration and threshold-performance severities remain N/A,PASS
+P9-018,Performance alert limits and uncertainty logic remain deferred,PASS
+P9-019,Synthetic non-empirical non-external labels applied,PASS
+P9-020,No subgroup alerts overall health or public row-level join generated,PASS
+P9-021,Repeated calculations are semantically reproducible,PASS
+P9-022,Frozen Phase 4 through 8 evidence and Part A remain unchanged,PASS
+P9-023,Owner approval and Phase 10 authorization are deferred,PASS

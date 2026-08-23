@@ -1,0 +1,17 @@
+{
+  "average_pd_difference": 5.551115123125783e-17,
+  "calibration_band_default_count": 1113,
+  "calibration_band_row_count": 8124,
+  "frozen_calibration_bands_used": true,
+  "m06_derived_band_edges_used": false,
+  "m06_outcome_content_sha256": "8bb1573c38e38906e9c847fcc3b2f0b56cf49befe8558ee75816816fc6850e22",
+  "overall_average_pd": 0.07625745998024056,
+  "overall_default_count": 1113,
+  "phase8_average_pd": 0.0762574599802405,
+  "phase8_prediction_semantic_sha256": "bde6717e0a218c41bd417eba14639ddca50cc3226d1d40771f7c9acfc0714e35",
+  "phase8_risk_positive_count": 2518,
+  "phase9_average_pd": 0.07625745998024056,
+  "phase9_risk_positive_count": 2518,
+  "result": "PASS",
+  "weighted_band_average_pd": 0.07625745998024056
+}

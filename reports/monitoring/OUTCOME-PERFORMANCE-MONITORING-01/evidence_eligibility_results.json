@@ -1,0 +1,46 @@
+{
+  "results": [
+    {
+      "evidence_status": "NOT_ASSESSABLE",
+      "performance_calculation_eligible": false,
+      "performance_severity": "N/A",
+      "reason": "NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE",
+      "scenario_id": "SIM-M01"
+    },
+    {
+      "evidence_status": "NOT_ASSESSABLE",
+      "performance_calculation_eligible": false,
+      "performance_severity": "N/A",
+      "reason": "NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE",
+      "scenario_id": "SIM-M02"
+    },
+    {
+      "evidence_status": "NOT_ASSESSABLE",
+      "performance_calculation_eligible": false,
+      "performance_severity": "N/A",
+      "reason": "NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE",
+      "scenario_id": "SIM-M03"
+    },
+    {
+      "evidence_status": "NOT_ASSESSABLE",
+      "performance_calculation_eligible": false,
+      "performance_severity": "N/A",
+      "reason": "NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE",
+      "scenario_id": "SIM-M04"
+    },
+    {
+      "evidence_status": "NOT_ASSESSABLE",
+      "performance_calculation_eligible": false,
+      "performance_severity": "N/A",
+      "reason": "NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE",
+      "scenario_id": "SIM-M05"
+    },
+    {
+      "evidence_status": "ELIGIBLE_SYNTHETIC",
+      "performance_calculation_eligible": true,
+      "performance_severity": "N/A",
+      "reason": "SYNTHETIC_OUTCOME_AVAILABLE_MATURED_AND_RECONCILED",
+      "scenario_id": "SIM-M06"
+    }
+  ]
+}

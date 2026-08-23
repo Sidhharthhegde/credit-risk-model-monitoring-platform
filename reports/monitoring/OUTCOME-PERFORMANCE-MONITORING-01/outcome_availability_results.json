@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "outcome_artifact_id": null,
+      "outcome_availability": "NOT_AVAILABLE",
+      "outcome_contract_id": null,
+      "outcome_identity_status": "NOT_APPLICABLE",
+      "outcome_row_count": 0,
+      "scenario_id": "SIM-M01"
+    },
+    {
+      "outcome_artifact_id": null,
+      "outcome_availability": "NOT_AVAILABLE",
+      "outcome_contract_id": null,
+      "outcome_identity_status": "NOT_APPLICABLE",
+      "outcome_row_count": 0,
+      "scenario_id": "SIM-M02"
+    },
+    {
+      "outcome_artifact_id": null,
+      "outcome_availability": "NOT_AVAILABLE",
+      "outcome_contract_id": null,
+      "outcome_identity_status": "NOT_APPLICABLE",
+      "outcome_row_count": 0,
+      "scenario_id": "SIM-M03"
+    },
+    {
+      "outcome_artifact_id": null,
+      "outcome_availability": "NOT_AVAILABLE",
+      "outcome_contract_id": null,
+      "outcome_identity_status": "NOT_APPLICABLE",
+      "outcome_row_count": 0,
+      "scenario_id": "SIM-M04"
+    },
+    {
+      "outcome_artifact_id": null,
+      "outcome_availability": "NOT_AVAILABLE",
+      "outcome_contract_id": null,
+      "outcome_identity_status": "NOT_APPLICABLE",
+      "outcome_row_count": 0,
+      "scenario_id": "SIM-M05"
+    },
+    {
+      "outcome_artifact_id": "SIM-M06-SYNTHETIC-OUTCOMES-01",
+      "outcome_availability": "AVAILABLE",
+      "outcome_contract_id": "OUTCOME-01",
+      "outcome_identity_status": "EXACT_RECONCILED",
+      "outcome_row_count": 8124,
+      "scenario_id": "SIM-M06"
+    }
+  ]
+}

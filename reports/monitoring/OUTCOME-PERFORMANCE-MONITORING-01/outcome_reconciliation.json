@@ -1,0 +1,15 @@
+{
+  "applicant_set_equality": true,
+  "duplicate_outcome_id_count": 0,
+  "invalid_outcome_domain_count": 0,
+  "joined_row_count": 8124,
+  "missing_outcome_count": 0,
+  "outcome_only_id_count": 0,
+  "outcome_row_count": 8124,
+  "outcome_unique_id_count": 8124,
+  "prediction_only_id_count": 0,
+  "prediction_row_count": 8124,
+  "prediction_unique_id_count": 8124,
+  "result": "PASS",
+  "silent_inner_join_used": false
+}

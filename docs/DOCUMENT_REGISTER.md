@@ -32,6 +32,9 @@
 | `src/credit_risk_monitoring/prediction/` | 0.1.0 | Implemented and tested | Qualified raw scoring, prediction integrity, score PSI and analytical threshold-output monitoring |
 | `artifacts/monitoring_predictions/PREDICTION-MONITORING-01/` | 0.1.0 | Local-only, approved and frozen | Six governed row-level prediction artifacts with semantic and physical hashes; ignored by Git |
 | `reports/monitoring/PREDICTION-MONITORING-01/` | 0.1.0 | Approved and frozen | Aggregate Phase 8 evidence with no row-level predictions, outcomes, alerts or overall-health results |
+| `contracts/outcome_performance_monitoring_contract.json` | 0.1.0 | Implemented; pending owner review | Phase 9 outcome availability, simulation maturity, evidence eligibility, metric, severity and scope contract |
+| `src/credit_risk_monitoring/outcome/` | 0.1.0 | Implemented and tested | Exact prediction/outcome reconciliation plus synthetic performance, calibration-band and threshold-performance calculations |
+| `reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01/` | 0.1.0 | Technically qualified; pending owner review | Aggregate Phase 9 synthetic evidence; no joined row-level evidence, alerts, subgroup results or overall health |
 | `configs/model_config.yaml` | 0.1.0 | Approved and frozen | Semantic model metadata referencing the binding |
 | `configs/monitoring_config.yaml` | 0.1.0 | Approved and frozen | Monitoring scope and execution policy |
 | `configs/alert_thresholds.yaml` | 0.1.0 | Approved and frozen | Project-defined alert assumptions |

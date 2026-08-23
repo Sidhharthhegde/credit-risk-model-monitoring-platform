@@ -1,0 +1,36 @@
+{
+  "creation_code_version": "PHASE9-OUTCOME-PERFORMANCE-MONITOR-0.1.0",
+  "frozen_dependencies": {
+    "calibration_band_reference_sha256": "3c191c66ec7af1dab177b8d13ba706e28276fb4fe6b7d89d8482b492f0061a1c",
+    "calibration_reference_sha256": "7fd221d0088bd7cd4d0af0f239bdc585c6bfbc0db17d1f5e12354f3a760fccd8",
+    "m06_outcome_manifest_sha256": "03855cf310b1308f38c72b08082f5d347f92fe556570d0e996f41025d44c2abc",
+    "m06_prediction_manifest_sha256": "1d01327698856838404610abcbfacccbeb705bd883d7f56786773056dd526fcb",
+    "outcome_contract_sha256": "c4192b863243e297b2dfa4029861b3a8a07746f5745d3089edf56e5cad780270",
+    "performance_reference_sha256": "d92b764fd75e71e88a2823a542780b755ef70f201d8cba2586325aaa5dd54626",
+    "phase_5_manifest_sha256": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5",
+    "phase_8_manifest_sha256": "7bb910835b9b7f2df9ac612a72323d37d6395eadd907249d8a8ebd7372bb21d8",
+    "reference_materialization_manifest_sha256": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
+    "threshold_performance_reference_sha256": "df4ed028eb97fefb0577b0f1ccc6c888e1eb6fc5bbfcfc37ed99374e7ba413ec"
+  },
+  "implementation_sources": [
+    {
+      "path": "contracts/outcome_performance_monitoring_contract.json",
+      "sha256": "84c669d6b4475d3682f04050678270773c3cf597f5671d4a957537caa2f3e159"
+    },
+    {
+      "path": "src/credit_risk_monitoring/outcome/engine.py",
+      "sha256": "10347c830950dc4c24c40d7023db0eeb0e7082686676fe855e66d0f8f756858b"
+    },
+    {
+      "path": "src/credit_risk_monitoring/outcome/__init__.py",
+      "sha256": "69e2bab8a75aac88f4726f76975ecb69d8e8ee8845db73f038bddf4ea738a6c2"
+    },
+    {
+      "path": "scripts/run_phase9_monitoring.py",
+      "sha256": "11e8f9ddcb2cb5ba2ae8a8964a9753ab56bd027c3f3e2d2739ce34a29772bbc7"
+    }
+  ],
+  "monitoring_id": "OUTCOME-PERFORMANCE-MONITORING-01",
+  "part_a_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+  "part_b_base_commit": "8cea6ae9e8607d792fde10535f8bff0e83613b24"
+}

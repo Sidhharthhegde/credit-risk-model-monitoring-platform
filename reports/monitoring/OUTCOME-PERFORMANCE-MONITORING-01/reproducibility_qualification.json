@@ -1,0 +1,12 @@
+{
+  "all_equal": true,
+  "calibration_bands_semantic_hash_first": "72d8b4a58df2270b2dc4a391fbca129b7ac4bd3f58414e591f059f6641ae7c53",
+  "calibration_bands_semantic_hash_second": "72d8b4a58df2270b2dc4a391fbca129b7ac4bd3f58414e591f059f6641ae7c53",
+  "calibration_hash_first": "c8919eaad665020fec085a58b5fdf5a1dab990fa412ffdfe5f0c2390b9037640",
+  "calibration_hash_second": "c8919eaad665020fec085a58b5fdf5a1dab990fa412ffdfe5f0c2390b9037640",
+  "performance_hash_first": "e26d8209d2c7803f2e7e668c151cf15075184b05d52183fbdda4550f751088e5",
+  "performance_hash_second": "e26d8209d2c7803f2e7e668c151cf15075184b05d52183fbdda4550f751088e5",
+  "result": "PASS",
+  "threshold_hash_first": "6ba48078b6144f029f4241643214256a1154a0ef64032806c4552305ef1b3a39",
+  "threshold_hash_second": "6ba48078b6144f029f4241643214256a1154a0ef64032806c4552305ef1b3a39"
+}

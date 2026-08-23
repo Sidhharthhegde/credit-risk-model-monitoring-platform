@@ -1,0 +1,91 @@
+{
+  "monitoring_id": "OUTCOME-PERFORMANCE-MONITORING-01",
+  "version": "0.1.0",
+  "status": "IMPLEMENTED_PENDING_REVIEW",
+  "scope": "PHASE_9_OUTCOME_MATURITY_PERFORMANCE_AND_CALIBRATION_ONLY",
+  "model": {
+    "development_freeze_id": "DF-01",
+    "model_id": "XGBT-01",
+    "model_version": "xgbt01_raw_threshold01_df_v1",
+    "positive_class": 1,
+    "probability_representation": "RAW_P_TARGET_1",
+    "rescoring_permitted": false
+  },
+  "threshold": {
+    "threshold_id": "THRESHOLD-01",
+    "value": 0.08,
+    "operator": ">=",
+    "positive_output": "risk_positive",
+    "negative_output": "risk_negative",
+    "actual_approve_reject_decision_claimed": false
+  },
+  "frozen_dependencies": {
+    "phase_8_manifest_sha256": "7bb910835b9b7f2df9ac612a72323d37d6395eadd907249d8a8ebd7372bb21d8",
+    "reference_materialization_manifest_sha256": "8fbf4490d78d8c36e89af618cc0bbece4b539feae5321889647037b4b7de2ddc",
+    "phase_5_manifest_sha256": "0681cf14053b82cc7e9da87ce7ca4a227d575a52821de3ab040be9ee445184a5",
+    "m06_prediction_manifest_sha256": "1d01327698856838404610abcbfacccbeb705bd883d7f56786773056dd526fcb",
+    "m06_outcome_manifest_sha256": "03855cf310b1308f38c72b08082f5d347f92fe556570d0e996f41025d44c2abc",
+    "outcome_contract_sha256": "c4192b863243e297b2dfa4029861b3a8a07746f5745d3089edf56e5cad780270",
+    "performance_reference_sha256": "d92b764fd75e71e88a2823a542780b755ef70f201d8cba2586325aaa5dd54626",
+    "calibration_reference_sha256": "7fd221d0088bd7cd4d0af0f239bdc585c6bfbc0db17d1f5e12354f3a760fccd8",
+    "calibration_band_reference_sha256": "3c191c66ec7af1dab177b8d13ba706e28276fb4fe6b7d89d8482b492f0061a1c",
+    "threshold_performance_reference_sha256": "df4ed028eb97fefb0577b0f1ccc6c888e1eb6fc5bbfcfc37ed99374e7ba413ec"
+  },
+  "outcome_contract": {
+    "outcome_contract_id": "OUTCOME-01",
+    "eligible_artifact_id": "SIM-M06-SYNTHETIC-OUTCOMES-01",
+    "eligible_prediction_artifact_id": "SIM-M06-PREDICTIONS-01",
+    "required_outcome_domain": [0, 1],
+    "exact_identity_set_equality_required": true,
+    "silent_inner_join_permitted": false,
+    "m01_through_m05_outcome_status": "NOT_ASSESSABLE_OUTCOME_NOT_AVAILABLE"
+  },
+  "gate_vocabulary": {
+    "outcome_availability": ["AVAILABLE", "NOT_AVAILABLE"],
+    "maturity_status": ["MATURED", "NOT_MATURED", "NOT_APPLICABLE"],
+    "evidence_status": ["ELIGIBLE_SYNTHETIC", "NOT_ASSESSABLE"]
+  },
+  "m06_maturity": {
+    "basis": "COMPLETE_SYNTHETIC_OUTCOME_SET_AVAILABLE",
+    "calendar_maturity_interpretation": false,
+    "required_metadata_status": "MATURED"
+  },
+  "references": {
+    "performance_reference_id": "PERF-REF-01",
+    "threshold_performance_reference_id": "THRESHOLD-PERF-REF-01",
+    "calibration_bands": "FROZEN_PHASE_4_TRAIN_OOF_BOUNDARIES_APPLIED_TO_DEVELOPMENT_VALIDATION",
+    "pr_auc_definition": "AVERAGE_PRECISION"
+  },
+  "calculation_policy": {
+    "gini_derivation": "2_TIMES_ROC_AUC_MINUS_1",
+    "oe_definition": "SUM_OUTCOMES_DIVIDED_BY_SUM_RAW_PROBABILITY",
+    "brier_definition": "MEAN_SQUARED_RAW_PROBABILITY_ERROR",
+    "log_loss_probability_clip_epsilon": 1e-15,
+    "log_loss_clipping_purpose": "NUMERICAL_STABILITY_ONLY_NOT_RECALIBRATION",
+    "calibration_slope": "NOT_CALCULATED_NOT_APPROVED",
+    "calibration_intercept": "NOT_CALCULATED_NOT_APPROVED"
+  },
+  "severity_and_alert_policy": {
+    "performance_severity": "N/A",
+    "calibration_severity": "N/A",
+    "threshold_performance_severity": "N/A",
+    "performance_alert_limits_status": "CONTROLLED_DEFERRED",
+    "uncertainty_alert_logic_status": "CONTROLLED_DEFERRED",
+    "alert_creation_enabled": false
+  },
+  "synthetic_evidence": {
+    "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+    "empirical_performance": false,
+    "external_validation": false,
+    "production_performance_claim_permitted": false
+  },
+  "scope_protection": {
+    "m01_through_m05_performance": false,
+    "subgroup_monitoring": false,
+    "alert_creation": false,
+    "overall_model_health": false,
+    "calibration_slope": false,
+    "calibration_intercept": false,
+    "confidence_interval_alert_logic": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "alert_creation": false,
+  "all_prohibited_calculations_remained_false": true,
+  "calibration_intercept": false,
+  "calibration_slope": false,
+  "confidence_interval_alert_logic": false,
+  "m01_through_m05_performance": false,
+  "m01_through_m05_performance_results_calculated": false,
+  "monitoring_alerts_generated": false,
+  "overall_model_health": false,
+  "overall_model_health_calculated": false,
+  "row_level_joined_evidence_publicly_persisted": false,
+  "subgroup_monitoring": false,
+  "subgroup_results_calculated": false
+}

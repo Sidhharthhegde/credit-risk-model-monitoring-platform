@@ -1,0 +1,97 @@
+{
+  "aggregate_public_evidence_only": true,
+  "alerts_included": false,
+  "approval_record_included": false,
+  "artifacts": [
+    {
+      "path": "calibration_band_results.parquet",
+      "sha256": "559edc0cb075e61169f70a228a23558ce005fdfc87011f20c733b6971e909897",
+      "size_bytes": 13806
+    },
+    {
+      "path": "calibration_results.parquet",
+      "sha256": "85c84937bb16269af4a61277f47c03cd5e2459aa3b96fc036fe88b246df7c20b",
+      "size_bytes": 17814
+    },
+    {
+      "path": "evidence_eligibility_results.json",
+      "sha256": "c41a55e7ee4fd1e4f1ad638d878798474a27e02c9557ef4356f17723341a85a6",
+      "size_bytes": 1413
+    },
+    {
+      "path": "execution_source_manifest.json",
+      "sha256": "d3d1f49689790d3ff2fc5caf8f2e00bbdbf6507e55606243eb6d6031548c687e",
+      "size_bytes": 2012
+    },
+    {
+      "path": "outcome_availability_results.json",
+      "sha256": "2c01bded4b327ced60a63f2205a0b1ed18857c4ae945c9fc44c95c8775b2f59b",
+      "size_bytes": 1510
+    },
+    {
+      "path": "outcome_maturity_results.json",
+      "sha256": "6f670f8f43f1cd266208b071f0e59e4b33c1fd245ab46d6f97c16066fbf2cfee",
+      "size_bytes": 1144
+    },
+    {
+      "path": "outcome_monitoring_contract_snapshot.json",
+      "sha256": "b3adca207970ced08cf55aa88ae6269571f664f6e56a9345b21641e1440f962e",
+      "size_bytes": 4163
+    },
+    {
+      "path": "outcome_reconciliation.json",
+      "sha256": "c21d22084831c63b2dc6d5ed84d950f6eb358ceab16f8a8b16edc3e7e81fadd0",
+      "size_bytes": 419
+    },
+    {
+      "path": "performance_results.parquet",
+      "sha256": "208367e3fd65807d12c029f9219e1ad257a23d2830b5e73c48e64dc4c8eeb164",
+      "size_bytes": 15164
+    },
+    {
+      "path": "phase9_acceptance_checklist.csv",
+      "sha256": "3552e1bee49a015f47498117cba79b5ed5f689104e04960a1676fc03663b2e25",
+      "size_bytes": 1659
+    },
+    {
+      "path": "phase9_completion_decision.json",
+      "sha256": "8c00371125d50469a989a673b5f91c85eb7d91c0c0a1c1371765c376886899f9",
+      "size_bytes": 1602
+    },
+    {
+      "path": "reference_reconciliation.json",
+      "sha256": "1af1334ebb17722c703100b4e3c5b45b295dd112993a58f3305be51c738c7683",
+      "size_bytes": 733
+    },
+    {
+      "path": "reproducibility_qualification.json",
+      "sha256": "b530b2e858316907df632d93076fb5877664e8e025f6348efd27f81f3db9bbcb",
+      "size_bytes": 842
+    },
+    {
+      "path": "scenario_outcome_summary.csv",
+      "sha256": "5e9102c749c284ab3263209a35cd7d460f5aed296af2b6569d96781e429236bc",
+      "size_bytes": 711
+    },
+    {
+      "path": "scope_protection_attestation.json",
+      "sha256": "3efaa1efcc37ff85668e004a1f2d71ef76df27cb412717d431523407ad30828a",
+      "size_bytes": 537
+    },
+    {
+      "path": "synthetic_evidence_attestation.json",
+      "sha256": "c5c4b43878aff45d0e4ebb0d12e323677767e5086cf00730d71c859ccfdf1368",
+      "size_bytes": 365
+    },
+    {
+      "path": "threshold_performance_results.parquet",
+      "sha256": "a4bf28b36185f556093b2c10488b54d80e6a57b95778d8eef87a10b916795bfc",
+      "size_bytes": 19892
+    }
+  ],
+  "created_utc": "2026-08-23T05:55:31.825162+00:00",
+  "monitoring_id": "OUTCOME-PERFORMANCE-MONITORING-01",
+  "row_level_joined_evidence_included": false,
+  "status": "QUALIFIED_PENDING_REVIEW",
+  "synthetic_evidence_only": true
+}

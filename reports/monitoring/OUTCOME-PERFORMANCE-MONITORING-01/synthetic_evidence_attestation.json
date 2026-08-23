@@ -1,0 +1,11 @@
+{
+  "calendar_maturity_interpretation": false,
+  "empirical_performance": false,
+  "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+  "external_validation": false,
+  "m01_through_m05_labels_invented": false,
+  "outcome_artifact_id": "SIM-M06-SYNTHETIC-OUTCOMES-01",
+  "production_performance_claim_permitted": false,
+  "result": "PASS",
+  "scenario_id": "SIM-M06"
+}

@@ -1,0 +1,10 @@
+{
+  "detailed_results_available_via_phase12": false,
+  "evidence_role": "CONTEXT_ONLY_V1",
+  "fairness_certification_claimed": false,
+  "fairness_disclosure": "Descriptive subgroup model-risk evidence. This dashboard does not establish fairness, absence of bias, or regulatory compliance.",
+  "family_count": 12,
+  "level_count": 32,
+  "result": "PASS",
+  "segment_alerts_introduced": false
+}

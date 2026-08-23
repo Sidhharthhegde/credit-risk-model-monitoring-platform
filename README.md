@@ -6,9 +6,9 @@ Part B will demonstrate data-quality monitoring, population and feature drift, r
 
 ## Current status
 
-`PHASE_12_APPROVED_FROZEN`
+`PHASE_13_TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW`
 
-Phases 0–12 are approved and frozen. `MONITORING-HISTORY-01` is a local, rebuildable SQLite query and operational-persistence layer over frozen Phase 11 evidence. Immutable Phase 11 source counts remain distinct from dynamically derived lifecycle counts; the database is non-authoritative and ignored by Git. Phase 13 dashboard and investigation-interface design is authorized but not started.
+Phases 0–12 are approved and frozen. The six-page local Streamlit/Plotly `MONITORING-DASHBOARD-01` now consumes the governed Phase 12 repository, preserves dynamic lifecycle-ledger state separately from frozen Phase 11 source counts, and has passed technical qualification. Phase 13 remains incomplete pending owner review; Phase 14 is not authorized.
 
 ## Important scope statement
 
@@ -33,6 +33,10 @@ The fitted model remains in the governed local Part A workspace. It is not copie
 2. [`MONITORING_POLICY.md`](MONITORING_POLICY.md)
 3. [`CHANGE_CONTROL_POLICY.md`](CHANGE_CONTROL_POLICY.md)
 4. [`docs/DECISION_LOG.md`](docs/DECISION_LOG.md)
+
+## Run the dashboard
+
+From this repository, use `scripts/run_phase13_dashboard.py` with the isolated dependencies in `requirements-lock.txt`. The interface is a local, non-authoritative presentation and investigation layer; lifecycle actions are written only through the Phase 12 append-only service.
 
 ## Licence
 

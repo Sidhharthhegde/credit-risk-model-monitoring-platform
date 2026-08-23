@@ -1,0 +1,17 @@
+{
+  "alerts_recalculated": false,
+  "forbidden_tokens": [
+    "predict_proba",
+    "roc_auc_score",
+    "calculate_psi",
+    "aggregate_health(",
+    "SK_ID_CURR",
+    "read_parquet",
+    "reports/monitoring/"
+  ],
+  "forbidden_tokens_found": [],
+  "health_recalculated": false,
+  "metrics_recalculated": false,
+  "result": "PASS",
+  "severities_recalculated": false
+}

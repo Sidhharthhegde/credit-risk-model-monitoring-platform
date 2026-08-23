@@ -20,6 +20,9 @@ dependencies = [
   "scipy==1.18.0",
   "scikit-learn==1.9.0",
   "xgboost==3.3.0",
+  "streamlit==1.61.1",
+  "plotly==6.9.0",
+  "PyYAML==6.0.3",
 ]
 
 [project.optional-dependencies]

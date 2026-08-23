@@ -1,0 +1,18 @@
+{
+  "applicant_level_data_displayed": false,
+  "cnd_02_status": "OPEN",
+  "dashboard_alert_generation": false,
+  "dashboard_health_calculation": false,
+  "dashboard_metric_calculation": false,
+  "dashboard_severity_calculation": false,
+  "fairness_certification_claimed": false,
+  "model_refitting": false,
+  "model_scoring": false,
+  "monitoring_report_generated": false,
+  "production_performance_claimed": false,
+  "raw_monitoring_files_read": false,
+  "recalibration": false,
+  "result": "PASS",
+  "threshold_boundary_density_status": "CONTROLLED_DEFERRED",
+  "threshold_retuning": false
+}

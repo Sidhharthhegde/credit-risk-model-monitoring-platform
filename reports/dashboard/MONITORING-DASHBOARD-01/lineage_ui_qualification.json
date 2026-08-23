@@ -1,0 +1,11 @@
+{
+  "alerts_total": 329,
+  "alerts_with_lineage": 329,
+  "all_alert_lineage_available": true,
+  "display_fields": [
+    "source_phase",
+    "source_artifact_sha256",
+    "lineage"
+  ],
+  "result": "PASS"
+}

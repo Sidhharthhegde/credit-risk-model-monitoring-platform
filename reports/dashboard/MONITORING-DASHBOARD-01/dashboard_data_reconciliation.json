@@ -1,0 +1,12 @@
+{
+  "alerts": 329,
+  "blocked_runs": 2,
+  "current_open_alerts": 329,
+  "current_open_critical_alerts": 26,
+  "metric_evidence": 2259,
+  "monitoring_runs": 8,
+  "result": "PASS",
+  "segment_families_in_display_registry": 12,
+  "segment_levels_in_display_registry": 32,
+  "synthetic_runs": 1
+}

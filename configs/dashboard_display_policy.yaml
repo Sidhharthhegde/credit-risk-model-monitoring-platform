@@ -1,0 +1,88 @@
+policy_id: DASHBOARD-DISPLAY-POLICY-01
+version: 0.1.0
+status: FROZEN_PROSPECTIVE_EXECUTION_SPECIFICATION
+classification: PRESENTATION_SEMANTICS_NOT_MONITORING_THRESHOLDS
+
+model_card:
+  model_id: XGBT-01
+  model_version: xgbt01_raw_threshold01_df_v1
+  development_freeze_id: DF-01
+  threshold_id: THRESHOLD-01
+  threshold_display: "PD >= 0.080"
+  positive_label: risk_positive
+  negative_label: risk_negative
+
+scenario_labels:
+  SIM-M01-SCENARIO-01: "SIM-M01 — Stable Control"
+  SIM-M02-SCENARIO-01: "SIM-M02 — Stable Longitudinal Control"
+  SIM-M03-SCENARIO-01: "SIM-M03 — Mild Valid Population Drift"
+  SIM-M04-SCENARIO-01: "SIM-M04 — Material Valid Population / Score-Driver Drift"
+  SIM-M05-VALID-DEGRADED-01: "SIM-M05 — Valid Data Quality / Source Degradation"
+  SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01: "SIM-M05 — Source-Loss Governance Block"
+  SIM-M05-HARD-FAIL-01: "SIM-M05 — Hard Contract / Grain Failure"
+  SIM-M06-SCENARIO-01: "SIM-M06 — Synthetic Concept / Performance Deterioration"
+
+labels:
+  authorization:
+    AUTHORIZED: Authorized
+    BLOCKED_HARD_GATE: Blocked — hard gate
+    BLOCKED_SOURCE_GOVERNANCE: Blocked — source governance
+  health:
+    NORMAL: Normal
+    WARNING: Warning
+    CRITICAL: Critical
+    NOT_ASSESSABLE: Not assessable
+    NOT_ASSESSABLE_FOR_ALERT_AGGREGATION: Not assessable for alert aggregation
+  evidence_scope:
+    LABEL_FREE_ONLY: Label-free only
+    FULL_OUTCOME_ELIGIBLE: Full outcome eligible
+    NOT_ASSESSABLE: Not assessable
+  evidence_type:
+    MONITORING_EVIDENCE: Monitoring evidence
+    SYNTHETIC_SCENARIO_EVIDENCE: Synthetic scenario evidence
+    CONTROL_QUALIFICATION_EVIDENCE: Control qualification evidence
+  metric_role:
+    DIRECT_ALERT_DRIVER: Direct alert driver
+    SUPPORTING_CORROBORATION: Supporting corroboration
+    DERIVED_ONLY: Derived only
+    NON_ALERTING: Non-alerting
+    CONTEXT_ONLY: Context only v1
+
+disclosures:
+  simulation: "Simulation scenarios — not calendar periods. Scenario comparisons are not longitudinal trends."
+  stable_control: "Stable-control denotes no injected scenario transformation. It does not imply similarity to the TRAIN reference."
+  synthetic: "SYNTHETIC SCENARIO EVIDENCE · NON-EMPIRICAL · NOT EXTERNAL VALIDATION"
+  fairness: "Descriptive subgroup model-risk evidence. This dashboard does not establish fairness, absence of bias, or regulatory compliance."
+  no_history: "No governed comparable longitudinal history is currently available. The infrastructure exists for future comparable runs."
+  source_authority: "Technical scoring status and governance authorization are separate dimensions."
+  root_cause: "Displayed findings are monitoring signals and do not establish root cause."
+
+governed_unavailable:
+  score_bin_distribution: "Phase 12 does not persist Phase 8 score-bin contributions. The dashboard will not read raw files or reconstruct the distribution."
+  detailed_segment_results: "Phase 12 persists segment context but not the detailed Phase 10 level-result tables. The dashboard will not bypass the query layer."
+
+segment_registry:
+  source: FROZEN_PHASE10_DEFINITION_REGISTRY_COPIED_AS_DISPLAY_METADATA
+  evidence_role: REGISTRY_ONLY_NOT_MONITORING_RESULT
+  family_count: 12
+  level_count: 32
+  families:
+    - {id: SG-01, name: BUREAU_HISTORY, levels: ["0", "1"]}
+    - {id: SG-02, name: PREVIOUS_APPLICATION_HISTORY, levels: ["0", "1"]}
+    - {id: SG-03, name: JOINT_HISTORY, levels: [BUREAU_0_PREV_0, BUREAU_0_PREV_1, BUREAU_1_PREV_0, BUREAU_1_PREV_1]}
+    - {id: SG-04, name: HOUSING_INFORMATION, levels: ["0", "1"]}
+    - {id: SG-05, name: CAR_AGE_AVAILABILITY, levels: ["0", "1"]}
+    - {id: SG-06, name: EMPLOYMENT_SENTINEL, levels: ["0", "1"]}
+    - {id: SG-07, name: BUREAU_REQUEST_AVAILABILITY, levels: ["0", "1"]}
+    - {id: SG-08, name: EXTERNAL_SCORE_AVAILABILITY, levels: ["0", "1", "2", "3"]}
+    - {id: SG-09, name: GENDER, levels: [F, M, XNA], exploratory_demographic: true}
+    - {id: SG-10, name: AGE_BAND, levels: ["[0,30)", "[30,45)", "[45,60)", "[60,+inf)"], exploratory_demographic: true}
+    - {id: SG-11, name: REGION_RATING, levels: ["1", "2", "3"]}
+    - {id: SG-12, name: CONTRACT_TYPE, levels: [Cash loans, Revolving loans]}
+
+visual_semantics:
+  collapse_governance_dimensions: false
+  not_assessable_is_normal: false
+  metric_severity_distinct_from_alert_severity: true
+  scenario_comparison_label: SCENARIO COMPARISON
+  longitudinal_trend_label_permitted_without_comparable_history: false

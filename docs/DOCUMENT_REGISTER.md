@@ -48,6 +48,10 @@
 | `src/credit_risk_monitoring/history/` | 0.1.1 | Implemented and tested | Fail-closed ingestion, semantic digests, append-only lifecycle persistence and parameterized query repository |
 | `artifacts/monitoring_history/MONITORING-HISTORY-01/` | 0.1.1 | Local-only; approved and rebuildable | Generated SQLite database; ignored by Git and not authoritative evidence |
 | `reports/persistence/MONITORING-HISTORY-01/` | 0.1.1 | Approved and frozen | Aggregate Phase 12 schema, ingestion, reconciliation, lifecycle, temporal, query, lineage, rebuild and approval evidence |
+| `contracts/monitoring_dashboard_contract.json` | 0.1.0 | Frozen prospective specification; technically qualified | Phase 13 presentation authority, Phase 12 binding, six-page scope, lifecycle and temporal semantics |
+| `configs/dashboard_display_policy.yaml` | 0.1.0 | Frozen prospective specification; technically qualified | Governed display labels, disclosures and context-only segment registry; contains no monitoring thresholds |
+| `src/credit_risk_monitoring/dashboard/` | 0.1.0 | Implemented and tested | Thin Phase 12 data service, immutable view models, six Streamlit pages and fixture-only qualification |
+| `reports/dashboard/MONITORING-DASHBOARD-01/` | 0.1.0 | Technically qualified; pending owner review | Aggregate Phase 13 reconciliation, lifecycle, scope, temporal, lineage, smoke and candidate-manifest evidence |
 | `configs/model_config.yaml` | 0.1.0 | Approved and frozen | Semantic model metadata referencing the binding |
 | `configs/monitoring_config.yaml` | 0.1.0 | Approved and frozen | Monitoring scope and execution policy |
 | `configs/alert_thresholds.yaml` | 0.1.0 | Approved and frozen | Project-defined alert assumptions |

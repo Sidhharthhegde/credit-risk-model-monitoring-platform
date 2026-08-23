@@ -10,6 +10,7 @@ htmlcov/
 venv/
 .phase4_runtime/
 .phase4_runtime_user/
+.phase13_runtime_user/
 
 # Local configuration and secrets
 .env

@@ -1,0 +1,25 @@
+control_id,control,result
+P13-001,Frozen Phase 12 manifest and immutable evidence digest verified,PASS
+P13-002,Dashboard reads through the Phase 12 repository layer,PASS
+P13-003,Exactly six governed pages are registered,PASS
+P13-004,Authorization evidence scope evidence type and health remain separate,PASS
+P13-005,Current alert state and counts derive dynamically from the lifecycle ledger,PASS
+P13-006,Phase 11 source alert counts remain immutable,PASS
+P13-007,Metric severity remains distinct from alert severity,PASS
+P13-008,Lifecycle writes use only the Phase 12 service and explicit confirmation,PASS
+P13-009,Invalid and backward lifecycle transitions are rejected,PASS
+P13-010,M01 through M05 performance remains not assessable,PASS
+P13-011,M06 synthetic non-empirical evidence disclosure is persistent,PASS
+P13-012,Metric direct supporting and derived roles are preserved,PASS
+P13-013,Twelve segment families and thirty-two levels are accessible,PASS
+P13-014,Detailed segment results are not invented when absent from persistence,PASS
+P13-015,Segment evidence remains context-only and no fairness certification is claimed,PASS
+P13-016,No false longitudinal trend is rendered,PASS
+P13-017,All 2259 metrics and 329 alerts reconcile,PASS
+P13-018,Two blocked runs and one synthetic run reconcile,PASS
+P13-019,Source lineage is available for every alert,PASS
+P13-020,No applicant-level data is displayed,PASS
+P13-021,No scoring recalculation alert generation or health calculation exists in dashboard code,PASS
+P13-022,CND-02 remains open,PASS
+P13-023,Threshold boundary density remains controlled deferred,PASS
+P13-024,Owner approval and Phase 14 authorization remain separate,PASS

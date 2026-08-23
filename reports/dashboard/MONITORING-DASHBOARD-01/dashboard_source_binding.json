@@ -1,0 +1,84 @@
+{
+  "dashboard_sources": [
+    {
+      "path": "src/credit_risk_monitoring/dashboard/__init__.py",
+      "sha256": "17ba317cbbe8b2229e9bccdff4e66883828550b3b6bf448acd6f560d80bb10ed"
+    },
+    {
+      "path": "src/credit_risk_monitoring/dashboard/app.py",
+      "sha256": "116671b27e51afb2a6cbdb3301b7c221d989b38a841d773fc9454fd02fd13e96"
+    },
+    {
+      "path": "src/credit_risk_monitoring/dashboard/data_service.py",
+      "sha256": "0ed3ff598930c464731ccd33b8f68fd2ca7a7e72aa90b7c57b17fc66b1949559"
+    },
+    {
+      "path": "src/credit_risk_monitoring/dashboard/formatting.py",
+      "sha256": "bb7086bac02171f24e94350987feed3ace0533fbc02fd71479e2922cbf19cc17"
+    },
+    {
+      "path": "src/credit_risk_monitoring/dashboard/navigation.py",
+      "sha256": "37b71366ab8c56a5ef4ff0c65c61d55767f7f4af2958a148fae015b7f3aea287"
+    },
+    {
+      "path": "src/credit_risk_monitoring/dashboard/pages/__init__.py",
+      "sha256": "4dc1d807e3c16eaf454520c4982e9b82939f00d2edb91be1786a81c72e977b6d"
+    },
+    {
+      "path": "src/credit_risk_monitoring/dashboard/pages/data_quality.py",
+      "sha256": "bd8789e5a40a7671bea4877d6ac557b0f4ec4453760385bd952b682ca0b6c20d"
+    },
+    {
+      "path": "src/credit_risk_monitoring/dashboard/pages/feature_drift.py",
+      "sha256": "e1b7f9e57a3e649e360a838b597c6f933a6164081b9080dacaf5f54bbdb664b3"
+    },
+    {
+      "path": "src/credit_risk_monitoring/dashboard/pages/investigation.py",
+      "sha256": "d231761a228b4e2bf8166f2905f0e919e19fcaa52e53e8935f85841bb5c58340"
+    },
+    {
+      "path": "src/credit_risk_monitoring/dashboard/pages/overview.py",
+      "sha256": "69af8f442bcdc1ae8c3bb9026e04515a120634fe2b57db3ef1712b97bf72694d"
+    },
+    {
+      "path": "src/credit_risk_monitoring/dashboard/pages/performance.py",
+      "sha256": "284827bce0cecccf975ba082728abc815dc053bd78026400210193d182329a25"
+    },
+    {
+      "path": "src/credit_risk_monitoring/dashboard/pages/prediction.py",
+      "sha256": "6fe33094c8b41d736f0d376065955590e5849c5f1dba29681946b9e27739d885"
+    },
+    {
+      "path": "src/credit_risk_monitoring/dashboard/qualification.py",
+      "sha256": "1a6819eb9536f886ede1528969973055e43d48eb3923d6e3de4c0b9e63a6f6cc"
+    },
+    {
+      "path": "src/credit_risk_monitoring/dashboard/state.py",
+      "sha256": "81c7e0cfafe5128d9ba32ad2e643a35e644c94874d7a176b634b5e79183e6102"
+    },
+    {
+      "path": "src/credit_risk_monitoring/dashboard/view_models.py",
+      "sha256": "4ed95c68abf0003519564a461e7cf35b01ab771321233135ce2bb7098cb04506"
+    },
+    {
+      "path": "scripts/run_phase13_dashboard.py",
+      "sha256": "61d6e2cd132668e559cd9ddde14942ad006ea9a02fdb064733a01a87edf39775"
+    },
+    {
+      "path": "scripts/run_phase13_qualification.py",
+      "sha256": "a7f7fd0e1ff63d3e72353f9d84ad498d699c54585953e7e0627d25c9cfa0b6a2"
+    },
+    {
+      "path": "tests/dashboard/test_dashboard.py",
+      "sha256": "081cb2fc4ba7881d6ebcfbf1cf0e1dd16ced4af95b9414d3db215bb289da66b1"
+    }
+  ],
+  "display_policy_sha256_verified": true,
+  "immutable_evidence_semantic_sha256": "013ecaf72438d585d54a8ed75bb79ed912ea76f3ee3f49a6f15334ef8bee95fe",
+  "initial_complete_database_semantic_sha256": "48eb52d1596199abd010c42d7348a73eda80b5969805a73729897a72fbdf7900",
+  "lifecycle_service_sha256_verified": true,
+  "normal_ui_binding_uses_immutable_digest": true,
+  "phase12_manifest_verified": true,
+  "repository_sha256_verified": true,
+  "result": "PASS"
+}

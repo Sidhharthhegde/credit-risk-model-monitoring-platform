@@ -1056,135 +1056,57 @@ Persist the frozen Phase 11 monitoring record in a durable, rebuildable SQLite q
 
 ---
 
-# Phase 13 - Governed Subpopulation Monitoring
+# Phase 13 - Monitoring Dashboard and Investigation Interface
 
 ## Objective
 
-Use one generic, configuration-driven engine to monitor all 12 frozen Part A subgroup families.
-
-## Required subgroup families
-
-1. Bureau history.
-2. Previous-application history.
-3. Joint bureau/previous history.
-4. Housing-information availability.
-5. Car-age availability.
-6. Employment sentinel.
-7. Bureau-request availability.
-8. External-score availability.
-9. Gender.
-10. Age band.
-11. Region rating.
-12. Contract type.
-
-Gender and age analysis remains exploratory and is not fairness certification.
-
-## Minimum evidence rules inherited from Part A
-
-Discrimination or calibration:
-
-- Total records `>= 1000`.
-- Defaults `>= 50`.
-- Non-defaults `>= 50`.
-
-Threshold or error-rate analysis:
-
-- Total records `>= 500`.
-- Defaults `>= 50`.
-- Non-defaults `>= 50`.
-
-These are project-defined feasibility rules, not universal standards.
+Present and investigate the governed Phase 12 monitoring state without recalculating metrics, severities, alerts, health, model scores or thresholds.
 
 ## Tasks
 
-1. Build one `SegmentMonitor` driven by configuration.
-2. Reproduce frozen subgroup definitions exactly.
-3. Report every configured level and count.
-4. Prohibit post-result category consolidation.
-5. Calculate observation-time volume, PD and composition for all assessable groups.
-6. Calculate matured performance, calibration and threshold metrics only when eligible.
-7. Compare subgroup with overall and complement where approved.
-8. Apply minimum-evidence rules.
-9. Return `INSUFFICIENT_DATA` rather than normal or critical when minimums fail.
-10. Configure the dashboard to highlight only 3-4 informative families while retaining full evidence.
+1. Freeze `MONITORING-DASHBOARD-CONTRACT-01` and the presentation-only terminology policy.
+2. Bind normal operation to the Phase 12 manifest, repository, lifecycle service and immutable-evidence semantic digest.
+3. Build immutable dashboard view models behind one `DashboardDataService`.
+4. Implement exactly six pages: overview, DQ/source governance, feature drift, prediction, performance/calibration and investigation.
+5. Preserve authorization, evidence scope, evidence type, health, metric severity and alert severity as independent dimensions.
+6. Derive current operational counts from the event ledger while retaining labelled Phase 11 source counts.
+7. Route acknowledgement and resolution only through `AlertLifecycleService`, with explicit confirmation and `LOCAL_DEMO_USER` identity semantics.
+8. Disclose synthetic evidence, unavailable outcomes, context-only segments, fairness non-certification and non-calendar scenarios persistently.
+9. Render no longitudinal trend while comparable governed history is absent.
+10. Fail closed rather than bypass the repository when detailed score-bin or segment-result persistence is unavailable.
+11. Reconcile all displayed counts, lineage and lifecycle semantics on fixture database copies.
 
 ## Completion criteria
 
-- All 12 families run through one generic implementation.
-- Frozen definitions and minimums reconcile with Part A.
-- Sparse groups cannot generate misleading health states.
+- Six Streamlit pages render without exceptions.
+- 2,259 metrics, 329 alerts, 26 open critical alerts, two blocked runs and one synthetic run reconcile.
+- Lifecycle actions update dynamic state without changing immutable evidence or Phase 11 source counts.
+- Dashboard code contains no model or monitoring calculation engine calls and exposes no applicant-level data.
+- Technical qualification passes; owner approval remains a separate gate.
 
 ---
 
-# Phase 14 - Alert and Escalation Engine
+# Phase 14 - Monitoring Report, End-to-End Orchestration and Final Lifecycle Qualification
 
 ## Objective
 
-Convert metric and control results into governed, traceable alerts and decisions.
-
-## Alert record
-
-```text
-alert_id
-run_id
-cohort_id
-created_at
-model_id
-model_version
-reference_version
-scope_type
-scope_name
-metric_name
-current_value
-reference_value
-threshold
-severity
-lifecycle_status
-first_seen
-last_seen
-breach_count
-evidence_path
-recommended_action
-owner_role
-due_date
-resolution_record
-```
+Generate the governed monitoring report, qualify the end-to-end runner and perform the final repository/lifecycle freeze only after Phase 13 approval.
 
 ## Tasks
 
-1. Separate control failures from model/business deterioration.
-2. Implement hard gates.
-3. Implement warning and critical thresholds.
-4. Implement repeated-breach escalation.
-5. Deduplicate recurring alerts by governed identity.
-6. Preserve first-seen and last-seen history.
-7. Implement acknowledgement and resolution transitions.
-8. Implement multiple-feature aggregation.
-9. Implement critical-feature logic.
-10. Define overall run and model-health status.
-11. Prevent `INSUFFICIENT_DATA` and `NOT_ASSESSABLE` from becoming normal.
-12. Map alerts to investigation and governance actions.
-
-## Permitted recommendations
-
-- Continue ordinary monitoring.
-- Continue with enhanced monitoring.
-- Investigate upstream source quality.
-- Investigate population or business-process change.
-- Increase monitoring frequency.
-- Review calibration.
-- Restrict model use.
-- Trigger formal model review.
-- Recommend a new recalibrated or redeveloped version.
-
-Recommendations do not themselves authorize a model change.
+1. Freeze the Phase 14 report and orchestration protocol after Phase 13 owner approval.
+2. Generate a governed monitoring report from persisted/query-layer results without dashboard or report-side recalculation.
+3. Qualify the complete controlled runner from input qualification through persistence and report generation.
+4. Reconcile manifests, row counts, hashes, authorization, evidence scope, alerts, health and lineage end to end.
+5. Preserve CND-02 and controlled-deferred items accurately.
+6. Complete final scope, reproducibility, documentation, release and repository controls.
 
 ## Completion criteria
 
-- Stable scenario produces no unsupported alerts.
-- Repeated warnings escalate as specified.
-- Critical control failures prevent authoritative completion.
-- Alert lifecycle transitions are auditable.
+- Report values reconcile exactly to governed evidence.
+- End-to-end execution is deterministic, fail-closed and leaves frozen inputs immutable.
+- Final lifecycle claims distinguish simulation evidence from external/OOT labelled confirmation.
+- Repository release evidence and owner approval are complete.
 
 ---
 
@@ -1679,7 +1601,7 @@ Update this table only when supported by a phase completion decision.
 | 10 | `COMPLETE` | `reports/monitoring/SEGMENT-MONITORING-01/phase10_completion_decision.json` | Approved and frozen on 2026-08-23; prospective contract unchanged; Phase 11 authorized |
 | 11 | `COMPLETE` | `reports/monitoring/ALERT-ENGINE-01/phase11_completion_decision.json` | Directionality condition resolved; approved and frozen on 2026-08-23; Phase 12 authorized |
 | 12 | `COMPLETE` | `reports/persistence/MONITORING-HISTORY-01/phase12_completion_decision.json` | Run-count semantics condition resolved; approved and frozen on 2026-08-23; Phase 13 authorized |
-| 13 | `NOT_STARTED` | Not issued |  |
+| 13 | `IN_PROGRESS` | `reports/dashboard/MONITORING-DASHBOARD-01/phase13_completion_decision.json` | Technical qualification passed; pending owner review; Phase 14 not authorized |
 | 14 | `NOT_STARTED` | Not issued |  |
 | 15 | `NOT_STARTED` | Not issued |  |
 | 16 | `NOT_STARTED` | Not issued |  |
@@ -1698,4 +1620,4 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next controlled action is Phase 13 protocol review and implementation planning for the monitoring dashboard and investigation interface. Phase 13 is authorized but remains unexecuted. It must consume `HistoryRepository`, distinguish `phase11_source_*` counts from dynamic `current_*` counts, and must not introduce monitoring calculations into presentation code.
+The next controlled action is owner review of the technically qualified `MONITORING-DASHBOARD-01` candidate and its manifest. Phase 13 remains incomplete until that review is recorded. Phase 14 is not authorized.

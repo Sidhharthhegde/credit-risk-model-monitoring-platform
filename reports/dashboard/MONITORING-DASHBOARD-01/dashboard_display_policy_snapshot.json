@@ -1,0 +1,190 @@
+{
+  "classification": "PRESENTATION_SEMANTICS_NOT_MONITORING_THRESHOLDS",
+  "disclosures": {
+    "fairness": "Descriptive subgroup model-risk evidence. This dashboard does not establish fairness, absence of bias, or regulatory compliance.",
+    "no_history": "No governed comparable longitudinal history is currently available. The infrastructure exists for future comparable runs.",
+    "root_cause": "Displayed findings are monitoring signals and do not establish root cause.",
+    "simulation": "Simulation scenarios \u2014 not calendar periods. Scenario comparisons are not longitudinal trends.",
+    "source_authority": "Technical scoring status and governance authorization are separate dimensions.",
+    "stable_control": "Stable-control denotes no injected scenario transformation. It does not imply similarity to the TRAIN reference.",
+    "synthetic": "SYNTHETIC SCENARIO EVIDENCE \u00b7 NON-EMPIRICAL \u00b7 NOT EXTERNAL VALIDATION"
+  },
+  "governed_unavailable": {
+    "detailed_segment_results": "Phase 12 persists segment context but not the detailed Phase 10 level-result tables. The dashboard will not bypass the query layer.",
+    "score_bin_distribution": "Phase 12 does not persist Phase 8 score-bin contributions. The dashboard will not read raw files or reconstruct the distribution."
+  },
+  "labels": {
+    "authorization": {
+      "AUTHORIZED": "Authorized",
+      "BLOCKED_HARD_GATE": "Blocked \u2014 hard gate",
+      "BLOCKED_SOURCE_GOVERNANCE": "Blocked \u2014 source governance"
+    },
+    "evidence_scope": {
+      "FULL_OUTCOME_ELIGIBLE": "Full outcome eligible",
+      "LABEL_FREE_ONLY": "Label-free only",
+      "NOT_ASSESSABLE": "Not assessable"
+    },
+    "evidence_type": {
+      "CONTROL_QUALIFICATION_EVIDENCE": "Control qualification evidence",
+      "MONITORING_EVIDENCE": "Monitoring evidence",
+      "SYNTHETIC_SCENARIO_EVIDENCE": "Synthetic scenario evidence"
+    },
+    "health": {
+      "CRITICAL": "Critical",
+      "NORMAL": "Normal",
+      "NOT_ASSESSABLE": "Not assessable",
+      "NOT_ASSESSABLE_FOR_ALERT_AGGREGATION": "Not assessable for alert aggregation",
+      "WARNING": "Warning"
+    },
+    "metric_role": {
+      "CONTEXT_ONLY": "Context only v1",
+      "DERIVED_ONLY": "Derived only",
+      "DIRECT_ALERT_DRIVER": "Direct alert driver",
+      "NON_ALERTING": "Non-alerting",
+      "SUPPORTING_CORROBORATION": "Supporting corroboration"
+    }
+  },
+  "model_card": {
+    "development_freeze_id": "DF-01",
+    "model_id": "XGBT-01",
+    "model_version": "xgbt01_raw_threshold01_df_v1",
+    "negative_label": "risk_negative",
+    "positive_label": "risk_positive",
+    "threshold_display": "PD >= 0.080",
+    "threshold_id": "THRESHOLD-01"
+  },
+  "policy_id": "DASHBOARD-DISPLAY-POLICY-01",
+  "scenario_labels": {
+    "SIM-M01-SCENARIO-01": "SIM-M01 \u2014 Stable Control",
+    "SIM-M02-SCENARIO-01": "SIM-M02 \u2014 Stable Longitudinal Control",
+    "SIM-M03-SCENARIO-01": "SIM-M03 \u2014 Mild Valid Population Drift",
+    "SIM-M04-SCENARIO-01": "SIM-M04 \u2014 Material Valid Population / Score-Driver Drift",
+    "SIM-M05-HARD-FAIL-01": "SIM-M05 \u2014 Hard Contract / Grain Failure",
+    "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01": "SIM-M05 \u2014 Source-Loss Governance Block",
+    "SIM-M05-VALID-DEGRADED-01": "SIM-M05 \u2014 Valid Data Quality / Source Degradation",
+    "SIM-M06-SCENARIO-01": "SIM-M06 \u2014 Synthetic Concept / Performance Deterioration"
+  },
+  "segment_registry": {
+    "evidence_role": "REGISTRY_ONLY_NOT_MONITORING_RESULT",
+    "families": [
+      {
+        "id": "SG-01",
+        "levels": [
+          "0",
+          "1"
+        ],
+        "name": "BUREAU_HISTORY"
+      },
+      {
+        "id": "SG-02",
+        "levels": [
+          "0",
+          "1"
+        ],
+        "name": "PREVIOUS_APPLICATION_HISTORY"
+      },
+      {
+        "id": "SG-03",
+        "levels": [
+          "BUREAU_0_PREV_0",
+          "BUREAU_0_PREV_1",
+          "BUREAU_1_PREV_0",
+          "BUREAU_1_PREV_1"
+        ],
+        "name": "JOINT_HISTORY"
+      },
+      {
+        "id": "SG-04",
+        "levels": [
+          "0",
+          "1"
+        ],
+        "name": "HOUSING_INFORMATION"
+      },
+      {
+        "id": "SG-05",
+        "levels": [
+          "0",
+          "1"
+        ],
+        "name": "CAR_AGE_AVAILABILITY"
+      },
+      {
+        "id": "SG-06",
+        "levels": [
+          "0",
+          "1"
+        ],
+        "name": "EMPLOYMENT_SENTINEL"
+      },
+      {
+        "id": "SG-07",
+        "levels": [
+          "0",
+          "1"
+        ],
+        "name": "BUREAU_REQUEST_AVAILABILITY"
+      },
+      {
+        "id": "SG-08",
+        "levels": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "name": "EXTERNAL_SCORE_AVAILABILITY"
+      },
+      {
+        "exploratory_demographic": true,
+        "id": "SG-09",
+        "levels": [
+          "F",
+          "M",
+          "XNA"
+        ],
+        "name": "GENDER"
+      },
+      {
+        "exploratory_demographic": true,
+        "id": "SG-10",
+        "levels": [
+          "[0,30)",
+          "[30,45)",
+          "[45,60)",
+          "[60,+inf)"
+        ],
+        "name": "AGE_BAND"
+      },
+      {
+        "id": "SG-11",
+        "levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "name": "REGION_RATING"
+      },
+      {
+        "id": "SG-12",
+        "levels": [
+          "Cash loans",
+          "Revolving loans"
+        ],
+        "name": "CONTRACT_TYPE"
+      }
+    ],
+    "family_count": 12,
+    "level_count": 32,
+    "source": "FROZEN_PHASE10_DEFINITION_REGISTRY_COPIED_AS_DISPLAY_METADATA"
+  },
+  "status": "FROZEN_PROSPECTIVE_EXECUTION_SPECIFICATION",
+  "version": "0.1.0",
+  "visual_semantics": {
+    "collapse_governance_dimensions": false,
+    "longitudinal_trend_label_permitted_without_comparable_history": false,
+    "metric_severity_distinct_from_alert_severity": true,
+    "not_assessable_is_normal": false,
+    "scenario_comparison_label": "SCENARIO COMPARISON"
+  }
+}

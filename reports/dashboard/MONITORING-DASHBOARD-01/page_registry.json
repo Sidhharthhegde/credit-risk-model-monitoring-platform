@@ -1,0 +1,30 @@
+{
+  "page_count": 6,
+  "pages": [
+    {
+      "page_id": "OVERVIEW",
+      "title": "Model Monitoring Overview"
+    },
+    {
+      "page_id": "DATA_QUALITY",
+      "title": "Data Quality & Source Governance"
+    },
+    {
+      "page_id": "FEATURE_DRIFT",
+      "title": "Feature Drift"
+    },
+    {
+      "page_id": "PREDICTION",
+      "title": "Prediction Monitoring"
+    },
+    {
+      "page_id": "PERFORMANCE",
+      "title": "Performance & Calibration"
+    },
+    {
+      "page_id": "INVESTIGATION",
+      "title": "Segments, Alerts & Investigation"
+    }
+  ],
+  "result": "PASS"
+}

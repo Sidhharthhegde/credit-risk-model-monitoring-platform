@@ -1,0 +1,20 @@
+{
+  "acknowledged_event_id": "EVT-47B6356D1D0846C1691C1232",
+  "actor_type": "LOCAL_DEMO_USER",
+  "after_acknowledgement_acknowledged": 1,
+  "after_acknowledgement_open": 328,
+  "after_resolution_resolved": 1,
+  "alert_id": "ALT-00AE6214B2E0E3E9A000",
+  "base_database_modified": false,
+  "complete_digest_changed_after_events": true,
+  "explicit_confirmation_required": true,
+  "fixture_only": true,
+  "immutable_evidence_digest_unchanged": true,
+  "initial_open": 329,
+  "invalid_backward_transition_rejected": true,
+  "phase11_source_count_after": 329,
+  "phase11_source_count_before": 329,
+  "phase11_source_count_unchanged": true,
+  "resolved_event_id": "EVT-922D4C52BB6D2296AE5CFB75",
+  "result": "PASS"
+}

@@ -1,0 +1,16 @@
+{
+  "all_page_renderers_registered": true,
+  "all_six_pages_exception_free": true,
+  "browser_visual_qa_performed": false,
+  "method": "STREAMLIT_APPTEST_PLUS_PAGE_IMPORT_REGISTRY",
+  "page_results": {
+    "DATA_QUALITY": true,
+    "FEATURE_DRIFT": true,
+    "INVESTIGATION": true,
+    "OVERVIEW": true,
+    "PERFORMANCE": true,
+    "PREDICTION": true
+  },
+  "reason": "Not required for local technical qualification; screenshots are presentation-only evidence.",
+  "result": "PASS"
+}

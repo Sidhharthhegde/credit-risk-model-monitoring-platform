@@ -1,0 +1,98 @@
+{
+  "contract_id": "MONITORING-DASHBOARD-CONTRACT-01",
+  "dashboard_id": "MONITORING-DASHBOARD-01",
+  "version": "0.1.0",
+  "status": "FROZEN_PROSPECTIVE_EXECUTION_SPECIFICATION",
+  "phase": "PHASE_13_MONITORING_DASHBOARD_AND_INVESTIGATION_INTERFACE",
+  "framework": {
+    "dashboard": "STREAMLIT",
+    "dashboard_version": "1.61.1",
+    "visualization": "PLOTLY",
+    "visualization_version": "6.9.0",
+    "deployment_role": "LOCAL_PORTFOLIO_DEMONSTRATION_OVER_LOCAL_SQLITE"
+  },
+  "authority_model": {
+    "dashboard_role": "PRESENTATION_AND_INVESTIGATION_INTERFACE",
+    "dashboard_is_authoritative_evidence": false,
+    "database_is_authoritative_evidence": false,
+    "frozen_source_artifacts_remain_authoritative": true,
+    "dashboard_reads_via_phase12_query_layer": true,
+    "raw_monitoring_file_access_for_normal_ui": false
+  },
+  "frozen_phase12_binding": {
+    "history_store_id": "MONITORING-HISTORY-01",
+    "manifest_path": "reports/persistence/MONITORING-HISTORY-01/manifest.json",
+    "manifest_sha256": "967a0646b403344944a5389447873bb6d1e432afece1167d26810670774ac165",
+    "initial_database_semantic_sha256": "48eb52d1596199abd010c42d7348a73eda80b5969805a73729897a72fbdf7900",
+    "immutable_evidence_semantic_sha256": "013ecaf72438d585d54a8ed75bb79ed912ea76f3ee3f49a6f15334ef8bee95fe",
+    "normal_ui_binding_uses_immutable_digest": true,
+    "database_path": "artifacts/monitoring_history/MONITORING-HISTORY-01/monitoring_history.db",
+    "repository_path": "src/credit_risk_monitoring/history/queries.py",
+    "repository_sha256": "ab474d1102c31f7696d2374d0b2652c352127d538910e51bd10ee1db0bc96fec",
+    "lifecycle_service_path": "src/credit_risk_monitoring/history/lifecycle.py",
+    "lifecycle_service_sha256": "6054614d9b122db1370fb924df8bdd9430c5bfb0d73ea5fbbc789dfdb0155346"
+  },
+  "display_policy": {
+    "path": "configs/dashboard_display_policy.yaml",
+    "sha256": "b5eda22b3599d3e44b465244ab7ae5f638234c7ada01af01105326ae967b322a",
+    "contains_monitoring_thresholds": false
+  },
+  "scope_controls": {
+    "dashboard_metric_calculation": false,
+    "dashboard_severity_calculation": false,
+    "dashboard_alert_generation": false,
+    "dashboard_health_calculation": false,
+    "model_scoring": false,
+    "model_refitting": false,
+    "recalibration": false,
+    "threshold_retuning": false,
+    "applicant_level_data_displayed": false,
+    "fairness_certification_claimed": false,
+    "production_performance_claimed": false,
+    "monitoring_report_generated": false,
+    "cnd_02_status": "OPEN",
+    "threshold_boundary_density_status": "CONTROLLED_DEFERRED"
+  },
+  "pages": [
+    {"page_id": "OVERVIEW", "title": "Model Monitoring Overview"},
+    {"page_id": "DATA_QUALITY", "title": "Data Quality & Source Governance"},
+    {"page_id": "FEATURE_DRIFT", "title": "Feature Drift"},
+    {"page_id": "PREDICTION", "title": "Prediction Monitoring"},
+    {"page_id": "PERFORMANCE", "title": "Performance & Calibration"},
+    {"page_id": "INVESTIGATION", "title": "Segments, Alerts & Investigation"}
+  ],
+  "operational_state": {
+    "current_alert_state_source": "v_current_alert_state",
+    "current_run_count_source": "v_current_run_alert_counts",
+    "phase11_source_counts_preserved": true,
+    "complete_database_digest_expected_to_change_after_lifecycle_event": true,
+    "dynamic_operational_queries_cached": false,
+    "lifecycle_writes_via_phase12_service_only": true,
+    "lifecycle_confirmation_required": true,
+    "actor_type": "LOCAL_DEMO_USER",
+    "enterprise_authentication_claimed": false
+  },
+  "temporal_semantics": {
+    "current_scenarios_calendar_interpretation": false,
+    "comparable_history_rows_expected": 0,
+    "false_longitudinal_trend_permitted": false,
+    "scenario_bar_comparisons_permitted": true,
+    "scenario_comparison_label": "SCENARIO COMPARISON"
+  },
+  "governed_unavailable_capabilities": {
+    "score_bin_distribution": "PHASE12_QUERY_LAYER_DOES_NOT_PERSIST_BIN_CONTRIBUTIONS",
+    "detailed_segment_result_tables": "PHASE12_QUERY_LAYER_PERSISTS_CONTEXT_ONLY",
+    "fallback_to_raw_files_permitted": false
+  },
+  "expected_reconciliation": {
+    "metric_evidence": 2259,
+    "alerts": 329,
+    "current_open_alerts": 329,
+    "current_open_critical_alerts": 26,
+    "blocked_runs": 2,
+    "synthetic_runs": 1,
+    "monitoring_runs": 8,
+    "segment_families_in_display_registry": 12,
+    "segment_levels_in_display_registry": 32
+  }
+}

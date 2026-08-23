@@ -1,0 +1,89 @@
+{
+  "artifacts": [
+    {
+      "path": "current_alert_state_reconciliation.json",
+      "sha256": "02c278689b4749d526c424e1bfc9717fc24f222b8eb80c08df9c8b118c546354",
+      "size_bytes": 171
+    },
+    {
+      "path": "dashboard_data_reconciliation.json",
+      "sha256": "c13336d90a1c9d3d5680e9df1258836fd8d5739f7af36086e7d18c6fa7bde305",
+      "size_bytes": 293
+    },
+    {
+      "path": "dashboard_display_policy_snapshot.json",
+      "sha256": "2f59efb970acacaa92afc6baa6fc9302e854d8ea5daf2ab58ba1d63694887dc3",
+      "size_bytes": 5980
+    },
+    {
+      "path": "dashboard_smoke_qualification.json",
+      "sha256": "b7a6448b43acfc0fc5db204952e901a2c707709ab5763c17d5068a18e7ee74fe",
+      "size_bytes": 485
+    },
+    {
+      "path": "dashboard_source_binding.json",
+      "sha256": "12017a571f67795694b108e77ec1d103c6549c2251d4bd23c5ce5996b3580848",
+      "size_bytes": 3430
+    },
+    {
+      "path": "lifecycle_action_qualification.json",
+      "sha256": "9e55919a6b777922de304143fdad43ac7d8f6a99017e759d69d2f0c326f2e59c",
+      "size_bytes": 712
+    },
+    {
+      "path": "lineage_ui_qualification.json",
+      "sha256": "fd1596e917d1c032f0ceeff66b792338be141ca3a6f35e301ba0e1e1314250d1",
+      "size_bytes": 206
+    },
+    {
+      "path": "monitoring_dashboard_contract_snapshot.json",
+      "sha256": "313db98e49cdab246b6153c634872be278f0f83abd0ab578d7e0f36d74e9bbce",
+      "size_bytes": 4520
+    },
+    {
+      "path": "no_recalculation_attestation.json",
+      "sha256": "0cd374bf3e4094e0de25e1ca14d456c6a01816a88a232899b89499a69914922e",
+      "size_bytes": 369
+    },
+    {
+      "path": "page_registry.json",
+      "sha256": "68b985f64e42aef5493b664ecb3836851aee4b8dc7fe58e245749434e5911619",
+      "size_bytes": 586
+    },
+    {
+      "path": "phase13_acceptance_checklist.csv",
+      "sha256": "df9388da8adda02cd91010206cf467c312cbb3ebc9423195c7cca00b791d01c3",
+      "size_bytes": 1687
+    },
+    {
+      "path": "phase13_completion_decision.json",
+      "sha256": "123b6c7f0d85d19502401027be5e46cffa720ebf3e5900ca30a4b56044a556a1",
+      "size_bytes": 784
+    },
+    {
+      "path": "scope_protection_attestation.json",
+      "sha256": "f80e598a315929ef5b18b697c572aeb55102e790b46fdd15bfa09761d6acd801",
+      "size_bytes": 594
+    },
+    {
+      "path": "segment_ui_attestation.json",
+      "sha256": "edae5bc4dc17b013d562f5ad973b455f455a11a3937f48ba8297ba3540095074",
+      "size_bytes": 393
+    },
+    {
+      "path": "synthetic_evidence_ui_attestation.json",
+      "sha256": "5b6f9ff148b76a83051f487e4cfa5b98480f12a43bc6df1800cd95d3a0b34d21",
+      "size_bytes": 243
+    },
+    {
+      "path": "temporal_visualization_qualification.json",
+      "sha256": "f2e769d2f2b0e74063b553f55cafe6beedc95cafb51f60fe956385bfa8d11531",
+      "size_bytes": 304
+    }
+  ],
+  "created_utc": "2026-08-23T13:57:44.766006+00:00",
+  "dashboard_authoritative_evidence": false,
+  "dashboard_id": "MONITORING-DASHBOARD-01",
+  "frozen_source_evidence_authoritative": true,
+  "status": "TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW"
+}

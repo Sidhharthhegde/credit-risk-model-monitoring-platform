@@ -1,0 +1,141 @@
+{
+  "definition_binding": {
+    "all_families_exhaustive": true,
+    "config_id": "SUBPOPULATIONS-01",
+    "config_sha256": "c1041f9e5bf695f48adc7505956812baa5888a5e6c48aff98eaeab46186d538d",
+    "family_count": 12,
+    "family_ids": [
+      "SG-01",
+      "SG-02",
+      "SG-03",
+      "SG-04",
+      "SG-05",
+      "SG-06",
+      "SG-07",
+      "SG-08",
+      "SG-09",
+      "SG-10",
+      "SG-11",
+      "SG-12"
+    ],
+    "level_count": 32,
+    "new_groups_permitted": false,
+    "part_a_level_catalog_sha256": "80a10678271e3713b2c1584b31c2e4d44bd97aaa19e366c749d184e0b3a66d52",
+    "part_a_registry_sha256": "6f4e25ffeb64306d56f8612d5fc40a07421e71f1266c2dd6c049b69028030dcc",
+    "post_result_group_consolidation_permitted": false,
+    "unexpected_value_policy": "EXPLICIT_UNCLASSIFIABLE_CONTROL_STATE_AND_AUTHORITATIVE_EXECUTION_FAILURE"
+  },
+  "frozen_dependencies": {
+    "dev_val_snapshot_manifest_sha256": "2b9d5a0fe42989e50c0063b366b98e7a8102171f5aa460b766444d83e03a7c4f",
+    "part_a_discrimination_sha256": "0760b8d786bf6c534cc5acc85fc7709300b0259fddc8a375df0c16a16484c171",
+    "part_a_population_summary_sha256": "a165b48d1a00ac86a3925767a459cec3d7095752efe7f3bbaaac041c6450b342",
+    "part_a_probability_quality_sha256": "cd89f5db751a6da81a82801a0c0f98d03d0940d32a0b3b0f91b1a6e59f6bd1a9",
+    "part_a_sufficiency_policy_sha256": "33106edf63dc737eeae55f3e14eae70b05e2e3f9f787c3b2700b67fa490b6ae9",
+    "part_a_threshold_metrics_sha256": "4e306b62b2c71ca135d055004c52307f6f50f72ad9808dfac6a6e5d4e8703a09",
+    "phase_6_manifest_sha256": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+    "phase_7_manifest_sha256": "64a706d84465e0398391f9d217702343b31aa4d446864a9eca70db89bc930f17",
+    "phase_8_manifest_sha256": "7bb910835b9b7f2df9ac612a72323d37d6395eadd907249d8a8ebd7372bb21d8",
+    "phase_9_manifest_sha256": "17209d875644bfa495889fad0133a9585c5d312aa1164f4a145d4a353139bb5e",
+    "score_bins_sha256": "b20910dfc898bfa12643a35fcce38cc1ac4c26a2c2b44865e8ec2ec04b372005",
+    "train_snapshot_manifest_sha256": "5aa6c631d3abc0c475dd86ac114066491c3eb862a6f2b1d9b7c526708d7d58cc"
+  },
+  "label_free_policy": {
+    "composition_severity": "N/A",
+    "scenario_ids": [
+      "SIM-M01",
+      "SIM-M02",
+      "SIM-M03",
+      "SIM-M04",
+      "SIM-M05",
+      "SIM-M06"
+    ],
+    "score_psi_epsilon": 1e-06,
+    "segment_score_psi_severity": "N/A",
+    "segment_score_psi_threshold_applicability": "CONTROLLED_DEFERRED_NOT_INHERITED_FROM_PORTFOLIO"
+  },
+  "minimum_evidence": {
+    "below_minimum_status": "INSUFFICIENT_DATA",
+    "calculate_governed_metric_below_minimum": false,
+    "classification": "PROJECT_DEFINED_FEASIBILITY_RULE_NOT_UNIVERSAL_STANDARD",
+    "discrimination_and_calibration": {
+      "minimum_defaults": 50,
+      "minimum_nondefaults": 50,
+      "minimum_records": 1000
+    },
+    "threshold_and_error_rates": {
+      "minimum_defaults": 50,
+      "minimum_nondefaults": 50,
+      "minimum_records": 500
+    }
+  },
+  "model": {
+    "development_freeze_id": "DF-01",
+    "model_id": "XGBT-01",
+    "model_version": "xgbt01_raw_threshold01_df_v1",
+    "probability_representation": "RAW_P_TARGET_1",
+    "rescoring_permitted": false
+  },
+  "monitoring_id": "SEGMENT-MONITORING-01",
+  "outcome_policy": {
+    "empirical_performance": false,
+    "external_validation": false,
+    "log_loss_probability_clip_epsilon": 1e-15,
+    "m01_through_m05_availability": "NOT_AVAILABLE",
+    "m01_through_m05_evidence_status": "NOT_ASSESSABLE",
+    "m01_through_m05_maturity": "NOT_APPLICABLE",
+    "m01_through_m05_reason": "OUTCOME_NOT_AVAILABLE",
+    "m06_availability": "AVAILABLE",
+    "m06_evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+    "m06_maturity": "MATURED",
+    "production_performance_claim_permitted": false
+  },
+  "prediction_manifest_sha256": {
+    "SIM-M01": "677ab537d6f841fd291054728902f6ceb5ab8b70f71bc6380f7cdfcf928aa497",
+    "SIM-M02": "72f89ae6109d4c5cee431e804437051e938ac2a63bed7e2e4e47d11bf2c95af5",
+    "SIM-M03": "4147c4cdbaf2a0f625000a6575cc9f936b0efc1b0b5790bd22dd8ce99fd206ea",
+    "SIM-M04": "6a566cba82ecb8bc5748d90f9e82deac0d68f1a0e87d4c9d4d6183957682e3e7",
+    "SIM-M05": "97e82c2432f454208b7e8e5676e0a9acbc1c9b9650fd55b32b57036f1470d34e",
+    "SIM-M06": "1d01327698856838404610abcbfacccbeb705bd883d7f56786773056dd526fcb"
+  },
+  "reference_lineage": {
+    "performance": "PART_A_PHASE56_FROZEN_SUBGROUP_EVIDENCE",
+    "population_composition": "TRAIN-PHYSICAL-01_FEATURE-REF-01",
+    "prediction_and_score": "DEV-VAL-PHYSICAL-01_PERF-REF-01",
+    "score_bins": "PHASE4_GLOBAL_PERF-REF-01_SCORE_BINS",
+    "segment_specific_rebucketing_permitted": false,
+    "threshold_performance": "PART_A_PHASE56_FROZEN_SUBGROUP_EVIDENCE"
+  },
+  "scenario_manifest_sha256": {
+    "SIM-M01": "519693004f6b83c28298345414256105d62565c99872bb6501a6210777aed3d1",
+    "SIM-M02": "dc8d53619d7c7211b73756e599a4934b1303a9bec1f13ff648e1fef5771b37dc",
+    "SIM-M03": "69ef41174d2553851bb84bdb76f8456ddb0e9d9fc956d31e47852331f705a13e",
+    "SIM-M04": "4426e505e873acd9d7412580424b60909d65feab8f2deba7ee9cda5ed42865d7",
+    "SIM-M05": "a3f143e6f56a0152974ff56153e455bec433448ece4e51c040b4ee1efe321192",
+    "SIM-M06": "e3bab18dc72e0e63a0193aac04f273ceb3f507f96edbf22f544b2bab2f2ef801"
+  },
+  "scope": "PHASE_10_SEGMENT_AND_SUBPOPULATION_MONITORING_ONLY",
+  "scope_protection": {
+    "bias_absence_claim": false,
+    "critical_predictor_mapping_resolution": false,
+    "fairness_certification": false,
+    "regulatory_fairness_compliance_claim": false,
+    "row_level_segment_membership_publicly_persisted": false,
+    "sqlite_dashboard_or_reporting_layer": false
+  },
+  "severity_and_alert_policy": {
+    "alert_creation_enabled": false,
+    "calibration_severity": "N/A",
+    "overall_model_health_enabled": false,
+    "performance_severity": "N/A",
+    "threshold_performance_severity": "N/A"
+  },
+  "status": "FROZEN_PROSPECTIVE_EXECUTION_SPECIFICATION",
+  "threshold": {
+    "negative_output": "risk_negative",
+    "operator": ">=",
+    "positive_output": "risk_positive",
+    "threshold_id": "THRESHOLD-01",
+    "value": 0.08
+  },
+  "version": "0.1.0"
+}

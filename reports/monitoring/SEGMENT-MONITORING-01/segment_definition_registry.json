@@ -1,0 +1,174 @@
+{
+  "definition_source": "FROZEN_PART_A_PHASE56_SUBGROUP_REGISTRY",
+  "families": [
+    {
+      "exploratory_not_fairness_certification": false,
+      "frozen_definition": "Values 0 and 1",
+      "levels": [
+        "0",
+        "1"
+      ],
+      "segment_family_id": "SG-01",
+      "segment_family_name": "BUREAU_HISTORY",
+      "source_features": [
+        "HAS_BUREAU_HISTORY"
+      ]
+    },
+    {
+      "exploratory_not_fairness_certification": false,
+      "frozen_definition": "Values 0 and 1",
+      "levels": [
+        "0",
+        "1"
+      ],
+      "segment_family_id": "SG-02",
+      "segment_family_name": "PREVIOUS_APPLICATION_HISTORY",
+      "source_features": [
+        "HAS_PREV_APP_HISTORY"
+      ]
+    },
+    {
+      "exploratory_not_fairness_certification": false,
+      "frozen_definition": "Four exact 0/1 combinations",
+      "levels": [
+        "BUREAU_0_PREV_0",
+        "BUREAU_0_PREV_1",
+        "BUREAU_1_PREV_0",
+        "BUREAU_1_PREV_1"
+      ],
+      "segment_family_id": "SG-03",
+      "segment_family_name": "JOINT_HISTORY",
+      "source_features": [
+        "HAS_BUREAU_HISTORY",
+        "HAS_PREV_APP_HISTORY"
+      ]
+    },
+    {
+      "exploratory_not_fairness_certification": false,
+      "frozen_definition": "Values 0 and 1",
+      "levels": [
+        "0",
+        "1"
+      ],
+      "segment_family_id": "SG-04",
+      "segment_family_name": "HOUSING_INFORMATION",
+      "source_features": [
+        "HOUSING_AVG_NUMERIC_DATA_AVAILABLE_FLAG"
+      ]
+    },
+    {
+      "exploratory_not_fairness_certification": false,
+      "frozen_definition": "Values 0 and 1",
+      "levels": [
+        "0",
+        "1"
+      ],
+      "segment_family_id": "SG-05",
+      "segment_family_name": "CAR_AGE_AVAILABILITY",
+      "source_features": [
+        "OWN_CAR_AGE_IS_MISSING"
+      ]
+    },
+    {
+      "exploratory_not_fairness_certification": false,
+      "frozen_definition": "Values 0 and 1",
+      "levels": [
+        "0",
+        "1"
+      ],
+      "segment_family_id": "SG-06",
+      "segment_family_name": "EMPLOYMENT_SENTINEL",
+      "source_features": [
+        "FLAG_DAYS_EMPLOYED_SENTINEL"
+      ]
+    },
+    {
+      "exploratory_not_fairness_certification": false,
+      "frozen_definition": "Values 0 and 1",
+      "levels": [
+        "0",
+        "1"
+      ],
+      "segment_family_id": "SG-07",
+      "segment_family_name": "BUREAU_REQUEST_AVAILABILITY",
+      "source_features": [
+        "BUREAU_REQUEST_DATA_AVAILABLE_FLAG"
+      ]
+    },
+    {
+      "exploratory_not_fairness_certification": false,
+      "frozen_definition": "Count non-missing scores: 0, 1, 2, 3",
+      "levels": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "segment_family_id": "SG-08",
+      "segment_family_name": "EXTERNAL_SCORE_AVAILABILITY",
+      "source_features": [
+        "EXT_SOURCE_1",
+        "EXT_SOURCE_2",
+        "EXT_SOURCE_3"
+      ]
+    },
+    {
+      "exploratory_not_fairness_certification": true,
+      "frozen_definition": "All observed frozen categories; no post-result consolidation",
+      "levels": [
+        "F",
+        "M",
+        "XNA"
+      ],
+      "segment_family_id": "SG-09",
+      "segment_family_name": "GENDER",
+      "source_features": [
+        "CODE_GENDER"
+      ]
+    },
+    {
+      "exploratory_not_fairness_certification": true,
+      "frozen_definition": "age_years=-DAYS_BIRTH/365.25; [0,30), [30,45), [45,60), [60,+inf)",
+      "levels": [
+        "[0,30)",
+        "[30,45)",
+        "[45,60)",
+        "[60,+inf)"
+      ],
+      "segment_family_id": "SG-10",
+      "segment_family_name": "AGE_BAND",
+      "source_features": [
+        "DAYS_BIRTH"
+      ]
+    },
+    {
+      "exploratory_not_fairness_certification": false,
+      "frozen_definition": "Each observed integer rating retained separately",
+      "levels": [
+        "1",
+        "2",
+        "3"
+      ],
+      "segment_family_id": "SG-11",
+      "segment_family_name": "REGION_RATING",
+      "source_features": [
+        "REGION_RATING_CLIENT"
+      ]
+    },
+    {
+      "exploratory_not_fairness_certification": false,
+      "frozen_definition": "All observed frozen categories retained separately",
+      "levels": [
+        "Cash loans",
+        "Revolving loans"
+      ],
+      "segment_family_id": "SG-12",
+      "segment_family_name": "CONTRACT_TYPE",
+      "source_features": [
+        "NAME_CONTRACT_TYPE"
+      ]
+    }
+  ],
+  "family_count": 12,
+  "level_count": 32
+}

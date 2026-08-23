@@ -264,12 +264,12 @@ Hard-gate examples include:
 | 6 | Data-quality and source monitoring | Phases 3-5 | Contract failures and hard gates validated |
 | 7 | Population and feature drift | Phases 4, 6 | Drift metrics reproduce controlled fixtures |
 | 8 | Score and observation-time threshold monitoring | Phases 1, 4, 6 | Score/decision monitoring passes parity tests |
-| 9 | Outcome ingestion and maturity | Phases 0, 3 | Ineligible cohorts cannot enter performance |
-| 10 | Discrimination monitoring | Phases 4, 8-9 | Mature-cohort metrics and uncertainty verified |
-| 11 | Calibration and portfolio outcomes | Phases 4, 8-10 | Calibration outputs reconcile |
-| 12 | Matured threshold-policy monitoring | Phases 8-11 | Frozen-threshold outcome metrics reconcile |
-| 13 | Governed subpopulation monitoring | Phases 9-12 | Generic engine covers all 12 families |
-| 14 | Alert and escalation engine | Phases 6-13 | Severity, lifecycle and aggregation tests pass |
+| 9 | Outcome maturity, performance and calibration | Phases 0, 4, 8 | Eligible synthetic outcome metrics and threshold results reconcile |
+| 10 | Segment and subpopulation monitoring | Phases 6-9 | Generic engine covers all 12 frozen families with sufficiency gates |
+| 11 | Alert engine, breach aggregation and overall health | Phases 6-10 | Severity, lifecycle and aggregation tests pass |
+| 12 | Evidence, persistence and audit trail | Phases 1-11 | Immutable package and SQLite reconcile |
+| 13 | End-to-end monitoring runner | Phases 1-12 | One command produces governed completion state |
+| 14 | Test suite and independent reconciliation | Phases 0-13 | Unit, regression and scenario gates pass |
 | 15 | Evidence, persistence and audit trail | Phases 1-14 | Immutable package and SQLite reconcile |
 | 16 | End-to-end monitoring runner | Phases 1-15 | One command produces governed completion state |
 | 17 | Test suite and independent reconciliation | Phases 0-16 | Unit, regression and scenario gates pass |
@@ -944,50 +944,40 @@ tests/outcomes/
 
 ---
 
-# Phase 10 - Discrimination Monitoring
+# Phase 10 - Segment and Subpopulation Monitoring
 
 ## Objective
 
-Assess ranking performance only on eligible matured cohorts.
-
-## Metrics
-
-Primary:
-
-- ROC-AUC.
-- KS.
-
-Secondary:
-
-- PR-AUC.
-- Gini, explicitly identified as `2 * ROC-AUC - 1`.
+Determine whether governed subpopulations change differently from the portfolio and, only where evidence is mature and sufficient, whether synthetic model behavior differs within them.
 
 ## Tasks
 
-1. Enforce maturity eligibility.
-2. Enforce binary target and both-class presence.
-3. Apply minimum evidence requirements.
-4. Calculate point estimates.
-5. Calculate protocol-approved uncertainty intervals.
-6. Compare with the approved Part A performance reference.
-7. Evaluate absolute level and deterioration.
-8. Prevent tiny, uncertain changes from generating unsupported conclusions.
-9. Record event rate and sample composition alongside performance.
-10. Mark non-assessable or insufficient cohorts explicitly.
+1. Hash-bind the 12 frozen Part A families and 32 exact levels.
+2. Materialize TRAIN composition and development-validation prediction references before current results.
+3. Assign all applicants through one generic frozen-definition engine.
+4. Reconcile exhaustive families and reject unclassifiable current values.
+5. Calculate composition, raw-score summaries, threshold composition and global-bin segment Score PSI for all six scenarios.
+6. Keep M01–M05 outcome results `NOT_ASSESSABLE`.
+7. Apply independent discrimination/calibration and threshold sufficiency gates to M06 synthetic evidence.
+8. Leave ineligible metrics null with `INSUFFICIENT_DATA`.
+9. Reconcile segment totals to Phases 8 and 9.
+10. Create no alerts, health aggregation or fairness certification.
 
 ## Required tests and checks
 
-- Known metric fixtures.
-- Single-class outcome is not assessable.
-- Immature cohort is rejected.
-- Insufficient sample yields `INSUFFICIENT_DATA`.
-- Synthetic deterioration triggers the intended state.
+- Deterministic assignment and age-band boundaries.
+- Exhaustiveness and explicit unclassifiable handling.
+- Exact `999/1000`, `499/500`, `49/50` sufficiency boundaries.
+- M01–M05 outcome isolation and M06 synthetic lineage.
+- Portfolio count, threshold and outcome reconciliation.
+- No fabricated severity or alert state.
 
 ## Completion criteria
 
-- Results reconcile with trusted library calculations.
-- Uncertainty handling is documented and tested.
-- No synthetic result is presented as external evidence.
+- All 12 families execute through the generic engine.
+- Segment totals reconcile to frozen portfolio evidence.
+- Insufficient and unavailable evidence never becomes `NORMAL`.
+- No synthetic result is presented as empirical, external or fairness-certified evidence.
 
 ---
 
@@ -1690,7 +1680,7 @@ Update this table only when supported by a phase completion decision.
 | 7 | `COMPLETE` | `reports/monitoring/FEATURE-DRIFT-MONITORING-01/phase7_completion_decision.json` | Approved and frozen on 2026-08-22; Phase 8 authorized |
 | 8 | `COMPLETE` | `reports/monitoring/PREDICTION-MONITORING-01/phase8_completion_decision.json` | Approved and frozen on 2026-08-23; Phase 9 authorized |
 | 9 | `COMPLETE` | `reports/monitoring/OUTCOME-PERFORMANCE-MONITORING-01/phase9_completion_decision.json` | Conditional taxonomy issue resolved; approved and frozen on 2026-08-23; Phase 10 authorized |
-| 10 | `NOT_STARTED` | Not issued |  |
+| 10 | `IN_PROGRESS` | `reports/monitoring/SEGMENT-MONITORING-01/phase10_completion_decision.json` | Technical qualification passed on 2026-08-23; owner review pending; Phase 11 unauthorized |
 | 11 | `NOT_STARTED` | Not issued |  |
 | 12 | `NOT_STARTED` | Not issued |  |
 | 13 | `NOT_STARTED` | Not issued |  |
@@ -1712,12 +1702,12 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next authorized work is Phase 10 segment and subpopulation monitoring:
+The next controlled action is owner review of the technically qualified Phase 10 candidate:
 
-1. Retain the generic, configuration-driven definitions for all 12 frozen subgroup families.
-2. Calculate label-free segment composition, score distribution and risk-positive composition for eligible cohorts.
-3. Admit outcome-dependent segment evidence only where mature eligible outcomes exist.
-4. Enforce approved minimum-evidence rules and use `INSUFFICIENT_DATA` rather than `NORMAL` when evidence is inadequate.
-5. Preserve the separation between synthetic evidence type, eligibility, metric severity, alerts and overall model health.
+1. Review `SEGMENT-MONITORING-01`, its manifest and acceptance checklist.
+2. Confirm the 12-family/32-level definition binding and reference lineage.
+3. Confirm the independent M06 sufficiency gates and null metrics for insufficient segments.
+4. Confirm segment-share and Score PSI severities remain `N/A` and no alert or fairness claim exists.
+5. Approve and freeze Phase 10 separately before authorizing Phase 11.
 
-Phase 9 is approved and frozen. Phase 10 segment and subpopulation monitoring is authorized.
+Phase 10 is technically qualified but not complete or frozen. Phase 11 is not authorized.

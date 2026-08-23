@@ -6,9 +6,9 @@ Part B will demonstrate data-quality monitoring, population and feature drift, r
 
 ## Current status
 
-`PHASE_9_APPROVED_FROZEN`
+`PHASE_10_TECHNICALLY_QUALIFIED_PENDING_OWNER_REVIEW`
 
-Phases 0–9 are approved and frozen. `OUTCOME-PERFORMANCE-MONITORING-01` uses only the frozen M06 prediction and synthetic-outcome artifacts. M01–M05 remain `NOT_ASSESSABLE`; M06 eligibility is `ELIGIBLE` while its independent evidence type remains `SYNTHETIC_SCENARIO_EVIDENCE`. All performance, calibration and threshold-performance severities remain `N/A`. Phase 10 segment and subpopulation monitoring is authorized.
+Phases 0–9 are approved and frozen. `SEGMENT-MONITORING-01` has passed technical qualification across all 12 frozen Part A subgroup families and 32 exact levels. All six scenarios received label-free segment monitoring; only M06 received sufficiency-gated synthetic outcome monitoring. Owner review is pending, Phase 10 is not frozen, and Phase 11 is not authorized.
 
 ## Important scope statement
 

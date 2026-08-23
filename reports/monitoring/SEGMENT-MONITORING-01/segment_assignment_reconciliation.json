@@ -1,0 +1,655 @@
+{
+  "all_families_exhaustive": true,
+  "all_unclassifiable_counts_zero": true,
+  "family_scenario_checks": [
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M01",
+      "segment_family_id": "SG-01",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M01",
+      "segment_family_id": "SG-02",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M01",
+      "segment_family_id": "SG-03",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M01",
+      "segment_family_id": "SG-04",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M01",
+      "segment_family_id": "SG-05",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M01",
+      "segment_family_id": "SG-06",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M01",
+      "segment_family_id": "SG-07",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M01",
+      "segment_family_id": "SG-08",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M01",
+      "segment_family_id": "SG-09",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M01",
+      "segment_family_id": "SG-10",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M01",
+      "segment_family_id": "SG-11",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M01",
+      "segment_family_id": "SG-12",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M02",
+      "segment_family_id": "SG-01",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M02",
+      "segment_family_id": "SG-02",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M02",
+      "segment_family_id": "SG-03",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M02",
+      "segment_family_id": "SG-04",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M02",
+      "segment_family_id": "SG-05",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M02",
+      "segment_family_id": "SG-06",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M02",
+      "segment_family_id": "SG-07",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M02",
+      "segment_family_id": "SG-08",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M02",
+      "segment_family_id": "SG-09",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M02",
+      "segment_family_id": "SG-10",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M02",
+      "segment_family_id": "SG-11",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M02",
+      "segment_family_id": "SG-12",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M03",
+      "segment_family_id": "SG-01",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M03",
+      "segment_family_id": "SG-02",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M03",
+      "segment_family_id": "SG-03",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M03",
+      "segment_family_id": "SG-04",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M03",
+      "segment_family_id": "SG-05",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M03",
+      "segment_family_id": "SG-06",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M03",
+      "segment_family_id": "SG-07",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M03",
+      "segment_family_id": "SG-08",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M03",
+      "segment_family_id": "SG-09",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M03",
+      "segment_family_id": "SG-10",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M03",
+      "segment_family_id": "SG-11",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M03",
+      "segment_family_id": "SG-12",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M04",
+      "segment_family_id": "SG-01",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M04",
+      "segment_family_id": "SG-02",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M04",
+      "segment_family_id": "SG-03",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M04",
+      "segment_family_id": "SG-04",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M04",
+      "segment_family_id": "SG-05",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M04",
+      "segment_family_id": "SG-06",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M04",
+      "segment_family_id": "SG-07",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M04",
+      "segment_family_id": "SG-08",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M04",
+      "segment_family_id": "SG-09",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M04",
+      "segment_family_id": "SG-10",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M04",
+      "segment_family_id": "SG-11",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M04",
+      "segment_family_id": "SG-12",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M05",
+      "segment_family_id": "SG-01",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M05",
+      "segment_family_id": "SG-02",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M05",
+      "segment_family_id": "SG-03",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M05",
+      "segment_family_id": "SG-04",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M05",
+      "segment_family_id": "SG-05",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M05",
+      "segment_family_id": "SG-06",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M05",
+      "segment_family_id": "SG-07",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M05",
+      "segment_family_id": "SG-08",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M05",
+      "segment_family_id": "SG-09",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M05",
+      "segment_family_id": "SG-10",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M05",
+      "segment_family_id": "SG-11",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M05",
+      "segment_family_id": "SG-12",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M06",
+      "segment_family_id": "SG-01",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M06",
+      "segment_family_id": "SG-02",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M06",
+      "segment_family_id": "SG-03",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M06",
+      "segment_family_id": "SG-04",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M06",
+      "segment_family_id": "SG-05",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M06",
+      "segment_family_id": "SG-06",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M06",
+      "segment_family_id": "SG-07",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M06",
+      "segment_family_id": "SG-08",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M06",
+      "segment_family_id": "SG-09",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M06",
+      "segment_family_id": "SG-10",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M06",
+      "segment_family_id": "SG-11",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    },
+    {
+      "cohort_row_count": 8124,
+      "exhaustive": true,
+      "result": "PASS",
+      "scenario_id": "SIM-M06",
+      "segment_family_id": "SG-12",
+      "segment_level_count_sum": 8124,
+      "unclassifiable_count": 0
+    }
+  ],
+  "result": "PASS"
+}

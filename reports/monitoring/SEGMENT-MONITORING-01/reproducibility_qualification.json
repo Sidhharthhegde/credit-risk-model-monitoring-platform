@@ -1,0 +1,23 @@
+{
+  "all_equal": true,
+  "assignment_reconciliation_exact": true,
+  "first_semantic_hashes": {
+    "calibration": "149d1c19e32dba3a3923c2a7e904cc017b34c8324809484f6f45dfa9052a035f",
+    "eligibility": "3c2a630af03b8ed7932e43b176f4acdad230e6623b434a31334e2e07f3646c97",
+    "performance": "23ebfb40394d4d4e5f3bb2dbfaab0e9036db36887b09a04029c9d081bd0f05ad",
+    "population": "e419a90955c86af1f76672cfd6100de20a735bd93a41996965d0a5c61667fa2c",
+    "prediction": "728ce354f88c438794607c524d3aa728c7c3b831f8fb10b22830cf039ffd7155",
+    "score_psi": "c91ce99e50d0342671d657614257c2df6b99892bcd63fd5a94579436b4dca9cc",
+    "threshold": "497970d800581512cdaabe3881baf7f4eb9e7cf2a5172ca054a100be6aba45a9"
+  },
+  "result": "PASS",
+  "second_semantic_hashes": {
+    "calibration": "149d1c19e32dba3a3923c2a7e904cc017b34c8324809484f6f45dfa9052a035f",
+    "eligibility": "3c2a630af03b8ed7932e43b176f4acdad230e6623b434a31334e2e07f3646c97",
+    "performance": "23ebfb40394d4d4e5f3bb2dbfaab0e9036db36887b09a04029c9d081bd0f05ad",
+    "population": "e419a90955c86af1f76672cfd6100de20a735bd93a41996965d0a5c61667fa2c",
+    "prediction": "728ce354f88c438794607c524d3aa728c7c3b831f8fb10b22830cf039ffd7155",
+    "score_psi": "c91ce99e50d0342671d657614257c2df6b99892bcd63fd5a94579436b4dca9cc",
+    "threshold": "497970d800581512cdaabe3881baf7f4eb9e7cf2a5172ca054a100be6aba45a9"
+  }
+}

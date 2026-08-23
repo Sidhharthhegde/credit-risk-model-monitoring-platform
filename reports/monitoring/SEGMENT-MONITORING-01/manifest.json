@@ -1,0 +1,112 @@
+{
+  "aggregate_public_evidence_only": true,
+  "alerts_included": false,
+  "approval_record_included": false,
+  "artifacts": [
+    {
+      "path": "cross_phase_reconciliation.json",
+      "sha256": "6aa3cf78628ef17b5c99abdc8bf171386a421514a0155f824b67a0f09141e046",
+      "size_bytes": 24122
+    },
+    {
+      "path": "execution_source_manifest.json",
+      "sha256": "89a352b4349a4f09969def9a99908f214f6c4543c1be0b9fee9649749481d394",
+      "size_bytes": 2163
+    },
+    {
+      "path": "insufficient_evidence_summary.csv",
+      "sha256": "f5eaf812a22f8592013e64b8ba336b5a675969fe6a3a426e3715ef28fb5860ae",
+      "size_bytes": 1554
+    },
+    {
+      "path": "phase10_acceptance_checklist.csv",
+      "sha256": "e8e2f2b2f91f6bf370e67fc822bc3c30c8d291edb5f8b4abc091e4aabdfb1d22",
+      "size_bytes": 1922
+    },
+    {
+      "path": "phase10_completion_decision.json",
+      "sha256": "89a67232e1e5a22d267c0cff02d8bce50b04df5f9f6e9b6b65e1d102e8a24e5f",
+      "size_bytes": 1759
+    },
+    {
+      "path": "reproducibility_qualification.json",
+      "sha256": "cff0a0dca606a70f61cc9fc453635081046c275d0f214739994312fca6c7d017",
+      "size_bytes": 1360
+    },
+    {
+      "path": "scope_protection_attestation.json",
+      "sha256": "c2a111ec5355612519ecf6c5ba35ced1f0e7b1baed60d09363354e5910d029ec",
+      "size_bytes": 616
+    },
+    {
+      "path": "segment_assignment_reconciliation.json",
+      "sha256": "ad2100dd5f64d2d48b6ecec1a0bf8ac04a307ef615888219c990eca617ff08b1",
+      "size_bytes": 16982
+    },
+    {
+      "path": "segment_calibration_results.parquet",
+      "sha256": "cd2e76d038b12e70f9224ee16ff117a40335b06feda05c1ffe7bb6c9bca3059d",
+      "size_bytes": 18601
+    },
+    {
+      "path": "segment_definition_registry.json",
+      "sha256": "90651ed1a7466acfbc63c5350567d04a0f8df0cf88c72dc50c2f0b684f80a883",
+      "size_bytes": 4438
+    },
+    {
+      "path": "segment_monitoring_contract_snapshot.json",
+      "sha256": "910308c730f7feac637d757e077269e8422d7f95eb453b9220a4607bb5e8efce",
+      "size_bytes": 6116
+    },
+    {
+      "path": "segment_monitoring_summary.csv",
+      "sha256": "b32b9f641fde08a7857b8103f8297b3883fe7ac5a1c30988577513c2e29bde21",
+      "size_bytes": 711
+    },
+    {
+      "path": "segment_outcome_eligibility.parquet",
+      "sha256": "2a6331753f6f60921423f69c4a108fdfde2b1ba09f919906bef40ab17eee9373",
+      "size_bytes": 12515
+    },
+    {
+      "path": "segment_performance_results.parquet",
+      "sha256": "3e7aad312f5c69a2d2b5e84d28ddd1df32efef23c1be873a614be678bda7638a",
+      "size_bytes": 16641
+    },
+    {
+      "path": "segment_population_results.parquet",
+      "sha256": "3a503df25178d7224c46929f7cc6322cebcfa017ef2f44ea84d40255a6e456c3",
+      "size_bytes": 16153
+    },
+    {
+      "path": "segment_prediction_results.parquet",
+      "sha256": "60073f3a7e8786bbbcfd4b38bcd890846edf3efa45ce188ff13f269c5335a290",
+      "size_bytes": 41489
+    },
+    {
+      "path": "segment_reference_materialization.json",
+      "sha256": "c6875c3f1511febbe47f01aaa3dcadc4a70e5d7202a717c8d5eea35bdbea475a",
+      "size_bytes": 150290
+    },
+    {
+      "path": "segment_score_psi_results.parquet",
+      "sha256": "af5c2e666c3cdb60bd1d02f81f624548c895790daa47103e0640bf94c2d6b6e7",
+      "size_bytes": 11129
+    },
+    {
+      "path": "segment_threshold_results.parquet",
+      "sha256": "191931d7cd53d1cfcbca1a68f06c638dc83d1baeb16e223c42988284a525fb9a",
+      "size_bytes": 25468
+    },
+    {
+      "path": "synthetic_evidence_attestation.json",
+      "sha256": "977c358ba21cc18904011c212bd0d2561a2fb918a200d709a8d3e0378ae01ff0",
+      "size_bytes": 249
+    }
+  ],
+  "created_utc": "2026-08-23T06:53:43.269841+00:00",
+  "monitoring_id": "SEGMENT-MONITORING-01",
+  "overall_model_health_included": false,
+  "row_level_segment_membership_included": false,
+  "status": "QUALIFIED_PENDING_REVIEW"
+}

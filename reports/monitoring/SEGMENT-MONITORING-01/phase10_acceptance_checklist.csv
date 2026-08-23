@@ -1,0 +1,26 @@
+control_id,control,result
+P10-001,Phase 9 is approved frozen and authorizes Phase 10,PASS
+P10-002,All 12 frozen Part A segment families and 32 levels are hash bound,PASS
+P10-003,TRAIN and development-validation references were materialized before current results,PASS
+P10-004,One generic assignment and monitoring engine serves all families,PASS
+P10-005,No segment definitions or sparse categories were merged,PASS
+P10-006,All six authoritative scenarios received label-free monitoring,PASS
+P10-007,Every family is exhaustive with zero unclassifiable applicants,PASS
+P10-008,Segment composition and prediction counts reconcile,PASS
+P10-009,Global frozen Phase 4 score bins were used without segment rebucketing,PASS
+P10-010,Composition and segment score PSI severities remain N/A,PASS
+P10-011,M01 through M05 outcome segment evidence is not assessable,PASS
+P10-012,Only frozen M06 synthetic outcomes entered outcome monitoring,PASS
+P10-013,Discrimination and calibration sufficiency gates were enforced before calculation,PASS
+P10-014,Threshold sufficiency gates were enforced independently before calculation,PASS
+P10-015,Insufficient evidence metrics remain null and never NORMAL,PASS
+P10-016,THRESHOLD-01 remains 0.080 with >= operator,PASS
+P10-017,Phase 8 prediction totals reconcile for every exhaustive family,PASS
+P10-018,M06 defaults and nondefaults reconcile to Phase 9,PASS
+P10-019,Synthetic non-empirical non-external labels are retained,PASS
+P10-020,No performance calibration or threshold severity was created,PASS
+P10-021,No fairness certification bias-absence or compliance claim was made,PASS
+P10-022,No alerts overall health critical-feature mapping database or dashboard was created,PASS
+P10-023,Repeated Phase 10 execution is semantically reproducible,PASS
+P10-024,Frozen Phase 6 through 9 evidence and Part A remain unchanged,PASS
+P10-025,Owner approval and Phase 11 authorization remain separate,PASS

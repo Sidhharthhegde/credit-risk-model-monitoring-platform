@@ -1,0 +1,38 @@
+{
+  "creation_code_version": "PHASE10-SEGMENT-MONITOR-0.1.0",
+  "frozen_dependencies": {
+    "dev_val_snapshot_manifest_sha256": "2b9d5a0fe42989e50c0063b366b98e7a8102171f5aa460b766444d83e03a7c4f",
+    "part_a_discrimination_sha256": "0760b8d786bf6c534cc5acc85fc7709300b0259fddc8a375df0c16a16484c171",
+    "part_a_population_summary_sha256": "a165b48d1a00ac86a3925767a459cec3d7095752efe7f3bbaaac041c6450b342",
+    "part_a_probability_quality_sha256": "cd89f5db751a6da81a82801a0c0f98d03d0940d32a0b3b0f91b1a6e59f6bd1a9",
+    "part_a_sufficiency_policy_sha256": "33106edf63dc737eeae55f3e14eae70b05e2e3f9f787c3b2700b67fa490b6ae9",
+    "part_a_threshold_metrics_sha256": "4e306b62b2c71ca135d055004c52307f6f50f72ad9808dfac6a6e5d4e8703a09",
+    "phase_6_manifest_sha256": "106033382085f39d838c28eb93cfcf3daab1a1e9c8a3b8217645c60adcec500b",
+    "phase_7_manifest_sha256": "64a706d84465e0398391f9d217702343b31aa4d446864a9eca70db89bc930f17",
+    "phase_8_manifest_sha256": "7bb910835b9b7f2df9ac612a72323d37d6395eadd907249d8a8ebd7372bb21d8",
+    "phase_9_manifest_sha256": "17209d875644bfa495889fad0133a9585c5d312aa1164f4a145d4a353139bb5e",
+    "score_bins_sha256": "b20910dfc898bfa12643a35fcce38cc1ac4c26a2c2b44865e8ec2ec04b372005",
+    "train_snapshot_manifest_sha256": "5aa6c631d3abc0c475dd86ac114066491c3eb862a6f2b1d9b7c526708d7d58cc"
+  },
+  "implementation_sources": [
+    {
+      "path": "contracts/segment_monitoring_contract.json",
+      "sha256": "b524d351f4e01e7a67f356dc782a9e297f51a14c44703366e63edf9d43d305a4"
+    },
+    {
+      "path": "src/credit_risk_monitoring/segment/engine.py",
+      "sha256": "f90cd630412aa82db95e07ab0ba83f46e4f2312a0fb638c796418e9b7977bfc1"
+    },
+    {
+      "path": "src/credit_risk_monitoring/segment/__init__.py",
+      "sha256": "3c681ef26cf0f806fbc1548833bc9390dc94bf86d11e163ea34db1f7e5b945e4"
+    },
+    {
+      "path": "scripts/run_phase10_monitoring.py",
+      "sha256": "b6682c01d23ae194abd11b984a6d9e59de3f757fcdd00695bced870361f257d7"
+    }
+  ],
+  "monitoring_id": "SEGMENT-MONITORING-01",
+  "part_a_commit": "0f758a8ee76906b2a870ebacbdcac0ef6c951485",
+  "part_b_base_commit": "3744e9cdc2fdcb9021a473d541398f41c2a059fc"
+}

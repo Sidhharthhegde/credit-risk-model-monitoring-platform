@@ -1,0 +1,16 @@
+{
+  "all_scope_controls_pass": true,
+  "bias_absence_claim": false,
+  "calibration_severity_enabled": false,
+  "composition_severity_enabled": false,
+  "critical_predictor_mapping_resolution": false,
+  "fairness_certification": false,
+  "monitoring_alerts_generated": false,
+  "overall_model_health_calculated": false,
+  "performance_severity_enabled": false,
+  "regulatory_fairness_compliance_claim": false,
+  "row_level_segment_membership_publicly_persisted": false,
+  "segment_score_psi_severity_enabled": false,
+  "sqlite_dashboard_or_reporting_layer": false,
+  "threshold_performance_severity_enabled": false
+}

@@ -1,0 +1,7 @@
+scenario_id,segment_family_count,segment_level_count,cohort_row_count,label_free_population_monitoring_calculated,label_free_prediction_monitoring_calculated,segment_score_psi_calculated,outcome_availability,outcome_evidence_type,discrimination_eligible_segment_count,threshold_eligible_segment_count,alert_generated
+SIM-M01,12,32,8124,True,True,True,NOT_AVAILABLE,N/A,0,0,False
+SIM-M02,12,32,8124,True,True,True,NOT_AVAILABLE,N/A,0,0,False
+SIM-M03,12,32,8124,True,True,True,NOT_AVAILABLE,N/A,0,0,False
+SIM-M04,12,32,8124,True,True,True,NOT_AVAILABLE,N/A,0,0,False
+SIM-M05,12,32,8124,True,True,True,NOT_AVAILABLE,N/A,0,0,False
+SIM-M06,12,32,8124,True,True,True,AVAILABLE,SYNTHETIC_SCENARIO_EVIDENCE,21,26,False

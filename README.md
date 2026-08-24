@@ -101,6 +101,10 @@ Create a Python 3.12 environment and install the pinned dependencies:
 python -m pip install -r requirements-lock.txt
 ```
 
+## Public dashboard
+
+The repository includes a Streamlit Community Cloud entrypoint at `streamlit_app.py`. Hosted mode rebuilds an ephemeral Phase 12 query database from the committed frozen aggregate evidence and opens it read-only, so visitors cannot mutate alert lifecycle state. See [public deployment](docs/PUBLIC_DEPLOYMENT.md).
+
 Run the public-safe release checks:
 
 ```powershell

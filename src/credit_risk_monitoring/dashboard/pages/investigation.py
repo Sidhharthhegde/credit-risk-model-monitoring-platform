@@ -379,6 +379,13 @@ def _lifecycle_tab(service: DashboardDataService) -> None:
     selected = next(row for row in eligible if row.alert_id == selected_id)
     action = "Acknowledge" if selected.current_status == "OPEN" else "Resolve"
     dossier("Lifecycle state", selected.alert_id, [("Current state", selected.current_status), ("Permitted action", action.upper()), ("Actor type", "LOCAL_DEMO_USER")], status=selected.alert_severity)
+    if service.lifecycle is None:
+        st.info(
+            "PUBLIC DEMO · READ-ONLY LIFECYCLE\n\n"
+            "This hosted portfolio interface does not persist acknowledgement or resolution events. "
+            "Frozen alerts and their current imported state remain available for investigation."
+        )
+        return
     with st.form("lifecycle_form", clear_on_submit=False):
         st.text_input("Actor label", value="LOCAL_DEMO_USER", disabled=True)
         reason = st.text_area("Investigation / resolution reason")

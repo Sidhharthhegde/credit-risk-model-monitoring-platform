@@ -6,6 +6,7 @@ from pathlib import Path
 import streamlit as st
 
 from ..formatting import MODEL_PASSPORT_METADATA
+from ..state import public_demo_mode
 
 
 def render_model_passport(model: dict[str, str], project_root: Path) -> None:
@@ -29,4 +30,14 @@ def render_model_passport(model: dict[str, str], project_root: Path) -> None:
         st.markdown(f'<div class="model-passport">{body}</div>', unsafe_allow_html=True)
         st.caption("Portfolio simulation · No live lending deployment")
     report = project_root / "reports/monitoring_report/MONITORING-REPORT-01/monitoring_report.html"
-    st.sidebar.link_button("OPEN GOVERNED MONITORING REPORT", report.as_uri(), width="stretch")
+    if public_demo_mode():
+        st.sidebar.download_button(
+            "DOWNLOAD GOVERNED MONITORING REPORT",
+            data=report.read_bytes(),
+            file_name="model_monitoring_report.html",
+            mime="text/html",
+            width="stretch",
+            on_click="ignore",
+        )
+    else:
+        st.sidebar.link_button("OPEN GOVERNED MONITORING REPORT", report.as_uri(), width="stretch")

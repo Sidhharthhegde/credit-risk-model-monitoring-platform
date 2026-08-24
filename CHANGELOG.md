@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.1 - public deployment patch
+
+- Added a Streamlit Community Cloud entrypoint and minimal pinned hosted dependencies.
+- Added deterministic cold-start reconstruction of the non-authoritative Phase 12 query database from public frozen aggregate evidence.
+- Made hosted lifecycle controls read-only and replaced the local report URI with a device-safe download.
+- Changed no frozen monitoring evidence, model configuration, threshold, alert, health result or Project B conclusion.
+
 ## 1.0.0 - 2026-08-24
 
 - Bound the complete monitoring lifecycle to the frozen Part A model and Phase 0–14 evidence chain.

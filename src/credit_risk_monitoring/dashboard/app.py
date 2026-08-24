@@ -10,7 +10,7 @@ from credit_risk_monitoring.dashboard.components.scenario_lab import SHORT_LABEL
 from credit_risk_monitoring.dashboard.layout import disclosure_footer
 from credit_risk_monitoring.dashboard.navigation import CONTROL_ROOM_NAVIGATION
 from credit_risk_monitoring.dashboard.pages import data_quality, feature_drift, investigation, overview, performance, prediction
-from credit_risk_monitoring.dashboard.state import database_path, project_root
+from credit_risk_monitoring.dashboard.state import prepare_database, project_root, public_demo_mode
 from credit_risk_monitoring.dashboard.theme import inject_theme
 
 
@@ -33,12 +33,17 @@ def main() -> None:
     st.set_page_config(page_title="Credit Risk Monitoring", page_icon="◈", layout="wide")
     inject_theme()
     root = project_root()
-    database = database_path(root)
+    try:
+        database = prepare_database(root)
+    except (OSError, RuntimeError) as error:
+        st.error(f"The governed public-demo database could not be prepared: {error}")
+        st.stop()
     if not database.is_file():
         st.error("The local Phase 12 monitoring-history database is unavailable. Rebuild MONITORING-HISTORY-01 before opening the dashboard.")
         st.stop()
     try:
-        with DashboardDataService(root, database, writable=True) as service:
+        read_only_demo = public_demo_mode()
+        with DashboardDataService(root, database, writable=not read_only_demo) as service:
             snapshot = service.snapshot()
             st.sidebar.markdown(
                 "<div class='risk-brand'><i></i><div><span>MODEL / RISK</span><strong>EVIDENCE SYSTEM</strong></div></div>",
@@ -91,6 +96,8 @@ def main() -> None:
             render_model_passport(service.policy["model_card"], root)
             st.sidebar.caption("Presentation interface · non-authoritative evidence")
             st.sidebar.caption("Portfolio simulation · not production deployment")
+            if read_only_demo:
+                st.sidebar.caption("Public portfolio demo · lifecycle controls read-only")
             PAGE_RENDERERS[navigation[selected_title]](service)
             disclosure_footer()
             st.session_state["_risk_initial_motion_complete"] = True

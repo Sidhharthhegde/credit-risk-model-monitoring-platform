@@ -1,0 +1,35 @@
+{
+  "aggregate_only": true,
+  "all_assets_present": true,
+  "authoritative_phase_overview": "PHASE_0_THROUGH_15_ONLY",
+  "frozen_report_linked": true,
+  "implementation_plan_reconciled_to_completion": true,
+  "implementation_plan_version": "1.0.0",
+  "legacy_phases_16_through_18": "HISTORICAL_SUPERSEDED_ONLY",
+  "owner_completion_gate": "APPROVED",
+  "part_a_cross_link_present": true,
+  "phase_15_status": "APPROVED_FROZEN",
+  "project_b_complete": true,
+  "readme_local_links_qualified_by_tests": true,
+  "release_version": "1.0.0",
+  "required_assets": [
+    "docs/assets/control_room_after/01_control_room.jpg",
+    "docs/assets/control_room_after/02_input_integrity.jpg",
+    "docs/assets/control_room_after/03_drift_observatory.jpg",
+    "docs/assets/control_room_after/04_model_behaviour.jpg",
+    "docs/assets/control_room_after/05_outcome_evidence.jpg",
+    "docs/assets/control_room_after/06_investigation_desk.jpg",
+    "docs/assets/monitoring_report_preview.png"
+  ],
+  "required_documents": [
+    "README.md",
+    "docs/ARCHITECTURE.md",
+    "docs/GOVERNANCE.md",
+    "docs/REPRODUCIBILITY.md",
+    "docs/SCHEDULED_EXECUTION.md",
+    "docs/RELEASE_NOTES_v1.0.0.md"
+  ],
+  "result": "PASS",
+  "scenario_calendar_interpretation": false,
+  "stable_scenario_required_normal": false
+}

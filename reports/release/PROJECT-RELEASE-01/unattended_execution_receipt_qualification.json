@@ -1,0 +1,13 @@
+{
+  "applicant_level_data": false,
+  "atomic_primary_write": true,
+  "emergency_receipt_on_primary_failure": true,
+  "emergency_receipt_terminal_state_consistent": true,
+  "failed_receipt_valid": true,
+  "logging_failure_returns_exit_80": true,
+  "logging_io_cannot_escape_exception_handlers": true,
+  "result": "PASS",
+  "schema": "schemas/scheduled_execution_receipt.schema.json",
+  "secrets": false,
+  "success_receipt_valid": true
+}

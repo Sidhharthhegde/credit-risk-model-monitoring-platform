@@ -1,0 +1,8 @@
+{
+  "case_id": "INV-03",
+  "disclosures_present_end_to_end": true,
+  "evidence_type": "SYNTHETIC_SCENARIO_EVIDENCE",
+  "external_validation": false,
+  "non_empirical": true,
+  "production_performance_established": false
+}

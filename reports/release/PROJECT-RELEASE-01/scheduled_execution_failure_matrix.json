@@ -1,0 +1,59 @@
+{
+  "cases": [
+    {
+      "case": "ACTIVE_LOCK",
+      "expected_exit_code": 30,
+      "fail_closed": true
+    },
+    {
+      "case": "STALE_LOCK",
+      "expected_exit_code": 31,
+      "fail_closed": true
+    },
+    {
+      "case": "CORRUPT_LOCK",
+      "expected_exit_code": 31,
+      "fail_closed": true
+    },
+    {
+      "case": "INVALID_PROFILE",
+      "expected_exit_code": 10,
+      "fail_closed": true
+    },
+    {
+      "case": "MANIFEST_CHAIN_FAILURE",
+      "expected_exit_code": 21,
+      "fail_closed": true
+    },
+    {
+      "case": "FROZEN_WRITE_ATTEMPT",
+      "expected_exit_code": 40,
+      "fail_closed": true
+    },
+    {
+      "case": "ORCHESTRATOR_FAILURE",
+      "expected_exit_code": 50,
+      "fail_closed": true
+    },
+    {
+      "case": "REPORT_OR_QUERY_FAILURE",
+      "expected_exit_code": 60,
+      "fail_closed": true
+    },
+    {
+      "case": "RECEIPT_FAILURE",
+      "expected_exit_code": 80,
+      "fail_closed": true
+    },
+    {
+      "case": "LOGGING_FAILURE",
+      "expected_exit_code": 80,
+      "fail_closed": true
+    }
+  ],
+  "corrupt_lock_auto_recovery": false,
+  "emergency_receipt_terminal_state_consistent": true,
+  "logging_failure_terminal_state_consistent": true,
+  "qualified_by": "tests/scheduling/test_scheduled_execution.py",
+  "stale_recovery_evidenced": true
+}

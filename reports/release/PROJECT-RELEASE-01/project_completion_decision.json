@@ -1,0 +1,13 @@
+{
+  "cnd_02_status": "OPEN",
+  "decision": "APPROVED_COMPLETE",
+  "external_validation": false,
+  "production_deployment": false,
+  "project_b_complete": true,
+  "project_completion_id": "PROJECT-COMPLETION-01",
+  "project_completion_status": "COMPLETE",
+  "project_implementation_complete": true,
+  "release_version": "1.0.0",
+  "residual_conditions_preserved": true,
+  "threshold_boundary_density_status": "CONTROLLED_DEFERRED"
+}

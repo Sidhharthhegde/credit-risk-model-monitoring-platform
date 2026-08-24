@@ -1,0 +1,20 @@
+{
+  "codes": {
+    "0": "SUCCESS",
+    "10": "CONFIGURATION_OR_CONTRACT_FAILURE",
+    "20": "FROZEN_SOURCE_VERIFICATION_FAILURE",
+    "21": "MANIFEST_CHAIN_FAILURE",
+    "22": "IMMUTABLE_EVIDENCE_DIGEST_FAILURE",
+    "30": "ACTIVE_LOCK",
+    "31": "INVALID_OR_STALE_LOCK",
+    "40": "FROZEN_WRITE_ATTEMPT",
+    "50": "ORCHESTRATION_FAILURE",
+    "60": "REPORT_OR_QUERY_FAILURE",
+    "70": "DEPENDENCY_OR_ENVIRONMENT_FAILURE",
+    "80": "RECEIPT_OR_LOGGING_FAILURE",
+    "99": "UNEXPECTED_FAILURE"
+  },
+  "frozen_prospectively": true,
+  "nonzero_failure_propagation": true,
+  "result": "PASS"
+}

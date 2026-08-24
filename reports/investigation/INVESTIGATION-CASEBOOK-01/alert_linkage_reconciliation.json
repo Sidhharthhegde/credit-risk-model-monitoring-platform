@@ -1,0 +1,8 @@
+{
+  "alert_status_at_extraction_captured": true,
+  "all_linked_alerts_exist": true,
+  "linked_alert_count": 21,
+  "linked_alert_ids_unique_across_cases": true,
+  "result": "PASS",
+  "source_status_preserved": true
+}

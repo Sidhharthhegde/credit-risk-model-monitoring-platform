@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EXAMPLE ONLY: import only after replacing placeholders. No schedule is selected. -->
+<Task version="1.4" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Description>Verify frozen Credit Risk Model Monitoring Platform evidence.</Description>
+  </RegistrationInfo>
+  <Triggers>
+    <!-- Deployment owner must add an approved trigger. -->
+  </Triggers>
+  <Principals>
+    <Principal id="Author">
+      <UserId>__SERVICE_ACCOUNT__</UserId>
+      <LogonType>Password</LogonType>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <ExecutionTimeLimit>PT2H</ExecutionTimeLimit>
+    <StartWhenAvailable>true</StartWhenAvailable>
+  </Settings>
+  <Actions Context="Author">
+    <Exec>
+      <Command>__PYTHON_EXE__</Command>
+      <Arguments>scripts\run_scheduled_monitoring.py --profile VERIFY_FROZEN</Arguments>
+      <WorkingDirectory>__PROJECT_ROOT__</WorkingDirectory>
+    </Exec>
+  </Actions>
+</Task>

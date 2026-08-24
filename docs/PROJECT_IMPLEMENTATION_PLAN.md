@@ -5,11 +5,27 @@
 **Project:** Part B - Model Monitoring Platform  
 **Repository:** `credit-risk-model-monitoring-platform`  
 **Repository URL:** `https://github.com/Sidhharthhegde/credit-risk-model-monitoring-platform`  
-**Document status:** `APPROVED_IMPLEMENTATION_PLAN`  
-**Plan version:** `0.2.3`  
+**Document status:** `APPROVED_FROZEN_IMPLEMENTATION_PLAN`
+**Plan version:** `1.0.0`
 **Document owner:** Sidharth Ravindra Hegde  
-**Last updated:** 2026-08-22  
+**Last updated:** 2026-08-24
 **Part A dependency:** Frozen development model `DF-01 / XGBT-01`
+
+---
+
+### Version 1.0.0 change record
+
+Final roadmap reconciliation:
+
+- corrected the authoritative Phase 0–15 overview to the implemented lifecycle;
+- retained former Phases 16–18 only in the historical/superseded context;
+- corrected Phase 5 to preserve non-calendar scenario semantics and remove required health-state targets;
+- finalized the Phase 15 scheduled-execution and release boundary.
+- added the prospectively approved Phase 15 investigation-casebook addendum, four-dossier boundary and dual Phase 12 digest binding.
+- moved primary-evidence selection from presentation code into the approved dossier artifacts;
+- separated extraction-time alert status from current operational-state navigation and approved the remediated casebook assessment.
+- recorded the Phase 15 owner-completion decision, final manifest freeze and Project B completion boundary;
+- retained `CND-02 = OPEN` and threshold-boundary-density as `CONTROLLED_DEFERRED`.
 
 ---
 
@@ -255,25 +271,22 @@ Hard-gate examples include:
 
 | Phase | Name | Depends on | Primary completion gate |
 |---:|---|---|---|
-| 0 | Repository foundation and monitoring protocol freeze | None | Protocol reviewed, approved and hash-bound |
+| 0 | Repository foundation and protocol freeze | None | Protocol reviewed, approved and hash-bound |
 | 1 | Part A binding and runtime qualification | Phase 0 | All identities reconcile and golden-fixture parity passes |
-| 2 | Reference strategy and snapshot specification | Phases 0-1 | Reference definitions approved |
-| 3 | Contracts and label-free feature adapter | Phases 1-2 | 176-feature scoring input parity passes |
+| 2 | Reference strategy | Phases 0-1 | Reference definitions approved |
+| 3 | Contracts and label-free adapter | Phases 1-2 | 176-feature scoring input parity passes |
 | 4 | Reference materialization and frozen bins | Phase 3 | Versioned snapshots and bins frozen |
 | 5 | Scenario framework | Phases 0, 3-4 | Six scenarios reproduce expected conditions |
-| 6 | Data-quality and source monitoring | Phases 3-5 | Contract failures and hard gates validated |
+| 6 | Data quality and source monitoring | Phases 3-5 | Contract failures and hard gates validated |
 | 7 | Population and feature drift | Phases 4, 6 | Drift metrics reproduce controlled fixtures |
-| 8 | Score and observation-time threshold monitoring | Phases 1, 4, 6 | Score/decision monitoring passes parity tests |
-| 9 | Outcome maturity, performance and calibration | Phases 0, 4, 8 | Eligible synthetic outcome metrics and threshold results reconcile |
-| 10 | Segment and subpopulation monitoring | Phases 6-9 | Generic engine covers all 12 frozen families with sufficiency gates |
-| 11 | Alert engine, breach aggregation and overall health | Phases 6-10 | Severity, lifecycle and aggregation tests pass |
-| 12 | Evidence, persistence and audit trail | Phases 1-11 | Immutable package and SQLite reconcile |
-| 13 | End-to-end monitoring runner | Phases 1-12 | One command produces governed completion state |
-| 14 | Test suite and independent reconciliation | Phases 0-13 | Unit, regression and scenario gates pass |
-| 15 | Evidence, persistence and audit trail | Phases 1-14 | Immutable package and SQLite reconcile |
-| 16 | End-to-end monitoring runner | Phases 1-15 | One command produces governed completion state |
-| 17 | Test suite and independent reconciliation | Phases 0-16 | Unit, regression and scenario gates pass |
-| 18 | Dashboard, report and public release | Phases 15-17 | Visual QA and publication controls pass |
+| 8 | Prediction and threshold monitoring | Phases 1, 4, 6 | Score/decision monitoring passes parity tests |
+| 9 | Outcome performance and calibration | Phases 0, 4, 8 | Eligible synthetic outcome metrics and threshold results reconcile |
+| 10 | Segment monitoring | Phases 6-9 | Generic engine covers all 12 frozen families with sufficiency gates |
+| 11 | Alert engine and model health | Phases 6-10 | Severity, lifecycle and aggregation tests pass |
+| 12 | Monitoring history, persistence and query layer | Phases 1-11 | Frozen evidence and rebuildable SQLite reconcile |
+| 13 | Dashboard and investigation interface | Phase 12 | Six-page governed presentation and lifecycle interface qualifies |
+| 14 | Report, orchestration and final lifecycle qualification | Phases 0-13 | Report, orchestration, replay and final lifecycle gates pass |
+| 15 | Scheduled execution and final project release | Phase 14 | Unattended controls and owner-approved release package freeze |
 
 No phase may be marked complete merely because code exists. The stated completion gate and evidence must exist and pass.
 
@@ -687,18 +700,20 @@ Row-level reference snapshots are local-only unless specifically approved for pu
 
 ## Objective
 
-Create controlled monitoring cohorts that exercise normal, warning, critical and control-failure behaviour.
+Create controlled monitoring cohorts that exercise stable, drift, deterioration, data-quality and source-governance conditions without preassigning monitoring health outcomes.
 
-## Required scenario timeline
+## Required scenario set
 
-| Period | Scenario | Expected high-level state |
-|---|---|---|
-| M1 | Stable | `NORMAL` |
-| M2 | Stable with natural variation | `NORMAL` |
-| M3 | Mild population drift | `WARNING` |
-| M4 | Severe feature and score drift | `CRITICAL` |
-| M5 | Data-quality or source-control failure | Hard failure or `CRITICAL` |
-| M6 | Synthetic performance deterioration | Performance alert on synthetic evidence only |
+| Scenario | Injected condition / intent |
+|---|---|
+| M01 | Stable control; no transformation; no required health state |
+| M02 | Stable-control comparison; no calendar interpretation |
+| M03 | Mild valid drift injection; threshold crossing not required |
+| M04 | Material valid drift injection; health determined by frozen rules |
+| M05 | Data-quality/source-degradation variants including governed blocks |
+| M06 | Synthetic concept/performance deterioration |
+
+M01–M06 are scenario identifiers, not observation periods or calendar months. Prospective scenario signals are diagnostics rather than acceptance targets.
 
 ## Tasks
 
@@ -709,7 +724,7 @@ Create controlled monitoring cohorts that exercise normal, warning, critical and
 5. Implement source-outage scenarios.
 6. Implement synthetic concept/performance deterioration using synthetic labels only.
 7. Preserve untouched control cohorts.
-8. Define expected metric direction and expected final state.
+8. Define injected transformations and expected signal direction without requiring a final severity or health state.
 9. Prevent scenario metadata from being lost during ingestion.
 10. Label M6 evidence explicitly:
    - `SYNTHETIC_SCENARIO_EVIDENCE`
@@ -1123,12 +1138,76 @@ Complete the remaining scheduled/unattended execution controls and final public-
 3. Add the remaining release, handoff and operational-run documentation.
 4. Reconcile the final repository state, public artifacts and release instructions.
 5. Record the final Project B completion decision only after Phase 15 owner approval.
+6. Add a controlled investigation casebook that interprets frozen monitoring evidence without becoming a case-management or Responsible-AI system.
 
 ## Governance boundary
 
 - Phase 15 may not refit or recalibrate DF-01, retune `THRESHOLD-01`, add monitoring thresholds or rewrite Phase 0-14 evidence.
 - `CND-02` remains open unless supported by genuinely unseen labelled external/OOT evidence and separate governance action.
 - Scheduled execution is a local portfolio control and must not imply enterprise production deployment, IAM, service-level guarantees or regulatory certification.
+- `INVESTIGATION-CASEBOOK-01` may organize and interpret frozen evidence but may not recalculate metrics, rewrite severity or health, change authorization/evidence type, mutate alert lifecycle or claim unsupported root cause or remediation.
+
+## Authoritative Phase 15 design
+
+`FINAL-PROJECT-RELEASE-CONTRACT-01` binds the approved Phase 14 manifest and commit before any candidate implementation is qualified. Its controlled outputs are `SCHEDULED-EXECUTION-01`, `PROJECT-RELEASE-01` and `PROJECT-COMPLETION-01`.
+
+### Controlled investigation casebook addendum
+
+`MODEL-RISK-INVESTIGATION-CONTRACT-01` governs four and only four consolidated dossiers: `INV-01` TRAIN-reference/application-test availability mismatch; `INV-02` M04 material predictor-distribution shift; `INV-03` M06 synthetic performance deterioration; and `INV-04` all three M05 source/input-governance states. The casebook binds the immutable Phase 12 evidence digest separately from the complete operational database digest at extraction. Frozen source evidence and approved project-authored assessment remain separate JSON sections and separate authority dimensions. Each dossier governs its principal evidence chain by alert ID and source-record key; presentation code may not select a different primary record.
+
+Extraction-time alert status remains frozen in the dossier. When opening the corresponding dynamic Alert Queue, navigation applies scenario, component and severity filters, uses current-status `All`, and selects the exact alert ID. If current status differs from extraction status, the dashboard discloses both without rewriting the approved dossier.
+
+Every case independently records documentation status, alert-trigger explanation, underlying-cause status, model-defect conclusion, remediation claim, condition status and owner-review status. It identifies recommended owner functions and proposed closure evidence without creating database tables, employee assignments, SLAs, workflow states, automatic root-cause inference, fairness analysis or alert closure. The pre-casebook Phase 15 candidate manifest `096665d8bcb12bd8efcfeb952330e65b5508ce6ea7e035bbf283fe70b45f7fc4` remains preserved for lineage.
+
+### Scheduled execution
+
+The default `VERIFY_FROZEN` profile is a thin wrapper around the Phase 14 orchestrator. It verifies the frozen phase chain, Part A binding, Phase 12 database semantics and Phase 14 report without recalculating monitoring, generating a new report or mutating alert lifecycle state. `ISOLATED_QUALIFICATION_REPLAY` remains an explicit non-default qualification profile.
+
+Every unattended execution must:
+
+1. create a unique execution ID and aggregate-only JSONL event log;
+2. acquire one exclusive JSON lock;
+3. reject an active lock with exit code 30;
+4. reject a stale or corrupt lock with exit code 31;
+5. allow stale-lock recovery only through an explicit flag and preserve recovery evidence;
+6. verify the frozen Phase 14 and report bindings;
+7. reconcile complete database semantics and alert/event counts before and after execution;
+8. write an atomic machine-readable receipt conforming to the governed schema;
+9. release only the lock owned by the current execution;
+10. perform no automatic receipt deletion under `NO_AUTOMATIC_DELETION_V1`.
+
+The six-hour stale boundary and all later deployment cadence choices are project-defined governance assumptions, not regulatory or universal standards.
+
+### Stable process outcomes
+
+Exit codes are frozen prospectively: success 0; contract/configuration 10; frozen source 20; manifest chain 21; immutable evidence 22; active lock 30; invalid/stale lock 31; frozen-write attempt 40; orchestration 50; report/query 60; dependency/environment 70; receipt/logging 80; unexpected failure 99.
+
+### Deployment and CI boundary
+
+Windows Task Scheduler and cron files are placeholder templates. They select no cadence, service identity, secrets mechanism, notification route or enterprise retention obligation. Public CI runs dependency-light repository/release checks only. It must not access Part A, governed row-level inputs or the ignored database, and must not claim full monitoring execution.
+
+### Release package
+
+The candidate must include a release-quality README, architecture, governance, reproducibility and scheduling documents, version and release notes, four sanitized aggregate screenshots, repository hygiene checks, local-path/secret scanning, dependency and regression evidence, phase-chain reconciliation and a residual-limitations register.
+
+The reserved tag is `model-monitoring-platform-v1.0.0`. Technical candidate qualification must not create or push the tag or create a remote release. Those actions require owner approval.
+
+### Phase 15 exit gate
+
+- Phase 0-14 hashes reconcile and remain read-only.
+- A normal scheduled verification succeeds without report or database mutation.
+- Active, stale and corrupt lock cases fail closed; stale recovery is explicit and evidenced.
+- Frozen exit codes and receipt schema are covered by tests.
+- Scheduler templates contain placeholders and no chosen cadence.
+- Public-safe CI excludes restricted-input monitoring execution.
+- Documentation, sanitized visual assets, hygiene, path and secret checks pass.
+- Material limitations remain visible, including open `CND-02` and synthetic M06 evidence.
+- Four casebook dossiers reconcile their linked alerts, metric values, source artifacts and dual Phase 12 evidence-as-of digests.
+- Casebook extraction changes no Phase 0-14 artifact, alert event, severity, health, authorization or evidence-scope state.
+- Investigation assessment authority is `APPROVED_AUTHORITATIVE_INVESTIGATION_RECORD`.
+- The pre-finalization candidate `d64a30657cba57beec79d0b5ff43c5f3726ce91ca4bb2bcd190d24f19abfcf0a` is preserved for lineage.
+- The owner-completion gate is approved; `phase_15_complete`, `project_implementation_complete` and `project_b_complete` are true.
+- Release publication under `model-monitoring-platform-v1.0.0` is authorized.
 
 ---
 
@@ -1629,7 +1708,7 @@ Update this table only when supported by a phase completion decision.
 | 12 | `COMPLETE` | `reports/persistence/MONITORING-HISTORY-01/phase12_completion_decision.json` | Run-count semantics condition resolved; approved and frozen on 2026-08-23; Phase 13 authorized |
 | 13 | `COMPLETE` | `reports/dashboard/MONITORING-DASHBOARD-01/phase13_completion_decision.json` | Approved and frozen on 2026-08-23; Phase 14 authorized |
 | 14 | `COMPLETE` | `reports/lifecycle/FINAL-LIFECYCLE-QUALIFICATION-01/phase14_completion_decision.json` | Conditional roadmap blocker remediated; approved and frozen on 2026-08-23; Phase 15 authorized |
-| 15 | `NOT_STARTED` | Not issued | Scheduled/unattended execution and final project release authorized; Project B remains incomplete |
+| 15 | `COMPLETE` | `reports/release/PROJECT-RELEASE-01/phase15_completion_decision.json` | Owner approved; final manifest frozen; Project B implementation complete; v1.0.0 publication authorized |
 | 16 | `SUPERSEDED` | Not applicable | Consolidated into Phase 14 orchestration |
 | 17 | `SUPERSEDED` | Not applicable | Consolidated into phase-specific and Phase 14 qualification |
 | 18 | `SUPERSEDED` | Not applicable | Consolidated into Phases 13-14 |
@@ -1646,4 +1725,4 @@ Allowed status values:
 
 ## 12. Immediate next actions
 
-The next controlled action is Phase 15 protocol design for scheduled/unattended execution and final project release. Project completion remains false until Phase 15 is implemented, qualified and approved.
+The implementation lifecycle is complete. The final controlled action is publication of the approved release commit and annotated `model-monitoring-platform-v1.0.0` tag. No Phase 16 is authorized; Responsible-AI/fairness work remains outside Part B.

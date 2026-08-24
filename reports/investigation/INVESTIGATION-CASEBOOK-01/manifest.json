@@ -1,0 +1,107 @@
+{
+  "alert_lifecycle_mutated": false,
+  "artifacts": [
+    {
+      "path": "alert_linkage_reconciliation.json",
+      "sha256": "591d3c1d934fed6e90ea91c249f5fe0aa2bc7d1d713da795c8cdd8d5999f3a7b",
+      "size_bytes": 224
+    },
+    {
+      "path": "case_registry.json",
+      "sha256": "c0d0ed12e9c5327283cc7b68838cb4168ee13fe8b7a9e405bef6e123d6f8bee5",
+      "size_bytes": 2237
+    },
+    {
+      "path": "casebook_owner_approval_record.json",
+      "sha256": "9e13b4a13647e3f311fa95a571f4b324c431ca9910636e84d3abf6cb321536e1",
+      "size_bytes": 591
+    },
+    {
+      "path": "evidence_as_of_reconciliation.json",
+      "sha256": "fdba7610154868e4b95ac332a1814952f9e08fbe834f4d1e377a207bbe60e3b0",
+      "size_bytes": 6335
+    },
+    {
+      "path": "execution_source_manifest.json",
+      "sha256": "525a62504ee3e08ceb6707b5797359d49f5b4821e9dfe967f2425b9add4ff93d",
+      "size_bytes": 537
+    },
+    {
+      "path": "historical_candidate_boundaries.json",
+      "sha256": "9c52ac9405fd35a82ae5c62da5ffb8ee47e6c90ddcdf80279d31c5dd9be5d300",
+      "size_bytes": 495
+    },
+    {
+      "path": "INV-01.json",
+      "sha256": "ce126458833a2f9169ef5f54e92a111ed1b04eb5ea746fab85946b7efaa0d2ed",
+      "size_bytes": 15060
+    },
+    {
+      "path": "INV-02.json",
+      "sha256": "aadd76cc322fc25f3b091a4fdfb01c606f3297b7aa66e0b8cec2040915e47bbb",
+      "size_bytes": 14549
+    },
+    {
+      "path": "INV-03.json",
+      "sha256": "ce16011ffe3014f794c58f7713d6f5cf1a985f6b65857c900ca703ece81e8213",
+      "size_bytes": 11470
+    },
+    {
+      "path": "INV-04.json",
+      "sha256": "d0d82e3f3a3d80b67bbe8e6339cf398b634b3ba9cac0890ba1b8abd9186510ec",
+      "size_bytes": 14964
+    },
+    {
+      "path": "investigation_authority_attestation.json",
+      "sha256": "bcfc2c5c6a46e93e00c9d0d62d36dcc6e05cef7ba5006ea00cb6299d1aa4db3d",
+      "size_bytes": 568
+    },
+    {
+      "path": "investigation_casebook_qualification.json",
+      "sha256": "69813e432ec2c1d75ef8150923af8e47a794ed005f21b2fae66dc9beacaaa5a7",
+      "size_bytes": 810
+    },
+    {
+      "path": "metric_reconciliation.json",
+      "sha256": "29d55a68056725d73c91fb1af202ae43d88ec4fb1c61ddfeffdf65b41c9f6691",
+      "size_bytes": 672
+    },
+    {
+      "path": "model_risk_investigation_contract_snapshot.json",
+      "sha256": "4387b99fe060483c6afd5a499f9f9d0fe18a0f384e536f58cfd4665cf9da8391",
+      "size_bytes": 5317
+    },
+    {
+      "path": "phase15_casebook_acceptance_checklist.csv",
+      "sha256": "ff8f59efa6ecdbb6e1cdd3b3b4fb86d25888b8a0c8e12705cd43f59bf7d5c230",
+      "size_bytes": 387
+    },
+    {
+      "path": "primary_evidence_reconciliation.json",
+      "sha256": "2a850111030bb0aa0710c4ee213745b07558307f1f127769284fec8d04500309",
+      "size_bytes": 1705
+    },
+    {
+      "path": "scope_protection_attestation.json",
+      "sha256": "71bc9d216c39e46c88ef64b47a32dec18784958ebb62e6389069cf556618532c",
+      "size_bytes": 562
+    },
+    {
+      "path": "synthetic_evidence_attestation.json",
+      "sha256": "c2568610805254ea66cbfbe510e612f54f0e4da70fca590c4fb612e3572bece0",
+      "size_bytes": 230
+    }
+  ],
+  "case_count": 4,
+  "contract_id": "MODEL-RISK-INVESTIGATION-CONTRACT-01",
+  "control_id": "INVESTIGATION-CASEBOOK-01",
+  "created_utc": "2026-08-24T15:08:39.981743+00:00",
+  "investigation_assessment_authority": "APPROVED_AUTHORITATIVE_INVESTIGATION_RECORD",
+  "linked_alert_count": 21,
+  "monitoring_calculation_authority": false,
+  "phase_0_through_14_read_only": true,
+  "review_decision": "APPROVED",
+  "source_evidence_authority": "FROZEN_MONITORING_EVIDENCE",
+  "status": "APPROVED_FROZEN_AFTER_PRIMARY_EVIDENCE_AND_TEMPORAL_NAVIGATION_REMEDIATION",
+  "version": "1.0.0"
+}

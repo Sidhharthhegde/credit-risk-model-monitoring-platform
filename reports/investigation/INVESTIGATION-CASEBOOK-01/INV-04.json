@@ -1,0 +1,317 @@
+{
+  "case_context": {
+    "scenarios": [
+      {
+        "authorization_state": "AUTHORIZED",
+        "evidence_scope": "LABEL_FREE_ONLY",
+        "evidence_type": "MONITORING_EVIDENCE",
+        "overall_health": "CRITICAL",
+        "scenario_artifact_id": "SIM-M05-VALID-DEGRADED-01",
+        "scenario_id": "SIM-M05"
+      },
+      {
+        "authorization_state": "BLOCKED_SOURCE_GOVERNANCE",
+        "evidence_scope": "NOT_ASSESSABLE",
+        "evidence_type": "CONTROL_QUALIFICATION_EVIDENCE",
+        "overall_health": "NOT_ASSESSABLE",
+        "scenario_artifact_id": "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+        "scenario_id": "SIM-M05"
+      },
+      {
+        "authorization_state": "BLOCKED_HARD_GATE",
+        "evidence_scope": "NOT_ASSESSABLE",
+        "evidence_type": "CONTROL_QUALIFICATION_EVIDENCE",
+        "overall_health": "NOT_ASSESSABLE",
+        "scenario_artifact_id": "SIM-M05-HARD-FAIL-01",
+        "scenario_id": "SIM-M05"
+      }
+    ]
+  },
+  "case_id": "INV-04",
+  "chapter": "04",
+  "contract_id": "MODEL-RISK-INVESTIGATION-CONTRACT-01",
+  "control_id": "INVESTIGATION-CASEBOOK-01",
+  "evidence_as_of": {
+    "evidence_extracted_utc": "2026-08-24T15:08:39.981743+00:00",
+    "phase11_manifest_sha256": "f95ae67527c4be02ef0db5cf2b7d98bf2bb031727b8ac280ab9b8ca3ac3b229b",
+    "phase12_frozen_manifest_sha256": "967a0646b403344944a5389447873bb6d1e432afece1167d26810670774ac165",
+    "phase12_immutable_evidence_semantic_sha256": "013ecaf72438d585d54a8ed75bb79ed912ea76f3ee3f49a6f15334ef8bee95fe",
+    "phase12_operational_database_semantic_sha256_at_extraction": "48eb52d1596199abd010c42d7348a73eda80b5969805a73729897a72fbdf7900",
+    "phase15_pre_casebook_candidate_manifest_sha256": "096665d8bcb12bd8efcfeb952330e65b5508ce6ea7e035bbf283fe70b45f7fc4"
+  },
+  "investigation_assessment": {
+    "alert_trigger_explanation_status": "SUPPORTED",
+    "authority": "APPROVED_AUTHORITATIVE_INVESTIGATION_RECORD",
+    "cause_assessment": "The scenario design supports the control-state explanation. No real production source outage, operational incident, or model defect is claimed.",
+    "classification": [
+      "DATA_QUALITY",
+      "SOURCE_GOVERNANCE",
+      "INPUT_CONTRACT",
+      "EXPECTED_CHALLENGE_RESPONSE",
+      "UNRESOLVED_CONDITION"
+    ],
+    "condition_status": "OPEN",
+    "control_state_comparison": [
+      {
+        "artifact_id": "SIM-M05-VALID-DEGRADED-01",
+        "downstream_monitoring": "ELIGIBLE_SUBJECT_TO_CONTROLS",
+        "governance_authorization": "AUTHORIZED",
+        "model_health_conclusion": "CRITICAL_GOVERNED_EVIDENCE_RETAINED",
+        "source_state": "SOURCE_DEGRADED",
+        "technical_scoring": "PASS",
+        "variant": "M05-A \u00b7 Source degradation"
+      },
+      {
+        "artifact_id": "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+        "downstream_monitoring": "NON_AUTHORITATIVE_BLOCKED",
+        "governance_authorization": "BLOCKED_SOURCE_GOVERNANCE",
+        "model_health_conclusion": "NOT_ASSESSABLE",
+        "source_state": "SOURCE_POLICY_REQUIRED",
+        "technical_scoring": "PASS",
+        "variant": "M05-B \u00b7 Source governance block"
+      },
+      {
+        "artifact_id": "SIM-M05-HARD-FAIL-01",
+        "downstream_monitoring": "NOT_ASSESSABLE",
+        "governance_authorization": "BLOCKED_HARD_GATE",
+        "model_health_conclusion": "NOT_ASSESSABLE",
+        "source_state": "HARD_CONTRACT_FAILURE",
+        "technical_scoring": "BLOCKED_INVALID_EXECUTION",
+        "variant": "M05-C \u00b7 Hard contract / grain failure"
+      }
+    ],
+    "dispositions": [
+      "CONFIRMED_EXPECTED_CHALLENGE_FINDING",
+      "GOVERNANCE_BLOCK_RETAINED",
+      "UNRESOLVED"
+    ],
+    "documentation_status": "COMPLETE",
+    "evidence_limitations": [
+      "The M05 variants are simulated governance and contract challenges, not production incidents.",
+      "Blocked evidence cannot be interpreted as downstream model-health evidence.",
+      "CND-02 remains open and no approved fallback policy is represented."
+    ],
+    "executive_finding": "The three M05 variants correctly separate degraded but authorized monitoring, technically scoreable yet governance-blocked input, and hard contract failure. Technical scoreability, source condition, governance authorization, and downstream assessability remain independent.",
+    "expected_vs_observed": {
+      "expected_condition": "M05-A, M05-B, and M05-C intentionally challenge different source and contract control dimensions.",
+      "observed_finding_consistent_with_scenario_design": true,
+      "observed_response": "M05-A retained governed DQ evidence; M05-B remained BLOCKED_SOURCE_GOVERNANCE despite technical scoreability; M05-C remained BLOCKED_HARD_GATE and downstream not assessable.",
+      "scenario_condition_intentionally_injected": true,
+      "unexpected_finding_identified": false
+    },
+    "model_defect_established": false,
+    "owner_review_status": "APPROVED",
+    "proposed_closure_evidence": [
+      "Approved CND-02 resolution and source fallback policy.",
+      "Qualification evidence for fallback behavior and governance-owner acceptance.",
+      "Passing input-contract and grain evidence for any hard-fail remediation claim."
+    ],
+    "recommended_follow_up": [
+      "Resolve CND-02 through an approved source fallback policy and qualified fallback behavior.",
+      "Retain hard-gate rejection until the input contract and grain reconcile.",
+      "Do not infer model health from blocked downstream evidence."
+    ],
+    "recommended_owner_function": "DATA_GOVERNANCE",
+    "remediation_status": "NOT_CLAIMED",
+    "review_function": "MODEL_RISK",
+    "risk_interpretation": "A population can remain technically scoreable while authoritative use is prohibited, whereas a hard input-contract failure prevents valid downstream execution altogether. The blocked cases therefore remain NOT_ASSESSABLE rather than being converted into CRITICAL model health.",
+    "underlying_cause_status": "NOT_ASSESSABLE"
+  },
+  "primary_evidence": {
+    "alert_id": "ALT-BDD28218F338DC797E7E",
+    "alert_severity": "CRITICAL",
+    "alert_status_at_extraction": "OPEN",
+    "component": "GOVERNANCE",
+    "entity_id": "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+    "entity_type": "ARTIFACT",
+    "evidence_status": "ELIGIBLE",
+    "evidence_type": "CONTROL_QUALIFICATION_EVIDENCE",
+    "lineage_reference": {
+      "metric_record_id": "MET-49CE2A2BD36FB4B394606E50",
+      "source_artifact": "reports/monitoring/DATA-QUALITY-CONTROL-01/hard_gate_qualification.json",
+      "source_artifact_hash_matches": true,
+      "source_artifact_sha256": "9d3fbfd2f794380bbc1dc6b22f520ed33099c686068b3edb25ba401334ec79d5",
+      "source_control_id": "DATA-QUALITY-CONTROL-01",
+      "source_phase": "PHASE_6",
+      "source_record_key": "49ce2a2bd36fb4b394606e50c96a462d481941e7e025f9844c6667a3ce75faa3"
+    },
+    "materiality_class": "N/A",
+    "metric_id": "authorization_gate",
+    "metric_role": "DIRECT_ALERT_DRIVER",
+    "metric_severity": "CRITICAL",
+    "metric_value": 1.0,
+    "reason_code": "AUTHORIZATION_GATE_CRITICAL",
+    "reference_id": null,
+    "scenario_artifact_id": "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+    "source_alert_status": "OPEN"
+  },
+  "scope_assertions": {
+    "alert_lifecycle_mutated": false,
+    "fairness_assessed": false,
+    "model_scored": false,
+    "monitoring_recalculated": false,
+    "production_inference_claimed": false
+  },
+  "short_title": "Source & contract governance",
+  "source_evidence": {
+    "authority": "FROZEN_MONITORING_EVIDENCE",
+    "linked_alert_count": 5,
+    "linked_alert_ids": [
+      "ALT-4AE748C6E86DE61E85DF",
+      "ALT-5EA719C5D359686BCE6F",
+      "ALT-93EE9AB50717BA3726CA",
+      "ALT-BDD28218F338DC797E7E",
+      "ALT-EF92CD6A3C8A66F3E926"
+    ],
+    "linked_alerts": [
+      {
+        "alert_id": "ALT-4AE748C6E86DE61E85DF",
+        "alert_severity": "CRITICAL",
+        "alert_status_at_extraction": "OPEN",
+        "component": "DATA_QUALITY",
+        "entity_id": "BUREAU_ANNUITY_MEAN",
+        "entity_type": "FEATURE",
+        "evidence_status": "ELIGIBLE",
+        "evidence_type": "MONITORING_EVIDENCE",
+        "lineage_reference": {
+          "metric_record_id": "MET-F4E4590EE4D8C49B4C5C3316",
+          "source_artifact": "reports/monitoring/DATA-QUALITY-CONTROL-01/completeness_results.parquet",
+          "source_artifact_hash_matches": true,
+          "source_artifact_sha256": "3a9ef422cc1a9b7cdd8ce631196d95214cddc18bf52c57819de3e8caf1b3f107",
+          "source_control_id": "DATA-QUALITY-CONTROL-01",
+          "source_phase": "PHASE_6",
+          "source_record_key": "f4e4590ee4d8c49b4c5c3316f8c2f555a28d2e9c92226e47e7e8440010e0a744"
+        },
+        "materiality_class": "N/A",
+        "metric_id": "missing_rate_absolute_change",
+        "metric_role": "DIRECT_ALERT_DRIVER",
+        "metric_severity": "CRITICAL",
+        "metric_value": 0.21344165435745938,
+        "reason_code": "MISSING_RATE_ABSOLUTE_CHANGE_CRITICAL",
+        "reference_id": "FEATURE-REF-01",
+        "scenario_artifact_id": "SIM-M05-VALID-DEGRADED-01",
+        "source_alert_status": "OPEN"
+      },
+      {
+        "alert_id": "ALT-5EA719C5D359686BCE6F",
+        "alert_severity": "CRITICAL",
+        "alert_status_at_extraction": "OPEN",
+        "component": "DATA_QUALITY",
+        "entity_id": "BUREAU_ANNUITY_MAX",
+        "entity_type": "FEATURE",
+        "evidence_status": "ELIGIBLE",
+        "evidence_type": "MONITORING_EVIDENCE",
+        "lineage_reference": {
+          "metric_record_id": "MET-8DA2DCAD20467C86CD99C3B6",
+          "source_artifact": "reports/monitoring/DATA-QUALITY-CONTROL-01/completeness_results.parquet",
+          "source_artifact_hash_matches": true,
+          "source_artifact_sha256": "3a9ef422cc1a9b7cdd8ce631196d95214cddc18bf52c57819de3e8caf1b3f107",
+          "source_control_id": "DATA-QUALITY-CONTROL-01",
+          "source_phase": "PHASE_6",
+          "source_record_key": "8da2dcad20467c86cd99c3b63428ba52f4bd43e73dcc91157990ac6c42900ef3"
+        },
+        "materiality_class": "N/A",
+        "metric_id": "missing_rate_absolute_change",
+        "metric_role": "DIRECT_ALERT_DRIVER",
+        "metric_severity": "CRITICAL",
+        "metric_value": 0.21344165435745938,
+        "reason_code": "MISSING_RATE_ABSOLUTE_CHANGE_CRITICAL",
+        "reference_id": "FEATURE-REF-01",
+        "scenario_artifact_id": "SIM-M05-VALID-DEGRADED-01",
+        "source_alert_status": "OPEN"
+      },
+      {
+        "alert_id": "ALT-93EE9AB50717BA3726CA",
+        "alert_severity": "CRITICAL",
+        "alert_status_at_extraction": "OPEN",
+        "component": "DATA_QUALITY",
+        "entity_id": "OCCUPATION_TYPE",
+        "entity_type": "FEATURE",
+        "evidence_status": "ELIGIBLE",
+        "evidence_type": "MONITORING_EVIDENCE",
+        "lineage_reference": {
+          "metric_record_id": "MET-B2D20DF9A7FF712D27E200F8",
+          "source_artifact": "reports/monitoring/DATA-QUALITY-CONTROL-01/completeness_results.parquet",
+          "source_artifact_hash_matches": true,
+          "source_artifact_sha256": "3a9ef422cc1a9b7cdd8ce631196d95214cddc18bf52c57819de3e8caf1b3f107",
+          "source_control_id": "DATA-QUALITY-CONTROL-01",
+          "source_phase": "PHASE_6",
+          "source_record_key": "b2d20df9a7ff712d27e200f81da969772119f84b92f4c9667b175e5772333cf1"
+        },
+        "materiality_class": "N/A",
+        "metric_id": "missing_rate_absolute_change",
+        "metric_role": "DIRECT_ALERT_DRIVER",
+        "metric_severity": "CRITICAL",
+        "metric_value": 0.422575086164451,
+        "reason_code": "MISSING_RATE_ABSOLUTE_CHANGE_CRITICAL",
+        "reference_id": "FEATURE-REF-01",
+        "scenario_artifact_id": "SIM-M05-VALID-DEGRADED-01",
+        "source_alert_status": "OPEN"
+      },
+      {
+        "alert_id": "ALT-BDD28218F338DC797E7E",
+        "alert_severity": "CRITICAL",
+        "alert_status_at_extraction": "OPEN",
+        "component": "GOVERNANCE",
+        "entity_id": "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+        "entity_type": "ARTIFACT",
+        "evidence_status": "ELIGIBLE",
+        "evidence_type": "CONTROL_QUALIFICATION_EVIDENCE",
+        "lineage_reference": {
+          "metric_record_id": "MET-49CE2A2BD36FB4B394606E50",
+          "source_artifact": "reports/monitoring/DATA-QUALITY-CONTROL-01/hard_gate_qualification.json",
+          "source_artifact_hash_matches": true,
+          "source_artifact_sha256": "9d3fbfd2f794380bbc1dc6b22f520ed33099c686068b3edb25ba401334ec79d5",
+          "source_control_id": "DATA-QUALITY-CONTROL-01",
+          "source_phase": "PHASE_6",
+          "source_record_key": "49ce2a2bd36fb4b394606e50c96a462d481941e7e025f9844c6667a3ce75faa3"
+        },
+        "materiality_class": "N/A",
+        "metric_id": "authorization_gate",
+        "metric_role": "DIRECT_ALERT_DRIVER",
+        "metric_severity": "CRITICAL",
+        "metric_value": 1.0,
+        "reason_code": "AUTHORIZATION_GATE_CRITICAL",
+        "reference_id": null,
+        "scenario_artifact_id": "SIM-M05-SOURCE-LOSS-DIAGNOSTIC-01",
+        "source_alert_status": "OPEN"
+      },
+      {
+        "alert_id": "ALT-EF92CD6A3C8A66F3E926",
+        "alert_severity": "CRITICAL",
+        "alert_status_at_extraction": "OPEN",
+        "component": "GOVERNANCE",
+        "entity_id": "SIM-M05-HARD-FAIL-01",
+        "entity_type": "ARTIFACT",
+        "evidence_status": "ELIGIBLE",
+        "evidence_type": "CONTROL_QUALIFICATION_EVIDENCE",
+        "lineage_reference": {
+          "metric_record_id": "MET-F19C60751E16F123A16420AE",
+          "source_artifact": "reports/monitoring/DATA-QUALITY-CONTROL-01/hard_gate_qualification.json",
+          "source_artifact_hash_matches": true,
+          "source_artifact_sha256": "9d3fbfd2f794380bbc1dc6b22f520ed33099c686068b3edb25ba401334ec79d5",
+          "source_control_id": "DATA-QUALITY-CONTROL-01",
+          "source_phase": "PHASE_6",
+          "source_record_key": "f19c60751e16f123a16420ae6f2518ae11e40f8281faf0f474fe184577557478"
+        },
+        "materiality_class": "N/A",
+        "metric_id": "authorization_gate",
+        "metric_role": "DIRECT_ALERT_DRIVER",
+        "metric_severity": "CRITICAL",
+        "metric_value": 1.0,
+        "reason_code": "AUTHORIZATION_GATE_CRITICAL",
+        "reference_id": null,
+        "scenario_artifact_id": "SIM-M05-HARD-FAIL-01",
+        "source_alert_status": "OPEN"
+      }
+    ],
+    "linked_metric_record_ids": [
+      "MET-F4E4590EE4D8C49B4C5C3316",
+      "MET-8DA2DCAD20467C86CD99C3B6",
+      "MET-B2D20DF9A7FF712D27E200F8",
+      "MET-49CE2A2BD36FB4B394606E50",
+      "MET-F19C60751E16F123A16420AE"
+    ]
+  },
+  "title": "M05 source and input-governance states"
+}

@@ -1,0 +1,7 @@
+{
+  "casebook_manifest_sha256": "d41c082940518a17a18e540d3aba12a24f10c5ea4abcbc18e2047c0085de6370",
+  "owner_review_outcome": "CONDITIONAL_APPROVAL_TWO_REMEDIATIONS_REQUIRED",
+  "phase15_manifest_sha256": "9ff10f9ac606576f08e62e06b3796cdbaf0ca0f7243979fd63ac708723b9b604",
+  "preserved_for_lineage": true,
+  "role": "PRE_PRIMARY_EVIDENCE_AND_TEMPORAL_NAVIGATION_REMEDIATION_BOUNDARY"
+}

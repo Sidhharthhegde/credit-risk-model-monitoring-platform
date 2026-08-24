@@ -1,0 +1,6 @@
+# EXAMPLE ONLY. No cadence is prescribed by the project.
+# Replace all placeholders, then install explicitly with your scheduler administration process.
+# __SCHEDULE__ __SERVICE_USER__ cd '__PROJECT_ROOT__' && '__PYTHON__' scripts/run_scheduled_monitoring.py --profile VERIFY_FROZEN
+
+# Example shape (intentionally disabled):
+# __SCHEDULE__ cd '__PROJECT_ROOT__' && '__PYTHON__' scripts/run_scheduled_monitoring.py --profile VERIFY_FROZEN

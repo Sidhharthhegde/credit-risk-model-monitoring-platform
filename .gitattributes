@@ -1,5 +1,9 @@
 * text=auto eol=lf
 
+# These new governed evidence packages are byte-bound by SHA-256.
+reports/investigation/INVESTIGATION-CASEBOOK-01/** -text
+reports/release/PROJECT-RELEASE-01/** -text
+
 *.joblib binary
 *.npz binary
 *.parquet binary

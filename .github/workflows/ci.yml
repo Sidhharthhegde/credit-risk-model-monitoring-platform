@@ -1,0 +1,31 @@
+name: Public-safe CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  public-release-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install public qualification dependencies
+        run: python -m pip install --upgrade pip pytest
+      - name: Verify package installation without governed runtime dependencies
+        run: python -m pip install --no-deps -e .
+      - name: Check public package import
+        run: python -c "import credit_risk_monitoring"
+      - name: Verify public release surface
+        run: python scripts/verify_public_release.py
+      - name: Run public-safe release tests
+        run: python -m pytest -q tests/release/test_public_release.py
+
+      # This workflow intentionally does not execute monitoring, access Part A,
+      # rebuild the local SQLite store, or claim full reproducibility from a clone.

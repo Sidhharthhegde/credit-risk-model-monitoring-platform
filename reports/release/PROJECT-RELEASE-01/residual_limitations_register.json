@@ -1,0 +1,14 @@
+{
+  "CND_02": "OPEN",
+  "current_simulation_calendar_interpretation": false,
+  "detailed_score_bin_dashboard": "UNAVAILABLE_BY_GOVERNED_QUERY_CONTRACT",
+  "detailed_segment_dashboard": "UNAVAILABLE_BY_GOVERNED_QUERY_CONTRACT",
+  "empirical_production_performance": false,
+  "external_validation": false,
+  "fairness_certification": false,
+  "public_full_calculation_replay": false,
+  "real_lending_decisions": false,
+  "real_production_deployment": false,
+  "regulatory_certification": false,
+  "threshold_boundary_density": "CONTROLLED_DEFERRED"
+}

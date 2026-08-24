@@ -1,0 +1,152 @@
+{
+  "approved_remediation_controls": {
+    "current_operational_alert_state_queried_separately": true,
+    "current_state_change_notice_required": true,
+    "extraction_time_alert_state_preserved": true,
+    "linked_alert_navigation_status_filter": "ALL",
+    "primary_alert_and_source_record_key_required": true,
+    "primary_evidence_selection_governed_by_case_artifact": true
+  },
+  "authority_model": {
+    "alert_lifecycle_mutation_permitted": false,
+    "approved_authority_does_not_mean": [
+      "AUTHORITATIVE_METRIC_CALCULATION",
+      "EMPIRICAL_EXTERNAL_EVIDENCE",
+      "PRODUCTION_DECISION",
+      "REGULATORY_CONCLUSION"
+    ],
+    "approved_authority_scope": "AUTHORITATIVE_RECORD_OF_THE_PROJECTS_APPROVED_INTERPRETATION_AND_DISPOSITION_OF_FROZEN_MONITORING_EVIDENCE",
+    "investigation_assessment_authority": "APPROVED_AUTHORITATIVE_INVESTIGATION_RECORD",
+    "monitoring_calculation_authority": false,
+    "phase_0_through_14_read_only": true,
+    "source_evidence_authority": "FROZEN_MONITORING_EVIDENCE"
+  },
+  "case_dimensions": {
+    "alert_trigger_explanation_status": [
+      "SUPPORTED",
+      "PLAUSIBLE",
+      "NOT_ESTABLISHED",
+      "NOT_APPLICABLE"
+    ],
+    "condition_status": [
+      "OPEN",
+      "NOT_APPLICABLE"
+    ],
+    "documentation_status": [
+      "COMPLETE",
+      "INCOMPLETE"
+    ],
+    "model_defect_established": [
+      true,
+      false,
+      "NOT_ASSESSABLE"
+    ],
+    "owner_review_status": [
+      "PENDING",
+      "APPROVED"
+    ],
+    "remediation_status": [
+      "NOT_CLAIMED"
+    ],
+    "underlying_cause_status": [
+      "SUPPORTED",
+      "PLAUSIBLE",
+      "NOT_ESTABLISHED",
+      "NOT_ASSESSABLE"
+    ]
+  },
+  "case_registry": [
+    {
+      "case_id": "INV-01",
+      "title": "TRAIN-reference / application-test availability mismatch"
+    },
+    {
+      "case_id": "INV-02",
+      "title": "M04 material predictor-distribution shift"
+    },
+    {
+      "case_id": "INV-03",
+      "title": "M06 synthetic performance deterioration"
+    },
+    {
+      "case_id": "INV-04",
+      "title": "M05 source and input-governance states"
+    }
+  ],
+  "classification": "DERIVED_INVESTIGATION_AND_PRESENTATION_LAYER",
+  "classification_vocabulary": [
+    "MODEL_BEHAVIOUR",
+    "DATA_QUALITY",
+    "REFERENCE_OR_POPULATION",
+    "SOURCE_GOVERNANCE",
+    "INPUT_CONTRACT",
+    "EVIDENCE_LIMITATION",
+    "EXPECTED_CHALLENGE_RESPONSE",
+    "UNRESOLVED_CONDITION"
+  ],
+  "contract_id": "MODEL-RISK-INVESTIGATION-CONTRACT-01",
+  "control_id": "INVESTIGATION-CASEBOOK-01",
+  "dashboard": {
+    "default_workspace": "CASEBOOK",
+    "full_linked_alerts_expandable": true,
+    "primary_alert_display_limit": 10,
+    "workspace_order": [
+      "CASEBOOK",
+      "ALERT_QUEUE",
+      "SEGMENTS",
+      "LIFECYCLE",
+      "LINEAGE"
+    ]
+  },
+  "disposition_vocabulary": [
+    "CONFIRMED_EXPECTED_CHALLENGE_FINDING",
+    "REFERENCE_LIMITATION_DOCUMENTED",
+    "NO_MODEL_DEFECT_ESTABLISHED",
+    "REQUIRES_FURTHER_INVESTIGATION",
+    "GOVERNANCE_BLOCK_RETAINED",
+    "SYNTHETIC_EVIDENCE_ONLY",
+    "UNRESOLVED"
+  ],
+  "evidence_as_of_required_fields": [
+    "phase11_manifest_sha256",
+    "phase12_frozen_manifest_sha256",
+    "phase12_immutable_evidence_semantic_sha256",
+    "phase12_operational_database_semantic_sha256_at_extraction",
+    "evidence_extracted_utc",
+    "phase15_pre_casebook_candidate_manifest_sha256"
+  ],
+  "frozen_bindings": {
+    "phase11_manifest_path": "reports/monitoring/ALERT-ENGINE-01/manifest.json",
+    "phase11_manifest_sha256": "f95ae67527c4be02ef0db5cf2b7d98bf2bb031727b8ac280ab9b8ca3ac3b229b",
+    "phase12_database_path": "artifacts/monitoring_history/MONITORING-HISTORY-01/monitoring_history.db",
+    "phase12_immutable_evidence_semantic_sha256": "013ecaf72438d585d54a8ed75bb79ed912ea76f3ee3f49a6f15334ef8bee95fe",
+    "phase12_manifest_path": "reports/persistence/MONITORING-HISTORY-01/manifest.json",
+    "phase12_manifest_sha256": "967a0646b403344944a5389447873bb6d1e432afece1167d26810670774ac165",
+    "phase15_pre_casebook_candidate_manifest_sha256": "096665d8bcb12bd8efcfeb952330e65b5508ce6ea7e035bbf283fe70b45f7fc4",
+    "pre_owner_review_remediation_casebook_manifest_sha256": "d41c082940518a17a18e540d3aba12a24f10c5ea4abcbc18e2047c0085de6370",
+    "pre_owner_review_remediation_phase15_manifest_sha256": "9ff10f9ac606576f08e62e06b3796cdbaf0ca0f7243979fd63ac708723b9b604"
+  },
+  "phase": "PHASE_15_CONTROLLED_CASEBOOK_ADDENDUM",
+  "prohibited_affirmative_conclusions": [
+    "FAIRNESS_CERTIFIED",
+    "BIAS_FREE",
+    "NO_DISPARITY",
+    "RESPONSIBLE_AI_APPROVED"
+  ],
+  "scope_controls": {
+    "alert_generation": false,
+    "alert_lifecycle_change": false,
+    "authorization_reclassification": false,
+    "evidence_type_reclassification": false,
+    "fairness_or_responsible_ai_conclusion": false,
+    "health_recalculation": false,
+    "metric_recalculation": false,
+    "model_scoring": false,
+    "new_case_management_database": false,
+    "production_remediation_claim": false,
+    "root_cause_claim_without_evidence": false,
+    "severity_rewrite": false
+  },
+  "status": "APPROVED_AFTER_PRIMARY_EVIDENCE_AND_TEMPORAL_NAVIGATION_REMEDIATION",
+  "version": "1.0.0"
+}

@@ -1,0 +1,9 @@
+{
+  "all_exact_pins": true,
+  "lock_file": "requirements-lock.txt",
+  "locked_requirement_count": 13,
+  "new_package_manager_introduced": false,
+  "pyproject_version": "1.0.0",
+  "python": ">=3.12",
+  "result": "PASS"
+}

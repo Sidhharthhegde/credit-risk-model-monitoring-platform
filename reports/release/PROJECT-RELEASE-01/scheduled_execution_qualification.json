@@ -1,0 +1,9 @@
+{
+  "aggregate_receipt_only": true,
+  "alert_lifecycle_mutated": false,
+  "database_unchanged": true,
+  "exit_code": 0,
+  "report_generated": false,
+  "report_verified": true,
+  "status": "PASS"
+}

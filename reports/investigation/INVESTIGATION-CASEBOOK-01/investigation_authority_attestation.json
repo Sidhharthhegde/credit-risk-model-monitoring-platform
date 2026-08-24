@@ -1,0 +1,13 @@
+{
+  "investigation_assessment_authority": "APPROVED_AUTHORITATIVE_INVESTIGATION_RECORD",
+  "monitoring_calculation_authority": false,
+  "owner_review_status": "APPROVED",
+  "post_approval_authority_exclusions": [
+    "AUTHORITATIVE_METRIC_CALCULATION",
+    "EMPIRICAL_EXTERNAL_EVIDENCE",
+    "PRODUCTION_DECISION",
+    "REGULATORY_CONCLUSION"
+  ],
+  "post_approval_authority_scope": "AUTHORITATIVE_RECORD_OF_THE_PROJECTS_APPROVED_INTERPRETATION_AND_DISPOSITION_OF_FROZEN_MONITORING_EVIDENCE",
+  "source_evidence_authority": "FROZEN_MONITORING_EVIDENCE"
+}

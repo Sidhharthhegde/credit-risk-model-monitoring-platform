@@ -1,0 +1,12 @@
+{
+  "full_monitoring_execution": false,
+  "private_data_or_model_uploaded": false,
+  "public_release_check_return_code": 0,
+  "public_safe_tests": "tests/release/test_public_release.py",
+  "result": "PASS",
+  "triggers": [
+    "push",
+    "pull_request"
+  ],
+  "workflow": ".github/workflows/ci.yml"
+}

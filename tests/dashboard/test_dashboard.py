@@ -8,7 +8,7 @@ import pytest
 from streamlit.testing.v1 import AppTest
 
 from credit_risk_monitoring.dashboard.data_service import DashboardDataService
-from credit_risk_monitoring.dashboard.navigation import PAGE_REGISTRY
+from credit_risk_monitoring.dashboard.navigation import CONTROL_ROOM_NAVIGATION, PAGE_REGISTRY
 from credit_risk_monitoring.history.digest import semantic_database_manifest
 
 
@@ -119,9 +119,26 @@ def test_all_six_streamlit_pages_smoke_without_exceptions(
     monkeypatch.setenv("CREDIT_RISK_HISTORY_DB", str(fixture))
     app = AppTest.from_file(str(project_root / "src/credit_risk_monitoring/dashboard/app.py")).run(timeout=60)
     assert not app.exception
-    for _, title in PAGE_REGISTRY[1:]:
-        app.sidebar.radio[0].set_value(title).run(timeout=60)
-        assert not app.exception, title
+    assert len(app.sidebar.radio) == 1
+    for _, number, title, _ in CONTROL_ROOM_NAVIGATION[1:]:
+        navigation_label = f"{number}  {title}"
+        app.sidebar.radio[0].set_value(navigation_label).run(timeout=60)
+        assert not app.exception, navigation_label
+
+
+def test_current_case_sidebar_updates_in_the_same_scenario_rerun(
+    project_root: Path, database_path: Path, tmp_path: Path, monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    fixture = tmp_path / "dashboard-current-case.db"
+    shutil.copy2(database_path, fixture)
+    monkeypatch.setenv("CREDIT_RISK_MONITORING_ROOT", str(project_root))
+    monkeypatch.setenv("CREDIT_RISK_HISTORY_DB", str(fixture))
+    app = AppTest.from_file(str(project_root / "src/credit_risk_monitoring/dashboard/app.py")).run(timeout=60)
+    scenario = next(radio for radio in app.radio if radio.key == "overview_scenario_lab")
+    scenario.set_value("SIM-M01-SCENARIO-01").run(timeout=60)
+    current_case = next(markdown.value for markdown in app.sidebar.markdown if "CURRENT CASE" in markdown.value)
+    assert "<strong>M01</strong>" in current_case
+    assert "<strong>M04</strong>" not in current_case
 
 
 def test_phase13_candidate_gate_when_present(project_root: Path) -> None:

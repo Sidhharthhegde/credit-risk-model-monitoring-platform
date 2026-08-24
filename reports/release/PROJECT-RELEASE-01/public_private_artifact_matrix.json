@@ -1,0 +1,42 @@
+{
+  "aggregate_investigation_casebook": {
+    "local": true,
+    "public": true
+  },
+  "aggregate_monitoring_evidence": {
+    "local": true,
+    "public": true
+  },
+  "contracts_configs_tests": {
+    "local": true,
+    "public": true
+  },
+  "dashboard_and_report": {
+    "local": true,
+    "public": true
+  },
+  "model_binary": {
+    "local": "PART_A_ONLY",
+    "public": false
+  },
+  "qualification_replay_and_receipts": {
+    "local": "GENERATED",
+    "public": false
+  },
+  "raw_home_credit_data": {
+    "local": true,
+    "public": false
+  },
+  "row_level_predictions_outcomes": {
+    "local": true,
+    "public": false
+  },
+  "source_code": {
+    "local": true,
+    "public": true
+  },
+  "sqlite_runtime_database": {
+    "local": "GENERATED",
+    "public": false
+  }
+}

@@ -31,6 +31,8 @@ artifacts/reference_bins/*
 artifacts/simulation_scenarios/*
 artifacts/monitoring_predictions/*
 artifacts/monitoring_history/*
+artifacts/scheduled_execution/*
+artifacts/qualification_replay/*
 !artifacts/**/README.md
 
 # Model artifacts must remain outside Part B

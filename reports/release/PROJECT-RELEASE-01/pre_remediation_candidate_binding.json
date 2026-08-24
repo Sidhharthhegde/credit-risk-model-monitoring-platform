@@ -1,0 +1,7 @@
+{
+  "manifest_sha256": "2d6c748ab8bfcdb9bb33d96809da2df76651908935b15f79fa76751a1b032781",
+  "owner_approved": false,
+  "preserved_for_lineage": true,
+  "role": "PRE_REMEDIATION_PHASE15_TECHNICAL_CANDIDATE",
+  "superseded_by": "RECEIPT_LOGGING_DOCUMENTATION_AND_DASHBOARD_PRESENTATION_REMEDIATION"
+}

@@ -2,7 +2,7 @@
 
 | Document | Current version | Status | Purpose |
 |---|---:|---|---|
-| `docs/PROJECT_IMPLEMENTATION_PLAN.md` | 0.2.1 | Active; Phase 1 technical qualification recorded | Detailed implementation roadmap |
+| `docs/PROJECT_IMPLEMENTATION_PLAN.md` | 1.0.0 | Approved and frozen; implementation complete | Detailed implementation roadmap, casebook addendum and final roadmap/scenario reconciliation |
 | `MONITORING_POLICY.md` | 0.1.0 | Approved and frozen | Authoritative monitoring methodology and governance |
 | `CHANGE_CONTROL_POLICY.md` | 0.1.0 | Approved and frozen | Model and monitoring change classification |
 | `docs/DECISION_LOG.md` | 0.1.0 | Active | Controlled project decisions |
@@ -57,6 +57,13 @@
 | `src/credit_risk_monitoring/reporting/` | 0.1.0 | Approved implementation | Phase 12 query-driven HTML/PDF monitoring report generator |
 | `reports/monitoring_report/MONITORING-REPORT-01/` | 0.1.0 | Approved and frozen | Aggregate report snapshot and non-authoritative HTML/PDF presentation artifacts |
 | `reports/lifecycle/FINAL-LIFECYCLE-QUALIFICATION-01/` | 0.1.0 | Approved and frozen | Phase 14 manifest-chain, gates, replay, report, hygiene, dependency, documentation, scope and approval evidence; project completion deferred to Phase 15 |
+| `contracts/final_project_release_contract.json` | 1.0.0 | Approved and frozen | Phase 15 scheduling, locking, receipt, CI, release, scope and approval-gate controls |
+| `contracts/model_risk_investigation_contract.json` | 1.0.0 | Approved prospective addendum specification | Phase 15 case authority, evidence-as-of, case dimensions, scope and dashboard contract |
+| `src/credit_risk_monitoring/investigation/` | 1.0.0 | Candidate implementation | Read-only evidence extraction, four dossier definitions and behavioral qualification |
+| `reports/investigation/INVESTIGATION-CASEBOOK-01/` | 1.0.0 | Approved and frozen after owner-review remediation | Four aggregate dossiers, governed primary evidence, dual temporal semantics, reconciliations, attestations and manifest |
+| `src/credit_risk_monitoring/scheduling/` | 1.0.0 | Candidate implementation | Thin scheduler-safe wrapper, lock recovery evidence, aggregate receipts and stable exit codes |
+| `deployment/scheduling/` | 1.0.0 | Deployment-neutral examples | Placeholder-only Windows Task Scheduler and cron examples; no cadence selected |
+| `reports/release/PROJECT-RELEASE-01/` | 1.0.0 | Approved and frozen; Project B complete | Phase 15 qualification, owner approval, reconciliation, limitations and final release evidence |
 | `configs/model_config.yaml` | 0.1.0 | Approved and frozen | Semantic model metadata referencing the binding |
 | `configs/monitoring_config.yaml` | 0.1.0 | Approved and frozen | Monitoring scope and execution policy |
 | `configs/alert_thresholds.yaml` | 0.1.0 | Approved and frozen | Project-defined alert assumptions |

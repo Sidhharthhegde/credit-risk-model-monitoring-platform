@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "credit-risk-model-monitoring-platform"
-version = "0.1.0"
+version = "1.0.0"
 description = "Governance-first monitoring platform for the frozen DF-01 credit-risk model."
 readme = "README.md"
 requires-python = ">=3.12"

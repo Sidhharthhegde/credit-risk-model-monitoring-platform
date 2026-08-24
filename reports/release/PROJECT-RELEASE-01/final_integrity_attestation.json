@@ -1,0 +1,14 @@
+{
+  "alert_event_count": 329,
+  "alert_event_ledger_sha256": "6e5c8bda305d5111e94ea4f8cb511aff7cf6c3823361ba1097d83c3fa05ea734",
+  "alert_event_ledger_unchanged": true,
+  "casebook_manifest_sha256": "204bc4c9e910aee901b1354678ec59d51d1defeb6893a021b3e9400790ec9835",
+  "investigation_casebook_digest_stable": true,
+  "model_scored": false,
+  "monitoring_recalculated": false,
+  "part_a_working_tree_clean": true,
+  "phase12_database_semantic_sha256": "48eb52d1596199abd010c42d7348a73eda80b5969805a73729897a72fbdf7900",
+  "phase_0_through_14_manifest_chain_unchanged": true,
+  "phase_0_through_14_writes_performed": false,
+  "result": "PASS"
+}

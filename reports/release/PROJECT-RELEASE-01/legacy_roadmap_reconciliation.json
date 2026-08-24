@@ -1,0 +1,18 @@
+{
+  "already_completed_not_duplicated": [
+    "Phase 12 evidence persistence and query layer",
+    "Phase 13 dashboard",
+    "Phase 14 runner, report, regression and lifecycle qualification"
+  ],
+  "candidate_plan_complete_against_legacy": true,
+  "genuine_remaining_gaps_implemented": [
+    "unattended execution",
+    "concurrency lock",
+    "receipts and stable exit codes",
+    "scheduler templates",
+    "public-safe CI",
+    "release documentation and screenshots",
+    "final limitations and approval-gated release record"
+  ],
+  "source": "docs/PROJECT_IMPLEMENTATION_PLAN.md reorganized legacy roadmap"
+}

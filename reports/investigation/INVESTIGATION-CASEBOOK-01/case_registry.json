@@ -1,0 +1,78 @@
+{
+  "case_count": 4,
+  "cases": [
+    {
+      "case_id": "INV-01",
+      "chapter": "01",
+      "classification": [
+        "DATA_QUALITY",
+        "REFERENCE_OR_POPULATION",
+        "EVIDENCE_LIMITATION"
+      ],
+      "dispositions": [
+        "REFERENCE_LIMITATION_DOCUMENTED",
+        "NO_MODEL_DEFECT_ESTABLISHED",
+        "UNRESOLVED"
+      ],
+      "linked_alert_count": 6,
+      "short_title": "Availability mismatch",
+      "title": "TRAIN-reference / application-test availability mismatch"
+    },
+    {
+      "case_id": "INV-02",
+      "chapter": "02",
+      "classification": [
+        "MODEL_BEHAVIOUR",
+        "REFERENCE_OR_POPULATION",
+        "EXPECTED_CHALLENGE_RESPONSE",
+        "EVIDENCE_LIMITATION"
+      ],
+      "dispositions": [
+        "CONFIRMED_EXPECTED_CHALLENGE_FINDING",
+        "REQUIRES_FURTHER_INVESTIGATION",
+        "UNRESOLVED"
+      ],
+      "linked_alert_count": 6,
+      "short_title": "Material predictor drift",
+      "title": "M04 material predictor-distribution shift"
+    },
+    {
+      "case_id": "INV-03",
+      "chapter": "03",
+      "classification": [
+        "MODEL_BEHAVIOUR",
+        "EXPECTED_CHALLENGE_RESPONSE",
+        "EVIDENCE_LIMITATION"
+      ],
+      "dispositions": [
+        "CONFIRMED_EXPECTED_CHALLENGE_FINDING",
+        "SYNTHETIC_EVIDENCE_ONLY"
+      ],
+      "linked_alert_count": 4,
+      "short_title": "Synthetic deterioration",
+      "title": "M06 synthetic performance deterioration"
+    },
+    {
+      "case_id": "INV-04",
+      "chapter": "04",
+      "classification": [
+        "DATA_QUALITY",
+        "SOURCE_GOVERNANCE",
+        "INPUT_CONTRACT",
+        "EXPECTED_CHALLENGE_RESPONSE",
+        "UNRESOLVED_CONDITION"
+      ],
+      "dispositions": [
+        "CONFIRMED_EXPECTED_CHALLENGE_FINDING",
+        "GOVERNANCE_BLOCK_RETAINED",
+        "UNRESOLVED"
+      ],
+      "linked_alert_count": 5,
+      "short_title": "Source & contract governance",
+      "title": "M05 source and input-governance states"
+    }
+  ],
+  "control_id": "INVESTIGATION-CASEBOOK-01",
+  "default_case_id": "INV-01",
+  "investigation_assessment_authority": "APPROVED_AUTHORITATIVE_INVESTIGATION_RECORD"
+}

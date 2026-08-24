@@ -1,0 +1,49 @@
+{
+  "monitoring_report": [
+    {
+      "path": "reports/monitoring_report/MONITORING-REPORT-01/monitoring_report.html",
+      "sha256": "c6f1a729f5b73c7d03ae719a18fbe7b67b48cd20f555a9ecbdfd8a1557412be8"
+    },
+    {
+      "path": "reports/monitoring_report/MONITORING-REPORT-01/monitoring_report.pdf",
+      "sha256": "13a25ae7ad662ba50bbf8cf2a54dd3ea1480054f25aa7bfc2c19e923176817da"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/assets/control_room_after/01_control_room.jpg",
+      "sanitized_aggregate_only": true,
+      "sha256": "7406c125c5703b6498f62f749fb8708ecff1ec1e3386aa9bf6b1a9a65a2a9ddd"
+    },
+    {
+      "path": "docs/assets/control_room_after/02_input_integrity.jpg",
+      "sanitized_aggregate_only": true,
+      "sha256": "5757e4cca9a386e05c73bcfc16d1df5789eebfcb5413492d9665377875f403a3"
+    },
+    {
+      "path": "docs/assets/control_room_after/03_drift_observatory.jpg",
+      "sanitized_aggregate_only": true,
+      "sha256": "6a0ba1c65bb4ec60668b95afaa6289ff83dca79107d6d0aa70e0ceee163a0501"
+    },
+    {
+      "path": "docs/assets/control_room_after/04_model_behaviour.jpg",
+      "sanitized_aggregate_only": true,
+      "sha256": "1692bd99b0fa681928ab1a2f98bf513a70efdef76f6f3cf5777b0b06aadefcf0"
+    },
+    {
+      "path": "docs/assets/control_room_after/05_outcome_evidence.jpg",
+      "sanitized_aggregate_only": true,
+      "sha256": "d059364bb0016e5689b149200893191708267b4aafe6e696395727cc4a1bf481"
+    },
+    {
+      "path": "docs/assets/control_room_after/06_investigation_desk.jpg",
+      "sanitized_aggregate_only": true,
+      "sha256": "d64763e9c19be50776fb9c0eadeb7b9401c64f7de98fa84489775c8982b7db75"
+    },
+    {
+      "path": "docs/assets/monitoring_report_preview.png",
+      "sanitized_aggregate_only": true,
+      "sha256": "4181b9edf21d948ab4261eec3a0f7538124826b70190027b23591b4f822319a1"
+    }
+  ]
+}

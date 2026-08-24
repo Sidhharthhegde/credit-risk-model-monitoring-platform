@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "scheduled_execution_receipt.schema.json",
+  "title": "Scheduled execution receipt",
+  "type": "object",
+  "required": ["schema_version", "execution_id", "execution_mode", "command_profile", "orchestrator_id", "profile", "started_utc", "finished_utc", "completed_utc", "status", "execution_status", "exit_code", "lock", "bindings", "phase14_manifest_sha256", "immutability", "manifest_chain_verification", "immutable_evidence_verification", "frozen_write_attempted", "frozen_write_blocked", "database_mutated", "alert_lifecycle_mutated", "report_generated", "report_output_path", "error_class", "error_message"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "execution_id": {"type": "string", "pattern": "^SCHED-[A-Za-z0-9_.:-]+$"},
+    "profile": {"type": "string", "minLength": 1},
+    "started_utc": {"type": "string"},
+    "finished_utc": {"type": "string"},
+    "status": {"enum": ["PASS", "FAIL", "BLOCKED"]},
+    "exit_code": {"type": "integer"},
+    "lock": {"type": "object"},
+    "bindings": {"type": "object"},
+    "immutability": {"type": "object"},
+    "error": {"type": ["object", "null"]}
+    ,"error_class": {"type": ["string", "null"]}
+    ,"error_message": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

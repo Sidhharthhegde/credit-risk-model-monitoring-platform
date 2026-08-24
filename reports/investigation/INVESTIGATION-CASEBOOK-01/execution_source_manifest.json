@@ -1,0 +1,13 @@
+{
+  "casebook_assessment_authority": "APPROVED_AUTHORITATIVE_INVESTIGATION_RECORD",
+  "contract": {
+    "path": "contracts/model_risk_investigation_contract.json",
+    "sha256": "2bc94fa8d441d8da913dd917e6dd72569cd61d850cbd46e4e1a76298259ecf01"
+  },
+  "control_id": "INVESTIGATION-CASEBOOK-01",
+  "implementation": {
+    "path": "src/credit_risk_monitoring/investigation/casebook.py",
+    "sha256": "cd8caced406ff793be01195e0feb5cb26601dec285d724e5d449351874208c92"
+  },
+  "source_monitoring_evidence_authoritative": true
+}

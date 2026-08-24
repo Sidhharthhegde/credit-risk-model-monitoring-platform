@@ -1,0 +1,14 @@
+{
+  "alert_event_ledger_unchanged": true,
+  "authorization_or_evidence_scope_rewritten": false,
+  "database_semantic_manifest_unchanged_during_extraction": true,
+  "fairness_or_responsible_ai_conclusion_claimed": false,
+  "immutable_evidence_unchanged": true,
+  "model_scoring_executed": false,
+  "monitoring_calculation_functions_executed": false,
+  "new_database_tables_created": false,
+  "phase_0_through_14_artifact_hashes_unchanged": true,
+  "read_only_database_connection": true,
+  "result": "PASS",
+  "severity_or_health_rewritten": false
+}

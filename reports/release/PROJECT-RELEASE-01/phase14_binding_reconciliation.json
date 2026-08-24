@@ -1,0 +1,7 @@
+{
+  "actual_manifest_sha256": "dc63b5dd1834811d056146cf3f86287c50717fdee420ccb70db7b27f9431047a",
+  "expected_commit": "be6fb12db724954140a8a368d6a756c2ffe800c9",
+  "expected_manifest_sha256": "dc63b5dd1834811d056146cf3f86287c50717fdee420ccb70db7b27f9431047a",
+  "manifest_match": true,
+  "phase_0_through_14_read_only": true
+}

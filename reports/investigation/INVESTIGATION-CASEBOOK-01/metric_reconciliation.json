@@ -1,0 +1,16 @@
+{
+  "all_linked_metrics_exist": true,
+  "all_source_artifact_hashes_match": true,
+  "linked_metric_count": 21,
+  "m04_exact_values": {
+    "feature_psi:EXT_SOURCE_2": 0.46145175839108366,
+    "feature_psi:EXT_SOURCE_3": 0.25012754553854843,
+    "missing_rate_absolute_change:BUREAU_ANNUITY_MAX": 0.21565731166912852,
+    "missing_rate_absolute_change:BUREAU_ANNUITY_MEAN": 0.21565731166912852,
+    "missing_rate_absolute_change:EXT_SOURCE_1": 0.4202363367799114,
+    "risk_positive_rate_absolute_change:THRESHOLD-01": 0.0883799909049509
+  },
+  "m04_exact_values_reconcile": true,
+  "numeric_values_copied_without_recalculation": true,
+  "result": "PASS"
+}

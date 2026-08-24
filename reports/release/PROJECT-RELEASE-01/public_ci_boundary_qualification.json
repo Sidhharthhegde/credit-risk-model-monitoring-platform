@@ -1,0 +1,6 @@
+{
+  "full_monitoring_execution_claimed": false,
+  "public_release_check_return_code": 0,
+  "public_safe_workflow_present": true,
+  "restricted_inputs_required_by_ci": false
+}

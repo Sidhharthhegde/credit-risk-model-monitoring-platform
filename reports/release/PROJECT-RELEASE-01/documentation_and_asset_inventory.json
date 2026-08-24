@@ -1,0 +1,21 @@
+{
+  "aggregate_only": true,
+  "all_assets_present": true,
+  "required_assets": [
+    "docs/assets/control_room_after/01_control_room.jpg",
+    "docs/assets/control_room_after/02_input_integrity.jpg",
+    "docs/assets/control_room_after/03_drift_observatory.jpg",
+    "docs/assets/control_room_after/04_model_behaviour.jpg",
+    "docs/assets/control_room_after/05_outcome_evidence.jpg",
+    "docs/assets/control_room_after/06_investigation_desk.jpg",
+    "docs/assets/monitoring_report_preview.png"
+  ],
+  "required_documents": [
+    "README.md",
+    "docs/ARCHITECTURE.md",
+    "docs/GOVERNANCE.md",
+    "docs/REPRODUCIBILITY.md",
+    "docs/SCHEDULED_EXECUTION.md",
+    "docs/RELEASE_NOTES_v1.0.0.md"
+  ]
+}

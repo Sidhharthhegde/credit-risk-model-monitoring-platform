@@ -1,0 +1,14 @@
+{
+  "alert_lifecycle_mutated": false,
+  "contract_path": "contracts/model_risk_investigation_contract.json",
+  "control_id": "INVESTIGATION-CASEBOOK-01",
+  "current_operational_alert_state_separate": true,
+  "investigation_assessment_authority": "APPROVED_AUTHORITATIVE_INVESTIGATION_RECORD",
+  "manifest_path": "reports/investigation/INVESTIGATION-CASEBOOK-01/manifest.json",
+  "manifest_sha256": "204bc4c9e910aee901b1354678ec59d51d1defeb6893a021b3e9400790ec9835",
+  "monitoring_recalculation": false,
+  "phase_0_through_14_read_only": true,
+  "primary_evidence_selection_governed_by_case_artifact": true,
+  "review_decision": "APPROVED",
+  "status": "APPROVED_FROZEN_AFTER_PRIMARY_EVIDENCE_AND_TEMPORAL_NAVIGATION_REMEDIATION"
+}

@@ -1,0 +1,10 @@
+{
+  "active_exit_code": 30,
+  "active_second_execution": "BLOCKED_ACTIVE_EXECUTION",
+  "corrupt_lock": "HARD_FAIL",
+  "owner_only_release": true,
+  "recovery_evidence_required": true,
+  "result": "PASS",
+  "stale_default": "BLOCKED_EXPLICIT_RECOVERY_REQUIRED",
+  "stale_exit_code": 31
+}

@@ -1,0 +1,19 @@
+{
+  "case_count": 4,
+  "control_id": "INVESTIGATION-CASEBOOK-01",
+  "current_operational_alert_state_separate": true,
+  "dual_phase12_digest_binding": true,
+  "extraction_time_alert_state_preserved": true,
+  "governed_evidence_and_assessment_separated": true,
+  "linked_alert_count": 21,
+  "linked_alert_navigation_uses_current_state": true,
+  "m05_blocked_health_remains_not_assessable": true,
+  "m05_three_state_semantics_preserved": true,
+  "m06_synthetic_classification_preserved": true,
+  "owner_approval_required": false,
+  "primary_evidence_reconciliation": "PASS",
+  "primary_evidence_selection_governed_by_case_artifact": true,
+  "review_decision": "APPROVED",
+  "status": "APPROVED_FROZEN_AFTER_PRIMARY_EVIDENCE_AND_TEMPORAL_NAVIGATION_REMEDIATION",
+  "technical_result": "PASS"
+}

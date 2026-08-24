@@ -1,0 +1,31 @@
+{
+  "control_id": "SCHEDULED-EXECUTION-01",
+  "default_profile": "VERIFY_FROZEN",
+  "exit_codes": {
+    "0": "SUCCESS",
+    "10": "CONFIGURATION_OR_CONTRACT_FAILURE",
+    "20": "FROZEN_SOURCE_VERIFICATION_FAILURE",
+    "21": "MANIFEST_CHAIN_FAILURE",
+    "22": "IMMUTABLE_EVIDENCE_DIGEST_FAILURE",
+    "30": "ACTIVE_LOCK",
+    "31": "INVALID_OR_STALE_LOCK",
+    "40": "FROZEN_WRITE_ATTEMPT",
+    "50": "ORCHESTRATION_FAILURE",
+    "60": "REPORT_OR_QUERY_FAILURE",
+    "70": "DEPENDENCY_OR_ENVIRONMENT_FAILURE",
+    "80": "RECEIPT_OR_LOGGING_FAILURE",
+    "99": "UNEXPECTED_FAILURE"
+  },
+  "locking": {
+    "active_lock_action": "REJECT",
+    "corrupt_lock_action": "HARD_FAIL",
+    "lock_file": "artifacts/scheduled_execution/SCHEDULED-EXECUTION-01/execution.lock.json",
+    "maximum_age_is_project_defined_governance_assumption": true,
+    "maximum_age_seconds": 21600,
+    "stale_lock_default_action": "REJECT",
+    "stale_lock_recovery_requires_evidence": true,
+    "stale_lock_recovery_requires_explicit_flag": true
+  },
+  "receipt_schema": "schemas/scheduled_execution_receipt.schema.json",
+  "retention_policy": "NO_AUTOMATIC_DELETION_V1"
+}

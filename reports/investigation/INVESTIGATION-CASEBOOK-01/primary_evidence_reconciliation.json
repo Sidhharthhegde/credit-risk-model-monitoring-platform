@@ -1,0 +1,43 @@
+{
+  "cases": [
+    {
+      "case_id": "INV-01",
+      "metric_entity_and_source_identifiers_reconcile": true,
+      "primary_alert_exists": true,
+      "primary_alert_id": "ALT-7D6D4EAAF884D5205849",
+      "primary_evidence_is_linked": true,
+      "primary_source_record_exists": true,
+      "primary_source_record_key": "083a595e058ae38632f8aecb9829be4ba1004c42510706579bc4908ceb5c31af"
+    },
+    {
+      "case_id": "INV-02",
+      "metric_entity_and_source_identifiers_reconcile": true,
+      "primary_alert_exists": true,
+      "primary_alert_id": "ALT-E3BFA0D736E411B89486",
+      "primary_evidence_is_linked": true,
+      "primary_source_record_exists": true,
+      "primary_source_record_key": "a542eacf7b7098ceadd70601785f6da74efc75acac36c1d8b0bb33410a11effc"
+    },
+    {
+      "case_id": "INV-03",
+      "metric_entity_and_source_identifiers_reconcile": true,
+      "primary_alert_exists": true,
+      "primary_alert_id": "ALT-8ACF647F51BBCC2CE902",
+      "primary_evidence_is_linked": true,
+      "primary_source_record_exists": true,
+      "primary_source_record_key": "bf41659a14dcb65683312a95c347a9e3286efce5b3737db229a0f1510e472e96"
+    },
+    {
+      "case_id": "INV-04",
+      "metric_entity_and_source_identifiers_reconcile": true,
+      "primary_alert_exists": true,
+      "primary_alert_id": "ALT-BDD28218F338DC797E7E",
+      "primary_evidence_is_linked": true,
+      "primary_source_record_exists": true,
+      "primary_source_record_key": "49ce2a2bd36fb4b394606e50c96a462d481941e7e025f9844c6667a3ce75faa3"
+    }
+  ],
+  "presentation_layer_selection_permitted": false,
+  "result": "PASS",
+  "selection_authority": "APPROVED_CASE_ARTIFACT"
+}

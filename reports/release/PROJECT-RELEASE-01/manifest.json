@@ -1,0 +1,224 @@
+{
+  "approval_finalizer_sha256": "07629e6e6f86778793dc552e388c7ba8c72d6401ac986f8f1cf3810b289d54a7",
+  "approved_utc": "2026-08-24T15:34:33.037075+00:00",
+  "artifacts": [
+    {
+      "path": "casebook_addendum_binding.json",
+      "sha256": "f2a16ff99a48e9176b4d14ea108043491b1e68da211e2529c4d782ac74b08d69",
+      "size_bytes": 745
+    },
+    {
+      "path": "ci_qualification.json",
+      "sha256": "947dc21f16fa4cc08295400da186846332ff8b1ae5cc7b23b7b35846340fe739",
+      "size_bytes": 314
+    },
+    {
+      "path": "concurrency_lock_qualification.json",
+      "sha256": "4a3720c1a52db88968c1a515edebb6d53a33491a59eb349469ca7741cf9772c3",
+      "size_bytes": 297
+    },
+    {
+      "path": "dashboard_release_presentation_qualification.json",
+      "sha256": "a8afca1631603e9815cbe09cf19088359f1ce2984b02a5b2f79fbf06ee1e6b8c",
+      "size_bytes": 5739
+    },
+    {
+      "path": "documentation_and_asset_inventory.json",
+      "sha256": "9bf43e27899410e27b5f9afc204d368d1a4d4e5609e88465780b743924e6d9eb",
+      "size_bytes": 728
+    },
+    {
+      "path": "exit_code_qualification.json",
+      "sha256": "e34bf9b56219bf1a70810ed14b0ff6b554118787b7f6cf0d0f776c99414bd847",
+      "size_bytes": 614
+    },
+    {
+      "path": "failure_injection_matrix.json",
+      "sha256": "5b5b0237be1ef6e5d02ed204b12db7641b44e57ba7a36c71e2b2438c020067d7",
+      "size_bytes": 1381
+    },
+    {
+      "path": "final_dependency_qualification.json",
+      "sha256": "3d7e6dc3d5717bfaa5c8813ba9a675292aa1524b3d6fa4c86b4c6f4302bc59e3",
+      "size_bytes": 229
+    },
+    {
+      "path": "final_documentation_reconciliation.json",
+      "sha256": "c1cb4977b9f6bd17e79bc57a87cf3b395697e15e4eb8acd2034a2e9b05772eba",
+      "size_bytes": 1295
+    },
+    {
+      "path": "final_integrity_attestation.json",
+      "sha256": "057737cd955db12f3009ed8c95034a14fe29601684fdb537375272936d721a52",
+      "size_bytes": 643
+    },
+    {
+      "path": "final_limitations.json",
+      "sha256": "faa37ef9ff7ff8c085aa399aa7d11e39a9c6c1414b5e390df4a2dfb5752661a0",
+      "size_bytes": 563
+    },
+    {
+      "path": "final_local_path_scan.json",
+      "sha256": "2f607e6fd3f70aac67b5c00a01a80b582a7d4b739c53b199aeb29012b6103cf2",
+      "size_bytes": 37
+    },
+    {
+      "path": "final_project_release_contract_snapshot.json",
+      "sha256": "025363e3e22168a6cde81fc77d3f2c8d0fb4b485c16e192a82d6354c634e4169",
+      "size_bytes": 6684
+    },
+    {
+      "path": "final_regression_suite.json",
+      "sha256": "bfd418ec98532894cdb7401b1bbb94248e5b1998653cc5f53a6c089e2187c960",
+      "size_bytes": 304
+    },
+    {
+      "path": "final_regression_suite.txt",
+      "sha256": "1f74c1fa9c208f6dcf1afdaf6b4f30e94aac504a87fec6dc7be0ac8d5858f3c8",
+      "size_bytes": 290
+    },
+    {
+      "path": "final_repository_hygiene.json",
+      "sha256": "82108cd88879d1d9e808fffbf3b851d7d5c5c7a2601bb36c7ecd56f9a9e6f14a",
+      "size_bytes": 234
+    },
+    {
+      "path": "final_secret_scan.json",
+      "sha256": "2f607e6fd3f70aac67b5c00a01a80b582a7d4b739c53b199aeb29012b6103cf2",
+      "size_bytes": 37
+    },
+    {
+      "path": "legacy_roadmap_reconciliation.json",
+      "sha256": "cd94fab923a3c5eec692c9d78cb99bb120b13f9cc86522cc82cc4b49344f0ffc",
+      "size_bytes": 632
+    },
+    {
+      "path": "local_path_and_secret_scan.json",
+      "sha256": "dd89910219055c7dc264a819030ba7da7c8bf5449be5f230d51c4de1e211869c",
+      "size_bytes": 300
+    },
+    {
+      "path": "phase14_binding_reconciliation.json",
+      "sha256": "d920d283facb72f7d7f855968967d9df08ba9ecb3edc6c2ae9b0d43bbbe787bb",
+      "size_bytes": 335
+    },
+    {
+      "path": "phase15_acceptance_checklist.csv",
+      "sha256": "5c65fedc0e3d18682cf874b96669f2c7a1911e9890f757cee8412397c0564bfb",
+      "size_bytes": 543
+    },
+    {
+      "path": "phase15_completion_decision.json",
+      "sha256": "3271b0afa0ef78363399da169043b4fb64d0958a5a84c6f44f8ab39cf8aa24bf",
+      "size_bytes": 1641
+    },
+    {
+      "path": "phase15_owner_approval_record.json",
+      "sha256": "c04f052222fbbacc154c4a669027319baff62f13160a3135292a3c8dc8487b72",
+      "size_bytes": 836
+    },
+    {
+      "path": "phase_manifest_chain_0_14_reconciliation.json",
+      "sha256": "e5b0b1e56526ea86cbdc2dfedbcb99fc6601db09032d52f165486c5dd2fb9fd0",
+      "size_bytes": 6081
+    },
+    {
+      "path": "phase_manifest_chain_0_15.json",
+      "sha256": "226fa715466d0edb407d74bcd794deea7222ecd821f7b8a2ae39c443ee7f7081",
+      "size_bytes": 6518
+    },
+    {
+      "path": "pre_casebook_candidate_binding.json",
+      "sha256": "419ae74b9141d4cce8d73e73aafadc57b90dbbaae30905cbfeed088f0ed7bd25",
+      "size_bytes": 261
+    },
+    {
+      "path": "pre_owner_review_remediation_candidate_binding.json",
+      "sha256": "3352767da8262c8faec53538d6c37dee4bce149b3589aff1443ee4af8fb1cd63",
+      "size_bytes": 393
+    },
+    {
+      "path": "pre_remediation_candidate_binding.json",
+      "sha256": "97b6acacf448f7bc46bbb908b33dd3526aedd9453d4138524a446fde9375f238",
+      "size_bytes": 307
+    },
+    {
+      "path": "project_completion_decision.json",
+      "sha256": "bec5b43de58339ed666156f0ccfb4eba084e15f5ca343704c12d8bea2bf2648a",
+      "size_bytes": 432
+    },
+    {
+      "path": "public_ci_boundary_qualification.json",
+      "sha256": "2119d46aa1810416e9c8efac0529b53e3b79781392363d5951f80d51053f0802",
+      "size_bytes": 181
+    },
+    {
+      "path": "public_private_artifact_matrix.json",
+      "sha256": "ffd33155d2807ce3d1bcee207c52999d1ca1d45e105ceb73b66f221cbb00579f",
+      "size_bytes": 816
+    },
+    {
+      "path": "release_asset_inventory.json",
+      "sha256": "73c51fb7389bd6eed847f8af3b6c2290c18bb36b3e0e8c2d9589e0b208b1a4a4",
+      "size_bytes": 1909
+    },
+    {
+      "path": "release_candidate_summary.json",
+      "sha256": "0eb09ce40df5b1c6ce61e1597c2d695e665fcd597444a567c764cb6dae255130",
+      "size_bytes": 485
+    },
+    {
+      "path": "repository_hygiene_qualification.json",
+      "sha256": "82108cd88879d1d9e808fffbf3b851d7d5c5c7a2601bb36c7ecd56f9a9e6f14a",
+      "size_bytes": 234
+    },
+    {
+      "path": "residual_limitations_register.json",
+      "sha256": "faa37ef9ff7ff8c085aa399aa7d11e39a9c6c1414b5e390df4a2dfb5752661a0",
+      "size_bytes": 563
+    },
+    {
+      "path": "scheduled_execution_contract.json",
+      "sha256": "ddcacb6340ade901bea92f09dbc586d5839508bc0c78121ca49a6e90773de025",
+      "size_bytes": 1178
+    },
+    {
+      "path": "scheduled_execution_failure_matrix.json",
+      "sha256": "5b5b0237be1ef6e5d02ed204b12db7641b44e57ba7a36c71e2b2438c020067d7",
+      "size_bytes": 1381
+    },
+    {
+      "path": "scheduled_execution_qualification.json",
+      "sha256": "8de9592e43d6999104fbcf016bb276a0fba520c658acf01589e16073904639bf",
+      "size_bytes": 206
+    },
+    {
+      "path": "scheduler_template_qualification.json",
+      "sha256": "3c86e88f23c76cd7a046adf5d6acbf2b7b872be902feea4214842fb7f5d03f91",
+      "size_bytes": 283
+    },
+    {
+      "path": "unattended_execution_receipt_qualification.json",
+      "sha256": "879faf8b8417603c14a2f74319e2e0aa2b90200fb836ec4dacb64dd8f6751a0f",
+      "size_bytes": 450
+    }
+  ],
+  "cnd_02_status": "OPEN",
+  "investigation_assessment_authority": "APPROVED_AUTHORITATIVE_INVESTIGATION_RECORD",
+  "investigation_casebook_manifest_sha256": "204bc4c9e910aee901b1354678ec59d51d1defeb6893a021b3e9400790ec9835",
+  "owner_approval_recorded": true,
+  "owner_approval_required": false,
+  "phase_0_through_14_read_only": true,
+  "phase_15_complete": true,
+  "pre_finalization_candidate_manifest_sha256": "d64a30657cba57beec79d0b5ff43c5f3726ce91ca4bb2bcd190d24f19abfcf0a",
+  "project_b_complete": true,
+  "project_completion_id": "PROJECT-COMPLETION-01",
+  "project_implementation_complete": true,
+  "project_release_id": "PROJECT-RELEASE-01",
+  "release_publication_evidence": "ANNOTATED_GIT_TAG_AND_GITHUB_RELEASE",
+  "release_tag": "model-monitoring-platform-v1.0.0",
+  "release_tag_authorized": true,
+  "release_version": "1.0.0",
+  "status": "APPROVED_FROZEN",
+  "threshold_boundary_density_status": "CONTROLLED_DEFERRED"
+}

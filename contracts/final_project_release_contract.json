@@ -1,0 +1,157 @@
+{
+  "approval_gate": {
+    "candidate_status": "SUPERSEDED_BY_APPROVED_FROZEN_RELEASE",
+    "owner_approval_recorded": true,
+    "owner_completion_decision": "APPROVED",
+    "phase_15_complete": true,
+    "phase_15_complete_before_owner_approval": false,
+    "project_complete": true,
+    "project_complete_before_owner_approval": false
+  },
+  "ci_boundary": {
+    "full_monitoring_execution_claimed": false,
+    "public_safe_checks_only": true,
+    "restricted_data_or_local_database_required": false,
+    "workflow": ".github/workflows/ci.yml"
+  },
+  "contract_id": "FINAL-PROJECT-RELEASE-CONTRACT-01",
+  "controls": {
+    "investigation_casebook_id": "INVESTIGATION-CASEBOOK-01",
+    "project_completion_id": "PROJECT-COMPLETION-01",
+    "project_release_id": "PROJECT-RELEASE-01",
+    "scheduled_execution_id": "SCHEDULED-EXECUTION-01"
+  },
+  "dashboard_release_presentation": {
+    "applicant_level_data_permitted": false,
+    "charts_must_use_dark_theme": true,
+    "classification": "PRESENTATION_ONLY_NO_MONITORING_METHODOLOGY_CHANGE",
+    "dark_signal_spectrum_identity": true,
+    "deep_linkable_page_navigation": true,
+    "dossier_and_lineage_components": true,
+    "governed_labels_and_disclosures_must_remain_exact": true,
+    "governed_table_pagination": {
+      "enabled": true,
+      "page_sizes": [
+        12,
+        25,
+        50
+      ],
+      "preserves_governed_row_order": true
+    },
+    "governed_unavailable_states": true,
+    "human_readable_labels_with_technical_enums_retained": true,
+    "lazy_instrument_rendering": true,
+    "lifecycle_product_voices_distinct_from_governed_severity": true,
+    "lifecycle_spine": true,
+    "monitoring_recalculation_permitted": false,
+    "motion_policy": "RESTRAINED_150_TO_250MS_WITH_REDUCED_MOTION_FALLBACK",
+    "numbered_lifecycle_navigation": true,
+    "numeric_count_up_scope": "FIRST_SESSION_RENDER_ONLY",
+    "persistent_model_passport": true,
+    "phase13_contract_or_display_policy_change_permitted": false,
+    "phase13_data_service_change_permitted": false,
+    "presentation_query_cache": {
+      "frozen_evidence_mutation": false,
+      "invalidation": "DATABASE_MTIME_AND_SIZE_REVISION",
+      "scope": "USER_SESSION_ONLY"
+    },
+    "rerun_entrance_opacity_animation_permitted": false,
+    "sanitized_release_screenshot_count": 7,
+    "scenario_lab_non_calendar": true,
+    "severity_palette_consistent": true,
+    "signature_evidence_signal_topology": true,
+    "single_governed_navigation": true,
+    "streamlit_launcher_must_pin_project_root": true,
+    "threshold_01_probability_spectrum": true,
+    "visual_identity": "MODEL_RISK_EVIDENCE_SYSTEM_SIGNAL_SPECTRUM"
+  },
+  "execution": {
+    "alert_lifecycle_mutation_permitted": false,
+    "default_profile": "VERIFY_FROZEN",
+    "default_profile_generates_report": false,
+    "default_profile_recalculates_monitoring": false,
+    "default_profile_verifies_frozen_report": true,
+    "frozen_phase_0_through_14_writes_permitted": false,
+    "qualification_profile": "ISOLATED_QUALIFICATION_REPLAY",
+    "receipt_schema": "schemas/scheduled_execution_receipt.schema.json",
+    "retention_policy": "NO_AUTOMATIC_DELETION_V1",
+    "runtime_root": "artifacts/scheduled_execution/SCHEDULED-EXECUTION-01"
+  },
+  "exit_codes": {
+    "0": "SUCCESS",
+    "10": "CONFIGURATION_OR_CONTRACT_FAILURE",
+    "20": "FROZEN_SOURCE_VERIFICATION_FAILURE",
+    "21": "MANIFEST_CHAIN_FAILURE",
+    "22": "IMMUTABLE_EVIDENCE_DIGEST_FAILURE",
+    "30": "ACTIVE_LOCK",
+    "31": "INVALID_OR_STALE_LOCK",
+    "40": "FROZEN_WRITE_ATTEMPT",
+    "50": "ORCHESTRATION_FAILURE",
+    "60": "REPORT_OR_QUERY_FAILURE",
+    "70": "DEPENDENCY_OR_ENVIRONMENT_FAILURE",
+    "80": "RECEIPT_OR_LOGGING_FAILURE",
+    "99": "UNEXPECTED_FAILURE"
+  },
+  "frozen_phase14_binding": {
+    "commit": "be6fb12db724954140a8a368d6a756c2ffe800c9",
+    "manifest_path": "reports/lifecycle/FINAL-LIFECYCLE-QUALIFICATION-01/manifest.json",
+    "manifest_sha256": "dc63b5dd1834811d056146cf3f86287c50717fdee420ccb70db7b27f9431047a"
+  },
+  "investigation_casebook_addendum": {
+    "alert_lifecycle_mutation_permitted": false,
+    "case_count": 4,
+    "contract_path": "contracts/model_risk_investigation_contract.json",
+    "current_operational_alert_state_separate": true,
+    "investigation_assessment_authority": "APPROVED_AUTHORITATIVE_INVESTIGATION_RECORD",
+    "monitoring_calculation_authority": false,
+    "operational_database_tables_added": false,
+    "phase_0_through_14_read_only": true,
+    "pre_casebook_candidate_manifest_sha256": "096665d8bcb12bd8efcfeb952330e65b5508ce6ea7e035bbf283fe70b45f7fc4",
+    "pre_owner_review_remediation_casebook_manifest_sha256": "d41c082940518a17a18e540d3aba12a24f10c5ea4abcbc18e2047c0085de6370",
+    "pre_owner_review_remediation_phase15_manifest_sha256": "9ff10f9ac606576f08e62e06b3796cdbaf0ca0f7243979fd63ac708723b9b604",
+    "primary_evidence_selection_governed_by_case_artifact": true,
+    "scope": "PHASE_15_CONTROLLED_CASEBOOK_ADDENDUM",
+    "source_evidence_authority": "FROZEN_MONITORING_EVIDENCE"
+  },
+  "locking": {
+    "active_lock_action": "REJECT",
+    "corrupt_lock_action": "HARD_FAIL",
+    "lock_file": "artifacts/scheduled_execution/SCHEDULED-EXECUTION-01/execution.lock.json",
+    "maximum_age_is_project_defined_governance_assumption": true,
+    "maximum_age_seconds": 21600,
+    "stale_lock_default_action": "REJECT",
+    "stale_lock_recovery_requires_evidence": true,
+    "stale_lock_recovery_requires_explicit_flag": true
+  },
+  "phase": "PHASE_15_SCHEDULED_EXECUTION_AND_FINAL_PROJECT_RELEASE",
+  "release": {
+    "approved_tag": "model-monitoring-platform-v1.0.0",
+    "candidate_must_not_create_or_push_tag": true,
+    "candidate_must_not_create_remote_release": true,
+    "candidate_tag": "model-monitoring-platform-v1.0.0",
+    "owner_release_authorized": true,
+    "publication_evidence_location": "ANNOTATED_GIT_TAG_AND_GITHUB_RELEASE",
+    "remote_release_authorized": true,
+    "tag_creation_requires_owner_approval": true,
+    "version": "1.0.0"
+  },
+  "scheduler_templates": {
+    "cadence_selected": false,
+    "cadence_selection_owner_responsibility": true,
+    "cron": "deployment/scheduling/cron.example",
+    "windows": "deployment/scheduling/windows_task_scheduler.xml.example"
+  },
+  "scope_controls": {
+    "applicant_level_data_in_receipts_or_logs": false,
+    "cnd_02_status": "OPEN",
+    "external_labelled_validation_complete": false,
+    "model_recalibration": false,
+    "model_refitting": false,
+    "monitoring_recalculation": false,
+    "phase14_report_regeneration": false,
+    "secrets_in_receipts_or_logs": false,
+    "threshold_change": false
+  },
+  "status": "APPROVED_FROZEN",
+  "version": "1.0.0"
+}

@@ -1,0 +1,8 @@
+{
+  "absolute_user_paths": 0,
+  "cadence_selected": false,
+  "classification": "EXAMPLE_DEPLOYMENT_CONFIGURATION",
+  "cron_template": "deployment/scheduling/cron.example",
+  "result": "PASS",
+  "windows_template": "deployment/scheduling/windows_task_scheduler.xml.example"
+}

@@ -1,0 +1,11 @@
+{
+  "approved_utc": "2026-08-24T15:34:33.037075+00:00",
+  "candidate_manifest_sha256": "d64a30657cba57beec79d0b5ff43c5f3726ce91ca4bb2bcd190d24f19abfcf0a",
+  "created_utc": "2026-08-24T15:13:57.318676+00:00",
+  "head_before_candidate_commit": "be6fb12db724954140a8a368d6a756c2ffe800c9",
+  "owner_approval_recorded": true,
+  "release_tag": "model-monitoring-platform-v1.0.0",
+  "status": "APPROVED_FROZEN",
+  "tag_and_remote_release_authorized_post_commit": true,
+  "version": "1.0.0"
+}

@@ -1,0 +1,12 @@
+{
+  "approved_scope": "AUTHORITATIVE_RECORD_OF_THE_PROJECTS_APPROVED_INTERPRETATION_AND_DISPOSITION_OF_FROZEN_MONITORING_EVIDENCE",
+  "contract_id": "MODEL-RISK-INVESTIGATION-CONTRACT-01",
+  "control_id": "INVESTIGATION-CASEBOOK-01",
+  "current_operational_alert_state_separate": true,
+  "extraction_time_alert_state_preserved": true,
+  "linked_alert_navigation_uses_current_state": true,
+  "phase_0_through_14_reopened": false,
+  "primary_evidence_selection_governed_by_case_artifact": true,
+  "review_decision": "APPROVED",
+  "substantive_dossier_conclusions_changed": false
+}

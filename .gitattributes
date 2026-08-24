@@ -4,6 +4,9 @@
 reports/investigation/INVESTIGATION-CASEBOOK-01/** -text
 reports/release/PROJECT-RELEASE-01/** -text
 
+# Preserve the frozen Phase 1 checklist byte-for-byte; its manifest binds CRLF bytes.
+reports/qualification/RUNTIME-QUALIFICATION-01/phase1_acceptance_checklist.csv -text
+
 *.joblib binary
 *.npz binary
 *.parquet binary

@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
+import subprocess
 
 from credit_risk_monitoring.dashboard.data_service import DashboardDataService
 from credit_risk_monitoring.dashboard.state import prepare_database, public_demo_mode
@@ -46,3 +48,27 @@ def test_public_entrypoint_and_dependency_surface_are_deployable() -> None:
     assert "DOWNLOAD GOVERNED MONITORING REPORT" in passport
     assert (ROOT / "VERSION").read_text(encoding="utf-8").strip() == "1.0.0"
     assert (ROOT / "DEPLOYMENT_VERSION").read_text(encoding="utf-8").strip() == "1.0.1"
+
+
+def test_frozen_phase1_checklist_survives_git_checkout_byte_for_byte() -> None:
+    relative = "reports/qualification/RUNTIME-QUALIFICATION-01/phase1_acceptance_checklist.csv"
+    checklist = ROOT / relative
+    manifest = json.loads(
+        (ROOT / "reports/qualification/RUNTIME-QUALIFICATION-01/qualification_manifest.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    expected = next(
+        artifact["sha256"]
+        for artifact in manifest["artifacts"]
+        if artifact["path"] == checklist.name
+    )
+    assert hashlib.sha256(checklist.read_bytes()).hexdigest() == expected
+    attributes = subprocess.run(
+        ["git", "check-attr", "text", "--", relative],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    assert attributes.endswith("text: unset")
